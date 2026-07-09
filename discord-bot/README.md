@@ -56,15 +56,51 @@ Fill in `.env`:
 | `WELCOME_CHANNEL_ID` | no | Channel to post welcome messages in |
 | `AUTO_ROLE_ID` | no | Role auto-assigned to new members |
 | `MOD_LOG_CHANNEL_ID` | no | Channel moderation actions get logged to |
+| `REDDIT_CLIENT_ID` / `REDDIT_CLIENT_SECRET` | no | Enables `/verify`. From your Reddit app (see step 5 below). |
+| `REDDIT_REDIRECT_URI` | no | Must exactly match the redirect URI on the Reddit app, e.g. `https://yourdomain.com/reddit/callback` |
+| `REDDIT_USER_AGENT` | no | Reddit requires a descriptive User-Agent, e.g. `discord-community-bot/1.0 (by /u/yourname)` |
+| `VERIFIED_ROLE_ID` | no | Role granted to members who pass Reddit verification |
+| `SESSION_SECRET` | no | Random string signing OAuth state tokens — generate with `node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"` |
+| `MIN_TOTAL_KARMA` / `MIN_COMMENT_KARMA` / `MIN_ACCOUNT_AGE_DAYS` | no | Verification thresholds. Default to 100 / 20 / 365. |
+| `VERIFICATION_PORT` | no | Port the callback server listens on. Default 3000. |
+| `DATABASE_PATH` | no | Where the SQLite file storing verification snapshots is written. Default `./verifications.db`. |
 
 Right-click any channel/role with Developer Mode enabled (User Settings →
 Advanced → Developer Mode) to copy its ID.
 
-## 5. Install, register commands, and run
+## 5. (Optional) Set up Reddit verification
+
+This gates a role behind Reddit account age + karma via `/verify`. Skip this
+section if you don't need it — the bot runs fine without it.
+
+1. Go to [reddit.com/prefs/apps](https://www.reddit.com/prefs/apps) → **create another app...**
+2. Choose type **web app** (not "script" — script apps can't use the authorization-code flow this bot relies on).
+3. Set **redirect uri** to `https://yourdomain.com/reddit/callback` — this must be the public HTTPS URL where the bot's verification server will be reachable (see step 7, "Running it long-term," for hosting options; you need that URL decided before this step).
+4. Copy the **client ID** (under the app name) and **secret** into `REDDIT_CLIENT_ID` / `REDDIT_CLIENT_SECRET`.
+5. Set `REDDIT_REDIRECT_URI` in `.env` to the exact same URL you entered in step 3.
+6. Set `VERIFIED_ROLE_ID` to the role you want members to get on passing.
+7. Generate and set `SESSION_SECRET`.
+8. Adjust `MIN_TOTAL_KARMA` / `MIN_COMMENT_KARMA` / `MIN_ACCOUNT_AGE_DAYS` if you don't want the defaults (100 / 20 / 365).
+
+How it works: a member runs `/verify`, gets an ephemeral link, authorizes on
+Reddit (read-only `identity` scope — the bot never sees their password and
+the access token is used once and discarded, never stored). The bot's
+callback server fetches their karma and account age, checks them against
+your thresholds, assigns `VERIFIED_ROLE_ID` if they pass, and stores a
+snapshot (Reddit username, karma, account age, pass/fail, timestamp) in
+SQLite so mods can look it up later with `/reddit-info @user`. Re-running
+`/verify` overwrites the previous snapshot and re-checks the role.
+
+This scales the same way regardless of community size: verification is
+triggered per-member on demand, not as a batch job, so Reddit's API rate
+limits (well under what a real community's `/verify` traffic would produce)
+aren't a practical constraint.
+
+## 6. Install, register commands, and run
 
 ```bash
 npm install
-npm run deploy-commands   # registers /warn /kick /ban /timeout /purge /rules
+npm run deploy-commands   # registers /warn /kick /ban /timeout /purge /rules /verify /reddit-info
 npm start
 ```
 
@@ -85,6 +121,11 @@ npm start
   permission, so only actual moderators can run them.
 - **Mod log** (`src/moderation/modLog.js`): every automated or manual
   moderation action is posted as an embed to `MOD_LOG_CHANNEL_ID`.
+- **Reddit verification** (`src/verification/`): `/verify` sends members
+  through Reddit OAuth; the callback server checks karma/account age against
+  your thresholds, assigns `VERIFIED_ROLE_ID` on a pass, and stores a
+  snapshot mods can pull up with `/reddit-info`. Only runs when the
+  `REDDIT_*` / `VERIFIED_ROLE_ID` / `SESSION_SECRET` env vars are set.
 
 ## Running it long-term
 
@@ -100,5 +141,13 @@ long as the terminal/container it's running in does. Options:
   deploying a Node.js worker from a git repo with env vars set in their
   dashboard — no Dockerfile required for a simple bot like this.
 
-Whichever you pick, never commit `.env` or paste your bot token/API key into
-chat, issues, or commits — treat them like passwords.
+If you're using Reddit verification, whichever option you pick needs to
+expose `VERIFICATION_PORT` (default 3000) over HTTPS at the exact
+`REDDIT_REDIRECT_URI` you configured — most of the platforms above
+terminate TLS for you automatically and just need the port set via their
+dashboard.
+
+Whichever you pick, never commit `.env`, the `verifications.db` file, or
+paste your bot token/API keys into chat, issues, or commits — treat them
+like passwords. `verifications.db` contains real members' Reddit usernames
+and karma data, so treat it as user data, not disposable local state.

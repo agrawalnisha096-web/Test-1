@@ -1,9 +1,10 @@
 import { Client, GatewayIntentBits, Partials } from 'discord.js';
-import { config } from './config.js';
+import { config, isVerificationEnabled } from './config.js';
 import { loadCommands } from './loadCommands.js';
 import { moderateMessage } from './moderation/enforce.js';
 import { handleGuildMemberAdd } from './events/welcome.js';
 import { isAiModerationEnabled } from './moderation/aiModeration.js';
+import { createVerificationServer } from './verification/server.js';
 
 const client = new Client({
   intents: [
@@ -20,6 +21,14 @@ const commands = await loadCommands();
 client.once('ready', () => {
   console.log(`Logged in as ${client.user.tag}`);
   console.log(`AI-assisted moderation: ${isAiModerationEnabled ? 'enabled' : 'disabled (no ANTHROPIC_API_KEY)'}`);
+  console.log(`Reddit verification: ${isVerificationEnabled ? 'enabled' : 'disabled (missing Reddit/verification env vars)'}`);
+
+  if (isVerificationEnabled) {
+    const app = createVerificationServer(client);
+    app.listen(config.verificationPort, () => {
+      console.log(`Verification callback server listening on port ${config.verificationPort}`);
+    });
+  }
 });
 
 client.on('messageCreate', async (message) => {
