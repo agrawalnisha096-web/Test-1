@@ -1,112 +1,59 @@
-# Re: Audit review — precision layer and revised operating plan
+# Re: Audit review — precision layer, now evidence-complete
 
-Good questions — they move the work from the initial directional diagnostic into the confirmatory, quantified layer, which is exactly the right sequence before we touch anything on the backend. The first deliverable was deliberately built from two independent, reproducible sources — your Search Console data and public search surfaces — so that we had a defensible read *before* requesting access. What follows sharpens each finding to its exact mechanism and confidence level.
+Following your review, we pulled the direct sources (page HTML, robots.txt, sitemap, and two matched Search Console windows). That moves the remaining items from *inferred* to *verified*, and surfaced two concrete, high-leverage findings that weren't visible from search data alone. Below is the reconciliation, updated to what the raw evidence now proves.
 
-Every claim is labeled **[Verified]** (computed directly from your GSC data), **[Inferred]** (reasoned from indirect evidence), or **[Unverified]** (requires direct page access, deliberately held for the access-granted pass). Keeping HTML-level items at **[Unverified]** rather than asserting them is a discipline, not a gap — it's why the numbers you *can* act on are clean. Source for all figures: your GSC export (Search type = Web; Last 12 months; 2025-07-07 → 2026-07-07).
-
----
-
-### 1. The organic asset base
-
-To state the asset position precisely: Trillet holds a substantial organic footprint — **432 ranking URLs, 1.88M impressions, 14,100 clicks** over the period **[Verified]**. The opportunity is not building assets; it's **converting non-brand visibility into non-brand clicks**, where the current capture is **584 clicks on 219,143 impressions (0.27% CTR)** **[Verified]**.
-
-One number worth reading correctly: the **93.3% brand share is measured on GSC's top-1,000-query export (8,708 clicks)**, which structurally over-weights high-volume brand terms. Across the full 14,100, **true brand share is lower and the non-brand asset base is larger** than that sample suggests **[Inferred]** — i.e. the non-brand upside is bigger than the headline implies, not smaller.
-
-### 2. Host architecture — targeted consolidation
-
-The consolidation recommendation is specific, not blanket. The seven hostnames resolve into three categories, and only one calls for redirection:
-
-| Host | Role | Action | Evidence |
-|---|---|---|---|
-| `www` ↔ `trillet.ai` (apex) | **Duplicate marketing surface** | Consolidate: one canonical, 301 the other | Identical paths/titles; homepage ranks 3.9 (www) vs 5.5 (apex) for the same content **[Verified]** |
-| `docs.` | Documentation surface | **Retain — do not redirect** | Distinct content type, ranks for its own queries **[Inferred]** |
-| `app.` | Product/application surface | **Retain — do not redirect** | The live product; brand-navigation traffic **[Inferred]** |
-| `security.` / `certification.` | Trust/compliance surfaces | **Retain — do not redirect** | Distinct purpose; intentional **[Inferred]** |
-| `bootstrapps.` | Anomaly | **Investigate, likely noindex** | Pos 27 on 7 impressions for a homepage-type query — reads as staging/unintended exposure **[Inferred]** |
-
-Net: consolidate the one duplicate pair, preserve the four intentional surfaces, resolve the one anomaly. The role classifications for `docs/app/security/certification` are confirmed directly in the access-granted pass **[Unverified until then]**.
-
-### 3. Consolidation mechanism
-
-The consolidation is achieved entirely by **301 permanent redirect + self-referencing canonical + a sitemap listing only the canonical host** **[Verified — standard Google behavior]**. Google recrawls and reassigns signal automatically over days-to-weeks; the superseded URLs fall out of the index on their own. Worth noting so we sidestep a common misstep: GSC's Removals tool only *temporarily hides* URLs (~6 months) and has no effect on canonicalization or ranking — so it plays no part here. Redirect + canonical + recrawl is complete and sufficient on its own.
-
-### 4. The duplicate-host mechanism: signal consolidation
-
-The mechanism driving the host and `?fpc=` parameter issue is **ranking-signal dilution and index hygiene** — the same URL's authority being split across variants instead of concentrated. (This is distinct from crawl budget, which only becomes a constraint at 10k–1M+ URL scale; at Trillet's size the operative lever is specifically **signal consolidation**, and that's what the fix delivers.) **[Verified]**
-
-### 5. The CTR trend — a two-driver decomposition
-
-The sitewide CTR movement resolves cleanly into **two separable, simultaneous drivers**, and naming them precisely is what makes it actionable:
-
-1. **A deliberate content-volume expansion.** From January 2026, 305 posts + 31 industry pages entered the index at once, adding a large population of high-impression informational queries that carry sub-1% CTR *by nature*. This mechanically lowers the *blended* average — it is a composition shift, not a degradation of existing pages **[Verified: the volume and timing are in the data]**.
-2. **A live snippet-capture opportunity on the established cohort.** Independent of the blend, specific mature pages sit at strong positions with abnormally low CTR — e.g. `voice-ai-data-residency-requirements-by-region` at **position 6.5 / 0.04% CTR**, and `comparing-no-code-phone-agents-...` at **position 6.7 / 0.01% CTR** **[Verified, page-level]**. At those positions, CTR that low is a direct, page-specific capture gap — not a mix artifact.
-
-So the headline holds and gets *sharper*: the aggregate reflects the volume expansion; the money is in the established-cohort capture gap, which is evidenced page-by-page today. To attribute the aggregate precisely, the confirmatory step is a **page×date (and ideally query×date) export across two comparable windows** (e.g. Sep–Nov 2025 vs Mar–May 2026, restricted to URLs present in both) — that isolates each driver quantitatively rather than by inference.
-
-### 6. Click-upside model
-
-Presented as an explicit, reproducible scenario with its inputs on the table:
-
-> 219,143 non-brand impressions × 2.0% target CTR = 4,383 → less 584 current = **~3,800 incremental**.
-
-Inputs, stated so the model is auditable rather than asserted:
-- 2.0% is a conservative benchmark; the access-granted pass replaces it with Trillet's own CTR-by-position curve.
-- Impressions are held flat (a floor assumption; the 219,143 base is itself the capped top-1,000 sample).
-- The realistic near-term share comes from the **position 4–10 band**, where snippet edits move CTR directly; page-2+ terms are a separate ranking motion.
-
-This is a scenario to size the prize and prioritize, deliberately kept distinct from any committed forecast.
-
-### 7. Tiered keyword targeting
-
-The targeting is prioritized by winnability, which is why broad and specific terms are treated differently:
-
-- **Near-term (act now):** commercial-intent long-tail already on page 1–2 — `cheap answering service` (pos 5.8), `roofing answering service` (pos 10.2), `plumbing answering service` (pos 13.1) **[Verified]**. High intent, already ranking, movable on content/snippet work.
-- **Horizon (earn into):** broad head terms — `ai answering service` (pos 30–45) **[Verified]** — high competition and authority threshold, multi-quarter time-to-rank. Pursued through the authority built by winning the tier above, not chased directly today.
-
-Same destination, sequenced by probability and time-to-rank.
-
-### 8. AEO — aligned to current Google behavior
-
-The schema recommendations are set to what Google actually renders today:
-- **FAQPage** rich results are now limited to authoritative government/health domains, so the value for a commercial site is machine-parsing, not a SERP feature **[Verified]** — we deploy it where it helps ingestion, not as a rankings play.
-- **HowTo** rich results are no longer a search feature at all **[Verified]** — so effort routes to formats that still surface.
-- **llms.txt** has no confirmed pickup by major AI crawlers as a retrieval signal — a low-cost hedge, labeled as such **[Inferred; date-sensitive]**.
-
-The AI-visibility surfaces we can **measure directly**, which is where instrumentation should focus: GSC **Search Appearance** (Review/Product snippets — already in your export) **[Verified]**; **AI-Overview** impressions folded into GSC's aggregate **[Verified]**; and the actionable one — **AI-engine referral traffic in GA4** (chatgpt.com, perplexity.ai, etc.), backed by scheduled **prompt-panel testing** **[Verified method]**.
-
-### 9. Full-funnel measurement — engagement through payment
-
-The join model is defined and ready to instrument the moment access is granted:
-
-`GSC (query → landing page)` → `GA4 (landing page → engaged session, /pricing & /demo-en views, signup start)` → `product analytics (app.trillet.ai onboarding)` → `billing (checkout → payment)`, keyed on **landing-page URL + session/UTM**.
-
-Stage definitions and the event required at each are specified in the plan. This is the point at which read access to GA4 / product / billing turns the analysis from search-surface to revenue-linked.
-
-### 10. The 7-day / 30-day operating plan
-
-Every action carries all nine fields: **exact page/asset · evidence · product motion · expected mechanism · owner · dependency · success metric · measurement window · failure condition.** Owners are role placeholders ([Web/Vercel admin], [Content], [Compliance/Legal], [Analytics]) for assignment. All actions are read-only or no-external until access is granted; the single proposed code change routes through your dev PR workflow.
-
-### 11. Confidence labeling
-
-Applied to every claim throughout, exactly as above. Page-level HTML conclusions are held at **[Unverified]** by design until the direct-access pass — so the verified numbers stand on their own.
-
-### 12. Source of truth for published claims
-
-Every pricing ($29/$49/$99/$299), compliance (HIPAA/TCPA/ACMA/GDPR-included), and product claim (sub-2000ms latency, honeypot detection, 5-minute setup) currently traces to public marketing surfaces **[Unverified as canonical]**. Before any of these is (re)published in optimized content, it clears a register — *claim → observed source → approved internal owner* — with compliance claims routed to legal/compliance sign-off. This protects the credibility of the very pages we're optimizing.
+Labels: **[Verified]** = confirmed from Trillet's own data/source; **[Inferred]** = reasoned from indirect evidence; **[Unverified]** = still requires access not yet granted. Source for figures: GSC export (Web; two windows, Sep 1–Nov 30 2025 and Mar 1–May 31 2026), the site's robots.txt/sitemap.xml, and page view-source.
 
 ---
 
-### The daily shared sheet
+### 1. Organic asset base
+Trillet holds a substantial organic footprint — 432 ranking URLs, 1.88M impressions, 14,100 clicks **[Verified]**. The opportunity is converting non-brand visibility to clicks: non-brand captures 584 clicks on 219,143 impressions (0.27% CTR) **[Verified]**. The 93.3% brand share is measured on the capped top-1,000-query export and over-weights brand — so the non-brand base is *larger* than the headline implies, not smaller **[Inferred]**.
 
-Structured so every material number carries **metric · value · source · date range · filters · supporting artifact · confidence label**. Seed rows draw from the GSC export cited above; nothing lands in the sheet without provenance.
+### 2. Rendering & AI-crawler access — now confirmed
+The site is **server-side rendered** (Next.js; full article HTML present before JavaScript) **[Verified]**. Every page's content is readable by AI answer-engine crawlers — the earlier "client-side rendering could make Trillet invisible to GPTBot/ClaudeBot/PerplexityBot" risk is **closed**. robots.txt explicitly allows GPTBot, Google-Extended, Perplexity, CCBot, cohere-ai, Applebot, Bingbot and more, and the `*` default allows the rest **[Verified]**. Two small token cleanups (not blocking anything today, since the wildcard covers them): the crawler tokens are `PerplexityBot` and `ClaudeBot`, not `Perplexity`/`Claude-Web`.
 
-### To move to the full build
+### 3. Canonicalization — direction now settled
+Every signal Trillet emits already names **apex** as canonical: robots.txt `Host: https://trillet.ai`, the sitemap lists only apex URLs, and page `rel=canonical` tags point to apex **[Verified]**. Yet GSC shows **www** ranking and taking the impressions (homepage www at position 3.9 vs apex 5.5 for identical content) **[Verified]**. The single missing piece is enforcement: there is **no 301 redirect** www→apex, so Google indexes www off link authority despite every hint. The fix is therefore low-risk — a 301 www→apex aligns reality to the intent already declared, no directional bet required. (The `Host:` directive itself is deprecated and ignored by Google; the 301 + rel=canonical are what act.)
 
-Three inputs unlock the confirmatory layer:
-1. A **page×date (and query×date) GSC export** across two comparable windows — quantifies the driver split in §5.
-2. **Read access to GA4 / product / billing** — activates the funnel model in §9.
-3. **Named owners and approved sources** — populates the register in §12.
+### 4. Duplicate-signal mechanism
+The operative issue across hosts and `?fpc=` parameters is **ranking-signal dilution / index hygiene**, not crawl budget (a constraint only at 10k–1M+ URL scale) **[Verified]**. The sitemap is clean (apex-only, no parameters), so the `?fpc=` variants are a runtime tracking artifact to canonicalize, not a sitemap problem **[Verified]**.
 
-Everything stays read-only until this validates; the first write is a single scoped change through your dev PR workflow, as proposed.
+### 5. CTR trend — decomposed with matched cohorts
+Running the two windows as a fixed cohort settles this precisely:
 
-*Prepared with AI assistance; figures traced to the GSC export and labeled by confidence. Please verify before onward use.*
+| Cohort | Sep–Nov 2025 | Mar–May 2026 |
+|---|---|---|
+| Blended (all pages) | 3.97% CTR / pos 5.33 | 0.52% CTR / pos 7.98 |
+| **Stable pages (in both)** | 3.98% CTR / pos 5.32 | **3.74% CTR / pos 5.23** |
+| New pages (Mar–May only) | — | **0.20% CTR / pos 8.26** |
+
+The blended CTR fell 3.45 points; **93% of that is composition** — 292 new pages entered at 0.20% CTR and now hold 91% of impressions — while the **established cohort held its CTR and position** **[Verified]**. So this was never a site-wide snippet failure; the pre-flood pages are healthy. The snippet opportunity is a *scoped* set of specific well-ranked new pages (below), not the whole blog.
+
+### 6. Click-upside — rebuilt on Trillet's own CTR curve
+Trillet's actual CTR-by-position curve (Mar–May, query-level) is 29% at position 1 (brand) then **0.1–0.6% across positions 2–10** **[Verified]** — far below a normal curve, which points to intent mismatch and/or AI Overviews absorbing non-brand clicks. Scoping realistically to the ~10 pages that rank ≤10 yet sit well below even that curve, and modeling them to curve-expected CTR, yields **~113 incremental clicks/month (~1,360/year)** — smaller than the earlier 2%-benchmark figure, and defensible from Trillet's own data. Presented as a sizing scenario, not a forecast.
+
+### 7. A verified, systematic on-page bug worth its own line
+The meta description is **truncated mid-word at ~200 characters** (e.g. "…value-added **servi**"), and the same cut string is reused for the OG tag, Twitter tag, *and* the visible on-page subtitle **[Verified]**. If site-wide (very likely — it's template behaviour), **every search snippet ends mid-word**, suppressing CTR across the whole site. This is one code fix with site-wide reach — plausibly a bigger CTR lever than any individual title rewrite.
+
+### 8. AEO / structured data
+Pages carry Article + BreadcrumbList JSON-LD with a real, schema'd author (good E-E-A-T) **[Verified]**, but pages with a literal "Frequently Asked Questions" section carry **no FAQPage schema** **[Verified]** — a gap for AI parsing (rich-result value is limited post-2023, but the markup still aids answer engines). HowTo rich results are retired; effort routes elsewhere. Measurable AI surfaces: GSC Search Appearance, AI-Overview impressions folded into the aggregate, and AI-engine referrals in GA4.
+
+### 9. Content sprawl & cannibalization — mapped from the sitemap
+The sitemap (~300+ blog posts) exposes concrete near-duplicate clusters — e.g. `white-label-ai-profit-margins` **/** `-profit-margin-analysis`; `how-to-sell-ai-chatbots-local-businesses` **/** `-to-local-businesses`; a data-residency trio (`by-region` / `by-country` / `configurable-`); three My-AI-Front-Desk posts — plus a **systematic overlap** where `/industries/{trade}` competes with `/blogs/ai-answering-service-for-{trade}` and `/blogs/white-label-ai-for-{trade}` **[Verified]**. This self-competition fits the industry pages being stuck (plumbers at position 22). Consolidation is now a bigger lever than new volume.
+
+### 10. Full-funnel measurement
+GA4 + PostHog + GTM are all installed **[Verified]**. The current GA4 export (4 weeks) shows a thin funnel — 562 active users, concentrated on homepage and `/pricing` — and **Key Events = 0 on every row**, so pricing intent isn't measurable until events are configured **[Verified]**. Once configured, the join `GSC query → landing page → GA4 engaged session → /pricing & /demo-en views → signup start` goes live (payment stage deliberately Phase 2, per scope).
+
+### 11. Trust signals
+Trillet has a **Trustpilot listing (4.6/5, 20 reviews)** **[Verified]** — real proof not surfaced in on-site content. It has **no G2 / Capterra / TrustRadius / Product Hunt presence** **[Verified]** — a gap in trust signals, backlinks, review rich-snippets, and (critically) AI-answer-engine citations, since those platforms are what LLMs lean on for "best software" queries. Addressed as a dedicated workstream in the plan.
+
+### 12. Source of truth
+Every pricing/compliance/product claim currently traces to marketing surfaces **[Unverified as canonical]**. The plan gates each behind a register — *claim → source → approved owner* — with compliance routed to legal sign-off before any republication.
+
+---
+
+**Net:** the structural questions are answered from real evidence. The two highest-leverage, low-risk moves are now clear and concrete — **301 www→apex** and the **site-wide meta-description truncation fix** — neither of which requires a content bet. The operating plan (attached) sequences those alongside content consolidation, a small set of strategic new pieces, and the marketplace-profile workstream.
+
+Still open, and the only things gating full execution: **GA4 Key Events configured** (for intent measurement), **named owners/approved sources** (§12), and repository access for the scoped changes through your dev PR workflow.
+
+*Prepared with AI assistance; figures traced to the GSC export, robots.txt/sitemap, and page source, labeled by confidence. Please verify before onward use.*

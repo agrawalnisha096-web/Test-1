@@ -17,13 +17,21 @@ baseline,Page position / CTR,blogs/comparing-no-code-phone-agents-for-outbound-c
 baseline,Page position / CTR,blogs/voice-ai-white-label-pricing-breakdown-2026,6.2 / 0.06%,GSC Pages.csv,2025-07-07 to 2026-07-07,Search type = Web,GSC export ZIP / Pages.csv,Verified,[Content/SEO],snippet-gap page (D5/M1)
 baseline,Page position / CTR,blogs/best-voice-ai-for-contact-centers,6.6 / 0.03%,GSC Pages.csv,2025-07-07 to 2026-07-07,Search type = Web,GSC export ZIP / Pages.csv,Verified,[Content/SEO],snippet-gap page (D5/M1)
 baseline,Page position / CTR,blogs/smith-ai-alternative-2026,6.4 / 0.03%,GSC Pages.csv,2025-07-07 to 2026-07-07,Search type = Web,GSC export ZIP / Pages.csv,Verified,[Content/SEO],snippet-gap page (D5/M1/M6)
-baseline,Trustpilot rating,Third-party,4.6/5 (20 reviews),Trustpilot listing,as of 2026-07,n/a,trustpilot.com/review/trillet.ai,Inferred,[Product Marketing],surface in comparison content
+baseline,Trustpilot rating,Third-party,4.6/5 (20 reviews),Trustpilot listing,as of 2026-07,n/a,trustpilot.com/review/trillet.ai,Verified,[Product Marketing],surface in comparison content (CR4)
+baseline,Stable-cohort CTR,Pages in both windows,3.74%,GSC cohort export,2026-03-01 to 2026-05-31,Search type = Web,GSC Mar-May Pages.csv,Verified,[Analytics],established pages held (proves 93% of CTR drop = composition)
+baseline,New-page CTR,Mar-May-only pages,0.20%,GSC cohort export,2026-03-01 to 2026-05-31,Search type = Web,GSC Mar-May Pages.csv,Verified,[Content/SEO],content-flood cohort; 91% of impressions
+baseline,CTR-by-position pos 4-6,Query-level,0.60%,GSC cohort export,2026-03-01 to 2026-05-31,Search type = Web,GSC Mar-May Queries.csv,Verified,[Content/SEO],Trillet's own curve (replaces 2% assumption)
+baseline,GA4 active users,All (4-week),562,GA4 Free-form export,2026-06-15 to 2026-07-12,Landing page + query string,download.csv,Verified,[Analytics],thin funnel; homepage+pricing concentrated
+baseline,GA4 key events,All,0,GA4 Free-form export,2026-06-15 to 2026-07-12,n/a,download.csv,Verified,[Analytics],not configured — pre-D4 baseline
 ,,,,,,,,,,
 ,Non-brand CTR,Non-brand queries,,GA4 / GSC,,Search type = Web,,,[Content/SEO],DAILY FILL — track vs 0.27% baseline
-,CTR — 5 snippet-gap pages (avg),Cohort,,GSC,,Search type = Web,,,[Content/SEO],DAILY FILL — target >=1.0% (M1)
-,Homepage position (surviving URL),Canonical host,,GSC,,Search type = Web,,,[Web/Vercel admin],DAILY FILL — target <=3.9 (M2)
-,Dual-indexation status,www vs apex pair,,GSC Pages,,Search type = Web,,,[Web/Vercel admin],DAILY FILL — target resolved (M2)
-,AI-referral sessions,chatgpt.com + perplexity.ai + others,,GA4 referral report,,default channel grouping,,,[Analytics],DAILY FILL — GEO signal (M7)
-,Pricing-page views,/pricing,,GA4,,,,,[Analytics],DAILY FILL — funnel stage (M7)
-,Signup starts,app.trillet.ai,,Product analytics,,,,,[Analytics],DAILY FILL — funnel stage (M7)
+,Stable-cohort CTR,Pages in both windows,,GSC,,Search type = Web,,,[Analytics],DAILY FILL — meta-fix lift vs 3.74% (T1)
+,CTR — capture-gap pages (avg),Cohort,,GSC,,Search type = Web,,,[Content/SEO],DAILY FILL — target toward curve (CR1)
+,Homepage position (surviving URL),Canonical host,,GSC,,Search type = Web,,,[Web/Vercel admin],DAILY FILL — target <=3.9 after 301 (T1)
+,Dual-indexation status,www vs apex pair,,GSC Pages,,Search type = Web,,,[Web/Vercel admin],DAILY FILL — target resolved (T1)
+,/industries/plumbers position,Industry page,,GSC,,Search type = Web,,,[Content/SEO],DAILY FILL — target toward page 1 from 22.3 (CR3)
+,GA4 key-event: /pricing views,Organic landing,,GA4,,Organic Search,,,[Analytics],DAILY FILL — intent metric (D4/MP3)
+,AI-referral sessions,chatgpt.com + perplexity.ai + others,,GA4 referral report,,default channel grouping,,,[Analytics],DAILY FILL — GEO signal (MP3)
+,G2 review count,Marketplace,,G2 profile,,n/a,,,[Product Marketing],DAILY FILL — target >=10 in 30 days (MP2)
+,Capterra review count,Marketplace,,Capterra profile,,n/a,,,[Product Marketing],DAILY FILL — target >=10 in 30 days (MP2)
 ,Checkout completions,Billing,,Billing system,,,,,[Analytics],DAILY FILL — funnel stage (M7)
