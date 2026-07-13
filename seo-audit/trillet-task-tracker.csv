@@ -1,0 +1,19 @@
+ID,Phase,Workstream,Task,Owner,Depends on,Status,Target window,Success metric
+D1,7-day,Technical,Confirm meta-description truncation is site-wide,[Content/SEO] + [Dev],—,Not started,Days 1-2,% of sampled pages truncated documented
+D2,7-day,Technical,Stage 301 www->apex + meta-trim PRs,[Web/Vercel] + [Dev],Repo access + sign-off,Not started,Days 2-7,PRs staged/merged; www returns 301; meta ends on a word <=155 chars
+D3,7-day,Governance,Build source-of-truth register + assign claim owners,[Product Marketing] + [Compliance/Legal],Named owners,Not started,Days 1-7,100% of to-be-published claims have an approved source
+D4,7-day,Analytics,Configure GA4 key events (pricing / demo / signup),[Analytics],GA4 admin access,Not started,Days 2-5,3 key events firing; landing-page -> intent report renders
+D5,7-day,Content,Map cannibalization clusters into a merge map,[Content/SEO],GSC per-page clicks,Not started,Days 3-7,Ranked keep / merge / 301 map per cluster
+T1,30-day,A - Technical,Publish 301 + meta-trim and measure,[Web/Vercel] + [Analytics],D2,Not started,Days 8-28,Surviving homepage <=3.9; dual-indexation resolved in GSC
+T2,30-day,A - Technical,Canonicalize ?fpc= params + resolve bootstrapps subdomain,[Web/Vercel] + [Dev],Confirm bootstrapps purpose,Not started,Days 10-18,Param URLs + bootstrapps drop from index on recrawl
+T3,30-day,A - Technical,Add FAQPage schema + correct AI-crawler tokens,[Dev] + [Content/SEO],D3,Not started,Days 12-22,Valid FAQPage schema (Rich Results Test); robots tokens fixed
+CR1,30-day,B - Content revamp,Rewrite titles/meta on the 5 capture-gap pages,[Content/SEO],T1 + D3,Not started,Days 8-16,Per-page CTR moves toward Trillet's own curve
+CR2,30-day,B - Content revamp,Consolidate near-duplicate clusters (merge + 301),[Content/SEO],D5,Not started,Days 12-26,Merged page position >= prior best of its cluster
+CR3,30-day,B - Content revamp,Resolve /industries vs /blogs vertical overlap,[Content/SEO],CR2,Not started,Days 16-28,/industries/plumbers moves from pos 22 toward page 1
+CR4,30-day,B - Content revamp,Answer-first openers + surface Trustpilot proof,[Content/SEO],D3,Not started,Days 14-26,Competitor-pricing pages get clicks > 0
+NC1,30-day,C - New content,Build one canonical "AI answering service cost" hub,[Content/SEO],D3 + D5,Not started,Days 12-24,Ranks page 1 for "ai answering service cost / pricing"
+NC2,30-day,C - New content,Fill Voicify gap + build a comparison hub,[Content/SEO],CR2,Not started,Days 14-28,Voicify page indexed; hub links canonical competitor pages
+NC3,30-day,C - New content,Build one compliance / data-residency pillar,[Content/SEO] + [Compliance/Legal],D3 legal sign-off,Not started,Days 16-30,Compliance-cluster clicks > 0
+MP1,30-day,D - Marketplace,Create/complete core profiles (G2, Capterra, TrustRadius, Product Hunt),[Product Marketing],D3,Not started,Days 8-20,5 profiles live and 100% complete with correct categories
+MP2,30-day,D - Marketplace,Seed reviews from the happy-customer base (ToS-compliant),[Product Marketing],MP1,Not started,Days 14-30,>=10 reviews each on G2 + Capterra; >=4.0 avg
+MP3,30-day,D - Marketplace,Instrument marketplace + AI-referral attribution,[Analytics] + [Product Marketing],D4 + MP1,Not started,Days 12-30,Referral + AI-referral traffic visible as its own channel

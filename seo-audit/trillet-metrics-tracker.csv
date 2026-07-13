@@ -1,0 +1,12 @@
+KPI,Scope / filter,Source,Baseline,Target,Update 1,Update 2,Update 3,Update 4,Linked task
+Non-brand CTR,Non-brand queries (Web),GSC,0.27%,>=0.5%,,,,,CR1 / NC1
+Stable-cohort CTR,Pages present in both windows (Web),GSC,3.74%,Rising after meta fix,,,,,T1
+Capture-gap pages avg CTR,The 5 CR1 pages (Web),GSC,~0.10%,>=0.60% (toward curve),,,,,CR1
+Homepage position (surviving URL),Canonical host (Web),GSC,3.9 www / 5.5 apex,<=3.9,,,,,T1
+Dual-indexation resolved,www vs apex pair,GSC,No,Yes,,,,,T1
+/industries/plumbers position,Industry page (Web),GSC,22.3,<=10 (page 1),,,,,CR3
+/pricing views from organic,Organic key event,GA4,0 (not yet tracked),Tracked + rising,,,,,D4 / MP3
+AI-referral sessions,chatgpt.com + perplexity.ai + others,GA4,Not yet tracked,Tracked,,,,,MP3
+G2 review count,Marketplace,G2,0,>=10 in 30 days,,,,,MP2
+Capterra review count,Marketplace,Capterra,0,>=10 in 30 days,,,,,MP2
+Trustpilot rating,Third-party,Trustpilot,4.6/5 (20 reviews),Maintain / grow,,,,,CR4 / MP2
