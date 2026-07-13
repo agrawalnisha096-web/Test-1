@@ -1,0 +1,29 @@
+Date,Metric,Scope,Value,Source,Date range,Filters,Supporting artifact,Confidence,Owner,Notes
+baseline,Total clicks,Sitewide,14100,GSC Pages.csv,2025-07-07 to 2026-07-07,Search type = Web,GSC export ZIP / Pages.csv,Verified,[Analytics],12-month reference
+baseline,Total impressions,Sitewide,1881411,GSC Pages.csv,2025-07-07 to 2026-07-07,Search type = Web,GSC export ZIP / Pages.csv,Verified,[Analytics],12-month reference
+baseline,Site-wide CTR,Sitewide,0.75%,GSC Pages.csv (derived),2025-07-07 to 2026-07-07,Search type = Web,GSC export ZIP / Pages.csv,Verified,[Analytics],clicks/impressions
+baseline,Weighted avg position,Sitewide,8.5,GSC Pages.csv (derived),2025-07-07 to 2026-07-07,Search type = Web,GSC export ZIP / Pages.csv,Verified,[Analytics],impression-weighted
+baseline,Non-brand clicks,Non-brand queries,584,GSC Queries.csv,2025-07-07 to 2026-07-07,Search type = Web; top-1000-query cap,GSC export ZIP / Queries.csv,Verified,[Content/SEO],base is capped export
+baseline,Non-brand impressions,Non-brand queries,219143,GSC Queries.csv,2025-07-07 to 2026-07-07,Search type = Web; top-1000-query cap,GSC export ZIP / Queries.csv,Verified,[Content/SEO],base is capped export
+baseline,Non-brand CTR,Non-brand queries,0.27%,GSC Queries.csv (derived),2025-07-07 to 2026-07-07,Search type = Web; top-1000-query cap,GSC export ZIP / Queries.csv,Verified,[Content/SEO],primary opportunity metric
+baseline,Brand share of clicks,Top-1000 query sample,93.3%,GSC Queries.csv (derived),2025-07-07 to 2026-07-07,Search type = Web; top-1000-query cap,GSC export ZIP / Queries.csv,Inferred,[Analytics],over-weights brand; true share lower
+baseline,Paths dual-indexed across hosts,Sitewide,216 of 432,GSC Pages.csv (derived),2025-07-07 to 2026-07-07,Search type = Web,GSC export ZIP / Pages.csv,Verified,[Web/Vercel admin],feeds action D4
+baseline,Impressions on dual-host paths,Sitewide,89.6%,GSC Pages.csv (derived),2025-07-07 to 2026-07-07,Search type = Web,GSC export ZIP / Pages.csv,Verified,[Web/Vercel admin],feeds action D4
+baseline,Homepage position (www),www.trillet.ai/,3.9,GSC Pages.csv,2025-07-07 to 2026-07-07,Search type = Web,GSC export ZIP / Pages.csv,Verified,[Web/Vercel admin],D4/M2 target ceiling
+baseline,Homepage position (apex),trillet.ai/,5.5,GSC Pages.csv,2025-07-07 to 2026-07-07,Search type = Web,GSC export ZIP / Pages.csv,Verified,[Web/Vercel admin],consolidation candidate
+baseline,Industry page position,/industries/plumbers,22.3,GSC Pages.csv,2025-07-07 to 2026-07-07,Search type = Web,GSC export ZIP / Pages.csv,Verified,[Content/SEO],highest-demand industry page
+baseline,Page position / CTR,blogs/voice-ai-data-residency-requirements-by-region,6.5 / 0.04%,GSC Pages.csv,2025-07-07 to 2026-07-07,Search type = Web,GSC export ZIP / Pages.csv,Verified,[Content/SEO],snippet-gap page (D5/M1)
+baseline,Page position / CTR,blogs/comparing-no-code-phone-agents-for-outbound-calling-in-2026,6.7 / 0.01%,GSC Pages.csv,2025-07-07 to 2026-07-07,Search type = Web,GSC export ZIP / Pages.csv,Verified,[Content/SEO],snippet-gap page (D5/M1)
+baseline,Page position / CTR,blogs/voice-ai-white-label-pricing-breakdown-2026,6.2 / 0.06%,GSC Pages.csv,2025-07-07 to 2026-07-07,Search type = Web,GSC export ZIP / Pages.csv,Verified,[Content/SEO],snippet-gap page (D5/M1)
+baseline,Page position / CTR,blogs/best-voice-ai-for-contact-centers,6.6 / 0.03%,GSC Pages.csv,2025-07-07 to 2026-07-07,Search type = Web,GSC export ZIP / Pages.csv,Verified,[Content/SEO],snippet-gap page (D5/M1)
+baseline,Page position / CTR,blogs/smith-ai-alternative-2026,6.4 / 0.03%,GSC Pages.csv,2025-07-07 to 2026-07-07,Search type = Web,GSC export ZIP / Pages.csv,Verified,[Content/SEO],snippet-gap page (D5/M1/M6)
+baseline,Trustpilot rating,Third-party,4.6/5 (20 reviews),Trustpilot listing,as of 2026-07,n/a,trustpilot.com/review/trillet.ai,Inferred,[Product Marketing],surface in comparison content
+,,,,,,,,,,
+,Non-brand CTR,Non-brand queries,,GA4 / GSC,,Search type = Web,,,[Content/SEO],DAILY FILL — track vs 0.27% baseline
+,CTR — 5 snippet-gap pages (avg),Cohort,,GSC,,Search type = Web,,,[Content/SEO],DAILY FILL — target >=1.0% (M1)
+,Homepage position (surviving URL),Canonical host,,GSC,,Search type = Web,,,[Web/Vercel admin],DAILY FILL — target <=3.9 (M2)
+,Dual-indexation status,www vs apex pair,,GSC Pages,,Search type = Web,,,[Web/Vercel admin],DAILY FILL — target resolved (M2)
+,AI-referral sessions,chatgpt.com + perplexity.ai + others,,GA4 referral report,,default channel grouping,,,[Analytics],DAILY FILL — GEO signal (M7)
+,Pricing-page views,/pricing,,GA4,,,,,[Analytics],DAILY FILL — funnel stage (M7)
+,Signup starts,app.trillet.ai,,Product analytics,,,,,[Analytics],DAILY FILL — funnel stage (M7)
+,Checkout completions,Billing,,Billing system,,,,,[Analytics],DAILY FILL — funnel stage (M7)
