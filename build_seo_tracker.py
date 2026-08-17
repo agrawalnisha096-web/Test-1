@@ -104,12 +104,16 @@ rows = [
     ("Hold ONE 30-minute check-in per week. Walk the 'Weekly Scorecard' tab together, then update it live.", "body"),
     ("", ""),
     ("THE TABS", "section"),
-    ("1. Weekly Scorecard", "Each partner commits to 1-3 goals per week, then marks Done / Partial / Missed. This is the accountability engine."),
-    ("2. Activity Log", "Daily record of what each person actually did — task, site, time spent, proof link."),
-    ("3. Backlinks", "Every link built or earned: source, DR, anchor, dofollow/nofollow, who built it, live status."),
-    ("4. Keyword Rankings", "Track target keywords: start position vs current position, so movement is visible."),
-    ("5. Content", "Every article/page: target keyword, author, word count, publish status, URL."),
-    ("6. Results Dashboard", "Monthly outcomes per site — clicks, impressions, live backlinks, top-10 keywords, leads."),
+    ("1. Targets & Goals", "Set monthly targets per site; 'Actual' auto-pulls from the Results Dashboard so you see On track / Close / Behind at a glance."),
+    ("2. Weekly Scorecard", "Each partner commits to 1-3 goals per week, then marks Done / Partial / Missed. This is the accountability engine."),
+    ("3. Activity Log", "Daily record of what each person actually did — task, site, time spent, proof link."),
+    ("4. Outreach Pipeline", "Link-building funnel: prospect > contacted > replied > negotiating > won/lost. Won links graduate to the Backlinks tab."),
+    ("5. Backlinks", "Every link built or earned: source, DR, anchor, dofollow/nofollow, who built it, live status."),
+    ("6. Keyword Rankings", "Track target keywords: start position vs current position, so movement is visible."),
+    ("7. On-Page SEO", "Per-page optimization checklist (title, meta, H1, internal links, alt, schema...) with an auto optimization score."),
+    ("8. Content", "Every article/page: target keyword, author, word count, publish status, URL."),
+    ("9. Content Distribution", "Where each piece gets shared and repurposed — channel, format, owner, status. One post becomes ten touchpoints."),
+    ("10. Results Dashboard", "Monthly outcomes per site — clicks, impressions, live backlinks, top-10 keywords, leads."),
     ("", ""),
     ("LEGEND", "section"),
     ("Yellow cell  =  you type here", "legend_y"),
@@ -552,6 +556,266 @@ ws.merge_cells(start_row=last + 2, start_column=1, end_row=last + 2, end_column=
 ws.freeze_panes = "A5"
 ws.auto_filter.ref = f"A{HR}:I{last}"
 
-# -------------------------------------------------------------------------
+# =========================================================================
+# 8. TARGETS & GOALS
+# =========================================================================
+ws = wb.create_sheet("Targets & Goals")
+ws.sheet_view.showGridLines = False
+title_block(ws, "Targets & Goals", "Set the target; 'Actual' auto-pulls from the Results Dashboard for the reporting month below.", 7)
+
+ws.cell(row=4, column=1, value="Reporting Month:").font = BODY_B
+mcell = ws.cell(row=4, column=2, value="2026-08")
+mcell.fill = YEL_FILL
+mcell.font = BODY_B
+mcell.border = BORDER
+mcell.alignment = CENTER
+ws.cell(row=4, column=3, value="type as YYYY-MM to match the Results Dashboard").font = NOTE
+
+headers = ["Site", "Metric", "Target", "Actual (this month)", "Status", "Gap", "Owner"]
+widths = [20, 20, 12, 18, 14, 10, 12]
+HR = 6
+header_row(ws, HR, headers, widths)
+
+RD = "'Results Dashboard'"
+month_ref = "$B$4"
+# metric name -> (Results Dashboard column, higher_is_better, sample target for crown)
+metrics = [
+    ("Organic Clicks", "C", True, 700),
+    ("Impressions", "D", True, 22000),
+    ("Avg Position", "E", False, 15),
+    ("Live Backlinks", "F", True, 45),
+    ("Keywords Top 10", "G", True, 12),
+    ("Leads / Conversions", "H", True, 15),
+]
+r = HR + 1
+for si, site in enumerate(SITES):
+    for name, col, hib, sample in metrics:
+        ws.cell(row=r, column=1, value=site)
+        ws.cell(row=r, column=2, value=name)
+        if si == 0:  # seed example targets for the first site only
+            ws.cell(row=r, column=3, value=sample)
+        actual = (f"=SUMIFS({RD}!${col}$5:${col}$70,{RD}!$B$5:$B$70,$A{r},"
+                  f"{RD}!$A$5:$A$70,{month_ref})")
+        ws.cell(row=r, column=4, value=actual)
+        if hib:
+            status = (f'=IF(C{r}="","Set target",IF(D{r}>=C{r},"On track",'
+                      f'IF(D{r}>=0.8*C{r},"Close","Behind")))')
+            gap = f'=IF(C{r}="","",D{r}-C{r})'
+        else:  # lower is better (Avg Position)
+            status = (f'=IF(C{r}="","Set target",IF(AND(D{r}>0,D{r}<=C{r}),"On track",'
+                      f'IF(AND(D{r}>0,D{r}<=1.2*C{r}),"Close","Behind")))')
+            gap = f'=IF(C{r}="","",C{r}-D{r})'
+        ws.cell(row=r, column=5, value=status)
+        ws.cell(row=r, column=6, value=gap)
+        r += 1
+last = r - 1
+style_body(ws, HR + 1, last, 1, 7, input_cols=[3, 7])
+for rr in range(HR + 1, last + 1):
+    for cc in (3, 4, 5, 6):
+        ws.cell(row=rr, column=cc).alignment = CENTER
+    for cc in (4, 5, 6):
+        ws.cell(row=rr, column=cc).fill = GREY_FILL
+ws.cell(row=last + 2, column=1,
+        value="On track = met target • Close = within ~20% • Behind = further off. "
+              "Avg Position is judged in reverse (lower is better).").font = NOTE
+ws.merge_cells(start_row=last + 2, start_column=1, end_row=last + 2, end_column=7)
+ws.freeze_panes = "A7"
+
+# =========================================================================
+# 9. OUTREACH PIPELINE
+# =========================================================================
+ws = wb.create_sheet("Outreach Pipeline")
+ws.sheet_view.showGridLines = False
+title_block(ws, "Outreach Pipeline", "The link-building funnel. When Status = Won, add the link to the Backlinks tab.", 11)
+
+headers = ["Date Added", "Site", "Prospect Domain", "DR/DA", "Contact (name / email)",
+           "Method", "Status", "Follow-up Date", "Est. Cost ($)", "Owner", "Notes"]
+widths = [12, 18, 22, 8, 26, 15, 14, 13, 12, 12, 26]
+HR = 4
+header_row(ws, HR, headers, widths)
+
+op = [
+    ("2026-08-11", "badassbacklinks.com", "authorityblog.com", 58, "editor@authorityblog.com", "Guest Post", "Negotiating", "2026-08-19", 150, "Partner 2", "Wants 2 links/mo deal"),
+    ("2026-08-12", "crownseoagency.com", "localmarketing.net", 44, "Jane (contact form)", "Niche Edit", "Replied", "2026-08-18", 90, "Partner 1", "Open to insert"),
+    ("2026-08-13", "badassbacklinks.com", "seoroundup.com", 61, "team@seoroundup.com", "Digital PR", "Contacted", "2026-08-20", 0, "Partner 3", "Sent data study pitch"),
+]
+r = HR + 1
+for x in op:
+    for i, v in enumerate(x):
+        ws.cell(row=r, column=1 + i, value=v)
+    ws.cell(row=r, column=9).number_format = '$#,##0'
+    r += 1
+last = r + 96
+style_body(ws, HR + 1, last, 1, 11, input_cols=list(range(1, 12)))
+for i in range(HR + 1, last + 1):
+    ws.cell(row=i, column=9).number_format = '$#,##0'
+
+add_dv(ws, '"crownseoagency.com,badassbacklinks.com"', [f"B{i}" for i in range(HR + 1, last + 1)])
+add_dv(ws, '"Guest Post,Niche Edit,Outreach,Directory,Digital PR,HARO,Resource Page,Broken Link,Other"',
+       [f"F{i}" for i in range(HR + 1, last + 1)])
+add_dv(ws, '"Not Contacted,Contacted,Replied,Negotiating,Won,Lost"',
+       [f"G{i}" for i in range(HR + 1, last + 1)])
+add_dv(ws, '"Partner 1,Partner 2,Partner 3"', [f"J{i}" for i in range(HR + 1, last + 1)])
+
+# funnel summary
+sc = 13
+ws.cell(row=HR, column=sc, value="PIPELINE FUNNEL").font = H_SECTION
+sr = HR + 1
+for i, h in enumerate(["Stage", "Count"]):
+    c = ws.cell(row=sr, column=sc + i, value=h)
+    c.font = H_HEAD
+    c.fill = HEAD_FILL
+    c.alignment = CENTER
+    c.border = BORDER
+    ws.column_dimensions[get_column_letter(sc + i)].width = 16
+stages = ["Not Contacted", "Contacted", "Replied", "Negotiating", "Won", "Lost"]
+statrng = f"$G${HR+1}:$G${last}"
+for j, st in enumerate(stages):
+    rr = sr + 1 + j
+    ws.cell(row=rr, column=sc, value=st).font = BODY_B
+    ws.cell(row=rr, column=sc + 1, value=f'=COUNTIF({statrng},"{st}")')
+    for cc in range(sc, sc + 2):
+        ws.cell(row=rr, column=cc).border = BORDER
+        ws.cell(row=rr, column=cc).alignment = CENTER
+wr = sr + 1 + len(stages) + 1
+ws.cell(row=wr, column=sc, value="Win rate").font = BODY_B
+wcell = get_column_letter(sc + 1)
+ws.cell(row=wr, column=sc + 1,
+        value=f'=IFERROR({wcell}{sr+5}/({wcell}{sr+5}+{wcell}{sr+6}),"")')
+ws.cell(row=wr, column=sc + 1).number_format = "0%"
+for cc in range(sc, sc + 2):
+    ws.cell(row=wr, column=cc).border = BORDER
+    ws.cell(row=wr, column=cc).alignment = CENTER
+ws.cell(row=wr, column=sc).fill = GREY_FILL
+ws.cell(row=wr, column=sc + 1).fill = GREY_FILL
+ws.cell(row=wr + 1, column=sc, value="Win rate = Won / (Won + Lost)").font = NOTE
+ws.merge_cells(start_row=wr + 1, start_column=sc, end_row=wr + 1, end_column=sc + 1)
+ws.freeze_panes = "A5"
+ws.auto_filter.ref = f"A{HR}:K{last}"
+
+# =========================================================================
+# 10. ON-PAGE SEO
+# =========================================================================
+ws = wb.create_sheet("On-Page SEO")
+ws.sheet_view.showGridLines = False
+title_block(ws, "On-Page SEO", "One row per page. Mark each check Yes/No — the Score column tallies it automatically.", 14)
+
+checks = ["Title Optimized", "Meta Description", "H1 w/ Keyword", "Internal Links",
+          "Image Alt Text", "Schema Markup", "Keyword in URL"]
+headers = ["Site", "Page / URL", "Target Keyword"] + checks + ["Word Count", "Score", "Owner", "Status"]
+# columns: A Site, B URL, C KW, D..J = 7 checks, K WordCount, L Score, M Owner, N Status
+widths = [17, 24, 20] + [13] * 7 + [11, 9, 11, 13]
+HR = 4
+header_row(ws, HR, headers, widths)
+
+op2 = [
+    ("crownseoagency.com", "/blog/local-seo", "local seo checklist",
+     "Yes", "Yes", "Yes", "Yes", "No", "No", "Yes", 1800),
+    ("badassbacklinks.com", "/services", "buy backlinks",
+     "Yes", "No", "Yes", "Yes", "Yes", "No", "No", 1200),
+    ("crownseoagency.com", "/", "local seo agency",
+     "Yes", "Yes", "No", "Yes", "Yes", "Yes", "No", 900),
+]
+first_chk = 4   # column D
+last_chk = 10   # column J
+r = HR + 1
+for x in op2:
+    for i, v in enumerate(x):
+        ws.cell(row=r, column=1 + i, value=v)
+    # Score in column L (12)
+    ws.cell(row=r, column=12,
+            value=f'=COUNTIF({get_column_letter(first_chk)}{r}:{get_column_letter(last_chk)}{r},"Yes")/{len(checks)}')
+    ws.cell(row=r, column=12).number_format = "0%"
+    r += 1
+last = r + 96
+style_body(ws, HR + 1, last, 1, 14,
+           input_cols=[1, 2, 3] + list(range(first_chk, last_chk + 1)) + [11, 13, 14])
+for i in range(HR + 1, last + 1):
+    sc_cell = ws.cell(row=i, column=12)
+    if sc_cell.value is None:
+        sc_cell.value = (f'=COUNTIF({get_column_letter(first_chk)}{i}:'
+                         f'{get_column_letter(last_chk)}{i},"Yes")/{len(checks)}')
+    sc_cell.number_format = "0%"
+    sc_cell.fill = GREY_FILL
+    sc_cell.alignment = CENTER
+    for cc in range(first_chk, last_chk + 1):
+        ws.cell(row=i, column=cc).alignment = CENTER
+
+add_dv(ws, '"crownseoagency.com,badassbacklinks.com"', [f"A{i}" for i in range(HR + 1, last + 1)])
+for cc in range(first_chk, last_chk + 1):
+    add_dv(ws, '"Yes,No,N/A"', [f"{get_column_letter(cc)}{i}" for i in range(HR + 1, last + 1)])
+add_dv(ws, '"Partner 1,Partner 2,Partner 3"', [f"M{i}" for i in range(HR + 1, last + 1)])
+add_dv(ws, '"To Do,In Progress,Optimized"', [f"N{i}" for i in range(HR + 1, last + 1)])
+ws.freeze_panes = "D5"
+ws.auto_filter.ref = f"A{HR}:N{last}"
+
+# =========================================================================
+# 11. CONTENT DISTRIBUTION
+# =========================================================================
+ws = wb.create_sheet("Content Distribution")
+ws.sheet_view.showGridLines = False
+title_block(ws, "Content Distribution & Repurposing", "Every place a piece gets shared or reshaped. One article should spawn many rows here.", 8)
+
+headers = ["Source Content", "Site", "Channel / Platform", "Format",
+           "Owner", "Status", "Date", "Link / URL"]
+widths = [30, 18, 20, 20, 12, 13, 12, 28]
+HR = 4
+header_row(ws, HR, headers, widths)
+
+cd = [
+    ("The 2026 Local SEO Checklist", "crownseoagency.com", "LinkedIn", "Social Post", "Partner 1", "Published", "2026-08-15", "https://..."),
+    ("The 2026 Local SEO Checklist", "crownseoagency.com", "X (Twitter)", "Thread", "Partner 1", "Scheduled", "2026-08-17", ""),
+    ("The 2026 Local SEO Checklist", "crownseoagency.com", "YouTube", "Short Video", "Partner 3", "Planned", "", ""),
+    ("How to Vet a Backlink Vendor", "badassbacklinks.com", "Newsletter", "Email", "Partner 2", "Planned", "", ""),
+    ("How to Vet a Backlink Vendor", "badassbacklinks.com", "Reddit", "Repurposed Article", "Partner 2", "Planned", "", ""),
+]
+r = HR + 1
+for x in cd:
+    for i, v in enumerate(x):
+        ws.cell(row=r, column=1 + i, value=v)
+    r += 1
+last = r + 96
+style_body(ws, HR + 1, last, 1, 8, input_cols=list(range(1, 9)))
+
+add_dv(ws, '"crownseoagency.com,badassbacklinks.com"', [f"B{i}" for i in range(HR + 1, last + 1)])
+add_dv(ws, '"LinkedIn,X (Twitter),Facebook,Instagram,Reddit,Quora,Newsletter,Medium,YouTube,TikTok,Pinterest,Other"',
+       [f"C{i}" for i in range(HR + 1, last + 1)])
+add_dv(ws, '"Social Post,Thread,Carousel,Short Video,Infographic,Email,Slide Deck,Podcast,Guest Post,Repurposed Article,Other"',
+       [f"D{i}" for i in range(HR + 1, last + 1)])
+add_dv(ws, '"Partner 1,Partner 2,Partner 3"', [f"E{i}" for i in range(HR + 1, last + 1)])
+add_dv(ws, '"Planned,Scheduled,Published"', [f"F{i}" for i in range(HR + 1, last + 1)])
+
+# channel summary
+sc = 10
+ws.cell(row=HR, column=sc, value="PUBLISHED BY CHANNEL").font = H_SECTION
+sr = HR + 1
+for i, h in enumerate(["Channel", "Published"]):
+    c = ws.cell(row=sr, column=sc + i, value=h)
+    c.font = H_HEAD
+    c.fill = HEAD_FILL
+    c.alignment = CENTER
+    c.border = BORDER
+    ws.column_dimensions[get_column_letter(sc + i)].width = 16
+chans = ["LinkedIn", "X (Twitter)", "Facebook", "Instagram", "Reddit", "Newsletter", "Medium", "YouTube"]
+crng = f"$C${HR+1}:$C${last}"
+strng = f"$F${HR+1}:$F${last}"
+for j, ch in enumerate(chans):
+    rr = sr + 1 + j
+    ws.cell(row=rr, column=sc, value=ch).font = BODY_B
+    ws.cell(row=rr, column=sc + 1, value=f'=COUNTIFS({crng},"{ch}",{strng},"Published")')
+    for cc in range(sc, sc + 2):
+        ws.cell(row=rr, column=cc).border = BORDER
+        ws.cell(row=rr, column=cc).alignment = CENTER
+ws.freeze_panes = "A5"
+ws.auto_filter.ref = f"A{HR}:H{last}"
+
+# =========================================================================
+# Order the tabs logically, then save
+# =========================================================================
+desired = ["Start Here", "Targets & Goals", "Weekly Scorecard", "Activity Log",
+           "Outreach Pipeline", "Backlinks", "Keyword Rankings", "On-Page SEO",
+           "Content", "Content Distribution", "Results Dashboard"]
+wb._sheets.sort(key=lambda s: desired.index(s.title))
+
 wb.save("/home/user/Test-1/SEO-Tracker.xlsx")
-print("saved")
+print("saved", [s.title for s in wb._sheets])
