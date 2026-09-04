@@ -258,6 +258,72 @@
     .foot-grid { grid-template-columns: 1fr 1fr; }
   }
   @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }
+
+  /* mission */
+  .mission { background: var(--ink); color: #fff; text-align: center; }
+  :root:not([data-theme="light"]) .mission, :root[data-theme="dark"] .mission { background: #050D0B; }
+  .mission .eyebrow { justify-content: center; color: var(--accent); }
+  .mission .eyebrow::before { background: var(--accent); }
+  .mission h2 { max-width: 22ch; margin: 0 auto; color: #fff; }
+  :root:not([data-theme="light"]) .mission h2, :root[data-theme="dark"] .mission h2 { color: var(--ink); }
+  .mission h2 em { font-style: normal; color: var(--accent); }
+  .mission p { margin: 22px auto 0; max-width: 58ch; color: rgba(255,255,255,.72); }
+  :root:not([data-theme="light"]) .mission p, :root[data-theme="dark"] .mission p { color: var(--muted); }
+
+  /* voice technology */
+  .vt-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-top: 42px; }
+  .vt { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 24px; }
+  .vt .ico { width: 42px; height: 42px; border-radius: 11px; background: var(--accent-soft); color: var(--accent); display: grid; place-items: center; font-family: var(--mono); font-size: 14px; font-weight: 700; margin-bottom: 16px; letter-spacing: .02em; }
+  .vt h3 { font-size: 17px; margin-bottom: 8px; }
+  .vt p { font-size: 14px; color: var(--muted); }
+
+  /* comparison */
+  .cmp { border-block: 1px solid var(--line); background: var(--surface); }
+  .cmp-table { margin-top: 40px; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+  .cmp-row { display: grid; grid-template-columns: 1.7fr 1fr 1fr; }
+  .cmp-row + .cmp-row { border-top: 1px solid var(--line); }
+  .cmp-row > div { padding: 15px 20px; display: flex; align-items: center; gap: 10px; font-size: 15px; }
+  .cmp-row .feat { color: var(--ink); }
+  .cmp-row .col { justify-content: center; text-align: center; border-left: 1px solid var(--line); font-size: 14px; }
+  .cmp-head { background: var(--surface-2); }
+  .cmp-head > div { font-family: var(--mono); font-size: 11.5px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+  .cmp-head .tri { color: var(--accent); }
+  .cmp .yes { color: var(--accent); font-weight: 700; } .cmp .no { color: var(--faint); }
+  .cmp-row.em .col:last-child { background: var(--accent-soft); }
+
+  /* press */
+  .press .wrap { display: grid; grid-template-columns: 0.75fr 1.25fr; gap: clamp(24px, 4vw, 56px); align-items: center; }
+  .press blockquote { margin: 0; font-family: var(--display); font-weight: 500; font-size: clamp(19px, 2.3vw, 26px); line-height: 1.36; letter-spacing: -0.015em; }
+  .press .cite { margin-top: 18px; font-family: var(--mono); font-size: 12.5px; color: var(--muted); }
+  .press .cite a { color: var(--accent); }
+
+  /* values */
+  .val-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; margin-top: 40px; }
+  .val { background: var(--surface); padding: 28px 26px; }
+  .val .idx { font-family: var(--mono); font-size: 12px; color: var(--accent); letter-spacing: .1em; }
+  .val h3 { font-size: 18px; margin: 8px 0; } .val p { font-size: 14.5px; color: var(--muted); }
+
+  /* contact */
+  .contact { background: var(--surface); border-block: 1px solid var(--line); }
+  .contact .wrap { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(24px, 4vw, 56px); align-items: start; }
+  .contact .addr strong { color: var(--ink); font-weight: 600; font-family: var(--display); font-size: 19px; display: block; margin-bottom: 8px; letter-spacing: -0.01em; }
+  .contact .addr p { font-size: 15px; color: var(--muted); }
+  .contact-links { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .cl { border: 1px solid var(--line); border-radius: 12px; padding: 18px; display: block; }
+  .cl:hover { border-color: var(--accent); }
+  .cl .t { font-family: var(--mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--faint); }
+  .cl .v { font-size: 15px; color: var(--ink); margin-top: 6px; }
+  .cl:hover .v { color: var(--accent); }
+
+  @media (max-width: 900px) {
+    .vt-grid { grid-template-columns: 1fr 1fr; }
+    .val-grid, .press .wrap, .contact .wrap, .contact-links { grid-template-columns: 1fr; }
+    .cmp-head { display: none; }
+    .cmp-row { grid-template-columns: 1fr; }
+    .cmp-row .col { justify-content: space-between; border-left: 0; border-top: 1px dashed var(--line); }
+    .cmp-row .col::before { content: attr(data-label); font-family: var(--mono); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--faint); }
+    .cmp-row.em .col:last-child { background: var(--accent-soft); }
+  }
 </style>
 
 <header class="nav">
@@ -388,6 +454,15 @@
     </div>
   </section>
 
+  <!-- MISSION -->
+  <section class="mission">
+    <div class="wrap">
+      <p class="eyebrow">Our mission</p>
+      <h2>No high-stakes conversation should ever be dropped, delayed, or <em>mishandled</em> again.</h2>
+      <p>Not for the customer waiting on hold at 2am, not for the business losing revenue to a missed call, and not for the team drowning in work only a person used to be able to do. We're here to make end-to-end resolution the standard — at any scale, in any industry where the conversation truly matters.</p>
+    </div>
+  </section>
+
   <!-- HOW IT WORKS -->
   <section class="how" id="how">
     <div class="wrap">
@@ -401,6 +476,48 @@
         <div class="step"><span class="n">02</span><h3>Connect</h3><p>Reaches into live systems — CRM, practice management, payments, calendars.</p><span class="arrow" aria-hidden="true">→</span></div>
         <div class="step"><span class="n">03</span><h3>Act</h3><p>Takes real action in real time — books, takes payment, updates the case.</p><span class="arrow" aria-hidden="true">→</span></div>
         <div class="step"><span class="n">04</span><h3>Follow through</h3><p>Closes the loop across channels, with a full audit trail on every interaction.</p><span class="arrow" aria-hidden="true">→</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VOICE TECHNOLOGY -->
+  <section id="technology">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">The technology</p>
+        <h2>Voice good enough that people forget it isn't a person.</h2>
+        <p class="sub">Resolution only works if callers actually engage. So we obsess over the parts of a conversation most platforms skip — how it sounds, how fast it responds, and what it does when the call needs to move.</p>
+      </div>
+      <div class="vt-grid">
+        <div class="vt"><div class="ico" aria-hidden="true">~</div><h3>Human-like voice</h3><p>Natural intonation, pauses, fillers, and self-corrections — so callers talk to it like a person instead of hanging up.</p></div>
+        <div class="vt"><div class="ico" aria-hidden="true">2s</div><h3>Real-time latency</h3><p>Engineered for sub-two-second responses on live phone calls, so there's no awkward gap that gives the game away.</p></div>
+        <div class="vt"><div class="ico" aria-hidden="true">4×</div><h3>Truly multi-channel</h3><p>Voice, SMS, WhatsApp, Messenger, and email — orchestrated together from one trigger, not stitched together after the fact.</p></div>
+        <div class="vt"><div class="ico" aria-hidden="true">↻</div><h3>Callback intelligence</h3><p>Schedules callbacks, retries unanswered calls at smarter intervals, and shifts to text when that's the better path forward.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPARISON -->
+  <section class="cmp">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">Why it's different</p>
+        <h2>A voice bot talks. Trillet finishes the job.</h2>
+        <p class="sub">The difference between deflecting a call and actually resolving it — without a person stepping in.</p>
+      </div>
+      <div class="cmp-table" role="table" aria-label="Trillet compared with a generic voice bot">
+        <div class="cmp-row cmp-head" role="row">
+          <div class="feat" role="columnheader">Capability</div>
+          <div class="col" role="columnheader">Generic voice bot</div>
+          <div class="col tri" role="columnheader">Trillet</div>
+        </div>
+        <div class="cmp-row em"><div class="feat">Holds a natural conversation</div><div class="col" data-label="Generic voice bot"><span class="yes">✓</span></div><div class="col" data-label="Trillet"><span class="yes">✓</span></div></div>
+        <div class="cmp-row em"><div class="feat">Verifies caller identity to compliance standards</div><div class="col" data-label="Generic voice bot"><span class="no">—</span></div><div class="col" data-label="Trillet"><span class="yes">✓</span></div></div>
+        <div class="cmp-row em"><div class="feat">Acts inside live systems (CRM, payments, calendars)</div><div class="col" data-label="Generic voice bot"><span class="no">—</span></div><div class="col" data-label="Trillet"><span class="yes">✓</span></div></div>
+        <div class="cmp-row em"><div class="feat">Voice, SMS, chat &amp; email from one trigger</div><div class="col" data-label="Generic voice bot"><span class="no">—</span></div><div class="col" data-label="Trillet"><span class="yes">✓</span></div></div>
+        <div class="cmp-row em"><div class="feat">Full audit trail on every interaction</div><div class="col" data-label="Generic voice bot"><span class="no">—</span></div><div class="col" data-label="Trillet"><span class="yes">✓</span></div></div>
+        <div class="cmp-row em"><div class="feat">Built for regulated industries (HIPAA, SOC 2, ISO 27001)</div><div class="col" data-label="Generic voice bot"><span class="no">—</span></div><div class="col" data-label="Trillet"><span class="yes">✓</span></div></div>
+        <div class="cmp-row em"><div class="feat">On-prem, private cloud &amp; AU data residency</div><div class="col" data-label="Generic voice bot"><span class="no">—</span></div><div class="col" data-label="Trillet"><span class="yes">✓</span></div></div>
       </div>
     </div>
   </section>
@@ -456,6 +573,20 @@
     </div>
   </section>
 
+  <!-- PRESS -->
+  <section class="press">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">In the press</p>
+        <h2>What we're saying.</h2>
+      </div>
+      <div>
+        <blockquote>"Sales teams today are stretched thin, and many opportunities are lost simply because follow-ups fall through the cracks. Our voice agents act as an always-on assistant — persistence without pressure, and personalisation without additional manpower."</blockquote>
+        <p class="cite">Laurence Latin, Co-Founder &amp; CTO — on the launch of Trillet's Smart Voice Agents, September 2025. <a href="#">Read the announcement →</a></p>
+      </div>
+    </div>
+  </section>
+
   <!-- SECURITY -->
   <section id="security">
     <div class="wrap">
@@ -477,6 +608,22 @@
         <span class="chip"><b>TCPA</b></span>
         <span class="chip"><b>ACMA</b></span>
         <span class="chip"><b>AU</b> data residency</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUES -->
+  <section>
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">How we work</p>
+        <h2>The principles we don't compromise on.</h2>
+      </div>
+      <div class="val-grid">
+        <div class="val"><span class="idx">01</span><h3>Resolution, not conversation.</h3><p>Talking is easy. We measure ourselves on calls actually resolved — verified, actioned, and closed — not minutes spent on the phone.</p></div>
+        <div class="val"><span class="idx">02</span><h3>Compliance is a feature, not a footnote.</h3><p>We build for regulated, high-stakes industries first, so security and auditability live in the foundation — never bolted on later.</p></div>
+        <div class="val"><span class="idx">03</span><h3>Real systems, real actions.</h3><p>An answer that can't do anything isn't an answer. Trillet connects to the systems where the work actually happens.</p></div>
+        <div class="val"><span class="idx">04</span><h3>Earn trust on the hardest calls.</h3><p>We prove ourselves where it's most exposed — the sensitive, regulated, high-value conversations others won't automate.</p></div>
       </div>
     </div>
   </section>
@@ -562,6 +709,24 @@
           <summary>Who is behind Trillet, and where are you based?<span class="plus" aria-hidden="true">+</span></summary>
           <p>Trillet was founded in Melbourne, Australia in 2024 by Laurence Latin (CTO) and Ming Xu (COO), and is led by CEO Rob Petreski. We're proudly Australian and globally operated.</p>
         </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="addr">
+        <p class="eyebrow">Come say hello</p>
+        <strong>Trillet HQ</strong>
+        <p>The Commons Cremorne<br />10–20 Gwynne St, Cremorne<br />Melbourne VIC 3121, Australia</p>
+        <p style="margin-top:14px;">Proudly Australian, globally operated.</p>
+      </div>
+      <div class="contact-links">
+        <a class="cl" href="#cta"><span class="t">Sales</span><span class="v">Book a demo →</span></a>
+        <a class="cl" href="#"><span class="t">Support</span><span class="v">Help &amp; docs →</span></a>
+        <a class="cl" href="#"><span class="t">Partnerships</span><span class="v">Become a partner →</span></a>
+        <a class="cl" href="#"><span class="t">Careers</span><span class="v">Join the team →</span></a>
       </div>
     </div>
   </section>
