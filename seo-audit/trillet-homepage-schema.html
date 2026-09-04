@@ -1,0 +1,92 @@
+<!-- Trillet homepage structured data. Place both blocks in <head>.
+     Replace every REPLACE_... value before shipping. Use straight quotes only. -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://trillet.ai/#organization",
+      "name": "Trillet",
+      "url": "https://trillet.ai/",
+      "logo": "https://trillet.ai/REPLACE-logo.png",
+      "sameAs": [
+        "https://www.linkedin.com/company/REPLACE",
+        "https://www.youtube.com/@REPLACE"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "url": "https://trillet.ai/contact"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://trillet.ai/#website",
+      "url": "https://trillet.ai/",
+      "name": "Trillet",
+      "publisher": { "@id": "https://trillet.ai/#organization" },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://trillet.ai/search?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://trillet.ai/#software",
+      "name": "Trillet",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "url": "https://trillet.ai/",
+      "description": "Voice AI agents for high-stakes conversations. Verify identity, take action in your live systems, and keep every call on the audit trail. Across voice, SMS and chat.",
+      "publisher": { "@id": "https://trillet.ai/#organization" },
+      "offers": {
+        "@type": "Offer",
+        "price": "49",
+        "priceCurrency": "USD",
+        "description": "Small-business plan, per month"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.6",
+        "reviewCount": "REPLACE_TRUSTPILOT_REVIEW_COUNT",
+        "bestRating": "5"
+      }
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "What is an AI voice agent?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A voice AI agent answers the phone, understands what the caller needs, and takes action. It books, verifies and resolves calls without menus or scripts." } },
+    { "@type": "Question", "name": "How do AI voice agents work?",
+      "acceptedAnswer": { "@type": "Answer", "text": "They combine speech recognition, a language model and text-to-speech to understand and reply in real time, and connect to your systems to complete tasks on the call." } },
+    { "@type": "Question", "name": "How are they different from a traditional IVR?",
+      "acceptedAnswer": { "@type": "Answer", "text": "An IVR routes you through a menu. A voice AI agent listens, answers follow-up questions, and completes the request itself." } },
+    { "@type": "Question", "name": "Is Trillet HIPAA and SOC 2 compliant?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. HIPAA, SOC 2 Type II, ISO 27001, GDPR, TCPA and ACMA, on every plan, not only enterprise." } },
+    { "@type": "Question", "name": "Can Trillet book appointments and take payments?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Agents book and reschedule appointments and set up payments and payment plans in your live systems during the call." } },
+    { "@type": "Question", "name": "Does it integrate with my CRM?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Trillet connects to your telephony, CRM, practice-management, payment and calendar tools, and reads and writes in real time." } },
+    { "@type": "Question", "name": "Can I keep my existing phone number?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Trillet forwards your calls with no number porting, so you keep your existing number." } },
+    { "@type": "Question", "name": "How fast can I go live?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Build an agent by scanning your website and go live in minutes. Small-business plans start from 49 USD per month." } },
+    { "@type": "Question", "name": "Can I white-label and resell Trillet?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Agencies run Trillet under their own brand in isolated workspaces, and keep the margin." } },
+    { "@type": "Question", "name": "Where is my data stored?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Recordings, transcripts and backups can be held in Australia, with in-country LLM hosting and on-premise or private-cloud deployment available." } }
+  ]
+}
+</script>
