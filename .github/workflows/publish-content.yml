@@ -1,0 +1,55 @@
+name: Publish content to WordPress
+
+# Publishes Pages (content/pages/*.yml) and Posts (content/posts/*.md) to
+# WordPress over the REST API whenever content changes on the production branch.
+# This is the DATABASE side of publishing — the companion to deploy.yml, which
+# handles the theme/template FILES.
+#
+# Required GitHub secrets:
+#   WP_URL           https://jsonformatterpro.com
+#   WP_USER          a WordPress user with editor/admin rights
+#   WP_APP_PASSWORD  an Application Password (wp-admin -> Users -> Profile)
+
+on:
+  push:
+    branches:
+      - main   # <-- match your production branch
+    paths:
+      - 'content/**'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: Preview changes without publishing
+        type: boolean
+        default: false
+
+concurrency:
+  group: publish-content-production
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Publish content
+        env:
+          WP_URL: ${{ secrets.WP_URL }}
+          WP_USER: ${{ secrets.WP_USER }}
+          WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
+        run: |
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            python scripts/publish_content.py --dry-run
+          else
+            python scripts/publish_content.py
+          fi

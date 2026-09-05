@@ -145,6 +145,43 @@ approve.
 
 ---
 
+## Publishing content (Pages & blog posts) — the database side
+
+Because this is WordPress + ACF, the *code* pipeline above deploys the theme
+templates, but the *content* on each page (the ACF `description`, the FAQ, and
+blog posts) lives in the MySQL database. That content is version-controlled as
+files under `content/` and published via the REST API. See
+[`content/README.md`](../content/README.md) for the file formats.
+
+**One-time setup:**
+
+1. In wp-admin → **Users → Profile → Application Passwords**, create one for a
+   user with editor/admin rights. Copy the generated password.
+2. Add three more GitHub Actions secrets:
+
+   | Secret name        | Value                                   |
+   |--------------------|-----------------------------------------|
+   | `WP_URL`           | `https://jsonformatterpro.com`          |
+   | `WP_USER`          | that WordPress username                 |
+   | `WP_APP_PASSWORD`  | the Application Password from step 1     |
+
+3. In **ACF → Field Groups**, make sure the fields used by templates
+   (`description`, `faq_list`, …) have **"Show in REST API"** enabled, so the
+   script can write them.
+
+**Then:** editing anything under `content/` and merging to the production branch
+runs `.github/workflows/publish-content.yml`, which creates/updates the matching
+Page or Post. You can preview first with the workflow's **dry-run** option, or
+locally:
+
+```bash
+python scripts/publish_content.py --check     # verify URL + auth
+python scripts/publish_content.py --dry-run   # preview, publish nothing
+```
+
+> New tool = **both** pipelines: add the `*.php` template (code, deploy.yml) and
+> a `content/pages/*.yml` file (content, publish-content.yml).
+
 ## Safety notes
 
 - **`--delete` is off by default** in `deploy.yml`, so files on the server that

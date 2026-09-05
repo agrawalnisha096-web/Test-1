@@ -1,0 +1,39 @@
+# A WordPress PAGE, defined as a file and published via scripts/publish_content.py.
+#
+# This mirrors the ACF content consumed by the theme template graphqlformatter.php:
+#   - get_field('description')  -> the `description` field below
+#   - have_rows('faq_list')     -> the `faq_list` repeater below (question/answer)
+#
+# Matching is by `slug`: if a page with this slug exists it is UPDATED, else CREATED.
+#
+# ⚠️  SAFE-BY-DEFAULT EXAMPLE. This uses a demo slug and `draft` status so the
+#     first pipeline run cannot overwrite your real live page. Once you've
+#     imported the site and confirmed the real page's slug and content, change
+#     `slug` to the real one (e.g. graphql-formatter) and `status` to publish.
+
+title: GraphQL Formatter (example)
+slug: example-graphql-formatter
+status: draft                   # publish | draft | pending | private
+template: graphqlformatter.php  # theme template file (must already be deployed)
+
+# ACF fields. Requires "Show in REST API" enabled on these fields (ACF 6+).
+acf:
+  description: >
+    <p>Paste a GraphQL query, mutation, or schema and instantly format or minify
+    it in your browser. Nothing is uploaded — all processing happens client-side.</p>
+
+  # Repeater: each item becomes one FAQ entry. Sub-field names must match the
+  # theme (`question`, `answer`).
+  faq_list:
+    - question: Is my GraphQL sent to a server?
+      answer: <p>No. Formatting and minifying happen entirely in your browser.</p>
+    - question: Does it support queries, mutations, and schemas?
+      answer: <p>Yes — it handles GraphQL queries, mutations, and SDL type schemas.</p>
+    - question: What does Minify do?
+      answer: <p>It strips comments and collapses whitespace to produce the smallest valid output.</p>
+
+# Optional SEO meta. Only writable if the meta keys are registered for REST
+# (e.g. via Yoast/Rank Math REST support). Safe to remove if unused.
+# meta:
+#   _yoast_wpseo_title: "GraphQL Formatter — Free Online Tool | JSON Formatter Pro"
+#   _yoast_wpseo_metadesc: "Format, beautify, and minify GraphQL queries, mutations, and schemas online. Free and private."
