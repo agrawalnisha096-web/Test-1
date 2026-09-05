@@ -1,0 +1,31 @@
+# Files/dirs rsync should NOT push to (or pull from) Hostinger.
+# Used by both deploy.yml and import-from-hostinger.yml.
+# Paths are relative to the repo root / remote root.
+
+# Repo & CI machinery - never belongs on the live server
+.git/
+.github/
+.gitignore
+deploy-exclude.txt
+
+# Project docs / notes - not part of the running site
+docs/
+seo-audit/
+*.md
+
+# Secrets & local config - the server keeps its own copy
+.env
+.env.*
+!.env.example
+
+# Dependencies that are built/installed on the server side (uncomment if used)
+# vendor/
+node_modules/
+
+# Server-owned runtime data you don't want to overwrite or vacuum up on import
+# (adjust these to match your actual site once you see its structure)
+uploads/
+wp-content/uploads/
+*.log
+cache/
+tmp/

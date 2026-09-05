@@ -1,0 +1,31 @@
+# Secrets & environment config — NEVER commit these
+.env
+.env.*
+!.env.example
+wp-config.php
+config.php
+config.local.php
+*.pem
+*.key
+id_rsa
+id_ed25519
+
+# Dependencies
+node_modules/
+# vendor/            # uncomment if you install Composer deps on the server
+
+# Build / cache / runtime artefacts
+cache/
+tmp/
+*.log
+
+# User-generated content (lives on the server, not in Git)
+uploads/
+wp-content/uploads/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
