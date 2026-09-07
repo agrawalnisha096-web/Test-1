@@ -232,6 +232,22 @@
   .card .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 16px; }
   .tag { font-family: var(--mono); font-size: 11px; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 4px 10px; }
 
+  /* combined leadership + why-we-exist */
+  .ldr-intro { max-width: 66ch; margin-bottom: clamp(34px, 5vw, 52px); }
+  .ldr-intro p { margin-top: 18px; color: var(--muted); }
+  .ldr-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .ldr { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 26px; box-shadow: var(--shadow); display: flex; flex-direction: column; }
+  .ldr-top { display: flex; align-items: center; gap: 14px; }
+  .ldr-top .name { font-family: var(--display); font-weight: 600; font-size: 19px; letter-spacing: -0.01em; }
+  .ldr-top .role { font-family: var(--mono); font-size: 12px; color: var(--accent); margin-top: 3px; }
+  .vantage { font-family: var(--mono); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--faint); margin-top: 22px; }
+  .perspective { font-family: var(--display); font-weight: 500; font-size: 16.5px; line-height: 1.36; letter-spacing: -0.01em; margin-top: 8px; color: var(--ink); }
+  .ldr .bio { font-size: 14px; color: var(--muted); margin-top: 14px; }
+  .ldr .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; padding-top: 18px; }
+  .story-close { margin-top: clamp(34px, 5vw, 52px); max-width: 70ch; }
+  .story-close p { font-family: var(--display); font-weight: 500; font-size: clamp(20px, 2.5vw, 27px); line-height: 1.3; letter-spacing: -0.015em; }
+  .story-close em { font-style: normal; color: var(--accent); }
+
   /* press */
   .press .wrap { display: grid; grid-template-columns: 0.75fr 1.25fr; gap: clamp(24px, 4vw, 56px); align-items: center; }
   .press blockquote { margin: 0; font-family: var(--display); font-weight: 500; font-size: clamp(19px, 2.3vw, 26px); line-height: 1.36; letter-spacing: -0.015em; }
@@ -294,7 +310,7 @@
       <a href="#how">Platform</a>
       <a href="#security">Security</a>
       <a href="#industries">Industries</a>
-      <a href="#team">Leadership</a>
+      <a href="#story">Leadership</a>
     </nav>
     <div class="nav-actions">
       <button class="toggle" id="themeToggle" type="button" aria-label="Switch colour theme">Theme</button>
@@ -494,35 +510,44 @@
     </div>
   </section>
 
-  <!-- STORY -->
+  <!-- WHY WE EXIST + LEADERSHIP (combined) -->
   <section id="story">
     <div class="wrap">
-      <div class="story-head">
-        <p class="eyebrow">Why we exist</p>
+      <div class="ldr-intro">
+        <p class="eyebrow">Why we exist &amp; who's behind it</p>
         <h2>Founded by people who have run, engineered, and scaled these conversations.</h2>
-        <p>Trillet was not built in a lab. Its founders had each spent years inside high-stakes conversations — from three distinct vantage points — and independently reached the same conclusion: the available technology fell short precisely where the stakes were highest.</p>
+        <p>Trillet was not built in a lab. Its founders had each spent years inside high-stakes conversations — from three distinct vantage points — and independently reached the same conclusion: the available technology fell short precisely where the stakes were highest. Today they lead the company.</p>
       </div>
-      <div class="triptych">
-        <article class="lens">
-          <span class="num">The operator</span>
-          <h3>Two decades running the front line.</h3>
-          <span class="who">Rob Petreski · CEO</span>
-          <p>More than 20 years leading national contact-centre and customer-operations teams across legal, government, and enterprise — where he saw every prior generation of automation fail the moment a conversation became consequential.</p>
-          <p class="view">He defined where the bar had to be set.</p>
+      <div class="ldr-grid">
+        <article class="ldr">
+          <div class="ldr-top">
+            <div class="avatar" aria-hidden="true">RP</div>
+            <div><div class="name">Rob Petreski</div><div class="role">Chief Executive Officer</div></div>
+          </div>
+          <div class="vantage">The operator</div>
+          <p class="perspective">Two decades running the front line — where every prior generation of automation failed the moment a conversation became consequential.</p>
+          <p class="bio">More than 20 years across operations, customer experience, and growth — including leading a national law-firm contact centre through a full remote transition and building a benchmark local-government service operation to record satisfaction over 11 years. Previously held COO and Chief Customer Officer roles, and founded a fractional-operations practice.</p>
+          <div class="tags"><span class="tag">Operations</span><span class="tag">Contact centres</span><span class="tag">Enterprise CX</span></div>
         </article>
-        <article class="lens">
-          <span class="num">The engineer</span>
-          <h3>Fifteen years of mission-critical systems.</h3>
-          <span class="who">Laurence Latin · Co-Founder &amp; CTO</span>
-          <p>A background building security-sensitive software — including for healthcare, where partial reliability is unacceptable — and a clear understanding of what it takes to authenticate identity and act safely within a live business system.</p>
-          <p class="view">He knew how to make it withstand scrutiny.</p>
+        <article class="ldr">
+          <div class="ldr-top">
+            <div class="avatar" aria-hidden="true">LL</div>
+            <div><div class="name">Laurence Latin</div><div class="role">Co-Founder &amp; CTO</div></div>
+          </div>
+          <div class="vantage">The engineer</div>
+          <p class="perspective">Fifteen years of mission-critical systems, and a clear view of what it takes to authenticate identity and act safely inside a live system.</p>
+          <p class="bio">Leads the engineering and research behind Trillet's platform — the voice technology, enterprise integrations, and the security and performance tuning regulated deployments demand. Background includes Head of Software at a healthcare SaaS company and infrastructure leadership at a global IT services firm. Based in Melbourne.</p>
+          <div class="tags"><span class="tag">Voice platform</span><span class="tag">Healthcare SaaS</span><span class="tag">Security</span></div>
         </article>
-        <article class="lens">
-          <span class="num">The builder</span>
-          <h3>Voice AI, scaled commercially.</h3>
-          <span class="who">Ming Xu · Co-Founder &amp; COO</span>
-          <p>Having grown a voice-AI consultancy to seven-figure revenue as an early partner of a leading voice platform, he had seen both the technology's potential and the precise points at which it let enterprises down.</p>
-          <p class="view">He knew what was possible — and what was not yet.</p>
+        <article class="ldr">
+          <div class="ldr-top">
+            <div class="avatar" aria-hidden="true">MX</div>
+            <div><div class="name">Ming Xu</div><div class="role">Co-Founder &amp; COO</div></div>
+          </div>
+          <div class="vantage">The builder</div>
+          <p class="perspective">Voice AI scaled commercially — with a first-hand view of the technology's potential and the precise points where it let enterprises down.</p>
+          <p class="bio">Leads operations and scaling. Ming came to Trillet from the commercial front line of voice AI, having grown a consultancy to seven-figure revenue before exiting. Earlier, he led technology at a capital-markets firm and founded several companies. Dual degrees in Civil Engineering and Psychology, and a first career in infrastructure engineering, inform a broad operator's toolkit. Based in Melbourne.</p>
+          <div class="tags"><span class="tag">Voice AI</span><span class="tag">Operations</span><span class="tag">Scaling</span></div>
         </article>
       </div>
       <div class="story-close">
@@ -566,38 +591,8 @@
     </div>
   </section>
 
-  <!-- TEAM -->
-  <section class="surface" id="team">
-    <div class="wrap">
-      <div class="head"><p class="eyebrow">Leadership</p><h2>The people accountable for Trillet.</h2></div>
-      <div class="team-grid">
-        <article class="card">
-          <div class="avatar" aria-hidden="true">RP</div>
-          <div class="name">Rob Petreski</div>
-          <div class="role">Chief Executive Officer</div>
-          <p class="bio">More than 20 years across operations, customer experience, and growth — including leading a national law-firm contact centre through a full remote transition and building a benchmark local-government service operation to record satisfaction over 11 years. Previously held COO and Chief Customer Officer roles, and founded a fractional-operations practice.</p>
-          <div class="tags"><span class="tag">Operations</span><span class="tag">Contact centres</span><span class="tag">Enterprise CX</span></div>
-        </article>
-        <article class="card">
-          <div class="avatar" aria-hidden="true">LL</div>
-          <div class="name">Laurence Latin</div>
-          <div class="role">Co-Founder &amp; CTO</div>
-          <p class="bio">Leads the engineering and research behind Trillet's platform — the voice technology, enterprise integrations, and the security and performance tuning regulated deployments demand. Fifteen years across mission-critical systems, including Head of Software at a healthcare SaaS company and infrastructure leadership at a global IT services firm. Based in Melbourne.</p>
-          <div class="tags"><span class="tag">Voice platform</span><span class="tag">Healthcare SaaS</span><span class="tag">Security</span></div>
-        </article>
-        <article class="card">
-          <div class="avatar" aria-hidden="true">MX</div>
-          <div class="name">Ming Xu</div>
-          <div class="role">Co-Founder &amp; COO</div>
-          <p class="bio">Leads operations and scaling. Ming came to Trillet from the commercial front line of voice AI, having grown a consultancy to seven-figure revenue before exiting. Earlier, he led technology at a capital-markets firm and founded several companies. Dual degrees in Civil Engineering and Psychology, and a first career in infrastructure engineering, inform a broad operator's toolkit. Based in Melbourne.</p>
-          <div class="tags"><span class="tag">Voice AI</span><span class="tag">Operations</span><span class="tag">Scaling</span></div>
-        </article>
-      </div>
-    </div>
-  </section>
-
   <!-- PRESS -->
-  <section class="press">
+  <section class="press surface">
     <div class="wrap">
       <div><p class="eyebrow">In the press</p><h2>What we're saying.</h2></div>
       <div>
@@ -608,7 +603,7 @@
   </section>
 
   <!-- FAQ -->
-  <section class="surface" id="faq">
+  <section id="faq">
     <div class="wrap">
       <div class="head"><p class="eyebrow">Buyer questions</p><h2>What enterprise teams ask us first.</h2></div>
       <div class="faq-list">
@@ -645,7 +640,7 @@
   </section>
 
   <!-- CONTACT -->
-  <section id="contact">
+  <section class="surface" id="contact">
     <div class="wrap">
       <div class="split" style="align-items:start;">
         <div class="addr">
@@ -665,7 +660,7 @@
   </section>
 
   <!-- CTA -->
-  <section class="cta surface" id="cta">
+  <section class="cta" id="cta">
     <div class="wrap">
       <p class="eyebrow center">Let's talk</p>
       <h2>Bring us your hardest conversations.</h2>
@@ -687,7 +682,7 @@
       </div>
       <div class="foot-col"><h4>Industries</h4><a href="#industries">Financial services</a><a href="#industries">Healthcare</a><a href="#industries">Legal</a><a href="#industries">Government &amp; utilities</a></div>
       <div class="foot-col"><h4>Platform</h4><a href="#how">How it works</a><a href="#security">Security &amp; compliance</a><a href="#technology">Technology</a><a href="#faq">FAQ</a></div>
-      <div class="foot-col"><h4>Company</h4><a href="#story">Why we exist</a><a href="#team">Leadership</a><a href="#industries">Customers</a><a href="#contact">Contact</a></div>
+      <div class="foot-col"><h4>Company</h4><a href="#story">Why we exist</a><a href="#story">Leadership</a><a href="#industries">Customers</a><a href="#contact">Contact</a></div>
     </div>
     <div class="foot-bar"><span>© 2026 Trillet · Cremorne, Melbourne VIC, Australia</span><span>Voice · SMS · Chat · Email</span></div>
   </div>
