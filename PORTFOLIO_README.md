@@ -20,12 +20,11 @@ from first-person singular to plural (I / me / my → we / us / our).
 - **Section dividers** — Social Media Marketing, Paid Ads, SEM, More Channels,
   and Creative.
 
-## Note on contact details
+## Contact
 
-The contact block still shows the original website, email, and phone
-(`www.aakashpareek.in`, `akashpareek000@gmail.com`) because the underlying data
-was kept unchanged. Update these to Crown's own website / email / phone before
-sharing the deck.
+The personal contact block (website / email / phone) has been removed from both
+the cover and the closing slide. The closing slide now ends on a call to action.
+Add Crown's own contact details when ready.
 
 ## How to edit it
 
