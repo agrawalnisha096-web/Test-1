@@ -1,99 +1,70 @@
-# Pricing Guide — Software Development Services for a Client in India
+# Creative Design Pricing Breakup — Real Estate Developer (Mumbai)
 
 **Prepared:** September 2026
-**Scope:** Real, sourced market rates for pricing software development / IT services. All figures below come from published 2025–2026 market rate cards and salary surveys — nothing here is assumed or invented. Sources are listed at the end.
+**Client type:** Real estate developer, Mumbai
+**Basis:** Real, sourced 2026 India market rates for creative/graphic design. Figures are market benchmarks, not a fixed quote — final numbers depend on complexity, revisions, and turnaround. Sources at the end.
 
-> **Important — read first.** "A client *in* India" is ambiguous, and it changes the numbers a lot. There are two very different markets:
->
-> 1. **Domestic Indian client** — the buyer is an Indian company paying Indian market rates, usually quoted in **INR**. Rates are lower.
-> 2. **Offshore/export client** — a US/UK/EU client buying Indian dev services, quoted in **USD/hour**. Rates are higher (this is the "outsourcing" market).
->
-> Both are covered below. **Confirm which one applies before you send a number.** If your client is an Indian business, use the INR domestic section. If you're an Indian vendor quoting a foreign buyer, use the offshore USD section.
+> **A note on Mumbai / real estate:** metro cities (Mumbai, Delhi, Bengaluru) sit at the **higher end** of every range below, because agencies there carry more experienced designers and real-estate clients expect premium, high-polish visuals. Where a range is given, budget toward the upper half for a Mumbai real-estate brand.
+
+> **Design vs. print/media:** all prices below are **design/creative charges only** unless stated. Printing (flex/vinyl), hoarding *media rental*, fabrication, and installation are separate line items and are usually far larger than the design fee. These are called out where relevant.
 
 ---
 
-## 1. Offshore / Export Pricing (USD per hour)
+## Pricing Breakup
 
-This is the rate an Indian agency or freelancer charges an overseas client. It's the most widely published benchmark.
+| # | Deliverable | Design charge (INR) | Notes |
+|---|---|---|---|
+| 1 | **8-page brochure** | **₹16,000–₹40,000** | Real-estate brochure design benchmarks ~₹2,000/page (=₹16,000 for 8 pp); Mumbai/real-estate polish pushes toward ₹30k–40k. Excludes printing and 3D renders. |
+| 2 | **Hoarding designs** (per creative) | **₹5,000–₹25,000 each** (premium up to ₹50,000) | Design only. Does **not** include hoarding media rental (prime Mumbai sites run ₹2–8 lakh/month) or printing. |
+| 3 | **Site branding** (site office, wall, sales office) | **₹25,000–₹1,00,000+** (package) | Scope-driven: it's a set of multiple large-format creatives + application to surfaces. Fabrication, vinyl/flex print, and installation are separate and typically the bigger cost. Needs an itemized element list to firm up. |
+| 4 | **Logo design + animation** | **Logo ₹15,000–₹75,000** + **animation ₹5,000–₹25,000** | Professional custom logo ₹10k–50k; premium branding-level ₹50k–1L+. Animated version for reels/intros adds on top. |
+| 5 | **Static Instagram posts** | **₹800–₹2,500 per post**, or **₹15,000–₹35,000/month** (retainer) | Per-post for one-offs; monthly retainer (typically 15–25 assets) is cheaper per unit and the norm for an ongoing page. |
 
-| Seniority | Experience | Hourly rate (USD) |
-|---|---|---|
-| Junior | 0–3 yrs | **$15–$25/hr** |
-| Mid-level | 3–7 yrs | **$25–$45/hr** |
-| Senior | 7+ yrs | **$45–$65/hr** (up to $80 at premium firms) |
-| Tech lead / architect | — | **$50–$75/hr** |
-| AI/ML / senior DevOps specialist | — | **$45–$85/hr** |
+### Indicative total (design/creative only)
+- **One-time build** (brochure + logo & animation + a few hoardings + site-branding package): roughly **₹80,000 – ₹2,50,000+**, depending mainly on the site-branding scope and number of hoarding creatives.
+- **Instagram** is best kept as a separate **monthly retainer** (~₹15k–35k/month), not a one-time fee.
 
-- **Overall market range:** ~$15–$65/hr depending on experience, stack, and vendor maturity.
-- **Mid-level ($25–$45/hr) is the sweet spot** — best cost-to-output ratio and the most commonly requested profile for outsourced work.
-- India offers roughly **50–70% cost savings** vs. US/UK hiring (US equivalents run $90k–$150k/yr).
-- **Watch the "loaded cost":** the true cost of offshore work is estimated at **1.4–1.8× the sticker rate** once onboarding, management overhead, and attrition are priced in. Don't quote at the floor if you need margin.
-
-## 2. Domestic Indian Client Pricing (INR)
-
-If the client is an Indian company, benchmark against local developer salaries — that's what sets their expectations. Monthly full-time salary by experience:
-
-| Level | Experience | Monthly salary (INR) |
-|---|---|---|
-| Fresher | 0–1 yr | ₹30,000–₹60,000 (IT services ~₹35,000) |
-| Junior | ~2 yrs | ₹57,500–₹64,000 |
-| Mid-level | 3–5 yrs | ₹70,000–₹1,50,000 |
-| Senior | 5+ yrs | ₹80,000–₹88,000 (IT services); ₹2,00,000+ at product companies |
-
-> **Key nuance:** the *type of company* (IT-services vs. product vs. GCC vs. AI-first) affects pay more than years of experience. Freshers at IT-services firms start ₹3.5–5 LPA; product companies pay ₹12–22 LPA for the same profile.
-
-**Turning salary into a billable rate:** for a services engagement, agencies typically bill a client **2–3× the loaded salary cost** to cover overhead, bench, management, and margin. So a mid-level dev on ₹1,00,000/month salary is often billed to a domestic client at roughly **₹2,00,000–₹3,00,000/month**.
-
-## 3. Dedicated Team / Monthly Retainer
-
-For an ongoing full-time-equivalent developer (offshore engagement):
-
-| Model | Cost |
-|---|---|
-| Single offshore developer | **$2,500–$5,500/month** (range $1,300–$6,500+ by seniority) |
-| Senior developer (FTE) | **~$6,200–$9,700/month** ($35–$55/hr) |
-| 5-person team | **$12,000–$20,000/month** |
-
-## 4. Fixed-Price Projects
-
-Best when scope is well defined. Indian-built projects run **60–70% below** US pricing.
-
-| Project type | Cost (India) |
-|---|---|
-| Simple web-app MVP | from **₹50,000** (~$600+) |
-| Startup mobile MVP | **₹75,000–₹3,00,000** (~$1,000–$4,000); global MVP benchmark $15,000–$50,000, India ~$5,000–$20,000 |
-| Business web app + CRM | **₹1,00,000–₹2,00,000** |
-| Full app (simple → enterprise) | **₹9.5 lakh–₹2.85 crore+** (~$10,000–$300,000+) |
+> Add printing, flex/vinyl, fabrication, and installation as separate line items — those are production costs, not design.
 
 ---
 
-## Recommendation (how to actually quote)
+## ⭐ Immediate: Ganesh Chaturthi Banner — 12 ft × 8 ft (needed tomorrow)
 
-1. **Confirm the market first** — domestic Indian buyer (INR) or overseas buyer (USD). This is the single biggest factor.
-2. **Default to mid-level as the anchor** — $25–$45/hr offshore, or ₹2–3 lakh/month billed domestically. It's what most clients expect and where margin is healthiest.
-3. **Pick a model by scope clarity:**
-   - Scope unclear / evolving → **hourly (time & materials)**.
-   - Scope fixed and documented → **fixed project fee**.
-   - Ongoing product work → **monthly dedicated-team retainer**.
-4. **Don't quote at the floor.** Build in the 1.4–1.8× loaded-cost reality so you're not underwater on overhead and attrition.
-5. **Blend the team** to hit a target blended rate — e.g. 1 senior + 2 mid + 1 junior lands around a $30–$40/hr blended offshore rate while keeping quality oversight.
+**Size:** 12 × 8 = **96 sq ft**. Rush / next-day work normally carries a **+25–50% premium**.
 
-> These are market benchmarks, not a specific quote. A precise number depends on the exact scope, stack, timeline, and engagement model — none of which were specified for this client. Narrow those down and any of the ranges above collapses to a concrete figure.
+| Component | Rate | For 96 sq ft (this banner) |
+|---|---|---|
+| **Design** (custom, from scratch) | ₹2,200–₹6,500 | **₹3,000–₹9,000** incl. rush premium |
+| **Flex printing** (star/eco-solvent flex) | ₹8–₹30 / sq ft | **₹770–₹2,880** |
+| **Installation** (ground-floor wall mount) | ₹800–₹2,200 | ₹800–₹2,200 (high-rise/scaffolding is far more) |
+| **Delivered total** (design + print + install) | — | **≈ ₹4,600 – ₹14,000** |
+| **Design only** (if you print elsewhere) | — | **₹3,000 – ₹9,000** (rush) |
+
+**Practical tips for a next-day banner:**
+- Provide the **exact resolution 12×8 ft artboard** (at least 72–100 dpi at full size) so the printer gets a print-ready file.
+- Lock the **copy, deities/imagery, developer logo, and RERA/legal line** tonight — revisions are what blow a next-day deadline.
+- Confirm whether you need **design-only** (₹3k–9k) or **design + print + install** (₹4.6k–14k) — this is the single biggest cost swing.
+
+---
+
+## On samples / portfolio
+
+I'm an AI assistant, not a design studio — I have **no past-client portfolio** and won't present fabricated real-estate samples as my own work. What I *can* do instead, right now, is **draft the Ganesh Chaturthi banner as an editable concept** (a 12×8-ratio mockup with the festival visual, your developer's logo placeholder, and copy) so you have something concrete to react to before you brief a designer or printer. Say the word and I'll create it.
+
+When you brief an actual designer/studio, ask **them** for a real-estate portfolio (hoardings, brochures, site branding) — that's the right place to judge samples.
 
 ---
 
 ## Sources
 
-- [Software Development Rates in India 2026 — Acquaint Softtech](https://acquaintsoft.com/blog/software-development-rates-india)
-- [Dedicated Development Team Pricing 2026 — Acquaint Softtech](https://acquaintsoft.com/blog/dedicated-development-team-pricing)
-- [Hire Developers in India 2026: Rates & Costs — Dotsquares](https://www.dotsquares.com/press-and-events/tech/hire-developers-cost-india)
-- [India Software Developer Hourly Rate 2026 — Supersourcing](https://supersourcing.com/blog/india-software-developer-hourly-rate/)
-- [Offshore Software Development Rates by Country 2026 — Qubit Labs](https://qubit-labs.com/average-hourly-rates-offshore-development-services-software-development-costs-guide/)
-- [Offshore Software Development Rates in India 2026 — TechVinta](https://techvinta.com/blog/offshore-software-development-rates-india-2026)
-- [Cost to Hire Dedicated Developers in India 2026 — InnovationM](https://www.innovationm.com/blog/cost-to-hire-dedicated-developers-in-india/)
-- [Software Developer Salary in India 2026 — Futurense](https://futurense.com/blog/software-developer-salary-in-india)
-- [Software Engineer Salary in India 2026 — Instahyre](https://resources.instahyre.com/blog/software-engineer-salary-in-india/)
-- [Software Developer Salary in India — Agilemania](https://agilemania.com/salary-of-software-developer-in-india)
-- [App Development Cost in India 2026 — SolGuruz](https://solguruz.com/blog/app-development-cost-in-india/)
-- [Web Application Development Cost India 2026 — PS Digitise](https://psdigitise.com/blogs/web-app-cost-india)
-- [MVP Development Cost in 2026 — Moveo Apps](https://www.moveoapps.com/blog/mvp-development-cost/)
+- [Real Estate Brochure Designing Service — IndiaMART (₹2,000/page)](https://www.indiamart.com/proddetail/real-estate-brochure-designing-service-26507445748.html)
+- [Brochure Design Cost in India 2026 — brochuredesigncost.co.in](https://brochuredesigncost.co.in/)
+- [Hoarding Design Cost in India 2026 — Shubh India Adworks](https://www.shubindiaadworks.com/blog/hoarding-design-cost-india-complete-guide)
+- [Hoarding Advertising Cost in India 2026 — BookMyMedia](https://www.bookmymedia.in/blog/hoarding-advertising-cost-india)
+- [Logo Design Cost in India 2026 — Pacewalk](https://pacewalk.com/blog/logo-design-cost-india)
+- [Logo Design Cost in India 2026 — Makers Design Studio](https://makersdesignstudio.com/logo-design-cost-in-india/)
+- [Social Media Post Design Price in India — Diginexhub](https://diginexhub.com/social-media-post-design-price-in-india/)
+- [Social Media Marketing Cost in India 2026 — Upgrowth](https://upgrowth.in/social-media-management-pricing/)
+- [Flex Printing in India: Cost Per Sq Ft — Impulse Branding](https://impulsebranding.in/blogs/flex-printing-in-india/)
+- [Outdoor Flex Banner Price India 2026 (per sq ft) — BRS Signs](https://brssiigns.co.in/outdoor-flex-banner-price-india-2026-per-sqft/)
+- [Flex Banner Printing Rs 5.25/sq ft, Mumbai — IndiaMART](https://www.indiamart.com/proddetail/flex-banner-printing-rs-5-25-per-sq-ft-20158513512.html)
