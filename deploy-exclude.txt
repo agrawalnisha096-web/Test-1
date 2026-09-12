@@ -1,31 +1,38 @@
 # Files/dirs rsync should NOT push to (or pull from) Hostinger.
 # Used by both deploy.yml and import-from-hostinger.yml.
+# Everything NOT listed here is treated as part of the live site and deployed.
 # Paths are relative to the repo root / remote root.
 
-# Repo & CI machinery - never belongs on the live server
+# --- Repo & CI machinery (never belongs on the live server) ---
 .git/
 .github/
 .gitignore
+.gitattributes
 deploy-exclude.txt
 
-# Project docs / notes - not part of the running site
+# --- Project docs / notes (not part of the running site) ---
 docs/
 seo-audit/
 *.md
 
-# Secrets & local config - the server keeps its own copy
+# --- Content pipeline tooling (publishes via REST, not via files) ---
+content/
+scripts/
+.env.example
+
+# --- Secrets & local config (server keeps its own copy) ---
 .env
 .env.*
 !.env.example
+wp-config.php
 
-# Dependencies that are built/installed on the server side (uncomment if used)
+# --- Dependencies built/installed on the server (uncomment if used) ---
 # vendor/
 node_modules/
 
-# Server-owned runtime data you don't want to overwrite or vacuum up on import
-# (adjust these to match your actual site once you see its structure)
-uploads/
+# --- Server-owned runtime data: don't overwrite or vacuum up on import ---
 wp-content/uploads/
+uploads/
 *.log
 cache/
 tmp/
