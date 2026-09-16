@@ -1,0 +1,350 @@
+<title>Cluster Atlas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+:root{
+  --bg:#F5F6F8; --surface:#FFFFFF; --surface2:#EEF1F4; --ink:#16223C; --ink2:#3A4658; --muted:#697588;
+  --line:#DCE1E8; --accent:#9A6B3F; --navy:#16223C;
+  --heat0:#EEF2F5; --heat:#1E6E86; --trillet:#B4442E; --good:#2E7D5B; --warn:#B7791F; --dim:#8A94A3;
+  --serif:'Fraunces',Georgia,serif; --sans:'IBM Plex Sans',system-ui,sans-serif; --mono:'IBM Plex Mono',ui-monospace,monospace;
+}
+:root:not([data-theme="light"]){ @media (prefers-color-scheme:dark){
+  --bg:#0F131A; --surface:#161C25; --surface2:#1E2530; --ink:#EAEEF3; --ink2:#C2CAD6; --muted:#8B97A7;
+  --line:#2A323E; --accent:#C89466; --navy:#0B0E13;
+  --heat0:#1A2530; --heat:#5AB4D0; --trillet:#E8735C; --good:#5FB98C; --warn:#D9A441; --dim:#6B7686;
+}}
+:root[data-theme="dark"]{
+  --bg:#0F131A; --surface:#161C25; --surface2:#1E2530; --ink:#EAEEF3; --ink2:#C2CAD6; --muted:#8B97A7;
+  --line:#2A323E; --accent:#C89466; --navy:#0B0E13;
+  --heat0:#1A2530; --heat:#5AB4D0; --trillet:#E8735C; --good:#5FB98C; --warn:#D9A441; --dim:#6B7686;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.55;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1120px;margin:0 auto;padding-block:0 64px;padding-left:20px;padding-right:20px}
+h1,h2,h3{font-family:var(--serif);font-weight:600;text-wrap:balance;line-height:1.15;margin:0}
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);font-weight:600}
+p{margin:0}
+a{color:inherit}
+/* header */
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top .row{max-width:1120px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;gap:14px}
+.top .brand{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.top .sp{flex:1}
+.tbtn{font-family:var(--mono);font-size:12px;border:1px solid var(--line);background:var(--surface);color:var(--ink2);border-radius:8px;padding:7px 12px;cursor:pointer}
+.tbtn:hover{border-color:var(--accent);color:var(--ink)}
+.tbtn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+/* hero */
+.hero{padding:48px 0 20px;border-bottom:1px solid var(--line)}
+.hero h1{font-size:clamp(32px,5vw,52px);letter-spacing:-.01em}
+.hero .sub{color:var(--ink2);font-size:clamp(15px,1.6vw,18px);max-width:60ch;margin-top:16px}
+.hero .meta{margin-top:18px;font-family:var(--mono);font-size:12px;color:var(--muted);display:flex;gap:18px;flex-wrap:wrap}
+/* metrics */
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:28px 0}
+@media(max-width:640px){.metrics{grid-template-columns:repeat(2,1fr)}}
+.metric{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+.metric .n{font-family:var(--serif);font-size:30px;font-weight:600;color:var(--navy);font-variant-numeric:tabular-nums}
+:root[data-theme="dark"] .metric .n,:root:not([data-theme="light"]) .metric .n{color:var(--ink)}
+.metric .l{font-size:12.5px;color:var(--muted);margin-top:2px}
+/* section */
+section{margin-top:52px}
+.shead{display:flex;align-items:baseline;gap:14px;margin-bottom:6px}
+.shead h2{font-size:clamp(22px,2.6vw,30px)}
+.snum{font-family:var(--mono);font-size:13px;color:var(--accent);font-weight:600}
+.lead{color:var(--ink2);max-width:70ch;margin:10px 0 22px;font-size:15.5px}
+/* grid */
+.gridwrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+table.grid{border-collapse:collapse;width:100%;min-width:900px;font-variant-numeric:tabular-nums}
+table.grid th,table.grid td{text-align:center;padding:0;border-bottom:1px solid var(--line);border-right:1px solid var(--line)}
+table.grid thead th{position:sticky;top:0;background:var(--surface2);font-family:var(--mono);font-size:10.5px;font-weight:600;letter-spacing:.02em;color:var(--ink2);padding:10px 6px;vertical-align:bottom;z-index:2}
+table.grid thead th.cl{text-align:left;padding-left:14px;min-width:220px}
+table.grid thead th.tr{color:var(--trillet)}
+table.grid td.cl{text-align:left;font-family:var(--sans);font-weight:600;font-size:13.5px;color:var(--ink);padding:11px 14px;cursor:pointer;white-space:nowrap}
+table.grid td.cl .fn{display:block;font-family:var(--mono);font-size:10px;color:var(--muted);font-weight:500;letter-spacing:.03em;margin-top:2px}
+table.grid td.cl:hover{color:var(--accent)}
+table.grid td.val{font-family:var(--mono);font-size:12.5px;font-weight:500;color:var(--ink);width:62px;height:42px;position:relative}
+table.grid td.val.tr{box-shadow:inset 0 0 0 2px var(--trillet)}
+table.grid td.val .p1{display:block;font-size:9px;color:var(--muted);font-weight:400;line-height:1}
+.cxp{cursor:pointer}
+.cxp .caret{display:inline-block;width:12px;color:var(--muted);transition:transform .15s}
+tr.open .caret{transform:rotate(90deg)}
+/* drill row */
+tr.detail td{border-right:0;background:var(--surface2);padding:0}
+.panel{padding:20px 22px;display:grid;grid-template-columns:1.3fr 1fr;gap:26px}
+@media(max-width:720px){.panel{grid-template-columns:1fr;gap:16px}}
+.panel h3{font-size:19px;margin-bottom:6px}
+.panel .rate{font-family:var(--mono);font-size:11px;font-weight:600;padding:2px 8px;border-radius:20px;display:inline-block;margin-bottom:8px}
+.rate.dev{background:color-mix(in srgb,var(--warn) 16%,transparent);color:var(--warn)}
+.rate.lim{background:color-mix(in srgb,var(--dim) 20%,transparent);color:var(--muted)}
+.rate.abs{background:color-mix(in srgb,var(--trillet) 15%,transparent);color:var(--trillet)}
+.rate.str{background:color-mix(in srgb,var(--good) 16%,transparent);color:var(--good)}
+.panel p{font-size:14px;color:var(--ink2);margin-bottom:12px}
+.kv{font-family:var(--mono);font-size:12px;color:var(--muted);margin-bottom:14px;line-height:1.9}
+.kv b{color:var(--ink);font-weight:600}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
+.chip{font-family:var(--mono);font-size:11px;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:4px 8px;color:var(--ink2)}
+.mini{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:8px}
+.leaders .lr{display:flex;align-items:center;gap:8px;margin-bottom:7px;font-size:12.5px}
+.leaders .bar{height:8px;border-radius:4px;background:var(--heat)}
+.leaders .nm{font-family:var(--mono);font-size:11.5px;width:96px;flex:none;color:var(--ink2)}
+.leaders .nm.tr{color:var(--trillet);font-weight:600}
+.leaders .vv{font-family:var(--mono);font-size:11px;color:var(--muted);width:34px;text-align:right;flex:none}
+.legend{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:14px 2px 0;font-family:var(--mono);font-size:11px;color:var(--muted)}
+.legend .ramp{height:10px;width:120px;border-radius:5px;background:linear-gradient(90deg,var(--heat0),var(--heat))}
+.toggle{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;font-family:var(--mono);font-size:11.5px}
+.toggle button{background:var(--surface);color:var(--muted);border:0;padding:6px 12px;cursor:pointer}
+.toggle button[a-sel]{background:var(--navy);color:#fff}
+:root[data-theme="dark"] .toggle button[a-sel],:root:not([data-theme="light"]) .toggle button[a-sel]{background:var(--accent);color:#12161c}
+/* cards */
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:720px){.cards{grid-template-columns:1fr}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px}
+.card h3{font-size:16px;font-family:var(--sans);font-weight:600;margin-bottom:8px}
+.card ul{margin:0;padding-left:18px}
+.card li{font-size:13.5px;color:var(--ink2);margin-bottom:7px}
+.card li b{color:var(--ink);font-weight:600}
+/* architecture svg */
+.diagram{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px;overflow-x:auto}
+.figcap{font-size:12px;color:var(--muted);text-align:center;margin-top:10px;font-style:italic}
+/* priorities */
+ol.pri{counter-reset:p;list-style:none;padding:0;margin:0;display:grid;gap:12px}
+ol.pri li{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 18px 16px 56px;position:relative}
+ol.pri li::before{counter-increment:p;content:counter(p);position:absolute;left:16px;top:16px;font-family:var(--serif);font-size:22px;font-weight:600;color:var(--accent)}
+ol.pri b{font-size:15px}
+ol.pri p{font-size:13.5px;color:var(--ink2);margin-top:3px}
+.foot{margin-top:56px;padding-top:20px;border-top:1px solid var(--line);font-family:var(--mono);font-size:11.5px;color:var(--muted);line-height:1.9}
+</style>
+
+<header class="top"><div class="row">
+  <span class="brand">Trillet · SEO</span><span class="sp"></span>
+  <button class="tbtn" id="themebtn" aria-label="Toggle theme">◐ Theme</button>
+</div></header>
+
+<div class="wrap">
+  <div class="hero">
+    <div class="eyebrow">Topical cluster architecture</div>
+    <h1>Cluster Atlas</h1>
+    <p class="sub">How trillet.ai's content is organised into topical clusters, how each cluster is placed against direct competitors, and where the coverage gaps are. Select any cluster in the grid to drill into it.</p>
+    <div class="meta"><span>488 URLs</span><span>422 posts</span><span>19 competitors</span><span>US organic data</span></div>
+  </div>
+
+  <div class="metrics">
+    <div class="metric"><div class="n">598</div><div class="l">keywords trillet.ai ranks for (US)</div></div>
+    <div class="metric"><div class="n">14,576</div><div class="l">keywords the leading competitor ranks for</div></div>
+    <div class="metric"><div class="n">10</div><div class="l">topical clusters</div></div>
+    <div class="metric"><div class="n">3</div><div class="l">of 8 pillars with a live hub</div></div>
+  </div>
+
+  <section id="grid">
+    <div class="shead"><span class="snum">01</span><h2>Competitive coverage grid</h2></div>
+    <p class="lead">Each cell is the number of keywords a site ranks for in that cluster; shading is relative to the strongest site in the row, so the leaders stand out. Trillet's column is outlined. Toggle to page-one rankings to see where visibility actually converts to position.</p>
+    <div class="legend">
+      <span>Fewer</span><span class="ramp"></span><span>More keywords</span>
+      <span style="flex:1"></span>
+      <span class="toggle"><button id="tAll" a-sel>All keywords</button><button id="tP1">Page-1 only</button></span>
+    </div>
+    <div class="gridwrap" style="margin-top:12px"><table class="grid" id="gridtable"></table></div>
+    <p class="lead" style="margin-top:12px;font-size:13px">Reading it: in <b>Answering / receptionist</b> — the core SMB market — trillet.ai ranks for 217 keywords against 1,540 (AnswerConnect), 1,186 (Smith.ai) and 974 (Ruby). In <b>Contact centre</b> and <b>Integrations</b>, coverage is near zero. The pattern is consistent: broad content, narrow ranking.</p>
+  </section>
+
+  <section id="arch">
+    <div class="shead"><span class="snum">02</span><h2>Site architecture</h2></div>
+    <p class="lead">Three product lines, each aligned to an audience, sitting over four cross-cutting clusters that serve all three. Five of the eight pillars have no live hub, so their supporting pages are not consolidated into a rankable cluster.</p>
+    <div class="diagram" id="archdiagram"></div>
+    <p class="figcap">Three product hubs over four cross-cutting hubs. Dashed outline = hub missing or not consolidated.</p>
+  </section>
+
+  <section id="gaps">
+    <div class="shead"><span class="snum">03</span><h2>Gaps</h2></div>
+    <p class="lead">Two kinds: structural (hubs that would consolidate existing pages) and content (subjects with little or no coverage).</p>
+    <div class="cards">
+      <div class="card"><h3>Structural</h3><ul>
+        <li><b>/security hub</b> — absent (404). Compliance is the core differentiator and has no page that owns it.</li>
+        <li><b>/compare hub</b> — absent (404). ~70 comparison pages are unindexed by a hub.</li>
+        <li><b>/enterprise hub</b> — redirects; solution pages are not consolidated.</li>
+        <li><b>Per-pillar hubs</b> — agency, industry, integrations and resources lack hubs.</li>
+        <li><b>Vertical-page / blog overlap</b> — /receptionist/industries pages and vertical blog posts target the same terms.</li>
+        <li><b>Cross-cluster links</b> — the three product lines link to one another weakly.</li>
+      </ul></div>
+      <div class="card"><h3>Content</h3><ul>
+        <li><b>Missing verticals</b> — banking, salon &amp; beauty, e-commerce, education.</li>
+        <li><b>Integrations breadth</b> — beyond GoHighLevel: CRM, calendar, automation, telephony.</li>
+        <li><b>Deployment cluster</b> — on-premise, hybrid and data residency are uncollected.</li>
+        <li><b>Educational concepts</b> — category education (customer-service automation, AI phone systems).</li>
+        <li><b>Case studies</b> — none present on the site.</li>
+        <li><b>Partnership education</b> — thin content above the partner-program pages.</li>
+      </ul></div>
+    </div>
+  </section>
+
+  <section id="pri">
+    <div class="shead"><span class="snum">04</span><h2>Prioritisation</h2></div>
+    <p class="lead">Sequenced by structural leverage and by alignment with existing demand.</p>
+    <ol class="pri">
+      <li><b>Build the compliance and comparison hubs.</b><p>Both subjects are unhoused; the compliance hub owns a core differentiator, the comparison hub consolidates the largest existing cluster.</p></li>
+      <li><b>Consolidate the SMB receptionist cluster.</b><p>Largest demand and the clearest striking-distance opportunity; resolve the vertical-page and blog overlap.</p></li>
+      <li><b>Establish an enterprise hub.</b><p>Consolidate the solution pages and add the deployment cluster.</p></li>
+      <li><b>Add hubs and consolidate white-label.</b><p>Agency, industry, integrations and partnership hubs; reduce comparison duplication.</p></li>
+      <li><b>Fill content gaps and wire cross-cluster links.</b><p>Missing verticals, integrations, educational content and case studies; connect the three product lines.</p></li>
+    </ol>
+  </section>
+
+  <div class="foot">
+    Sources — URL inventory: live XML sitemap (488 URLs). Performance: 16 months of Search Console data for trillet.ai. Competitor keywords: Semrush organic positions for 19 competitors and trillet.ai, US market.<br>
+    Scope — keyword figures reflect the United States market; Australian and United Kingdom coverage recommended for a subsequent pass. Completeness ratings combine page count, hub presence, intent coverage and current ranking position.
+  </div>
+</div>
+
+<script>
+const PLAYERS=[["trillet","trillet.ai","tr"],["answerconnect","AnswerConnect","smb"],["smith","Smith.ai","smb"],["ruby","Ruby","smb"],["myaifrontdesk","MyAIFrontDesk","smb"],["nexa","Nexa","smb"],["getaira","AIRA","smb"],["autocalls","Autocalls","wl"],["synthflow","Synthflow","wl"],["stammer","Stammer","wl"],["retellai","Retell","dev"],["bland","Bland","dev"],["cognigy","Cognigy","ent"]];
+// [n,p1] per cluster per player, in PLAYERS order
+const M={
+ answ:[[217,67],[1540,884],[1186,386],[974,553],[1105,92],[891,298],[700,218],[81,5],[131,46],[5,1],[467,193],[424,182],[1,0]],
+ voice:[[49,4],[0,0],[78,15],[0,0],[149,9],[0,0],[8,2],[171,37],[361,156],[25,2],[694,412],[306,181],[245,116]],
+ wl:[[30,2],[1,1],[44,2],[3,1],[139,6],[10,6],[14,2],[19,2],[56,16],[72,22],[15,4],[6,0],[17,3]],
+ out:[[9,0],[196,75],[594,34],[44,16],[376,10],[95,7],[20,5],[95,8],[81,43],[2,0],[229,115],[81,35],[6,1]],
+ cc:[[1,0],[204,60],[246,14],[20,3],[273,7],[202,33],[8,0],[41,2],[259,24],[1,0],[434,130],[292,95],[71,25]],
+ comp:[[7,2],[0,0],[10,1],[9,1],[42,0],[47,3],[0,0],[0,0],[6,1],[0,0],[36,8],[40,18],[3,2]],
+ intg:[[2,0],[32,2],[733,42],[3,1],[368,14],[0,0],[1,0],[23,0],[12,1],[3,2],[54,20],[59,28],[13,2]],
+ price:[[13,4],[9,2],[390,18],[15,2],[58,4],[88,37],[215,8],[12,1],[49,18],[30,0],[116,39],[43,29],[7,4]],
+ ind:[[0,0],[2,0],[154,5],[7,2],[41,5],[14,5],[2,1],[0,0],[0,0],[2,0],[24,14],[23,7],[49,23]],
+ dev:[[9,0],[2,0],[13,0],[0,0],[12,1],[0,0],[0,0],[3,0],[9,3],[158,0],[31,9],[16,11],[3,0]],
+};
+const CL=[
+ {k:"answ",name:"Answering / receptionist",fn:"SMB core",rate:["Developing","dev"],pages:"/receptionist + 41 vertical pages + ~107 posts",
+  def:"The core SMB market: businesses looking for an AI or virtual receptionist and answering service, including vertical and after-hours variants.",
+  micro:["virtual receptionist","answering service for [vertical]","after-hours","bilingual","cost & pricing"],
+  gap:"Trillet ranks for roughly one-seventh of the category leader. Several terms sit in striking distance (answering-service cost and pricing at positions 11-17). Vertical pages and vertical blog posts overlap."},
+ {k:"voice",name:"Voice AI (general)",fn:"cross-funnel",rate:["Limited","lim"],pages:"scattered across blogs",
+  def:"Broad voice-AI and AI-agent terminology. Part of this space is genuine demand; part is generic AI vocabulary owned by developer and platform players.",
+  micro:["voice agent","ai phone agent","conversational ai","ai call"],
+  gap:"Developer platforms (Retell, Synthflow, Bland) and horizontal AI tools lead. Trillet's footprint is small; pursue the receptionist-adjacent subset, not the generic head terms."},
+ {k:"wl",name:"White-label / agency",fn:"Agency line",rate:["Developing","dev"],pages:"/whitelabel + 178 posts",
+  def:"Agencies reselling a branded voice-AI platform: platform, pricing, reseller programs and agency growth.",
+  micro:["white-label platform","reseller programs","agency growth","partnerships"],
+  gap:"Trillet's deepest content area but a small ranking footprint (30 keywords). The hub ranks on page three for non-brand terms; supporting pages are not consolidated into it."},
+ {k:"out",name:"Outbound / lead-gen",fn:"cross-funnel",rate:["Limited","lim"],pages:"few posts",
+  def:"Outbound calling, appointment setting, lead qualification and follow-up.",
+  micro:["outbound calling","appointment setting","call scripts","lead qualification"],
+  gap:"Smith.ai, MyAIFrontDesk and Retell lead heavily. Trillet ranks for 9 keywords. An adjacent, winnable area for the SMB and agency lines."},
+ {k:"cc",name:"Contact centre / enterprise",fn:"Enterprise line",rate:["Absent","abs"],pages:"6 solution pages",
+  def:"Contact-centre and CCaaS automation, enterprise voice AI and large-scale call handling.",
+  micro:["ai call center","contact center ai","enterprise voice ai","after-hours call center"],
+  gap:"Near-absent for Trillet (1 keyword). Retell, Bland and Synthflow lead; Cognigy competes on true enterprise terms. Requires a consolidated enterprise hub."},
+ {k:"comp",name:"Compliance / security",fn:"cross-funnel",rate:["Limited","lim"],pages:"~13 posts, no hub",
+  def:"HIPAA, SOC 2, GDPR, TCPA, BAAs and data residency — the subject area Trillet is differentiated on.",
+  micro:["hipaa compliant answering","soc 2 / baa","data residency","regulation"],
+  gap:"Trillet's stated differentiator, yet a 7-keyword footprint and no /security hub. Bland, Retell and Prosper publish the compliance round-ups that rank. Low difficulty; high strategic fit."},
+ {k:"intg",name:"Integrations",fn:"Agency & enterprise",rate:["Limited","lim"],pages:"GHL-heavy",
+  def:"Connecting voice AI to the tools businesses run: CRM, calendar, billing, automation, telephony.",
+  micro:["GoHighLevel","CRM / Salesforce","calendar","telephony / PBX"],
+  gap:"Smith.ai (733) and MyAIFrontDesk (368) lead; Trillet ranks for 2. GoHighLevel aside, integration coverage is absent, and there is no integrations directory."},
+ {k:"price",name:"Pricing / cost",fn:"cross-funnel",rate:["Developing","dev"],pages:"several posts",
+  def:"Cost, pricing and value-comparison queries across receptionist and platform buyers.",
+  micro:["answering service cost","receptionist pricing","cost comparison","ROI"],
+  gap:"AIRA and Smith.ai lead. Trillet has 13 keywords but several sit in striking distance; the pricing content exists and needs snippet and internal-link support."},
+ {k:"ind",name:"Industry / vertical",fn:"cross-funnel",rate:["Absent","abs"],pages:"41 receptionist verticals + blogs",
+  def:"Business-facing vertical queries: 'ai receptionist for [industry]', 'call center for [profession]'.",
+  micro:["health & medical","trades & home services","professional (legal, finance)","hospitality"],
+  gap:"Trillet's vertical pages are framed for agencies and do not capture the business-facing vertical terms competitors rank for. A business-facing angle and missing verticals are the opportunity."},
+ {k:"dev",name:"Developer / API",fn:"Developer line",rate:["Limited","lim"],pages:"few posts",
+  def:"API, SDK, self-hosting, latency and agent-building queries — the developer audience.",
+  micro:["voice ai api","self-hosting","latency","agent frameworks"],
+  gap:"Vapi, Vellum and Stammer own this space. Largely outside Trillet's go-to-market; not a priority beyond a small API-requirements set."},
+];
+let MODE=0; // 0 all, 1 page1
+const rate2cls={"dev":"dev","lim":"lim","abs":"abs","str":"str"};
+function heat(v,max){ if(v<=0) return "var(--heat0)"; const t=Math.sqrt(v)/Math.sqrt(max); return `color-mix(in srgb, var(--heat) ${Math.round(t*100)}%, var(--heat0))`; }
+function textcol(v,max){ const t=Math.sqrt(v)/Math.sqrt(max); return t>0.55?"#fff":"var(--ink)"; }
+function buildGrid(){
+  const t=document.getElementById('gridtable');
+  let h="<thead><tr><th class='cl'>Cluster</th>";
+  PLAYERS.forEach(p=>h+=`<th class='${p[2]==='tr'?'tr':''}'>${p[1]}</th>`);
+  h+="</tr></thead><tbody>";
+  CL.forEach((c,ci)=>{
+    const row=M[c.k];
+    const max=Math.max(...row.map(x=>x[MODE]));
+    h+=`<tr class='cxp' data-k='${c.k}' data-i='${ci}'><td class='cl' onclick='toggle(${ci})'><span class='caret'>▸</span> ${c.name}<span class='fn'>${c.fn}</span></td>`;
+    row.forEach((x,pi)=>{
+      const v=x[MODE]; const isTr=PLAYERS[pi][2]==='tr';
+      h+=`<td class='val ${isTr?'tr':''}' style='background:${heat(v,max)};color:${isTr?'':textcol(v,max)}'>${v}${MODE===0?`<span class='p1'>${x[1]} pg1</span>`:''}</td>`;
+    });
+    h+="</tr>";
+    h+=`<tr class='detail' id='d${ci}' hidden><td colspan='${PLAYERS.length+1}'>${panel(c,ci)}</td></tr>`;
+  });
+  h+="</tbody>";
+  t.innerHTML=h;
+}
+function panel(c,ci){
+  const row=M[c.k];
+  // leaders by all-keywords
+  const ranked=PLAYERS.map((p,i)=>[p[1],row[i][0],p[2]==='tr']).sort((a,b)=>b[1]-a[1]).slice(0,6);
+  const mx=Math.max(...ranked.map(r=>r[1]))||1;
+  const tr=row[0];
+  let lead=ranked.map(r=>`<div class='lr'><span class='nm ${r[2]?'tr':''}'>${r[0]}</span><span class='bar' style='width:${Math.max(4,Math.round(r[1]/mx*150))}px;${r[2]?'background:var(--trillet)':''}'></span><span class='vv'>${r[1]}</span></div>`).join('');
+  const rc=rate2cls[c.rate[1]];
+  return `<div class='panel'>
+    <div>
+      <span class='rate ${rc}'>${c.rate[0]}</span>
+      <h3>${c.name}</h3>
+      <p>${c.def}</p>
+      <div class='kv'>Trillet: <b>${tr[0]} keywords</b> · <b>${tr[1]} on page one</b><br>Pages: <b>${c.pages}</b></div>
+      <div class='mini'>Sub-clusters</div>
+      <div class='chips'>${c.micro.map(m=>`<span class='chip'>${m}</span>`).join('')}</div>
+      <p style='margin-bottom:0'><b style='color:var(--ink)'>Gap.</b> ${c.gap}</p>
+    </div>
+    <div>
+      <div class='mini'>Keyword coverage — leaders</div>
+      <div class='leaders'>${lead}</div>
+    </div>
+  </div>`;
+}
+function toggle(ci){
+  const d=document.getElementById('d'+ci); const tr=document.querySelectorAll('#gridtable tbody tr.cxp')[ci];
+  const willOpen=d.hidden; document.querySelectorAll('.detail').forEach(x=>x.hidden=true); document.querySelectorAll('tr.cxp').forEach(x=>x.classList.remove('open'));
+  if(willOpen){d.hidden=false;tr.classList.add('open');}
+}
+document.getElementById('tAll').onclick=()=>{MODE=0;setSel();buildGrid();};
+document.getElementById('tP1').onclick=()=>{MODE=1;setSel();buildGrid();};
+function setSel(){document.getElementById('tAll').toggleAttribute('a-sel',MODE===0);document.getElementById('tP1').toggleAttribute('a-sel',MODE===1);}
+buildGrid();
+
+// architecture diagram (SVG, theme via currentColor tokens)
+function drawArch(){
+  const el=document.getElementById('archdiagram');
+  const cs=getComputedStyle(document.documentElement);
+  const ink=cs.getPropertyValue('--ink').trim(),line=cs.getPropertyValue('--line').trim(),navy=cs.getPropertyValue('--navy').trim(),surface=cs.getPropertyValue('--surface2').trim(),accent=cs.getPropertyValue('--accent').trim(),muted=cs.getPropertyValue('--muted').trim(),trill=cs.getPropertyValue('--trillet').trim();
+  const W=900,H=360;
+  function box(x,y,w,h,fill,stroke,dash){return `<rect x='${x}' y='${y}' width='${w}' height='${h}' rx='9' fill='${fill}' stroke='${stroke}' stroke-width='1.5' ${dash?"stroke-dasharray='5 4'":''}/>`}
+  function tx(x,y,s,col,sz,wt,mono){return `<text x='${x}' y='${y}' text-anchor='middle' fill='${col}' font-family='${mono?"IBM Plex Mono, monospace":"IBM Plex Sans, sans-serif"}' font-size='${sz}' font-weight='${wt||500}'>${s}</text>`}
+  const cols=[["SMB","/receptionist","AI Receptionist",false],["AGENCY","/whitelabel","White-Label",false],["ENTERPRISE","/enterprise","Solutions",true]];
+  let s=`<svg viewBox='0 0 ${W} ${H}' width='100%' preserveAspectRatio='xMidYMid meet' role='img' aria-label='Site architecture'>`;
+  const cw=270,gap=15,x0=(W-(cw*3+gap*2))/2;
+  cols.forEach((c,i)=>{
+    const x=x0+i*(cw+gap);
+    s+=box(x,20,cw,54,navy,navy);
+    s+=tx(x+cw/2,42,c[0],accent,11,600,true)+tx(x+cw/2,63,c[2],'#fff',15,600);
+    s+=box(x,86,cw,46,surface,c[3]?trill:line,c[3]);
+    s+=tx(x+cw/2,114,c[1],c[3]?trill:ink,14,600,true);
+  });
+  // cross-cutting band
+  s+=box(x0,168,cw*3+gap*2,50,surface,line);
+  s+=tx(W/2,190,"CROSS-CUTTING HUBS",muted,10,600,true);
+  s+=tx(W/2,209,"/security   ·   /compare   ·   /platform   ·   Resources",ink,13,600,true);
+  // note row
+  s+=tx(W/2,250,"Dashed = hub missing or not consolidated  ·  /security and /compare currently return 404  ·  /enterprise redirects",muted,11,400,false);
+  s+=`</svg>`;
+  el.innerHTML=s;
+}
+drawArch();
+
+// theme
+const rootEl=document.documentElement;
+document.getElementById('themebtn').onclick=()=>{
+  const cur=rootEl.getAttribute('data-theme');
+  const next=cur==='dark'?'light':(cur==='light'?'dark':(matchMedia('(prefers-color-scheme:dark)').matches?'light':'dark'));
+  rootEl.setAttribute('data-theme',next);
+  setTimeout(drawArch,30);
+};
+matchMedia('(prefers-color-scheme:dark)').addEventListener?.('change',()=>setTimeout(drawArch,30));
+</script>
