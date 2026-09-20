@@ -1,2 +1,6 @@
 # DataForSEO audit raw API responses (debug only — not for the repo)
 seo-audit/trillet_dfs_out/raw_dump.json
+
+# Python bytecode
+__pycache__/
+*.pyc
