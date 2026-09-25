@@ -42,8 +42,17 @@ its existence with:
 ## Reconciled Trillet facts (verified to the live site, Sep 2026)
 - Usage $0.12/min (platform, STT, LLM, TTS). Telephony separate: US Trillet
   from $0.014/min; web calls no telephony fee.
-- Studio $99/mo (up to 3 workspaces, 100 min, 3 numbers). Agency $299/mo
-  (unlimited workspaces, 300 min, 10 numbers). 28-day money-back, no contracts.
+- Studio $99/mo (up to 3 workspaces, 1,000 included min, 3 numbers). Agency
+  $299/mo (unlimited workspaces, 3,000 included min, 10 numbers, own domain and
+  branded emails, set your own client rates). White-label plans: 7-day free
+  trial, no contracts, no setup fees. (The 28-day money-back guarantee belongs
+  to the $49/mo AI Receptionist, not the white-label plans.) Re-verified on
+  trillet.ai/whitelabel and /pricing, 25 Sep 2026.
+- Live CTAs: "Get started", "Try a live demo"; plan CTAs "Start Studio" /
+  "Start Agency". Proof: 4.6 on Trustpilot, 3,900+ businesses, "Proudly
+  Australian owned".
+- Design: build renders on the live v3 tokens (see the Design language
+  section of Trillet-Integration-GoHighLevel.docx), not the report palette.
 - Compliance on every plan: SOC 2 Type II, ISO 27001, HIPAA, GDPR, ACMA, TCPA,
   AU data residency; audit trails + call recordings/transcripts.
 - Carrier-level call forwarding (~30s, no number porting).
