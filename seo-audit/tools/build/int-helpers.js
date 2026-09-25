@@ -22,6 +22,10 @@ function flag(x){return new Paragraph({spacing:{after:40},children:[new TextRun(
 function shot(x){return new Table({width:{size:CW,type:WidthType.DXA},columnWidths:[CW],borders:{left:{style:BorderStyle.SINGLE,size:18,color:BRONZE},top:{style:BorderStyle.NONE},bottom:{style:BorderStyle.NONE},right:{style:BorderStyle.NONE}},
   rows:[new TableRow({children:[new TableCell({width:{size:CW,type:WidthType.DXA},shading:{type:ShadingType.CLEAR,fill:SHOT,color:"auto"},margins:{top:90,bottom:90,left:150,right:150},borders:{left:{style:BorderStyle.SINGLE,size:18,color:BRONZE},top:{style:BorderStyle.NONE},bottom:{style:BorderStyle.NONE},right:{style:BorderStyle.NONE}},
     children:[new Paragraph({spacing:{after:0,line:264},children:[new TextRun({text:"PRODUCT SHOT.  ",font:MONO,size:13,bold:true,color:BRONZE}),new TextRun({text:x,font:SANS,size:17,color:INK})]})]})]})]});}
+// design-note callout: tells the designer how a section should look, in Trillet's design language
+function dnote(x){return new Table({width:{size:CW,type:WidthType.DXA},columnWidths:[CW],borders:{left:{style:BorderStyle.SINGLE,size:18,color:NAVY},top:{style:BorderStyle.NONE},bottom:{style:BorderStyle.NONE},right:{style:BorderStyle.NONE}},
+  rows:[new TableRow({children:[new TableCell({width:{size:CW,type:WidthType.DXA},shading:{type:ShadingType.CLEAR,fill:"EDF0F6",color:"auto"},margins:{top:90,bottom:90,left:150,right:150},borders:{left:{style:BorderStyle.SINGLE,size:18,color:NAVY},top:{style:BorderStyle.NONE},bottom:{style:BorderStyle.NONE},right:{style:BorderStyle.NONE}},
+    children:[new Paragraph({spacing:{after:0,line:264},children:[new TextRun({text:"DESIGN NOTE.  ",font:MONO,size:13,bold:true,color:NAVY}),new TextRun({text:x,font:SANS,size:17,color:INK})]})]})]})]});}
 function ans(text){return new Table({width:{size:CW,type:WidthType.DXA},columnWidths:[CW],borders:{left:{style:BorderStyle.SINGLE,size:18,color:GREEN},top:{style:BorderStyle.NONE},bottom:{style:BorderStyle.NONE},right:{style:BorderStyle.NONE}},
   rows:[new TableRow({children:[new TableCell({width:{size:CW,type:WidthType.DXA},shading:{type:ShadingType.CLEAR,fill:ANS,color:"auto"},margins:{top:110,bottom:110,left:150,right:150},borders:{left:{style:BorderStyle.SINGLE,size:18,color:GREEN},top:{style:BorderStyle.NONE},bottom:{style:BorderStyle.NONE},right:{style:BorderStyle.NONE}},
     children:[new Paragraph({spacing:{after:0,line:276},children:[new TextRun({text:"The short answer. ",font:SANS,size:20,bold:true,color:NAVY}),new TextRun({text:text,font:SANS,size:20,color:INK})]})]})]})]});}
@@ -47,4 +51,4 @@ function build(outFile,children,refs){
   const doc=new Document({numbering:numbering(refs||[]),styles:{default:{document:{run:{font:SANS,size:20,color:INK}}}},sections:[{properties:{page:{margin:{top:1000,bottom:1000,left:1000,right:1000}}},children}]});
   return Packer.toBuffer(doc).then(b=>{require("fs").writeFileSync(outFile,b);console.log(outFile.split("/").pop(),"->",b.length,"bytes");});
 }
-module.exports={NAVY,INK,MUTED,BRONZE,GREEN,RED,RULE,LINK,eyebrow,H1,H2,H3,kicker,P,t,link,bullet,num,rule,meta,okline,flag,shot,ans,cta,table,spec,name,code,build};
+module.exports={NAVY,INK,MUTED,BRONZE,GREEN,RED,RULE,LINK,eyebrow,H1,H2,H3,kicker,P,t,link,bullet,num,rule,meta,okline,flag,shot,dnote,ans,cta,table,spec,name,code,build};
