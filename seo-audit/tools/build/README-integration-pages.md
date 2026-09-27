@@ -56,7 +56,9 @@ its existence with:
 - Compliance on every plan: SOC 2 Type II, ISO 27001, HIPAA, GDPR, ACMA, TCPA,
   AU data residency; audit trails + call recordings/transcripts.
 - Carrier-level call forwarding (~30s, no number porting).
-- Native integrations: GoHighLevel, Google Calendar, Cal.com, plus webhook + API.
+- Native integrations: GoHighLevel, ServiceTitan, Google Calendar, Cal.com, plus
+  webhook + API. Product facts for GoHighLevel, Google Calendar and ServiceTitan
+  come from the audited integration guides (25 Sep 2026); do not claim beyond them.
 - Do NOT invent integration features. If unsure a capability exists, keep it
   general or verify with a web search before stating it.
 
