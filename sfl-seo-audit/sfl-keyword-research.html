@@ -1,0 +1,468 @@
+<title>SFL Keyword Research</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,500..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --ground:#F4F5F2; --paper:#FFFFFF; --ink:#18202A; --ink-2:#44505E; --ink-3:#6B7684;
+  --rule:#D5D9D3; --rule-2:#E6E9E3; --accent:#23479A; --accent-soft:#E4EAF6;
+  --crit:#A52A1F; --crit-bg:#F8E4E1; --high:#9A5A00; --high-bg:#F7ECD8; --med:#44505E; --med-bg:#E9ECEF; --good:#2E6B45; --good-bg:#E1F0E6;
+  --bar:#23479A; --bar-sfl:#A52A1F;
+  --display:"Archivo","Arial Narrow",Arial,sans-serif; --body:"Source Serif 4",Georgia,"Times New Roman",serif; --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#12161B; --paper:#1A2027; --ink:#E7EAEE; --ink-2:#B9C1CB; --ink-3:#8C96A2;
+    --rule:#2E3741; --rule-2:#252D36; --accent:#8FA9E8; --accent-soft:#1F2A40;
+    --crit:#F08A7E; --crit-bg:#3A1F1C; --high:#E6B25E; --high-bg:#35291A; --med:#B9C1CB; --med-bg:#262E37; --good:#83C79C; --good-bg:#1C3024;
+    --bar:#8FA9E8; --bar-sfl:#F08A7E; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#12161B; --paper:#1A2027; --ink:#E7EAEE; --ink-2:#B9C1CB; --ink-3:#8C96A2;
+  --rule:#2E3741; --rule-2:#252D36; --accent:#8FA9E8; --accent-soft:#1F2A40;
+  --crit:#F08A7E; --crit-bg:#3A1F1C; --high:#E6B25E; --high-bg:#35291A; --med:#B9C1CB; --med-bg:#262E37; --good:#83C79C; --good-bg:#1C3024;
+  --bar:#8FA9E8; --bar-sfl:#F08A7E; color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--ground);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;padding-inline:16px;padding-block:32px 64px}
+.shell{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:230px minmax(0,1fr);gap:48px}
+nav.toc{position:sticky;top:calc(env(safe-area-inset-top,0px) + 20px);align-self:start;font-family:var(--display);font-size:14px;max-height:calc(100vh - 40px);overflow:auto}
+nav.toc p{font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:12px;color:var(--ink-3);margin:0 0 10px}
+nav.toc ol{list-style:none;margin:0;padding:0;display:grid;gap:2px;counter-reset:t}
+nav.toc a{display:block;padding:5px 8px;border-radius:4px;color:var(--ink-2);text-decoration:none}
+nav.toc a:hover,nav.toc a:focus-visible{background:var(--accent-soft);color:var(--ink);outline:none}
+main{min-width:0}
+h1,h2,h3,h4{font-family:var(--display);text-wrap:balance;line-height:1.15;margin:0}
+h1{font-size:clamp(34px,5vw,52px);font-weight:800;font-stretch:80%;letter-spacing:-.01em}
+h2{font-size:30px;font-weight:800;font-stretch:85%;padding-top:12px}
+h3{font-size:20px;font-weight:700;margin-top:28px}
+h4{font-size:16px;font-weight:700;margin-top:18px}
+section{padding-block:28px;border-top:2px solid var(--ink);margin-top:40px;scroll-margin-top:20px}
+section>h2 .sec{font-family:var(--mono);font-size:14px;font-weight:500;color:var(--accent);display:block;letter-spacing:.04em;margin-bottom:6px}
+p,li{max-width:70ch}
+p{margin:12px 0}
+ul,ol{padding-left:22px;margin:10px 0}
+li{margin:5px 0}
+a{color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+code,.mono{font-family:var(--mono);font-size:.84em}
+code{background:var(--rule-2);padding:1px 5px;border-radius:3px;overflow-wrap:anywhere}
+.lede{font-size:20px;color:var(--ink-2);max-width:62ch;margin-top:16px}
+.kicker{font-family:var(--mono);font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
+/* waybill header */
+.waybill{margin-top:28px;border:2px solid var(--ink);background:var(--paper);display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.waybill div{padding:10px 14px;border-right:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.waybill div:nth-child(4n){border-right:0}
+.waybill div:nth-last-child(-n+4){border-bottom:0}
+.waybill b{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);font-weight:500}
+.waybill span{font-family:var(--display);font-weight:700;font-size:17px}
+/* callouts */
+.note{border-left:4px solid var(--accent);background:var(--paper);padding:12px 16px;margin:18px 0;max-width:78ch}
+.note.warn{border-color:var(--high)}
+.note p{margin:6px 0}
+/* tables */
+.tw{overflow-x:auto;margin:16px 0;border:1px solid var(--rule);background:var(--paper)}
+table{border-collapse:collapse;width:100%;font-size:14.5px;font-family:var(--body)}
+th,td{padding:8px 10px;text-align:left;vertical-align:top;border-bottom:1px solid var(--rule-2)}
+th{font-family:var(--display);font-weight:700;font-size:13px;letter-spacing:.02em;background:var(--rule-2);position:sticky;top:0}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums;font-family:var(--mono);font-size:13px;white-space:nowrap}
+tr.sfl td{background:var(--crit-bg)}
+tr.sfl td:first-child{font-weight:700}
+td .sub{display:block;color:var(--ink-3);font-size:12.5px}
+.chip{display:inline-block;font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.05em;text-transform:uppercase;padding:2px 7px;border-radius:3px;white-space:nowrap}
+.c-crit{background:var(--crit-bg);color:var(--crit)}
+.c-high{background:var(--high-bg);color:var(--high)}
+.c-med{background:var(--med-bg);color:var(--med)}
+.c-good{background:var(--good-bg);color:var(--good)}
+.bad{color:var(--crit);font-weight:600}
+.ok{color:var(--good);font-weight:600}
+/* finding cards */
+.finding{background:var(--paper);border:1px solid var(--rule);padding:14px 18px;margin:14px 0;max-width:82ch}
+.finding h4{margin:0 0 6px;display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+.finding p{margin:6px 0}
+.finding .fix{font-size:15.5px;color:var(--ink-2)}
+.finding .fix b{font-family:var(--display);color:var(--ink)}
+/* bars */
+.bars{display:grid;gap:6px;margin:14px 0;max-width:720px}
+.bars .row{display:grid;grid-template-columns:120px minmax(0,1fr) 70px;gap:10px;align-items:center;font-size:14px}
+.bars .lab{font-family:var(--display);font-weight:600}
+.bars .track{height:14px;background:var(--rule-2);position:relative}
+.bars .fill{height:100%;background:var(--bar)}
+.bars .row.sfl .fill{background:var(--bar-sfl)}
+.bars .row.sfl .lab{color:var(--crit)}
+.bars .val{font-family:var(--mono);font-size:12.5px;text-align:right;font-variant-numeric:tabular-nums}
+.bars-cap{font-size:13.5px;color:var(--ink-3);margin-top:-4px}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.card{background:var(--paper);border:1px solid var(--rule);padding:14px 16px}
+.card h4{margin:0 0 4px}
+.card p{margin:6px 0;font-size:15.5px}
+.card .meta{font-family:var(--mono);font-size:12px;color:var(--ink-3)}
+footer{margin-top:48px;font-size:14px;color:var(--ink-3)}
+@media (max-width:900px){
+  .shell{grid-template-columns:minmax(0,1fr);gap:0}
+  nav.toc{position:static;max-height:none;border:1px solid var(--rule);background:var(--paper);padding:12px;margin-bottom:8px}
+  nav.toc ol{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .waybill{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .waybill div:nth-child(4n){border-right:1px solid var(--rule)}
+  .waybill div:nth-child(2n){border-right:0}
+  .waybill div:nth-last-child(-n+4){border-bottom:1px solid var(--rule)}
+  .waybill div:nth-last-child(-n+2){border-bottom:0}
+  .grid2{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:480px){
+  body{font-size:16px}
+  nav.toc ol{grid-template-columns:minmax(0,1fr)}
+  .bars .row{grid-template-columns:92px minmax(0,1fr) 58px}
+}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+html{scroll-behavior:smooth}
+</style><div class="shell">
+<nav class="toc" aria-label="Contents">
+  <p>Contents</p>
+  <ol>
+    <li><a href="#summary">Summary</a></li>
+    <li><a href="#method">Method and limits</a></li>
+    <li><a href="#universe">The keyword universe</a></li>
+    <li><a href="#corridors">Country priorities</a></li>
+    <li><a href="#clusters">Priority clusters</a></li>
+    <li><a href="#questions">Question bank</a></li>
+    <li><a href="#map">Keyword-to-page map</a></li>
+    <li><a href="#exclude">Excluded keywords</a></li>
+    <li><a href="#next">Next steps</a></li>
+  </ol>
+</nav>
+
+<main>
+<header>
+  <div class="kicker">Keyword research</div>
+  <h1>SFL Keyword Research</h1>
+  <p class="lede">What US shippers and movers search for, which of those searches SFL can serve, and which page should rank for each. It is built from real search suggestions and live search results, and mapped to SFL's current pages.</p>
+  <div class="waybill" role="list">
+    <div role="listitem"><b>Research date</b><span>28 Sep 2026</span></div>
+    <div role="listitem"><b>Market</b><span>US, English</span></div>
+    <div role="listitem"><b>Suggestion queries</b><span>863 Google · 213 Bing</span></div>
+    <div role="listitem"><b>Raw suggestions</b><span>6,956</span></div>
+    <div role="listitem"><b>In scope for SFL</b><span>3,355 keywords</span></div>
+    <div role="listitem"><b>Core fit</b><span>2,651</span></div>
+    <div role="listitem"><b>Results pages checked</b><span>52</span></div>
+    <div role="listitem"><b>Full list</b><span class="mono">keywords-sfl-universe.csv</span></div>
+  </div>
+</header>
+
+<section id="summary">
+  <h2><span class="sec">01</span>Summary</h2>
+  <p>Of the 2,651 keywords that fit SFL's core business, 2,014 map only to a broad hub page, 545 have no suitable SFL page, and 69 match pages SFL has deleted. Just 23 have a page written for that exact question. Six opportunities stand out.</p>
+  <div class="tw"><table>
+    <thead><tr><th>#</th><th>Opportunity</th><th class="n">In-scope keywords</th><th>SFL today</th><th>Move</th></tr></thead>
+    <tbody>
+      <tr><td class="n">1</td><td><b>International car shipping</b><span class="sub">"international car shipping companies", "how much does it cost to ship a car overseas", car to Nigeria, Dubai, Saudi Arabia, Europe</span></td><td class="n">686</td><td><span class="chip c-crit">Lost</span> The post that ranked #5 now returns 410; 61 keywords matched it. The only car page is domestic.</td><td>Build an international car hub plus country pages</td></tr>
+      <tr><td class="n">2</td><td><b>Carrier discounts</b><span class="sub">FedEx, DHL, UPS and USPS international rates by country</span></td><td class="n">373</td><td><span class="chip c-crit">Blocked</span> The carrier pages declare the homepage as their canonical.</td><td>Fix canonicals, then add rate tables by country</td></tr>
+      <tr><td class="n">3</td><td><b>International moving by country</b><span class="sub">moving to Dubai, UK, Canada, Nigeria, Philippines; returning to India</span></td><td class="n">709</td><td><span class="chip c-high">Gap</span> Moving pages exist for 6 countries plus India; 230 core moving keywords have no page.</td><td>Add moving pages for UAE, UK and Canada first</td></tr>
+      <tr><td class="n">4</td><td><b>India cost and sea freight</b><span class="sub">"how much does courier cost from usa to india", "by sea rates", container cost</span></td><td class="n">209 core</td><td><span class="chip c-med">Weak</span> The hub exists and ranks #3–5 on long-tail queries, but not for the main term.</td><td>Rewrite the hub around current prices; merge overlapping posts</td></tr>
+      <tr><td class="n">5</td><td><b>Cost questions for diaspora corridors</b><span class="sub">Nigeria, Philippines, Ghana, Pakistan, UAE</span></td><td class="n">277 core</td><td><span class="chip c-med">Weak</span> Pages exist but lack current prices. The Philippines page ranks #5 for a cost query.</td><td>Put dated 2026 prices on these pages and answer the question at the top</td></tr>
+      <tr><td class="n">6</td><td><b>New corridors: Sri Lanka and Bangladesh</b><span class="sub">"usa to sri lanka shipping", "cargo shipping from usa to bangladesh"</span></td><td class="n">21</td><td><span class="chip c-high">Gap</span> No pages, though both sit in SFL's South Asian customer base.</td><td>Create two country pages</td></tr>
+    </tbody>
+  </table></div>
+  <p>Two secondary markets also carry real demand: India-to-USA shipping for the <code>/en-in/</code> site (251 keywords, led by "india to usa cargo charges" and "courier cost to usa from india") and domestic auto transport and moving (389 keywords).</p>
+</section>
+
+<section id="method">
+  <h2><span class="sec">02</span>Method and limits</h2>
+  <ol>
+    <li><b>Seeds.</b> 213 seed phrases built from SFL's services and 32 destination countries: shipping, courier, cargo, moving and car shipping to each country from the USA, plus service terms such as package forwarding, freight forwarder and carrier names.</li>
+    <li><b>Expansion.</b> Each seed went to Google Autocomplete (US, English) and Bing Autosuggest. The 25 most important seeds were also run with every letter a–z appended. That made 863 Google requests and returned 6,956 unique suggestions.</li>
+    <li><b>Filtering.</b> Suggestions unrelated to shipping or moving were removed: travel, visas, tracking numbers, marketplaces such as Temu or Depop, money transfer. 6,082 relevant keywords remained.</li>
+    <li><b>Classification.</b> Each keyword was tagged by country, shipping direction, service cluster and intent, then given an SFL fit tier. Core means outbound from the US, or a generic international service SFL sells.</li>
+    <li><b>Demand signal.</b> A relative score built from how many seed queries surfaced the keyword, whether both Google and Bing suggested it, and how high it appeared in the suggestion list. <b>It isn't search volume.</b> It ranks keywords against each other. Strong is a score of 9 or more (top 3%, 103 keywords), Moderate is 4.1–9 (740), Weak is below 4.1.</li>
+    <li><b>Competition.</b> Judged from the 52 results pages collected for this project: the 40 from the competitor analysis and 12 new ones for the biggest gaps.</li>
+    <li><b>Mapping.</b> Each keyword was matched to the SFL page that should rank for it (by service and country rules), to the closest live post, and to any deleted post with a closer match.</li>
+  </ol>
+  <div class="note warn"><p><b>No search volumes.</b> This environment has no access to Google Keyword Planner, Semrush or Ahrefs, and Google Trends refused requests (429). Before committing budget, pull volume and difficulty for the priority keywords in section 7 from one of those tools. The clusters and the page map won't change much; the order within them might.</p></div>
+</section>
+
+<section id="universe">
+  <h2><span class="sec">03</span>The keyword universe</h2>
+  <div class="grid2">
+    <div class="tw"><table>
+      <thead><tr><th>Fit tier</th><th class="n">Keywords</th></tr></thead>
+      <tbody>
+        <tr><td>Core: outbound from the US, or a generic international service</td><td class="n">2,651</td></tr>
+        <tr><td>Secondary: US domestic moving and auto transport</td><td class="n">389</td></tr>
+        <tr><td>Secondary: India to USA (<code>/en-in/</code>)</td><td class="n">251</td></tr>
+        <tr><td>Secondary: from Canada (<code>/en-ca/</code>)</td><td class="n">64</td></tr>
+        <tr><td><b>In scope</b></td><td class="n"><b>3,355</b></td></tr>
+        <tr><td>Low fit (other origins, local businesses abroad)</td><td class="n">2,600</td></tr>
+        <tr><td>Out of scope (competitor brand names)</td><td class="n">127</td></tr>
+      </tbody>
+    </table></div>
+    <div class="tw"><table>
+      <thead><tr><th>Cluster (in scope)</th><th class="n">Keywords</th></tr></thead>
+      <tbody>
+        <tr><td>Parcel and courier</td><td class="n">980</td></tr>
+        <tr><td>Moving and relocation</td><td class="n">709</td></tr>
+        <tr><td>Car shipping</td><td class="n">686</td></tr>
+        <tr><td>Cost and rates</td><td class="n">461</td></tr>
+        <tr><td>Cargo and freight</td><td class="n">192</td></tr>
+        <tr><td>Specific items (TV, electronics, luggage, boxes, food)</td><td class="n">123</td></tr>
+        <tr><td>Customs and rules</td><td class="n">82</td></tr>
+        <tr><td>Package forwarding</td><td class="n">57</td></tr>
+        <tr><td>Transit time</td><td class="n">47</td></tr>
+        <tr><td>Business shipping</td><td class="n">18</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+  <p>By intent, 2,346 in-scope keywords are commercial (comparing options: "cheapest", "cost", "best"), 306 are transactional ("companies", "service", "near me", "quote"), 373 name a carrier and 330 are questions. 48 end in "near me", which points to local pages for SFL's five US offices.</p>
+
+  <h3>How the core keywords map to SFL today</h3>
+  <div class="bars" aria-label="Coverage of core keywords">
+    <div class="row"><span class="lab">Hub page only</span><span class="track"><span class="fill" style="display:block;width:76%"></span></span><span class="val">2,014</span></div>
+    <div class="row sfl"><span class="lab">No page</span><span class="track"><span class="fill" style="display:block;width:20.6%"></span></span><span class="val">545</span></div>
+    <div class="row sfl"><span class="lab">Page deleted</span><span class="track"><span class="fill" style="display:block;width:2.6%"></span></span><span class="val">69</span></div>
+    <div class="row"><span class="lab">Specific page</span><span class="track"><span class="fill" style="display:block;width:0.9%"></span></span><span class="val">23</span></div>
+  </div>
+  <p class="bars-cap">"Hub page only" means the keyword falls to a broad page, such as a country page, without a section written for that question. The competitor analysis showed that the pages winning these searches answer the exact question with current numbers.</p>
+</section>
+
+<section id="corridors">
+  <h2><span class="sec">04</span>Country priorities</h2>
+  <p>Core keywords by destination, with what SFL has for each and who ranks now.</p>
+  <div class="tw"><table>
+    <thead><tr><th>Destination</th><th class="n">Core keywords</th><th class="n">Demand signal</th><th>SFL shipping page</th><th>SFL moving page</th><th>SFL visible in results?</th><th>Priority</th></tr></thead>
+    <tbody>
+      <tr><td>India</td><td class="n">263</td><td class="n">1,075</td><td class="ok">Yes</td><td class="ok">Yes</td><td>#3–5 on 8 of 13 queries</td><td><span class="chip c-crit">1</span></td></tr>
+      <tr><td>Canada</td><td class="n">175</td><td class="n">563</td><td class="ok">Yes</td><td class="bad">No</td><td>No</td><td><span class="chip c-high">2</span></td></tr>
+      <tr><td>UK</td><td class="n">120</td><td class="n">431</td><td class="ok">Yes</td><td class="bad">No</td><td>No</td><td><span class="chip c-high">2</span></td></tr>
+      <tr><td>Nigeria</td><td class="n">93</td><td class="n">414</td><td class="ok">Yes</td><td class="bad">No</td><td>No</td><td><span class="chip c-crit">1</span></td></tr>
+      <tr><td>Philippines</td><td class="n">87</td><td class="n">382</td><td class="ok">Yes</td><td class="bad">No</td><td>#5 for "how much is the shipping from us to philippines"</td><td><span class="chip c-crit">1</span></td></tr>
+      <tr><td>Ghana</td><td class="n">77</td><td class="n">350</td><td class="ok">Yes</td><td class="bad">No</td><td>No</td><td><span class="chip c-high">2</span></td></tr>
+      <tr><td>UAE / Dubai</td><td class="n">86</td><td class="n">348</td><td class="ok">Yes</td><td class="bad">No (31 moving keywords)</td><td>No</td><td><span class="chip c-high">2</span></td></tr>
+      <tr><td>Australia</td><td class="n">94</td><td class="n">287</td><td class="ok">Yes</td><td class="ok">Yes</td><td>No</td><td><span class="chip c-med">3</span></td></tr>
+      <tr><td>Pakistan</td><td class="n">54</td><td class="n">266</td><td class="ok">Yes</td><td class="bad">No</td><td>No</td><td><span class="chip c-high">2</span></td></tr>
+      <tr><td>Germany</td><td class="n">62</td><td class="n">221</td><td class="ok">Yes</td><td class="ok">Yes</td><td>No</td><td><span class="chip c-med">3</span></td></tr>
+      <tr><td>Japan, Mexico, Italy, France</td><td class="n">41–54 each</td><td class="n">163–184</td><td class="ok">Yes</td><td class="bad">No</td><td>No</td><td><span class="chip c-med">3</span></td></tr>
+      <tr><td>New Zealand, South Africa, Saudi Arabia, Ireland</td><td class="n">24–48 each</td><td class="n">144–156</td><td class="ok">Yes</td><td>Ireland only</td><td>Ireland cost post #4</td><td><span class="chip c-med">3</span></td></tr>
+      <tr><td>Sri Lanka</td><td class="n">10</td><td class="n">58</td><td class="bad">No</td><td class="bad">No</td><td>n/a</td><td><span class="chip c-high">New</span></td></tr>
+      <tr><td>Bangladesh</td><td class="n">11</td><td class="n">49</td><td class="bad">No</td><td class="bad">No</td><td>n/a</td><td><span class="chip c-high">New</span></td></tr>
+    </tbody>
+  </table></div>
+  <p class="bars-cap">Priority weighs demand, fit with SFL's existing customers (the South Asian, West African and Filipino diasporas), and how winnable the results are. Canada and the UK carry demand, but carriers and rate platforms hold their results. Nigeria and the Philippines are held by specialists that SFL can match.</p>
+</section>
+
+<section id="clusters">
+  <h2><span class="sec">05</span>Priority clusters</h2>
+  <p>Each cluster lists the keywords a page should target, the page that should rank, who holds the results now, and what the page must contain. Demand signal: <b>S</b> strong, <b>M</b> moderate, <b>W</b> weak.</p>
+
+  <h3>5.1 International car shipping</h3>
+  <p>Target: new <code>/services/international-car-shipping</code> hub, then pages for the top routes. <b>Now ranking:</b> WCS, Schumacher Cargo, uShip, ConsumerAffairs, AES, SGK Global, CFR Classic, A1 Auto Transport. All of them publish price ranges and most offer an instant calculator.</p>
+  <div class="tw"><table>
+    <thead><tr><th>Keyword</th><th>Intent</th><th class="n">Signal</th><th>Status</th></tr></thead>
+    <tbody>
+      <tr><td>how much does it cost to ship a car overseas</td><td>Question</td><td class="n">S 35.4</td><td>No page</td></tr>
+      <tr><td>can you ship a car overseas</td><td>Question</td><td class="n">S 25.6</td><td>No page</td></tr>
+      <tr><td>international car shipping companies</td><td>Transactional</td><td class="n">S 23.3</td><td class="bad">Page deleted</td></tr>
+      <tr><td>how much does it cost to ship a car internationally</td><td>Question</td><td class="n">S 22.4</td><td>No page</td></tr>
+      <tr><td>shipping cars from usa to saudi arabia</td><td>Commercial</td><td class="n">S 14.7</td><td>No page</td></tr>
+      <tr><td>vehicle shipping from usa to uae · car shipping companies from usa to dubai</td><td>Commercial</td><td class="n">S 11.8 · 11.4</td><td>No page</td></tr>
+      <tr><td>shipping car from usa to europe · ship car from usa to middle east</td><td>Commercial</td><td class="n">S 10.6</td><td>No page</td></tr>
+      <tr><td>car shipping to nigeria from usa · car shipping prices from usa to nigeria</td><td>Commercial</td><td class="n">M</td><td>No page</td></tr>
+      <tr><td>international car shipping near me · cost calculator · to africa</td><td>Transactional</td><td class="n">S–M</td><td class="bad">Page deleted</td></tr>
+    </tbody>
+  </table></div>
+  <p><b>The page needs:</b></p>
+  <ul>
+    <li>Price ranges by region, dated 2026.</li>
+    <li>RoRo vs container.</li>
+    <li>US departure ports and destination ports (Lagos, Tema, Jebel Ali).</li>
+    <li>Documents: title with no lien, bill of sale.</li>
+    <li>Age limits by country (for example, Nigeria bans imports of cars over 15 years old; Ghana limits imports to cars 10 years old or newer).</li>
+    <li>A quote form.</li>
+  </ul>
+  <p>301-redirect <code>/blog/international-car-shipping-from-usa</code> to the new hub.</p>
+
+  <h3>5.2 Carrier discounts</h3>
+  <p>Target: <code>/carriers/shipping-with-fedex</code>, <code>-dhl</code>, <code>-ups</code>, <code>-usps</code>, after their canonicals are fixed. <b>Now ranking</b> for "fedex international shipping rates discount": FedEx, Shipware, Stamps.com, Shippo, Parcel Monkey, ShipSaving, CoolParcel. This is SFL's core offer ("up to 70% off"), and the pages that should carry it are currently telling Google to index the homepage instead.</p>
+  <div class="tw"><table>
+    <thead><tr><th>Keyword</th><th class="n">Signal</th><th>Target</th></tr></thead>
+    <tbody>
+      <tr><td>ship to dominican republic with usps · usps shipping to brazil / switzerland</td><td class="n">S 8.7–10.4</td><td>USPS page</td></tr>
+      <tr><td>dhl shipping cost from usa to bangladesh · dhl shipping to nigeria from usa · dhl shipping from usa to ghana</td><td class="n">S–M</td><td>DHL page, plus country pages</td></tr>
+      <tr><td>shipping to india from usa fedex · fedex shipping to india from usa cost</td><td class="n">M 7.4–7.8</td><td>FedEx page, plus the India hub</td></tr>
+      <tr><td>fedex international shipping calculator · international shipping usps</td><td class="n">M 6.8</td><td>FedEx and USPS pages</td></tr>
+      <tr><td>ups shipping to italy from usa</td><td class="n">M 6.6</td><td>UPS page</td></tr>
+    </tbody>
+  </table></div>
+  <p><b>The page needs:</b> a table of SFL's discounted rate against the carrier's retail rate for 5 lb and 25 lb boxes to the top 10 destinations, dated and refreshed each quarter. The pages must not look like the carrier's own site.</p>
+
+  <h3>5.3 International moving by country</h3>
+  <p>Targets: the existing <code>/worldwide-moving/moving-to-india</code>, plus new <code>moving-to-dubai</code>, <code>moving-to-uk</code> and <code>moving-to-canada</code>. <b>Now ranking:</b> Allied, Crown Relocations, Schumacher Cargo, Jordan River Moving, Seven Seas Worldwide, JK Moving, Arpin, MoveHub, and for India, returningindians.com and Blind forum threads.</p>
+  <div class="tw"><table>
+    <thead><tr><th>Keyword</th><th>Intent</th><th class="n">Signal</th><th>Status</th></tr></thead>
+    <tbody>
+      <tr><td>should i move back to india from usa</td><td>Question</td><td class="n">S 22.6</td><td>Hub only</td></tr>
+      <tr><td>how to move to india from usa</td><td>Question</td><td class="n">S 19.8</td><td>Hub only</td></tr>
+      <tr><td>moving to india from usa · checklist · moving back to india from usa (checklist)</td><td>Commercial</td><td class="n">S–M 8.6–11.3</td><td>Hub only</td></tr>
+      <tr><td>moving to dubai from usa · how to move to dubai · can an american citizen move to dubai</td><td>Commercial / question</td><td class="n">M 6.4–7.8</td><td>No page</td></tr>
+      <tr><td>moving to uk from usa · moving to canada from usa</td><td>Commercial</td><td class="n">M 5.3</td><td>No page</td></tr>
+      <tr><td>moving to nigeria / ghana / philippines / kenya / south africa from usa</td><td>Commercial</td><td class="n">M 5.3</td><td>No page</td></tr>
+      <tr><td>international movers · international moving companies near me</td><td>Transactional</td><td class="n">M 6.3–6.8</td><td>Relocation service page</td></tr>
+    </tbody>
+  </table></div>
+  <p><b>The page needs:</b></p>
+  <ul>
+    <li>Cost by home size (studio to 4 bedrooms).</li>
+    <li>20 ft vs 40 ft container, and shared-container (LCL) options.</li>
+    <li>Air vs sea, with transit weeks.</li>
+    <li>Duty-free rules: India's Transfer of Residence, UK ToR relief via HMRC.</li>
+    <li>A 12-week checklist, pets and cars.</li>
+    <li>For India, a returning-NRI section that answers "should I move back". The forum-led results show demand for a decision guide, not only logistics.</li>
+  </ul>
+
+  <h3>5.4 India cost and sea freight</h3>
+  <p>Target: rewrite <code>/worldwide-destinations/shipping-to-india</code> as the main page, and merge the three overlapping India cost posts into one cost guide. <b>Now ranking:</b> DHL, Meest, Easyship, Parcel Monkey, Shoppre, Jio Worldwide, ShipIndus. SFL is #3–5 on long-tail queries.</p>
+  <div class="tw"><table>
+    <thead><tr><th>Keyword</th><th>Intent</th><th class="n">Signal</th></tr></thead>
+    <tbody>
+      <tr><td>how much does courier cost from usa to india</td><td>Question</td><td class="n">S 19.4</td></tr>
+      <tr><td>how much is shipping to india from usa</td><td>Question</td><td class="n">S 18.1</td></tr>
+      <tr><td>how to ship to india from usa</td><td>Question</td><td class="n">S 16.4</td></tr>
+      <tr><td>shipping to india from usa by sea rates</td><td>Commercial</td><td class="n">S 15.3</td></tr>
+      <tr><td>shipping to india from usa cost · shipping to india from usa</td><td>Commercial</td><td class="n">S 12.8–13.3</td></tr>
+      <tr><td>free shipping to india from usa online shopping</td><td>Commercial</td><td class="n">S 10.8 <span class="sub">Global Shopper page</span></td></tr>
+      <tr><td>shipping container to india from usa cost</td><td>Commercial</td><td class="n">S 10.6</td></tr>
+      <tr><td>shipping electronics to india from usa</td><td>Commercial</td><td class="n">S 9.8 <span class="sub">existing 2026 post</span></td></tr>
+      <tr><td>can i send cargo to india · parcel to india from usa cost · shipping to india from usa cheapest</td><td>Mixed</td><td class="n">M 7.6–8.9</td></tr>
+    </tbody>
+  </table></div>
+  <p><b>The page needs:</b> the lowest price in the title, a dated rate table for 0.5, 5, 25 and 50 lb plus per-kg rates, sea-freight and container rates, the de minimis, IGST and gift rules, and lithium battery rules. <code>/blog/usa-to-india-shipping-cost-per-kg</code>, SFL's best-performing post, should feed the cost section.</p>
+
+  <h3>5.5 Cost questions for diaspora corridors</h3>
+  <p>Targets: the existing country pages for Nigeria, the Philippines, Ghana, Pakistan and the UAE. <b>Now ranking:</b> Parcel Monkey, Easyship calculators, ShipBob, Qwintry, Meest, Shipito and route specialists (SGK Global and Cargo Naija for Nigeria, Aquantuo for Ghana, LBC and balikbayan-box shippers for the Philippines).</p>
+  <div class="tw"><table>
+    <thead><tr><th>Country</th><th>Top keywords</th><th class="n">Signal</th></tr></thead>
+    <tbody>
+      <tr><td>Philippines</td><td>how much is the shipping from us to philippines · how to ship from us to philippines · how much to send a package to philippines from usa</td><td class="n">S 27.1 · 19.4 · 16.4</td></tr>
+      <tr><td>Nigeria</td><td>shipping cost from usa to nigeria · how to ship from us to nigeria · shipping container to nigeria from usa · cheapest shipping company from usa to nigeria</td><td class="n">S 18.1 · 16.4 · 14.9 · 10.4</td></tr>
+      <tr><td>Pakistan</td><td>how much shipping cost from usa to pakistan · cargo shipping to pakistan from usa · can us ship to pakistan</td><td class="n">S 19.6 · 16.1 · 11.0</td></tr>
+      <tr><td>Ghana</td><td>how to ship from us to ghana · air cargo from usa to ghana · shipping to ghana from usa</td><td class="n">S 16.6 · 15.3 · 13.8</td></tr>
+      <tr><td>UAE</td><td>ship from usa to uae · how much is shipping to uae · how to ship to uae · shipping to dubai from usa</td><td class="n">S–M 9.3–14.1</td></tr>
+    </tbody>
+  </table></div>
+  <p><b>Each page needs:</b></p>
+  <ul>
+    <li>A direct answer in the first 100 words ("From $X for 1 lb by air; sea freight from $Y per cubic foot").</li>
+    <li>A 2026 rate table.</li>
+    <li>The customs threshold.</li>
+    <li>Transit days by method.</li>
+    <li>Route-specific content: balikbayan boxes (Philippines), containers to Lagos or Tema, and Nigeria's Form M.</li>
+  </ul>
+  <p>Remove the "verified in November 2023" rate notes.</p>
+
+  <h3>5.6 New corridors: Sri Lanka and Bangladesh</h3>
+  <p>Targets: new <code>/worldwide-destinations/shipping-to-sri-lanka</code> and <code>/shipping-to-bangladesh</code>. <b>Now ranking:</b> MyUS, Planet Express, Meest, Easyship, Parcel Monkey, iContainers, internationalshippingusa.com, oceanfreightusa.com. It's a mix of platforms and small forwarders, with no dominant specialist.</p>
+  <div class="tw"><table>
+    <thead><tr><th>Keyword</th><th class="n">Signal</th></tr></thead>
+    <tbody>
+      <tr><td>usa to sri lanka shipping</td><td class="n">S 14.3</td></tr>
+      <tr><td>cargo shipping from usa to bangladesh</td><td class="n">S 11.8</td></tr>
+      <tr><td>dhl shipping cost from usa to bangladesh</td><td class="n">S 10.0</td></tr>
+      <tr><td>cheap freight from usa to sri lanka · cargo shipping to sri lanka from usa</td><td class="n">M 8.6–8.9</td></tr>
+      <tr><td>shipping to bangladesh from usa · shipping to sri lanka from usa · send parcel to bangladesh from usa</td><td class="n">W–M</td></tr>
+    </tbody>
+  </table></div>
+  <p>Build these from real SFL quotes and corridor data, not the country template, so they avoid the duplication problem found in the audit.</p>
+
+  <h3>5.7 Cargo, freight and containers</h3>
+  <p>192 in-scope keywords, led by "cargo shipping to pakistan from usa" (S 16.1), "shipping container to nigeria from usa" (S 14.9), "air cargo from usa to ghana" (S 15.3) and "shipping container to india from usa cost" (S 10.6). SFL has a freight-forwarding page only for India (<code>/services/freight-forwarding-services-in-india</code>) and none for US exports. <b>Target:</b> a new US freight-forwarding service page, with container sections linked from each country page. <b>Now ranking:</b> iContainers, Freightos, GoComet, Shipnex, Fluent Cargo.</p>
+
+  <h3>5.8 Package forwarding (Global Shopper)</h3>
+  <p>57 keywords: "package forwarding service" and "package forwarding service usa" (M 6.4–6.8), "us address for international shipping", "package forwarding japan". <b>Target:</b> <code>/shop-us-stores-ship-worldwide</code>, retitled around "US package forwarding" (the term people search) rather than "Global Shopper". <b>Now ranking:</b> forward2me, Planet Express, USAbox, OPAS, Splice Packages, MyUS, Shipito. Some of these are established brands; win with country versions ("US package forwarding to India, Nigeria, UAE"), where the results are weaker.</p>
+
+  <h3>5.9 Secondary markets</h3>
+  <div class="grid2">
+    <div class="card"><h4>India to USA (<code>/en-in/</code>)</h4><div class="meta">251 keywords</div><p>"india to usa cargo charges" (S 22.6), "courier cost to usa from india" (S 21.1), "how much does it cost to ship a container from india to usa" (S 16.4), "courier from india to usa price per kg", "ghee courier", "ayurvedic medicines courier". Target <code>/en-in/services/international-shipping-from-india</code>, plus food and medicine guides that link the existing FAQ.</p></div>
+    <div class="card"><h4>Domestic moving and auto transport</h4><div class="meta">389 keywords</div><p>"car shipping quotes", "car shipping companies", "car shipping cost calculator", "ship car across country quote", plus state-to-state moves (New York or California to Texas). Target <code>/services/auto-transport</code> and the domestic relocation page. Montway, Sherpa, uShip and moveBuddha hold these, so treat it as a lower priority.</p></div>
+  </div>
+</section>
+
+<section id="questions">
+  <h2><span class="sec">06</span>Question bank</h2>
+  <p>330 in-scope questions. The strongest are grouped below. Each should be answered directly, with a number, on the target page, as an H2 or FAQ entry.</p>
+  <div class="tw"><table>
+    <thead><tr><th>Theme</th><th>Questions (strongest first)</th><th>Answer on</th></tr></thead>
+    <tbody>
+      <tr><td>Car overseas</td><td>how much does it cost to ship a car overseas · can you ship a car overseas · how much does it cost to ship a car internationally · can you ship a vehicle overseas · how to buy a car and ship overseas · documents needed to ship car overseas · how long to ship car overseas</td><td>New car hub</td></tr>
+      <tr><td>Can I ship</td><td>can you ship from us to uk · can i ship from usa to canada · can us ship to pakistan · can i send cargo to india · what can i ship to canada</td><td>Country pages</td></tr>
+      <tr><td>How much</td><td>how much is the shipping from us to philippines · how much shipping cost from usa to pakistan · how much does courier cost from usa to india · how much is shipping to india from usa · how much to send a package to philippines from usa · how much is shipping to uae · how much to ship to nigeria</td><td>Country pages (answer in the first lines)</td></tr>
+      <tr><td>How to ship</td><td>how to ship from us to philippines · how to ship from us to canada · how to ship from us to uk · how to ship from us to ghana · how to ship to india from usa · how to ship from us to nigeria · how to ship to uae · how to ship to london from us</td><td>Country pages (step-by-step section)</td></tr>
+      <tr><td>Moving</td><td>should i move back to india from usa · how to move to india from usa · is it worth moving back to india from usa · how to move to dubai · can an american citizen move to dubai</td><td>Moving pages</td></tr>
+      <tr><td>Forwarding</td><td>what is package forwarding</td><td>Package forwarding page</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section id="map">
+  <h2><span class="sec">07</span>Keyword-to-page map</h2>
+  <p>One main keyword per page, so pages stop competing with each other. Actions: <b>Create</b> a new page, <b>Restore</b> via redirect plus a new page, <b>Rewrite</b> an existing page, <b>Fix</b> a technical blocker, <b>Retitle</b>.</p>
+  <div class="tw"><table>
+    <thead><tr><th>Main keyword</th><th>Supporting keywords</th><th>SFL URL</th><th>Action</th></tr></thead>
+    <tbody>
+      <tr><td>international car shipping companies</td><td>cost to ship a car overseas; can you ship a car overseas; calculator; near me</td><td><code>/services/international-car-shipping</code> (new)</td><td><span class="chip c-crit">Restore</span></td></tr>
+      <tr><td>car shipping to nigeria from usa</td><td>prices; RoRo to Lagos; Form M</td><td><code>/international-car-shipping/nigeria</code> (new)</td><td><span class="chip c-high">Create</span></td></tr>
+      <tr><td>car shipping from usa to dubai</td><td>vehicle shipping to UAE; ship car to middle east; Saudi Arabia</td><td><code>/international-car-shipping/uae</code> (new)</td><td><span class="chip c-high">Create</span></td></tr>
+      <tr><td>fedex international shipping rates</td><td>fedex shipping to india cost; calculator; discount</td><td><code>/carriers/shipping-with-fedex</code></td><td><span class="chip c-crit">Fix</span></td></tr>
+      <tr><td>dhl shipping from usa</td><td>dhl to nigeria, ghana, bangladesh</td><td><code>/carriers/shipping-with-dhl</code></td><td><span class="chip c-crit">Fix</span></td></tr>
+      <tr><td>usps international shipping</td><td>usps to dominican republic, brazil, switzerland</td><td><code>/carriers/shipping-with-usps</code></td><td><span class="chip c-crit">Fix</span></td></tr>
+      <tr><td>ups international shipping</td><td>ups to italy, india</td><td><code>/carriers/shipping-with-ups</code></td><td><span class="chip c-crit">Fix</span></td></tr>
+      <tr><td>shipping to india from usa</td><td>how to ship; cost; cheapest; by sea rates</td><td><code>/worldwide-destinations/shipping-to-india</code></td><td><span class="chip c-high">Rewrite</span></td></tr>
+      <tr><td>how much does courier cost from usa to india</td><td>per kg; per lb; parcel cost; container cost</td><td><code>/blog/usa-to-india-shipping-cost-per-kg</code> (merge other cost posts into it)</td><td><span class="chip c-high">Rewrite</span></td></tr>
+      <tr><td>shipping cost from usa to nigeria</td><td>how to ship; container; cheapest company</td><td><code>/worldwide-destinations/shipping-to-nigeria</code></td><td><span class="chip c-high">Rewrite</span></td></tr>
+      <tr><td>how much is the shipping from us to philippines</td><td>how to ship; balikbayan box; send package cost</td><td><code>/worldwide-destinations/shipping-to-philippines</code></td><td><span class="chip c-high">Rewrite</span></td></tr>
+      <tr><td>how much shipping cost from usa to pakistan</td><td>cargo shipping; can us ship to pakistan</td><td><code>/worldwide-destinations/shipping-to-pakistan</code></td><td><span class="chip c-high">Rewrite</span></td></tr>
+      <tr><td>how to ship from us to ghana</td><td>air cargo; shipping to ghana from usa</td><td><code>/worldwide-destinations/shipping-to-ghana</code></td><td><span class="chip c-high">Rewrite</span></td></tr>
+      <tr><td>ship from usa to uae</td><td>how much; how to; dubai</td><td><code>/worldwide-destinations/shipping-to-uae</code></td><td><span class="chip c-high">Rewrite</span></td></tr>
+      <tr><td>usa to sri lanka shipping</td><td>cargo; cheap freight</td><td><code>/worldwide-destinations/shipping-to-sri-lanka</code> (new)</td><td><span class="chip c-high">Create</span></td></tr>
+      <tr><td>cargo shipping from usa to bangladesh</td><td>shipping to bangladesh; send parcel</td><td><code>/worldwide-destinations/shipping-to-bangladesh</code> (new)</td><td><span class="chip c-high">Create</span></td></tr>
+      <tr><td>moving to india from usa</td><td>should I move back; how to move; checklist</td><td><code>/worldwide-moving/moving-to-india</code></td><td><span class="chip c-high">Rewrite</span></td></tr>
+      <tr><td>moving to dubai from usa</td><td>how to move to dubai; can an american move to dubai</td><td><code>/worldwide-moving/moving-to-dubai</code> (new)</td><td><span class="chip c-high">Create</span></td></tr>
+      <tr><td>moving to uk from usa</td><td>shipping belongings; ToR relief</td><td><code>/worldwide-moving/moving-to-uk</code> (new)</td><td><span class="chip c-med">Create</span></td></tr>
+      <tr><td>moving to canada from usa</td><td>movers; cost</td><td><code>/worldwide-moving/moving-to-canada</code> (new)</td><td><span class="chip c-med">Create</span></td></tr>
+      <tr><td>international movers</td><td>international moving companies near me</td><td><code>/services/reliable-international-relocation-services</code></td><td><span class="chip c-med">Rewrite</span></td></tr>
+      <tr><td>freight forwarder usa</td><td>shipping container to [country]; LCL; air cargo</td><td><code>/services/freight-forwarding</code> (new)</td><td><span class="chip c-med">Create</span></td></tr>
+      <tr><td>package forwarding service usa</td><td>us address for international shipping</td><td><code>/shop-us-stores-ship-worldwide</code></td><td><span class="chip c-med">Retitle</span></td></tr>
+      <tr><td>international shipping company near me</td><td>international shipping near me; quote</td><td>5 office location pages (new)</td><td><span class="chip c-med">Create</span></td></tr>
+      <tr><td>india to usa cargo charges</td><td>courier cost to usa from india; per kg</td><td><code>/en-in/services/international-shipping-from-india</code></td><td><span class="chip c-med">Rewrite</span></td></tr>
+      <tr><td>car shipping quotes</td><td>car shipping companies; cost calculator</td><td><code>/services/auto-transport</code></td><td><span class="chip c-good">Optimise</span></td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section id="exclude">
+  <h2><span class="sec">08</span>Excluded keywords</h2>
+  <p>Keep these out of targeting and paid campaigns. They showed up in the suggestions but don't match what SFL sells.</p>
+  <ul>
+    <li><b>Tracking and carrier accounts:</b> "fedex tracking", "usps store hours", carrier logins.</li>
+    <li><b>Competitor brand names:</b> Meest, Shipito, MyUS, Planet Express, Allied and others (127 keywords).</li>
+    <li><b>Marketplace shipping:</b> Temu, Depop, Shein, Etsy, eBay seller rules.</li>
+    <li><b>Money transfer:</b> "send money to India", remittance tax.</li>
+    <li><b>Travel:</b> flights, visas, "travelling to Nepal from USA".</li>
+    <li><b>Shipments that neither start nor end in the US:</b> "shipping from UK to Switzerland", "India to Australia container".</li>
+    <li><b>Local businesses abroad:</b> "courier jamaica opening hours", named movers in Hong Kong.</li>
+  </ul>
+  <p>2,600 lower-fit keywords stay in the CSV, tagged "Low fit", for reference.</p>
+</section>
+
+<section id="next">
+  <h2><span class="sec">09</span>Next steps</h2>
+  <ol>
+    <li>Pull monthly volume and difficulty for the 26 main keywords in section 7 and their supporting terms. Reorder within clusters if volume disagrees with the demand signal.</li>
+    <li>Fix the carrier canonicals and redirect the deleted car post (both are also P0 in the audit).</li>
+    <li>Brief the new pages in this order: international car hub, India hub rewrite, Nigeria and Philippines cost rewrites, moving to Dubai, Sri Lanka and Bangladesh.</li>
+    <li>Track the 26 main keywords, plus the 40 audit queries, weekly on real Google results.</li>
+    <li>Rerun this research each quarter. The suggestions change with the news: for example, Germany's July 2026 duty change and new UK VAT rules.</li>
+  </ol>
+  <footer>Prepared 28 September 2026 from Google Autocomplete, Bing Autosuggest and live search results for the US market. Full keyword list: <code>sfl-seo-audit/data/keywords-sfl-universe.csv</code> (3,355 in-scope rows with cluster, intent, demand signal, SFL target page and status). Companion: SFL Worldwide SEO Audit.</footer>
+</section>
+</main>
+</div>
