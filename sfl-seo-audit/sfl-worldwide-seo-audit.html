@@ -1,0 +1,572 @@
+<title>SFL Worldwide SEO Audit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,500..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --ground:#F4F5F2; --paper:#FFFFFF; --ink:#18202A; --ink-2:#44505E; --ink-3:#6B7684;
+  --rule:#D5D9D3; --rule-2:#E6E9E3; --accent:#23479A; --accent-soft:#E4EAF6;
+  --crit:#A52A1F; --crit-bg:#F8E4E1; --high:#9A5A00; --high-bg:#F7ECD8; --med:#44505E; --med-bg:#E9ECEF; --good:#2E6B45; --good-bg:#E1F0E6;
+  --bar:#23479A; --bar-sfl:#A52A1F;
+  --display:"Archivo","Arial Narrow",Arial,sans-serif; --body:"Source Serif 4",Georgia,"Times New Roman",serif; --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#12161B; --paper:#1A2027; --ink:#E7EAEE; --ink-2:#B9C1CB; --ink-3:#8C96A2;
+    --rule:#2E3741; --rule-2:#252D36; --accent:#8FA9E8; --accent-soft:#1F2A40;
+    --crit:#F08A7E; --crit-bg:#3A1F1C; --high:#E6B25E; --high-bg:#35291A; --med:#B9C1CB; --med-bg:#262E37; --good:#83C79C; --good-bg:#1C3024;
+    --bar:#8FA9E8; --bar-sfl:#F08A7E; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#12161B; --paper:#1A2027; --ink:#E7EAEE; --ink-2:#B9C1CB; --ink-3:#8C96A2;
+  --rule:#2E3741; --rule-2:#252D36; --accent:#8FA9E8; --accent-soft:#1F2A40;
+  --crit:#F08A7E; --crit-bg:#3A1F1C; --high:#E6B25E; --high-bg:#35291A; --med:#B9C1CB; --med-bg:#262E37; --good:#83C79C; --good-bg:#1C3024;
+  --bar:#8FA9E8; --bar-sfl:#F08A7E; color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--ground);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;padding-inline:16px;padding-block:32px 64px}
+.shell{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:230px minmax(0,1fr);gap:48px}
+nav.toc{position:sticky;top:calc(env(safe-area-inset-top,0px) + 20px);align-self:start;font-family:var(--display);font-size:14px;max-height:calc(100vh - 40px);overflow:auto}
+nav.toc p{font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:12px;color:var(--ink-3);margin:0 0 10px}
+nav.toc ol{list-style:none;margin:0;padding:0;display:grid;gap:2px;counter-reset:t}
+nav.toc a{display:block;padding:5px 8px;border-radius:4px;color:var(--ink-2);text-decoration:none}
+nav.toc a:hover,nav.toc a:focus-visible{background:var(--accent-soft);color:var(--ink);outline:none}
+main{min-width:0}
+h1,h2,h3,h4{font-family:var(--display);text-wrap:balance;line-height:1.15;margin:0}
+h1{font-size:clamp(34px,5vw,52px);font-weight:800;font-stretch:80%;letter-spacing:-.01em}
+h2{font-size:30px;font-weight:800;font-stretch:85%;padding-top:12px}
+h3{font-size:20px;font-weight:700;margin-top:28px}
+h4{font-size:16px;font-weight:700;margin-top:18px}
+section{padding-block:28px;border-top:2px solid var(--ink);margin-top:40px;scroll-margin-top:20px}
+section>h2 .sec{font-family:var(--mono);font-size:14px;font-weight:500;color:var(--accent);display:block;letter-spacing:.04em;margin-bottom:6px}
+p,li{max-width:70ch}
+p{margin:12px 0}
+ul,ol{padding-left:22px;margin:10px 0}
+li{margin:5px 0}
+a{color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+code,.mono{font-family:var(--mono);font-size:.84em}
+code{background:var(--rule-2);padding:1px 5px;border-radius:3px;overflow-wrap:anywhere}
+.lede{font-size:20px;color:var(--ink-2);max-width:62ch;margin-top:16px}
+.kicker{font-family:var(--mono);font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
+/* waybill header */
+.waybill{margin-top:28px;border:2px solid var(--ink);background:var(--paper);display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.waybill div{padding:10px 14px;border-right:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.waybill div:nth-child(4n){border-right:0}
+.waybill div:nth-last-child(-n+4){border-bottom:0}
+.waybill b{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);font-weight:500}
+.waybill span{font-family:var(--display);font-weight:700;font-size:17px}
+/* callouts */
+.note{border-left:4px solid var(--accent);background:var(--paper);padding:12px 16px;margin:18px 0;max-width:78ch}
+.note.warn{border-color:var(--high)}
+.note p{margin:6px 0}
+/* tables */
+.tw{overflow-x:auto;margin:16px 0;border:1px solid var(--rule);background:var(--paper)}
+table{border-collapse:collapse;width:100%;font-size:14.5px;font-family:var(--body)}
+th,td{padding:8px 10px;text-align:left;vertical-align:top;border-bottom:1px solid var(--rule-2)}
+th{font-family:var(--display);font-weight:700;font-size:13px;letter-spacing:.02em;background:var(--rule-2);position:sticky;top:0}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums;font-family:var(--mono);font-size:13px;white-space:nowrap}
+tr.sfl td{background:var(--crit-bg)}
+tr.sfl td:first-child{font-weight:700}
+td .sub{display:block;color:var(--ink-3);font-size:12.5px}
+.chip{display:inline-block;font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.05em;text-transform:uppercase;padding:2px 7px;border-radius:3px;white-space:nowrap}
+.c-crit{background:var(--crit-bg);color:var(--crit)}
+.c-high{background:var(--high-bg);color:var(--high)}
+.c-med{background:var(--med-bg);color:var(--med)}
+.c-good{background:var(--good-bg);color:var(--good)}
+.bad{color:var(--crit);font-weight:600}
+.ok{color:var(--good);font-weight:600}
+/* finding cards */
+.finding{background:var(--paper);border:1px solid var(--rule);padding:14px 18px;margin:14px 0;max-width:82ch}
+.finding h4{margin:0 0 6px;display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+.finding p{margin:6px 0}
+.finding .fix{font-size:15.5px;color:var(--ink-2)}
+.finding .fix b{font-family:var(--display);color:var(--ink)}
+/* bars */
+.bars{display:grid;gap:6px;margin:14px 0;max-width:720px}
+.bars .row{display:grid;grid-template-columns:120px minmax(0,1fr) 70px;gap:10px;align-items:center;font-size:14px}
+.bars .lab{font-family:var(--display);font-weight:600}
+.bars .track{height:14px;background:var(--rule-2);position:relative}
+.bars .fill{height:100%;background:var(--bar)}
+.bars .row.sfl .fill{background:var(--bar-sfl)}
+.bars .row.sfl .lab{color:var(--crit)}
+.bars .val{font-family:var(--mono);font-size:12.5px;text-align:right;font-variant-numeric:tabular-nums}
+.bars-cap{font-size:13.5px;color:var(--ink-3);margin-top:-4px}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.card{background:var(--paper);border:1px solid var(--rule);padding:14px 16px}
+.card h4{margin:0 0 4px}
+.card p{margin:6px 0;font-size:15.5px}
+.card .meta{font-family:var(--mono);font-size:12px;color:var(--ink-3)}
+footer{margin-top:48px;font-size:14px;color:var(--ink-3)}
+@media (max-width:900px){
+  .shell{grid-template-columns:minmax(0,1fr);gap:0}
+  nav.toc{position:static;max-height:none;border:1px solid var(--rule);background:var(--paper);padding:12px;margin-bottom:8px}
+  nav.toc ol{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .waybill{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .waybill div:nth-child(4n){border-right:1px solid var(--rule)}
+  .waybill div:nth-child(2n){border-right:0}
+  .waybill div:nth-last-child(-n+4){border-bottom:1px solid var(--rule)}
+  .waybill div:nth-last-child(-n+2){border-bottom:0}
+  .grid2{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:480px){
+  body{font-size:16px}
+  nav.toc ol{grid-template-columns:minmax(0,1fr)}
+  .bars .row{grid-template-columns:92px minmax(0,1fr) 58px}
+}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+html{scroll-behavior:smooth}
+</style>
+
+<div class="shell">
+<nav class="toc" aria-label="Contents">
+  <p>Contents</p>
+  <ol>
+    <li><a href="#summary">Summary</a></li>
+    <li><a href="#method">Method and limits</a></li>
+    <li><a href="#visibility">Search visibility</a></li>
+    <li><a href="#scorecard">Scorecard vs competitors</a></li>
+    <li><a href="#technical">Technical audit</a></li>
+    <li><a href="#content">Content quality audit</a></li>
+    <li><a href="#competitors">Why competitors win</a></li>
+    <li><a href="#diagnosis">Why rankings fell</a></li>
+    <li><a href="#plan">Action plan</a></li>
+    <li><a href="#measure">Data still needed</a></li>
+    <li><a href="#evidence">Evidence files</a></li>
+  </ol>
+</nav>
+
+<main>
+<header>
+  <div class="kicker">Technical, content and competitor audit</div>
+  <h1>SFL Worldwide SEO Audit</h1>
+  <p class="lede">sflworldwide.com has a clean technical base, but it now ranks for little outside India. This audit measures why, on the same scale for SFL and the sites that outrank it, and ranks the fixes.</p>
+  <div class="waybill" role="list">
+    <div role="listitem"><b>Site</b><span>sflworldwide.com</span></div>
+    <div role="listitem"><b>Audit date</b><span>28 Sep 2026</span></div>
+    <div role="listitem"><b>Pages crawled</b><span>455 of 455</span></div>
+    <div role="listitem"><b>Queries checked</b><span>40 + 5 brand</span></div>
+    <div role="listitem"><b>Competitor sites</b><span>11 (40-page samples)</span></div>
+    <div role="listitem"><b>Pages scored for content</b><span>55</span></div>
+    <div role="listitem"><b>Speed tests</b><span>6 pages, mobile</span></div>
+    <div role="listitem"><b>Branch</b><span class="mono">sfl</span></div>
+  </div>
+</header>
+
+<section id="summary">
+  <h2><span class="sec">01</span>Summary</h2>
+  <p>SFL is not failing on basic SEO hygiene. Titles, descriptions, H1s, canonicals and alt text are as good as or better than the competitors'. It is failing on four things that matter more:</p>
+  <ol>
+    <li><b>Lost and hidden pages.</b> 144 URLs that SFL itself still lists now return 404 or 410. Some of them still rank, and none redirect. Another 49 live pages can't be reached by following links from the homepage, and 149 more blog posts are four or more clicks deep.</li>
+    <li><b>Content that doesn't answer the query.</b> SFL's pages are long but thin on facts. The blog carries 8.2 numbers per 1,000 words; competitor blogs carry 13 to 56. Rates are dated "November 2023". A 1,657-word post titled "How Long Does It Take to Ship from the USA to India?" never states a number of days.</li>
+    <li><b>Templated pages at scale.</b> About 32% of each of the 51 country pages repeats across ten or more sibling pages. Sales filler is several times denser than on competitor pages.</li>
+    <li><b>Missing machine-readable signals and heavy pages.</b> None of the 246 blog posts has Article markup; most competitors mark up 89–100%. SFL's median HTML is 779 KB, the heaviest of the 12 sites measured. Mobile LCP is 5.2–8.7 s on 5 of 6 pages tested.</li>
+  </ol>
+  <p>The result in search: SFL appeared for 11 of 40 non-brand queries, and 10 of those were about India. It did not appear for any of its other 12 main country pages, or for any general service query.</p>
+
+  <h3>Top findings</h3>
+  <div class="tw"><table>
+    <thead><tr><th>Severity</th><th>Finding</th><th>Section</th></tr></thead>
+    <tbody>
+      <tr><td><span class="chip c-crit">Critical</span></td><td>Five service pages (FedEx, DHL, UPS, USPS, Domestic Shipping) declare the homepage as their canonical.</td><td class="mono"><a href="#t-canon">5.1</a></td></tr>
+      <tr><td><span class="chip c-crit">Critical</span></td><td>144 SFL URLs return 404/410 with no redirect; at least 9 are still in the search index, including a #3 and a #5 ranking.</td><td class="mono"><a href="#t-dead">5.3</a></td></tr>
+      <tr><td><span class="chip c-crit">Critical</span></td><td>49 sitemap pages unreachable by links; 149 more blog posts at 4+ clicks; the blog index shows 9 posts behind a JavaScript "Load More".</td><td class="mono"><a href="#t-arch">5.2</a></td></tr>
+      <tr><td><span class="chip c-high">High</span></td><td>Money pages carry stale data ("verified and updated in November 2023"; "latest 2025 prices") and zero 2026 references.</td><td class="mono"><a href="#c-fresh">6.4</a></td></tr>
+      <tr><td><span class="chip c-high">High</span></td><td>Country pages share about 32% of their text across 10+ sibling pages; the New Zealand and Saudi Arabia pages share 68%.</td><td class="mono"><a href="#c-template">6.5</a></td></tr>
+      <tr><td><span class="chip c-high">High</span></td><td>Posts that promise an answer don't give one: 1 of 9 transit-time posts gives no day count; 9 of 41 cost posts give no price.</td><td class="mono"><a href="#c-answer">6.3</a></td></tr>
+      <tr><td><span class="chip c-high">High</span></td><td>No Article, BlogPosting or author markup on any of the 246 posts; the default share image is 211×153 px on 438 pages.</td><td class="mono"><a href="#t-schema">5.6</a></td></tr>
+      <tr><td><span class="chip c-high">High</span></td><td>Heaviest pages of 12 sites (median HTML 779 KB); HTML never cached; author photos of 612–754 KB load on every post.</td><td class="mono"><a href="#t-perf">5.7</a></td></tr>
+      <tr><td><span class="chip c-med">Medium</span></td><td>India and Canada sections mostly copy US pages; 31 of 72 locale pages have no hreflang; <code>/en-in/blog</code> is empty.</td><td class="mono"><a href="#t-intl">5.5</a></td></tr>
+      <tr><td><span class="chip c-med">Medium</span></td><td>Sitemap <code>lastmod</code> is one build timestamp for 96% of URLs; it includes a noindex page and the five canonicalised pages.</td><td class="mono"><a href="#t-sitemap">5.4</a></td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section id="method">
+  <h2><span class="sec">02</span>Method and limits</h2>
+  <p>Every figure was measured on the live sites between 23 and 28 September 2026. Nothing is taken from a site's own claims unless labelled as such.</p>
+  <div class="tw"><table>
+    <thead><tr><th>Area</th><th>How it was measured</th><th>Limit</th></tr></thead>
+    <tbody>
+      <tr><td>SFL technical crawl</td><td>All 455 sitemap URLs fetched as Googlebot; every internal link, header, tag and JSON-LD block parsed; click depth computed from the homepage link graph.</td><td>Raw server HTML. The site is server-rendered, so the text, links and markup are all present without JavaScript.</td></tr>
+      <tr><td>Competitor technical crawl</td><td>11 competitor sites plus SFL: robots.txt, XML sitemaps, and a seeded random sample of 40 sitemap URLs each, measured with the same code.</td><td>A 40-page sample describes each site's typical page, not every page.</td></tr>
+      <tr><td>Content quality</td><td>55 pages that compete for the same queries, grouped into 13 topics. Each was scored on the same measures (section 6.1).</td><td>Measures are proxies for quality. Read them together with the page examples.</td></tr>
+      <tr><td>Search visibility</td><td>Top 9–10 organic results for 40 non-brand queries matching SFL's services, plus 5 brand queries, from the search tool available in this environment (US).</td><td>Not Google. Google blocks scripted access. Treat positions as indicative.</td></tr>
+      <tr><td>Speed</td><td>Lighthouse 12, mobile, one run each on 6 SFL pages.</td><td>Lab data from a cloud machine. Competitor speed tests weren't possible after browser testing was stopped for security reasons.</td></tr>
+      <tr><td>Authority</td><td>Tranco top-1M popularity list.</td><td>Popularity, not backlinks. No backlink or Search Console data was available.</td></tr>
+      <tr><td>Site history</td><td>Not measured.</td><td>This environment blocks <code>web.archive.org</code> and <code>index.commoncrawl.org</code>, so the causes of the drop in section 8 come from today's evidence only.</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section id="visibility">
+  <h2><span class="sec">03</span>Search visibility</h2>
+  <div class="tw"><table>
+    <thead><tr><th>Query cluster</th><th class="n">Queries</th><th class="n">SFL present</th><th>Best position</th></tr></thead>
+    <tbody>
+      <tr><td>India: parcels, cost, rules, boxes, TV, moving</td><td class="n">13</td><td class="n">8</td><td>#3</td></tr>
+      <tr><td>Parcels to 12 other countries (UK, Canada, Australia, UAE, Pakistan, Nigeria, Ghana, Germany, NZ, China, Mexico, Philippines)</td><td class="n">12</td><td class="n bad">0</td><td>none</td></tr>
+      <tr><td>International and domestic moving</td><td class="n">5</td><td class="n">1</td><td>#4 (Ireland cost post)</td></tr>
+      <tr><td>Car shipping</td><td class="n">4</td><td class="n">1</td><td>#5, on a URL that now returns 410</td></tr>
+      <tr><td>General services (international shipping company, cheapest international shipping, discounted carrier rates, package forwarding, dimensional weight)</td><td class="n">5</td><td class="n bad">0</td><td>none</td></tr>
+      <tr><td>India to USA food rules</td><td class="n">1</td><td class="n">1</td><td>#5</td></tr>
+      <tr><td><b>Total</b></td><td class="n"><b>40</b></td><td class="n"><b>11</b></td><td>3 results in the top 3</td></tr>
+    </tbody>
+  </table></div>
+  <p>The domains that appeared most often were easyship.com (14 queries, 10 in the top 3), parcelmonkey.com (13, 8), dhl.com (11, 6), us.meest.com (9, 8), jioworldwide.com (9, 0) and goshippo.com (7, 5). Full rows are in <code>data/serp-results.csv</code>.</p>
+</section>
+
+<section id="scorecard">
+  <h2><span class="sec">04</span>Scorecard vs competitors</h2>
+  <p>The same checks run on SFL and 11 competitors, on a random 40-page sample from each site's XML sitemap. SFL's row is highlighted.</p>
+
+  <h3>Technical matrix</h3>
+  <div class="tw"><table>
+    <thead><tr><th>Site</th><th class="n">Tranco rank</th><th class="n">Sitemap URLs</th><th class="n">Same lastmod</th><th class="n">Pages with schema</th><th class="n">Blog Article schema</th><th class="n">Heading skips</th><th class="n">Median HTML</th><th class="n">Median words</th><th class="n">TTFB</th><th>HTML caching</th></tr></thead>
+    <tbody>
+      <tr class="sfl"><td>SFL Worldwide</td><td class="n">&gt;1M</td><td class="n">455</td><td class="n">96%</td><td class="n">35%</td><td class="n">0% <span class="sub">of 27</span></td><td class="n">32%</td><td class="n">779 KB</td><td class="n">1,543</td><td class="n">0.55 s</td><td>no-store</td></tr>
+      <tr><td>Easyship</td><td class="n">124,112</td><td class="n">1,610</td><td class="n">54%</td><td class="n">97%</td><td class="n">96% <span class="sub">of 23</span></td><td class="n">3%</td><td class="n">252 KB</td><td class="n">2,297</td><td class="n">0.57 s</td><td>not set</td></tr>
+      <tr><td>Parcel Monkey</td><td class="n">497,662</td><td class="n">443</td><td class="n">56%</td><td class="n">100%</td><td class="n">0% <span class="sub">of 7</span></td><td class="n">72%</td><td class="n">324 KB</td><td class="n">600</td><td class="n">0.97 s</td><td>public, 5 min at edge</td></tr>
+      <tr><td>Meest USA</td><td class="n">177,530</td><td class="n">1,563</td><td class="n">25%</td><td class="n">100%</td><td class="n">100% <span class="sub">of 17</span></td><td class="n">5%</td><td class="n">183 KB</td><td class="n">570</td><td class="n">0.78 s</td><td>no-cache</td></tr>
+      <tr><td>Shippo</td><td class="n">55,613</td><td class="n">1,196</td><td class="n">57%</td><td class="n">97%</td><td class="n">100% <span class="sub">of 22</span></td><td class="n">38%</td><td class="n">92 KB</td><td class="n">1,049</td><td class="n">0.46 s</td><td>not set</td></tr>
+      <tr><td>Jio Worldwide</td><td class="n">&gt;1M</td><td class="n">783</td><td class="n">9%</td><td class="n">100%</td><td class="n">— <span class="sub">1 sampled</span></td><td class="n">88%</td><td class="n">640 KB</td><td class="n">4,236</td><td class="n">0.77 s</td><td>public, 1 h</td></tr>
+      <tr><td>ShipIndus</td><td class="n">&gt;1M</td><td class="n">128</td><td class="n">100%</td><td class="n">5%</td><td class="n">—</td><td class="n">80%</td><td class="n">58 KB</td><td class="n">1,206</td><td class="n">0.53 s</td><td>no-store</td></tr>
+      <tr><td>Seven Seas Worldwide</td><td class="n">513,774</td><td class="n">1,922</td><td class="n">14%</td><td class="n">3%</td><td class="n">— <span class="sub">1 sampled</span></td><td class="n">89%</td><td class="n">156 KB</td><td class="n">320</td><td class="n">0.57 s</td><td>max-age 4 h</td></tr>
+      <tr><td>Schumacher Cargo</td><td class="n">&gt;1M</td><td class="n">701</td><td class="n">5%</td><td class="n">100%</td><td class="n">—</td><td class="n">65%</td><td class="n">98 KB</td><td class="n">808</td><td class="n">0.75 s</td><td>not set</td></tr>
+      <tr><td>WCS (car shipping)</td><td class="n">&gt;1M</td><td class="n">1,583</td><td class="n">4%</td><td class="n">88%</td><td class="n">89% <span class="sub">of 37</span></td><td class="n">18%</td><td class="n">128 KB</td><td class="n">1,081</td><td class="n">0.64 s</td><td>10 h at edge</td></tr>
+      <tr><td>Qwintry</td><td class="n">190,841</td><td class="n">5,059</td><td class="n">23%</td><td class="n">100%</td><td class="n">100% <span class="sub">of 7</span></td><td class="n">55%</td><td class="n">69 KB</td><td class="n">951</td><td class="n">0.81 s</td><td>no-store</td></tr>
+      <tr><td>Universal Relocations</td><td class="n">&gt;1M</td><td class="n">574</td><td class="n">12%</td><td class="n">100%</td><td class="n">—</td><td class="n">92%</td><td class="n">422 KB</td><td class="n">932</td><td class="n">1.82 s</td><td>not set</td></tr>
+    </tbody>
+  </table></div>
+  <p class="bars-cap">"Same lastmod" is the share of sitemap entries with the most common date. "Heading skips" is the share of pages that jump a heading level (for example H2 to H4). Words are main content with navigation removed. Most sites scored 85–100% on self-canonicals, meta descriptions and single H1s in the sample. SFL's canonical bug affects 5 pages that the random sample didn't catch.</p>
+
+  <h4>Median HTML document size (KB)</h4>
+  <div class="bars" aria-label="Median HTML size by site">
+    <div class="row sfl"><span class="lab">SFL</span><span class="track"><span class="fill" style="display:block;width:100%"></span></span><span class="val">779</span></div>
+    <div class="row"><span class="lab">Jio Worldwide</span><span class="track"><span class="fill" style="display:block;width:82.2%"></span></span><span class="val">640</span></div>
+    <div class="row"><span class="lab">Universal</span><span class="track"><span class="fill" style="display:block;width:54.2%"></span></span><span class="val">422</span></div>
+    <div class="row"><span class="lab">Parcel Monkey</span><span class="track"><span class="fill" style="display:block;width:41.6%"></span></span><span class="val">324</span></div>
+    <div class="row"><span class="lab">Easyship</span><span class="track"><span class="fill" style="display:block;width:32.3%"></span></span><span class="val">252</span></div>
+    <div class="row"><span class="lab">Meest</span><span class="track"><span class="fill" style="display:block;width:23.5%"></span></span><span class="val">183</span></div>
+    <div class="row"><span class="lab">Seven Seas</span><span class="track"><span class="fill" style="display:block;width:20%"></span></span><span class="val">156</span></div>
+    <div class="row"><span class="lab">WCS</span><span class="track"><span class="fill" style="display:block;width:16.4%"></span></span><span class="val">128</span></div>
+    <div class="row"><span class="lab">Schumacher</span><span class="track"><span class="fill" style="display:block;width:12.6%"></span></span><span class="val">98</span></div>
+    <div class="row"><span class="lab">Shippo</span><span class="track"><span class="fill" style="display:block;width:11.8%"></span></span><span class="val">92</span></div>
+    <div class="row"><span class="lab">Qwintry</span><span class="track"><span class="fill" style="display:block;width:8.9%"></span></span><span class="val">69</span></div>
+    <div class="row"><span class="lab">ShipIndus</span><span class="track"><span class="fill" style="display:block;width:7.4%"></span></span><span class="val">58</span></div>
+  </div>
+
+  <h3>Blog quality matrix</h3>
+  <p>All 246 SFL posts, against the blog posts found in each competitor's 40-page sample.</p>
+  <div class="tw"><table>
+    <thead><tr><th>Site</th><th class="n">Posts</th><th class="n">Median words</th><th class="n">Readability</th><th class="n">Numbers per 1k words</th><th class="n">Posts with tables</th><th class="n">Article schema</th><th class="n">Mention 2026</th><th class="n">Cite official source</th></tr></thead>
+    <tbody>
+      <tr class="sfl"><td>SFL Worldwide</td><td class="n">246</td><td class="n">1,418</td><td class="n">42.1</td><td class="n">8.2</td><td class="n">13%</td><td class="n">0%</td><td class="n">6%</td><td class="n">2%</td></tr>
+      <tr><td>Easyship</td><td class="n">23</td><td class="n">3,593</td><td class="n">55.0</td><td class="n">27.9</td><td class="n">61%</td><td class="n">100%</td><td class="n">100%</td><td class="n">0%</td></tr>
+      <tr><td>Shippo</td><td class="n">22</td><td class="n">1,292</td><td class="n">57.8</td><td class="n">13.0</td><td class="n">23%</td><td class="n">100%</td><td class="n">50%</td><td class="n">18%</td></tr>
+      <tr><td>WCS</td><td class="n">37</td><td class="n">1,025</td><td class="n">41.2</td><td class="n">40.1</td><td class="n">19%</td><td class="n">89%</td><td class="n">46%</td><td class="n">0%</td></tr>
+      <tr><td>Meest USA</td><td class="n">17</td><td class="n">263</td><td class="n">54.0</td><td class="n">55.8</td><td class="n">0%</td><td class="n">100%</td><td class="n">100%</td><td class="n">0%</td></tr>
+      <tr><td>Qwintry</td><td class="n">7</td><td class="n">938</td><td class="n">47.9</td><td class="n">10.7</td><td class="n">14%</td><td class="n">100%</td><td class="n">86%</td><td class="n">0%</td></tr>
+      <tr><td>Parcel Monkey</td><td class="n">7</td><td class="n">1,208</td><td class="n">56.1</td><td class="n">15.6</td><td class="n">14%</td><td class="n">0%</td><td class="n">100%</td><td class="n">0%</td></tr>
+    </tbody>
+  </table></div>
+  <p class="bars-cap">Readability is Flesch Reading Ease (higher is easier; 50–60 reads as plain English). "Numbers per 1k words" counts figures of any kind (prices, days, weights, percentages) and measures how factual a post is. Competitor samples are small; treat those rows as indicative.</p>
+</section>
+
+<section id="technical">
+  <h2><span class="sec">05</span>Technical audit</h2>
+
+  <h3 id="t-canon">5.1 Indexing and canonical tags</h3>
+  <div class="finding"><h4><span class="chip c-crit">Critical</span>Five service pages point their canonical at the homepage</h4>
+    <p><code>/carriers/shipping-with-fedex</code>, <code>-dhl</code>, <code>-ups</code>, <code>-usps</code> and <code>/services/domestic-shipping</code> each have 1,255–2,629 words of their own. But <code>&lt;link rel="canonical"&gt;</code> and all four hreflang tags point to the homepage. Domestic Shipping is linked from every page on the site.</p>
+    <p class="fix"><b>Fix:</b> make each page's canonical its own URL, and point its hreflang tags at real locale equivalents or remove them. This is most likely a single template fallback bug.</p></div>
+  <div class="finding"><h4><span class="chip c-med">Medium</span>Noindex, 404 and ad landing pages</h4>
+    <p><code>/shipping-moving-to-india-from-the-usa</code> is <code>noindex, nofollow</code> but listed in the sitemap. The 404 template outputs both <code>noindex</code> and <code>index, follow</code> robots tags and uses the homepage title.</p>
+    <p class="fix"><b>Fix:</b> remove the page from the sitemap. Make the 404 template output a single <code>noindex</code> and a "Page not found" title.</p></div>
+
+  <h3 id="t-arch">5.2 Architecture, click depth and internal links</h3>
+  <div class="finding"><h4><span class="chip c-crit">Critical</span>Many pages are hard or impossible to reach through links</h4>
+    <p>Clicks needed to reach each sitemap page from the homepage, counting only links a crawler can follow:</p>
+    <div class="tw"><table>
+      <thead><tr><th>Section</th><th class="n">Pages</th><th class="n">4+ clicks deep (reachable)</th><th class="n">Unreachable</th></tr></thead>
+      <tbody>
+        <tr><td>Blog</td><td class="n">245</td><td class="n bad">149</td><td class="n bad">40</td></tr>
+        <tr><td>Worldwide destinations (hubs and sub-guides)</td><td class="n">83</td><td class="n">0</td><td class="n bad">7</td></tr>
+        <tr><td>All other pages</td><td class="n">127</td><td class="n">0</td><td class="n">2 <span class="sub">India landing pages</span></td></tr>
+      </tbody>
+    </table></div>
+    <p>The deepest blog posts are reachable only through a chain of related-post links, up to 51 clicks long. The causes:</p>
+    <ul>
+      <li>The blog index shows 9 posts. The rest load through a JavaScript "Load More" button, and <code>/blog?page=2</code> returns the same 9 posts.</li>
+      <li>The HTML sitemap page links to 0 posts.</li>
+      <li>The homepage links to only the 41 URLs in the site-wide navigation.</li>
+      <li><code>robots.txt</code> still disallows <code>/blog/page/</code>, the old WordPress pagination path.</li>
+    </ul>
+    <p class="fix"><b>Fix:</b> add crawlable, paginated blog archives and topic hubs (India, Car shipping, Moving, Customs, Packing). Link each country page to its guides and posts, and each post back to its country and service pages. Remove the conflicting disallow rule.</p></div>
+  <div class="finding"><h4><span class="chip c-med">Medium</span>Weak link signals</h4>
+    <ul>
+      <li>"READ MORE" is the anchor text on 72 internal links.</li>
+      <li>There are 269 <code>href="#"</code> links, and several <code>&lt;a&gt;</code> elements on blog posts have no <code>href</code>, so crawlers can't follow them.</li>
+      <li>Nine sitemap pages have no internal links from any other sitemap page.</li>
+    </ul></div>
+
+  <h3 id="t-dead">5.3 Removed content and broken links</h3>
+  <div class="finding"><h4><span class="chip c-crit">Critical</span>144 retired URLs, none redirected, some still ranking</h4>
+    <ul>
+      <li>Of the 509 URLs in <code>/llms.txt</code>, 129 return 410 and 15 return 404. Several are 2026 posts, such as "How Much to Ship a Car to Texas: Cost &amp; Tips 2026".</li>
+      <li>At least 9 dead SFL URLs still appear in search results. Two hold non-brand rankings:
+        <ul>
+          <li><code>/blog/is-it-worth-shipping-tv-from-usa-to-india</code> at #3.</li>
+          <li><code>/blog/international-car-shipping-from-usa</code> at #5.</li>
+        </ul>
+      </li>
+      <li>41 dead URLs are still linked from 69 places on live pages, including 11 links on the HTML sitemap page.</li>
+    </ul>
+    <p class="fix"><b>Fix:</b> pause further deletions. Redirect each dead URL that has traffic or backlinks to its closest live equivalent. Update the 69 internal links, and regenerate <code>llms.txt</code> from the live sitemap.</p></div>
+  <div class="finding"><h4><span class="chip c-med">Medium</span>External links</h4>
+    <p>108 distinct external URLs. 72 return 200. One is confirmed dead: <code>chinahighlights.com/festivals/china-public-holiday.htm</code> returns 404. Most of the rest refuse automated checks (403/429) and are probably fine. Three accreditation sites (ARA, IMA, MobilityEx) couldn't be reached from this environment, and each is linked from 340 pages, so check them by hand.</p></div>
+
+  <h3 id="t-sitemap">5.4 Sitemap and robots</h3>
+  <div class="finding"><h4><span class="chip c-med">Medium</span>The sitemap gives no useful freshness signal</h4>
+    <p>435 of 455 <code>lastmod</code> values share one build timestamp, 96% of entries and the second-worst share of the 12 sites. The best sites vary by page: WCS 4% and Schumacher 5%. The sitemap also:</p>
+    <ul>
+      <li>lists a noindex page, the five canonicalised pages and an empty <code>/en-in/blog</code>;</li>
+      <li>leaves out the two author pages, which are indexable and linked more than 300 times each.</li>
+    </ul>
+    <p><code>robots.txt</code> keeps old WordPress rules, and its Cloudflare "Content-Signal" comment block has no actual directive.</p></div>
+
+  <h3 id="t-intl">5.5 International sections</h3>
+  <div class="finding"><h4><span class="chip c-med">Medium</span>Copies instead of localised pages</h4>
+    <ul>
+      <li>12 page pairs across <code>/</code>, <code>/en-in/</code> and <code>/en-ca/</code> are 100% identical, and 26 pairs are 83% or more similar.</li>
+      <li>31 of the 72 locale pages have no hreflang.</li>
+      <li><code>/en-in/blog</code> says "No blog posts available yet" but is listed in the sitemap.</li>
+    </ul>
+    <p>Competitors either localise fully (Parcel Monkey, Meest and Seven Seas have hreflang on 100% of sampled pages) or don't run locale copies at all.</p>
+    <p class="fix"><b>Fix:</b> keep the locale pages that have real local content (prices in INR or CAD, local offices). Point pure copies' canonicals at the US version or remove them, and complete hreflang on the rest.</p></div>
+
+  <h3 id="t-schema">5.6 Structured data and social tags</h3>
+  <div class="finding"><h4><span class="chip c-high">High</span>The blog has no machine-readable article or author data</h4>
+    <ul>
+      <li>0 of 246 posts carry <code>Article</code>/<code>BlogPosting</code>, <code>BreadcrumbList</code> or <code>Person</code> markup, even though each shows an author name and a date.</li>
+      <li>Shippo, Meest and Qwintry mark up 100% of sampled posts, Easyship 96% and WCS 89%.</li>
+      <li>Only 44% of SFL's 455 pages (35% of the random sample) carry any JSON-LD, against 88–100% of sampled pages for 9 of the 11 competitors.</li>
+      <li>Other gaps: the Organization markup has no <code>sameAs</code> (18 instances), there's no <code>LocalBusiness</code> for the 5 offices and no <code>WebSite</code>, and two FAQ answers are empty.</li>
+    </ul></div>
+  <div class="finding"><h4><span class="chip c-med">Medium</span>Share image too small and identical everywhere</h4>
+    <p>438 of 455 pages use <code>/assets/uploads/2023/08/home-ship.png</code> as <code>og:image</code>. It is 211×153 px, below Facebook's 200×200 px minimum (the recommended size is 1,200×630). Two new posts have no share image at all.</p></div>
+
+  <h3 id="t-perf">5.7 Speed and page weight</h3>
+  <div class="tw"><table>
+    <thead><tr><th>Page (mobile lab)</th><th class="n">Perf.</th><th class="n">LCP</th><th class="n">TBT</th><th class="n">CLS</th><th class="n">Weight</th></tr></thead>
+    <tbody>
+      <tr><td>Home</td><td class="n bad">41</td><td class="n bad">6.4 s</td><td class="n bad">1,680 ms</td><td class="n">0</td><td class="n">1.67 MB</td></tr>
+      <tr><td>Shipping to India</td><td class="n">68</td><td class="n ok">1.7 s</td><td class="n bad">960 ms</td><td class="n bad">0.201</td><td class="n">2.30 MB</td></tr>
+      <tr><td>Blog: electronics to India</td><td class="n bad">51</td><td class="n bad">5.2 s</td><td class="n bad">1,060 ms</td><td class="n">0</td><td class="n">2.08 MB</td></tr>
+      <tr><td>Worldwide Shipping</td><td class="n bad">50</td><td class="n bad">7.9 s</td><td class="n bad">820 ms</td><td class="n">0.073</td><td class="n">2.22 MB</td></tr>
+      <tr><td>Auto Transport</td><td class="n bad">41</td><td class="n bad">8.7 s</td><td class="n bad">1,330 ms</td><td class="n">0</td><td class="n">1.59 MB</td></tr>
+      <tr><td>/en-in</td><td class="n bad">52</td><td class="n bad">6.1 s</td><td class="n bad">930 ms</td><td class="n">0.091</td><td class="n">2.13 MB</td></tr>
+    </tbody>
+  </table></div>
+  <div class="finding"><h4><span class="chip c-high">High</span>What makes the pages slow</h4>
+    <ul>
+      <li><b>HTML weight.</b> The median document is 779 KB. On the homepage, 443 KB of that is the inline Next.js data payload. Only 1.2% of the HTML is readable text, against 5–13% for Easyship, Shippo, Schumacher, WCS, Qwintry and ShipIndus.</li>
+      <li><b>No HTML caching.</b> Pages are sent with <code>private, no-cache, no-store</code>, so Cloudflare never caches them. JavaScript files are marked <code>private</code> too, which keeps them out of shared caches. Parcel Monkey, Jio and WCS cache HTML at the edge.</li>
+      <li><b>Third-party scripts.</b> Google Tag Manager (about 522 KB), the Facebook pixel and Microsoft Clarity together block the main thread for 1.2–1.7 s.</li>
+      <li><b>Images.</b> Author photos are 1,200×1,200 PNGs (612 KB and 754 KB) loaded at full size on all 246 posts, without image optimisation. The <code>/en-in</code> hero image is lazy-loaded, which delays LCP.</li>
+      <li><b>Script errors.</b> The homepage throws React hydration error #418. Every page logs a CSP error for a blocked Facebook frame.</li>
+    </ul></div>
+
+  <h3>5.8 Other checks</h3>
+  <div class="tw"><table>
+    <thead><tr><th>Check</th><th>Result</th><th>Status</th></tr></thead>
+    <tbody>
+      <tr><td>Heading order</td><td>Navigation uses H4 headings before the H1 on 383 pages; 163 pages skip a level.</td><td><span class="chip c-med">Medium</span></td></tr>
+      <tr><td>Subdomains</td><td><code>track.</code> and <code>pay.</code> are indexable app shells titled "SFL Worldwide"; <code>track.</code> appears in brand results. <code>rates.</code> serves HTML at <code>/robots.txt</code>.</td><td><span class="chip c-med">Medium</span></td></tr>
+      <tr><td>Office names vs addresses</td><td>Office labels don't match their street addresses: "Atlanta" is in McDonough, "Los Angeles" in Santa Ana, "San Francisco" in Fremont, and the Dallas HQ in Farmers Branch.</td><td><span class="chip c-med">Medium</span></td></tr>
+      <tr><td>Redirects</td><td>Non-www HTTP takes 2 hops; trailing slashes redirect in 1 hop (308).</td><td><span class="chip c-good">Minor</span></td></tr>
+      <tr><td>HTTPS, compression, headers</td><td>HTTP/2, Brotli, HSTS, CSP, nosniff, X-Frame-Options.</td><td><span class="chip c-good">Good</span></td></tr>
+      <tr><td>Titles, descriptions, H1, alt text</td><td>98% of titles are 30–65 characters, 100% have a meta description, 100% have one H1, 0 images lack alt text.</td><td><span class="chip c-good">Good</span></td></tr>
+      <tr><td>Mixed content, URL hygiene</td><td>No <code>http://</code> resources, no uppercase or underscores in URLs, one URL over 100 characters.</td><td><span class="chip c-good">Good</span></td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section id="content">
+  <h2><span class="sec">06</span>Content quality audit</h2>
+
+  <h3>6.1 How content was scored</h3>
+  <p>55 pages that compete for the same queries were grouped into 13 topics. Each was measured on its main content, with navigation, header, footer and forms removed:</p>
+  <ul>
+    <li><b>Depth:</b> word count.</li>
+    <li><b>Readability:</b> Flesch Reading Ease, where 50–60 reads as plain English.</li>
+    <li><b>Specificity:</b> figures and prices per 1,000 words.</li>
+    <li><b>Freshness:</b> mentions of 2026, mentions of 2024 or earlier, and a visible date.</li>
+    <li><b>Structure:</b> tables and lists.</li>
+    <li><b>Evidence:</b> links to official sources (government and customs sites), with accreditation badges and social links excluded.</li>
+    <li><b>Filler:</b> sales phrases such as "seamless", "hassle-free" and "your trusted partner" per 1,000 words.</li>
+    <li><b>Coverage:</b> the share of a topic checklist the page covers. The checklist lists the subtopics searchers need, such as de minimis thresholds, transit days, prices per lb or kg, KYC documents and 2026 rule changes.</li>
+  </ul>
+  <p>Scores for every page are in <code>data/content-quality-scores.csv</code>.</p>
+
+  <h3>6.2 SFL against the pages that outrank it</h3>
+  <div class="tw"><table>
+    <thead><tr><th>Topic</th><th class="n">Words<span class="sub">SFL / comp. median</span></th><th class="n">Figures per 1k</th><th class="n">2026 mentions</th><th class="n">Filler per 1k</th><th class="n">Coverage</th><th>Subtopics SFL misses that most competitors cover</th></tr></thead>
+    <tbody>
+      <tr><td>Shipping to India <span class="sub">vs 7 pages</span></td><td class="n">4,851 / 2,480</td><td class="n bad">21.9 / 32.3</td><td class="n bad">0 / 1</td><td class="n bad">3.1 / 1.0</td><td class="n">61% / 56%</td><td>De minimis threshold, lithium battery rules, 2026 updates</td></tr>
+      <tr><td>Shipping to UK <span class="sub">vs 4</span></td><td class="n">4,320 / 3,720</td><td class="n bad">22.9 / 31.2</td><td class="n bad">0 / 2.5</td><td class="n bad">2.1 / 0</td><td class="n bad">69% / 77%</td><td>Price per lb or kg, UK address and postcode format, 2026 (UK £135 VAT rule)</td></tr>
+      <tr><td>Shipping to Canada <span class="sub">vs 2</span></td><td class="n">2,501 / 1,680</td><td class="n">40.0 / 42.7</td><td class="n bad">0 / 5.5</td><td class="n bad">3.2 / 0</td><td class="n bad">62% / 77%</td><td>De minimis threshold, dimensional weight, address format, 2026</td></tr>
+      <tr><td>Shipping to Pakistan <span class="sub">vs 3</span></td><td class="n">3,034 / 1,792</td><td class="n">28.0 / 17.5</td><td class="n">0 / 0</td><td class="n bad">3.6 / 0.7</td><td class="n">69% / 62%</td><td>De minimis threshold, dimensional weight</td></tr>
+      <tr><td>Car shipping <span class="sub">vs WCS, Schumacher</span></td><td class="n">2,928 / 2,068</td><td class="n bad">10.2 / 26.0</td><td class="n bad">0 / 3.5</td><td class="n">0.7 / 0.8</td><td class="n bad">42% / 88%</td><td>Prices, RoRo, container, title and bill of sale, ports, calculator, 2026. SFL's page is domestic-only; its international car post now returns 410.</td></tr>
+      <tr><td>Moving to India <span class="sub">vs 2</span></td><td class="n">2,890 / 1,685</td><td class="n">11.8 / 8.9</td><td class="n bad">0 / 1</td><td class="n bad">3.1 / 1.5</td><td class="n">50% / 43%</td><td>Pets, move timeline or checklist, cost by home size, 2026</td></tr>
+      <tr><td>International moving <span class="sub">vs Allied, United</span></td><td class="n">1,417 / 1,679</td><td class="n bad">7.8 / 13.1</td><td class="n">0 / 0</td><td class="n bad">6.4 / 2.7</td><td class="n bad">36% / 47%</td><td>Air freight, pets, car, timeline or checklist</td></tr>
+      <tr><td>Blog: USA to India cost per kg <span class="sub">vs 2</span></td><td class="n">1,750 / 1,806</td><td class="n ok">86.3 / 18.4</td><td class="n ok">2 / 0.5</td><td class="n ok">0 / 1.0</td><td class="n ok">61% / 39%</td><td>Tracking, customs documents. This is SFL's strongest page, with 89 prices in 5 tables.</td></tr>
+      <tr><td>Blog: transit time to India <span class="sub">vs 1</span></td><td class="n">1,630 / 3,259</td><td class="n bad">3.1 / 33.1</td><td class="n">0 / 0</td><td class="n">0 / 0.3</td><td class="n">33% / 33%</td><td>Transit days (never stated), destination cities</td></tr>
+      <tr><td>Blog: items not allowed to India <span class="sub">vs 2</span></td><td class="n">1,072 / 562</td><td class="n">16.8 / 10.6</td><td class="n">0 / 0.5</td><td class="n">0 / 0</td><td class="n">75% / 63%</td><td>Batteries, e-cigarettes; no link to Indian customs (CBIC)</td></tr>
+      <tr><td>Blog: cost to move to Ireland <span class="sub">vs 3</span></td><td class="n">1,590 / 2,878</td><td class="n bad">39.6 / 66.6</td><td class="n">2 / 0</td><td class="n">0.6 / 0</td><td class="n">79% / 71%</td><td>Storage, timeline. Competitors show 78–86 prices in 5–7 tables; SFL shows 27 prices and no tables.</td></tr>
+      <tr><td>Blog: moving to India guide <span class="sub">vs 3</span></td><td class="n">1,231 / 2,697</td><td class="n">21.9 / 25.0</td><td class="n bad">0 / 1</td><td class="n bad">1.6 / 0.4</td><td class="n bad">50% / 57%</td><td>Cost range, cost by home size, 2026. SFL shows no prices.</td></tr>
+      <tr><td>Blog: electronics to India <span class="sub">vs 3</span></td><td class="n">1,787 / 1,955</td><td class="n ok">17.9 / 9.7</td><td class="n ok">7 / 0</td><td class="n ok">0 / 1.1</td><td class="n">75% / 75%</td><td>Carrier comparison. Readability is 22 (very hard) vs 51.</td></tr>
+    </tbody>
+  </table></div>
+  <p class="bars-cap">Red marks where SFL is clearly behind; green where it leads. Coverage checklists differ by topic, so compare within a row, not across rows.</p>
+
+  <div class="note"><p><b>What the table shows.</b> SFL's pages are usually longer than the competition. They lose on specificity, freshness and focus: fewer figures per word, no 2026 references, and two to seven times more sales filler. Where SFL wrote a data-dense page (cost per kg, electronics), it matches or beats the competition, and the cost-per-kg post is one of the few that still ranks.</p></div>
+
+  <h3 id="c-answer">6.3 Posts that don't answer their own title</h3>
+  <p>All 246 posts were checked: posts titled with a time question should state days or weeks, and posts titled with a cost question should state a price.</p>
+  <ul>
+    <li><b>1 of 9 transit-time posts gives no number.</b> "How Long Does It Take to Ship from the USA to India?" runs 1,657 words and never states a day count. It was published 18 July 2023 and never updated.</li>
+    <li><b>9 of 41 cost posts give no price,</b> including:
+      <ul>
+        <li>"How Much Does International Relocation Cost";</li>
+        <li>"All You Need to Know About Our International Courier Charges";</li>
+        <li>"Send Laptop from USA to India: Costs, Process, Tips";</li>
+        <li>"Shipping a Car to New Zealand: Costs &amp; Process", published in September 2026.</li>
+      </ul>
+    </li>
+  </ul>
+  <p>Searchers who land on these pages go back to the results and pick a competitor that gives the number. The full list is in the evidence files.</p>
+
+  <h3 id="c-fresh">6.4 Freshness</h3>
+  <ul>
+    <li>The Pakistan and Nigeria pages state: "The discounted rates mentioned below were verified and updated in November 2023."</li>
+    <li>The India page tells readers to "see the latest 2025 prices".</li>
+    <li>None of the 8 SFL country and service pages scored mentions 2026. Winning competitor guides are built around 2026 rates and rule changes: the UK £135 VAT threshold, Germany ending its low-value duty exemption on 1 July 2026, China's tariffs, and the 2026 carrier rate increases.</li>
+    <li>On all 246 posts, "Last updated" equals "Published on", so the site never shows that a post was revised.</li>
+    <li>Only 6% of posts mention 2026. On competitor blogs the figure is 46–100%.</li>
+  </ul>
+
+  <h3 id="c-template">6.5 Templated country pages</h3>
+  <p>After each page's country name is replaced with a placeholder, a median of 32% of a country page's text appears on 10 or more other SFL country pages (range 11–38%). The most alike pairs:</p>
+  <ul>
+    <li>New Zealand and Saudi Arabia: 68%.</li>
+    <li>Colombia and New Zealand: 58%.</li>
+    <li>Haiti and Jamaica: 56%.</li>
+    <li>Denmark and Finland: 54%.</li>
+  </ul>
+  <p>The same H2s repeat across the set: "Get an Instant Quote" (51 pages), "Looking X? Explore Here!" (51), "Why use SFL Worldwide?" (49). 67 page titles use "cheapest", "cheap" or "affordable". SFL's text is original compared with competitors: it shares about 1% with Jio Worldwide and about 0.1% with Meest. The duplication is internal. Google's spam policies describe "scaled content abuse" and favour pages with substantial unique value. In the searches checked, only the India pages from this set rank at all.</p>
+
+  <h3>6.6 Trust and expertise signals</h3>
+  <div class="tw"><table>
+    <thead><tr><th>Signal</th><th>SFL</th><th>Competitors that win</th></tr></thead>
+    <tbody>
+      <tr><td>Author shown to readers</td><td>Yes. Two authors, with job titles on their author pages, credited on every post back to 2019.</td><td>Named authors; Shippo and WCS mark them up as <code>Person</code>.</td></tr>
+      <tr><td>Author readable by machines</td><td class="bad">No author markup, no <code>rel="author"</code></td><td>Present on most sampled blogs.</td></tr>
+      <tr><td>Citations to official sources</td><td class="bad">2% of posts. On money pages, the only outbound links are accreditation badges.</td><td>Shippo 18% of posts. Guides link to customs authorities for duty rules.</td></tr>
+      <tr><td>Consistent facts</td><td class="bad">"15 years" (7 times), "18 years" (9 times) and "20 years" (once), but founded in 2005.</td><td>Not measured.</td></tr>
+      <tr><td>Reviews shown</td><td>Trustpilot 4.2 from 520 reviews exists, but the site shows no live rating and makes a "1,600+ verified reviews" claim instead.</td><td>Jio shows "4.7 Reviews on Google" at the top of the page; Easyship shows a 4.3 rating from 1,493 reviews.</td></tr>
+      <tr><td>Sends buyers elsewhere</td><td class="bad">The India FAQ says "Contact FedEx directly for more information on its rates".</td><td>Not observed.</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>6.7 Readability and filler</h3>
+  <p>SFL blog posts score a median readability of 42, harder than every competitor blog except WCS (41). The shipping-electronics post scores 22, which reads like a legal document. Seven of the 8 money pages scored carry 2.1–6.9 filler phrases per 1,000 words. The competitor median per topic is 0–1.5, apart from international moving, where Allied and United reach 2.6–2.7. The international relocation service page is the worst, at 6.4.</p>
+</section>
+
+<section id="competitors">
+  <h2><span class="sec">07</span>Why competitors win</h2>
+  <div class="grid2">
+    <div class="card"><h4>Easyship</h4><div class="meta">14 queries · 10 in top 3 · Tranco 124k</div><p>A calculator page for every route, plus data-heavy guides: a median 3,593 words, tables in 61% of posts, and 100% Article markup and 2026 mentions. Its HTML is a third the size of SFL's.</p></div>
+    <div class="card"><h4>Parcel Monkey</h4><div class="meta">13 queries · 8 in top 3 · Tranco 498k</div><p>Short country pages (about 800 words) that lead with "from just $26.82" and a calculator. Product, FAQ and WebSite markup on every page, full hreflang, and HTML cached at the edge.</p></div>
+    <div class="card"><h4>Meest USA</h4><div class="meta">9 queries · 8 in top 3 · Tranco 178k</div><p>A specialist for diaspora shipping routes. The meta description carries "$35 / 5 lb", insurance and customs limits. 100% schema coverage and light HTML (183 KB).</p></div>
+    <div class="card"><h4>Shippo</h4><div class="meta">7 queries · 5 in top 3 · Tranco 56k</div><p>2026 guides organised around what changed: VAT thresholds, new duty rules, live carrier rates. Up to 7 tables per guide, BlogPosting and Person markup, and 92 KB HTML.</p></div>
+    <div class="card"><h4>Jio Worldwide</h4><div class="meta">9 queries · positions 4–7 · not in top 1M</div><p>SFL's own model and tagline ("Save UPTO 70%"), with price-led titles ("starts at just $29.99"), visible Google review stars and dates, and separate pages for single items. Its text isn't copied from SFL.</p></div>
+    <div class="card"><h4>WCS and Schumacher Cargo</h4><div class="meta">Car shipping · 3–5 queries each, top 3</div><p>Instant car-shipping calculators, 83–92% topic coverage (RoRo, ports, title, duties), and Schumacher's Product markup with a 4.7 rating from 6,445 reviews. SFL no longer has an international car page.</p></div>
+  </div>
+  <p>The winners share three habits. They put a concrete number in the search result. They keep the data current to 2026. And each page does one job, whether as a calculator, a data guide or a single route. None of them wins on length.</p>
+</section>
+
+<section id="diagnosis">
+  <h2><span class="sec">08</span>Why rankings fell: likely causes</h2>
+  <p>These causes are ranked by the strength of today's evidence. Confirm each against Search Console before acting (section 10).</p>
+  <div class="tw"><table>
+    <thead><tr><th>#</th><th>Cause</th><th>Evidence</th><th>Strength</th></tr></thead>
+    <tbody>
+      <tr><td class="n">1</td><td>Deleted content without redirects</td><td>144 dead URLs from the site's own <code>llms.txt</code>, several from 2026; ranked URLs now return 410.</td><td><span class="chip c-crit">Strong</span></td></tr>
+      <tr><td class="n">2</td><td>Move from WordPress to Next.js that introduced SEO bugs</td><td>WordPress rules and paths still present. The bugs match a migration: canonical fallback, lost pagination, dead HTML sitemap links, one sitemap date, missing Article markup. The migration date is unknown.</td><td><span class="chip c-crit">Strong</span></td></tr>
+      <tr><td class="n">3</td><td>Posts are hard to find through links</td><td>49 pages unreachable and 149 more posts 4+ clicks deep, so the blog passes and receives little internal value.</td><td><span class="chip c-high">Strong</span></td></tr>
+      <tr><td class="n">4</td><td>Templated, filler-heavy country pages</td><td>32% shared text; filler several times the competitors'; 0 of the 12 other-country queries rank.</td><td><span class="chip c-high">Moderate</span></td></tr>
+      <tr><td class="n">5</td><td>Stale, unspecific content</td><td>Rates dated 2023 and 2025; fewer figures per word than competitors; posts that never answer their title.</td><td><span class="chip c-high">Moderate</span></td></tr>
+      <tr><td class="n">6</td><td>Authority gap on general terms</td><td>DHL, Shippo, Easyship and Meest are all in the Tranco top 200k; SFL isn't in the top 1M.</td><td><span class="chip c-med">Moderate</span></td></tr>
+      <tr><td class="n">7</td><td>Slow pages</td><td>Mobile LCP 5.2–8.7 s; heaviest HTML of the 12 sites.</td><td><span class="chip c-med">Contributing</span></td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section id="plan">
+  <h2><span class="sec">09</span>Action plan</h2>
+  <div class="tw"><table>
+    <thead><tr><th>Priority</th><th>Action</th><th>Effort</th><th>Addresses</th></tr></thead>
+    <tbody>
+      <tr><td><span class="chip c-crit">P0 · week 1</span></td><td>Fix self-canonicals and hreflang on the 4 carrier pages and Domestic Shipping.</td><td>Small</td><td>5.1</td></tr>
+      <tr><td><span class="chip c-crit">P0 · week 1</span></td><td>Pause deletions. Pull clicks and backlinks for the 144 dead URLs, and 301 each one that has value to its closest live page, starting with the car and TV posts.</td><td>Medium</td><td>5.3, cause 1</td></tr>
+      <tr><td><span class="chip c-crit">P0 · week 1</span></td><td>Fix the 69 broken internal links and the 11 dead links on the HTML sitemap page. Remove noindex, canonicalised and empty pages from the XML sitemap.</td><td>Small</td><td>5.3, 5.4</td></tr>
+      <tr><td><span class="chip c-high">P1 · month 1</span></td><td>Crawlable blog pagination and topic hubs. Link each country page to its posts and each post back. Aim for every post within 3 clicks of the homepage.</td><td>Medium</td><td>5.2, cause 3</td></tr>
+      <tr><td><span class="chip c-high">P1 · month 1</span></td><td>BlogPosting, BreadcrumbList and Person markup on the blog template; real <code>dateModified</code> and sitemap <code>lastmod</code>; a 1,200×630 share image per page.</td><td>Medium</td><td>5.6, 5.4</td></tr>
+      <tr><td><span class="chip c-high">P1 · month 1</span></td><td>Rewrite the India hub and merge overlapping India posts: one page each for cost, prohibited items and TV. Add a dated 2026 rate table, the de minimis and IGST rules, battery rules, and the lowest price in the title and description.</td><td>Medium</td><td>6.2, 6.4</td></tr>
+      <tr><td><span class="chip c-high">P1 · month 1</span></td><td>Fix the posts that don't answer their title: add transit days to the India transit post and prices to the 9 cost posts.</td><td>Small</td><td>6.3</td></tr>
+      <tr><td><span class="chip c-high">P1 · month 1–2</span></td><td>Speed: audit GTM and delay marketing tags; cache HTML at the edge; stop sending JS as <code>private</code>; serve author photos and LCP images through image optimisation; fix the hydration error.</td><td>Medium–Large</td><td>5.7</td></tr>
+      <tr><td><span class="chip c-med">P2 · quarter</span></td><td>Choose 6–8 priority corridors and rewrite those country pages with route-specific data, current rules, example quotes and customer stories. Merge or noindex the country pages SFL can't support.</td><td>Large</td><td>6.5, cause 4</td></tr>
+      <tr><td><span class="chip c-med">P2 · quarter</span></td><td>Rebuild an international car shipping page with prices, RoRo vs container, ports, documents and a calculator.</td><td>Medium</td><td>6.2</td></tr>
+      <tr><td><span class="chip c-med">P2 · quarter</span></td><td>Trim sales filler on money pages, and link duty and prohibited-item claims to official customs sources.</td><td>Medium</td><td>6.6, 6.7</td></tr>
+      <tr><td><span class="chip c-med">P2 · quarter</span></td><td>Localise or consolidate <code>/en-in/</code> and <code>/en-ca/</code>, and complete hreflang.</td><td>Medium</td><td>5.5</td></tr>
+      <tr><td><span class="chip c-good">P3 · ongoing</span></td><td>Show the Trustpilot rating; use one experience figure everywhere; match office names to their addresses; rewrite the FedEx FAQ answer; noindex <code>track.</code> and <code>pay.</code>; fix the 404 template; regenerate <code>llms.txt</code>; refresh rate tables quarterly.</td><td>Small</td><td>5.8, 6.6</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section id="measure">
+  <h2><span class="sec">10</span>Data still needed</h2>
+  <ol>
+    <li><b>Google Search Console (16 months):</b> weekly clicks, marked with the site launch date and the dates pages were deleted; performance by page for the 144 dead URLs; the page indexing report; Core Web Vitals field data.</li>
+    <li><b>Backlink export</b> (Ahrefs, Semrush or Search Console Links) for the dead URLs, to decide which to redirect first.</li>
+    <li><b>Migration date and the old URL list</b> (the WordPress export or old XML sitemap).</li>
+    <li><b>Network access to <code>web.archive.org</code></b> in this environment, to compare old and new versions of the key pages.</li>
+    <li><b>A rank tracker on real Google results</b> for the 40 queries in <code>data/serp-results.csv</code>, as the baseline for measuring recovery.</li>
+  </ol>
+</section>
+
+<section id="evidence">
+  <h2><span class="sec">11</span>Evidence files</h2>
+  <p>All files are on the <code>sfl</code> branch under <code>sfl-seo-audit/data/</code>.</p>
+  <div class="tw"><table>
+    <thead><tr><th>File</th><th>Contents</th></tr></thead>
+    <tbody>
+      <tr><td><code>page-inventory.csv</code></td><td>Every sitemap URL: status, title, canonical, robots, hreflang, H1, words, schema, inlinks.</td></tr>
+      <tr><td><code>click-depth.csv</code></td><td>Clicks from the homepage for every sitemap URL (99 means unreachable).</td></tr>
+      <tr><td><code>broken-internal-links.csv</code></td><td>Each live page that links to a 404 or 410 URL, with the anchor text.</td></tr>
+      <tr><td><code>llms-txt-link-status.csv</code></td><td>Status of all 509 URLs in <code>/llms.txt</code>.</td></tr>
+      <tr><td><code>near-duplicate-pairs.csv</code></td><td>92 page pairs with 50% or more shared content.</td></tr>
+      <tr><td><code>technical-matrix-vs-competitors.csv</code></td><td>The 12-site technical comparison.</td></tr>
+      <tr><td><code>content-quality-scores.csv</code></td><td>Content scores for the 55 compared pages.</td></tr>
+      <tr><td><code>blog-quality-matrix.csv</code></td><td>Blog comparison across 7 sites.</td></tr>
+      <tr><td><code>serp-results.csv</code>, <code>competitor-pages.csv</code></td><td>The 40 search result pages and the measured competitor pages.</td></tr>
+      <tr><td><code>lighthouse-mobile.csv</code></td><td>Mobile Lighthouse scores for 6 SFL pages.</td></tr>
+    </tbody>
+  </table></div>
+  <footer>Prepared 28 September 2026 from live measurements of sflworldwide.com and 11 competitor sites. Companion write-ups: <code>sflworldwide-seo-audit.md</code> and <code>sflworldwide-competitor-serp-analysis.md</code>.</footer>
+</section>
+</main>
+</div>

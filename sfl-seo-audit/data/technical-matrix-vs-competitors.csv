@@ -1,0 +1,13 @@
+site,sitemap_urls,lastmod_top_share,robots,sample,non200,canon_self,noindex,title_ok,desc,h1_one,hskip,schema_any,og,hreflang,alt_missing,words_body_med,html_kb_med,ttfb_med,scripts_med,int_links_med,enc,html_cache,home_kb,blog_sampled,blog_article_schema_pct
+sfl,455,0.96,200,40,0,100,0,98,100,100,32,35,100,20,0,1543,779,0.55,14,68,br,"private, no-cache, no-store, max-age=0, ",852,27,0
+easyship,1610,0.54,200,40,4,100,0,78,100,100,3,97,100,36,0,2297,252,0.57,9,342,br,none,216,23,96
+parcelmonkey,443,0.56,200,40,0,100,0,82,100,90,72,100,0,100,0,600,324,0.97,22,38,br,"public, max-age=90, s-maxage=300, stale-",310,7,0
+meest,1563,0.25,200,40,0,100,0,20,85,100,5,100,100,100,44,570,183,0.78,4,91,br,"no-cache, private",250,17,100
+shippo,1196,0.57,200,40,3,100,0,92,100,97,38,97,97,0,17,1049,92,0.46,6,211,gzip,none,83,22,100
+jio,783,0.09,200,40,0,100,0,18,100,98,88,100,35,0,245,4236,640,0.77,57,49,gzip,"public, max-age=3600, s-maxage=3600",936,1,0
+shipindus,128,1.0,200,40,0,100,0,78,100,100,80,5,100,0,0,1206,58,0.53,15,49,br,"no-cache, no-store, max-age=0, must-reva",111,0,
+sevenseas,1922,0.14,200,40,2,100,0,32,95,97,89,3,76,100,0,320,156,0.57,13,143,br,max-age=14400,295,1,0
+schumacher,701,0.05,200,40,0,100,0,85,92,100,65,100,100,0,3,808,98,0.75,11,183,br,none,95,0,
+wcs,1583,0.04,200,40,0,98,0,62,100,90,18,88,98,10,0,1081,128,0.64,15,108,br,"s-maxage=36000, max-age=5",197,37,89
+qwintry,5059,0.23,404,40,0,100,0,38,100,70,55,100,100,70,0,951,69,0.81,6,62,gzip,"no-store, no-cache, must-revalidate",262,7,100
+universal,574,0.12,200,40,3,100,0,95,100,95,92,100,89,0,0,932,422,1.82,32,145,gzip,none,767,0,
