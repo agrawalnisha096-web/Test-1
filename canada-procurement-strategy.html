@@ -1,0 +1,296 @@
+<title>Trillet Canada Opportunity</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+  /* Layout: single reading column (~72ch) with full-width tables; brand tokens reused from about-trillet.html */
+  :root {
+    --ink: #0E1B22; --bg: #F2F5F5; --surface: #FFFFFF; --surface-2: #E8EFEF;
+    --muted: #52646A; --line: #D6E0E1;
+    --accent: #0C8577; --accent-ink: #064A40; --accent-soft: #D6ECE7;
+    --warn: #9A5B0C; --warn-soft: #F6E8D2;
+    --display: "Bricolage Grotesque", Georgia, serif;
+    --body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink: #E7F0EF; --bg: #091316; --surface: #0F1E22; --surface-2: #16282E;
+      --muted: #9AADB2; --line: #21333A;
+      --accent: #33D3BF; --accent-ink: #9CEEE1; --accent-soft: #113632;
+      --warn: #E6B066; --warn-soft: #33260F;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink: #E7F0EF; --bg: #091316; --surface: #0F1E22; --surface-2: #16282E;
+    --muted: #9AADB2; --line: #21333A;
+    --accent: #33D3BF; --accent-ink: #9CEEE1; --accent-soft: #113632;
+    --warn: #E6B066; --warn-soft: #33260F;
+    color-scheme: dark;
+  }
+  body { background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 16px; line-height: 1.6; }
+  .wrap { max-width: 880px; margin: 0 auto; padding-inline: clamp(16px, 5vw, 48px); padding-block: 48px 72px; display: flex; flex-direction: column; gap: 56px; }
+  header { display: flex; flex-direction: column; gap: 14px; border-bottom: 1px solid var(--line); padding-bottom: 32px; }
+  .meta { font-family: var(--mono); font-size: 12.5px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); display: flex; flex-wrap: wrap; gap: 6px 18px; }
+  h1, h2, h3 { font-family: var(--display); text-wrap: balance; line-height: 1.15; margin: 0; }
+  h1 { font-size: clamp(30px, 5vw, 44px); font-weight: 700; letter-spacing: -.01em; }
+  h2 { font-size: clamp(22px, 3.2vw, 28px); font-weight: 700; }
+  h3 { font-size: 18px; font-weight: 600; }
+  .lede { font-size: 18px; color: var(--muted); max-width: 64ch; margin: 0; }
+  section { display: flex; flex-direction: column; gap: 18px; }
+  section > p, section > ul, section > ol { max-width: 68ch; margin: 0; }
+  .eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+  .head { display: flex; flex-direction: column; gap: 6px; }
+  ul, ol { padding-left: 1.2em; display: flex; flex-direction: column; gap: 8px; }
+  a { color: var(--accent); text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+  strong { font-weight: 600; }
+  code { font-family: var(--mono); font-size: .9em; background: var(--surface-2); padding: 1px 5px; border-radius: 4px; }
+
+  .verdict { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+  .verdict div { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+  .verdict .k { font-family: var(--mono); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+  .verdict .v { font-family: var(--display); font-size: 20px; font-weight: 600; line-height: 1.25; }
+  .verdict p { margin: 0; font-size: 14.5px; color: var(--muted); }
+
+  .table { overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
+  table { border-collapse: collapse; width: 100%; font-size: 14.5px; min-width: 620px; }
+  th, td { text-align: left; vertical-align: top; padding: 12px 14px; border-bottom: 1px solid var(--line); }
+  th { font-family: var(--mono); font-size: 12px; font-weight: 500; letter-spacing: .05em; text-transform: uppercase; color: var(--muted); background: var(--surface-2); }
+  tr:last-child td { border-bottom: 0; }
+  td:first-child { font-weight: 600; }
+  .num { font-variant-numeric: tabular-nums; }
+
+  .pill { display: inline-block; font-family: var(--mono); font-size: 11.5px; letter-spacing: .04em; text-transform: uppercase; padding: 2px 8px; border-radius: 999px; white-space: nowrap; }
+  .pill.go { background: var(--accent-soft); color: var(--accent-ink); }
+  .pill.check { background: var(--warn-soft); color: var(--warn); }
+
+  .gate { border-left: 3px solid var(--warn); background: var(--warn-soft); border-radius: 0 10px 10px 0; padding: 16px 20px; max-width: 68ch; }
+  .gate p { margin: 0; }
+
+  .timeline { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0; border-left: 2px solid var(--line); margin-left: 6px; }
+  .timeline li { position: relative; padding: 0 0 16px 22px; }
+  .timeline li::before { content: ""; position: absolute; left: -7px; top: 7px; width: 12px; height: 12px; border-radius: 50%; background: var(--bg); border: 2px solid var(--accent); }
+  .timeline .d { font-family: var(--mono); font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; display: block; }
+
+  .tier { display: flex; flex-direction: column; gap: 12px; }
+  .posts { display: grid; gap: 12px; }
+  .post { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 18px 20px; display: grid; grid-template-columns: 2.2em 1fr; gap: 4px 12px; }
+  .post .n { font-family: var(--mono); font-size: 14px; color: var(--accent); font-variant-numeric: tabular-nums; padding-top: 2px; }
+  .post > div { min-width: 0; display: flex; flex-direction: column; gap: 8px; }
+  .post h3 { font-size: 17px; }
+  .post dl { margin: 0; display: grid; grid-template-columns: max-content 1fr; gap: 4px 14px; font-size: 14.5px; }
+  .post dt { font-family: var(--mono); font-size: 12px; letter-spacing: .05em; text-transform: uppercase; color: var(--muted); padding-top: 2px; }
+  .post dd { margin: 0; min-width: 0; }
+  @media (max-width: 520px) { .post dl { grid-template-columns: 1fr; } .post dt { padding-top: 6px; } }
+
+  .phases { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+  .phase { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 18px 20px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+  .phase .when { font-family: var(--mono); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--accent); }
+  .phase ul { font-size: 14.5px; margin: 0; }
+
+  .sources { font-size: 14px; columns: 2 280px; column-gap: 32px; }
+  .sources li { break-inside: avoid; }
+  footer { font-size: 13px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 20px; }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="meta"><span>Strategy document</span><span>Market: Canada public sector &amp; healthcare</span><span>September 30, 2026</span></div>
+    <h1>Canada's US-supplier restrictions: the opening for Trillet</h1>
+    <p class="lede">What Canada has actually changed in public procurement, why an Australian vendor can bid where US voice AI vendors increasingly cannot, what we must confirm first, and the content plan to capture demand.</p>
+  </header>
+
+  <section>
+    <div class="head"><span class="eyebrow">Summary</span><h2>The claim is partly true, and the opportunity is real</h2></div>
+    <div class="verdict">
+      <div><span class="k">The claim</span><span class="v">Overstated</span><p>There is no national ban on all US companies and no healthcare-specific ban. Federal and provincial rules now restrict US suppliers, and Ontario's rule covers hospitals.</p></div>
+      <div><span class="k">Why Trillet qualifies</span><span class="v">CPTPP, not the Commonwealth</span><p>Australia and Canada share a trade agreement with a procurement chapter. Ontario's ban only targets US-headquartered firms.</p></div>
+      <div><span class="k">Recommendation</span><span class="v">Pursue, after four checks</span><p>Lead with Ontario hospitals and provincial agencies. Confirm domicile, sub-processors, Canadian hosting and certifications before any public claim.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="head"><span class="eyebrow">Findings</span><h2>What Canada has actually changed</h2></div>
+    <div class="table">
+      <table>
+        <thead><tr><th>Jurisdiction</th><th>Rule</th><th>Effect on US suppliers</th><th>Healthcare</th></tr></thead>
+        <tbody>
+          <tr><td>Federal</td><td>Buy Canadian Policy and Interim Policy on Reciprocal Procurement, effective Dec 16, 2025. Strategic-sector threshold dropped from $25M to $5M on June 15, 2026.</td><td>Only Canadian suppliers and suppliers from trade-agreement partners may bid. US firms can still bid where a trade agreement such as the WTO GPA applies. Canadian suppliers get a 10% evaluation price reduction and Canadian-content points.</td><td>Health &amp; pharmaceutical and ICT are named strategic sectors.</td></tr>
+          <tr><td>Ontario</td><td>US procurement restriction since March 4, 2025. Buy Ontario Procurement Directive in effect April 13, 2026.</td><td>Excludes "US businesses": headquarters or main office in the US and fewer than 250 full-time staff in Canada. Exceptions: sole viable source, or for services, 90% of delivery staff located in Canada.</td><td><strong>Yes.</strong> Applies to the broader public sector, including hospitals.</td></tr>
+          <tr><td>New Brunswick</td><td>Announced by Premier Susan Holt.</td><td>Bans US goods and services on provincial contracts over $5M from Oct 1, 2026.</td><td>Provincial contracts</td></tr>
+          <tr><td>Quebec, Nova Scotia, BC, Manitoba</td><td>Similar measures at different stages. BC's enabling bill passed second reading in 2025.</td><td>Varies. Nova Scotia keeps the option to reject US bids outright.</td><td>Varies</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>How it escalated</h3>
+    <ol class="timeline">
+      <li><span class="d">Mar 4, 2025</span>Ontario bars US businesses from provincial procurement.</li>
+      <li><span class="d">Dec 16, 2025</span>Federal Buy Canadian and reciprocal procurement policies take effect.</li>
+      <li><span class="d">Apr 13, 2026</span>Buy Ontario Procurement Directive in force across the broader public sector.</li>
+      <li><span class="d">Jun 15, 2026</span>Federal strategic-procurement threshold drops to $5M.</li>
+      <li><span class="d">Sep 8, 2026</span>Canada's counter-tariffs start. The US orders Canadian goods off federal purchasing schedules.</li>
+      <li><span class="d">Sep 16, 2026</span>The White House widens this into a review of Canadian access to US civilian procurement. Canadian trade experts urge sector-specific bans on US bidders in response.</li>
+      <li><span class="d">Oct 1, 2026</span>New Brunswick's $5M+ ban on US goods and services begins.</li>
+    </ol>
+    <p>The direction of travel is toward more restriction, and public-sector buyers are actively looking for vendors that are not American.</p>
+  </section>
+
+  <section>
+    <div class="head"><span class="eyebrow">Eligibility</span><h2>Why an Australian vendor can bid</h2></div>
+    <p>The Commonwealth gives no procurement rights. The real basis is trade law:</p>
+    <ul>
+      <li><strong>CPTPP.</strong> Australia and Canada are both members, and the agreement has a government procurement chapter. All provinces took sub-central commitments comparable to the WTO GPA.</li>
+      <li><strong>WTO GPA.</strong> Australia joined in 2019, which gives a second route for covered procurements.</li>
+      <li><strong>Ontario's test is US-specific.</strong> It excludes US-headquartered businesses only. An Australian-headquartered vendor is not caught.</li>
+    </ul>
+    <h3>Limits to state plainly</h3>
+    <ul>
+      <li>Trillet is <strong>eligible, not preferred</strong>. Federally, Canadian suppliers still receive the 10% price advantage and content points.</li>
+      <li>CPTPP excludes hospital purchasing in some provinces, and municipalities. Only listed services are covered. Thresholds apply: about $237,700 federally and $649,100 for sub-central entities.</li>
+      <li>Ontario is the cleanest opening, because hospitals there must exclude US vendors while an Australian one is unaffected.</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="head"><span class="eyebrow">Gating checks</span><h2>Confirm these before any public claim</h2></div>
+    <div class="gate"><p>If check 1 or 2 fails, the core positioning does not hold. Do not publish eligibility or CLOUD Act content until both are confirmed in writing.</p></div>
+    <div class="table">
+      <table>
+        <thead><tr><th>Check</th><th>Why it matters</th><th>What "pass" looks like</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>1. Corporate domicile</td><td>Ontario's test is where the headquarters or main office is. A US parent company, which is common for Australian startups, or a US head office puts Trillet in the excluded category.</td><td>Australian parent entity. Head office in Melbourne. No US holding company.</td><td><span class="pill check">To confirm</span></td></tr>
+          <tr><td>2. Sub-processors</td><td>The US CLOUD Act reaches data held by US-controlled providers wherever it is stored. US LLM, telephony or cloud providers weaken any sovereignty claim.</td><td>A documented Canadian deployment path: on-prem Docker, in-country LLM hosting, or a Canadian sovereign cloud such as ThinkOn or OpenText.</td><td><span class="pill check">To confirm</span></td></tr>
+          <tr><td>3. Canadian hosting &amp; language</td><td>Trillet's own blog says Canadian residency is Enterprise-only. Buyers will require PHIPA, Quebec Law 25 and French.</td><td>A Canadian region on Enterprise, a PHIPA/Law 25 data-handling statement, and a production-quality Canadian French voice agent.</td><td><span class="pill check">To confirm</span></td></tr>
+          <tr><td>4. Certifications</td><td>The About-page handoff already flags SOC 2 Type II and ISO 27001 as unconfirmed. Public-sector buyers will ask for reports.</td><td>Held vs in-progress status stated accurately everywhere.</td><td><span class="pill check">To confirm</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="head"><span class="eyebrow">Go to market</span><h2>How to market it</h2></div>
+    <h3>Positioning</h3>
+    <p><strong>"Australian-owned voice AI, eligible where US vendors are restricted, deployed inside your Canadian environment."</strong> Keep every claim factual and never anti-American. Say "eligible under Buy Ontario" and "CPTPP-partner supplier". Do not use "Commonwealth" as the argument.</p>
+    <h3>Target segments, in order</h3>
+    <div class="table">
+      <table>
+        <thead><tr><th>Segment</th><th>Why now</th><th>Use cases</th></tr></thead>
+        <tbody>
+          <tr><td>Ontario hospitals &amp; health agencies</td><td>Must exclude US vendors under Buy Ontario. The incumbent US voice AI vendors (Retell, Vapi, Bland, Sierra) are now restricted.</td><td>Patient access lines, appointment booking and rescheduling, reminders, referral status, after-hours routing</td></tr>
+          <tr><td>Ontario ministries, agencies &amp; Crown corporations</td><td>Same directive. High call volumes.</td><td>Service lines, identity-verified account enquiries</td></tr>
+          <tr><td>Federal departments</td><td>Health and ICT are strategic sectors. CPTPP gives Trillet access above thresholds.</td><td>Program enquiry lines. French and English required.</td></tr>
+          <tr><td>Other provinces, starting with New Brunswick</td><td>New restrictions from Oct 1, 2026</td><td>Provincial service lines, utilities</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h3>Moves</h3>
+    <ul>
+      <li><strong>Get Canadian-supplier status.</strong> The federal definition only requires a permanent place of business in Canada, with no minimum headcount. A small Canadian entity, or a partnership with a Canadian systems integrator or sovereign cloud, unlocks the 10% advantage and content points.</li>
+      <li><strong>Register on the procurement portals:</strong> CanadaBuys, Supply Ontario, MERX, BC Bid and SEAO (Quebec).</li>
+      <li><strong>Use Australian export support.</strong> Talk to Austrade and apply for the Export Market Development Grant to part-fund market entry.</li>
+      <li><strong>Build a proof point.</strong> One Ontario hospital pilot with published call-volume and wait-time results will carry more weight than any content.</li>
+      <li><strong>Timing.</strong> Coverage is at a peak with the September escalation and New Brunswick's Oct 1 start. The first posts should ship within weeks.</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="head"><span class="eyebrow">Competition</span><h2>Who is already marketing this</h2></div>
+    <div class="table">
+      <table>
+        <thead><tr><th>Company</th><th>Origin</th><th>What they market</th><th>Gap vs Trillet</th></tr></thead>
+        <tbody>
+          <tr><td>ProCogia CallYeah</td><td>Canada</td><td>Healthcare voice AI running on BUZZ HPC's Canadian sovereign compute</td><td>Closest direct competitor. Watch it.</td></tr>
+          <tr><td>Agent IA Vocal, TalkToMedi, KickCall</td><td>Canada</td><td>"PIPEDA/PHIPA, 100% Canadian" voice agents</td><td>Clinic and small-business focus, not enterprise or government</td></tr>
+          <tr><td>Ada</td><td>Canada (Toronto)</td><td>Customer-service AI expanding into voice</td><td>Not positioned on public-sector eligibility</td></tr>
+          <tr><td>Cohere, Augure</td><td>Canada</td><td>Sovereign AI. Augure markets "zero CLOUD Act exposure"</td><td>Models and chat, not voice agents. Possible partners.</td></tr>
+          <tr><td>ThinkOn, OpenText</td><td>Canada</td><td>Canadian sovereign cloud. ThinkOn is authorized for Protected B government workloads.</td><td>Infrastructure. Natural hosting partners.</td></tr>
+          <tr><td>Lorikeet</td><td>Australia</td><td>Writes for Canadian buyers on compliance</td><td>No Canadian region, and does not use Australian ownership as a selling point</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p><strong>The open slot:</strong> we found no enterprise-grade, non-US voice AI vendor with on-prem or Canadian deployment that markets its eligibility to hospitals and government. The search was not exhaustive, so recheck before launch.</p>
+  </section>
+
+  <section>
+    <div class="head"><span class="eyebrow">Content plan</span><h2>Blog topics built to earn traction</h2></div>
+    <p>Posts earn traction when they answer a question buyers are already searching, give a procurement or IT lead something to forward internally, or add new information. A post that only says "Trillet is not American" does none of these. Each post leads with usefulness and mentions Australian ownership once, inside the practical guidance.</p>
+
+    <div class="tier">
+      <h3>Tier 1: time-sensitive, high intent</h3>
+      <div class="posts">
+        <article class="post"><span class="n">01</span><div><h3>Buy Ontario and US supplier restrictions: what hospitals can and can't buy in 2026</h3><dl><dt>Reader</dt><dd>Ontario hospital procurement, CIOs, patient-access leads</dd><dt>Why</dt><dd>High current search demand. Most coverage is law-firm PDFs. A plain operational guide to the "US business" test, the 250-employee and 90%-staff exceptions, and software/AI contracts gets linked and forwarded.</dd><dt>Asset</dt><dd>One-page summary graphic</dd></dl></div></article>
+        <article class="post"><span class="n">02</span><div><h3>Is your AI vendor a "US business"? A checklist for Canadian public-sector buyers</h3><dl><dt>Reader</dt><dd>Procurement and vendor-risk teams</dd><dt>Why</dt><dd>A practical tool that people share. It covers headquarters, Canadian headcount, sub-processors, hosting and CLOUD Act exposure.</dd><dt>Asset</dt><dd>Downloadable checklist and a LinkedIn carousel</dd></dl></div></article>
+        <article class="post"><span class="n">03</span><div><h3>Canada–US procurement dispute: a timeline for tech buyers, updated monthly</h3><dl><dt>Reader</dt><dd>Anyone tracking the dispute</dd><dt>Why</dt><dd>A living page earns links and repeat visits. Show a "last updated" date at the top.</dd><dt>Asset</dt><dd>The timeline from this document, kept current</dd></dl></div></article>
+      </div>
+    </div>
+
+    <div class="tier">
+      <h3>Tier 2: evergreen compliance</h3>
+      <div class="posts">
+        <article class="post"><span class="n">04</span><div><h3>Data residency isn't sovereignty: the CLOUD Act and patient data in Canadian hospitals</h3><dl><dt>Why</dt><dd>The argument sovereignty-minded buyers already care about. Vendor ownership matters as much as where data is stored. Shows how on-prem and sovereign-cloud deployment change the picture.</dd><dt>Gate</dt><dd>Publish only after check 2 passes</dd></dl></div></article>
+        <article class="post"><span class="n">05</span><div><h3>PHIPA and AI voice agents: what an Ontario hospital needs before a phone agent handles patient calls</h3><dl><dt>Why</dt><dd>A specific, searchable question with little good content. Covers consent, recording, retention, redaction, audit trails and privacy impact assessments.</dd></dl></div></article>
+        <article class="post"><span class="n">06</span><div><h3>Quebec Law 25 and automated decisions: what AI phone agents must disclose</h3><dl><dt>Why</dt><dd>Law 25 requires telling people when a decision about them is automated. Few voice AI vendors cover this. Publish in French too.</dd></dl></div></article>
+        <article class="post"><span class="n">07</span><div><h3>Ontario Bill 194 and AI in the public sector: what hospitals and agencies must now document</h3><dl><dt>Why</dt><dd>A newer obligation that boards and risk teams are working through.</dd><dt>Gate</dt><dd>Confirm current regulations and dates before drafting</dd></dl></div></article>
+        <article class="post"><span class="n">08</span><div><h3>The federal Algorithmic Impact Assessment for AI phone agents: a worked example</h3><dl><dt>Why</dt><dd>Nobody has published a worked assessment for a voice agent. Useful on its own and easy to cite.</dd></dl></div></article>
+      </div>
+    </div>
+
+    <div class="tier">
+      <h3>Tier 3: use cases and operations</h3>
+      <div class="posts">
+        <article class="post"><span class="n">09</span><div><h3>Bilingual voice AI for Canadian public services: getting French right</h3><dl><dt>Why</dt><dd>Covers Official Languages Act expectations, Canadian French accents, switching language mid-call, and accessibility. A demo line makes it easy to share.</dd></dl></div></article>
+        <article class="post"><span class="n">10</span><div><h3>Cutting hospital phone wait times: what patient-access teams can automate, and what they shouldn't</h3><dl><dt>Why</dt><dd>This is the post that brings in buyers, not just policy readers. Real pilot numbers make it far stronger.</dd></dl></div></article>
+        <article class="post"><span class="n">11</span><div><h3>CRTC rules for automated appointment-reminder calls in Canada</h3><dl><dt>Why</dt><dd>Outbound AI calls fall under Canada's automated-calling rules. Narrow, high intent and almost no competition.</dd></dl></div></article>
+      </div>
+    </div>
+
+    <h3>Rules for every post</h3>
+    <ul>
+      <li>Include something original: a checklist, a timeline, a comparison table of where voice AI vendors are headquartered, or a worked assessment. Posts that only rephrase the news won't rank.</li>
+      <li>Explain the eligibility logic (Australian ownership plus CPTPP) in one post, and link to it from the others.</li>
+      <li>Distribute on LinkedIn through Ontario health supply-chain and procurement communities, and pitch the checklist to Canadian procurement newsletters.</li>
+      <li>Write in plain English and keep claims factual. Every legal statement links to a primary source.</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="head"><span class="eyebrow">Plan</span><h2>First 90 days</h2></div>
+    <div class="phases">
+      <div class="phase"><span class="when">Weeks 1–2</span><ul><li>Complete the four gating checks</li><li>Publish post 01. Draft 02 and 03.</li><li>Register on CanadaBuys and Supply Ontario</li></ul></div>
+      <div class="phase"><span class="when">Weeks 3–6</span><ul><li>Publish 02 (with checklist) and 03</li><li>Launch a <code>/canada</code> landing page and a French demo line</li><li>Open talks with a Canadian sovereign-cloud or integrator partner. Contact Austrade.</li></ul></div>
+      <div class="phase"><span class="when">Weeks 7–12</span><ul><li>Publish 05 and 04, then 06</li><li>Decide on a Canadian entity</li><li>Secure one Ontario hospital pilot and publish its results as post 10</li></ul></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="head"><span class="eyebrow">Sources</span><h2>References</h2></div>
+    <ul class="sources">
+      <li><a href="https://www.canada.ca/en/public-services-procurement/services/acquisitions/selling-federal-government/buy-canadian.html">Buy Canadian (Government of Canada)</a></li>
+      <li><a href="https://www.torys.com/en/our-latest-thinking/publications/2025/12/buy-canadian">Torys: Buy Canadian Policy</a></li>
+      <li><a href="https://canadabuys.canada.ca/en/buyer-s-portal/buyer-s-guide/plan/determine-procurement-strategy/interim-policy-reciprocal-procurement">CanadaBuys: Interim Policy on Reciprocal Procurement</a></li>
+      <li><a href="https://www.millerthomson.com/en/insights/global-trade-customs/public-procurement-bans-targeting-u-s-suppliers/">Miller Thomson: procurement bans targeting US suppliers</a></li>
+      <li><a href="https://www.ontario.ca/page/procurement-restriction-policy">Ontario Procurement Restriction Policy</a></li>
+      <li><a href="https://www.torys.com/our-latest-thinking/publications/2026/04/buy-ontario-procurement-directive">Torys: Buy Ontario Procurement Directive</a></li>
+      <li><a href="https://insidetrade.com/daily-news/canadian-province-bans-us-suppliers-large-government-contracts">InsideTrade: New Brunswick ban</a></li>
+      <li><a href="https://globalnews.ca/news/12051518/donald-trump-bans-canadian-goods-us-government-contracts-new-tariffs/">Global News: US bans Canadian goods from contracts</a></li>
+      <li><a href="https://publicprocurementinternational.com/2026/09/18/president-trump-canadian-procurement/">Public Procurement International: September update</a></li>
+      <li><a href="https://www.hilltimes.com/2026/09/15/canada-should-consider-a-tit-for-tat-response-to-u-s-procurement-ban-that-breaches-international-trade-agreements-say-experts/517514/">Hill Times: calls for a tit-for-tat response</a></li>
+      <li><a href="https://www.international.gc.ca/trade-commerce/trade-agreements-accords-commerciaux/agr-acc/cptpp-ptpgp/sectors-secteurs/government_procurement-marches_publics.aspx?lang=eng">Global Affairs Canada: CPTPP government procurement</a></li>
+      <li><a href="https://www.blg.com/en/insights/2026/04/data-sovereignty-and-the-cloud-act-what-canadian-organizations-should-know">BLG: data sovereignty and the CLOUD Act</a></li>
+      <li><a href="https://aicommission.org/2026/09/healthcare-ai-and-code-migration-tools-are-set-to-run-on-canadian-computers/">AI Commission: healthcare AI on Canadian compute</a></li>
+      <li><a href="https://augureai.ca/blog/augure-ai-canada">Augure AI</a></li>
+      <li><a href="https://thinkon.com/sovereign-cloud/">ThinkOn sovereign cloud</a></li>
+      <li><a href="https://agentiavocal.ca/en/industries/healthcare">Agent IA Vocal</a></li>
+      <li><a href="https://talktomedi.com/blog/best-ai-receptionists-canadian-medical-clinics">TalkToMedi</a></li>
+      <li><a href="https://www.kickcall.ai/healthcare/canada">KickCall</a></li>
+      <li><a href="https://www.lorikeetcx.ai/articles/ai-support-canadian-data-residency-guide">Lorikeet: Canadian data residency guide</a></li>
+      <li><a href="https://www.trillet.ai/blogs/voice-ai-data-residency-requirements-by-region">Trillet: data residency by region</a></li>
+      <li><a href="https://techxplore.com/news/2026-05-canada-cohere-embraces-drama-ai.html">Cohere's sovereign positioning</a></li>
+    </ul>
+  </section>
+
+  <footer>Research compiled September 2026 from public sources. This is not legal advice. Confirm eligibility for any specific tender with Canadian procurement counsel.</footer>
+</div>
