@@ -1,0 +1,26 @@
+name: SEO check
+
+# Runs on every pull request that touches content or the rules. A red check
+# means the content breaks a rule in site.yml / docs/SEO-STANDARDS.md — fix the
+# content (or, deliberately, the rule) before merging. Branch protection on
+# `main` should require this check.
+
+on:
+  pull_request:
+    paths:
+      - 'content/**'
+      - 'site.yml'
+      - 'scripts/**'
+  workflow_dispatch:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r scripts/requirements.txt
+      - name: SEO + brand lint
+        run: python scripts/seo_lint.py
