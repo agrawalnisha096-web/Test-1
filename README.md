@@ -34,6 +34,5 @@ edit on a branch  →  open PR  →  review + merge  →  GitHub Action deploys 
 
 ## Other sites
 
-- [`sites/crownseoagency.com/`](sites/crownseoagency.com/) — ready-to-use repo kit for
-  crownseoagency.com (same pipeline + SEO consistency gate). Copy it into its own
-  repo; see its `docs/SETUP.md`.
+- **crownseoagency.com** → moved to its own repo:
+  [agrawalnisha096-web/Crownseoagency](https://github.com/agrawalnisha096-web/Crownseoagency)
