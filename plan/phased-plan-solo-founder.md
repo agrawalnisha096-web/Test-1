@@ -69,7 +69,7 @@ Facebook/WhatsApp groups and Instagram, check incoming reports.
 **Goal:** start **measuring**, not just predicting.
 
 Claude builds:
-- An Android app (Flutter or React Native). Cloud builds via GitHub Actions or Expo, so you don't
+- A Flutter app (Android first, same code later runs on iPhone). Cloud builds via GitHub Actions or Expo, so you don't
   need to install developer tools. You install the test version straight on your phone.
 - **Wait-time measurement:** automatic geofence detection at the temple (with OpenCelliD tower
   data as a low-battery backup), plus "I'm in the queue" / "Done" buttons. Little's Law turns
@@ -146,7 +146,12 @@ You do: the outreach and meetings. This part can't be delegated to Claude.
 - Website: Next.js on Vercel (free tier)
 - Database + login + storage: Supabase (Postgres with map support; free tier)
 - Scheduled jobs: GitHub Actions (free for small use)
-- Android app: Flutter, built in the cloud
+- Mobile app: Flutter (one codebase for Android **and** iPhone), built in the cloud. Launch on
+  Android first (~95% of Indian phones [approximate, StatCounter]); release on iPhone once
+  Android proves itself (Apple developer account US$99/yr, testing via TestFlight, no Mac needed
+  with cloud builds). iPhones can't read cell-tower or network-quality data, so the iPhone version
+  uses geofencing, wait times, walking speed, Bluetooth and reports; the fusion model treats the
+  missing signals as unavailable.
 - WhatsApp bot: WhatsApp Business Platform via a provider (pay per conversation)
 
 *Costs are rough estimates (Oct 2026) and must be checked when signing up.*
