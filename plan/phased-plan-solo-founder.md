@@ -69,7 +69,7 @@ Facebook/WhatsApp groups and Instagram, check incoming reports.
 **Goal:** start **measuring**, not just predicting.
 
 Claude builds:
-- A Flutter app (Android first, same code later runs on iPhone). Cloud builds via GitHub Actions or Expo, so you don't
+- A Flutter app (Android first, same code later runs on iPhone). Cloud builds via GitHub Actions or Codemagic, so you don't
   need to install developer tools. You install the test version straight on your phone.
 - **Wait-time measurement:** automatic geofence detection at the temple (with OpenCelliD tower
   data as a low-battery backup), plus "I'm in the queue" / "Done" buttons. Little's Law turns
