@@ -5,7 +5,7 @@ You are picking up an **SEO and content engagement for Trillet.ai** partway thro
 - Branch: `claude/trillet-agency-seo-analysis-jb9ffo` (repo `agrawalnisha096-web/Test-1`). All work lives under `seo-audit/`.
 - Source of truth for **Trillet pricing and proof**: section 3a of this file. It matches the facts section of `seo-audit/tools/build/README-integration-pages.md`.
 - Source of truth for **what each integration does**: `seo-audit/sources/trillet-integration-guides-2026-09-25.md`.
-- Last updated 30 Sep 2026.
+- Last updated 8 Oct 2026.
 
 ---
 
@@ -18,7 +18,7 @@ Trillet (https://trillet.ai) is an Australian-owned **voice AI platform for high
 
 This branch is a consultant-style SEO and content programme for the **white-label and agency funnel**: an audit, a hub-and-spoke content cluster (blogs, a `/whitelabel` product-page rebuild, integration landing pages), a redirect and consolidation map, a competitor keyword-gap analysis and topical cluster maps. The goals are to rank the head term "white label voice ai" (the `/whitelabel` hub, about position 27), build the cluster around it, remove cannibalisation, and add conversion surfaces such as `/integrations/*`.
 
-Every deliverable is a **spec** (docx, xlsx or HTML) for Trillet's dev and content team to implement; nothing here touches the live site. The most recent workstream is the integration pages: GoHighLevel and ServiceTitan are finished, while Google Calendar and Cal.com are outdated drafts awaiting a rebuild.
+Every deliverable is a **spec** (docx, xlsx or HTML) for Trillet's dev and content team to implement; nothing here touches the live site. The most recent workstream is the integration pages: GoHighLevel, ServiceTitan and Google Calendar are finished (Trillet has already shipped live pages built from the first two), while Cal.com is an outdated draft with no product source.
 
 ---
 
@@ -50,7 +50,8 @@ Every deliverable is a **spec** (docx, xlsx or HTML) for Trillet's dev and conte
 | `Trillet-Integration-ServiceTitan.docx` | Spec for `/integrations/servicetitan`. Keyword "servicetitan ai receptionist". H1 "The AI receptionist for ServiceTitan. Every call lands in your booking queue." 16 sections plus a mobile note, 10 FAQs, a 5-step HowTo. | **FINAL** (see open items 3 to 5 before publishing) |
 | `Trillet-Integration-ServiceTitan-render.html` | HTML design reference: a sky hero stage with a booking-queue visual, **interactive permission switches** with a live "Bookings go to" summary, credential checklist cards, a 5-step settings panel and trades tiles. Verified at 1360px and 390px, with no JS errors. | **FINAL** (visual reference) |
 | `Trillet-Integration-Index.docx` | Light `/integrations` hub: 4 native integrations plus webhook and API, a "Which one fits" table, 4 FAQs, CollectionPage and ItemList schema. GoHighLevel and ServiceTitan copy and pricing are correct. | **DRAFT**: re-check the Google Calendar and Cal.com rows after those rebuilds. The Cal.com row is unverified. |
-| `Trillet-Integration-Google-Calendar.docx` | First-pass Google Calendar spec. | **OUTDATED**. It has the old figures (100/300 minutes, 28-day guarantee, "Start risk free") and claims the product guide doesn't support (several calendars read together, buffers, blackout dates, confirming in the caller's time zone). Rebuild it. |
+| `Trillet-Integration-Google-Calendar.docx` | Spec for `/integrations/google-calendar` (rebuilt 8 Oct). Keyword "ai receptionist google calendar". H1 "Your Google Calendar knows when you're free. Now it answers the phone." Sections include the signature "Your calendar is the rulebook", "What your caller gets" (the Google invite), six appointment-business industry tiles, two-path pricing (AI Receptionist and white-label side by side), 10 FAQs and a 4-step HowTo. Its build script writes to a relative path. | **FINAL** (see open item 1 before publishing) |
+| `Trillet-Integration-Google-Calendar-render.html` | HTML design reference: pink hero stage with a call, a Google Calendar day view and the caller's invite email; an **interactive rulebook day view** (block lunch, close at 3pm, 15/30/45/60-minute slots recompute the offered times); a caller-side invite and reschedule block; a 4-step settings panel; two pricing cards. Verified at 1360px and 390px, with no JS errors. | **FINAL** (visual reference) |
 | `Trillet-Integration-Cal-com.docx` | First-pass Cal.com spec. | **OUTDATED**. It has the old figures, and its round-robin, collective-event and self-hosted claims are Cal.com platform features, not verified Trillet integration capabilities. |
 | `sources/trillet-integration-guides-2026-09-25.md` | **Authoritative product guide:** Trillet's help-centre guides for Google Calendar, GoHighLevel and ServiceTitan, "written against dev, 25 Sep 2026, and audited against the frontend, backend and call-agent source". Each guide ends with a screenshot list for Ming, the Trillet team member who publishes help-centre pages. | **REFERENCE** |
 
@@ -120,10 +121,12 @@ Each integration page is deliberately different (its own keyword, H1, hero story
   - "28-day money-back" on white-label (now the 7-day free trial);
   - "1,200+ businesses" (now 3,900+);
   - the "Start risk free" CTA.
-- Live URL status (checked 25 to 27 Sep):
-  - These return 404: `/integrations`, `/security`, `/compare`, `/industries/electrical`, `/industries/roofers`, `/industries/home-services`.
+- **AI Receptionist plan** (live on trillet.ai/receptionist, 8 Oct): $49/month, 150 minutes included (about 75 calls), $0.20/min over with no plan change, 24/7 call handling, calendar booking, call summaries by email, keep your existing number, 28-day money-back guarantee, no contracts, no setup fee. Its CTA is **"Try risk free"** (correct for this plan; "Start risk free" is the stale white-label wording). Real quotes on that page: Dylan (DPMP Media) and Ethan (Bull Digital), used verbatim on the Google Calendar page.
+- **Live integrations (checked 6 to 8 Oct):** `/integrations`, `/integrations/gohighlevel` and `/integrations/servicetitan` now return 200, built from this branch's specs (the ServiceTitan title matches ours word for word). Google Calendar only has a card on the hub (`/integrations#google-calendar`, "Discuss your setup"); the hub also has a "Your own API" (custom API actions) card. The site footer lists All integrations, ServiceTitan, GoHighLevel, Google Calendar and Custom API actions. **Cal.com is no longer on the hub or in the footer.** The `/platform` page names Zoho CRM, Salesforce, Stripe, Google Calendar, Cal.com and GoHighLevel, plus PBX and telephony (Avaya, Cisco CUCM, Mitel, Asterisk, SIP trunks, CTI bridges), "connected through your system's API during onboarding".
+- Earlier live URL status (checked 25 to 27 Sep; the integration rows above supersede it):
+  - These returned 404: `/integrations`, `/security`, `/compare`, `/industries/electrical`, `/industries/roofers`, `/industries/home-services`.
   - These return 200: `/industries/hvac`, `/industries/plumbers`, `/industries/electricians`, `/industries/roofing`, `/blogs/ai-answering-service-for-hvac`, `/blogs/ai-answering-service-for-plumbers`, `/blogs/voice-ai-for-hvac-companies-reseller`, `/blogs/hvac-missed-call-cost`, `/receptionist/industries/hvac`.
-  - ServiceTitan is mentioned nowhere on trillet.ai.
+  - ServiceTitan was mentioned nowhere on trillet.ai (it now is; see above).
 - Real customer quotes live on trillet.ai/whitelabel (use them verbatim):
   - Ian Strange (UC Marketing): "Great platform, excellent granular control for building highly functional agents. API integration tools make connecting CRMs really easy."
   - Lori Mars (Linx AI Agency): "This is better than building it myself with Make and Retell and connecting everything up manually."
@@ -246,8 +249,17 @@ Each integration page is deliberately different (its own keyword, H1, hero story
    10. Closing CTA.
 
    CTAs repeat down the page.
+8. **Google Calendar** (planned with GSC, SERP and competitor research, then decided by the user on 8 Oct):
+   - **Keyword:** "ai receptionist google calendar" (122 impressions, position 14.4), with the booking cluster around it. The searcher is a small appointment business whose day runs in Google Calendar, which is the $49 AI Receptionist audience, not the agency audience of the GoHighLevel page.
+   - **Pricing: both paths side by side** (the user's choice): AI Receptionist $49 (featured, plum, "Try risk free") and White-label from $99 (Studio and Agency rows, "Get started"). *Rejected:* receptionist only (the recommendation) and white-label only.
+   - **H1: calendar-led** (the user's choice): "Your Google Calendar knows when you're free. Now it answers the phone." *Rejected:* invite-led (the recommendation) and busy-owner-led.
+   - **Hook nobody else leads with:** Google emails the caller a real invite. **Signature section:** "Your calendar is the rulebook", which explains honestly that any time without an event counts as free.
+   - **Claims left out** because the guide doesn't support them (competitors advertise them): several calendars or team routing, buffers, reading Google's working-hours settings, reminders, round-robin. "Native, not a workaround" contrasts with Aira's Zapier-only connection; "Calendar booking included" contrasts with Voka's $9.99/month add-on (neither competitor is named on the page).
 
 ### 3e. Research numbers not saved elsewhere
+- **Competitor integration pages** (sitemaps of the 20 repo competitors, 6 Oct): Smith.ai 147 `/integrates-with/*` pages plus 7 category pages (733 integration keywords, 42 on page 1, the leader); My AI Front Desk 166 programmatic `/connect/a-to-b` pages (368 keywords); Retell 80 curated pages (54, 20 on page 1); Bland 19 pages (59, **28** on page 1, the most efficient); Autocalls 265 thin pages (23 keywords, **0** on page 1); Aira 56 (trades, legal, phone systems); AnswerConnect 46; Dapta 42; Ruby 24; Prosper 11 (healthcare record systems); Synthflow 5. Trillet ranks for 2 integration keywords. Most common integrations across the 13 competitors with pages: HubSpot 11, Salesforce 10, Slack 8, Microsoft Teams 7, Pipedrive 7, Zapier 6, Calendly 6, Airtable 6, Shopify 6, GoHighLevel 5, Zoho 5, Keap 5, Twilio 5, Google Calendar 4, Cal.com 4, Clio 4, Stripe 4, ServiceTitan 3. Lesson: page count does not equal rankings; build a modest set of distinct, real integrations, never programmatic pairs or thin catalogues.
+- **Google Calendar demand (GSC):** ai receptionist google calendar 122 (14.4); ai receptionist appointment booking 314 (18.0); ai receptionist appointment scheduling 278 (14.3); ai receptionist that books appointments 154 (18.3); can an ai receptionist book appointments for me in my calendar? 140 (6.8). Pages: `/blogs/can-ai-receptionist-schedule-appointments` about 11.9k impressions across apex and www (positions 8.8 to 10.9); `/blogs/voice-ai-appointment-scheduling-integration` about 1.1k.
+- **Google Calendar SERP (8 Oct):** Smith.ai 583 words, AgentVoice 494, Ruby 232, Kickcall 1,154, TalkerIQ 1,016; Voka is strongest (2,857 words, problem-led, Google Calendar is a $9.99/month add-on); Aira connects via Zapier only. Front Desk Review's tracker names Trillet among 5 AI receptionists with Google Calendar booking but lists it "from $99/mo", flagged stale.
 - GSC trades demand (16 months, `Queries.csv`), as impressions with average position in brackets:
   - roofing answering service: 7,620 (9.6)
   - plumbing answering service: 3,724 (12.6)
@@ -332,23 +344,19 @@ Each integration page is deliberately different (its own keyword, H1, hero story
 ## 6. Open items and next steps (priority order)
 
 **Integration pages (the active workstream the user was driving page by page):**
-1. **Rebuild Google Calendar** (`/integrations/google-calendar`) following the section 5 workflow.
-   - Ground it only in the guide's Google Calendar section (3b).
-   - Remove the unsupported claims and use the live pricing and CTAs.
-   - Keep it distinct from GoHighLevel, which also books into a calendar: a different keyword (the original pick was "google calendar ai receptionist booking"; re-check the SERP), H1, hero visual and sections.
-   - A possible angle: booking without a CRM, the caller's Google invite, slot length, timezone, "Details to include".
-   - Rewrite `page-google-calendar.js` and add a render with its own hero-stage tint (butter or pink are unused).
+1. **Google Calendar is built (8 Oct).** Before publishing, confirm with Trillet that the AI Receptionist plan's "Calendar booking" uses this Google Calendar connection (the pricing card and Why section say so). Once live, point the hub's Google Calendar card at the page, link the two scheduling blogs to it, and send Front Desk Review the page for re-verification of its stale "$99/mo".
 2. **Cal.com:** get a source of truth from the user or Trillet for what the Cal.com integration does, and confirm it's live. Don't publish the current doc before then.
 3. **Confirm ServiceTitan GA readiness with Trillet.** The page reads as generally available, but the guide says the rollout is gradual. Support must switch it on for anyone who asks.
 4. **Real screenshots** for the PRODUCT SHOT callouts, using the screenshot lists for Ming in the guide (Google Calendar 7, GoHighLevel 6, ServiceTitan 6). The renders use illustrative mocks.
 5. **Swap in a trades customer quote** on ServiceTitan when one is approved.
-6. **Refresh `Trillet-Integration-Index.docx`** after items 1 and 2. Consider adding an index render.
+6. **Refresh `Trillet-Integration-Index.docx`** after item 2, and against the live hub (Cal.com removed, "Your own API" card). Consider adding an index render.
 7. **Backlog blog:** "AI receptionists for ServiceTitan compared".
+7a. **Next integration candidates** (from the competitor inventory in 3e), only with a product source for each: Salesforce, Zoho CRM and Stripe (named on `/platform`); one combined "Telephony and phone systems" page (Avaya, Cisco CUCM, Mitel, Asterisk, SIP, BYO Twilio or Telnyx); HubSpot and Zapier/Make only if Trillet confirms it supports them; named healthcare, legal or practice-management systems once Trillet lists them.
 
 **White-label cluster (the parallel session's workstream; check whether it's still in progress before starting):**
 8. **Blog 5, "Best AI White-Label Services to Resell 2026"** (keyword "ai white label services"), and **Blog 6, "Best White-Label Digital Products"** (keyword "white label digital products"). Not started as of the last handoff. Use "we" voice with named, individually profiled items, and state the distinct angle against Blogs 2 to 4 first.
 9. **Convert Blog 2 to "we" voice.**
-10. **Execute the redirect waves** per the redirect map, using the **revised split: 5 redirects + 3 reframes + 14 merges**. Reframe the 3 chatbot pages in place. Fire in gated waves, dead and low-traffic pages first. Only 301 `/blogs/gohighlevel-voice-ai-integration` → `/integrations/gohighlevel` after that page is live.
+10. **Execute the redirect waves** per the redirect map, using the **revised split: 5 redirects + 3 reframes + 14 merges**. Reframe the 3 chatbot pages in place. Fire in gated waves, dead and low-traffic pages first. `/integrations/gohighlevel` is now live (6 Oct), so the 301 from `/blogs/gohighlevel-voice-ai-integration` can fire in its wave.
 11. **Re-sync the timeline doc** and the redirect map's REDIRECT/REFRAME counts to the revised split.
 12. **Implement `/whitelabel` v3:**
     - It needs real testimonials (don't invent them) and server-side rendering of the H1 and FAQ.
@@ -368,12 +376,12 @@ Each integration page is deliberately different (its own keyword, H1, hero story
 
 ## 7. Gotchas
 1. **Never run `seo-audit/tools/build/product-page-helpers.example.js` or `listicle-helpers.example.js`.** They write straight to `seo-audit/Trillet-Whitelabel-Hub-Rebuild.docx` and `seo-audit/Article-03-White-Label-SaaS-Platforms.docx`. That would overwrite the corrected files with old content that still has 100/300 minutes and the 28-day guarantee.
-2. **The build scripts hard-code absolute paths** (`/home/user/Test-1/seo-audit/...` in every `page-*.js`). In another checkout, change them to e.g. `require('path').join(__dirname,'../../Trillet-Integration-X.docx')` first.
+2. **Most build scripts hard-code absolute paths** (`/home/user/Test-1/seo-audit/...` in `page-gohighlevel.js`, `page-servicetitan.js`, `page-index.js`, `page-cal-com.js`; `page-google-calendar.js` already uses a relative path). In another checkout, change them to e.g. `require('path').join(__dirname,'../../Trillet-Integration-X.docx')` first.
 3. **`npm install`** in `seo-audit/tools/build` before building; `node_modules` isn't committed.
 4. **`num()` numbered lists need their references registered:** pass every reference you use (e.g. `["st-flow","st-setup"]`) as the third argument to `build()`.
 5. **More than one agent pushes to this branch.** Always `git fetch` and `git pull --rebase origin claude/trillet-agency-seo-analysis-jb9ffo` before pushing, and don't edit the other workstream's files without checking. If the branch's PR has been merged, restart the branch from the latest default branch per repo policy rather than stacking on merged history.
 6. **Commit footers:** the README's "Git" section and earlier commits use Claude-specific attribution lines. Don't copy them.
-7. **Stale sources:** the Google Calendar and Cal.com docs and scripts, the README's original task list, the audit and homepage figures, and any "1,200+", "100/300 minutes", white-label "28-day money-back" or "Start risk free" are outdated. Use section 3a.
+7. **Stale sources:** the Cal.com doc and script, the README's original task list, the audit and homepage figures, and any "1,200+", "100/300 minutes", white-label "28-day money-back" or "Start risk free" are outdated. Use section 3a.
 8. **Don't confuse the partner platform with Trillet's integration.** GoHighLevel has workflows, snapshots and custom fields; Cal.com has round-robin; ServiceTitan has Adaptive Capacity and memberships. None of those are Trillet integration features unless the guide says so.
 9. **Keep the spec and render FAQs identical**, because FAQPage schema must mirror the visible copy. If you edit one, edit both.
 10. **Schema caveat:** Google stopped showing HowTo rich results in 2023 and limits FAQ rich results to authoritative government and health sites. The markup is still valid and useful for answer engines, but don't promise rich snippets.
