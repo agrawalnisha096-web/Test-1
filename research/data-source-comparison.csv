@@ -1,0 +1,11 @@
+ID,Data source,Signal type,Accuracy (1-5),Works from day 1 (1-5),Cost (5=cheapest),Legal/policy safety (5=safest),Time to build (5=fastest),Total (/25),MVP layer,Recommendation,Confidence,Key note
+1,Calendar + historical forecast model (lunar calendar; weekday deity days; holidays; weather),Forecast,3,5,5,5,4,22,L1,Use: core of v1,Inferred,Differentiator vs generic forecasters; CrowdWise claims 65-75% with a generic model
+2,Official temple-board data (TTD waits/slots; Sabarimala caps; SMVDSB advisories),Official/live at few sites,4,4,5,4,4,21,L2,Use where public; seek partnerships,Verified,Only a few boards publish anything; check each site's terms
+3,Crowdsourced reports (crowd level + wait + photo),Live,3,1,5,4,4,17,L3,Use: launch in one city,Inferred,Needs user density on site; geofence + reputation to stop spam
+4,App users' opt-in aggregated location visits (foreground only),Live/relative,4,1,4,3,3,15,L3,Use after launch,Verified (Google model),DPDP itemised consent; Play policy restricts background location
+5,On-device cell-tower / network info (WIMT-style),Location helper; congestion proxy (untested),2,1,5,3,3,14,L3 helper,Use as a low-battery location fix only,Inferred,Locates the user's own phone; cannot count other people by itself
+6,Third-party busyness API (e.g. BestTime),Relative forecast,2,4,2,5,5,18,Test,Trial on 10 temples before relying on it,Unverified (India coverage),Relative 0-100 score only; needs ~100+ visitors/day per venue
+7,Scraping Google Popular Times,Relative/live,3,4,4,1,3,15,No,Avoid,Verified,Likely breaches Google ToS; feature reportedly being removed from Android Maps (Aug 2026)
+8,Telecom operator tower counts (Jio/Airtel/Vi),Live headcount proxy,5,1,1,1,1,9,No,Revisit later as a partnership,Verified (no product found),DPDP limits reuse of subscriber data; no commercial footfall product found
+9,Venue sensors via partnership (CCTV/AI counts; RFID; turnstiles),Live headcount,5,1,4,4,2,16,L4,Pursue as B2B partnership,Verified (systems exist),Trinetra (Ujjain); SMVDSB RFID + 700 cameras; Kumbh ICCC
+10,Wi-Fi / BLE probe counting,Relative trends,2,1,2,2,2,9,No,Avoid,Verified,MAC randomisation breaks counts; regulators treat MACs as personal data

@@ -1,0 +1,11 @@
+# Mobile app research
+
+Research for a mobile app that predicts crowds at public places in India, starting with
+religious sites (temples, pilgrimage sites, festivals).
+
+| File | What it is |
+|---|---|
+| [`research/crowd-app-india-research-report.md`](research/crowd-app-india-research-report.md) | Main report: reference apps (Where Is My Train, Google Popular Times), demand, data sources, competitors, legal (DPDP, Play policy), business model, MVP recommendation, sources |
+| [`research/data-source-comparison.csv`](research/data-source-comparison.csv) | Scoring of 10 crowd-data sources on accuracy, cold start, cost, legal safety and build time (opens in Google Sheets) |
+
+Status: first research pass, 8 Oct 2026. Nothing built yet.
