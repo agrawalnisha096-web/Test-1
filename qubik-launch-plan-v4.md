@@ -154,7 +154,7 @@ Across the A$57–90k range: A$28,800–43,650 and A$19,200–29,100. Crediting 
 
 **First 14 days:**
 1. **Check the ground before spending (days 1–5).** The audience check is done. Next: a Meta Ad Library scan for anyone already targeting distributors, five short conversations with distributors Qubik knows ⟦confirm⟧, and the automation specialist's sign-off that the check can be delivered in three weeks at a profit.
-2. **Get launch-ready, then try to break the funnel (days 3–8).** Privacy policy, a Qubik page that looks alive, an accountant willing to be filmed, founding terms signed off, every rule in section 4 tested with dummy leads, and sales committed to the 15-minute call.
+2. **Get launch-ready, then try to break the funnel (days 3–8).** Privacy policy, a live-looking Qubik page, an accountant willing to be filmed, founding terms signed off, section 4 tested with dummy leads, and sales committed to the 15-minute call.
 3. **Run the A$900 test (days 8–14 and on).** Daily checks, a proper read at A$450, and sales feedback on every lead.
 
 **Assumptions to validate:** that late costing really hurts at this size; document access; willingness to pay A$3,500, then A$57–90k; sales capacity; my cost estimate and band split; pricing, consent and privacy compliance.
@@ -162,8 +162,8 @@ Across the A$57–90k range: A$28,800–43,650 and A$19,200–29,100. Crediting 
 **What I did, what AI did, and how I checked** ⟦must be accurate; edit freely⟧.
 
 - **My calls:** the segment came from my Cometlab experience, then testing. I rejected the AI's first two picks (trades, job-shop manufacturers), and sent drafts back for sounding machine-written and for chasing three problems at once. ⟦Add your own.⟧
-- **Claude (Anthropic), via Claude Code:** summarised the brief, ran Python on ABS counts, made read-only Meta API calls to size the audience, searched sources, and drafted text I rewrote.
-- **My checks:** spot-checked ABS figures in the source file, ⟦cross-checked Meta numbers in Ads Manager, if you do⟧, recalculated the economics by hand, opened every source and cut what I couldn't back, and checked ad length and ACCC/ACMA rules.
+- **Claude (Anthropic), via Claude Code:** summarised the brief, analysed ABS counts, sized the audience through read-only Meta API calls, found sources, and drafted text I rewrote.
+- **My checks:** spot-checked ABS figures, ⟦cross-checked Meta numbers in Ads Manager, if you do⟧, recalculated the economics by hand, and opened every source, cutting what I couldn't back.
 
 ---
 
