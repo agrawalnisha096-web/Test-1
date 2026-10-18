@@ -29,7 +29,7 @@ function runs(text, base = {}) {
       // allow placeholders inside bold
       runs(tok.slice(2, -2), { ...base, bold: true }).forEach(r => out.push(r));
     } else if (tok.startsWith('`')) push(tok.slice(1, -1));
-    else if (tok.startsWith('⟦')) push(tok, { highlight: 'yellow' });
+    else if (tok.startsWith('⟦')) push(tok, { shading: { type: ShadingType.CLEAR, fill: 'FFF200', color: 'auto' } });
     else push(tok.slice(1, -1), { italics: true });
     last = m.index + tok.length;
   }
