@@ -153,8 +153,7 @@ const cover = [
 
 const body = blocks(bodyMd);
 const sources = [
-  new Paragraph({ children: [new PageBreak()] }),
-  new Paragraph({ children: [new TextRun({ text: 'Sources', font: FONT, size: BODY + 5, bold: true, color: ACCENT })], spacing: { after: 100 } }),
+  new Paragraph({ pageBreakBefore: true, children: [new TextRun({ text: 'Sources', font: FONT, size: BODY + 5, bold: true, color: ACCENT })], spacing: { after: 100 } }),
   ...blocks(sourcesMd),
 ];
 
