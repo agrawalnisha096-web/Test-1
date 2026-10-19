@@ -153,7 +153,7 @@ Across the A$57–90k range: A$28,800–43,650 and A$19,200–29,100. Crediting 
 ## 6. Priorities, assumptions and AI
 
 **First 14 days:**
-1. **Check the ground before spending (days 1–5).** The audience check is done. Next: a Meta Ad Library scan for anyone already targeting distributors, five short conversations with distributors Qubik knows, and the automation specialist's sign-off that the check can be delivered in three weeks at a profit.
+1. **Check the ground before spending (days 1–5).** Meta audience sizing is already done (Section 1). Next: a Meta Ad Library scan for anyone already targeting distributors, five short conversations with distributors Qubik knows, and the automation specialist's sign-off that the check can be delivered in three weeks at a profit.
 2. **Get launch-ready, then try to break the funnel (days 3–8).** Privacy policy, a live-looking Qubik page, an accountant willing to be filmed, founding terms signed off, section 4 tested with dummy leads, and sales committed to the 15-minute call.
 3. **Run the A$900 test (days 8–14 and on).** Daily checks, a proper read at A$450, and sales feedback on every lead.
 
@@ -161,7 +161,7 @@ Across the A$57–90k range: A$28,800–43,650 and A$19,200–29,100. Crediting 
 
 **What I did, what AI did, and how I checked.**
 
-- **My calls:** the segment came from my Cometlab experience, where similar businesses in India kept describing the same pain; I then tested it against Australian data. My Meta experience targeting older business owners gave me another reason to back this niche. I rejected the AI's first suggestions (trades, then job-shop manufacturers) and sent drafts back when they read as machine-written.
+- **My calls:** the segment came from my Cometlab experience, where similar businesses in India kept describing the same pain; I then tested it against Australian data. My Meta experience targeting older business owners gave me another reason to back this niche. The AI's first suggestion was trades; I dropped it because only 7% of trade businesses fall in the target revenue band.
 - **Claude (Anthropic), via Claude Code:** analysed ABS business counts by industry and turnover, pulled Meta audience sizes through read-only API calls, found sources, and drafted text that I rewrote.
 - **My checks:** spot-checked ABS figures, verified the Meta numbers in Ads Manager, recalculated the economics by hand, and opened every source, cutting anything I couldn't back.
 
