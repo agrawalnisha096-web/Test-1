@@ -1,0 +1,6 @@
+query_id,market,cluster,exact_prompt,solulab_target_url
+Q1,US,AI agent development,"Which companies should a US enterprise consider to build custom AI agents? Give me a shortlist with a reason for each.",https://www.solulab.com/ai-agent-development-company/
+Q2,US,Generative AI,"What are the best generative AI development companies in the USA for building an enterprise LLM application?",https://www.solulab.com/generative-ai-development-company/
+Q3,GCC (UAE),AI development,"What are the top AI development companies in Dubai for enterprise projects?",https://www.solulab.com/ai-development-company-in-dubai/
+Q4,GCC (KSA),AI consulting,"Recommend AI consulting firms in Saudi Arabia that can help a company with AI strategy and implementation.",https://www.solulab.com/ai-development-company-in-saudi-arabia/
+Q5,US,AI agent development (cost),"How much does it cost to hire a company to build an AI agent, and which firms offer this service?",https://www.solulab.com/how-much-does-it-cost-to-build-an-ai-agent/
