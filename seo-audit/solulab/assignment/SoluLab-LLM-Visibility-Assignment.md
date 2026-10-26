@@ -2,7 +2,7 @@
 
 > **Before submitting, delete this box.**
 > - **Task 1** must be your own case study with your own evidence. Every `[[ … ]]` field is yours to fill. Nothing in it has been invented.
-> - **Task 2** needs real, dated runs. Run the 5 prompts in `task2-prompts.csv` on ChatGPT and Perplexity, 3 fresh runs each, using the protocol below. Optionally also run `run_claude_prompts.py` for Claude. Log everything in `task2-results-log.csv` and paste the summary into the Task 2 tables. The "opportunity" column is pre-drafted from my site audit of solulab.com. Revise it once you see which URLs the engines actually cite.
+> - **Task 2** needs real, dated runs. Run the 5 prompts in `task2-prompts.csv` on ChatGPT and Perplexity, 3 fresh runs each, using the protocol below. Or run it automatically through DataForSEO: `python run_dataforseo_task2.py --runs 3` tests ChatGPT, Google AI Mode and Perplexity and writes `runs.csv` plus `summary.md`. Optionally also run `run_claude_prompts.py` for Claude. Log everything in `task2-results-log.csv` and paste the summary into the Task 2 tables. The "opportunity" column is pre-drafted from my site audit of solulab.com. Revise it once you see which URLs the engines actually cite.
 > - **Tasks 3 and 4** are complete drafts built on the solulab.com crawl evidence (`../solulab-seo-audit.md`, `../solulab-ai-visibility-audit.md`). Plug in your Task 2 baselines where marked.
 
 ---
