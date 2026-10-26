@@ -421,6 +421,8 @@ In 2026 the pace is 46–108 posts a month.
 
 ## 6. AEO / GEO (AI answer-engine visibility)
 
+> **Deep dive:** the full technical and content analysis of AI visibility is in `solulab-ai-visibility-audit.md`. It covers a 929-page sample, a scorecard, the prompt panel and the AV-1 to AV-18 plan. This section is the summary.
+
 **What's in place** [Verified]:
 - AI crawlers are allowed in robots.txt.
 - Content is fully server-rendered, so no JavaScript is needed to read it.
@@ -541,6 +543,8 @@ With these I can:
 | `solulab-redirecting-internal-links.csv` | 372 internal link targets that 301, with the number of linking pages, hops, final URL and status |
 | `solulab-broken-internal-links.csv` | 121 broken targets (404, 410, or a redirect into either), with the number of linking pages |
 | `solulab-orphan-pages.csv` | 465 sitemap URLs with no internal link from any crawled page |
+| `solulab-ai-visibility-audit.md` | AI visibility (AEO/GEO) deep dive: access, extraction, entity consistency, content citability, third-party corroboration, prompt panel |
+| `solulab-ai-visibility-sample.csv` | 929-page sample with the AI-extraction and citability metrics behind the deep dive |
 | `solulab-sitemap-issues.csv` | Redirects, non-canonical and nofollow URLs in the sitemaps, and the empty sitemap |
 
 **Method notes:**
