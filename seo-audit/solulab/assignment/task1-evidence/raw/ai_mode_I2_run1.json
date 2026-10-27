@@ -1,0 +1,215 @@
+{
+ "version": "0.1.20261022",
+ "status_code": 20000,
+ "status_message": "Ok.",
+ "time": "11.7743 sec.",
+ "cost": 0.004,
+ "tasks_count": 1,
+ "tasks_error": 0,
+ "tasks": [
+  {
+   "id": "10271010-2577-0139-0000-660d598cd41e",
+   "status_code": 20000,
+   "status_message": "Ok.",
+   "time": "11.7198 sec.",
+   "cost": 0.004,
+   "result_count": 1,
+   "path": [
+    "v3",
+    "serp",
+    "google",
+    "ai_mode",
+    "live",
+    "advanced"
+   ],
+   "data": {
+    "api": "serp",
+    "function": "live",
+    "se": "google",
+    "se_type": "ai_mode",
+    "keyword": "Which white label AI voice agent platform can I resell to my clients under my own brand?",
+    "location_code": 2840,
+    "language_code": "en",
+    "device": "desktop",
+    "tag": "I2-ai_mode-1",
+    "os": "windows"
+   },
+   "result": [
+    {
+     "keyword": "Which white label AI voice agent platform can I resell to my clients under my own brand?",
+     "type": "ai_mode",
+     "se_domain": "google.com",
+     "location_code": 2840,
+     "language_code": "en",
+     "check_url": "https://www.google.com/search?q=Which%20white%20label%20AI%20voice%20agent%20platform%20can%20I%20resell%20to%20my%20clients%20under%20my%20own%20brand%3F&hl=en&gl=US&udm=50&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+     "datetime": "2026-10-27 10:10:33 +00:00",
+     "spell": null,
+     "refinement_chips": null,
+     "item_types": [
+      "ai_overview"
+     ],
+     "se_results_count": 0,
+     "items_count": 1,
+     "items": [
+      {
+       "type": "ai_overview",
+       "rank_group": 1,
+       "rank_absolute": 1,
+       "page": 1,
+       "position": "left",
+       "xpath": "/html[1]/body[1]/div[2]/div[1]/div[9]/div[1]/section[1]/div[1]/div[1]/div[3]/div[4]/div[1]/div[2]/div[1]/div[3]",
+       "markdown": "When looking to resell **AI voice agents** under your own brand (white-labeling), platforms generally fall into two categories: **turnkey white-label SaaS platforms** (where the client dashboard, branding, and sub-accounts are fully branded as yours) or **API/infrastructure providers** where you brand the agent and phone number, but pair it with a separate wrapper or custom client portal.[[1]](https://www.retellai.com/blog/white-label-voice-ai-platforms-agencies)[[2]](https://synthflow.ai/blog/white-label-reseller)\n\nThe primary platforms used by agencies and resellers to offer branded AI voice solutions include:\n\n- [Synthflow AI](https://synthflow.ai/) \u2013 Provides an **Agency Plan** built specifically for white-labeling. It allows you to rebrand the client dashboard with your own logo, manage clients via isolated sub-accounts, allocate specific call minute capacities per client, and control your own pricing. *(Note: Check specific terms regarding integrated billing features as vendor policies on built-in payment gateways evolve).* [[1]](https://synthflow.ai/blog/white-label-reseller)[[2]](https://www.assistable.ai/resources/synthflow/white-label)\n- [HighLevel (GoHighLevel)](https://www.gohighlevel.com/) \u2013 While not a standalone voice engine, it is the dominant white-label CRM and SaaS-mode platform for agencies. HighLevel integrates advanced AI Voice capabilities (powered by underlying telephony and LLMs) that agencies fully rebrand, package under their own software name, and resell on a monthly subscription tier to local businesses.\n- [Autocalls AI](https://autocalls.ai/) \u2013 Offers a dedicated **White-Label Program** featuring custom domains, branded client login portals, logo customization inside the dashboard, and multi-tenant sub-account management designed for direct resale.[[1]](https://autocalls.ai/white-label)\n- [Retell AI](https://www.retellai.com/) \u2013 A premier developer-grade voice infrastructure engine. Retell itself does not white-label its main developer dashboard out-of-the-box, but you can completely brand the voice, phone number, and caller experience for your clients. Many agencies use Retell by pairing it with an ecosystem wrapper or app partner (such as *Call Supplai* ) to deliver a fully branded client dashboard and management portal.[[1]](https://www.retellai.com/app-partner/call-supplai)[[2]](https://www.retellai.com/blog/white-label-voice-ai-platforms-agencies)\n- [Assistable AI](https://www.assistable.ai/) \u2013 Frequently used as an agency alternative that natively supports white-labeling, custom branding, and usage rebilling so you can package voice and chat agents seamlessly under your agency's name.[[1]](https://www.assistable.ai/resources/synthflow/white-label)\n\nTo help narrow down the best fit, could you share:\n\n- Do you need a **ready-to-go branded dashboard** for clients to log into, or are you comfortable using an API infrastructure like Retell paired with a custom dashboard?\n- Are you planning to sell these as a **managed service (you manage it for them)** or as a **SaaS product (they log in and manage it themselves)**?",
+       "items": [
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "When looking to resell AI voice agents under your own brand (white-labeling), platforms generally fall into two categories: turnkey white-label SaaS platforms (where the client dashboard, branding, and sub-accounts are fully branded as yours) or API/infrastructure providers where you brand the agent and phone number, but pair it with a separate wrapper or custom client portal.",
+         "markdown": "When looking to resell **AI voice agents** under your own brand (white-labeling), platforms generally fall into two categories: **turnkey white-label SaaS platforms** (where the client dashboard, branding, and sub-accounts are fully branded as yours) or **API/infrastructure providers** where you brand the agent and phone number, but pair it with a separate wrapper or custom client portal.[[1]](https://www.retellai.com/blog/white-label-voice-ai-platforms-agencies)[[2]](https://synthflow.ai/blog/white-label-reseller)",
+         "links": null,
+         "images": null,
+         "references": [
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Retell AI",
+           "domain": "www.retellai.com",
+           "url": "https://www.retellai.com/blog/white-label-voice-ai-platforms-agencies",
+           "title": "Best White Label Voice AI Platforms for Agencies (2026)",
+           "text": "It is a voice-agent platform an agency rebrands and resells under its own name, with its own dashboard, domain and billing, while ..."
+          },
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Synthflow AI",
+           "domain": "synthflow.ai",
+           "url": "https://synthflow.ai/blog/white-label-reseller",
+           "title": "How to Become a Successful White Label Reseller",
+           "text": "If you have settled on AI voice as your white label product, the Synthflow Agency Plan is built specifically for agencies resellin..."
+          }
+         ]
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "The primary platforms used by agencies and resellers to offer branded AI voice solutions include:",
+         "markdown": "The primary platforms used by agencies and resellers to offer branded AI voice solutions include:",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "Synthflow AI \u2013 Provides an Agency Plan built specifically for white-labeling. It allows you to rebrand the client dashboard with your own logo, manage clients via isolated sub-accounts, allocate specific call minute capacities per client, and control your own pricing. (Note: Check specific terms regarding integrated billing features as vendor policies on built-in payment gateways evolve). HighLevel (GoHighLevel) \u2013 While not a standalone voice engine, it is the dominant white-label CRM and SaaS-mode platform for agencies. HighLevel integrates advanced AI Voice capabilities (powered by underlying telephony and LLMs) that agencies fully rebrand, package under their own software name, and resell on a monthly subscription tier to local businesses. Autocalls AI \u2013 Offers a dedicated White-Label Program featuring custom domains, branded client login portals, logo customization inside the dashboard, and multi-tenant sub-account management designed for direct resale. Retell AI \u2013 A premier developer-grade voice infrastructure engine. Retell itself does not white-label its main developer dashboard out-of-the-box, but you can completely brand the voice, phone number, and caller experience for your clients. Many agencies use Retell by pairing it with an ecosystem wrapper or app partner (such as Call Supplai) to deliver a fully branded client dashboard and management portal. Assistable AI \u2013 Frequently used as an agency alternative that natively supports white-labeling, custom branding, and usage rebilling so you can package voice and chat agents seamlessly under your agency's name.",
+         "markdown": "- [Synthflow AI](https://synthflow.ai/) \u2013 Provides an **Agency Plan** built specifically for white-labeling. It allows you to rebrand the client dashboard with your own logo, manage clients via isolated sub-accounts, allocate specific call minute capacities per client, and control your own pricing. *(Note: Check specific terms regarding integrated billing features as vendor policies on built-in payment gateways evolve).* [[1]](https://synthflow.ai/blog/white-label-reseller)[[2]](https://www.assistable.ai/resources/synthflow/white-label)\n- [HighLevel (GoHighLevel)](https://www.gohighlevel.com/) \u2013 While not a standalone voice engine, it is the dominant white-label CRM and SaaS-mode platform for agencies. HighLevel integrates advanced AI Voice capabilities (powered by underlying telephony and LLMs) that agencies fully rebrand, package under their own software name, and resell on a monthly subscription tier to local businesses.\n- [Autocalls AI](https://autocalls.ai/) \u2013 Offers a dedicated **White-Label Program** featuring custom domains, branded client login portals, logo customization inside the dashboard, and multi-tenant sub-account management designed for direct resale.[[1]](https://autocalls.ai/white-label)\n- [Retell AI](https://www.retellai.com/) \u2013 A premier developer-grade voice infrastructure engine. Retell itself does not white-label its main developer dashboard out-of-the-box, but you can completely brand the voice, phone number, and caller experience for your clients. Many agencies use Retell by pairing it with an ecosystem wrapper or app partner (such as *Call Supplai* ) to deliver a fully branded client dashboard and management portal.[[1]](https://www.retellai.com/app-partner/call-supplai)[[2]](https://www.retellai.com/blog/white-label-voice-ai-platforms-agencies)\n- [Assistable AI](https://www.assistable.ai/) \u2013 Frequently used as an agency alternative that natively supports white-labeling, custom branding, and usage rebilling so you can package voice and chat agents seamlessly under your agency's name.[[1]](https://www.assistable.ai/resources/synthflow/white-label)",
+         "links": null,
+         "images": null,
+         "references": [
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Synthflow AI",
+           "domain": "synthflow.ai",
+           "url": "https://synthflow.ai/blog/white-label-reseller",
+           "title": "How to Become a Successful White Label Reseller",
+           "text": "If you have settled on AI voice as your white label product, the Synthflow Agency Plan is built specifically for agencies resellin..."
+          },
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Assistable",
+           "domain": "www.assistable.ai",
+           "url": "https://www.assistable.ai/resources/synthflow/white-label",
+           "title": "Synthflow white-label alternatives for agencies",
+           "text": "Evaluate the branded domain and portal, client-account access, usage pricing, payment experience, templates and support ownership ..."
+          },
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Autocalls.ai",
+           "domain": "autocalls.ai",
+           "url": "https://autocalls.ai/white-label",
+           "title": "White",
+           "text": "A white-label AI voice agent platform is software you rebrand and resell as your own product. answer and make phone calls under yo..."
+          },
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Retell AI",
+           "domain": "www.retellai.com",
+           "url": "https://www.retellai.com/app-partner/call-supplai",
+           "title": "Call Supplai | Retell AI APP Partner",
+           "text": "Supplai empowers marketing agencies, SaaS resellers, and BPOs to sell fully functional AI voice agents under their own brand."
+          },
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Retell AI",
+           "domain": "www.retellai.com",
+           "url": "https://www.retellai.com/blog/white-label-voice-ai-platforms-agencies",
+           "title": "Best White Label Voice AI Platforms for Agencies (2026)",
+           "text": "The Retell dashboard itself is not rebranded, so agencies that want a client portal build one on the API, use a white-label dashboard tool from the App Partner Dir..."
+          }
+         ]
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "To help narrow down the best fit, could you share:",
+         "markdown": "To help narrow down the best fit, could you share:",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "Do you need a ready-to-go branded dashboard for clients to log into, or are you comfortable using an API infrastructure like Retell paired with a custom dashboard? Are you planning to sell these as a managed service (you manage it for them) or as a SaaS product (they log in and manage it themselves) ?",
+         "markdown": "- Do you need a **ready-to-go branded dashboard** for clients to log into, or are you comfortable using an API infrastructure like Retell paired with a custom dashboard?\n- Are you planning to sell these as a **managed service (you manage it for them)** or as a **SaaS product (they log in and manage it themselves)**?",
+         "links": null,
+         "images": null,
+         "references": null
+        }
+       ],
+       "references": [
+        {
+         "type": "ai_overview_reference",
+         "position": "right",
+         "source": "Retell AI",
+         "domain": "www.retellai.com",
+         "url": "https://www.retellai.com/app-partner/call-supplai",
+         "title": "Call Supplai | Retell AI APP Partner",
+         "text": "Supplai empowers marketing agencies, SaaS resellers, and BPOs to sell fully functional AI voice agents under their own brand."
+        },
+        {
+         "type": "ai_overview_reference",
+         "position": "right",
+         "source": "Autocalls.ai",
+         "domain": "autocalls.ai",
+         "url": "https://autocalls.ai/white-label",
+         "title": "White",
+         "text": "A white-label AI voice agent platform is software you rebrand and resell as your own product. answer and make phone calls under your brand, a client self-service p..."
+        },
+        {
+         "type": "ai_overview_reference",
+         "position": "right",
+         "source": "Retell AI",
+         "domain": "www.retellai.com",
+         "url": "https://www.retellai.com/blog/white-label-voice-ai-platforms-agencies",
+         "title": "Best White Label Voice AI Platforms for Agencies (2026)",
+         "text": "The Retell dashboard itself is not rebranded, so agencies that want a client portal build one on the API, use a white-label dashboard tool from the App Partner Dir..."
+        }
+       ],
+       "rectangle": null
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

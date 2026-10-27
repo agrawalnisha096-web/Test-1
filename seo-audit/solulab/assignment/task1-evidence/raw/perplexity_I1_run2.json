@@ -1,0 +1,131 @@
+{
+ "version": "0.1.20261022",
+ "status_code": 20000,
+ "status_message": "Ok.",
+ "time": "6.5052 sec.",
+ "cost": 0.006661,
+ "tasks_count": 1,
+ "tasks_error": 0,
+ "tasks": [
+  {
+   "id": "10271010-2577-0612-0000-2b850217b621",
+   "status_code": 20000,
+   "status_message": "Ok.",
+   "time": "6.4972 sec.",
+   "cost": 0.006661,
+   "result_count": 1,
+   "path": [
+    "v3",
+    "ai_optimization",
+    "perplexity",
+    "llm_responses",
+    "live"
+   ],
+   "data": {
+    "api": "ai_optimization",
+    "function": "llm_responses",
+    "se": "perplexity",
+    "user_prompt": "What are the best white label voice AI agent platforms for agencies?",
+    "model_name": "sonar",
+    "max_output_tokens": 2048,
+    "web_search_country_iso_code": "US",
+    "tag": "I1-perplexity-2"
+   },
+   "result": [
+    {
+     "model_name": "sonar",
+     "input_tokens": 20,
+     "output_tokens": 1041,
+     "reasoning_tokens": 0,
+     "web_search": true,
+     "money_spent": 0.006061,
+     "datetime": "2026-10-27 10:10:21 +00:00",
+     "items": [
+      {
+       "type": "message",
+       "sections": [
+        {
+         "type": "text",
+         "text": "The best choice depends on whether you want a **ready-made reseller platform** or a **developer-controlled voice stack**. For most agencies, the strongest shortlist is **Autocalls, Trillet, Synthflow, Stammer AI, VoiceAIWrapper, and Retell/Vapi**.\n\n| Platform | Best for | White-label model | Main strengths | Main tradeoff |\n|---|---|---|---|---|\n| **Autocalls** | Fast agency launch | Full branded platform | Client subaccounts, custom branding, Stripe billing, voice plus WhatsApp/chat; its white-label plan is listed at $419/month with 3,500 minutes and $0.09/minute overage.[1] | Less control than building on a lower-level API |\n| **Trillet** | Finished voice-AI reseller service | Full branded platform | Agency plan includes unlimited workspaces, custom domain, branded email, markup controls, and 3,000 AI minutes for $299/month; telephony is separate.[2] | Primarily voice-focused; pricing and included minutes should be verified before committing |\n| **Synthflow** | Mature no-code voice workflows | Full agency/enterprise offering | Strong visual builder and suited to agencies managing sophisticated call flows; it is positioned for larger enterprise voice deployments.[3] | Can be expensive, with enterprise contracts reportedly starting around $30,000 annually.[3] |\n| **Stammer AI** | Voice plus chat resale at lower cost | Full white-label platform | Client subaccounts, separate wallets, and agency resale features; published agency pricing varies by plan and source, from roughly $99 to $197/month.[1][2] | Validate exact current limits, branding features, and voice-minute costs |\n| **VoiceAIWrapper** | Agencies already using Vapi, Retell, or ElevenLabs | White-label wrapper | Lets agencies retain provider choice while adding branded portals, client accounts, rebilling, and campaign tools.[4] | You manage two layers: the wrapper plus the underlying voice provider |\n| **Retell AI** | Natural conversations at scale | API-based, build-your-own | Strong voice runtime and natural phone conversations; reported usage starts around $0.07/minute.[1] | Not a turnkey reseller portal; requires building the agency SaaS layer |\n| **Vapi** | Developer-led agencies | API-based, build-your-own | Maximum control over models, telephony, tools, and product experience; reported platform pricing is about $0.05/minute plus provider costs.[1] | Requires engineering, monitoring, billing, and support infrastructure |\n\n## Best picks by agency type\n\n- **Best overall for a fast launch:** **Autocalls**\u2014particularly if you want built-in client billing, subaccounts, and a packaged voice-plus-messaging offer.[1]\n- **Best finished white-label voice platform:** **Trillet**\u2014a strong fit when branded workspaces, custom domains, and predictable agency packaging matter most.[2]\n- **Best for sophisticated call flows:** **Synthflow**\u2014better suited to agencies selling higher-value implementations rather than low-cost SMB packages.[3]\n- **Best budget-friendly voice-and-chat option:** **Stammer AI**, provided its current plan limits and usage pricing fit your margins.[2]\n- **Best for technical agencies:** **Retell AI or Vapi**\u2014use these when you want to own the customer experience and build your own portal, billing, and orchestration layer.[1]\n- **Best for multi-provider flexibility:** **VoiceAIWrapper**\u2014useful when you want to switch between or combine upstream providers without exposing them to clients.[4]\n\n## What to evaluate before choosing\n\n- **True white labeling:** custom domain, email, login page, mobile branding, and removal of vendor references.\n- **Client management:** separate workspaces, permissions, usage caps, phone numbers, analytics, and call recordings.\n- **Billing:** Stripe rebilling, prepaid wallets, usage-based markups, and whether the platform adds hidden per-minute fees.\n- **Voice economics:** distinguish AI-minute charges from telephony, transcription, LLM, and carrier costs.\n- **Call quality:** test interruption handling, latency, barge-in, transfers, voicemail detection, and accents.\n- **Compliance:** recording consent, TCPA obligations for US outbound calls, data retention, PII controls, and HIPAA availability if relevant.\n- **Portability:** confirm whether you can export prompts, call data, numbers, workflows, and integrations if you change vendors.\n\n**Practical recommendation:** start with **Autocalls or Trillet** for a turnkey agency offer; choose **Synthflow** for enterprise-grade visual orchestration; choose **Vapi or Retell** only if your team can build and maintain the surrounding SaaS infrastructure. Verify pricing directly with each vendor because agency plans, included minutes, and white-label terms change frequently.[1][2][3]",
+         "annotations": [
+          {
+           "title": "Frequently Asked Questions",
+           "url": "https://www.retellai.com/blog/white-label-voice-ai-platforms-agencies",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "12 Best White Label AI Voice Agent Platforms",
+           "url": "https://wotnot.io/blog/white-label-ai-voice-agent",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "7 Best White Label AI Voice Platforms in 2026 (Compared)",
+           "url": "https://botpenguin.com/blogs/best-white-label-ai-voice-platforms",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "10 Best White-Label AI Sales Agents for Agencies in 2026",
+           "url": "https://dmchamp.com/best/best-white-label-ai-sales-agents-for-agencies-2026/",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "White-Label AI Voice Agent Platforms: 5 Options Compared - Dasha AI",
+           "url": "https://dasha.ai/blog/best-white-label-ai-voice-agent-platforms",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "Best White-Label Chatbots for Agencies [2026 Review]",
+           "url": "https://www.voiceflow.com/blog/white-label-chatbot",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "The 24/7 Agency: Scaling Your Firm with White-Label AI Agents",
+           "url": "https://www.vendasta.com/blog/white-label-ai-agents/",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "Best White-Label AI Voice Agent Platforms 2026",
+           "url": "https://autocalls.ai/article/best-white-label-ai-voice-agent-platforms",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "Best White Label AI Agent Platforms for Agencies in 2026",
+           "url": "https://botsify.com/blog/best-white-label-ai-agent-platforms-for-agencies/",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "Best White-Label Voice AI Platform 2026: How to Choose (and Top 10)",
+           "url": "https://trillet.ai/blogs/top-10-white-label-voice-ai-platforms-for-agencies-2026",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "fan_out_queries": null
+    }
+   ]
+  }
+ ]
+}

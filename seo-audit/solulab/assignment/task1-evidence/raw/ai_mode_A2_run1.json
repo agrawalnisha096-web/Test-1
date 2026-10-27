@@ -1,0 +1,160 @@
+{
+ "version": "0.1.20261022",
+ "status_code": 20000,
+ "status_message": "Ok.",
+ "time": "7.9681 sec.",
+ "cost": 0.004,
+ "tasks_count": 1,
+ "tasks_error": 0,
+ "tasks": [
+  {
+   "id": "10271009-2577-0139-0000-1ad102b27de9",
+   "status_code": 20000,
+   "status_message": "Ok.",
+   "time": "7.8468 sec.",
+   "cost": 0.004,
+   "result_count": 1,
+   "path": [
+    "v3",
+    "serp",
+    "google",
+    "ai_mode",
+    "live",
+    "advanced"
+   ],
+   "data": {
+    "api": "serp",
+    "function": "live",
+    "se": "google",
+    "se_type": "ai_mode",
+    "keyword": "Which companies offer data warehouse consulting services for enterprises? Give me a shortlist.",
+    "location_code": 2840,
+    "language_code": "en",
+    "device": "desktop",
+    "tag": "A2-ai_mode-1",
+    "os": "windows"
+   },
+   "result": [
+    {
+     "keyword": "Which companies offer data warehouse consulting services for enterprises? Give me a shortlist.",
+     "type": "ai_mode",
+     "se_domain": "google.com",
+     "location_code": 2840,
+     "language_code": "en",
+     "check_url": "https://www.google.com/search?q=Which%20companies%20offer%20data%20warehouse%20consulting%20services%20for%20enterprises%3F%20Give%20me%20a%20shortlist.&hl=en&gl=US&udm=50&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+     "datetime": "2026-10-27 10:09:47 +00:00",
+     "spell": null,
+     "refinement_chips": null,
+     "item_types": [
+      "ai_overview"
+     ],
+     "se_results_count": 0,
+     "items_count": 1,
+     "items": [
+      {
+       "type": "ai_overview",
+       "rank_group": 1,
+       "rank_absolute": 1,
+       "page": 1,
+       "position": "left",
+       "xpath": "/html[1]/body[1]/div[2]/div[1]/div[9]/div[1]/section[1]/div[1]/div[1]/div[3]/div[4]/div[1]/div[2]/div[1]/div[3]",
+       "markdown": "Here is a shortlist of reputable companies offering enterprise-grade data warehouse (DWH) consulting, architecture, and modernization services, spanning `global IT leaders and specialized engineering firms`:\n\n- N-iX : A large-scale engineering partner with over 2,000 professionals, known for multi-cloud data warehousing (AWS, GCP, Azure) and deep expertise in modern platforms like Snowflake and Databricks. They excel at building AI-ready DWH infrastructure and Data-Warehouse-as-a-Service (DWaaS) models for large enterprises.[[1]](https://www.ceo-review.com/7-best-data-warehouse-consulting-companies-in-2026/)\n- SoftServe : A global digital solutions and consulting company with extensive delivery history and top-tier partnerships across Google Cloud, AWS, Azure, and NVIDIA. They specialize in complex, cross-domain enterprise DWH migrations and modernization (shifting legacy databases to Redshift, BigQuery, Snowflake, or Azure Synapse).[[1]](https://www.reddit.com/r/N_iX/comments/1wuyw1l/top_data_warehouse_consulting_companies_in_2026/)\n- Intellias : Highly regarded for implementing secure, cloud-based data warehouses and analytics platforms within heavily regulated sectors like financial services, automotive, and telecommunications. They work extensively with modern tooling like dbt, Airflow, Snowflake, and Databricks.[[1]](https://www.ceo-review.com/7-best-data-warehouse-consulting-companies-in-2026/)\n- Grid Dynamics : An engineering consultancy that specializes in high-load analytical platforms and real-time data processing at massive enterprise transaction volumes. They are a strong fit for retail, e-commerce, and high-velocity environments where low-latency reporting under peak load is critical.[[1]](https://www.reddit.com/r/N_iX/comments/1wuyw1l/top_data_warehouse_consulting_companies_in_2026/)\n- ELEKS : A long-standing technology partner focused on multi-cloud data warehousing, enterprise security compliance, and integrated MLOps/Data Science pipelines. Well-suited for enterprise projects requiring stringent security audits and custom data governance frameworks.[[1]](https://www.ceo-review.com/7-best-data-warehouse-consulting-companies-in-2026/)\n\nIf you'd like to narrow down this list, let me know:\n\n- Your preferred **cloud or data platform stack** (e.g., Snowflake, BigQuery, AWS Redshift, Databricks, Microsoft Azure)\n- Your specific **industry** or compliance requirements\n- Whether you need **migration from a legacy system** or a greenfield build\n\nI can tailor the recommendations or detail their specific partnership levels.",
+       "items": [
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "Here is a shortlist of reputable companies offering enterprise-grade data warehouse (DWH) consulting, architecture, and modernization services, spanning global IT leaders and specialized engineering firms :",
+         "markdown": "Here is a shortlist of reputable companies offering enterprise-grade data warehouse (DWH) consulting, architecture, and modernization services, spanning `global IT leaders and specialized engineering firms`:",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "N-iX : A large-scale engineering partner with over 2,000 professionals, known for multi-cloud data warehousing (AWS, GCP, Azure) and deep expertise in modern platforms like Snowflake and Databricks. They excel at building AI-ready DWH infrastructure and Data-Warehouse-as-a-Service (DWaaS) models for large enterprises. N-iX Snowflake SoftServe : A global digital solutions and consulting company with extensive delivery history and top-tier partnerships across Google Cloud, AWS, Azure, and NVIDIA. They specialize in complex, cross-domain enterprise DWH migrations and modernization (shifting legacy databases to Redshift, BigQuery, Snowflake, or Azure Synapse). SoftServe Intellias : Highly regarded for implementing secure, cloud-based data warehouses and analytics platforms within heavily regulated sectors like financial services, automotive, and telecommunications. They work extensively with modern tooling like dbt, Airflow, Snowflake, and Databricks. Intellias Grid Dynamics : An engineering consultancy that specializes in high-load analytical platforms and real-time data processing at massive enterprise transaction volumes. They are a strong fit for retail, e-commerce, and high-velocity environments where low-latency reporting under peak load is critical. Grid Dynamics ELEKS : A long-standing technology partner focused on multi-cloud data warehousing, enterprise security compliance, and integrated MLOps/Data Science pipelines. Well-suited for enterprise projects requiring stringent security audits and custom data governance frameworks. ELEKS",
+         "markdown": "- N-iX : A large-scale engineering partner with over 2,000 professionals, known for multi-cloud data warehousing (AWS, GCP, Azure) and deep expertise in modern platforms like Snowflake and Databricks. They excel at building AI-ready DWH infrastructure and Data-Warehouse-as-a-Service (DWaaS) models for large enterprises.[[1]](https://www.ceo-review.com/7-best-data-warehouse-consulting-companies-in-2026/)\n- SoftServe : A global digital solutions and consulting company with extensive delivery history and top-tier partnerships across Google Cloud, AWS, Azure, and NVIDIA. They specialize in complex, cross-domain enterprise DWH migrations and modernization (shifting legacy databases to Redshift, BigQuery, Snowflake, or Azure Synapse).[[1]](https://www.reddit.com/r/N_iX/comments/1wuyw1l/top_data_warehouse_consulting_companies_in_2026/)\n- Intellias : Highly regarded for implementing secure, cloud-based data warehouses and analytics platforms within heavily regulated sectors like financial services, automotive, and telecommunications. They work extensively with modern tooling like dbt, Airflow, Snowflake, and Databricks.[[1]](https://www.ceo-review.com/7-best-data-warehouse-consulting-companies-in-2026/)\n- Grid Dynamics : An engineering consultancy that specializes in high-load analytical platforms and real-time data processing at massive enterprise transaction volumes. They are a strong fit for retail, e-commerce, and high-velocity environments where low-latency reporting under peak load is critical.[[1]](https://www.reddit.com/r/N_iX/comments/1wuyw1l/top_data_warehouse_consulting_companies_in_2026/)\n- ELEKS : A long-standing technology partner focused on multi-cloud data warehousing, enterprise security compliance, and integrated MLOps/Data Science pipelines. Well-suited for enterprise projects requiring stringent security audits and custom data governance frameworks.[[1]](https://www.ceo-review.com/7-best-data-warehouse-consulting-companies-in-2026/)",
+         "links": null,
+         "images": null,
+         "references": [
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "CEO Monthly",
+           "domain": "www.ceo-review.com",
+           "url": "https://www.ceo-review.com/7-best-data-warehouse-consulting-companies-in-2026/",
+           "title": "7 Best Data Warehouse Consulting Companies in 2026",
+           "text": "Multi-cloud DWH, Data Science, MLOps, Enterprise Security Projects with stringent requirements for compliance, security audits, an..."
+          },
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Reddit",
+           "domain": "www.reddit.com",
+           "url": "https://www.reddit.com/r/N_iX/comments/1wuyw1l/top_data_warehouse_consulting_companies_in_2026/",
+           "title": "Top Data Warehouse Consulting Companies in 2026 : r/N_iX - Reddit",
+           "text": "SoftServe - 10,000+ professionals across 14 countries, 30+ years of delivery history. Partnerships with Google Cloud, AWS, Azure, ..."
+          }
+         ]
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "If you'd like to narrow down this list, let me know:",
+         "markdown": "If you'd like to narrow down this list, let me know:",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "Your preferred cloud or data platform stack (e.g., Snowflake, BigQuery, AWS Redshift, Databricks, Microsoft Azure) Your specific industry or compliance requirements Whether you need migration from a legacy system or a greenfield build",
+         "markdown": "- Your preferred **cloud or data platform stack** (e.g., Snowflake, BigQuery, AWS Redshift, Databricks, Microsoft Azure)\n- Your specific **industry** or compliance requirements\n- Whether you need **migration from a legacy system** or a greenfield build",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "I can tailor the recommendations or detail their specific partnership levels.",
+         "markdown": "I can tailor the recommendations or detail their specific partnership levels.",
+         "links": null,
+         "images": null,
+         "references": null
+        }
+       ],
+       "references": [
+        {
+         "type": "ai_overview_reference",
+         "position": "right",
+         "source": "CEO Monthly",
+         "domain": "www.ceo-review.com",
+         "url": "https://www.ceo-review.com/7-best-data-warehouse-consulting-companies-in-2026/",
+         "title": "7 Best Data Warehouse Consulting Companies in 2026",
+         "text": "Enterprise Security Projects with stringent requirements for compliance, security audits, and AI/ML."
+        },
+        {
+         "type": "ai_overview_reference",
+         "position": "right",
+         "source": "Reddit",
+         "domain": "www.reddit.com",
+         "url": "https://www.reddit.com/r/N_iX/comments/1wuyw1l/top_data_warehouse_consulting_companies_in_2026/",
+         "title": "Top Data Warehouse Consulting Companies in 2026 : r/N_iX - Reddit",
+         "text": "Grid Dynamics - founded 2006, engineering centers. Specializes in high-load analytical platforms at enterprise transaction volumes."
+        }
+       ],
+       "rectangle": null
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

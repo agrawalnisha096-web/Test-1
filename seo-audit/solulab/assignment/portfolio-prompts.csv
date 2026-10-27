@@ -1,0 +1,6 @@
+query_id,market,cluster,exact_prompt,brand,brand_regex,brand_domain
+A1,US,Data engineering consulting,"What are the best data engineering consulting companies in the US?",Algoscale,\balgo\s?scale\b,algoscale.com
+A2,US,Data warehouse consulting,"Which companies offer data warehouse consulting services for enterprises? Give me a shortlist.",Algoscale,\balgo\s?scale\b,algoscale.com
+A3,US,Data lake consulting,"What are the top data lake consulting companies?",Algoscale,\balgo\s?scale\b,algoscale.com
+I1,US,White-label voice AI,"What are the best white label voice AI agent platforms for agencies?",Insighto,\binsighto\b,insighto.ai
+I2,US,White-label voice AI,"Which white label AI voice agent platform can I resell to my clients under my own brand?",Insighto,\binsighto\b,insighto.ai

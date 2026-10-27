@@ -1,0 +1,740 @@
+{
+ "version": "0.1.20261022",
+ "status_code": 20000,
+ "status_message": "Ok.",
+ "time": "19.4108 sec.",
+ "cost": 0.004,
+ "tasks_count": 1,
+ "tasks_error": 0,
+ "tasks": [
+  {
+   "id": "10271010-2577-0629-0000-3022b69fcf62",
+   "status_code": 20000,
+   "status_message": "Ok.",
+   "time": "19.3633 sec.",
+   "cost": 0.004,
+   "result_count": 1,
+   "path": [
+    "v3",
+    "ai_optimization",
+    "chat_gpt",
+    "llm_scraper",
+    "live",
+    "advanced"
+   ],
+   "data": {
+    "api": "ai_optimization",
+    "function": "live",
+    "se": "chat_gpt",
+    "keyword": "Which white label AI voice agent platform can I resell to my clients under my own brand?",
+    "location_code": 2840,
+    "language_code": "en",
+    "force_web_search": true,
+    "tag": "I2-chatgpt-2",
+    "device": "desktop",
+    "os": "windows"
+   },
+   "result": [
+    {
+     "keyword": "Which white label AI voice agent platform can I resell to my clients under my own brand?",
+     "location_code": 2840,
+     "language_code": "en",
+     "model": "gpt-6",
+     "check_url": "https://chatgpt.com/?prompt=Which%20white%20label%20AI%20voice%20agent%20platform%20can%20I%20resell%20to%20my%20clients%20under%20my%20own%20brand%3F&hints=search",
+     "datetime": "2026-10-27 10:10:36 +00:00",
+     "markdown": "If you want to resell AI voice agents to your clients under your own company name, you want a **white-label AI voice agent platform with a reseller dashboard, custom domain, and wholesale pricing**\\. That lets you sell AI receptionists, appointment booking, lead qualification, and inbound or outbound calling without building the underlying technology yourself.\n\nI found several platforms worth evaluating. My first choice depends on whether you want to launch a simple AI voice agency or build a fully branded SaaS business.\n\n## Best white-label AI voice agent platforms\n\n![\ud83c\udf99TalkNow: voice-first dating app \u2764\ufe0f \u2013 Medium](https://images.openai.com/static-rsc-4/Tt1IPgr83N5i1bgka2RieXNb8eiMRKbRmHeRbdc27y7mkF479KSw_ghyJmiE8cwY5DNRLZccRwIU6dhIdRGI5ja2urhhcEW68r4xbB6xKMEmjMdDghQGKU9YTyoKk7lds8Yi_3EIVoPNfECu2PWrLnOwxVndsYgIwLnvslta46iCV7HDcFbV6dA436TIqCoJ?purpose=fullsize)\n\n## 1\\. Telenow\n\n(Best for straightforward reselling)\n\nTelenow explicitly offers your own domain, logo, branded client logins, per-client pricing, and wholesale usage billing. It advertises no joining fee, although a minimum commitment may be negotiated during onboarding. [docs.telenow.ai](https://docs.telenow.ai/become-a-reseller?utm_source=chatgpt.com)\n\n**Best for\\:** Agencies that want to own the customer relationship and control their margins.\n\n[Website and reseller application](https://docs.telenow.ai/become-a-reseller)\n\n---\n\n![Best AI Voice Agents to Automate Your Phone Calls | OnDial](https://images.openai.com/static-rsc-4/C3OVYNtmFSFUXSJfS6oZeDDeSSJ5LUpseIsqjOwXCm-kzU6EtcD_rXj461lcsmQ0cfK_V3qPopta6b8cWPrquvthbnnFUnaZ9lRpqLXoc8PDkO01kWiHW-bkZsxy7BbqL7FX7pB-ohWWnXt-vTD_G_Mn57n5wuSjFri0qXl9oAHGkfkg4_7nfMdosF6Uq0gX?purpose=fullsize)\n\n## 2\\. OnDial\n\n(Best for a full branded platform)\n\nOffers custom branding and domains, client subaccounts, no-code agent creation, analytics, and reseller pricing. It also advertises a broad compliance portfolio and support for over 100 languages. Verify certifications and their scope before selling into regulated industries. [www.ondial.ai](https://www.ondial.ai/white-label-ai-voice-agent?utm_source=chatgpt.com)\n\n**Best for\\:** Agencies wanting a client-facing portal that feels like their own software product.\n\n[Website and partner program](https://www.ondial.ai/white-label-ai-voice-agent)\n\n---\n\n![Voice AI for Small Business: Boost Growth 2025 | NextLevel](https://images.openai.com/static-rsc-4/DDbZz6bWJsdwRMSeec3k8yIVHP8FCkWmh4UnXKULEJ8pbTnNvOlewYSHQ5all6BVdmiAMBaHGufIUBnHkQqkvIlwiy5O5oWtvJw9GmbPzyK2TLlrqQPZ1fnAl8hOWAMMBB3DlBBlgMd2IMUeIeqUcIbBYfBsxOvpkgv2xDn3qV472VPd1e1UlXbOcJtsOL7M?purpose=fullsize)\n\n## 3\\. NextLevel.AI\n\nOffers white-label voice and chatbot software, branded dashboards, custom domains, flexible pricing, and done-for-you agent deployment and maintenance. [nextlevel.ai](https://nextlevel.ai/white-label-program/?utm_source=chatgpt.com)\n\n**Best for\\:** Business owners who would rather outsource much of the technical setup.\n\n[White-label program](https://nextlevel.ai/white-label-program/)\n\n---\n\n![White-Label AI Agent Platform | Voice & Chat | ConvoCore](https://images.openai.com/static-rsc-4/tnCDzLvGTr2Pgf5K4sbBPQqBB8HdRWoYVFQavwX9iYRMX5o53ORDkNF5dWemqitrcoR7q06aWaathGAD4o12FKAjwYke5geXkGlL5rTu7E5cg77azADP1oGPWBXBzmr2kCxKLmYxIUswafj5ln_CnKDlB0ss3VJvP-BI5s2wNIjBeUEpTSr4UBreV9Q7DG6v?purpose=fullsize)\n\n## 4\\. Customer2.AI\n\nSupports voice, chat, email, and SMS agents, custom branding, client organizations, and markup over wholesale rates. Its site lists illustrative subscription tiers of \\$49, \\$149, and \\$399 per month; confirm the current reseller plan and included usage before budgeting. [www.customer2.ai](https://www.customer2.ai/white-label?utm_source=chatgpt.com)\n\n**Best for\\:** Selling multiple AI services to the same client instead of voice alone.\n\n[White-label program and pricing](https://www.customer2.ai/white-label)\n\n---\n\n![AI Voice Agents & Automated Calling Platform | MagickVoice](https://images.openai.com/static-rsc-4/n6Tr1u68BK0oEKrm3Ux863HagsndwCCJEa1_pZGbTE39Oi9RUrlLa1M-1dArz8zwl34LQALmol6Rvmol0Ti-GZwzrCracDodj3o7Iigvd4PyW38Ctx-Yvu3NN8OjgiHlDZ7AJ2gXq7Bhft5tuJFQJ_iBNbZnMEga9hGFoFoyD9m7aveeyEc9Gk_upG7iXDIQ?purpose=fullsize)\n\n## 5\\. MakeAutomation Voice AI\n\nPublishes a specific entry-level white-label price: **\\$97/month plus \\$0.10 per minute** in usage. It offers a branded client dashboard, custom domain support, and client account management, including integration into GoHighLevel. [voice.makeautomation.ai](https://voice.makeautomation.ai/partners?utm_source=chatgpt.com)\n\n**Best for\\:** Testing a voice AI agency model with a published starting cost.\n\n[Partner program and pricing](https://voice.makeautomation.ai/partners)\n\n## Two more platforms worth checking\n\n- **CallMangal** \u2014 Branded dashboard, custom login domain, client-level organizations, and control over which agents clients can edit. Reseller rates are provided during onboarding. [Visit reseller program](https://callmangal.com/reseller-program)\\. [callmangal.com](https://callmangal.com/reseller-program?utm_source=chatgpt.com)\n- **Verlingo** \u2014 Offers voice and chat agents, client workspaces, recurring reseller revenue, and API-based provisioning. Worth considering if you want to automate onboarding at scale. [Visit partner program](https://verlingo.com/partners)\\. [verlingo.com](https://verlingo.com/partners?utm_source=chatgpt.com)\n\n## How I'd choose\n\n| If your priority is\u2026 | Start with |\n|--------|--------|\n| Simple white-label resale | Telenow |\n| A polished branded SaaS portal | OnDial |\n| Done-for-you technical deployment | NextLevel.AI |\n| Voice plus chat, email, and SMS | Customer2.AI |\n| A published starting price | MakeAutomation Voice AI |\n\n\nThese are initial recommendations based on the vendors' published offerings, not independently verified performance rankings.\n\n## What to verify before signing up\n\nAsk each provider these five questions\\:\n\n1. **True white labeling\\:** Can I use my own domain, logo, business name, and client-facing emails without your brand appearing?\n2. **Reseller economics\\:** What are the wholesale per-minute rates, phone-number costs, AI model fees, and monthly minimums?\n3. **Client management\\:** Can I create separate client accounts and control their permissions from one dashboard?\n4. **Reliability\\:** What are the latency, uptime guarantees, call-transfer capabilities, CRM integrations, and support arrangements?\n5. **Ownership and compliance\\:** Can I export client data, move clients elsewhere, and meet applicable consent and calling regulations?\n\nPay particular attention to whether pricing includes both the AI model and telephony. A low platform fee can become expensive at high call volumes.\n\n## Let me narrow it down to the best fit\n\nThe most important question is: **How do you want to sell the service?**\n\n1\\. What's your business model?\n\nAI agency \u2014 I set up and manage agents for local businesses\n\nSaaS \u2014 clients log in to my own branded platform\n\nManaged service \u2014 I sell the service and the provider handles most of the technology\n\n---\n\n2\\. How technical do you want to get?\n\nNo-code, ready to use\n\nIntegrated with GoHighLevel\n\nAPI access and advanced customization\n\n---\n\n3\\. What's your monthly platform budget to start?\n\nUnder \\$100/month\n\n\\$100\u2013\\$300/month\n\n\\$300+/month for a more complete platform\n\n[Find my best platform]",
+     "search_results": [
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://docs.telenow.ai/become-a-reseller",
+       "domain": "docs.telenow.ai",
+       "title": "Become a reseller \u2014 sell white-label voice AI | Telenow",
+       "description": null,
+       "breadcrumb": "docs.telenow.ai"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://nextlevel.ai/white-label-program/",
+       "domain": "nextlevel.ai",
+       "title": "White Label Program \u2014 NextLevel.AI",
+       "description": null,
+       "breadcrumb": "nextlevel.ai"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://www.ondial.ai/white-label-ai-voice-agent",
+       "domain": "www.ondial.ai",
+       "title": "White Label AI Voice Agent Platform | OnDial",
+       "description": null,
+       "breadcrumb": "www.ondial.ai"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://callmangal.com/reseller-program",
+       "domain": "callmangal.com",
+       "title": "White-Label AI Voice Agent Reseller Program | CallMangal",
+       "description": null,
+       "breadcrumb": "callmangal.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://www.customer2.ai/white-label",
+       "domain": "www.customer2.ai",
+       "title": "White-Label AI Agent Platform \u2014 Customer2.AI",
+       "description": null,
+       "breadcrumb": "www.customer2.ai"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://voice.makeautomation.ai/partners",
+       "domain": "voice.makeautomation.ai",
+       "title": "Partner Program | MakeAutomation Voice AI",
+       "description": null,
+       "breadcrumb": "voice.makeautomation.ai"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://verlingo.com/partners",
+       "domain": "verlingo.com",
+       "title": "Partner Program - White-Label AI Voice & Chat Agents for Agencies & Resellers | Verlingo",
+       "description": null,
+       "breadcrumb": "verlingo.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://dring.ai/partner-reseller",
+       "domain": "dring.ai",
+       "title": "White-Label Voice AI Reseller Program | DRING",
+       "description": null,
+       "breadcrumb": "dring.ai"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://agentvoice.com/launch-your-own-ai-voice-platform/",
+       "domain": "agentvoice.com",
+       "title": "White label AI voice agents on your own platform - AgentVoice",
+       "description": null,
+       "breadcrumb": "agentvoice.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://islucid.com/partners",
+       "domain": "islucid.com",
+       "title": "Partner with isLucid \u2014 White-Label AI Voice Agents",
+       "description": null,
+       "breadcrumb": "islucid.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://docs.votel.ai/docs/white-label/overview/",
+       "domain": "docs.votel.ai",
+       "title": "White Label Overview | Documentation",
+       "description": null,
+       "breadcrumb": "docs.votel.ai"
+      }
+     ],
+     "sources": [
+      {
+       "type": "chat_gpt_source",
+       "title": "Become a reseller \u2014 sell white-label voice AI",
+       "snippet": null,
+       "domain": "docs.telenow.ai",
+       "url": "https://docs.telenow.ai/become-a-reseller?utm_source=chatgpt.com",
+       "thumbnail": null,
+       "source_name": "Telenow",
+       "publication_date": null,
+       "markdown": null
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Website and reseller application",
+       "snippet": null,
+       "domain": "docs.telenow.ai",
+       "url": "https://docs.telenow.ai/become-a-reseller",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[Website and reseller application](https://docs.telenow.ai/become-a-reseller)"
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "White Label AI Voice Agent Platform",
+       "snippet": null,
+       "domain": "www.ondial.ai",
+       "url": "https://www.ondial.ai/white-label-ai-voice-agent?utm_source=chatgpt.com",
+       "thumbnail": null,
+       "source_name": "OnDial",
+       "publication_date": null,
+       "markdown": null
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Website and partner program",
+       "snippet": null,
+       "domain": "www.ondial.ai",
+       "url": "https://www.ondial.ai/white-label-ai-voice-agent",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[Website and partner program](https://www.ondial.ai/white-label-ai-voice-agent)"
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "White Label Program",
+       "snippet": null,
+       "domain": "nextlevel.ai",
+       "url": "https://nextlevel.ai/white-label-program/?utm_source=chatgpt.com",
+       "thumbnail": null,
+       "source_name": "NextLevel.AI",
+       "publication_date": null,
+       "markdown": null
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "White-label program",
+       "snippet": null,
+       "domain": "nextlevel.ai",
+       "url": "https://nextlevel.ai/white-label-program/",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[White-label program](https://nextlevel.ai/white-label-program/)"
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "White-Label AI Agent Platform",
+       "snippet": null,
+       "domain": "www.customer2.ai",
+       "url": "https://www.customer2.ai/white-label?utm_source=chatgpt.com",
+       "thumbnail": null,
+       "source_name": "Customer2.AI",
+       "publication_date": null,
+       "markdown": null
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "White-label program and pricing",
+       "snippet": null,
+       "domain": "www.customer2.ai",
+       "url": "https://www.customer2.ai/white-label",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[White-label program and pricing](https://www.customer2.ai/white-label)"
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Partner Program",
+       "snippet": null,
+       "domain": "voice.makeautomation.ai",
+       "url": "https://voice.makeautomation.ai/partners?utm_source=chatgpt.com",
+       "thumbnail": null,
+       "source_name": "MakeAutomation Voice AI",
+       "publication_date": null,
+       "markdown": null
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Partner program and pricing",
+       "snippet": null,
+       "domain": "voice.makeautomation.ai",
+       "url": "https://voice.makeautomation.ai/partners",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[Partner program and pricing](https://voice.makeautomation.ai/partners)"
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Visit reseller program",
+       "snippet": null,
+       "domain": "callmangal.com",
+       "url": "https://callmangal.com/reseller-program",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[Visit reseller program](https://callmangal.com/reseller-program)"
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "White-Label AI Voice Agent Reseller Program",
+       "snippet": null,
+       "domain": "callmangal.com",
+       "url": "https://callmangal.com/reseller-program?utm_source=chatgpt.com",
+       "thumbnail": null,
+       "source_name": "CallMangal",
+       "publication_date": null,
+       "markdown": null
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Visit partner program",
+       "snippet": null,
+       "domain": "verlingo.com",
+       "url": "https://verlingo.com/partners",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[Visit partner program](https://verlingo.com/partners)"
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Partner Program - White-Label AI Voice & Chat Agents for Agencies & Resellers",
+       "snippet": null,
+       "domain": "verlingo.com",
+       "url": "https://verlingo.com/partners?utm_source=chatgpt.com",
+       "thumbnail": null,
+       "source_name": "Verlingo",
+       "publication_date": null,
+       "markdown": null
+      }
+     ],
+     "fan_out_queries": [
+      "white label AI voice agent platform reseller program agency branding 2026",
+      "best white label AI voice agent platforms reseller agency own brand 2026"
+     ],
+     "brand_entities": [
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "White-label voice AI reseller platform",
+       "category": "company",
+       "markdown": "Telenow",
+       "urls": null
+      },
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "White-label AI voice agent software",
+       "category": "company",
+       "markdown": "OnDial",
+       "urls": null
+      },
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "White-label voice and chatbot platform",
+       "category": "company",
+       "markdown": "NextLevel.AI",
+       "urls": null
+      },
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "White-label AI voice and multichannel agent platform",
+       "category": "company",
+       "markdown": "Customer2.AI",
+       "urls": null
+      },
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "White-label voice AI agency platform",
+       "category": "company",
+       "markdown": "MakeAutomation Voice AI",
+       "urls": null
+      },
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "White-label AI calling reseller platform",
+       "category": "company",
+       "markdown": "CallMangal",
+       "urls": null
+      },
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "White-label AI voice and chat agent platform",
+       "category": "company",
+       "markdown": "Verlingo",
+       "urls": null
+      }
+     ],
+     "se_results_count": 0,
+     "item_types": [
+      "chat_gpt_text",
+      "chat_gpt_images",
+      "chat_gpt_table"
+     ],
+     "items_count": 13,
+     "items": [
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 1,
+       "rank_absolute": 1,
+       "markdown": "If you want to resell AI voice agents to your clients under your own company name, you want a **white-label AI voice agent platform with a reseller dashboard, custom domain, and wholesale pricing**\\. That lets you sell AI receptionists, appointment booking, lead qualification, and inbound or outbound calling without building the underlying technology yourself.\n\nI found several platforms worth evaluating. My first choice depends on whether you want to launch a simple AI voice agency or build a fully branded SaaS business.\n\n## Best white-label AI voice agent platforms\n\n",
+       "sources": null,
+       "brand_entities": null
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 1,
+       "rank_absolute": 2,
+       "markdown": "![\ud83c\udf99TalkNow: voice-first dating app \u2764\ufe0f \u2013 Medium](https://images.openai.com/static-rsc-4/Tt1IPgr83N5i1bgka2RieXNb8eiMRKbRmHeRbdc27y7mkF479KSw_ghyJmiE8cwY5DNRLZccRwIU6dhIdRGI5ja2urhhcEW68r4xbB6xKMEmjMdDghQGKU9YTyoKk7lds8Yi_3EIVoPNfECu2PWrLnOwxVndsYgIwLnvslta46iCV7HDcFbV6dA436TIqCoJ?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://medium.com/%40talknow",
+         "alt": "\ud83c\udf99TalkNow: voice-first dating app \u2764\ufe0f \u2013 Medium",
+         "image_url": "https://images.openai.com/static-rsc-4/Tt1IPgr83N5i1bgka2RieXNb8eiMRKbRmHeRbdc27y7mkF479KSw_ghyJmiE8cwY5DNRLZccRwIU6dhIdRGI5ja2urhhcEW68r4xbB6xKMEmjMdDghQGKU9YTyoKk7lds8Yi_3EIVoPNfECu2PWrLnOwxVndsYgIwLnvslta46iCV7HDcFbV6dA436TIqCoJ?purpose=fullsize",
+         "markdown": "![\ud83c\udf99TalkNow: voice-first dating app \u2764\ufe0f \u2013 Medium](https://images.openai.com/static-rsc-4/Tt1IPgr83N5i1bgka2RieXNb8eiMRKbRmHeRbdc27y7mkF479KSw_ghyJmiE8cwY5DNRLZccRwIU6dhIdRGI5ja2urhhcEW68r4xbB6xKMEmjMdDghQGKU9YTyoKk7lds8Yi_3EIVoPNfECu2PWrLnOwxVndsYgIwLnvslta46iCV7HDcFbV6dA436TIqCoJ?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 2,
+       "rank_absolute": 3,
+       "markdown": "\n\n## 1\\. Telenow\n\n(Best for straightforward reselling)\n\nTelenow explicitly offers your own domain, logo, branded client logins, per-client pricing, and wholesale usage billing. It advertises no joining fee, although a minimum commitment may be negotiated during onboarding. [docs.telenow.ai](https://docs.telenow.ai/become-a-reseller?utm_source=chatgpt.com)\n\n**Best for\\:** Agencies that want to own the customer relationship and control their margins.\n\n[Website and reseller application](https://docs.telenow.ai/become-a-reseller)\n\n---\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "Become a reseller \u2014 sell white-label voice AI",
+         "snippet": null,
+         "domain": "docs.telenow.ai",
+         "url": "https://docs.telenow.ai/become-a-reseller?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Telenow",
+         "publication_date": null,
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Website and reseller application",
+         "snippet": null,
+         "domain": "docs.telenow.ai",
+         "url": "https://docs.telenow.ai/become-a-reseller",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[Website and reseller application](https://docs.telenow.ai/become-a-reseller)"
+        }
+       ],
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "White-label voice AI reseller platform",
+         "category": "company",
+         "markdown": "Telenow",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 2,
+       "rank_absolute": 4,
+       "markdown": "![Best AI Voice Agents to Automate Your Phone Calls | OnDial](https://images.openai.com/static-rsc-4/C3OVYNtmFSFUXSJfS6oZeDDeSSJ5LUpseIsqjOwXCm-kzU6EtcD_rXj461lcsmQ0cfK_V3qPopta6b8cWPrquvthbnnFUnaZ9lRpqLXoc8PDkO01kWiHW-bkZsxy7BbqL7FX7pB-ohWWnXt-vTD_G_Mn57n5wuSjFri0qXl9oAHGkfkg4_7nfMdosF6Uq0gX?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://www.ondial.ai/",
+         "alt": "Best AI Voice Agents to Automate Your Phone Calls | OnDial",
+         "image_url": "https://images.openai.com/static-rsc-4/C3OVYNtmFSFUXSJfS6oZeDDeSSJ5LUpseIsqjOwXCm-kzU6EtcD_rXj461lcsmQ0cfK_V3qPopta6b8cWPrquvthbnnFUnaZ9lRpqLXoc8PDkO01kWiHW-bkZsxy7BbqL7FX7pB-ohWWnXt-vTD_G_Mn57n5wuSjFri0qXl9oAHGkfkg4_7nfMdosF6Uq0gX?purpose=fullsize",
+         "markdown": "![Best AI Voice Agents to Automate Your Phone Calls | OnDial](https://images.openai.com/static-rsc-4/C3OVYNtmFSFUXSJfS6oZeDDeSSJ5LUpseIsqjOwXCm-kzU6EtcD_rXj461lcsmQ0cfK_V3qPopta6b8cWPrquvthbnnFUnaZ9lRpqLXoc8PDkO01kWiHW-bkZsxy7BbqL7FX7pB-ohWWnXt-vTD_G_Mn57n5wuSjFri0qXl9oAHGkfkg4_7nfMdosF6Uq0gX?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 3,
+       "rank_absolute": 5,
+       "markdown": "\n\n## 2\\. OnDial\n\n(Best for a full branded platform)\n\nOffers custom branding and domains, client subaccounts, no-code agent creation, analytics, and reseller pricing. It also advertises a broad compliance portfolio and support for over 100 languages. Verify certifications and their scope before selling into regulated industries. [www.ondial.ai](https://www.ondial.ai/white-label-ai-voice-agent?utm_source=chatgpt.com)\n\n**Best for\\:** Agencies wanting a client-facing portal that feels like their own software product.\n\n[Website and partner program](https://www.ondial.ai/white-label-ai-voice-agent)\n\n---\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "White Label AI Voice Agent Platform",
+         "snippet": null,
+         "domain": "www.ondial.ai",
+         "url": "https://www.ondial.ai/white-label-ai-voice-agent?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "OnDial",
+         "publication_date": null,
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Website and partner program",
+         "snippet": null,
+         "domain": "www.ondial.ai",
+         "url": "https://www.ondial.ai/white-label-ai-voice-agent",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[Website and partner program](https://www.ondial.ai/white-label-ai-voice-agent)"
+        }
+       ],
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "White-label AI voice agent software",
+         "category": "company",
+         "markdown": "OnDial",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 3,
+       "rank_absolute": 6,
+       "markdown": "![Voice AI for Small Business: Boost Growth 2025 | NextLevel](https://images.openai.com/static-rsc-4/DDbZz6bWJsdwRMSeec3k8yIVHP8FCkWmh4UnXKULEJ8pbTnNvOlewYSHQ5all6BVdmiAMBaHGufIUBnHkQqkvIlwiy5O5oWtvJw9GmbPzyK2TLlrqQPZ1fnAl8hOWAMMBB3DlBBlgMd2IMUeIeqUcIbBYfBsxOvpkgv2xDn3qV472VPd1e1UlXbOcJtsOL7M?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://nextlevel.ai/voice-ai-for-small-business-growth/",
+         "alt": "Voice AI for Small Business: Boost Growth 2025 | NextLevel",
+         "image_url": "https://images.openai.com/static-rsc-4/DDbZz6bWJsdwRMSeec3k8yIVHP8FCkWmh4UnXKULEJ8pbTnNvOlewYSHQ5all6BVdmiAMBaHGufIUBnHkQqkvIlwiy5O5oWtvJw9GmbPzyK2TLlrqQPZ1fnAl8hOWAMMBB3DlBBlgMd2IMUeIeqUcIbBYfBsxOvpkgv2xDn3qV472VPd1e1UlXbOcJtsOL7M?purpose=fullsize",
+         "markdown": "![Voice AI for Small Business: Boost Growth 2025 | NextLevel](https://images.openai.com/static-rsc-4/DDbZz6bWJsdwRMSeec3k8yIVHP8FCkWmh4UnXKULEJ8pbTnNvOlewYSHQ5all6BVdmiAMBaHGufIUBnHkQqkvIlwiy5O5oWtvJw9GmbPzyK2TLlrqQPZ1fnAl8hOWAMMBB3DlBBlgMd2IMUeIeqUcIbBYfBsxOvpkgv2xDn3qV472VPd1e1UlXbOcJtsOL7M?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 4,
+       "rank_absolute": 7,
+       "markdown": "\n\n## 3\\. NextLevel.AI\n\nOffers white-label voice and chatbot software, branded dashboards, custom domains, flexible pricing, and done-for-you agent deployment and maintenance. [nextlevel.ai](https://nextlevel.ai/white-label-program/?utm_source=chatgpt.com)\n\n**Best for\\:** Business owners who would rather outsource much of the technical setup.\n\n[White-label program](https://nextlevel.ai/white-label-program/)\n\n---\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "White Label Program",
+         "snippet": null,
+         "domain": "nextlevel.ai",
+         "url": "https://nextlevel.ai/white-label-program/?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "NextLevel.AI",
+         "publication_date": null,
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "White-label program",
+         "snippet": null,
+         "domain": "nextlevel.ai",
+         "url": "https://nextlevel.ai/white-label-program/",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[White-label program](https://nextlevel.ai/white-label-program/)"
+        }
+       ],
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "White-label voice and chatbot platform",
+         "category": "company",
+         "markdown": "NextLevel.AI",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 4,
+       "rank_absolute": 8,
+       "markdown": "![White-Label AI Agent Platform | Voice & Chat | ConvoCore](https://images.openai.com/static-rsc-4/tnCDzLvGTr2Pgf5K4sbBPQqBB8HdRWoYVFQavwX9iYRMX5o53ORDkNF5dWemqitrcoR7q06aWaathGAD4o12FKAjwYke5geXkGlL5rTu7E5cg77azADP1oGPWBXBzmr2kCxKLmYxIUswafj5ln_CnKDlB0ss3VJvP-BI5s2wNIjBeUEpTSr4UBreV9Q7DG6v?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://convocore.ai/",
+         "alt": "White-Label AI Agent Platform | Voice & Chat | ConvoCore",
+         "image_url": "https://images.openai.com/static-rsc-4/tnCDzLvGTr2Pgf5K4sbBPQqBB8HdRWoYVFQavwX9iYRMX5o53ORDkNF5dWemqitrcoR7q06aWaathGAD4o12FKAjwYke5geXkGlL5rTu7E5cg77azADP1oGPWBXBzmr2kCxKLmYxIUswafj5ln_CnKDlB0ss3VJvP-BI5s2wNIjBeUEpTSr4UBreV9Q7DG6v?purpose=fullsize",
+         "markdown": "![White-Label AI Agent Platform | Voice & Chat | ConvoCore](https://images.openai.com/static-rsc-4/tnCDzLvGTr2Pgf5K4sbBPQqBB8HdRWoYVFQavwX9iYRMX5o53ORDkNF5dWemqitrcoR7q06aWaathGAD4o12FKAjwYke5geXkGlL5rTu7E5cg77azADP1oGPWBXBzmr2kCxKLmYxIUswafj5ln_CnKDlB0ss3VJvP-BI5s2wNIjBeUEpTSr4UBreV9Q7DG6v?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 5,
+       "rank_absolute": 9,
+       "markdown": "\n\n## 4\\. Customer2.AI\n\nSupports voice, chat, email, and SMS agents, custom branding, client organizations, and markup over wholesale rates. Its site lists illustrative subscription tiers of \\$49, \\$149, and \\$399 per month; confirm the current reseller plan and included usage before budgeting. [www.customer2.ai](https://www.customer2.ai/white-label?utm_source=chatgpt.com)\n\n**Best for\\:** Selling multiple AI services to the same client instead of voice alone.\n\n[White-label program and pricing](https://www.customer2.ai/white-label)\n\n---\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "White-Label AI Agent Platform",
+         "snippet": null,
+         "domain": "www.customer2.ai",
+         "url": "https://www.customer2.ai/white-label?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Customer2.AI",
+         "publication_date": null,
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "White-label program and pricing",
+         "snippet": null,
+         "domain": "www.customer2.ai",
+         "url": "https://www.customer2.ai/white-label",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[White-label program and pricing](https://www.customer2.ai/white-label)"
+        }
+       ],
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "White-label AI voice and multichannel agent platform",
+         "category": "company",
+         "markdown": "Customer2.AI",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 5,
+       "rank_absolute": 10,
+       "markdown": "![AI Voice Agents & Automated Calling Platform | MagickVoice](https://images.openai.com/static-rsc-4/n6Tr1u68BK0oEKrm3Ux863HagsndwCCJEa1_pZGbTE39Oi9RUrlLa1M-1dArz8zwl34LQALmol6Rvmol0Ti-GZwzrCracDodj3o7Iigvd4PyW38Ctx-Yvu3NN8OjgiHlDZ7AJ2gXq7Bhft5tuJFQJ_iBNbZnMEga9hGFoFoyD9m7aveeyEc9Gk_upG7iXDIQ?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://magickvoice.com/",
+         "alt": "AI Voice Agents & Automated Calling Platform | MagickVoice",
+         "image_url": "https://images.openai.com/static-rsc-4/n6Tr1u68BK0oEKrm3Ux863HagsndwCCJEa1_pZGbTE39Oi9RUrlLa1M-1dArz8zwl34LQALmol6Rvmol0Ti-GZwzrCracDodj3o7Iigvd4PyW38Ctx-Yvu3NN8OjgiHlDZ7AJ2gXq7Bhft5tuJFQJ_iBNbZnMEga9hGFoFoyD9m7aveeyEc9Gk_upG7iXDIQ?purpose=fullsize",
+         "markdown": "![AI Voice Agents & Automated Calling Platform | MagickVoice](https://images.openai.com/static-rsc-4/n6Tr1u68BK0oEKrm3Ux863HagsndwCCJEa1_pZGbTE39Oi9RUrlLa1M-1dArz8zwl34LQALmol6Rvmol0Ti-GZwzrCracDodj3o7Iigvd4PyW38Ctx-Yvu3NN8OjgiHlDZ7AJ2gXq7Bhft5tuJFQJ_iBNbZnMEga9hGFoFoyD9m7aveeyEc9Gk_upG7iXDIQ?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 6,
+       "rank_absolute": 11,
+       "markdown": "\n\n## 5\\. MakeAutomation Voice AI\n\nPublishes a specific entry-level white-label price: **\\$97/month plus \\$0.10 per minute** in usage. It offers a branded client dashboard, custom domain support, and client account management, including integration into GoHighLevel. [voice.makeautomation.ai](https://voice.makeautomation.ai/partners?utm_source=chatgpt.com)\n\n**Best for\\:** Testing a voice AI agency model with a published starting cost.\n\n[Partner program and pricing](https://voice.makeautomation.ai/partners)\n\n## Two more platforms worth checking\n\n- **CallMangal** \u2014 Branded dashboard, custom login domain, client-level organizations, and control over which agents clients can edit. Reseller rates are provided during onboarding. [Visit reseller program](https://callmangal.com/reseller-program)\\. [callmangal.com](https://callmangal.com/reseller-program?utm_source=chatgpt.com)\n- **Verlingo** \u2014 Offers voice and chat agents, client workspaces, recurring reseller revenue, and API-based provisioning. Worth considering if you want to automate onboarding at scale. [Visit partner program](https://verlingo.com/partners)\\. [verlingo.com](https://verlingo.com/partners?utm_source=chatgpt.com)\n\n## How I'd choose\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "Partner Program",
+         "snippet": null,
+         "domain": "voice.makeautomation.ai",
+         "url": "https://voice.makeautomation.ai/partners?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "MakeAutomation Voice AI",
+         "publication_date": null,
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Partner program and pricing",
+         "snippet": null,
+         "domain": "voice.makeautomation.ai",
+         "url": "https://voice.makeautomation.ai/partners",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[Partner program and pricing](https://voice.makeautomation.ai/partners)"
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Visit reseller program",
+         "snippet": null,
+         "domain": "callmangal.com",
+         "url": "https://callmangal.com/reseller-program",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[Visit reseller program](https://callmangal.com/reseller-program)"
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "White-Label AI Voice Agent Reseller Program",
+         "snippet": null,
+         "domain": "callmangal.com",
+         "url": "https://callmangal.com/reseller-program?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "CallMangal",
+         "publication_date": null,
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Visit partner program",
+         "snippet": null,
+         "domain": "verlingo.com",
+         "url": "https://verlingo.com/partners",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[Visit partner program](https://verlingo.com/partners)"
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Partner Program - White-Label AI Voice & Chat Agents for Agencies & Resellers",
+         "snippet": null,
+         "domain": "verlingo.com",
+         "url": "https://verlingo.com/partners?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Verlingo",
+         "publication_date": null,
+         "markdown": null
+        }
+       ],
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "White-label voice AI agency platform",
+         "category": "company",
+         "markdown": "MakeAutomation Voice AI",
+         "urls": null
+        },
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "White-label AI calling reseller platform",
+         "category": "company",
+         "markdown": "CallMangal",
+         "urls": null
+        },
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "White-label AI voice and chat agent platform",
+         "category": "company",
+         "markdown": "Verlingo",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_table",
+       "rank_group": 1,
+       "rank_absolute": 12,
+       "text": null,
+       "markdown": "| If your priority is\u2026 | Start with |\n|--------|--------|\n| Simple white-label resale | Telenow |\n| A polished branded SaaS portal | OnDial |\n| Done-for-you technical deployment | NextLevel.AI |\n| Voice plus chat, email, and SMS | Customer2.AI |\n| A published starting price | MakeAutomation Voice AI |\n\n",
+       "table": {
+        "table_header": [
+         "If your priority is\u2026",
+         "Start with"
+        ],
+        "table_content": [
+         [
+          "Simple white-label resale",
+          "Telenow"
+         ],
+         [
+          "A polished branded SaaS portal",
+          "OnDial"
+         ],
+         [
+          "Done-for-you technical deployment",
+          "NextLevel.AI"
+         ],
+         [
+          "Voice plus chat, email, and SMS",
+          "Customer2.AI"
+         ],
+         [
+          "A published starting price",
+          "MakeAutomation Voice AI"
+         ]
+        ]
+       },
+       "brand_entities": null
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 7,
+       "rank_absolute": 13,
+       "markdown": "\nThese are initial recommendations based on the vendors' published offerings, not independently verified performance rankings.\n\n## What to verify before signing up\n\nAsk each provider these five questions\\:\n\n1. **True white labeling\\:** Can I use my own domain, logo, business name, and client-facing emails without your brand appearing?\n2. **Reseller economics\\:** What are the wholesale per-minute rates, phone-number costs, AI model fees, and monthly minimums?\n3. **Client management\\:** Can I create separate client accounts and control their permissions from one dashboard?\n4. **Reliability\\:** What are the latency, uptime guarantees, call-transfer capabilities, CRM integrations, and support arrangements?\n5. **Ownership and compliance\\:** Can I export client data, move clients elsewhere, and meet applicable consent and calling regulations?\n\nPay particular attention to whether pricing includes both the AI model and telephony. A low platform fee can become expensive at high call volumes.\n\n## Let me narrow it down to the best fit\n\nThe most important question is: **How do you want to sell the service?**\n\n1\\. What's your business model?\n\nAI agency \u2014 I set up and manage agents for local businesses\n\nSaaS \u2014 clients log in to my own branded platform\n\nManaged service \u2014 I sell the service and the provider handles most of the technology\n\n---\n\n2\\. How technical do you want to get?\n\nNo-code, ready to use\n\nIntegrated with GoHighLevel\n\nAPI access and advanced customization\n\n---\n\n3\\. What's your monthly platform budget to start?\n\nUnder \\$100/month\n\n\\$100\u2013\\$300/month\n\n\\$300+/month for a more complete platform\n\n[Find my best platform]",
+       "sources": null,
+       "brand_entities": null
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

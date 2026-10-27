@@ -1,0 +1,131 @@
+{
+ "version": "0.1.20261022",
+ "status_code": 20000,
+ "status_message": "Ok.",
+ "time": "4.5237 sec.",
+ "cost": 0.006273,
+ "tasks_count": 1,
+ "tasks_error": 0,
+ "tasks": [
+  {
+   "id": "10271009-2577-0612-0000-5cc50b6693fb",
+   "status_code": 20000,
+   "status_message": "Ok.",
+   "time": "4.5067 sec.",
+   "cost": 0.006273,
+   "result_count": 1,
+   "path": [
+    "v3",
+    "ai_optimization",
+    "perplexity",
+    "llm_responses",
+    "live"
+   ],
+   "data": {
+    "api": "ai_optimization",
+    "function": "llm_responses",
+    "se": "perplexity",
+    "user_prompt": "What are the top data lake consulting companies?",
+    "model_name": "sonar",
+    "max_output_tokens": 2048,
+    "web_search_country_iso_code": "US",
+    "tag": "A3-perplexity-1"
+   },
+   "result": [
+    {
+     "model_name": "sonar",
+     "input_tokens": 16,
+     "output_tokens": 657,
+     "reasoning_tokens": 0,
+     "web_search": true,
+     "money_spent": 0.005673,
+     "datetime": "2026-10-27 10:09:59 +00:00",
+     "items": [
+      {
+       "type": "message",
+       "sections": [
+        {
+         "type": "text",
+         "text": "Top data lake consulting companies vary by project size, industry, and cloud platform, but these firms are strong general choices:\n\n- **Accenture** \u2014 Large, global data-lake strategy, cloud migration, governance, and AI implementations for complex enterprises.[7]\n- **Deloitte** \u2014 Strong in regulated industries, data governance, compliance, and enterprise modernization.[7][10]\n- **Capgemini** \u2014 Suited to large corporations with complex legacy environments and multi-cloud requirements.[1][10]\n- **Slalom** \u2014 Often a good fit for faster, flexible implementations across AWS, Azure, and Google Cloud.[1][6][10]\n- **Cognizant** \u2014 Experienced in integrating legacy systems with modern data platforms and real-time analytics.[7][10]\n- **Tata Consultancy Services (TCS)** \u2014 Strong global delivery capacity for large-scale data platforms, analytics, and AI.[7]\n- **Infosys** \u2014 Focuses on cloud data engineering, modernization, and scalable enterprise analytics.[7]\n- **IBM Consulting** \u2014 Well suited to hybrid-cloud environments and AI-enabled data management.[7]\n- **Wipro** \u2014 Provides multi-cloud data-lake strategy, engineering, and modernization services.[7]\n- **Thoughtworks** \u2014 A good option for product-oriented architecture, platform engineering, and adaptive delivery.[8][10]\n- **EPAM Systems** \u2014 Strong engineering capabilities for complex integrations and high-volume data environments.[10]\n- **Quantiphi or Tredence** \u2014 Good choices when machine learning, predictive analytics, or industry-specific data science is central to the project.[6]\n\nFor **mid-sized companies**, specialized firms such as **Algoscale, dbSeer, DataArt, N-iX, STX Next, and ScienceSoft** may offer more focused delivery than the largest global integrators.[2][5]\n\n### Quick selection guide\n\n| Primary need | Companies to consider |\n|---|---|\n| Global enterprise transformation | Accenture, Deloitte, Capgemini, TCS |\n| Governance and compliance | Deloitte, IBM Consulting, Booz Allen Hamilton |\n| Fast, flexible cloud delivery | Slalom, Thoughtworks, EPAM |\n| AI and machine learning | Quantiphi, Tredence, IBM Consulting |\n| Healthcare data lakes | CitiusTech, Quantiphi, Cognizant |\n| Mid-market or specialized implementation | Algoscale, DataArt, N-iX, STX Next |\n| AWS, Snowflake, or Databricks lakehouse work | Slalom, Tredence, STX Next, Adastra |\n\nA practical shortlist should be based on the target stack\u2014such as **Databricks, Snowflake, AWS, Azure, Google Cloud, or Microsoft Fabric**\u2014and on evidence of comparable implementations, partner certifications, governance expertise, and post-launch support. Independent listings identify Slalom and Capgemini among established data-lake providers, while implementation-focused comparisons highlight STX Next, DataArt, N-iX, and related specialists.[1][2]",
+         "annotations": [
+          {
+           "title": "Best Data Lake Consulting 2026 - Reviews, Case Studies & Videos",
+           "url": "https://www.featuredcustomers.com/services/data-lake-consulting",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "Dataart: Global Data...",
+           "url": "https://www.stxnext.com/blog/top-data-lakehouse-implementation-companies-for-enterprises",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "Trusted data lake companies in 2026 - N-iX",
+           "url": "https://www.n-ix.com/data-lake-companies/",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "Top 25 Data lake consulting firms Worldwide",
+           "url": "https://revenuebase.ai/companies/browse/data-lake-consulting-firms",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "1. Algoscale",
+           "url": "https://www.linkedin.com/pulse/top-9-data-lake-consulting-firms-2026-shivam-rawat-rv6ic",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "9 Best Data Lake Consultants for Enterprise Projects",
+           "url": "https://techhbs.com/best-data-lake-consultants/",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "2. Deloitte",
+           "url": "https://www.linkedin.com/pulse/top-data-lake-consultants-2026-shivam-rawat-pzkcc",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "Data Lake Consulting Agencies",
+           "url": "https://www.agicent.com/blog/data-lake-consulting-agencies/",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "Top 10 Data Lake Service Providers in 2026",
+           "url": "https://www.linkedin.com/pulse/top-10-data-lake-service-providers-2026-shivam-rawat-4xjnc",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "Top 10 Enterprise Data Lake Consulting Companies for Complex Environments",
+           "url": "https://worldbusinessoutlook.com/top-10-enterprise-data-lake-consulting-companies-for-complex-environments/",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "fan_out_queries": null
+    }
+   ]
+  }
+ ]
+}

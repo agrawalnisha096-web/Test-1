@@ -1,0 +1,1131 @@
+{
+ "version": "0.1.20261022",
+ "status_code": 20000,
+ "status_message": "Ok.",
+ "time": "18.9666 sec.",
+ "cost": 0.004,
+ "tasks_count": 1,
+ "tasks_error": 0,
+ "tasks": [
+  {
+   "id": "10271009-2577-0629-0000-b4708aaa6b3f",
+   "status_code": 20000,
+   "status_message": "Ok.",
+   "time": "18.9118 sec.",
+   "cost": 0.004,
+   "result_count": 1,
+   "path": [
+    "v3",
+    "ai_optimization",
+    "chat_gpt",
+    "llm_scraper",
+    "live",
+    "advanced"
+   ],
+   "data": {
+    "api": "ai_optimization",
+    "function": "live",
+    "se": "chat_gpt",
+    "keyword": "What are the top data lake consulting companies?",
+    "location_code": 2840,
+    "language_code": "en",
+    "force_web_search": true,
+    "tag": "A3-chatgpt-2",
+    "device": "desktop",
+    "os": "windows"
+   },
+   "result": [
+    {
+     "keyword": "What are the top data lake consulting companies?",
+     "location_code": 2840,
+     "language_code": "en",
+     "model": "gpt-6",
+     "check_url": "https://chatgpt.com/?prompt=What%20are%20the%20top%20data%20lake%20consulting%20companies%3F&hints=search",
+     "datetime": "2026-10-27 10:10:12 +00:00",
+     "markdown": "# Top data lake consulting companies in 2026\n\nThe best data lake consulting company depends on your cloud platform, data volumes, governance requirements, and whether you need a new data lake, a migration, or a modern lakehouse for analytics and AI.\n\nBased on current industry directories and data engineering consulting comparisons, I'd start with a shortlist of specialists and large enterprise integrators rather than treating any single ranking as definitive. Recent comparisons highlight firms such as N-iX, NTT DATA, Slalom, Tiger Analytics, Cloudwick, and ClearScale. [dataconsultingfirms.com](https://dataconsultingfirms.com/data-engineering-consulting?utm_source=chatgpt.com)[findalternatives.net](https://findalternatives.net/directory/data-lake-consulting-companies?utm_source=chatgpt.com)[decisionminds.com](https://decisionminds.com/articles/best-data-engineering-consulting-firms-us-2026-guide?utm_source=chatgpt.com)\n\n## 8 companies worth evaluating\n\nRanked as a practical shortlist by specialization and likely project fit, not as an objective industry-wide ranking.\n\n![AWS Marketplace: Cloudwick](https://images.openai.com/static-rsc-4/vpJsg64uKKLhczwckmHkHP6NrE_Y89xTF9gCnG-We6SPwqnCztRd3sInnCM17u4UkjIPvyrEDejtnPKWVlzJPJvn5hF79ZaVkpTtXg-zWyS7nrW5zV8qtdzsgui_tZ30KNMoqPjJOstEuUUzM5y5JrPFDXErYczllGIlVP3FzPcrJe3nzjalpF6aiO24XRcC?purpose=fullsize)\n\n**1\\. Cloudwick**\n\nBest for dedicated data lake engineering\n\nSpecializes in cloud data lake architecture, legacy Hadoop migration, data ingestion, cataloging, and security. A strong candidate for organizations modernizing large-scale data estates.\n\nWebsite: [cloudwick.com](https://www.cloudwick.com/) \u00b7 Source: [dataconsultingfirms.com](https://dataconsultingfirms.com/data-engineering-consulting?utm_source=chatgpt.com)[findalternatives.net](https://findalternatives.net/directory/data-lake-consulting-companies?utm_source=chatgpt.com)[decisionminds.com](https://decisionminds.com/articles/best-data-engineering-consulting-firms-us-2026-guide?utm_source=chatgpt.com)[originshq.com](https://originshq.com/feeds/data-engineering-consulting-companies/?utm_source=chatgpt.com)\n\n---\n\n![Manufacturing Cloud - ClearScale | Clearscale](https://images.openai.com/static-rsc-4/Tzo0BE25LwGGjU_AzOqlzf363wpoFim6QR33aTE6PXwd8DMo4yxvd3dEgjBdv979MRSryRq8ksNZ8Sr6CLJ-LOvqzBI76Pp3yCHiGiuN2klQHje1sfbJ72WwVBh2Q6xfYJ_DceC_b0g17TF6gNMCCQ4ULcpFQMNUmwiYfx6MY_F2G-sI-7xZMIJ5xK49-cgf?purpose=fullsize)\n\n**2\\. ClearScale**\n\nBest for AWS-based data lakes\n\nFocuses on AWS cloud engineering, including data lake implementation, ingestion pipelines, storage design, cataloging, and query infrastructure.\n\nWebsite: [clearscale.com](https://www.clearscale.com/) \u00b7 Source: [dataconsultingfirms.com](https://dataconsultingfirms.com/data-engineering-consulting?utm_source=chatgpt.com)[findalternatives.net](https://findalternatives.net/directory/data-lake-consulting-companies?utm_source=chatgpt.com)[decisionminds.com](https://decisionminds.com/articles/best-data-engineering-consulting-firms-us-2026-guide?utm_source=chatgpt.com)[originshq.com](https://originshq.com/feeds/data-engineering-consulting-companies/?utm_source=chatgpt.com)\n\n---\n\n![Evening Exchange Madrid | iVentiv](https://images.openai.com/static-rsc-4/epznxMAXWhFVGosGJXLul4Db9esv3E7cCriOg05ozSlGrhaJV0PXoKN7_CQuNNmd7GJkKunpelzhykeT7wnf87ksIiV60xH-xSd3kkXbquoS0AW9DcvZmhR9hhoPkVOV_byvGhC-QldJKvXZjpIzetYmh0fzQnRe2Zj_oGkO1yO0GYmA2fbVqVQVGEu0Al89?purpose=fullsize)\n\n**3\\. NTT DATA**\n\nBest for large enterprise implementations\n\nA global systems integrator to consider for complex data platform programs involving legacy systems, enterprise integration, data engineering, and ongoing operations.\n\nWebsite: [nttdata.com](https://www.nttdata.com/) \u00b7 Source: [dataconsultingfirms.com](https://dataconsultingfirms.com/data-engineering-consulting?utm_source=chatgpt.com)[findalternatives.net](https://findalternatives.net/directory/data-lake-consulting-companies?utm_source=chatgpt.com)[decisionminds.com](https://decisionminds.com/articles/best-data-engineering-consulting-firms-us-2026-guide?utm_source=chatgpt.com)\n\n---\n\n![Privacy-Enhancing Machine Learning \u2013 AWS Clean Rooms ML \u2013 AWS](https://images.openai.com/static-rsc-4/4e0hsiIjAR800FO2WMGH8GXb-eVc_W_GngdTPGJAq-zsW9N9bGr4K2EXL6Q68IRPqEAjO6F0ghFNahgiiAoTZEGOqgsze_aUICjUgESdEgfP03RI2sbekD22kPfjG_76L1HJ2GIW2vRxb3jd50jMtGmGKWgWP_lRZN2DlDaM7MaUz-A994CKJxp0EmnO-zNF?purpose=fullsize)\n\n**4\\. Slalom**\n\nBest for cloud data modernization\n\nWorth considering for data platform architecture, cloud migrations, analytics integration, and collaborative implementation with internal teams.\n\nWebsite: [slalom.com](https://www.slalom.com/) \u00b7 Source: [dataconsultingfirms.com](https://dataconsultingfirms.com/data-engineering-consulting?utm_source=chatgpt.com)[findalternatives.net](https://findalternatives.net/directory/data-lake-consulting-companies?utm_source=chatgpt.com)[decisionminds.com](https://decisionminds.com/articles/best-data-engineering-consulting-firms-us-2026-guide?utm_source=chatgpt.com)[originshq.com](https://originshq.com/feeds/data-engineering-consulting-companies/?utm_source=chatgpt.com)\n\n---\n\n![Tiger Analytics | The Org](https://images.openai.com/static-rsc-4/Ki5SJ_At7ImEzPnXWIqc-dePK2GpIpMjls0e62wIuvBOMbTiTNvFtt6TvNEbhpMZXtp3WiOiZ-YUCpiwWYDPaGFEJPo7m0WkJMwcoxAfL4nQZGkxzN_zruMTwqEcMt6U5fHbnuCwCresYbJpETGSVpx2p_GYHdXTu66L1a0nkD3dbiVyHCpaFUdY7GIeGU5o?purpose=fullsize)\n\n**5\\. Tiger Analytics**\n\nBest for analytics and AI-ready data platforms\n\nA good candidate when the data lake is intended to support machine learning, advanced analytics, data products, and production data pipelines.\n\nWebsite: [tigeranalytics.com](https://www.tigeranalytics.com/) \u00b7 Source: [dataconsultingfirms.com](https://dataconsultingfirms.com/data-engineering-consulting?utm_source=chatgpt.com)[findalternatives.net](https://findalternatives.net/directory/data-lake-consulting-companies?utm_source=chatgpt.com)[decisionminds.com](https://decisionminds.com/articles/best-data-engineering-consulting-firms-us-2026-guide?utm_source=chatgpt.com)[originshq.com](https://originshq.com/feeds/data-engineering-consulting-companies/?utm_source=chatgpt.com)\n\n---\n\n![ML WEEK 2025 | Academic Journals and Conferences](https://images.openai.com/static-rsc-4/krMHmGWsUcbD6EHTf8V0imXPwzoeB-9kQMHOh-p686ktwasPhiNM5MG268ZQ3VfU7j6tgm71D9kUkPbsZCkqaX8deBoetzng4WFpc0tDjejk6wXMpZuL4zBHOxOiacaVtPHHibIYrv0_tOS_rF4wSFo2FioYjl2NDrhZ6WC8UuqUiZvyIBGNYymxVL-JN3cM?purpose=fullsize)\n\n**6\\. N-iX**\n\nBest for hands-on data engineering\n\nOffers data engineering services suited to pipeline development, data integration, platform engineering, and building out implementation teams. It ranked first in one October 2026 data engineering directory's evidence-based comparison.\n\nWebsite: [n-ix.com](https://www.n-ix.com/) \u00b7 Source: [dataconsultingfirms.com](https://dataconsultingfirms.com/data-engineering-consulting?utm_source=chatgpt.com)[findalternatives.net](https://findalternatives.net/directory/data-lake-consulting-companies?utm_source=chatgpt.com)[decisionminds.com](https://decisionminds.com/articles/best-data-engineering-consulting-firms-us-2026-guide?utm_source=chatgpt.com)\n\n---\n\n![Accenture Ventures \u2014 Think Different | BEAMSTART](https://images.openai.com/static-rsc-4/A3Ct6d_Z34DlaX862wTV3j7uCNkt4xwspsLwEOuPZDDWBnRYGcQ53ChE7kjsDoFKu-R_Ouc8mOKZit8OK5Iqqz3DXm2wF68qfYlL0uCTXjc_AnNadytJrAsTvMMBcJ5Tv2Stj7k3WnRvIiyHERhRrZjMcIooIezpxqpyXeJnDGTU_sTmkz_1OL8H_8CdpPma?purpose=fullsize)\n\n**7\\. Accenture**\n\nBest for global, multi-cloud transformation\n\nConsider for large, multi-business programs that combine data lake architecture with cloud migration, governance, operating-model changes, and enterprise-wide AI initiatives.\n\nWebsite: [accenture.com](https://www.accenture.com/) \u00b7 Source: [dataengineeringcompanies.com](https://dataengineeringcompanies.com/?utm_source=chatgpt.com)\n\n---\n\n![Tredence Inc Reviews | Read Customer Service Reviews of tredence.com](https://images.openai.com/static-rsc-4/J-Rlkq3H3OmtJAdN55UGQXxGjK4pFyBcpZiMPwsdwOA9YIKf3c0695fjz4MyO8NZhIaV3Yi_F3Lv7TE1x4KQbYxLR5Iu_NQ3tkEz_XkUS7Sn-9IcNKvp43xgnyLdE1_AC6zQRL3BCWMdGJdaYBgPXaiIrxECXRZQ9UrVqiVD7Alh0pGzCate05qwX6xWd0rw?purpose=fullsize)\n\n**8\\. Tredence**\n\nBest for analytics-led modernization\n\nWorth evaluating for data platform modernization, data engineering, governance, and AI-focused use cases, particularly when business analytics is a major driver of the project.\n\nWebsite: [tredence.com](https://www.tredence.com/) \u00b7 Source: [decisionminds.com](https://decisionminds.com/articles/best-data-engineering-consulting-firms-us-2026-guide?utm_source=chatgpt.com)[originshq.com](https://originshq.com/feeds/data-engineering-consulting-companies/?utm_source=chatgpt.com)\n\n## Which company should you choose?\n\n| Your main requirement | Shortlist first |\n|--------|--------|\n| Build a dedicated cloud data lake | Cloudwick, ClearScale |\n| Enterprise-wide transformation | NTT DATA, Accenture |\n| AWS-native architecture | ClearScale |\n| Analytics and AI workloads | Tiger Analytics, Tredence |\n| Data pipelines and engineering capacity | N-iX |\n| Cloud modernization with internal-team collaboration | Slalom |\n\n\nThese are use-case-based recommendations, not verified rankings of delivery quality. [dataconsultingfirms.com](https://dataconsultingfirms.com/data-engineering-consulting?utm_source=chatgpt.com)[findalternatives.net](https://findalternatives.net/directory/data-lake-consulting-companies?utm_source=chatgpt.com)[decisionminds.com](https://decisionminds.com/articles/best-data-engineering-consulting-firms-us-2026-guide?utm_source=chatgpt.com)\n\n## What to evaluate before signing\n\nAsk each consulting firm to demonstrate\\:\n\n- **Platform expertise\\:** Production experience with your target stack, such as AWS S3, Azure Data Lake Storage, Google Cloud Storage, Databricks, or Snowflake.\n- **Architecture\\:** Ability to assess a traditional data lake versus a lakehouse architecture, including open table formats such as Apache Iceberg and Delta Lake.\n- **Governance and security\\:** Data cataloging, lineage, access controls, encryption, compliance, and data quality.\n- **Migration experience\\:** Reference projects with comparable data volumes, source systems, and performance requirements.\n- **Total cost of ownership\\:** Storage, compute, data transfer, ongoing support, and platform optimization.\n- **Delivery evidence\\:** Customer references, named technical leads, and measurable results from completed projects.\n\n## Let me narrow the list for your needs\n\nThe best shortlist will change substantially depending on your requirements. Which type of project are you considering?\n\n1\\. Target platform\n\nAWS (S3, Glue, Lake Formation)\n\nMicrosoft Azure (ADLS, Fabric, Databricks)\n\nGoogle Cloud\n\nDatabricks / lakehouse\n\nSnowflake\n\nMulti-cloud or undecided\n\n---\n\n2\\. Project scope\n\nBuild a new data lake\n\nMigrate from Hadoop or an existing platform\n\nModernize or optimize an existing lake\n\nPrepare data infrastructure for AI and analytics\n\nOngoing management and support\n\n---\n\n3\\. Organization size\n\nSmall or mid-market company\n\nLarge enterprise\n\nHighly regulated enterprise\n\n---\n\n4\\. Most important selection criterion\n\nDeep technical expertise\n\nCost and value for money\n\nIndustry-specific experience\n\nGlobal delivery capacity\n\n[Find my best-fit consulting firms]",
+     "search_results": [
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://dataconsultingfirms.com/data-engineering-consulting",
+       "domain": "dataconsultingfirms.com",
+       "title": "Data Engineering Consulting Firms and Services (2026)",
+       "description": null,
+       "breadcrumb": "dataconsultingfirms.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://findalternatives.net/directory/data-lake-consulting-companies",
+       "domain": "findalternatives.net",
+       "title": "Top Data Lake Consulting Firms in the US (2026)",
+       "description": null,
+       "breadcrumb": "findalternatives.net"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://revenuebase.ai/companies/browse/data-lake-implementation-consultancies",
+       "domain": "revenuebase.ai",
+       "title": "Top 25 Data lake implementation consultancies Worldwide",
+       "description": null,
+       "breadcrumb": "revenuebase.ai"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://revenuebase.ai/companies/data-lake-implementation-consultancies/united-states",
+       "domain": "revenuebase.ai",
+       "title": "Top 25 Data lake implementation consultancies based in the United States",
+       "description": null,
+       "breadcrumb": "revenuebase.ai"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://revenuebase.ai/companies/browse/data-lake-consulting-firms",
+       "domain": "revenuebase.ai",
+       "title": "Top 25 Data lake consulting firms Worldwide",
+       "description": null,
+       "breadcrumb": "revenuebase.ai"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://revenuebase.ai/companies/data-lake-consulting-firms/united-states",
+       "domain": "revenuebase.ai",
+       "title": "Top 25 Data lake consulting firms based in the United States",
+       "description": null,
+       "breadcrumb": "revenuebase.ai"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://softcircles.com/blog/top-data-lake-consulting-companies-2027",
+       "domain": "softcircles.com",
+       "title": "Top Data Lake Consulting Companies in 2027: 7 Firms Compared by Use Case",
+       "description": null,
+       "breadcrumb": "softcircles.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://decisionminds.com/articles/best-data-engineering-consulting-firms-us-2026-guide",
+       "domain": "decisionminds.com",
+       "title": "Best Data Engineering Consulting Firms in the US: 2026 Guide | Decision Minds",
+       "description": null,
+       "breadcrumb": "decisionminds.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://www.talentmsh.com/insights/best-data-engineering-consulting-companies",
+       "domain": "www.talentmsh.com",
+       "title": "8 Best Data Engineering & Integration Consulting Firms in 2026 | MSH",
+       "description": null,
+       "breadcrumb": "www.talentmsh.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://dataengineeringcompanies.com/",
+       "domain": "dataengineeringcompanies.com",
+       "title": "Top Data Engineering Companies 2026: Platforms & Fit",
+       "description": null,
+       "breadcrumb": "dataengineeringcompanies.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://www.tds.it.com/top-11-data-lake-consulting-companies-in-2026/",
+       "domain": "www.tds.it.com",
+       "title": "Top 11 Data Lake Consulting Companies in 2026",
+       "description": null,
+       "breadcrumb": "www.tds.it.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://cpcontacts.softcircles.com/blog/top-data-lake-consulting-companies-2027",
+       "domain": "cpcontacts.softcircles.com",
+       "title": "Top Data Lake Consulting Companies in 2027: 7 Firms Compared by Use Case",
+       "description": null,
+       "breadcrumb": "cpcontacts.softcircles.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://originshq.com/feeds/data-engineering-consulting-companies/",
+       "domain": "originshq.com",
+       "title": "Top Data Engineering Consulting Companies in the US (2026)",
+       "description": null,
+       "breadcrumb": "originshq.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://www.sustainablebusinesstoolkit.com/top-data-lake-consulting-companies/",
+       "domain": "www.sustainablebusinesstoolkit.com",
+       "title": "Top 10 Data Lake Consulting Companies in the USA - Sustainable Business Toolkit",
+       "description": null,
+       "breadcrumb": "www.sustainablebusinesstoolkit.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://spd.tech/data/data-engineering-service-providers/",
+       "domain": "spd.tech",
+       "title": "Top Data Engineering Service Providers: How to Choose in 2026",
+       "description": null,
+       "breadcrumb": "spd.tech"
+      }
+     ],
+     "sources": [
+      {
+       "type": "chat_gpt_source",
+       "title": "Data Engineering Consulting Firms and Services (2026)",
+       "snippet": null,
+       "domain": "dataconsultingfirms.com",
+       "url": "https://dataconsultingfirms.com/data-engineering-consulting?utm_source=chatgpt.com",
+       "thumbnail": null,
+       "source_name": "DCF Research",
+       "publication_date": null,
+       "markdown": null
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Top Data Lake Consulting Firms in the US (2026)",
+       "snippet": null,
+       "domain": "findalternatives.net",
+       "url": "https://findalternatives.net/directory/data-lake-consulting-companies?utm_source=chatgpt.com",
+       "thumbnail": null,
+       "source_name": "Find Alternatives",
+       "publication_date": null,
+       "markdown": null
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Best Data Engineering Consulting Firms in the US: 2026 Guide",
+       "snippet": null,
+       "domain": "decisionminds.com",
+       "url": "https://decisionminds.com/articles/best-data-engineering-consulting-firms-us-2026-guide?utm_source=chatgpt.com",
+       "thumbnail": null,
+       "source_name": "Decision Minds",
+       "publication_date": null,
+       "markdown": null
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "cloudwick.com",
+       "snippet": null,
+       "domain": "www.cloudwick.com",
+       "url": "https://www.cloudwick.com/",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[cloudwick.com](https://www.cloudwick.com/)"
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Top Data Engineering Consulting Companies in the US (2026)",
+       "snippet": null,
+       "domain": "originshq.com",
+       "url": "https://originshq.com/feeds/data-engineering-consulting-companies/?utm_source=chatgpt.com",
+       "thumbnail": null,
+       "source_name": "Origins AI",
+       "publication_date": "2026-10-07 00:00:00 +00:00",
+       "markdown": null
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "clearscale.com",
+       "snippet": null,
+       "domain": "www.clearscale.com",
+       "url": "https://www.clearscale.com/",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[clearscale.com](https://www.clearscale.com/)"
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "nttdata.com",
+       "snippet": null,
+       "domain": "www.nttdata.com",
+       "url": "https://www.nttdata.com/",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[nttdata.com](https://www.nttdata.com/)"
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "slalom.com",
+       "snippet": null,
+       "domain": "www.slalom.com",
+       "url": "https://www.slalom.com/",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[slalom.com](https://www.slalom.com/)"
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "tigeranalytics.com",
+       "snippet": null,
+       "domain": "www.tigeranalytics.com",
+       "url": "https://www.tigeranalytics.com/",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[tigeranalytics.com](https://www.tigeranalytics.com/)"
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "n-ix.com",
+       "snippet": null,
+       "domain": "www.n-ix.com",
+       "url": "https://www.n-ix.com/",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[n-ix.com](https://www.n-ix.com/)"
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "accenture.com",
+       "snippet": null,
+       "domain": "www.accenture.com",
+       "url": "https://www.accenture.com/",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[accenture.com](https://www.accenture.com/)"
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Top Data Engineering Companies 2026: Platforms & Fit",
+       "snippet": null,
+       "domain": "dataengineeringcompanies.com",
+       "url": "https://dataengineeringcompanies.com/?utm_source=chatgpt.com",
+       "thumbnail": null,
+       "source_name": "Data Engineering Companies",
+       "publication_date": null,
+       "markdown": null
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "tredence.com",
+       "snippet": null,
+       "domain": "www.tredence.com",
+       "url": "https://www.tredence.com/",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[tredence.com](https://www.tredence.com/)"
+      }
+     ],
+     "fan_out_queries": [
+      "top data lake consulting companies 2026 enterprise cloud data lake implementation consultants",
+      "best data engineering consulting firms data lake AWS Azure Google Cloud Databricks Snowflake"
+     ],
+     "brand_entities": [
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "Cloud data engineering and data lake consulting",
+       "category": "company",
+       "markdown": "Cloudwick",
+       "urls": null
+      },
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "AWS cloud consulting and engineering",
+       "category": "company",
+       "markdown": "ClearScale",
+       "urls": null
+      },
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "Global IT consulting and technology services",
+       "category": "company",
+       "markdown": "NTT DATA",
+       "urls": null
+      },
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "Business and technology consulting",
+       "category": "company",
+       "markdown": "Slalom",
+       "urls": null
+      },
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "Data analytics artificial intelligence and engineering consulting",
+       "category": "company",
+       "markdown": "Tiger Analytics",
+       "urls": null
+      },
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "Software engineering and data engineering consulting",
+       "category": "company",
+       "markdown": "N-iX",
+       "urls": null
+      },
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "Global management consulting and technology services",
+       "category": "company",
+       "markdown": "Accenture",
+       "urls": null
+      },
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "Data analytics and AI consulting",
+       "category": "company",
+       "markdown": "Tredence",
+       "urls": null
+      }
+     ],
+     "se_results_count": 0,
+     "item_types": [
+      "chat_gpt_text",
+      "chat_gpt_images",
+      "chat_gpt_table"
+     ],
+     "items_count": 19,
+     "items": [
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 1,
+       "rank_absolute": 1,
+       "markdown": "# Top data lake consulting companies in 2026\n\nThe best data lake consulting company depends on your cloud platform, data volumes, governance requirements, and whether you need a new data lake, a migration, or a modern lakehouse for analytics and AI.\n\nBased on current industry directories and data engineering consulting comparisons, I'd start with a shortlist of specialists and large enterprise integrators rather than treating any single ranking as definitive. Recent comparisons highlight firms such as N-iX, NTT DATA, Slalom, Tiger Analytics, Cloudwick, and ClearScale. [dataconsultingfirms.com](https://dataconsultingfirms.com/data-engineering-consulting?utm_source=chatgpt.com)[findalternatives.net](https://findalternatives.net/directory/data-lake-consulting-companies?utm_source=chatgpt.com)[decisionminds.com](https://decisionminds.com/articles/best-data-engineering-consulting-firms-us-2026-guide?utm_source=chatgpt.com)\n\n## 8 companies worth evaluating\n\nRanked as a practical shortlist by specialization and likely project fit, not as an objective industry-wide ranking.\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "Data Engineering Consulting Firms and Services (2026)",
+         "snippet": null,
+         "domain": "dataconsultingfirms.com",
+         "url": "https://dataconsultingfirms.com/data-engineering-consulting?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "DCF Research",
+         "publication_date": null,
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Top Data Lake Consulting Firms in the US (2026)",
+         "snippet": null,
+         "domain": "findalternatives.net",
+         "url": "https://findalternatives.net/directory/data-lake-consulting-companies?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Find Alternatives",
+         "publication_date": null,
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Best Data Engineering Consulting Firms in the US: 2026 Guide",
+         "snippet": null,
+         "domain": "decisionminds.com",
+         "url": "https://decisionminds.com/articles/best-data-engineering-consulting-firms-us-2026-guide?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Decision Minds",
+         "publication_date": null,
+         "markdown": null
+        }
+       ],
+       "brand_entities": null
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 1,
+       "rank_absolute": 2,
+       "markdown": "![AWS Marketplace: Cloudwick](https://images.openai.com/static-rsc-4/vpJsg64uKKLhczwckmHkHP6NrE_Y89xTF9gCnG-We6SPwqnCztRd3sInnCM17u4UkjIPvyrEDejtnPKWVlzJPJvn5hF79ZaVkpTtXg-zWyS7nrW5zV8qtdzsgui_tZ30KNMoqPjJOstEuUUzM5y5JrPFDXErYczllGIlVP3FzPcrJe3nzjalpF6aiO24XRcC?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://aws.amazon.com/marketplace/seller-profile?id=333e06e5-002e-4db4-b54e-30af427ff9e1",
+         "alt": "AWS Marketplace: Cloudwick",
+         "image_url": "https://images.openai.com/static-rsc-4/vpJsg64uKKLhczwckmHkHP6NrE_Y89xTF9gCnG-We6SPwqnCztRd3sInnCM17u4UkjIPvyrEDejtnPKWVlzJPJvn5hF79ZaVkpTtXg-zWyS7nrW5zV8qtdzsgui_tZ30KNMoqPjJOstEuUUzM5y5JrPFDXErYczllGIlVP3FzPcrJe3nzjalpF6aiO24XRcC?purpose=fullsize",
+         "markdown": "![AWS Marketplace: Cloudwick](https://images.openai.com/static-rsc-4/vpJsg64uKKLhczwckmHkHP6NrE_Y89xTF9gCnG-We6SPwqnCztRd3sInnCM17u4UkjIPvyrEDejtnPKWVlzJPJvn5hF79ZaVkpTtXg-zWyS7nrW5zV8qtdzsgui_tZ30KNMoqPjJOstEuUUzM5y5JrPFDXErYczllGIlVP3FzPcrJe3nzjalpF6aiO24XRcC?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 2,
+       "rank_absolute": 3,
+       "markdown": "\n\n**1\\. Cloudwick**\n\nBest for dedicated data lake engineering\n\nSpecializes in cloud data lake architecture, legacy Hadoop migration, data ingestion, cataloging, and security. A strong candidate for organizations modernizing large-scale data estates.\n\nWebsite: [cloudwick.com](https://www.cloudwick.com/) \u00b7 Source: [dataconsultingfirms.com](https://dataconsultingfirms.com/data-engineering-consulting?utm_source=chatgpt.com)[findalternatives.net](https://findalternatives.net/directory/data-lake-consulting-companies?utm_source=chatgpt.com)[decisionminds.com](https://decisionminds.com/articles/best-data-engineering-consulting-firms-us-2026-guide?utm_source=chatgpt.com)[originshq.com](https://originshq.com/feeds/data-engineering-consulting-companies/?utm_source=chatgpt.com)\n\n---\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "cloudwick.com",
+         "snippet": null,
+         "domain": "www.cloudwick.com",
+         "url": "https://www.cloudwick.com/",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[cloudwick.com](https://www.cloudwick.com/)"
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Data Engineering Consulting Firms and Services (2026)",
+         "snippet": null,
+         "domain": "dataconsultingfirms.com",
+         "url": "https://dataconsultingfirms.com/data-engineering-consulting?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "DCF Research",
+         "publication_date": null,
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Top Data Lake Consulting Firms in the US (2026)",
+         "snippet": null,
+         "domain": "findalternatives.net",
+         "url": "https://findalternatives.net/directory/data-lake-consulting-companies?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Find Alternatives",
+         "publication_date": null,
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Best Data Engineering Consulting Firms in the US: 2026 Guide",
+         "snippet": null,
+         "domain": "decisionminds.com",
+         "url": "https://decisionminds.com/articles/best-data-engineering-consulting-firms-us-2026-guide?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Decision Minds",
+         "publication_date": null,
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Top Data Engineering Consulting Companies in the US (2026)",
+         "snippet": null,
+         "domain": "originshq.com",
+         "url": "https://originshq.com/feeds/data-engineering-consulting-companies/?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Origins AI",
+         "publication_date": "2026-10-07 00:00:00 +00:00",
+         "markdown": null
+        }
+       ],
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "Cloud data engineering and data lake consulting",
+         "category": "company",
+         "markdown": "Cloudwick",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 2,
+       "rank_absolute": 4,
+       "markdown": "![Manufacturing Cloud - ClearScale | Clearscale](https://images.openai.com/static-rsc-4/Tzo0BE25LwGGjU_AzOqlzf363wpoFim6QR33aTE6PXwd8DMo4yxvd3dEgjBdv979MRSryRq8ksNZ8Sr6CLJ-LOvqzBI76Pp3yCHiGiuN2klQHje1sfbJ72WwVBh2Q6xfYJ_DceC_b0g17TF6gNMCCQ4ULcpFQMNUmwiYfx6MY_F2G-sI-7xZMIJ5xK49-cgf?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://www.linkedin.com/posts/clearscale_manufacturing-cloud-clearscale-activity-7062136400065818624-hPyL",
+         "alt": "Manufacturing Cloud - ClearScale | Clearscale",
+         "image_url": "https://images.openai.com/static-rsc-4/Tzo0BE25LwGGjU_AzOqlzf363wpoFim6QR33aTE6PXwd8DMo4yxvd3dEgjBdv979MRSryRq8ksNZ8Sr6CLJ-LOvqzBI76Pp3yCHiGiuN2klQHje1sfbJ72WwVBh2Q6xfYJ_DceC_b0g17TF6gNMCCQ4ULcpFQMNUmwiYfx6MY_F2G-sI-7xZMIJ5xK49-cgf?purpose=fullsize",
+         "markdown": "![Manufacturing Cloud - ClearScale | Clearscale](https://images.openai.com/static-rsc-4/Tzo0BE25LwGGjU_AzOqlzf363wpoFim6QR33aTE6PXwd8DMo4yxvd3dEgjBdv979MRSryRq8ksNZ8Sr6CLJ-LOvqzBI76Pp3yCHiGiuN2klQHje1sfbJ72WwVBh2Q6xfYJ_DceC_b0g17TF6gNMCCQ4ULcpFQMNUmwiYfx6MY_F2G-sI-7xZMIJ5xK49-cgf?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 3,
+       "rank_absolute": 5,
+       "markdown": "\n\n**2\\. ClearScale**\n\nBest for AWS-based data lakes\n\nFocuses on AWS cloud engineering, including data lake implementation, ingestion pipelines, storage design, cataloging, and query infrastructure.\n\nWebsite: [clearscale.com](https://www.clearscale.com/) \u00b7 Source: [dataconsultingfirms.com](https://dataconsultingfirms.com/data-engineering-consulting?utm_source=chatgpt.com)[findalternatives.net](https://findalternatives.net/directory/data-lake-consulting-companies?utm_source=chatgpt.com)[decisionminds.com](https://decisionminds.com/articles/best-data-engineering-consulting-firms-us-2026-guide?utm_source=chatgpt.com)[originshq.com](https://originshq.com/feeds/data-engineering-consulting-companies/?utm_source=chatgpt.com)\n\n---\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "clearscale.com",
+         "snippet": null,
+         "domain": "www.clearscale.com",
+         "url": "https://www.clearscale.com/",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[clearscale.com](https://www.clearscale.com/)"
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Data Engineering Consulting Firms and Services (2026)",
+         "snippet": null,
+         "domain": "dataconsultingfirms.com",
+         "url": "https://dataconsultingfirms.com/data-engineering-consulting?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "DCF Research",
+         "publication_date": null,
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Top Data Lake Consulting Firms in the US (2026)",
+         "snippet": null,
+         "domain": "findalternatives.net",
+         "url": "https://findalternatives.net/directory/data-lake-consulting-companies?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Find Alternatives",
+         "publication_date": null,
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Best Data Engineering Consulting Firms in the US: 2026 Guide",
+         "snippet": null,
+         "domain": "decisionminds.com",
+         "url": "https://decisionminds.com/articles/best-data-engineering-consulting-firms-us-2026-guide?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Decision Minds",
+         "publication_date": null,
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Top Data Engineering Consulting Companies in the US (2026)",
+         "snippet": null,
+         "domain": "originshq.com",
+         "url": "https://originshq.com/feeds/data-engineering-consulting-companies/?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Origins AI",
+         "publication_date": "2026-10-07 00:00:00 +00:00",
+         "markdown": null
+        }
+       ],
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "AWS cloud consulting and engineering",
+         "category": "company",
+         "markdown": "ClearScale",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 3,
+       "rank_absolute": 6,
+       "markdown": "![Evening Exchange Madrid | iVentiv](https://images.openai.com/static-rsc-4/epznxMAXWhFVGosGJXLul4Db9esv3E7cCriOg05ozSlGrhaJV0PXoKN7_CQuNNmd7GJkKunpelzhykeT7wnf87ksIiV60xH-xSd3kkXbquoS0AW9DcvZmhR9hhoPkVOV_byvGhC-QldJKvXZjpIzetYmh0fzQnRe2Zj_oGkO1yO0GYmA2fbVqVQVGEu0Al89?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://iventiv.com/events/dinners/evening-exchange-madrid",
+         "alt": "Evening Exchange Madrid | iVentiv",
+         "image_url": "https://images.openai.com/static-rsc-4/epznxMAXWhFVGosGJXLul4Db9esv3E7cCriOg05ozSlGrhaJV0PXoKN7_CQuNNmd7GJkKunpelzhykeT7wnf87ksIiV60xH-xSd3kkXbquoS0AW9DcvZmhR9hhoPkVOV_byvGhC-QldJKvXZjpIzetYmh0fzQnRe2Zj_oGkO1yO0GYmA2fbVqVQVGEu0Al89?purpose=fullsize",
+         "markdown": "![Evening Exchange Madrid | iVentiv](https://images.openai.com/static-rsc-4/epznxMAXWhFVGosGJXLul4Db9esv3E7cCriOg05ozSlGrhaJV0PXoKN7_CQuNNmd7GJkKunpelzhykeT7wnf87ksIiV60xH-xSd3kkXbquoS0AW9DcvZmhR9hhoPkVOV_byvGhC-QldJKvXZjpIzetYmh0fzQnRe2Zj_oGkO1yO0GYmA2fbVqVQVGEu0Al89?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 4,
+       "rank_absolute": 7,
+       "markdown": "\n\n**3\\. NTT DATA**\n\nBest for large enterprise implementations\n\nA global systems integrator to consider for complex data platform programs involving legacy systems, enterprise integration, data engineering, and ongoing operations.\n\nWebsite: [nttdata.com](https://www.nttdata.com/) \u00b7 Source: [dataconsultingfirms.com](https://dataconsultingfirms.com/data-engineering-consulting?utm_source=chatgpt.com)[findalternatives.net](https://findalternatives.net/directory/data-lake-consulting-companies?utm_source=chatgpt.com)[decisionminds.com](https://decisionminds.com/articles/best-data-engineering-consulting-firms-us-2026-guide?utm_source=chatgpt.com)\n\n---\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "nttdata.com",
+         "snippet": null,
+         "domain": "www.nttdata.com",
+         "url": "https://www.nttdata.com/",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[nttdata.com](https://www.nttdata.com/)"
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Data Engineering Consulting Firms and Services (2026)",
+         "snippet": null,
+         "domain": "dataconsultingfirms.com",
+         "url": "https://dataconsultingfirms.com/data-engineering-consulting?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "DCF Research",
+         "publication_date": null,
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Top Data Lake Consulting Firms in the US (2026)",
+         "snippet": null,
+         "domain": "findalternatives.net",
+         "url": "https://findalternatives.net/directory/data-lake-consulting-companies?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Find Alternatives",
+         "publication_date": null,
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Best Data Engineering Consulting Firms in the US: 2026 Guide",
+         "snippet": null,
+         "domain": "decisionminds.com",
+         "url": "https://decisionminds.com/articles/best-data-engineering-consulting-firms-us-2026-guide?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Decision Minds",
+         "publication_date": null,
+         "markdown": null
+        }
+       ],
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "Global IT consulting and technology services",
+         "category": "company",
+         "markdown": "NTT DATA",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 4,
+       "rank_absolute": 8,
+       "markdown": "![Privacy-Enhancing Machine Learning \u2013 AWS Clean Rooms ML \u2013 AWS](https://images.openai.com/static-rsc-4/4e0hsiIjAR800FO2WMGH8GXb-eVc_W_GngdTPGJAq-zsW9N9bGr4K2EXL6Q68IRPqEAjO6F0ghFNahgiiAoTZEGOqgsze_aUICjUgESdEgfP03RI2sbekD22kPfjG_76L1HJ2GIW2vRxb3jd50jMtGmGKWgWP_lRZN2DlDaM7MaUz-A994CKJxp0EmnO-zNF?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://aws.amazon.com/clean-rooms/ml/",
+         "alt": "Privacy-Enhancing Machine Learning \u2013 AWS Clean Rooms ML \u2013 AWS",
+         "image_url": "https://images.openai.com/static-rsc-4/4e0hsiIjAR800FO2WMGH8GXb-eVc_W_GngdTPGJAq-zsW9N9bGr4K2EXL6Q68IRPqEAjO6F0ghFNahgiiAoTZEGOqgsze_aUICjUgESdEgfP03RI2sbekD22kPfjG_76L1HJ2GIW2vRxb3jd50jMtGmGKWgWP_lRZN2DlDaM7MaUz-A994CKJxp0EmnO-zNF?purpose=fullsize",
+         "markdown": "![Privacy-Enhancing Machine Learning \u2013 AWS Clean Rooms ML \u2013 AWS](https://images.openai.com/static-rsc-4/4e0hsiIjAR800FO2WMGH8GXb-eVc_W_GngdTPGJAq-zsW9N9bGr4K2EXL6Q68IRPqEAjO6F0ghFNahgiiAoTZEGOqgsze_aUICjUgESdEgfP03RI2sbekD22kPfjG_76L1HJ2GIW2vRxb3jd50jMtGmGKWgWP_lRZN2DlDaM7MaUz-A994CKJxp0EmnO-zNF?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 5,
+       "rank_absolute": 9,
+       "markdown": "\n\n**4\\. Slalom**\n\nBest for cloud data modernization\n\nWorth considering for data platform architecture, cloud migrations, analytics integration, and collaborative implementation with internal teams.\n\nWebsite: [slalom.com](https://www.slalom.com/) \u00b7 Source: [dataconsultingfirms.com](https://dataconsultingfirms.com/data-engineering-consulting?utm_source=chatgpt.com)[findalternatives.net](https://findalternatives.net/directory/data-lake-consulting-companies?utm_source=chatgpt.com)[decisionminds.com](https://decisionminds.com/articles/best-data-engineering-consulting-firms-us-2026-guide?utm_source=chatgpt.com)[originshq.com](https://originshq.com/feeds/data-engineering-consulting-companies/?utm_source=chatgpt.com)\n\n---\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "slalom.com",
+         "snippet": null,
+         "domain": "www.slalom.com",
+         "url": "https://www.slalom.com/",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[slalom.com](https://www.slalom.com/)"
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Data Engineering Consulting Firms and Services (2026)",
+         "snippet": null,
+         "domain": "dataconsultingfirms.com",
+         "url": "https://dataconsultingfirms.com/data-engineering-consulting?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "DCF Research",
+         "publication_date": null,
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Top Data Lake Consulting Firms in the US (2026)",
+         "snippet": null,
+         "domain": "findalternatives.net",
+         "url": "https://findalternatives.net/directory/data-lake-consulting-companies?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Find Alternatives",
+         "publication_date": null,
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Best Data Engineering Consulting Firms in the US: 2026 Guide",
+         "snippet": null,
+         "domain": "decisionminds.com",
+         "url": "https://decisionminds.com/articles/best-data-engineering-consulting-firms-us-2026-guide?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Decision Minds",
+         "publication_date": null,
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Top Data Engineering Consulting Companies in the US (2026)",
+         "snippet": null,
+         "domain": "originshq.com",
+         "url": "https://originshq.com/feeds/data-engineering-consulting-companies/?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Origins AI",
+         "publication_date": "2026-10-07 00:00:00 +00:00",
+         "markdown": null
+        }
+       ],
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "Business and technology consulting",
+         "category": "company",
+         "markdown": "Slalom",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 5,
+       "rank_absolute": 10,
+       "markdown": "![Tiger Analytics | The Org](https://images.openai.com/static-rsc-4/Ki5SJ_At7ImEzPnXWIqc-dePK2GpIpMjls0e62wIuvBOMbTiTNvFtt6TvNEbhpMZXtp3WiOiZ-YUCpiwWYDPaGFEJPo7m0WkJMwcoxAfL4nQZGkxzN_zruMTwqEcMt6U5fHbnuCwCresYbJpETGSVpx2p_GYHdXTu66L1a0nkD3dbiVyHCpaFUdY7GIeGU5o?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://theorg.com/org/tiger-analytics",
+         "alt": "Tiger Analytics | The Org",
+         "image_url": "https://images.openai.com/static-rsc-4/Ki5SJ_At7ImEzPnXWIqc-dePK2GpIpMjls0e62wIuvBOMbTiTNvFtt6TvNEbhpMZXtp3WiOiZ-YUCpiwWYDPaGFEJPo7m0WkJMwcoxAfL4nQZGkxzN_zruMTwqEcMt6U5fHbnuCwCresYbJpETGSVpx2p_GYHdXTu66L1a0nkD3dbiVyHCpaFUdY7GIeGU5o?purpose=fullsize",
+         "markdown": "![Tiger Analytics | The Org](https://images.openai.com/static-rsc-4/Ki5SJ_At7ImEzPnXWIqc-dePK2GpIpMjls0e62wIuvBOMbTiTNvFtt6TvNEbhpMZXtp3WiOiZ-YUCpiwWYDPaGFEJPo7m0WkJMwcoxAfL4nQZGkxzN_zruMTwqEcMt6U5fHbnuCwCresYbJpETGSVpx2p_GYHdXTu66L1a0nkD3dbiVyHCpaFUdY7GIeGU5o?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 6,
+       "rank_absolute": 11,
+       "markdown": "\n\n**5\\. Tiger Analytics**\n\nBest for analytics and AI-ready data platforms\n\nA good candidate when the data lake is intended to support machine learning, advanced analytics, data products, and production data pipelines.\n\nWebsite: [tigeranalytics.com](https://www.tigeranalytics.com/) \u00b7 Source: [dataconsultingfirms.com](https://dataconsultingfirms.com/data-engineering-consulting?utm_source=chatgpt.com)[findalternatives.net](https://findalternatives.net/directory/data-lake-consulting-companies?utm_source=chatgpt.com)[decisionminds.com](https://decisionminds.com/articles/best-data-engineering-consulting-firms-us-2026-guide?utm_source=chatgpt.com)[originshq.com](https://originshq.com/feeds/data-engineering-consulting-companies/?utm_source=chatgpt.com)\n\n---\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "tigeranalytics.com",
+         "snippet": null,
+         "domain": "www.tigeranalytics.com",
+         "url": "https://www.tigeranalytics.com/",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[tigeranalytics.com](https://www.tigeranalytics.com/)"
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Data Engineering Consulting Firms and Services (2026)",
+         "snippet": null,
+         "domain": "dataconsultingfirms.com",
+         "url": "https://dataconsultingfirms.com/data-engineering-consulting?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "DCF Research",
+         "publication_date": null,
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Top Data Lake Consulting Firms in the US (2026)",
+         "snippet": null,
+         "domain": "findalternatives.net",
+         "url": "https://findalternatives.net/directory/data-lake-consulting-companies?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Find Alternatives",
+         "publication_date": null,
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Best Data Engineering Consulting Firms in the US: 2026 Guide",
+         "snippet": null,
+         "domain": "decisionminds.com",
+         "url": "https://decisionminds.com/articles/best-data-engineering-consulting-firms-us-2026-guide?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Decision Minds",
+         "publication_date": null,
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Top Data Engineering Consulting Companies in the US (2026)",
+         "snippet": null,
+         "domain": "originshq.com",
+         "url": "https://originshq.com/feeds/data-engineering-consulting-companies/?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Origins AI",
+         "publication_date": "2026-10-07 00:00:00 +00:00",
+         "markdown": null
+        }
+       ],
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "Data analytics artificial intelligence and engineering consulting",
+         "category": "company",
+         "markdown": "Tiger Analytics",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 6,
+       "rank_absolute": 12,
+       "markdown": "![ML WEEK 2025 | Academic Journals and Conferences](https://images.openai.com/static-rsc-4/krMHmGWsUcbD6EHTf8V0imXPwzoeB-9kQMHOh-p686ktwasPhiNM5MG268ZQ3VfU7j6tgm71D9kUkPbsZCkqaX8deBoetzng4WFpc0tDjejk6wXMpZuL4zBHOxOiacaVtPHHibIYrv0_tOS_rF4wSFo2FioYjl2NDrhZ6WC8UuqUiZvyIBGNYymxVL-JN3cM?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://science.lpnu.ua/ml-week-2025",
+         "alt": "ML WEEK 2025 | Academic Journals and Conferences",
+         "image_url": "https://images.openai.com/static-rsc-4/krMHmGWsUcbD6EHTf8V0imXPwzoeB-9kQMHOh-p686ktwasPhiNM5MG268ZQ3VfU7j6tgm71D9kUkPbsZCkqaX8deBoetzng4WFpc0tDjejk6wXMpZuL4zBHOxOiacaVtPHHibIYrv0_tOS_rF4wSFo2FioYjl2NDrhZ6WC8UuqUiZvyIBGNYymxVL-JN3cM?purpose=fullsize",
+         "markdown": "![ML WEEK 2025 | Academic Journals and Conferences](https://images.openai.com/static-rsc-4/krMHmGWsUcbD6EHTf8V0imXPwzoeB-9kQMHOh-p686ktwasPhiNM5MG268ZQ3VfU7j6tgm71D9kUkPbsZCkqaX8deBoetzng4WFpc0tDjejk6wXMpZuL4zBHOxOiacaVtPHHibIYrv0_tOS_rF4wSFo2FioYjl2NDrhZ6WC8UuqUiZvyIBGNYymxVL-JN3cM?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 7,
+       "rank_absolute": 13,
+       "markdown": "\n\n**6\\. N-iX**\n\nBest for hands-on data engineering\n\nOffers data engineering services suited to pipeline development, data integration, platform engineering, and building out implementation teams. It ranked first in one October 2026 data engineering directory's evidence-based comparison.\n\nWebsite: [n-ix.com](https://www.n-ix.com/) \u00b7 Source: [dataconsultingfirms.com](https://dataconsultingfirms.com/data-engineering-consulting?utm_source=chatgpt.com)[findalternatives.net](https://findalternatives.net/directory/data-lake-consulting-companies?utm_source=chatgpt.com)[decisionminds.com](https://decisionminds.com/articles/best-data-engineering-consulting-firms-us-2026-guide?utm_source=chatgpt.com)\n\n---\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "n-ix.com",
+         "snippet": null,
+         "domain": "www.n-ix.com",
+         "url": "https://www.n-ix.com/",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[n-ix.com](https://www.n-ix.com/)"
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Data Engineering Consulting Firms and Services (2026)",
+         "snippet": null,
+         "domain": "dataconsultingfirms.com",
+         "url": "https://dataconsultingfirms.com/data-engineering-consulting?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "DCF Research",
+         "publication_date": null,
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Top Data Lake Consulting Firms in the US (2026)",
+         "snippet": null,
+         "domain": "findalternatives.net",
+         "url": "https://findalternatives.net/directory/data-lake-consulting-companies?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Find Alternatives",
+         "publication_date": null,
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Best Data Engineering Consulting Firms in the US: 2026 Guide",
+         "snippet": null,
+         "domain": "decisionminds.com",
+         "url": "https://decisionminds.com/articles/best-data-engineering-consulting-firms-us-2026-guide?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Decision Minds",
+         "publication_date": null,
+         "markdown": null
+        }
+       ],
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "Software engineering and data engineering consulting",
+         "category": "company",
+         "markdown": "N-iX",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 7,
+       "rank_absolute": 14,
+       "markdown": "![Accenture Ventures \u2014 Think Different | BEAMSTART](https://images.openai.com/static-rsc-4/A3Ct6d_Z34DlaX862wTV3j7uCNkt4xwspsLwEOuPZDDWBnRYGcQ53ChE7kjsDoFKu-R_Ouc8mOKZit8OK5Iqqz3DXm2wF68qfYlL0uCTXjc_AnNadytJrAsTvMMBcJ5Tv2Stj7k3WnRvIiyHERhRrZjMcIooIezpxqpyXeJnDGTU_sTmkz_1OL8H_8CdpPma?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://beamstart.com/%40Accenture-Ventures",
+         "alt": "Accenture Ventures \u2014 Think Different | BEAMSTART",
+         "image_url": "https://images.openai.com/static-rsc-4/A3Ct6d_Z34DlaX862wTV3j7uCNkt4xwspsLwEOuPZDDWBnRYGcQ53ChE7kjsDoFKu-R_Ouc8mOKZit8OK5Iqqz3DXm2wF68qfYlL0uCTXjc_AnNadytJrAsTvMMBcJ5Tv2Stj7k3WnRvIiyHERhRrZjMcIooIezpxqpyXeJnDGTU_sTmkz_1OL8H_8CdpPma?purpose=fullsize",
+         "markdown": "![Accenture Ventures \u2014 Think Different | BEAMSTART](https://images.openai.com/static-rsc-4/A3Ct6d_Z34DlaX862wTV3j7uCNkt4xwspsLwEOuPZDDWBnRYGcQ53ChE7kjsDoFKu-R_Ouc8mOKZit8OK5Iqqz3DXm2wF68qfYlL0uCTXjc_AnNadytJrAsTvMMBcJ5Tv2Stj7k3WnRvIiyHERhRrZjMcIooIezpxqpyXeJnDGTU_sTmkz_1OL8H_8CdpPma?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 8,
+       "rank_absolute": 15,
+       "markdown": "\n\n**7\\. Accenture**\n\nBest for global, multi-cloud transformation\n\nConsider for large, multi-business programs that combine data lake architecture with cloud migration, governance, operating-model changes, and enterprise-wide AI initiatives.\n\nWebsite: [accenture.com](https://www.accenture.com/) \u00b7 Source: [dataengineeringcompanies.com](https://dataengineeringcompanies.com/?utm_source=chatgpt.com)\n\n---\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "accenture.com",
+         "snippet": null,
+         "domain": "www.accenture.com",
+         "url": "https://www.accenture.com/",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[accenture.com](https://www.accenture.com/)"
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Top Data Engineering Companies 2026: Platforms & Fit",
+         "snippet": null,
+         "domain": "dataengineeringcompanies.com",
+         "url": "https://dataengineeringcompanies.com/?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Data Engineering Companies",
+         "publication_date": null,
+         "markdown": null
+        }
+       ],
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "Global management consulting and technology services",
+         "category": "company",
+         "markdown": "Accenture",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 8,
+       "rank_absolute": 16,
+       "markdown": "![Tredence Inc Reviews | Read Customer Service Reviews of tredence.com](https://images.openai.com/static-rsc-4/J-Rlkq3H3OmtJAdN55UGQXxGjK4pFyBcpZiMPwsdwOA9YIKf3c0695fjz4MyO8NZhIaV3Yi_F3Lv7TE1x4KQbYxLR5Iu_NQ3tkEz_XkUS7Sn-9IcNKvp43xgnyLdE1_AC6zQRL3BCWMdGJdaYBgPXaiIrxECXRZQ9UrVqiVD7Alh0pGzCate05qwX6xWd0rw?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://www.trustpilot.com/review/tredence.com",
+         "alt": "Tredence Inc Reviews | Read Customer Service Reviews of tredence.com",
+         "image_url": "https://images.openai.com/static-rsc-4/J-Rlkq3H3OmtJAdN55UGQXxGjK4pFyBcpZiMPwsdwOA9YIKf3c0695fjz4MyO8NZhIaV3Yi_F3Lv7TE1x4KQbYxLR5Iu_NQ3tkEz_XkUS7Sn-9IcNKvp43xgnyLdE1_AC6zQRL3BCWMdGJdaYBgPXaiIrxECXRZQ9UrVqiVD7Alh0pGzCate05qwX6xWd0rw?purpose=fullsize",
+         "markdown": "![Tredence Inc Reviews | Read Customer Service Reviews of tredence.com](https://images.openai.com/static-rsc-4/J-Rlkq3H3OmtJAdN55UGQXxGjK4pFyBcpZiMPwsdwOA9YIKf3c0695fjz4MyO8NZhIaV3Yi_F3Lv7TE1x4KQbYxLR5Iu_NQ3tkEz_XkUS7Sn-9IcNKvp43xgnyLdE1_AC6zQRL3BCWMdGJdaYBgPXaiIrxECXRZQ9UrVqiVD7Alh0pGzCate05qwX6xWd0rw?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 9,
+       "rank_absolute": 17,
+       "markdown": "\n\n**8\\. Tredence**\n\nBest for analytics-led modernization\n\nWorth evaluating for data platform modernization, data engineering, governance, and AI-focused use cases, particularly when business analytics is a major driver of the project.\n\nWebsite: [tredence.com](https://www.tredence.com/) \u00b7 Source: [decisionminds.com](https://decisionminds.com/articles/best-data-engineering-consulting-firms-us-2026-guide?utm_source=chatgpt.com)[originshq.com](https://originshq.com/feeds/data-engineering-consulting-companies/?utm_source=chatgpt.com)\n\n## Which company should you choose?\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "tredence.com",
+         "snippet": null,
+         "domain": "www.tredence.com",
+         "url": "https://www.tredence.com/",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[tredence.com](https://www.tredence.com/)"
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Best Data Engineering Consulting Firms in the US: 2026 Guide",
+         "snippet": null,
+         "domain": "decisionminds.com",
+         "url": "https://decisionminds.com/articles/best-data-engineering-consulting-firms-us-2026-guide?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Decision Minds",
+         "publication_date": null,
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Top Data Engineering Consulting Companies in the US (2026)",
+         "snippet": null,
+         "domain": "originshq.com",
+         "url": "https://originshq.com/feeds/data-engineering-consulting-companies/?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Origins AI",
+         "publication_date": "2026-10-07 00:00:00 +00:00",
+         "markdown": null
+        }
+       ],
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "Data analytics and AI consulting",
+         "category": "company",
+         "markdown": "Tredence",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_table",
+       "rank_group": 1,
+       "rank_absolute": 18,
+       "text": null,
+       "markdown": "| Your main requirement | Shortlist first |\n|--------|--------|\n| Build a dedicated cloud data lake | Cloudwick, ClearScale |\n| Enterprise-wide transformation | NTT DATA, Accenture |\n| AWS-native architecture | ClearScale |\n| Analytics and AI workloads | Tiger Analytics, Tredence |\n| Data pipelines and engineering capacity | N-iX |\n| Cloud modernization with internal-team collaboration | Slalom |\n\n",
+       "table": {
+        "table_header": [
+         "Your main requirement",
+         "Shortlist first"
+        ],
+        "table_content": [
+         [
+          "Build a dedicated cloud data lake",
+          "Cloudwick, ClearScale"
+         ],
+         [
+          "Enterprise-wide transformation",
+          "NTT DATA, Accenture"
+         ],
+         [
+          "AWS-native architecture",
+          "ClearScale"
+         ],
+         [
+          "Analytics and AI workloads",
+          "Tiger Analytics, Tredence"
+         ],
+         [
+          "Data pipelines and engineering capacity",
+          "N-iX"
+         ],
+         [
+          "Cloud modernization with internal-team collaboration",
+          "Slalom"
+         ]
+        ]
+       },
+       "brand_entities": null
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 10,
+       "rank_absolute": 19,
+       "markdown": "\nThese are use-case-based recommendations, not verified rankings of delivery quality. [dataconsultingfirms.com](https://dataconsultingfirms.com/data-engineering-consulting?utm_source=chatgpt.com)[findalternatives.net](https://findalternatives.net/directory/data-lake-consulting-companies?utm_source=chatgpt.com)[decisionminds.com](https://decisionminds.com/articles/best-data-engineering-consulting-firms-us-2026-guide?utm_source=chatgpt.com)\n\n## What to evaluate before signing\n\nAsk each consulting firm to demonstrate\\:\n\n- **Platform expertise\\:** Production experience with your target stack, such as AWS S3, Azure Data Lake Storage, Google Cloud Storage, Databricks, or Snowflake.\n- **Architecture\\:** Ability to assess a traditional data lake versus a lakehouse architecture, including open table formats such as Apache Iceberg and Delta Lake.\n- **Governance and security\\:** Data cataloging, lineage, access controls, encryption, compliance, and data quality.\n- **Migration experience\\:** Reference projects with comparable data volumes, source systems, and performance requirements.\n- **Total cost of ownership\\:** Storage, compute, data transfer, ongoing support, and platform optimization.\n- **Delivery evidence\\:** Customer references, named technical leads, and measurable results from completed projects.\n\n## Let me narrow the list for your needs\n\nThe best shortlist will change substantially depending on your requirements. Which type of project are you considering?\n\n1\\. Target platform\n\nAWS (S3, Glue, Lake Formation)\n\nMicrosoft Azure (ADLS, Fabric, Databricks)\n\nGoogle Cloud\n\nDatabricks / lakehouse\n\nSnowflake\n\nMulti-cloud or undecided\n\n---\n\n2\\. Project scope\n\nBuild a new data lake\n\nMigrate from Hadoop or an existing platform\n\nModernize or optimize an existing lake\n\nPrepare data infrastructure for AI and analytics\n\nOngoing management and support\n\n---\n\n3\\. Organization size\n\nSmall or mid-market company\n\nLarge enterprise\n\nHighly regulated enterprise\n\n---\n\n4\\. Most important selection criterion\n\nDeep technical expertise\n\nCost and value for money\n\nIndustry-specific experience\n\nGlobal delivery capacity\n\n[Find my best-fit consulting firms]",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "Data Engineering Consulting Firms and Services (2026)",
+         "snippet": null,
+         "domain": "dataconsultingfirms.com",
+         "url": "https://dataconsultingfirms.com/data-engineering-consulting?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "DCF Research",
+         "publication_date": null,
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Top Data Lake Consulting Firms in the US (2026)",
+         "snippet": null,
+         "domain": "findalternatives.net",
+         "url": "https://findalternatives.net/directory/data-lake-consulting-companies?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Find Alternatives",
+         "publication_date": null,
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Best Data Engineering Consulting Firms in the US: 2026 Guide",
+         "snippet": null,
+         "domain": "decisionminds.com",
+         "url": "https://decisionminds.com/articles/best-data-engineering-consulting-firms-us-2026-guide?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Decision Minds",
+         "publication_date": null,
+         "markdown": null
+        }
+       ],
+       "brand_entities": null
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

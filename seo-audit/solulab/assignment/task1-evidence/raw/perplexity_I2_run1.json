@@ -1,0 +1,131 @@
+{
+ "version": "0.1.20261022",
+ "status_code": 20000,
+ "status_message": "Ok.",
+ "time": "4.1801 sec.",
+ "cost": 0.005986,
+ "tasks_count": 1,
+ "tasks_error": 0,
+ "tasks": [
+  {
+   "id": "10271010-2577-0612-0000-3dfbd1a1afa4",
+   "status_code": 20000,
+   "status_message": "Ok.",
+   "time": "4.1709 sec.",
+   "cost": 0.005986,
+   "result_count": 1,
+   "path": [
+    "v3",
+    "ai_optimization",
+    "perplexity",
+    "llm_responses",
+    "live"
+   ],
+   "data": {
+    "api": "ai_optimization",
+    "function": "llm_responses",
+    "se": "perplexity",
+    "user_prompt": "Which white label AI voice agent platform can I resell to my clients under my own brand?",
+    "model_name": "sonar",
+    "max_output_tokens": 2048,
+    "web_search_country_iso_code": "US",
+    "tag": "I2-perplexity-1"
+   },
+   "result": [
+    {
+     "model_name": "sonar",
+     "input_tokens": 26,
+     "output_tokens": 360,
+     "reasoning_tokens": 0,
+     "web_search": true,
+     "money_spent": 0.005386,
+     "datetime": "2026-10-27 10:10:38 +00:00",
+     "items": [
+      {
+       "type": "message",
+       "sections": [
+        {
+         "type": "text",
+         "text": "For most agencies, **Autocalls** is the most turnkey option: its Agency White Label plan lets you use your own domain, logo, pricing, Stripe billing, unlimited client subaccounts, and client portal. It includes voice agents plus WhatsApp and website chat, with a listed price of about **$419/month** and 3,500 included minutes.[1]\n\nOther strong options:\n\n- **VoiceAIWrapper** \u2014 Best if you already use Vapi, Retell, or ElevenLabs. It adds branded portals, client management, and billing on top of those providers.[2]\n- **Trillet** \u2014 A finished agency platform with branded workspaces, Stripe invoicing, and included monthly minutes.[1]\n- **HighLevel Voice AI** \u2014 Good if your clients already use GoHighLevel and you want CRM, marketing automation, and voice AI in one white-labeled system.[1]\n- **Ringlyn or Centricall AI** \u2014 Best if you want to own and host the platform through a source-code or perpetual-license model rather than pay an ongoing platform fee.[3][4]\n- **Retell AI** \u2014 Strong voice-engine choice for technical teams, but its dashboard is not fully white-labeled; you would generally build or provide your own client portal.[1]\n\n**Recommendation:** Choose **Autocalls** for the fastest no-code reseller launch. Choose **VoiceAIWrapper** for flexibility across multiple voice providers, or **Ringlyn/Centricall** if owning the software and infrastructure is more important than speed. Before committing, verify phone-number ownership, recording consent, TCPA compliance, data-processing terms, SLA/support, exportability, and whether usage costs are included or passed through.",
+         "annotations": [
+          {
+           "title": "Frequently Asked Questions",
+           "url": "https://www.retellai.com/blog/white-label-voice-ai-platforms-agencies",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "White Label Voice AI Platform | Resell AI Voice Agents",
+           "url": "https://www.ringlyn.com/white-label-voice-ai/",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "White-Label AI Voice Agents for Agencies | VoiceAIWrapper",
+           "url": "https://voiceaiwrapper.com/",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "Best White-Label AI Voice Agent Platforms 2026",
+           "url": "https://autocalls.ai/article/best-white-label-ai-voice-agent-platforms",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "12 Best White Label AI Voice Agent Platforms - WotNot",
+           "url": "https://wotnot.io/blog/white-label-ai-voice-agent",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "White Label AI Platform for Agencies | Voice + Chat Agents",
+           "url": "https://convocore.ai/white-label",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "Top 7 White-Label AI Voice Agent Platforms for Agencies (2026)",
+           "url": "https://whinta.com/blog/top-white-label-ai-voice-agent-platforms-for-agencies",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "White Label AI Voice Agent: Stack, Rules and QA",
+           "url": "https://www.cekura.ai/discover/white-label-ai-voice-agent",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "The white-label AI voice agent platform you own outright - Centricall AI",
+           "url": "https://www.centricallai.com/partners/white-label-licensing",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "White-Label AI Voice Agent Platforms: 5 Options Compared - Dasha AI",
+           "url": "https://dasha.ai/blog/best-white-label-ai-voice-agent-platforms",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "fan_out_queries": null
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,131 @@
+{
+ "version": "0.1.20261022",
+ "status_code": 20000,
+ "status_message": "Ok.",
+ "time": "4.6775 sec.",
+ "cost": 0.006194,
+ "tasks_count": 1,
+ "tasks_error": 0,
+ "tasks": [
+  {
+   "id": "10271009-2577-0612-0000-28223dc372a8",
+   "status_code": 20000,
+   "status_message": "Ok.",
+   "time": "4.6008 sec.",
+   "cost": 0.006194,
+   "result_count": 1,
+   "path": [
+    "v3",
+    "ai_optimization",
+    "perplexity",
+    "llm_responses",
+    "live"
+   ],
+   "data": {
+    "api": "ai_optimization",
+    "function": "llm_responses",
+    "se": "perplexity",
+    "user_prompt": "What are the best data engineering consulting companies in the US?",
+    "model_name": "sonar",
+    "max_output_tokens": 2048,
+    "web_search_country_iso_code": "US",
+    "tag": "A1-perplexity-2"
+   },
+   "result": [
+    {
+     "model_name": "sonar",
+     "input_tokens": 19,
+     "output_tokens": 575,
+     "reasoning_tokens": 0,
+     "web_search": true,
+     "money_spent": 0.005594,
+     "datetime": "2026-10-27 10:09:36 +00:00",
+     "items": [
+      {
+       "type": "message",
+       "sections": [
+        {
+         "type": "text",
+         "text": "The best US data engineering consulting company depends on project size, platform, industry, and whether you need strategy, implementation, or ongoing operations. A strong shortlist is:\n\n| Company | Best for |\n|---|---|\n| **Accenture** | Large, global data modernization and cloud-transformation programs |\n| **Deloitte** | Strategy-led transformation, governance, risk, MDM, and regulated industries |\n| **IBM Consulting** | Hybrid-cloud, data governance, AI, and highly regulated enterprises |\n| **Slalom** | Collaborative cloud modernization and agile delivery |\n| **EPAM Systems** | Complex software engineering combined with data platforms and cloud |\n| **Tredence** | Retail, CPG, healthcare, and analytics-heavy data programs |\n| **Tiger Analytics** | Data engineering closely integrated with AI, ML, and advanced analytics |\n| **Sigmoid** | Data pipelines, streaming, DataOps, and analytics platforms |\n| **Thoughtworks** | Modern data architecture, engineering practices, and bespoke platform development |\n| **Decision Minds** | Boutique Snowflake and Databricks implementations with senior-engineer involvement |\n\nFor most buyers, the practical shortlist would be:\n\n- **Enterprise-wide transformation:** Accenture, Deloitte, IBM Consulting, or Cognizant. These firms offer broad industry coverage, multi-cloud capabilities, and managed-services scale.[2][4]\n- **Cloud data-platform modernization:** Slalom, EPAM, Thoughtworks, or Decision Minds. They are a better fit when architecture and hands-on engineering matter more than global delivery scale.[2][4]\n- **Data plus AI/analytics:** Tredence, Tiger Analytics, or Sigmoid. These firms specialize in connecting pipelines and platforms to analytics and machine-learning use cases.[1][3][4]\n- **Regulated industries:** IBM Consulting, Deloitte, Accenture, or EPAM, particularly when governance, hybrid cloud, security, and compliance are central requirements.[2][3][4]\n- **Mid-market or focused implementations:** Decision Minds, ScienceSoft, Sigmoid, or InData Labs may provide more specialized delivery and senior attention than a large systems integrator.[1][4]\n\nWhen evaluating firms, compare their experience with your specific stack\u2014such as Snowflake, Databricks, Microsoft Fabric, AWS, Azure, or Google Cloud\u2014along with architecture ownership, data-governance capability, US-based staffing, post-launch support, and documented results in your industry. Third-party rankings consistently identify Accenture, Deloitte, IBM, Slalom, EPAM, Tredence, Tiger Analytics, and Sigmoid among leading US-serving providers, though rankings vary by methodology.[1][2][3]",
+         "annotations": [
+          {
+           "title": "8 Best Data Engineering & Integration Consulting Firms in 2026 | MSH",
+           "url": "https://www.talentmsh.com/insights/best-data-engineering-consulting-companies",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "Top Data Engineering Consulting Firms in the USA (2026 ...",
+           "url": "https://www.techconsultingrank.com/rankings/usa/data-engineering",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "Data Engineering Companies: Top 10 Ranked for 2026",
+           "url": "https://nix-united.com/top-data-engineering-companies/",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "Best Data Engineering Consulting Firms in the US",
+           "url": "https://decisionminds.com/articles/best-data-engineering-consulting-firms-us-2026-guide",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "10 leading data engineering companies in the USA",
+           "url": "https://www.xavor.com/blog/leading-data-engineering-companies-in-the-usa/",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "dataconsultingfirms.com \u203a insights \u203a best-dataBest Data Engineering Consulting Firms 2026",
+           "url": "https://dataconsultingfirms.com/insights/best-data-engineering-consulting-firms",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "Top Data Engineering Companies 2026: Pipelines & AI Data",
+           "url": "https://groupbwt.com/blog/top-data-engineering-companies/",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "Top Data Engineering Consulting Companies in 2026 - Beyond Key",
+           "url": "https://www.beyondkey.com/blog/top-data-engineering-consulting-companies/",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "Top Data Engineering Consultants in 2026 - DesignRush",
+           "url": "https://www.designrush.com/agency/big-data-analytics-companies/data-engineering",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "Top 10 Data Engineering Companies in the USA for 2026",
+           "url": "https://inferenz.ai/blogs/top-10-data-engineering-companies-in-the-usa/",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "fan_out_queries": null
+    }
+   ]
+  }
+ ]
+}

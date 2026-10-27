@@ -1,0 +1,224 @@
+{
+ "version": "0.1.20261022",
+ "status_code": 20000,
+ "status_message": "Ok.",
+ "time": "10.2731 sec.",
+ "cost": 0.004,
+ "tasks_count": 1,
+ "tasks_error": 0,
+ "tasks": [
+  {
+   "id": "10271010-2577-0139-0000-c828f948a835",
+   "status_code": 20000,
+   "status_message": "Ok.",
+   "time": "10.1684 sec.",
+   "cost": 0.004,
+   "result_count": 1,
+   "path": [
+    "v3",
+    "serp",
+    "google",
+    "ai_mode",
+    "live",
+    "advanced"
+   ],
+   "data": {
+    "api": "serp",
+    "function": "live",
+    "se": "google",
+    "se_type": "ai_mode",
+    "keyword": "Which white label AI voice agent platform can I resell to my clients under my own brand?",
+    "location_code": 2840,
+    "language_code": "en",
+    "device": "desktop",
+    "tag": "I2-ai_mode-2",
+    "os": "windows"
+   },
+   "result": [
+    {
+     "keyword": "Which white label AI voice agent platform can I resell to my clients under my own brand?",
+     "type": "ai_mode",
+     "se_domain": "google.com",
+     "location_code": 2840,
+     "language_code": "en",
+     "check_url": "https://www.google.com/search?q=Which%20white%20label%20AI%20voice%20agent%20platform%20can%20I%20resell%20to%20my%20clients%20under%20my%20own%20brand%3F&hl=en&gl=US&udm=50&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+     "datetime": "2026-10-27 10:10:43 +00:00",
+     "spell": null,
+     "refinement_chips": null,
+     "item_types": [
+      "ai_overview"
+     ],
+     "se_results_count": 0,
+     "items_count": 1,
+     "items": [
+      {
+       "type": "ai_overview",
+       "rank_group": 1,
+       "rank_absolute": 1,
+       "page": 1,
+       "position": "left",
+       "xpath": "/html[1]/body[1]/div[2]/div[1]/div[9]/div[1]/section[1]/div[1]/div[1]/div[3]/div[4]/div[1]/div[1]/div[1]/div[3]",
+       "markdown": "`Several specialized platforms` allow agencies, SaaS resellers, and consultants to rebrand and resell AI voice agents under their own name.[[1]](https://www.retellai.com/app-partner/call-supplai)[[2]](https://www.retellai.com/use-cases/white-label-ai-voice-agents)[[3]](https://autocalls.ai/white-label)\n\nThe primary options differ in how deeply they white-label the software (e.g., fully branded custom portals vs. API-driven or partner-supported setups):\n\n- **[Autocalls.ai](https://autocalls.ai/white-label)** : Provides a turnkey white-label agency solution. It features 100% rebranding control (your custom domain, logo, color schemes, and client portal), integrated Stripe billing for direct client charging, unlimited sub-accounts, and global phone number provisioning across 150+ countries.[[1]](https://autocalls.ai/white-label)\n- **[Retell AI](https://www.retellai.com/use-cases/white-label-ai-voice-agents)** : Widely used as the core infrastructure voice engine for developers and agencies. Retell provides separate client workspaces (isolating agents, numbers, webhooks, and billing) and allows you to completely control client-facing elements like the agent's name, voice, greeting, and custom pricing. However, the core management dashboard isn't natively re-skinned out-of-the-box, so agencies typically pair it with an API wrapper or a platform from their partner directory like **Call Supplai**.[[1]](https://www.retellai.com/blog/white-label-voice-ai-platforms-agencies)[[2]](https://www.retellai.com/app-partner/call-supplai)[[3]](https://www.retellai.com/use-cases/white-label-ai-voice-agents)\n- **[byVoice.io](https://www.byvoice.io/white-label-conversational-ai-platform)** : Offers a white-label conversational AI and voice agent solution tailored for agencies. It provides multi-channel support (voice, WhatsApp, web, SMS), automated booking, and custom branding controls up to specific monthly minute thresholds, alongside an alternative revenue-share partnership model.[[1]](https://www.byvoice.io/white-label-conversational-ai-platform)\n- **Call Supplai** : Built specifically as an app partner on top of infrastructure like Retell AI, letting marketing agencies and BPOs deploy white-labeled AI lead intake and outbound voice sub-accounts with pre-built flows and zero coding.[[1]](https://www.retellai.com/app-partner/call-supplai)\n\nTo help narrow down the best fit, let me know:\n\n- Are you looking for a **turnkey portal** where your clients log into a dashboard with your logo, or do you have developers who can **build on top of an API**?\n- Do you plan to handle **inbound customer support, outbound sales/lead qualification** , or both?",
+       "items": [
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "Several specialized platforms allow agencies, SaaS resellers, and consultants to rebrand and resell AI voice agents under their own name.",
+         "markdown": "`Several specialized platforms` allow agencies, SaaS resellers, and consultants to rebrand and resell AI voice agents under their own name.[[1]](https://www.retellai.com/app-partner/call-supplai)[[2]](https://www.retellai.com/use-cases/white-label-ai-voice-agents)[[3]](https://autocalls.ai/white-label)",
+         "links": null,
+         "images": null,
+         "references": [
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Retell AI",
+           "domain": "www.retellai.com",
+           "url": "https://www.retellai.com/app-partner/call-supplai",
+           "title": "Call Supplai | Retell AI APP Partner",
+           "text": "Call Supplai empowers marketing agencies, SaaS resellers, and BPOs to sell fully functional AI voice agents under their own brand."
+          },
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Retell AI",
+           "domain": "www.retellai.com",
+           "url": "https://www.retellai.com/use-cases/white-label-ai-voice-agents",
+           "title": "White Label AI Voice Agents for Resellers",
+           "text": "For agencies, resellers, and platforms that sell voice agents to their own clients. Each client gets a separate workspace with its..."
+          },
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Autocalls.ai",
+           "domain": "autocalls.ai",
+           "url": "https://autocalls.ai/white-label",
+           "title": "White",
+           "text": "A white-label AI voice agent platform is software you rebrand and resell as your own product. clients get AI agents that answer an..."
+          }
+         ]
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "The primary options differ in how deeply they white-label the software (e.g., fully branded custom portals vs. API-driven or partner-supported setups):",
+         "markdown": "The primary options differ in how deeply they white-label the software (e.g., fully branded custom portals vs. API-driven or partner-supported setups):",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "Autocalls.ai : Provides a turnkey white-label agency solution. It features 100% rebranding control (your custom domain, logo, color schemes, and client portal), integrated Stripe billing for direct client charging, unlimited sub-accounts, and global phone number provisioning across 150+ countries. Retell AI : Widely used as the core infrastructure voice engine for developers and agencies. Retell provides separate client workspaces (isolating agents, numbers, webhooks, and billing) and allows you to completely control client-facing elements like the agent's name, voice, greeting, and custom pricing. However, the core management dashboard isn't natively re-skinned out-of-the-box, so agencies typically pair it with an API wrapper or a platform from their partner directory like Call Supplai. byVoice.io : Offers a white-label conversational AI and voice agent solution tailored for agencies. It provides multi-channel support (voice, WhatsApp, web, SMS), automated booking, and custom branding controls up to specific monthly minute thresholds, alongside an alternative revenue-share partnership model. Call Supplai : Built specifically as an app partner on top of infrastructure like Retell AI, letting marketing agencies and BPOs deploy white-labeled AI lead intake and outbound voice sub-accounts with pre-built flows and zero coding.",
+         "markdown": "- **[Autocalls.ai](https://autocalls.ai/white-label)** : Provides a turnkey white-label agency solution. It features 100% rebranding control (your custom domain, logo, color schemes, and client portal), integrated Stripe billing for direct client charging, unlimited sub-accounts, and global phone number provisioning across 150+ countries.[[1]](https://autocalls.ai/white-label)\n- **[Retell AI](https://www.retellai.com/use-cases/white-label-ai-voice-agents)** : Widely used as the core infrastructure voice engine for developers and agencies. Retell provides separate client workspaces (isolating agents, numbers, webhooks, and billing) and allows you to completely control client-facing elements like the agent's name, voice, greeting, and custom pricing. However, the core management dashboard isn't natively re-skinned out-of-the-box, so agencies typically pair it with an API wrapper or a platform from their partner directory like **Call Supplai**.[[1]](https://www.retellai.com/blog/white-label-voice-ai-platforms-agencies)[[2]](https://www.retellai.com/app-partner/call-supplai)[[3]](https://www.retellai.com/use-cases/white-label-ai-voice-agents)\n- **[byVoice.io](https://www.byvoice.io/white-label-conversational-ai-platform)** : Offers a white-label conversational AI and voice agent solution tailored for agencies. It provides multi-channel support (voice, WhatsApp, web, SMS), automated booking, and custom branding controls up to specific monthly minute thresholds, alongside an alternative revenue-share partnership model.[[1]](https://www.byvoice.io/white-label-conversational-ai-platform)\n- **Call Supplai** : Built specifically as an app partner on top of infrastructure like Retell AI, letting marketing agencies and BPOs deploy white-labeled AI lead intake and outbound voice sub-accounts with pre-built flows and zero coding.[[1]](https://www.retellai.com/app-partner/call-supplai)",
+         "links": null,
+         "images": null,
+         "references": [
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Autocalls.ai",
+           "domain": "autocalls.ai",
+           "url": "https://autocalls.ai/white-label",
+           "title": "White",
+           "text": "Agency White Label at $419/mo includes 3,500 minutes, $0.09/extra minute, 1,000 parallel calls, and unlimited client sub-accounts. Agency plan at $249/mo includes..."
+          },
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Retell AI",
+           "domain": "www.retellai.com",
+           "url": "https://www.retellai.com/blog/white-label-voice-ai-platforms-agencies",
+           "title": "Best White Label Voice AI Platforms for Agencies (2026)",
+           "text": "It is a voice-agent platform an agency rebrands and resells under its own name, with its own dashboard, domain and billing, while ..."
+          },
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Retell AI",
+           "domain": "www.retellai.com",
+           "url": "https://www.retellai.com/app-partner/call-supplai",
+           "title": "Call Supplai | Retell AI APP Partner",
+           "text": "Call Supplai empowers marketing agencies, SaaS resellers, and BPOs to sell fully functional AI voice agents under their own brand."
+          },
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Retell AI",
+           "domain": "www.retellai.com",
+           "url": "https://www.retellai.com/use-cases/white-label-ai-voice-agents",
+           "title": "White Label AI Voice Agents for Resellers",
+           "text": "For agencies, resellers, and platforms that sell voice agents to their own clients. Each client gets a separate workspace with its..."
+          },
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "byVoice",
+           "domain": "www.byvoice.io",
+           "url": "https://www.byvoice.io/white-label-conversational-ai-platform",
+           "title": "White Label AI Voice Agent Platform for Agencies | byVoice",
+           "text": "AI voice and chat agent platform for agencies featuring full account control and no coding. Features: 24/7 inbound support, outbou..."
+          }
+         ]
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "To help narrow down the best fit, let me know:",
+         "markdown": "To help narrow down the best fit, let me know:",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "Are you looking for a turnkey portal where your clients log into a dashboard with your logo, or do you have developers who can build on top of an API ? Do you plan to handle inbound customer support, outbound sales/lead qualification, or both?",
+         "markdown": "- Are you looking for a **turnkey portal** where your clients log into a dashboard with your logo, or do you have developers who can **build on top of an API**?\n- Do you plan to handle **inbound customer support, outbound sales/lead qualification** , or both?",
+         "links": null,
+         "images": null,
+         "references": null
+        }
+       ],
+       "references": [
+        {
+         "type": "ai_overview_reference",
+         "position": "right",
+         "source": "Retell AI",
+         "domain": "www.retellai.com",
+         "url": "https://www.retellai.com/app-partner/call-supplai",
+         "title": "Call Supplai | Retell AI APP Partner",
+         "text": "Call Supplai empowers marketing agencies, SaaS resellers, and BPOs to sell fully functional AI voice agents under their own brand."
+        },
+        {
+         "type": "ai_overview_reference",
+         "position": "right",
+         "source": "Autocalls.ai",
+         "domain": "autocalls.ai",
+         "url": "https://autocalls.ai/white-label",
+         "title": "White",
+         "text": "Agency White Label at $419/mo includes 3,500 minutes, $0.09/extra minute, 1,000 parallel calls, and unlimited client sub-accounts. Agency plan at $249/mo includes..."
+        },
+        {
+         "type": "ai_overview_reference",
+         "position": "right",
+         "source": "byVoice",
+         "domain": "www.byvoice.io",
+         "url": "https://www.byvoice.io/white-label-conversational-ai-platform",
+         "title": "White Label AI Voice Agent Platform for Agencies | byVoice",
+         "text": "AI voice and chat agent platform for agencies featuring full account control and no coding. Features: 24/7 inbound support, outbound calling, automated appointment..."
+        }
+       ],
+       "rectangle": null
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,131 @@
+{
+ "version": "0.1.20261022",
+ "status_code": 20000,
+ "status_message": "Ok.",
+ "time": "3.5511 sec.",
+ "cost": 0.006056,
+ "tasks_count": 1,
+ "tasks_error": 0,
+ "tasks": [
+  {
+   "id": "10271009-2577-0612-0000-ab83ec8bc080",
+   "status_code": 20000,
+   "status_message": "Ok.",
+   "time": "3.5425 sec.",
+   "cost": 0.006056,
+   "result_count": 1,
+   "path": [
+    "v3",
+    "ai_optimization",
+    "perplexity",
+    "llm_responses",
+    "live"
+   ],
+   "data": {
+    "api": "ai_optimization",
+    "function": "llm_responses",
+    "se": "perplexity",
+    "user_prompt": "Which companies offer data warehouse consulting services for enterprises? Give me a shortlist.",
+    "model_name": "sonar",
+    "max_output_tokens": 2048,
+    "web_search_country_iso_code": "US",
+    "tag": "A2-perplexity-2"
+   },
+   "result": [
+    {
+     "model_name": "sonar",
+     "input_tokens": 23,
+     "output_tokens": 433,
+     "reasoning_tokens": 0,
+     "web_search": true,
+     "money_spent": 0.005456,
+     "datetime": "2026-10-27 10:09:54 +00:00",
+     "items": [
+      {
+       "type": "message",
+       "sections": [
+        {
+         "type": "text",
+         "text": "A strong enterprise shortlist includes:\n\n- **Accenture** \u2014 Large-scale data warehouse modernization, hybrid/multicloud architecture, migrations, data engineering, and governance for global enterprises.[3][9]\n- **Deloitte** \u2014 Enterprise data architecture, cloud warehouse modernization, compliance, governance, and master data management.[3][9]\n- **Capgemini** \u2014 End-to-end warehouse design, cloud migration, ETL/ELT, lakehouse implementation, and BI modernization.[3][8][9]\n- **Tata Consultancy Services (TCS)** \u2014 Global warehouse design, legacy-system migration, real-time integration, governance, and performance tuning.[6][9]\n- **Cognizant** \u2014 Data warehouse engineering, ETL modernization, cloud data platforms, governance, and analytics.[2][6]\n- **Wipro** \u2014 Enterprise warehouse migration, data integration, ETL modernization, and analytics enablement.[2][6][9]\n- **HCLTech** \u2014 Data warehouse modernization, cloud migration, integration, and data governance for large organizations.[6]\n- **Slalom** \u2014 Business-focused cloud data platform implementations, modeling, governance, and BI enablement; often a good fit for consulting-led transformations.[6][9]\n- **IBM** \u2014 Enterprise data and analytics consulting, including warehouse and broader data-platform services.[8]\n- **Innowise** \u2014 Full-lifecycle warehouse design, implementation, integration, migration, and support.[1]\n\n**Quick selection guide:**\n\n- **Largest, complex global transformation:** Accenture, Deloitte, Capgemini, TCS\n- **Cloud migration and modernization:** Cognizant, Wipro, HCLTech, Slalom\n- **Platform-specific services:** Snowflake Professional Services, Databricks, and Informatica Professional Services.[9]\n- **More specialized or potentially flexible delivery:** Innowise, ScienceSoft, or McKnight Consulting Group.[1][7]",
+         "annotations": [
+          {
+           "title": "Data Warehouse Consulting Services",
+           "url": "https://innowise.com/data/data-warehouse-consulting/",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "worldmetrics.org \u203a service \u203a data-warehousing-consultingBest Data Warehousing Consulting Services (2026)",
+           "url": "https://worldmetrics.org/service/data-warehousing-consulting/",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "Top Cloud Data Warehouse Consulting Companies in 2026 - LinkedIn",
+           "url": "https://www.linkedin.com/pulse/top-cloud-data-warehouse-consulting-companies-2026-saurabh-sharma-rursc",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "Bacancy Technology Named Among Leading Data Warehouse ...",
+           "url": "https://www.digitaljournal.com/pr/news/24-7-press-release/bacancy-technology-named-among-leading-1281183708.html",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "Top Data Warehouse Consulting Firms in the US (2026)",
+           "url": "https://findalternatives.net/directory/data-warehouse-consulting-companies",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "Best Data Warehouse Consulting Services | 2026 Rankings",
+           "url": "https://worldmetrics.org/service/data-warehouse-consulting/",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "Where to Find Experienced Data Warehouse Consultants | Scoop",
+           "url": "https://www.scoopanalytics.com/blog/where-to-find-experienced-data-warehouse-consultants",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "Best Data Warehousing Consulting 2026",
+           "url": "https://www.featuredcustomers.com/services/data-warehousing-consulting",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "Top 10 Data Warehouse Consulting Services - LinkedIn",
+           "url": "https://www.linkedin.com/pulse/top-10-data-warehouse-consulting-services-shivam-rawat-rd51c",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "Top Data Warehousing Consulting Companies in 2026",
+           "url": "https://www.designrush.com/agency/big-data-analytics-companies/data-warehousing",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "fan_out_queries": null
+    }
+   ]
+  }
+ ]
+}

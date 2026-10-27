@@ -1,0 +1,218 @@
+{
+ "version": "0.1.20261022",
+ "status_code": 20000,
+ "status_message": "Ok.",
+ "time": "10.7842 sec.",
+ "cost": 0.004,
+ "tasks_count": 1,
+ "tasks_error": 0,
+ "tasks": [
+  {
+   "id": "10271009-2577-0139-0000-7ade4fc70ef0",
+   "status_code": 20000,
+   "status_message": "Ok.",
+   "time": "10.6932 sec.",
+   "cost": 0.004,
+   "result_count": 1,
+   "path": [
+    "v3",
+    "serp",
+    "google",
+    "ai_mode",
+    "live",
+    "advanced"
+   ],
+   "data": {
+    "api": "serp",
+    "function": "live",
+    "se": "google",
+    "se_type": "ai_mode",
+    "keyword": "What are the top data lake consulting companies?",
+    "location_code": 2840,
+    "language_code": "en",
+    "device": "desktop",
+    "tag": "A3-ai_mode-1",
+    "os": "windows"
+   },
+   "result": [
+    {
+     "keyword": "What are the top data lake consulting companies?",
+     "type": "ai_mode",
+     "se_domain": "google.com",
+     "location_code": 2840,
+     "language_code": "en",
+     "check_url": "https://www.google.com/search?q=What%20are%20the%20top%20data%20lake%20consulting%20companies%3F&hl=en&gl=US&udm=50&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+     "datetime": "2026-10-27 10:10:04 +00:00",
+     "spell": null,
+     "refinement_chips": null,
+     "item_types": [
+      "ai_overview"
+     ],
+     "se_results_count": 0,
+     "items_count": 1,
+     "items": [
+      {
+       "type": "ai_overview",
+       "rank_group": 1,
+       "rank_absolute": 1,
+       "page": 1,
+       "position": "left",
+       "xpath": "/html[1]/body[1]/div[2]/div[1]/div[9]/div[1]/section[1]/div[1]/div[1]/div[3]/div[4]/div[1]/div[1]/div[1]/div[3]",
+       "markdown": "When looking for top consulting companies specializing in **data lakes**, **lakehouses** , and large-scale data engineering, firms generally fall into three tiers: `global digital transformation leaders, specialized technical/cloud boutiques, and top-tier management consultancies`.\n\n### 1. Global Enterprise & Tech Integrators\n\nBest for massive, multi-region implementations, complex regulatory environments, and multi-system digital overhauls.[[1]](https://www.beyondkey.com/blog/top-data-engineering-consulting-companies/)[[2]](https://www.linkedin.com/pulse/top-8-data-lake-consulting-companies-enterprise-boris-sukhorukov-rzzrf)\n\n- Accenture : Excellent for end-to-end enterprise scale data lakes, cloud-native deployments, and strong ecosystem partnerships across AWS, Azure, GCP, and Databricks.[[1]](https://www.beyondkey.com/blog/top-data-engineering-consulting-companies/)\n- Capgemini : Highly regarded for complex legacy-to-cloud migrations (e.g., Teradata or Hadoop to modern data lakes/Snowflake) and heavy industrial/enterprise integration.[[1]](https://www.linkedin.com/pulse/top-8-data-lake-consulting-companies-enterprise-boris-sukhorukov-rzzrf)\n- Deloitte : Combines high-level data strategy with deep technical execution, often focusing on unified cloud data platforms, governance, and AI/ML enablement on AWS and Azure.[[1]](https://www.beyondkey.com/blog/top-data-engineering-consulting-companies/)\n- Infosys & Tata Consultancy Services (TCS): Leaders in managing massive, department-spanning data architecture workflows and cost-effective enterprise data transformations.[[1]](https://www.linkedin.com/pulse/top-8-data-lake-consulting-companies-enterprise-boris-sukhorukov-rzzrf)\n\n### 2. Specialized Data & Analytics Boutiques\n\nBest for specialized technical stacks, faster deployments, and deep platform expertise (Databricks, Snowflake, Apache Iceberg).\n\n- Tiger Analytics : Holds elite partner status with Snowflake and Databricks, recognized for advanced data engineering, AI readiness, and industry-specific lakehouse builds.\n- Slalom Consulting : Known for a collaborative, localized consulting model that builds custom cloud data architectures, real-time streaming lakes, and robust data governance frameworks.\n- N-iX : Strong European and global engineering firm with a heavy focus on Databricks lakehouse implementations, multi-cloud setups, and strict compliance frameworks.\n- ScienceSoft : A veteran IT and data consultancy offering compliance-first cloud data lake and multi-storage architecture blueprints for heavily regulated sectors like finance and healthcare.[[1]](https://www.corporatevision-news.com/top-5-data-warehouse-consulting-companies-in-2026/)\n\nTo help you narrow down which company fits your needs, tell me:\n\n- What **cloud platform or tech stack** are you targeting (AWS, Azure, GCP, Databricks, or Snowflake)?\n- Is the focus primarily on **building a new data lake** or **migrating a legacy warehouse/Hadoop cluster**?",
+       "items": [
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "When looking for top consulting companies specializing in data lakes, lakehouses, and large-scale data engineering, firms generally fall into three tiers: global digital transformation leaders, specialized technical/cloud boutiques, and top-tier management consultancies.",
+         "markdown": "When looking for top consulting companies specializing in **data lakes**, **lakehouses** , and large-scale data engineering, firms generally fall into three tiers: `global digital transformation leaders, specialized technical/cloud boutiques, and top-tier management consultancies`.",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": "1. Global Enterprise & Tech Integrators",
+         "text": "Best for massive, multi-region implementations, complex regulatory environments, and multi-system digital overhauls.",
+         "markdown": "Best for massive, multi-region implementations, complex regulatory environments, and multi-system digital overhauls.[[1]](https://www.beyondkey.com/blog/top-data-engineering-consulting-companies/)[[2]](https://www.linkedin.com/pulse/top-8-data-lake-consulting-companies-enterprise-boris-sukhorukov-rzzrf)",
+         "links": null,
+         "images": null,
+         "references": [
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Beyond Key",
+           "domain": "www.beyondkey.com",
+           "url": "https://www.beyondkey.com/blog/top-data-engineering-consulting-companies/",
+           "title": "Top Data Engineering Consulting Companies in 2026",
+           "text": "Best for: Customized data engineering and AI-ready data platform projects. scope is a multi-region, multi-system modernization pro..."
+          },
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "LinkedIn",
+           "domain": "www.linkedin.com",
+           "url": "https://www.linkedin.com/pulse/top-8-data-lake-consulting-companies-enterprise-boris-sukhorukov-rzzrf",
+           "title": "Top 8 Data Lake Consulting Companies for Enterprise ...",
+           "text": "Cobit Solutions specializes in projects involving the development of data lakes and analytical systems for companies that work wit..."
+          }
+         ]
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "Accenture : Excellent for end-to-end enterprise scale data lakes, cloud-native deployments, and strong ecosystem partnerships across AWS, Azure, GCP, and Databricks. Accenture Capgemini : Highly regarded for complex legacy-to-cloud migrations (e.g., Teradata or Hadoop to modern data lakes/Snowflake) and heavy industrial/enterprise integration. Capgemini Deloitte : Combines high-level data strategy with deep technical execution, often focusing on unified cloud data platforms, governance, and AI/ML enablement on AWS and Azure. Deloitte Infosys & Tata Consultancy Services (TCS) : Leaders in managing massive, department-spanning data architecture workflows and cost-effective enterprise data transformations. Infosys Tata Consultancy Services (TCS)",
+         "markdown": "- Accenture : Excellent for end-to-end enterprise scale data lakes, cloud-native deployments, and strong ecosystem partnerships across AWS, Azure, GCP, and Databricks.[[1]](https://www.beyondkey.com/blog/top-data-engineering-consulting-companies/)\n- Capgemini : Highly regarded for complex legacy-to-cloud migrations (e.g., Teradata or Hadoop to modern data lakes/Snowflake) and heavy industrial/enterprise integration.[[1]](https://www.linkedin.com/pulse/top-8-data-lake-consulting-companies-enterprise-boris-sukhorukov-rzzrf)\n- Deloitte : Combines high-level data strategy with deep technical execution, often focusing on unified cloud data platforms, governance, and AI/ML enablement on AWS and Azure.[[1]](https://www.beyondkey.com/blog/top-data-engineering-consulting-companies/)\n- Infosys & Tata Consultancy Services (TCS): Leaders in managing massive, department-spanning data architecture workflows and cost-effective enterprise data transformations.[[1]](https://www.linkedin.com/pulse/top-8-data-lake-consulting-companies-enterprise-boris-sukhorukov-rzzrf)",
+         "links": null,
+         "images": null,
+         "references": [
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Beyond Key",
+           "domain": "www.beyondkey.com",
+           "url": "https://www.beyondkey.com/blog/top-data-engineering-consulting-companies/",
+           "title": "Top Data Engineering Consulting Companies in 2026",
+           "text": "Deloitte's strength is in integrating data engineering with strategy. Atos is active in 54 countries, and its data engineering"
+          },
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "LinkedIn",
+           "domain": "www.linkedin.com",
+           "url": "https://www.linkedin.com/pulse/top-8-data-lake-consulting-companies-enterprise-boris-sukhorukov-rzzrf",
+           "title": "Top 8 Data Lake Consulting Companies for Enterprise ...",
+           "text": "Infosys implements Data Lake projects for large organizations where data consistency across departments and systems"
+          }
+         ]
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": "2. Specialized Data & Analytics Boutiques",
+         "text": "Best for specialized technical stacks, faster deployments, and deep platform expertise (Databricks, Snowflake, Apache Iceberg).",
+         "markdown": "Best for specialized technical stacks, faster deployments, and deep platform expertise (Databricks, Snowflake, Apache Iceberg).",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "Tiger Analytics : Holds elite partner status with Snowflake and Databricks, recognized for advanced data engineering, AI readiness, and industry-specific lakehouse builds. Tiger Analytics Slalom Consulting : Known for a collaborative, localized consulting model that builds custom cloud data architectures, real-time streaming lakes, and robust data governance frameworks. Slalom Consulting N-iX : Strong European and global engineering firm with a heavy focus on Databricks lakehouse implementations, multi-cloud setups, and strict compliance frameworks. N-iX ScienceSoft : A veteran IT and data consultancy offering compliance-first cloud data lake and multi-storage architecture blueprints for heavily regulated sectors like finance and healthcare. ScienceSoft",
+         "markdown": "- Tiger Analytics : Holds elite partner status with Snowflake and Databricks, recognized for advanced data engineering, AI readiness, and industry-specific lakehouse builds.\n- Slalom Consulting : Known for a collaborative, localized consulting model that builds custom cloud data architectures, real-time streaming lakes, and robust data governance frameworks.\n- N-iX : Strong European and global engineering firm with a heavy focus on Databricks lakehouse implementations, multi-cloud setups, and strict compliance frameworks.\n- ScienceSoft : A veteran IT and data consultancy offering compliance-first cloud data lake and multi-storage architecture blueprints for heavily regulated sectors like finance and healthcare.[[1]](https://www.corporatevision-news.com/top-5-data-warehouse-consulting-companies-in-2026/)",
+         "links": null,
+         "images": null,
+         "references": [
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Corporate Vision Magazine",
+           "domain": "www.corporatevision-news.com",
+           "url": "https://www.corporatevision-news.com/top-5-data-warehouse-consulting-companies-in-2026/",
+           "title": "Top 5 Data Warehouse Consulting Companies in 2026",
+           "text": "The company offers highly secure architecture blueprints suited for heavily regulated sectors, such as healthcare, finance, bankin..."
+          }
+         ]
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "To help you narrow down which company fits your needs, tell me:",
+         "markdown": "To help you narrow down which company fits your needs, tell me:",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "What cloud platform or tech stack are you targeting (AWS, Azure, GCP, Databricks, or Snowflake)? Is the focus primarily on building a new data lake or migrating a legacy warehouse/Hadoop cluster ?",
+         "markdown": "- What **cloud platform or tech stack** are you targeting (AWS, Azure, GCP, Databricks, or Snowflake)?\n- Is the focus primarily on **building a new data lake** or **migrating a legacy warehouse/Hadoop cluster**?",
+         "links": null,
+         "images": null,
+         "references": null
+        }
+       ],
+       "references": [
+        {
+         "type": "ai_overview_reference",
+         "position": "right",
+         "source": "Beyond Key",
+         "domain": "www.beyondkey.com",
+         "url": "https://www.beyondkey.com/blog/top-data-engineering-consulting-companies/",
+         "title": "Top Data Engineering Consulting Companies in 2026",
+         "text": "Deloitte's strength is in integrating data engineering with strategy. Atos is active in 54 countries, and its data engineering"
+        },
+        {
+         "type": "ai_overview_reference",
+         "position": "right",
+         "source": "LinkedIn",
+         "domain": "www.linkedin.com",
+         "url": "https://www.linkedin.com/pulse/top-8-data-lake-consulting-companies-enterprise-boris-sukhorukov-rzzrf",
+         "title": "Top 8 Data Lake Consulting Companies for Enterprise ...",
+         "text": "Infosys implements Data Lake projects for large organizations where data consistency across departments and systems"
+        },
+        {
+         "type": "ai_overview_reference",
+         "position": "right",
+         "source": "Corporate Vision Magazine",
+         "domain": "www.corporatevision-news.com",
+         "url": "https://www.corporatevision-news.com/top-5-data-warehouse-consulting-companies-in-2026/",
+         "title": "Top 5 Data Warehouse Consulting Companies in 2026",
+         "text": "The company offers highly secure architecture blueprints suited for heavily regulated sectors, such as healthcare, finance, banking, manufacturing, and insurance."
+        }
+       ],
+       "rectangle": null
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

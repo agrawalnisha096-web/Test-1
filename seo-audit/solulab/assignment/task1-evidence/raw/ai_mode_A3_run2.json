@@ -1,0 +1,208 @@
+{
+ "version": "0.1.20261022",
+ "status_code": 20000,
+ "status_message": "Ok.",
+ "time": "8.0429 sec.",
+ "cost": 0.004,
+ "tasks_count": 1,
+ "tasks_error": 0,
+ "tasks": [
+  {
+   "id": "10271009-2577-0139-0000-ddc5ca387e7a",
+   "status_code": 20000,
+   "status_message": "Ok.",
+   "time": "7.9771 sec.",
+   "cost": 0.004,
+   "result_count": 1,
+   "path": [
+    "v3",
+    "serp",
+    "google",
+    "ai_mode",
+    "live",
+    "advanced"
+   ],
+   "data": {
+    "api": "serp",
+    "function": "live",
+    "se": "google",
+    "se_type": "ai_mode",
+    "keyword": "What are the top data lake consulting companies?",
+    "location_code": 2840,
+    "language_code": "en",
+    "device": "desktop",
+    "tag": "A3-ai_mode-2",
+    "os": "windows"
+   },
+   "result": [
+    {
+     "keyword": "What are the top data lake consulting companies?",
+     "type": "ai_mode",
+     "se_domain": "google.com",
+     "location_code": 2840,
+     "language_code": "en",
+     "check_url": "https://www.google.com/search?q=What%20are%20the%20top%20data%20lake%20consulting%20companies%3F&hl=en&gl=US&udm=50&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+     "datetime": "2026-10-27 10:10:02 +00:00",
+     "spell": null,
+     "refinement_chips": null,
+     "item_types": [
+      "ai_overview"
+     ],
+     "se_results_count": 0,
+     "items_count": 1,
+     "items": [
+      {
+       "type": "ai_overview",
+       "rank_group": 1,
+       "rank_absolute": 1,
+       "page": 1,
+       "position": "left",
+       "xpath": "/html[1]/body[1]/div[2]/div[1]/div[9]/div[1]/section[1]/div[1]/div[1]/div[3]/div[4]/div[1]/div[1]/div[1]/div[3]",
+       "markdown": "When looking for top consulting companies specializing in **data lakes**, **data lakehouses** , and large-scale **big data architecture** , firms generally fall into two categories: global enterprise tech/management consultants and specialized data engineering boutiques.\n\n### Global Enterprise & Technology Consultancies\n\nThese firms excel at multi-region transformations, complex data governance, and integrating data lakes with overarching business strategy across massive corporate footprints.\n\n- **Accenture** : Renowned for large-scale cloud modernization, Accenture builds cloud-native data lakes and automated data pipelines handling petabyte-scale workloads.[[1]](https://www.beyondkey.com/blog/top-data-engineering-consulting-companies/)\n- **Deloitte** : A leader in enterprise data strategy and compliance, Deloitte specializes in constructing unified enterprise data lakehouses (such as on AWS or Azure) paired with robust AI/ML use cases.[[1]](https://www.beyondkey.com/blog/top-data-engineering-consulting-companies/)\n- **Capgemini** : Highly experienced in complex IT landscapes, Capgemini handles massive data migrations (e.g., Teradata to cloud data lakes/Snowflake) and multi-source data integration.[[1]](https://www.linkedin.com/pulse/top-8-data-lake-consulting-companies-enterprise-boris-sukhorukov-rzzrf)\n- **Infosys** : Known for enterprise-scale frameworks like its \"Boundaryless Data Lake\" offerings, Infosys focuses on data consistency, cross-department workflows, and cloud data lake execution.[[1]](https://www.linkedin.com/pulse/top-8-data-lake-consulting-companies-enterprise-boris-sukhorukov-rzzrf)\n- **Cognizant** : A major player for highly regulated sectors like finance and healthcare, focusing on data lake stability, strict compliance, and rigorous quality control at scale.[[1]](https://www.linkedin.com/pulse/top-8-data-lake-consulting-companies-enterprise-boris-sukhorukov-rzzrf)\n\n### Specialized & Mid-Market Big Data Consultancies\n\nThese firms are often chosen for deep technical specialization, rapid deployment, and targeted engineering execution around specific cloud/lakehouse ecosystems.\n\n- **ScienceSoft** : Active in data analytics since 1989, ScienceSoft provides secure, compliance-first data lake and data warehouse blueprints tailored for heavily regulated industries like banking and healthcare.\n- **N-iX** : A prominent big data partner specializing in end-to-end data lakehouse architecture design (Bronze/Silver/Gold modeling), complex data ingestion pipelines, and multi-cloud delivery.\n- **Sigmoid** : Recognized for handling high-volume, complex data engineering challenges and real-time streaming architectures built on top of modern data lakes.[[1]](https://www.corporatevision-news.com/top-5-data-warehouse-consulting-companies-in-2026/)[[2]](https://www.beyondkey.com/blog/top-data-engineering-consulting-companies/)\n\nIf you'd like to narrow down the best partner for your organization, let me know:\n\n- Are you working within a specific cloud ecosystem (**AWS**, **Azure**, **GCP** ) or platform (**Databricks**, **Snowflake**)?\n- What is the rough **scale of your data** and your primary industry (**finance, retail, healthcare, etc.**)?",
+       "items": [
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "When looking for top consulting companies specializing in data lakes, data lakehouses, and large-scale big data architecture, firms generally fall into two categories: global enterprise tech/management consultants and specialized data engineering boutiques.",
+         "markdown": "When looking for top consulting companies specializing in **data lakes**, **data lakehouses** , and large-scale **big data architecture** , firms generally fall into two categories: global enterprise tech/management consultants and specialized data engineering boutiques.",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": "Global Enterprise & Technology Consultancies",
+         "text": "These firms excel at multi-region transformations, complex data governance, and integrating data lakes with overarching business strategy across massive corporate footprints.",
+         "markdown": "These firms excel at multi-region transformations, complex data governance, and integrating data lakes with overarching business strategy across massive corporate footprints.",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "Accenture : Renowned for large-scale cloud modernization, Accenture builds cloud-native data lakes and automated data pipelines handling petabyte-scale workloads. Accenture Accenture Deloitte : A leader in enterprise data strategy and compliance, Deloitte specializes in constructing unified enterprise data lakehouses (such as on AWS or Azure) paired with robust AI/ML use cases. Deloitte Deloitte Capgemini : Highly experienced in complex IT landscapes, Capgemini handles massive data migrations (e.g., Teradata to cloud data lakes/Snowflake) and multi-source data integration. Capgemini Capgemini Infosys : Known for enterprise-scale frameworks like its \"Boundaryless Data Lake\" offerings, Infosys focuses on data consistency, cross-department workflows, and cloud data lake execution. Infosys Infosys Cognizant : A major player for highly regulated sectors like finance and healthcare, focusing on data lake stability, strict compliance, and rigorous quality control at scale. Cognizant",
+         "markdown": "- **Accenture** : Renowned for large-scale cloud modernization, Accenture builds cloud-native data lakes and automated data pipelines handling petabyte-scale workloads.[[1]](https://www.beyondkey.com/blog/top-data-engineering-consulting-companies/)\n- **Deloitte** : A leader in enterprise data strategy and compliance, Deloitte specializes in constructing unified enterprise data lakehouses (such as on AWS or Azure) paired with robust AI/ML use cases.[[1]](https://www.beyondkey.com/blog/top-data-engineering-consulting-companies/)\n- **Capgemini** : Highly experienced in complex IT landscapes, Capgemini handles massive data migrations (e.g., Teradata to cloud data lakes/Snowflake) and multi-source data integration.[[1]](https://www.linkedin.com/pulse/top-8-data-lake-consulting-companies-enterprise-boris-sukhorukov-rzzrf)\n- **Infosys** : Known for enterprise-scale frameworks like its \"Boundaryless Data Lake\" offerings, Infosys focuses on data consistency, cross-department workflows, and cloud data lake execution.[[1]](https://www.linkedin.com/pulse/top-8-data-lake-consulting-companies-enterprise-boris-sukhorukov-rzzrf)\n- **Cognizant** : A major player for highly regulated sectors like finance and healthcare, focusing on data lake stability, strict compliance, and rigorous quality control at scale.[[1]](https://www.linkedin.com/pulse/top-8-data-lake-consulting-companies-enterprise-boris-sukhorukov-rzzrf)",
+         "links": null,
+         "images": null,
+         "references": [
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Beyond Key",
+           "domain": "www.beyondkey.com",
+           "url": "https://www.beyondkey.com/blog/top-data-engineering-consulting-companies/",
+           "title": "Top Data Engineering Consulting Companies in 2026",
+           "text": "Accenture. When the scope is a multi-region, multi-system modernization program and data"
+          },
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "LinkedIn",
+           "domain": "www.linkedin.com",
+           "url": "https://www.linkedin.com/pulse/top-8-data-lake-consulting-companies-enterprise-boris-sukhorukov-rzzrf",
+           "title": "Top 8 Data Lake Consulting Companies for Enterprise ...",
+           "text": "Capgemini works with enterprise data lakes in complex IT landscapes where a large number of systems and data sources need to be in..."
+          }
+         ]
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": "Specialized & Mid-Market Big Data Consultancies",
+         "text": "These firms are often chosen for deep technical specialization, rapid deployment, and targeted engineering execution around specific cloud/lakehouse ecosystems.",
+         "markdown": "These firms are often chosen for deep technical specialization, rapid deployment, and targeted engineering execution around specific cloud/lakehouse ecosystems.",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "ScienceSoft : Active in data analytics since 1989, ScienceSoft provides secure, compliance-first data lake and data warehouse blueprints tailored for heavily regulated industries like banking and healthcare. ScienceSoft ScienceSoft N-iX : A prominent big data partner specializing in end-to-end data lakehouse architecture design (Bronze/Silver/Gold modeling), complex data ingestion pipelines, and multi-cloud delivery. N-iX Sigmoid : Recognized for handling high-volume, complex data engineering challenges and real-time streaming architectures built on top of modern data lakes. Sigmoid",
+         "markdown": "- **ScienceSoft** : Active in data analytics since 1989, ScienceSoft provides secure, compliance-first data lake and data warehouse blueprints tailored for heavily regulated industries like banking and healthcare.\n- **N-iX** : A prominent big data partner specializing in end-to-end data lakehouse architecture design (Bronze/Silver/Gold modeling), complex data ingestion pipelines, and multi-cloud delivery.\n- **Sigmoid** : Recognized for handling high-volume, complex data engineering challenges and real-time streaming architectures built on top of modern data lakes.[[1]](https://www.corporatevision-news.com/top-5-data-warehouse-consulting-companies-in-2026/)[[2]](https://www.beyondkey.com/blog/top-data-engineering-consulting-companies/)",
+         "links": null,
+         "images": null,
+         "references": [
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Corporate Vision Magazine",
+           "domain": "www.corporatevision-news.com",
+           "url": "https://www.corporatevision-news.com/top-5-data-warehouse-consulting-companies-in-2026/",
+           "title": "Top 5 Data Warehouse Consulting Companies in 2026",
+           "text": "The company offers highly secure architecture blueprints suited for heavily regulated sectors, such as healthcare, finance, bankin..."
+          },
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Beyond Key",
+           "domain": "www.beyondkey.com",
+           "url": "https://www.beyondkey.com/blog/top-data-engineering-consulting-companies/",
+           "title": "Top Data Engineering Consulting Companies in 2026",
+           "text": "Sigmoid is worth a look when the data is the hard part, large volumes, its data engineering work is usually done"
+          }
+         ]
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "If you'd like to narrow down the best partner for your organization, let me know:",
+         "markdown": "If you'd like to narrow down the best partner for your organization, let me know:",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "Are you working within a specific cloud ecosystem ( AWS, Azure, GCP ) or platform ( Databricks, Snowflake )? What is the rough scale of your data and your primary industry ( finance, retail, healthcare, etc. )?",
+         "markdown": "- Are you working within a specific cloud ecosystem (**AWS**, **Azure**, **GCP** ) or platform (**Databricks**, **Snowflake**)?\n- What is the rough **scale of your data** and your primary industry (**finance, retail, healthcare, etc.**)?",
+         "links": null,
+         "images": null,
+         "references": null
+        }
+       ],
+       "references": [
+        {
+         "type": "ai_overview_reference",
+         "position": "right",
+         "source": "Beyond Key",
+         "domain": "www.beyondkey.com",
+         "url": "https://www.beyondkey.com/blog/top-data-engineering-consulting-companies/",
+         "title": "Top Data Engineering Consulting Companies in 2026",
+         "text": "Sigmoid is worth a look when the data is the hard part, large volumes, its data engineering work is usually done"
+        },
+        {
+         "type": "ai_overview_reference",
+         "position": "right",
+         "source": "LinkedIn",
+         "domain": "www.linkedin.com",
+         "url": "https://www.linkedin.com/pulse/top-8-data-lake-consulting-companies-enterprise-boris-sukhorukov-rzzrf",
+         "title": "Top 8 Data Lake Consulting Companies for Enterprise ...",
+         "text": "Cognizant is one of the leading data lake consulting firms with extensive experience in regulated industries. It specializes in data lakes in enterprise"
+        },
+        {
+         "type": "ai_overview_reference",
+         "position": "right",
+         "source": "Corporate Vision Magazine",
+         "domain": "www.corporatevision-news.com",
+         "url": "https://www.corporatevision-news.com/top-5-data-warehouse-consulting-companies-in-2026/",
+         "title": "Top 5 Data Warehouse Consulting Companies in 2026",
+         "text": "The company offers highly secure architecture blueprints suited for heavily regulated sectors, such as healthcare, finance, banking, manufacturing, and insurance."
+        }
+       ],
+       "rectangle": null
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

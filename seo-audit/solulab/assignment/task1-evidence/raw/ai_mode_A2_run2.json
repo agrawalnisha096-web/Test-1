@@ -1,0 +1,169 @@
+{
+ "version": "0.1.20261022",
+ "status_code": 20000,
+ "status_message": "Ok.",
+ "time": "6.3958 sec.",
+ "cost": 0.004,
+ "tasks_count": 1,
+ "tasks_error": 0,
+ "tasks": [
+  {
+   "id": "10271009-2577-0139-0000-0e4bf2f9563e",
+   "status_code": 20000,
+   "status_message": "Ok.",
+   "time": "6.2908 sec.",
+   "cost": 0.004,
+   "result_count": 1,
+   "path": [
+    "v3",
+    "serp",
+    "google",
+    "ai_mode",
+    "live",
+    "advanced"
+   ],
+   "data": {
+    "api": "serp",
+    "function": "live",
+    "se": "google",
+    "se_type": "ai_mode",
+    "keyword": "Which companies offer data warehouse consulting services for enterprises? Give me a shortlist.",
+    "location_code": 2840,
+    "language_code": "en",
+    "device": "desktop",
+    "tag": "A2-ai_mode-2",
+    "os": "windows"
+   },
+   "result": [
+    {
+     "keyword": "Which companies offer data warehouse consulting services for enterprises? Give me a shortlist.",
+     "type": "ai_mode",
+     "se_domain": "google.com",
+     "location_code": 2840,
+     "language_code": "en",
+     "check_url": "https://www.google.com/search?q=Which%20companies%20offer%20data%20warehouse%20consulting%20services%20for%20enterprises%3F%20Give%20me%20a%20shortlist.&hl=en&gl=US&udm=50&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+     "datetime": "2026-10-27 10:09:50 +00:00",
+     "spell": null,
+     "refinement_chips": null,
+     "item_types": [
+      "ai_overview"
+     ],
+     "se_results_count": 0,
+     "items_count": 1,
+     "items": [
+      {
+       "type": "ai_overview",
+       "rank_group": 1,
+       "rank_absolute": 1,
+       "page": 1,
+       "position": "left",
+       "xpath": "/html[1]/body[1]/div[2]/div[1]/div[9]/div[1]/section[1]/div[1]/div[1]/div[3]/div[4]/div[1]/div[2]/div[1]/div[3]",
+       "markdown": "Here is a shortlist of top enterprise-grade data warehouse consulting and implementation companies, categorized by their primary strengths and ecosystem focus:\n\n- **Accenture** \u2013 Best for **large-scale global digital transformations** and end-to-end data strategy across multi-cloud environments (AWS, Azure, GCP). They combine massive business consulting scale with deep technical implementation teams.\n- **Capgemini** \u2013 Best for **SAP-heavy enterprise environments** . They excel at integrating modern cloud data warehouses with legacy SAP BW/4HANA or S/4HANA architectures.[[1]](https://www.reddit.com/r/N_iX/comments/1wuyw1l/top_data_warehouse_consulting_companies_in_2026/)\n- **Infosys** \u2013 Best for **outsourced enterprise data estates** and robust cloud modernization via their Cobalt suite, offering extensive global delivery and 24/7 maintenance frameworks.[[1]](https://www.corporatevision-news.com/top-5-data-warehouse-consulting-companies-in-2026/)\n- **SoftServe** \u2013 Best for **high-velocity engineering** and mid-to-large enterprise data modernization without the heavy overhead and coordination layers of the Big Four.[[1]](https://www.reddit.com/r/N_iX/comments/1wuyw1l/top_data_warehouse_consulting_companies_in_2026/)\n- **GlobalLogic** \u2013 Best for **industrial IoT, edge, and operational technology (OT/IT) convergence** , leveraging their Hitachi heritage to ingest and warehouse data from physical machinery and edge devices.[[1]](https://www.reddit.com/r/N_iX/comments/1wuyw1l/top_data_warehouse_consulting_companies_in_2026/)\n\nTo help narrow down this list, could you share:\n\n- Your preferred **cloud ecosystem** (e.g., Snowflake, AWS Redshift, Google BigQuery, Microsoft Azure Synapse)\n- Whether you are doing a **greenfield build** or a **legacy migration**",
+       "items": [
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "Here is a shortlist of top enterprise-grade data warehouse consulting and implementation companies, categorized by their primary strengths and ecosystem focus:",
+         "markdown": "Here is a shortlist of top enterprise-grade data warehouse consulting and implementation companies, categorized by their primary strengths and ecosystem focus:",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "Accenture \u2013 Best for large-scale global digital transformations and end-to-end data strategy across multi-cloud environments (AWS, Azure, GCP). They combine massive business consulting scale with deep technical implementation teams. Capgemini \u2013 Best for SAP-heavy enterprise environments. They excel at integrating modern cloud data warehouses with legacy SAP BW/4HANA or S/4HANA architectures. Infosys \u2013 Best for outsourced enterprise data estates and robust cloud modernization via their Cobalt suite, offering extensive global delivery and 24/7 maintenance frameworks. SoftServe \u2013 Best for high-velocity engineering and mid-to-large enterprise data modernization without the heavy overhead and coordination layers of the Big Four. GlobalLogic \u2013 Best for industrial IoT, edge, and operational technology (OT/IT) convergence, leveraging their Hitachi heritage to ingest and warehouse data from physical machinery and edge devices.",
+         "markdown": "- **Accenture** \u2013 Best for **large-scale global digital transformations** and end-to-end data strategy across multi-cloud environments (AWS, Azure, GCP). They combine massive business consulting scale with deep technical implementation teams.\n- **Capgemini** \u2013 Best for **SAP-heavy enterprise environments** . They excel at integrating modern cloud data warehouses with legacy SAP BW/4HANA or S/4HANA architectures.[[1]](https://www.reddit.com/r/N_iX/comments/1wuyw1l/top_data_warehouse_consulting_companies_in_2026/)\n- **Infosys** \u2013 Best for **outsourced enterprise data estates** and robust cloud modernization via their Cobalt suite, offering extensive global delivery and 24/7 maintenance frameworks.[[1]](https://www.corporatevision-news.com/top-5-data-warehouse-consulting-companies-in-2026/)\n- **SoftServe** \u2013 Best for **high-velocity engineering** and mid-to-large enterprise data modernization without the heavy overhead and coordination layers of the Big Four.[[1]](https://www.reddit.com/r/N_iX/comments/1wuyw1l/top_data_warehouse_consulting_companies_in_2026/)\n- **GlobalLogic** \u2013 Best for **industrial IoT, edge, and operational technology (OT/IT) convergence** , leveraging their Hitachi heritage to ingest and warehouse data from physical machinery and edge devices.[[1]](https://www.reddit.com/r/N_iX/comments/1wuyw1l/top_data_warehouse_consulting_companies_in_2026/)",
+         "links": null,
+         "images": null,
+         "references": [
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Reddit",
+           "domain": "www.reddit.com",
+           "url": "https://www.reddit.com/r/N_iX/comments/1wuyw1l/top_data_warehouse_consulting_companies_in_2026/",
+           "title": "Top Data Warehouse Consulting Companies in 2026 - Reddit",
+           "text": "For SAP-heavy environments - Capgemini is the clearest fit. The integration depth with SAP BW/4HANA and S/4HANA is a genuine diffe..."
+          },
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Corporate Vision Magazine",
+           "domain": "www.corporatevision-news.com",
+           "url": "https://www.corporatevision-news.com/top-5-data-warehouse-consulting-companies-in-2026/",
+           "title": "Top 5 Data Warehouse Consulting Companies in 2026",
+           "text": "Infosys provides enterprise-level data warehouse services through its Data and Analytics and Cobalt (cloud) suite, supporting comp..."
+          }
+         ]
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "To help narrow down this list, could you share:",
+         "markdown": "To help narrow down this list, could you share:",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "Your preferred cloud ecosystem (e.g., Snowflake, AWS Redshift, Google BigQuery, Microsoft Azure Synapse) Whether you are doing a greenfield build or a legacy migration",
+         "markdown": "- Your preferred **cloud ecosystem** (e.g., Snowflake, AWS Redshift, Google BigQuery, Microsoft Azure Synapse)\n- Whether you are doing a **greenfield build** or a **legacy migration**",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_paid",
+         "position": "left",
+         "text": "Here's another provider to consider for your enterprise data warehouse consulting needs.",
+         "markdown": "Here's another provider to consider for your enterprise data warehouse consulting needs.",
+         "items": [
+          {
+           "type": "ai_overview_paid_element",
+           "title": "Enterprise Data Warehouse - Warehouse Strategy & Design - Optimize Data Performance",
+           "url": null,
+           "domain": null,
+           "ad_aclk": "DChsSEwit5K6s-tmXAxUax7EHHfOmG9cYACICCAIQABoCbHI",
+           "website_name": "Pythian",
+           "breadcrumb": null,
+           "snippet": "Wherever your data lives, Pythian provides unmatched data warehouse consulting for less.",
+           "images": null
+          }
+         ]
+        }
+       ],
+       "references": [
+        {
+         "type": "ai_overview_reference",
+         "position": "right",
+         "source": "Corporate Vision Magazine",
+         "domain": "www.corporatevision-news.com",
+         "url": "https://www.corporatevision-news.com/top-5-data-warehouse-consulting-companies-in-2026/",
+         "title": "Top 5 Data Warehouse Consulting Companies in 2026",
+         "text": "Infosys provides enterprise-level data warehouse services through its Data and Analytics and Cobalt (cloud) suite, supporting complex data transformation initiativ..."
+        },
+        {
+         "type": "ai_overview_reference",
+         "position": "right",
+         "source": "Reddit",
+         "domain": "www.reddit.com",
+         "url": "https://www.reddit.com/r/N_iX/comments/1wuyw1l/top_data_warehouse_consulting_companies_in_2026/",
+         "title": "Top Data Warehouse Consulting Companies in 2026 - Reddit",
+         "text": "For industrial and IoT data - GlobalLogic's Hitachi heritage gives it capabilities the others don't have on OT/IT convergence."
+        }
+       ],
+       "rectangle": null
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,218 @@
+{
+ "version": "0.1.20261022",
+ "status_code": 20000,
+ "status_message": "Ok.",
+ "time": "10.5646 sec.",
+ "cost": 0.004,
+ "tasks_count": 1,
+ "tasks_error": 0,
+ "tasks": [
+  {
+   "id": "10271010-2577-0139-0000-1cf0d85a5a11",
+   "status_code": 20000,
+   "status_message": "Ok.",
+   "time": "10.5096 sec.",
+   "cost": 0.004,
+   "result_count": 1,
+   "path": [
+    "v3",
+    "serp",
+    "google",
+    "ai_mode",
+    "live",
+    "advanced"
+   ],
+   "data": {
+    "api": "serp",
+    "function": "live",
+    "se": "google",
+    "se_type": "ai_mode",
+    "keyword": "What are the best white label voice AI agent platforms for agencies?",
+    "location_code": 2840,
+    "language_code": "en",
+    "device": "desktop",
+    "tag": "I1-ai_mode-2",
+    "os": "windows"
+   },
+   "result": [
+    {
+     "keyword": "What are the best white label voice AI agent platforms for agencies?",
+     "type": "ai_mode",
+     "se_domain": "google.com",
+     "location_code": 2840,
+     "language_code": "en",
+     "check_url": "https://www.google.com/search?q=What%20are%20the%20best%20white%20label%20voice%20AI%20agent%20platforms%20for%20agencies%3F&hl=en&gl=US&udm=50&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+     "datetime": "2026-10-27 10:10:15 +00:00",
+     "spell": null,
+     "refinement_chips": null,
+     "item_types": [
+      "ai_overview"
+     ],
+     "se_results_count": 0,
+     "items_count": 1,
+     "items": [
+      {
+       "type": "ai_overview",
+       "rank_group": 1,
+       "rank_absolute": 1,
+       "page": 1,
+       "position": "left",
+       "xpath": "/html[1]/body[1]/div[2]/div[1]/div[9]/div[1]/section[1]/div[1]/div[1]/div[3]/div[4]/div[1]/div[1]/div[1]/div[3]",
+       "markdown": "When looking for the best **white-label voice AI agent platforms** for an agency, the ecosystem generally splits into two categories:[[1]](https://www.retellai.com/blog/white-label-voice-ai-platforms-agencies)\n\n1. **Turnkey Agency Reseller Platforms** (fully rebranded dashboards, client sub-accounts, and built-in billing).\n2. **Underlying Voice/Conversational Engines** paired with agency wrappers (where you leverage raw tech like ElevenLabs or Retell AI and use a third-party portal layer for client management).[[1]](https://autocalls.ai/white-label)\n\nTop choices for agencies categorized by how they handle white-labeling and client management include:\n\n- **[Autocalls](https://autocalls.ai/white-label)** \u2014 Best for a 100% turnkey agency setup. It features full brand customization (custom domains, logos, colors, client portals, and emails), integrated Stripe billing for client sub-accounts, multilingual support (100+ languages), and global phone numbers across 150+ countries.[[1]](https://autocalls.ai/white-label)\n- **byVoice** \u2014 Built specifically for agencies wanting to offer 24/7 inbound/outbound voice alongside multi-channel text agents (WhatsApp, SMS, Telegram). It offers fully branded accounts with custom pricing rules and built-in lead qualification and appointment-booking workflows.[[1]](https://www.byvoice.io/white-label-conversational-ai-platform)\n- **Retell AI + Agency Wrapper** \u2014 Best if you want ultra-low latency, developer-grade voice infrastructure. While Retell AI acts as the heavy-duty voice engine, many agencies pair it with a management wrapper (such as VoiceAIWrapper) to handle client onboarding, custom domain dashboards, and markup billing.[[1]](https://www.retellai.com/blog/white-label-voice-ai-platforms-agencies)\n- **Synthflow** \u2014 Popular among no-code/low-code agencies for building human-sounding conversational voice agents. It allows you to deploy inbound and outbound agents quickly, though you'll want to verify current agency sub-account and custom-branding tiers directly on their partner plans.[[1]](https://www.retellai.com/blog/white-label-voice-ai-platforms-agencies)\n- **Botpress** \u2014 Best for developer-led agencies. While primarily known as a conversational text/chatbot builder, their enterprise tiers support branding removal and custom UI/domains. However, adapting it strictly for heavy multi-client voice resale requires more custom developer configuration than turnkey voice platforms.\n\nIf you'd like, let me know:\n\n- Are you looking for a **fully no-code turnkey portal** or a **developer-friendly API engine**?\n- Do you plan to **bill clients directly through the platform** via Stripe?\n\nI can help narrow down the **ideal platform and pricing tier** for your agency model.",
+       "items": [
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "When looking for the best white-label voice AI agent platforms for an agency, the ecosystem generally splits into two categories:",
+         "markdown": "When looking for the best **white-label voice AI agent platforms** for an agency, the ecosystem generally splits into two categories:[[1]](https://www.retellai.com/blog/white-label-voice-ai-platforms-agencies)",
+         "links": null,
+         "images": null,
+         "references": [
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Retell AI",
+           "domain": "www.retellai.com",
+           "url": "https://www.retellai.com/blog/white-label-voice-ai-platforms-agencies",
+           "title": "Best White Label Voice AI Platforms for Agencies (2026)",
+           "text": "The white label voice AI options an agency can resell in 2026 include Retell AI, HighLevel Voice AI, Trillet, VoiceAIWrapper, Auto..."
+          }
+         ]
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "Turnkey Agency Reseller Platforms (fully rebranded dashboards, client sub-accounts, and built-in billing). Underlying Voice/Conversational Engines paired with agency wrappers (where you leverage raw tech like ElevenLabs or Retell AI and use a third-party portal layer for client management).",
+         "markdown": "1. **Turnkey Agency Reseller Platforms** (fully rebranded dashboards, client sub-accounts, and built-in billing).\n2. **Underlying Voice/Conversational Engines** paired with agency wrappers (where you leverage raw tech like ElevenLabs or Retell AI and use a third-party portal layer for client management).[[1]](https://autocalls.ai/white-label)",
+         "links": null,
+         "images": null,
+         "references": [
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Autocalls.ai",
+           "domain": "autocalls.ai",
+           "url": "https://autocalls.ai/white-label",
+           "title": "White-Label AI Voice Agent Platform for Agencies | Autocalls",
+           "text": "Agency White Label at $419/mo includes 3,500 minutes, $0.09/extra minute, 1,000 parallel calls, and unlimited client sub-accounts."
+          }
+         ]
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "Top choices for agencies categorized by how they handle white-labeling and client management include:",
+         "markdown": "Top choices for agencies categorized by how they handle white-labeling and client management include:",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "Autocalls \u2014 Best for a 100% turnkey agency setup. It features full brand customization (custom domains, logos, colors, client portals, and emails), integrated Stripe billing for client sub-accounts, multilingual support (100+ languages), and global phone numbers across 150+ countries. byVoice \u2014 Built specifically for agencies wanting to offer 24/7 inbound/outbound voice alongside multi-channel text agents (WhatsApp, SMS, Telegram). It offers fully branded accounts with custom pricing rules and built-in lead qualification and appointment-booking workflows. byVoice Retell AI + Agency Wrapper \u2014 Best if you want ultra-low latency, developer-grade voice infrastructure. While Retell AI acts as the heavy-duty voice engine, many agencies pair it with a management wrapper (such as VoiceAIWrapper) to handle client onboarding, custom domain dashboards, and markup billing. Retell AI Synthflow \u2014 Popular among no-code/low-code agencies for building human-sounding conversational voice agents. It allows you to deploy inbound and outbound agents quickly, though you'll want to verify current agency sub-account and custom-branding tiers directly on their partner plans. Synthflow Botpress \u2014 Best for developer-led agencies. While primarily known as a conversational text/chatbot builder, their enterprise tiers support branding removal and custom UI/domains. However, adapting it strictly for heavy multi-client voice resale requires more custom developer configuration than turnkey voice platforms. Botpress",
+         "markdown": "- **[Autocalls](https://autocalls.ai/white-label)** \u2014 Best for a 100% turnkey agency setup. It features full brand customization (custom domains, logos, colors, client portals, and emails), integrated Stripe billing for client sub-accounts, multilingual support (100+ languages), and global phone numbers across 150+ countries.[[1]](https://autocalls.ai/white-label)\n- **byVoice** \u2014 Built specifically for agencies wanting to offer 24/7 inbound/outbound voice alongside multi-channel text agents (WhatsApp, SMS, Telegram). It offers fully branded accounts with custom pricing rules and built-in lead qualification and appointment-booking workflows.[[1]](https://www.byvoice.io/white-label-conversational-ai-platform)\n- **Retell AI + Agency Wrapper** \u2014 Best if you want ultra-low latency, developer-grade voice infrastructure. While Retell AI acts as the heavy-duty voice engine, many agencies pair it with a management wrapper (such as VoiceAIWrapper) to handle client onboarding, custom domain dashboards, and markup billing.[[1]](https://www.retellai.com/blog/white-label-voice-ai-platforms-agencies)\n- **Synthflow** \u2014 Popular among no-code/low-code agencies for building human-sounding conversational voice agents. It allows you to deploy inbound and outbound agents quickly, though you'll want to verify current agency sub-account and custom-branding tiers directly on their partner plans.[[1]](https://www.retellai.com/blog/white-label-voice-ai-platforms-agencies)\n- **Botpress** \u2014 Best for developer-led agencies. While primarily known as a conversational text/chatbot builder, their enterprise tiers support branding removal and custom UI/domains. However, adapting it strictly for heavy multi-client voice resale requires more custom developer configuration than turnkey voice platforms.",
+         "links": null,
+         "images": null,
+         "references": [
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Autocalls.ai",
+           "domain": "autocalls.ai",
+           "url": "https://autocalls.ai/white-label",
+           "title": "White-Label AI Voice Agent Platform for Agencies | Autocalls",
+           "text": "100% white-labeled branding (logo, colors, domain, emails, client portal), integrated Stripe billing, 100+ languages, 300+ integrations, and global numbers"
+          },
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "byVoice",
+           "domain": "www.byvoice.io",
+           "url": "https://www.byvoice.io/white-label-conversational-ai-platform",
+           "title": "White Label AI Voice Agent Platform for Agencies | byVoice",
+           "text": "featuring full account control and no coding. lead qualification, and FAQ automation \u2026 solution for setting custom pricing and bra..."
+          },
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Retell AI",
+           "domain": "www.retellai.com",
+           "url": "https://www.retellai.com/blog/white-label-voice-ai-platforms-agencies",
+           "title": "Best White Label Voice AI Platforms for Agencies (2026)",
+           "text": "The white label voice AI options an agency can resell in 2026 include Retell AI, HighLevel Voice AI, Trillet, VoiceAIWrapper, Autocalls and Synthflow."
+          }
+         ]
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "If you'd like, let me know:",
+         "markdown": "If you'd like, let me know:",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "Are you looking for a fully no-code turnkey portal or a developer-friendly API engine ? Do you plan to bill clients directly through the platform via Stripe?",
+         "markdown": "- Are you looking for a **fully no-code turnkey portal** or a **developer-friendly API engine**?\n- Do you plan to **bill clients directly through the platform** via Stripe?",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "I can help narrow down the ideal platform and pricing tier for your agency model.",
+         "markdown": "I can help narrow down the **ideal platform and pricing tier** for your agency model.",
+         "links": null,
+         "images": null,
+         "references": null
+        }
+       ],
+       "references": [
+        {
+         "type": "ai_overview_reference",
+         "position": "right",
+         "source": "Autocalls.ai",
+         "domain": "autocalls.ai",
+         "url": "https://autocalls.ai/white-label",
+         "title": "White-Label AI Voice Agent Platform for Agencies | Autocalls",
+         "text": "100% white-labeled branding (logo, colors, domain, emails, client portal), integrated Stripe billing, 100+ languages, 300+ integrations, and global numbers"
+        },
+        {
+         "type": "ai_overview_reference",
+         "position": "right",
+         "source": "byVoice",
+         "domain": "www.byvoice.io",
+         "url": "https://www.byvoice.io/white-label-conversational-ai-platform",
+         "title": "White Label AI Voice Agent Platform for Agencies | byVoice",
+         "text": "featuring full account control and no coding. lead qualification, and FAQ automation \u2026 solution for setting custom pricing and branding up to 1,500 monthly minutes..."
+        },
+        {
+         "type": "ai_overview_reference",
+         "position": "right",
+         "source": "Retell AI",
+         "domain": "www.retellai.com",
+         "url": "https://www.retellai.com/blog/white-label-voice-ai-platforms-agencies",
+         "title": "Best White Label Voice AI Platforms for Agencies (2026)",
+         "text": "The white label voice AI options an agency can resell in 2026 include Retell AI, HighLevel Voice AI, Trillet, VoiceAIWrapper, Autocalls and Synthflow."
+        }
+       ],
+       "rectangle": null
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -37,7 +37,8 @@ from concurrent.futures import ThreadPoolExecutor
 import requests
 
 API = "https://api.dataforseo.com/v3/"
-BRAND = re.compile(r"\bsolu\s?lab\b", re.I)
+# Target brand per prompt: optional prompts-CSV columns brand, brand_regex, brand_domain (default SoluLab).
+DEFAULT_BRAND = ("SoluLab", r"\bsolu\s?lab\b", "solulab.com")
 COMPETITORS = [
     "LeewayHertz", "Debut Infotech", "PixelPlex", "Appinventiv", "Suffescom", "Markovate",
     "Simform", "ScienceSoft", "Itransition", "Intellectsoft", "TechAhead", "MindInventory",
@@ -162,17 +163,17 @@ def named_entities(answer):
     return names
 
 
-def brand_positions(answer):
-    """Order of first appearance of SoluLab and competitor brands in the answer."""
+def brand_positions(answer, brand, brand_re):
+    """Order of first appearance of the target brand and competitor brands in the answer."""
     hits = []
-    for name in ["SoluLab"] + COMPETITORS:
-        pat = BRAND if name == "SoluLab" else re.compile(rf"\b{re.escape(name)}\b", re.I)
+    for name in [brand] + [c for c in COMPETITORS if c.lower() != brand.lower()]:
+        pat = brand_re if name == brand else re.compile(rf"\b{re.escape(name)}\b", re.I)
         m = pat.search(answer)
         if m:
             hits.append((m.start(), name))
     order = [n for _, n in sorted(hits)]
-    pos = order.index("SoluLab") + 1 if "SoluLab" in order else ""
-    return pos, [n for n in order if n != "SoluLab"]
+    pos = order.index(brand) + 1 if brand in order else ""
+    return pos, [n for n in order if n != brand]
 
 
 def domain(u):
@@ -253,22 +254,26 @@ def main():
         total_cost += p["cost"] or 0
         if p["status"] != 20000:
             print(f"TASK ERROR {platform} {q['query_id']} run {n}: {p['status']} {p['status_message']}")
-        sl_urls = [u for u in p["urls"] if "solulab.com" in domain(u)]
-        sl_retrieved = [u for u in p["retrieved"] if "solulab.com" in domain(u)]
-        pos, comps = brand_positions(p["answer"])
+        brand = q.get("brand") or DEFAULT_BRAND[0]
+        brand_re = re.compile(q.get("brand_regex") or DEFAULT_BRAND[1], re.I)
+        bdom = q.get("brand_domain") or DEFAULT_BRAND[2]
+        sl_urls = [u for u in p["urls"] if bdom in domain(u)]
+        sl_retrieved = [u for u in p["retrieved"] if bdom in domain(u)]
+        pos, comps = brand_positions(p["answer"], brand, brand_re)
         rows.append({
             "query_id": q["query_id"], "platform": platform, "mode": "DataForSEO API",
             "run_no": n, "date_utc": r["started"].date().isoformat(),
             "time_utc": r["started"].strftime("%H:%M"), "tester_location": q["market"],
             "logged_in": "n/a (API)", "exact_prompt": q["exact_prompt"],
-            "solulab_mentioned": bool(BRAND.search(p["answer"])),
-            "solulab_recommended": "",  # judge from the saved answer
-            "solulab_cited": bool(sl_urls), "solulab_cited_urls": " | ".join(sl_urls),
+            "brand": brand,
+            "brand_mentioned": bool(brand_re.search(p["answer"])),
+            "brand_recommended": "",  # judge from the saved answer
+            "brand_cited": bool(sl_urls), "brand_cited_urls": " | ".join(sl_urls),
             "position_in_list": pos, "competitor_brands": "; ".join(comps),
-            "cited_urls": " | ".join(p["urls"]), "facts_about_solulab_correct": "",
+            "cited_urls": " | ".join(p["urls"]), "facts_about_brand_correct": "",
             "screenshot_file": f"raw/{platform}_{q['query_id']}_run{n}.json",
             "named_entities": "; ".join(p["entities"]),
-            "solulab_retrieved_not_cited": " | ".join(u for u in sl_retrieved if u not in sl_urls),
+            "brand_retrieved_not_cited": " | ".join(u for u in sl_retrieved if u not in sl_urls),
             "notes": f"status {p['status']}; answer_chars {len(p['answer'])}; api_datetime {p['datetime']}",
         })
 
@@ -280,9 +285,9 @@ def main():
         w.writerows(rows)
 
     # summary.md
-    lines = [f"# Task 2 results (DataForSEO, {rows[0]['date_utc']})", "",
+    lines = [f"# AI visibility results (DataForSEO, {rows[0]['date_utc']})", "",
              f"Runs per prompt per platform: {args.runs}. Total API cost: ${total_cost:.3f}.", "",
-             "| ID | Platform | Mentioned | Cited | SoluLab URL(s) cited | Top competitors (runs) | Top cited domains (runs) |",
+             "| ID | Platform | Mentioned | Cited | Brand URL(s) cited | Top competitors (runs) | Top cited domains (runs) |",
              "|---|---|---|---|---|---|---|"]
     by = collections.defaultdict(list)
     named = {}
@@ -290,9 +295,9 @@ def main():
         by[(row["query_id"], row["platform"])].append(row)
     for (qid, plat), g in sorted(by.items()):
         k = len(g)
-        ment = sum(r["solulab_mentioned"] for r in g)
-        cit = sum(r["solulab_cited"] for r in g)
-        sl = sorted({u for r in g for u in r["solulab_cited_urls"].split(" | ") if u})
+        ment = sum(r["brand_mentioned"] for r in g)
+        cit = sum(r["brand_cited"] for r in g)
+        sl = sorted({u for r in g for u in r["brand_cited_urls"].split(" | ") if u})
         comp = collections.Counter(c for r in g for c in set(filter(None, r["competitor_brands"].split("; "))))
         doms = collections.Counter(d for r in g for d in {domain(u) for u in r["cited_urls"].split(" | ") if u})
         ents = collections.Counter(e for r in g for e in set(filter(None, r["named_entities"].split("; "))))
@@ -303,8 +308,11 @@ def main():
     lines += ["", "## Names recommended in the answers (runs naming each)", ""]
     for (qid, plat), ents in sorted(named.items()):
         lines.append(f"- **{qid} / {plat}:** " + (", ".join(f"{e} ({v})" for e, v in ents.most_common(12)) or "-"))
+    brand_domains = {r["brand_cited_urls"] and domain(r["brand_cited_urls"].split(" | ")[0]) for r in rows} | {DEFAULT_BRAND[2]} | {q.get("brand_domain") for q in prompts if q.get("brand_domain")}
+    brand_domains.discard("")
+    brand_domains.discard(None)
     third = collections.Counter(d for r in rows for d in {domain(u) for u in r["cited_urls"].split(" | ") if u}
-                                if "solulab.com" not in d)
+                                if not any(b in d for b in brand_domains))
     lines += ["", "## Third-party domains cited most (all queries, all platforms) - E1 source list", "",
               "| Domain | Runs citing it |", "|---|---|"]
     lines += [f"| {d} | {v} |" for d, v in third.most_common(30)]

@@ -1,0 +1,152 @@
+{
+ "version": "0.1.20261022",
+ "status_code": 20000,
+ "status_message": "Ok.",
+ "time": "12.1421 sec.",
+ "cost": 0.004,
+ "tasks_count": 1,
+ "tasks_error": 0,
+ "tasks": [
+  {
+   "id": "10271009-2577-0139-0000-c70ab750defd",
+   "status_code": 20000,
+   "status_message": "Ok.",
+   "time": "11.9077 sec.",
+   "cost": 0.004,
+   "result_count": 1,
+   "path": [
+    "v3",
+    "serp",
+    "google",
+    "ai_mode",
+    "live",
+    "advanced"
+   ],
+   "data": {
+    "api": "serp",
+    "function": "live",
+    "se": "google",
+    "se_type": "ai_mode",
+    "keyword": "What are the best data engineering consulting companies in the US?",
+    "location_code": 2840,
+    "language_code": "en",
+    "device": "desktop",
+    "tag": "A1-ai_mode-1",
+    "os": "windows"
+   },
+   "result": [
+    {
+     "keyword": "What are the best data engineering consulting companies in the US?",
+     "type": "ai_mode",
+     "se_domain": "google.com",
+     "location_code": 2840,
+     "language_code": "en",
+     "check_url": "https://www.google.com/search?q=What%20are%20the%20best%20data%20engineering%20consulting%20companies%20in%20the%20US%3F&hl=en&gl=US&udm=50&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+     "datetime": "2026-10-27 10:09:43 +00:00",
+     "spell": null,
+     "refinement_chips": null,
+     "item_types": [
+      "ai_overview"
+     ],
+     "se_results_count": 0,
+     "items_count": 1,
+     "items": [
+      {
+       "type": "ai_overview",
+       "rank_group": 1,
+       "rank_absolute": 1,
+       "page": 1,
+       "position": "left",
+       "xpath": "/html[1]/body[1]/div[2]/div[1]/div[9]/div[1]/section[1]/div[1]/div[1]/div[3]/div[4]/div[1]/div[1]/div[1]/div[3]",
+       "markdown": "When looking for the best data engineering consulting companies in the US, the right choice depends heavily on your organization's size, budget, scale of transformation, and specific tech stack (such as `Snowflake, Databricks, AWS, or GCP`).\n\nLeading firms in the US data engineering ecosystem span several distinct tiers:\n\n- **Accenture** \u2014 Best for **multi-year, global-scale enterprise transformations** . They excel at massive cloud migrations, complex data architectures, and integrating enterprise-wide AI systems.\n- **Deloitte** \u2014 Best for **regulated, compliance-driven industries** (like healthcare and finance). They combine high-level data strategy with rigorous data governance, security, and risk frameworks.\n- **Boston Consulting Group (BCG)** \u2014 Best for **strategic ROI framing and high-level data operating models** before any heavy technical building begins. They bridge business goals with functional data squads.\n- **Thoughtworks** \u2014 Best for **advanced architectural concepts like Data Mesh** and modern decentralized platform strategies. They are ideal if you want to shift your internal engineering culture and operational model.[[1]](https://uvik.net/blog/data-engineering-companies/)\n- **Analytics8** \u2014 Best for **end-to-end data pipelines, modern data stack implementation, and BI enablement** . They specialize heavily in turning complex data environments into actionable operational assets using platforms like Azure and Python.\n- **DataArt** \u2014 Best for **mid-to-large enterprises in sectors like finance, media, and travel** looking for long-term engineering execution and robust platform development.[[1]](https://uvik.net/blog/data-engineering-companies/)\n\nIf you'd like to narrow down this list, tell me:\n\n- What is your primary **cloud or data platform** (e.g., Databricks, Snowflake, AWS, GCP)?\n- Are you looking for **strategic consulting/architecture** or **embedded engineers to build the pipelines**?\n\nI can recommend the most fitting partner for your exact setup.",
+       "items": [
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "When looking for the best data engineering consulting companies in the US, the right choice depends heavily on your organization's size, budget, scale of transformation, and specific tech stack (such as Snowflake, Databricks, AWS, or GCP ).",
+         "markdown": "When looking for the best data engineering consulting companies in the US, the right choice depends heavily on your organization's size, budget, scale of transformation, and specific tech stack (such as `Snowflake, Databricks, AWS, or GCP`).",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "Leading firms in the US data engineering ecosystem span several distinct tiers:",
+         "markdown": "Leading firms in the US data engineering ecosystem span several distinct tiers:",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "Accenture \u2014 Best for multi-year, global-scale enterprise transformations. They excel at massive cloud migrations, complex data architectures, and integrating enterprise-wide AI systems. Accenture Deloitte \u2014 Best for regulated, compliance-driven industries (like healthcare and finance). They combine high-level data strategy with rigorous data governance, security, and risk frameworks. Deloitte Boston Consulting Group (BCG) \u2014 Best for strategic ROI framing and high-level data operating models before any heavy technical building begins. They bridge business goals with functional data squads. Boston Consulting Group (BCG) Thoughtworks \u2014 Best for advanced architectural concepts like Data Mesh and modern decentralized platform strategies. They are ideal if you want to shift your internal engineering culture and operational model. Thoughtworks Analytics8 \u2014 Best for end-to-end data pipelines, modern data stack implementation, and BI enablement. They specialize heavily in turning complex data environments into actionable operational assets using platforms like Azure and Python. Analytics8 DataArt \u2014 Best for mid-to-large enterprises in sectors like finance, media, and travel looking for long-term engineering execution and robust platform development. DataArt",
+         "markdown": "- **Accenture** \u2014 Best for **multi-year, global-scale enterprise transformations** . They excel at massive cloud migrations, complex data architectures, and integrating enterprise-wide AI systems.\n- **Deloitte** \u2014 Best for **regulated, compliance-driven industries** (like healthcare and finance). They combine high-level data strategy with rigorous data governance, security, and risk frameworks.\n- **Boston Consulting Group (BCG)** \u2014 Best for **strategic ROI framing and high-level data operating models** before any heavy technical building begins. They bridge business goals with functional data squads.\n- **Thoughtworks** \u2014 Best for **advanced architectural concepts like Data Mesh** and modern decentralized platform strategies. They are ideal if you want to shift your internal engineering culture and operational model.[[1]](https://uvik.net/blog/data-engineering-companies/)\n- **Analytics8** \u2014 Best for **end-to-end data pipelines, modern data stack implementation, and BI enablement** . They specialize heavily in turning complex data environments into actionable operational assets using platforms like Azure and Python.\n- **DataArt** \u2014 Best for **mid-to-large enterprises in sectors like finance, media, and travel** looking for long-term engineering execution and robust platform development.[[1]](https://uvik.net/blog/data-engineering-companies/)",
+         "links": null,
+         "images": null,
+         "references": [
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Uvik Software",
+           "domain": "uvik.net",
+           "url": "https://uvik.net/blog/data-engineering-companies/",
+           "title": "Top Data Engineering Companies in 2026 | Uvik Software",
+           "text": "The data mesh concept came from Thoughtworks consultants. Best fit scenarios Data mesh programs. Platform strategy and operating m..."
+          }
+         ]
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "If you'd like to narrow down this list, tell me:",
+         "markdown": "If you'd like to narrow down this list, tell me:",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "What is your primary cloud or data platform (e.g., Databricks, Snowflake, AWS, GCP)? Are you looking for strategic consulting/architecture or embedded engineers to build the pipelines ?",
+         "markdown": "- What is your primary **cloud or data platform** (e.g., Databricks, Snowflake, AWS, GCP)?\n- Are you looking for **strategic consulting/architecture** or **embedded engineers to build the pipelines**?",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "I can recommend the most fitting partner for your exact setup.",
+         "markdown": "I can recommend the most fitting partner for your exact setup.",
+         "links": null,
+         "images": null,
+         "references": null
+        }
+       ],
+       "references": [
+        {
+         "type": "ai_overview_reference",
+         "position": "right",
+         "source": "Uvik Software",
+         "domain": "uvik.net",
+         "url": "https://uvik.net/blog/data-engineering-companies/",
+         "title": "Top Data Engineering Companies in 2026 | Uvik Software",
+         "text": "DataArt fits enterprises in finance, media and travel that need data platforms built and run. Best for: Enterprise data platforms for finance, media and travel. Lo..."
+        }
+       ],
+       "rectangle": null
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
