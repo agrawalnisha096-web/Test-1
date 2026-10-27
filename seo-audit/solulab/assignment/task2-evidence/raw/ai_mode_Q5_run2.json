@@ -1,0 +1,246 @@
+{
+ "version": "0.1.20261022",
+ "status_code": 20000,
+ "status_message": "Ok.",
+ "time": "5.8276 sec.",
+ "cost": 0.004,
+ "tasks_count": 1,
+ "tasks_error": 0,
+ "tasks": [
+  {
+   "id": "10270244-2577-0139-0000-94f517e8f0e0",
+   "status_code": 20000,
+   "status_message": "Ok.",
+   "time": "5.7783 sec.",
+   "cost": 0.004,
+   "result_count": 1,
+   "path": [
+    "v3",
+    "serp",
+    "google",
+    "ai_mode",
+    "live",
+    "advanced"
+   ],
+   "data": {
+    "api": "serp",
+    "function": "live",
+    "se": "google",
+    "se_type": "ai_mode",
+    "keyword": "How much does it cost to hire a company to build an AI agent, and which firms offer this service?",
+    "location_code": 2840,
+    "language_code": "en",
+    "device": "desktop",
+    "tag": "Q5-ai_mode-2",
+    "os": "windows"
+   },
+   "result": [
+    {
+     "keyword": "How much does it cost to hire a company to build an AI agent, and which firms offer this service?",
+     "type": "ai_mode",
+     "se_domain": "google.com",
+     "location_code": 2840,
+     "language_code": "en",
+     "check_url": "https://www.google.com/search?q=How%20much%20does%20it%20cost%20to%20hire%20a%20company%20to%20build%20an%20AI%20agent%2C%20and%20which%20firms%20offer%20this%20service%3F&hl=en&gl=US&udm=50&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+     "datetime": "2026-10-27 02:45:02 +00:00",
+     "spell": null,
+     "refinement_chips": null,
+     "item_types": [
+      "ai_overview"
+     ],
+     "se_results_count": 0,
+     "items_count": 1,
+     "items": [
+      {
+       "type": "ai_overview",
+       "rank_group": 1,
+       "rank_absolute": 1,
+       "page": 1,
+       "position": "left",
+       "xpath": "/html[1]/body[1]/div[2]/div[1]/div[9]/div[1]/section[1]/div[1]/div[1]/div[3]/div[4]/div[1]/div[2]/div[1]/div[3]",
+       "markdown": "Hiring a firm to build a custom AI agent varies widely in cost depending on the architecture, scope, and level of autonomy required.[[1]](https://productcrafters.io/blog/how-much-does-it-cost-to-build-an-ai-agent/)[[2]](https://www.ayautomate.com/blog/ai-agent-development-cost-2026)\n\n### Cost Breakdown to Build an AI Agent\n\nThe pricing scales with complexity, moving from simple automated prompts to multi-agent, enterprise-grade ecosystems:\n\n- **Single-Workflow / Simple Agents ($3,000 \u2013 $15,000):** \n\t- *Scope:* Built for one specific task (e.g., an automated FAQ responder or simple lead router) using basic rules and a single foundational LLM integration. Takes 1\u20132 weeks.[[1]](https://www.ayautomate.com/blog/ai-agent-development-cost-2026)[[2]](https://productcrafters.io/blog/how-much-does-it-cost-to-build-an-ai-agent/)\n- **Production Agents with RAG & Integrations ($15,000 \u2013 $75,000):** \n\t- *Scope:* Mid-market standard. Connects securely to internal company data (Retrieval-Augmented Generation) and executes multiple API calls or workflow actions.[[1]](https://www.ayautomate.com/blog/ai-agent-development-cost-2026)\n- **Multi-Agent Enterprise Systems ($75,000 \u2013 $500,000+):** \n\t- *Scope:* Complex, autonomous systems for large organizations featuring custom model fine-tuning, multi-tenant architectures, strict compliance (SOC 2, HIPAA), and robust cross-departmental tool orchestration.[[1]](https://productcrafters.io/blog/how-much-does-it-cost-to-build-an-ai-agent/)[[2]](https://www.ayautomate.com/blog/ai-agent-development-cost-2026)\n- **Ongoing Maintenance:** Expect annual maintenance and updates to run roughly **15% to 25%** of the initial development cost.[[1]](https://productcrafters.io/blog/how-much-does-it-cost-to-build-an-ai-agent/)\n\n### Firms and Categories Offering AI Agent Services\n\nThe landscape is diverse, ranging from massive global tech consultancies to specialized design studios and platform ecosystems:\n\n- **Global Enterprise Consultancies:** Firms like IBM Consulting , Accenture, and Deloitte handle large-scale, enterprise-wide agent deployments, secure integrations, and organizational transformation.[[1]](https://www.pixelmatters.com/insights/top-ai-agent-development-companies)\n- **Specialized AI & Software Dev Agencies:** Boutique development shops (such as Product Crafters, Ayautomate, and regional IT solution firms) specialize in rapidly scoping and shipping production-ready, mid-market RAG and workflow agents.[[1]](https://productcrafters.io/blog/how-much-does-it-cost-to-build-an-ai-agent/)[[2]](https://www.ayautomate.com/blog/ai-agent-development-cost-2026)\n- **Product & Digital Studios:** Studios like Work & Co, ustwo, and Pixelmatters focus heavily on integrating conversational and autonomous agents smoothly into customer-facing software products or dedicated digital workflows.[[1]](https://www.pixelmatters.com/insights/top-ai-agent-development-companies)\n- **Enterprise Ecosystem Platforms:** Companies like [Moveworks](https://www.moveworks.com/us/en/resources/blog/ai-agent-development-company) provide proprietary agent studios and enterprise frameworks designed to let organizations spin up secure workplace agents with less custom-coded overhead.\n\nIf you'd like to narrow this down, tell me:\n\n- What is the **primary task or workflow** you want the AI agent to handle?\n- Do you need it integrated with **specific enterprise software** (like Salesforce, Jira, or custom databases)?\n\nI can help you estimate a tighter budget or recommend the right approach.",
+       "items": [
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "Hiring a firm to build a custom AI agent varies widely in cost depending on the architecture, scope, and level of autonomy required.",
+         "markdown": "Hiring a firm to build a custom AI agent varies widely in cost depending on the architecture, scope, and level of autonomy required.[[1]](https://productcrafters.io/blog/how-much-does-it-cost-to-build-an-ai-agent/)[[2]](https://www.ayautomate.com/blog/ai-agent-development-cost-2026)",
+         "links": null,
+         "images": null,
+         "references": [
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "ProductCrafters",
+           "domain": "productcrafters.io",
+           "url": "https://productcrafters.io/blog/how-much-does-it-cost-to-build-an-ai-agent/",
+           "title": "AI Agent Development Cost $5K to $180K+ (2026)",
+           "text": "Enterprise AI agent development costs $75,000-$500,000+. Estimate AI agent cost using these factors: - Complexity: Simple (rules ="
+          },
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "AY Automate",
+           "domain": "www.ayautomate.com",
+           "url": "https://www.ayautomate.com/blog/ai-agent-development-cost-2026",
+           "title": "AI Agent Development Cost in 2026",
+           "text": "Custom AI agent development costs $3,000 to $250,000+ depending on scope. Single-workflow agents run $3,000-$15,000, production ag..."
+          }
+         ]
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": "Cost Breakdown to Build an AI Agent",
+         "text": "The pricing scales with complexity, moving from simple automated prompts to multi-agent, enterprise-grade ecosystems:",
+         "markdown": "The pricing scales with complexity, moving from simple automated prompts to multi-agent, enterprise-grade ecosystems:",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "Single-Workflow / Simple Agents ($3,000 \u2013 $15,000): Scope: Built for one specific task (e.g., an automated FAQ responder or simple lead router) using basic rules and a single foundational LLM integration. Takes 1\u20132 weeks. Production Agents with RAG & Integrations ($15,000 \u2013 $75,000): Scope: Mid-market standard. Connects securely to internal company data (Retrieval-Augmented Generation) and executes multiple API calls or workflow actions. Multi-Agent Enterprise Systems ($75,000 \u2013 $500,000+): Scope: Complex, autonomous systems for large organizations featuring custom model fine-tuning, multi-tenant architectures, strict compliance (SOC 2, HIPAA), and robust cross-departmental tool orchestration. Ongoing Maintenance: Expect annual maintenance and updates to run roughly 15% to 25% of the initial development cost.",
+         "markdown": "- **Single-Workflow / Simple Agents ($3,000 \u2013 $15,000):** \n\t- *Scope:* Built for one specific task (e.g., an automated FAQ responder or simple lead router) using basic rules and a single foundational LLM integration. Takes 1\u20132 weeks.[[1]](https://www.ayautomate.com/blog/ai-agent-development-cost-2026)[[2]](https://productcrafters.io/blog/how-much-does-it-cost-to-build-an-ai-agent/)\n- **Production Agents with RAG & Integrations ($15,000 \u2013 $75,000):** \n\t- *Scope:* Mid-market standard. Connects securely to internal company data (Retrieval-Augmented Generation) and executes multiple API calls or workflow actions.[[1]](https://www.ayautomate.com/blog/ai-agent-development-cost-2026)\n- **Multi-Agent Enterprise Systems ($75,000 \u2013 $500,000+):** \n\t- *Scope:* Complex, autonomous systems for large organizations featuring custom model fine-tuning, multi-tenant architectures, strict compliance (SOC 2, HIPAA), and robust cross-departmental tool orchestration.[[1]](https://productcrafters.io/blog/how-much-does-it-cost-to-build-an-ai-agent/)[[2]](https://www.ayautomate.com/blog/ai-agent-development-cost-2026)\n- **Ongoing Maintenance:** Expect annual maintenance and updates to run roughly **15% to 25%** of the initial development cost.[[1]](https://productcrafters.io/blog/how-much-does-it-cost-to-build-an-ai-agent/)",
+         "links": null,
+         "images": null,
+         "references": [
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "AY Automate",
+           "domain": "www.ayautomate.com",
+           "url": "https://www.ayautomate.com/blog/ai-agent-development-cost-2026",
+           "title": "AI Agent Development Cost in 2026",
+           "text": "Custom AI agent development costs $3,000 to $250,000+ depending on scope. Single-workflow agents run $3,000-$15,000, production agents with RAG and multiple integr..."
+          },
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "ProductCrafters",
+           "domain": "productcrafters.io",
+           "url": "https://productcrafters.io/blog/how-much-does-it-cost-to-build-an-ai-agent/",
+           "title": "AI Agent Development Cost $5K to $180K+ (2026)",
+           "text": "Enterprise AI agent development costs $75,000-$500,000+ for large organizations. = $15K-$30K, 4-6 weeks. Complex (multi-agent, memory, tools) = $50K-$150K"
+          }
+         ]
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": "Firms and Categories Offering AI Agent Services",
+         "text": "The landscape is diverse, ranging from massive global tech consultancies to specialized design studios and platform ecosystems:",
+         "markdown": "The landscape is diverse, ranging from massive global tech consultancies to specialized design studios and platform ecosystems:",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "Global Enterprise Consultancies: Firms like IBM Consulting, Accenture, and Deloitte handle large-scale, enterprise-wide agent deployments, secure integrations, and organizational transformation. IBM Consulting Specialized AI & Software Dev Agencies: Boutique development shops (such as Product Crafters, Ayautomate, and regional IT solution firms) specialize in rapidly scoping and shipping production-ready, mid-market RAG and workflow agents. Product & Digital Studios: Studios like Work & Co, ustwo, and Pixelmatters focus heavily on integrating conversational and autonomous agents smoothly into customer-facing software products or dedicated digital workflows. Enterprise Ecosystem Platforms: Companies like Moveworks provide proprietary agent studios and enterprise frameworks designed to let organizations spin up secure workplace agents with less custom-coded overhead.",
+         "markdown": "- **Global Enterprise Consultancies:** Firms like IBM Consulting , Accenture, and Deloitte handle large-scale, enterprise-wide agent deployments, secure integrations, and organizational transformation.[[1]](https://www.pixelmatters.com/insights/top-ai-agent-development-companies)\n- **Specialized AI & Software Dev Agencies:** Boutique development shops (such as Product Crafters, Ayautomate, and regional IT solution firms) specialize in rapidly scoping and shipping production-ready, mid-market RAG and workflow agents.[[1]](https://productcrafters.io/blog/how-much-does-it-cost-to-build-an-ai-agent/)[[2]](https://www.ayautomate.com/blog/ai-agent-development-cost-2026)\n- **Product & Digital Studios:** Studios like Work & Co, ustwo, and Pixelmatters focus heavily on integrating conversational and autonomous agents smoothly into customer-facing software products or dedicated digital workflows.[[1]](https://www.pixelmatters.com/insights/top-ai-agent-development-companies)\n- **Enterprise Ecosystem Platforms:** Companies like [Moveworks](https://www.moveworks.com/us/en/resources/blog/ai-agent-development-company) provide proprietary agent studios and enterprise frameworks designed to let organizations spin up secure workplace agents with less custom-coded overhead.",
+         "links": null,
+         "images": null,
+         "references": [
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Pixelmatters",
+           "domain": "www.pixelmatters.com",
+           "url": "https://www.pixelmatters.com/insights/top-ai-agent-development-companies",
+           "title": "Top AI agent development companies in 2026: who builds what",
+           "text": "Accenture, Deloitte and IBM Consulting enterprise-wide agent programs, and studios such as ustwo, Work & Co and Pixelmatters agent..."
+          },
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "ProductCrafters",
+           "domain": "productcrafters.io",
+           "url": "https://productcrafters.io/blog/how-much-does-it-cost-to-build-an-ai-agent/",
+           "title": "AI Agent Development Cost $5K to $180K+ (2026)",
+           "text": "Enterprise AI agent development costs $75,000-$500,000+ for large organizations. = $15K-$30K, 4-6 weeks. Complex (multi-agent, memory, tools) = $50K-$150K"
+          },
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "AY Automate",
+           "domain": "www.ayautomate.com",
+           "url": "https://www.ayautomate.com/blog/ai-agent-development-cost-2026",
+           "title": "AI Agent Development Cost in 2026",
+           "text": "Custom AI agent development costs $3,000 to $250,000+ depending on scope. Single-workflow agents run $3,000-$15,000, production agents with RAG and multiple integr..."
+          }
+         ]
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "If you'd like to narrow this down, tell me:",
+         "markdown": "If you'd like to narrow this down, tell me:",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "What is the primary task or workflow you want the AI agent to handle? Do you need it integrated with specific enterprise software (like Salesforce, Jira, or custom databases)?",
+         "markdown": "- What is the **primary task or workflow** you want the AI agent to handle?\n- Do you need it integrated with **specific enterprise software** (like Salesforce, Jira, or custom databases)?",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "I can help you estimate a tighter budget or recommend the right approach.",
+         "markdown": "I can help you estimate a tighter budget or recommend the right approach.",
+         "links": null,
+         "images": null,
+         "references": null
+        }
+       ],
+       "references": [
+        {
+         "type": "ai_overview_reference",
+         "position": "right",
+         "source": "ProductCrafters",
+         "domain": "productcrafters.io",
+         "url": "https://productcrafters.io/blog/how-much-does-it-cost-to-build-an-ai-agent/",
+         "title": "AI Agent Development Cost $5K to $180K+ (2026)",
+         "text": "Enterprise AI agent development costs $75,000-$500,000+ for large organizations. = $15K-$30K, 4-6 weeks. Complex (multi-agent, memory, tools) = $50K-$150K"
+        },
+        {
+         "type": "ai_overview_reference",
+         "position": "right",
+         "source": "Pixelmatters",
+         "domain": "www.pixelmatters.com",
+         "url": "https://www.pixelmatters.com/insights/top-ai-agent-development-companies",
+         "title": "Top AI agent development companies in 2026: who builds what",
+         "text": "studios such as ustwo, Work & Co and Pixelmatters agents designed into a product or workflow. The companies offering AI agent development in 2026 include the model..."
+        },
+        {
+         "type": "ai_overview_reference",
+         "position": "right",
+         "source": "AY Automate",
+         "domain": "www.ayautomate.com",
+         "url": "https://www.ayautomate.com/blog/ai-agent-development-cost-2026",
+         "title": "AI Agent Development Cost in 2026",
+         "text": "Custom AI agent development costs $3,000 to $250,000+ depending on scope. Single-workflow agents run $3,000-$15,000, production agents with RAG and multiple integr..."
+        }
+       ],
+       "rectangle": null
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,275 @@
+{
+ "version": "0.1.20261022",
+ "status_code": 20000,
+ "status_message": "Ok.",
+ "time": "11.6040 sec.",
+ "cost": 0.004,
+ "tasks_count": 1,
+ "tasks_error": 0,
+ "tasks": [
+  {
+   "id": "10270242-2577-0139-0000-475203970cef",
+   "status_code": 20000,
+   "status_message": "Ok.",
+   "time": "11.4955 sec.",
+   "cost": 0.004,
+   "result_count": 1,
+   "path": [
+    "v3",
+    "serp",
+    "google",
+    "ai_mode",
+    "live",
+    "advanced"
+   ],
+   "data": {
+    "api": "serp",
+    "function": "live",
+    "se": "google",
+    "se_type": "ai_mode",
+    "keyword": "Which companies should a US enterprise consider to build custom AI agents? Give me a shortlist with a reason for each.",
+    "location_code": 2840,
+    "language_code": "en",
+    "device": "desktop",
+    "tag": "Q1-ai_mode-3",
+    "os": "windows"
+   },
+   "result": [
+    {
+     "keyword": "Which companies should a US enterprise consider to build custom AI agents? Give me a shortlist with a reason for each.",
+     "type": "ai_mode",
+     "se_domain": "google.com",
+     "location_code": 2840,
+     "language_code": "en",
+     "check_url": "https://www.google.com/search?q=Which%20companies%20should%20a%20US%20enterprise%20consider%20to%20build%20custom%20AI%20agents%3F%20Give%20me%20a%20shortlist%20with%20a%20reason%20for%20each.&hl=en&gl=US&udm=50&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+     "datetime": "2026-10-27 02:43:00 +00:00",
+     "spell": null,
+     "refinement_chips": null,
+     "item_types": [
+      "ai_overview"
+     ],
+     "se_results_count": 0,
+     "items_count": 1,
+     "items": [
+      {
+       "type": "ai_overview",
+       "rank_group": 1,
+       "rank_absolute": 1,
+       "page": 1,
+       "position": "left",
+       "xpath": "/html[1]/body[1]/div[2]/div[1]/div[9]/div[1]/section[1]/div[1]/div[1]/div[3]/div[4]/div[1]/div[2]/div[1]/div[3]",
+       "markdown": "When a US enterprise looks to build custom AI agents, the right partner depends heavily on your existing tech stack, security and compliance mandates, and whether you are building on a hyperscaler cloud, an enterprise SaaS platform, or via specialized engineering services.[[1]](https://www.pixelmatters.com/insights/top-ai-agent-development-companies)[[2]](https://www.airtable.com/articles/enterprise-ai-agent-builder-platforms)[[3]](https://www.ayautomate.com/blog/best-ai-agent-development-companies-enterprise)\n\nA curated shortlist of top options for US enterprises, categorized by their core advantage, includes the following:\n\n### Hyperscaler & Native Ecosystem Platforms\n\n- **Microsoft (Azure AI Foundry / Copilot Studio):** **Best for Microsoft-centric enterprises.** If your organization runs on Microsoft 365, Azure, Teams, and Dynamics 365, Microsoft\u2019s native agent ecosystem allows custom agent deployment directly into your corporate tenant with native security, identity management (Entra ID), and pre-built connectors to enterprise data.\n- **Amazon Web Services (AWS Bedrock Agents):** **Best for data-heavy and infrastructure-driven custom builds.** AWS provides robust orchestration tools via Bedrock, allowing enterprise engineering teams to securely link custom agents to private S3 buckets, RDS databases, and Lambda functions without data leaving the secure AWS boundary.[[1]](https://www.airtable.com/articles/enterprise-ai-agent-builder-platforms)\n- **Google Cloud (Vertex AI Agent Builder):** **Best for enterprise search and multimodal integration.** Google\u2019s platform excels at grounding agents in massive enterprise document repositories, secure data warehouses (BigQuery), and real-time structured/unstructured data using Gemini's native context windows.\n\n### Enterprise SaaS & Workflow Giants\n\n- **Salesforce (Agentforce):** **Best for customer service and CRM-bound operations.** If your custom agents need to safely execute actions inside customer records, sales pipelines, or service workflows, Agentforce provides a trusted enterprise runtime environment that enforces existing data permissions and guardrails.\n- **ServiceNow (Now Assist & Agent Studio):** **Best for IT service management (ITSM) and internal operations.** Ideal if your agents need to automate cross-departmental enterprise workflows (HR, IT requests, facilities) and trigger actions across disparate legacy corporate systems.[[1]](https://www.pixelmatters.com/insights/top-ai-agent-development-companies)\n\n### System Integrators & Advisory Firms\n\n- **Accenture (AI Refinery / Custom Agent Services):** **Best for massive, multi-functional enterprise transformations.** Accenture doesn't just build the technical agent; they specialize in the heavy lifting of change management, employee workflow redesign, and custom integrations across complex legacy setups like SAP or Oracle.\n- **Deloitte (AI & Strategic Governance Practice):** **Best for highly regulated industries (Banking, Healthcare, Pharma).** Deloitte focuses on building agents with rigorous audit trails, risk mitigation, and compliance frameworks built-in from day one to satisfy federal or industry-specific regulatory boards.[[1]](https://deployflow.co/blog/top-10-agentic-ai-development-companies-worldwide/)[[2]](https://www.pixelmatters.com/insights/top-ai-agent-development-companies)[[3]](https://www.ayautomate.com/blog/best-ai-agent-development-companies-enterprise)\n\n### Specialized AI & Product Engineering\n\n- **Palantir (AIP - Artificial Intelligence Platform):** **Best for operational data and ontology-driven decision-making.** Palantir\u2019s forward-deployed engineering model connects custom agents directly to complex, siloed operational data streams to execute physical or logistical automated decisions safely.\n- **LeewayHertz:** **Best for rapid, bespoke AI-native prototyping and private deployments.** A top-tier specialized boutique engineering firm that helps enterprises build custom agent architectures from scratch using open-source or commercial models with flexible infrastructure options.[[1]](https://deployflow.co/blog/top-10-agentic-ai-development-companies-worldwide/)[[2]](https://www.pixelmatters.com/insights/top-ai-agent-development-companies)\n\nTo help narrow down this list, could you share:\n\n- What is your **primary enterprise cloud or CRM stack** (AWS, Azure, Google Cloud, Salesforce, etc.)?\n- Are these agents meant for **internal employee workflows** or **external customer-facing** interactions?",
+       "items": [
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "When a US enterprise looks to build custom AI agents, the right partner depends heavily on your existing tech stack, security and compliance mandates, and whether you are building on a hyperscaler cloud, an enterprise SaaS platform, or via specialized engineering services.",
+         "markdown": "When a US enterprise looks to build custom AI agents, the right partner depends heavily on your existing tech stack, security and compliance mandates, and whether you are building on a hyperscaler cloud, an enterprise SaaS platform, or via specialized engineering services.[[1]](https://www.pixelmatters.com/insights/top-ai-agent-development-companies)[[2]](https://www.airtable.com/articles/enterprise-ai-agent-builder-platforms)[[3]](https://www.ayautomate.com/blog/best-ai-agent-development-companies-enterprise)",
+         "links": null,
+         "images": null,
+         "references": [
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Pixelmatters",
+           "domain": "www.pixelmatters.com",
+           "url": "https://www.pixelmatters.com/insights/top-ai-agent-development-companies",
+           "title": "Top AI agent development companies in 2026: who builds what",
+           "text": "In this article AI agent development companies at a glance Company Type Best for How it bills Standout OpenAI Deployment Company A..."
+          },
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Airtable",
+           "domain": "www.airtable.com",
+           "url": "https://www.airtable.com/articles/enterprise-ai-agent-builder-platforms",
+           "title": "Enterprise AI Agent Builder Platforms - Airtable",
+           "text": "Build frameworks: Open-source libraries like LangChain, LangGraph, CrewAI, and AutoGen \u2014 handle the logic of an agent: how it reas..."
+          },
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "AY Automate",
+           "domain": "www.ayautomate.com",
+           "url": "https://www.ayautomate.com/blog/best-ai-agent-development-companies-enterprise",
+           "title": "10 Best Enterprise AI Agent Development Companies (2026)",
+           "text": "Table_title: Fractal Analytics Table_content: | Company | Key strength | Pricing | Specialties | | --- | --- | --- | --- | | AY Au..."
+          }
+         ]
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "A curated shortlist of top options for US enterprises, categorized by their core advantage, includes the following:",
+         "markdown": "A curated shortlist of top options for US enterprises, categorized by their core advantage, includes the following:",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": "Hyperscaler & Native Ecosystem Platforms",
+         "text": "Microsoft (Azure AI Foundry / Copilot Studio): Best for Microsoft-centric enterprises. If your organization runs on Microsoft 365, Azure, Teams, and Dynamics 365, Microsoft\u2019s native agent ecosystem allows custom agent deployment directly into your corporate tenant with native security, identity management (Entra ID), and pre-built connectors to enterprise data. Amazon Web Services (AWS Bedrock Agents): Best for data-heavy and infrastructure-driven custom builds. AWS provides robust orchestration tools via Bedrock, allowing enterprise engineering teams to securely link custom agents to private S3 buckets, RDS databases, and Lambda functions without data leaving the secure AWS boundary. Google Cloud (Vertex AI Agent Builder): Best for enterprise search and multimodal integration. Google\u2019s platform excels at grounding agents in massive enterprise document repositories, secure data warehouses (BigQuery), and real-time structured/unstructured data using Gemini's native context windows.",
+         "markdown": "- **Microsoft (Azure AI Foundry / Copilot Studio):** **Best for Microsoft-centric enterprises.** If your organization runs on Microsoft 365, Azure, Teams, and Dynamics 365, Microsoft\u2019s native agent ecosystem allows custom agent deployment directly into your corporate tenant with native security, identity management (Entra ID), and pre-built connectors to enterprise data.\n- **Amazon Web Services (AWS Bedrock Agents):** **Best for data-heavy and infrastructure-driven custom builds.** AWS provides robust orchestration tools via Bedrock, allowing enterprise engineering teams to securely link custom agents to private S3 buckets, RDS databases, and Lambda functions without data leaving the secure AWS boundary.[[1]](https://www.airtable.com/articles/enterprise-ai-agent-builder-platforms)\n- **Google Cloud (Vertex AI Agent Builder):** **Best for enterprise search and multimodal integration.** Google\u2019s platform excels at grounding agents in massive enterprise document repositories, secure data warehouses (BigQuery), and real-time structured/unstructured data using Gemini's native context windows.",
+         "links": null,
+         "images": null,
+         "references": [
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Airtable",
+           "domain": "www.airtable.com",
+           "url": "https://www.airtable.com/articles/enterprise-ai-agent-builder-platforms",
+           "title": "Enterprise AI Agent Builder Platforms - Airtable",
+           "text": "Build frameworks: Open-source libraries like LangChain, LangGraph, CrewAI, and AutoGen \u2014 handle the logic of an agent: how it reasons, calls tools, and hands work ..."
+          }
+         ]
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": "Enterprise SaaS & Workflow Giants",
+         "text": "Salesforce (Agentforce): Best for customer service and CRM-bound operations. If your custom agents need to safely execute actions inside customer records, sales pipelines, or service workflows, Agentforce provides a trusted enterprise runtime environment that enforces existing data permissions and guardrails. ServiceNow (Now Assist & Agent Studio): Best for IT service management (ITSM) and internal operations. Ideal if your agents need to automate cross-departmental enterprise workflows (HR, IT requests, facilities) and trigger actions across disparate legacy corporate systems.",
+         "markdown": "- **Salesforce (Agentforce):** **Best for customer service and CRM-bound operations.** If your custom agents need to safely execute actions inside customer records, sales pipelines, or service workflows, Agentforce provides a trusted enterprise runtime environment that enforces existing data permissions and guardrails.\n- **ServiceNow (Now Assist & Agent Studio):** **Best for IT service management (ITSM) and internal operations.** Ideal if your agents need to automate cross-departmental enterprise workflows (HR, IT requests, facilities) and trigger actions across disparate legacy corporate systems.[[1]](https://www.pixelmatters.com/insights/top-ai-agent-development-companies)",
+         "links": null,
+         "images": null,
+         "references": [
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Pixelmatters",
+           "domain": "www.pixelmatters.com",
+           "url": "https://www.pixelmatters.com/insights/top-ai-agent-development-companies",
+           "title": "Top AI agent development companies in 2026: who builds what",
+           "text": "In this article AI agent development companies at a glance Company Type Best for How it bills Standout OpenAI Deployment Company AI lab's deployment team Large org..."
+          }
+         ]
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": "System Integrators & Advisory Firms",
+         "text": "Accenture (AI Refinery / Custom Agent Services): Best for massive, multi-functional enterprise transformations. Accenture doesn't just build the technical agent; they specialize in the heavy lifting of change management, employee workflow redesign, and custom integrations across complex legacy setups like SAP or Oracle. Deloitte (AI & Strategic Governance Practice): Best for highly regulated industries (Banking, Healthcare, Pharma). Deloitte focuses on building agents with rigorous audit trails, risk mitigation, and compliance frameworks built-in from day one to satisfy federal or industry-specific regulatory boards.",
+         "markdown": "- **Accenture (AI Refinery / Custom Agent Services):** **Best for massive, multi-functional enterprise transformations.** Accenture doesn't just build the technical agent; they specialize in the heavy lifting of change management, employee workflow redesign, and custom integrations across complex legacy setups like SAP or Oracle.\n- **Deloitte (AI & Strategic Governance Practice):** **Best for highly regulated industries (Banking, Healthcare, Pharma).** Deloitte focuses on building agents with rigorous audit trails, risk mitigation, and compliance frameworks built-in from day one to satisfy federal or industry-specific regulatory boards.[[1]](https://deployflow.co/blog/top-10-agentic-ai-development-companies-worldwide/)[[2]](https://www.pixelmatters.com/insights/top-ai-agent-development-companies)[[3]](https://www.ayautomate.com/blog/best-ai-agent-development-companies-enterprise)",
+         "links": null,
+         "images": null,
+         "references": [
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Deployflow",
+           "domain": "deployflow.co",
+           "url": "https://deployflow.co/blog/top-10-agentic-ai-development-companies-worldwide/",
+           "title": "Top 10 Agentic AI Development Companies in 2026",
+           "text": "The Best Agentic AI Development Companies in 2026, Reviewed 1. Deployflow: Best Agentic AI Company for DevOps and Infrastructure 2..."
+          },
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Pixelmatters",
+           "domain": "www.pixelmatters.com",
+           "url": "https://www.pixelmatters.com/insights/top-ai-agent-development-companies",
+           "title": "Top AI agent development companies in 2026: who builds what",
+           "text": "In this article AI agent development companies at a glance Company Type Best for How it bills Standout OpenAI Deployment Company AI lab's deployment team Large org..."
+          },
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "AY Automate",
+           "domain": "www.ayautomate.com",
+           "url": "https://www.ayautomate.com/blog/best-ai-agent-development-companies-enterprise",
+           "title": "10 Best Enterprise AI Agent Development Companies (2026)",
+           "text": "Table_title: Fractal Analytics Table_content: | Company | Key strength | Pricing | Specialties | | --- | --- | --- | --- | | AY Au..."
+          }
+         ]
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": "Specialized AI & Product Engineering",
+         "text": "Palantir (AIP - Artificial Intelligence Platform): Best for operational data and ontology-driven decision-making. Palantir\u2019s forward-deployed engineering model connects custom agents directly to complex, siloed operational data streams to execute physical or logistical automated decisions safely. LeewayHertz: Best for rapid, bespoke AI-native prototyping and private deployments. A top-tier specialized boutique engineering firm that helps enterprises build custom agent architectures from scratch using open-source or commercial models with flexible infrastructure options.",
+         "markdown": "- **Palantir (AIP - Artificial Intelligence Platform):** **Best for operational data and ontology-driven decision-making.** Palantir\u2019s forward-deployed engineering model connects custom agents directly to complex, siloed operational data streams to execute physical or logistical automated decisions safely.\n- **LeewayHertz:** **Best for rapid, bespoke AI-native prototyping and private deployments.** A top-tier specialized boutique engineering firm that helps enterprises build custom agent architectures from scratch using open-source or commercial models with flexible infrastructure options.[[1]](https://deployflow.co/blog/top-10-agentic-ai-development-companies-worldwide/)[[2]](https://www.pixelmatters.com/insights/top-ai-agent-development-companies)",
+         "links": null,
+         "images": null,
+         "references": [
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Deployflow",
+           "domain": "deployflow.co",
+           "url": "https://deployflow.co/blog/top-10-agentic-ai-development-companies-worldwide/",
+           "title": "Top 10 Agentic AI Development Companies in 2026",
+           "text": "The Best Agentic AI Development Companies in 2026, Reviewed 1. Deployflow: Best Agentic AI Company for DevOps and Infrastructure 2. Neurons Lab: Best for Agents Th..."
+          },
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Pixelmatters",
+           "domain": "www.pixelmatters.com",
+           "url": "https://www.pixelmatters.com/insights/top-ai-agent-development-companies",
+           "title": "Top AI agent development companies in 2026: who builds what",
+           "text": "In this article AI agent development companies at a glance Company Type Best for How it bills Standout OpenAI Deployment Company AI lab's deployment team Large org..."
+          }
+         ]
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "To help narrow down this list, could you share:",
+         "markdown": "To help narrow down this list, could you share:",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "What is your primary enterprise cloud or CRM stack (AWS, Azure, Google Cloud, Salesforce, etc.)? Are these agents meant for internal employee workflows or external customer-facing interactions?",
+         "markdown": "- What is your **primary enterprise cloud or CRM stack** (AWS, Azure, Google Cloud, Salesforce, etc.)?\n- Are these agents meant for **internal employee workflows** or **external customer-facing** interactions?",
+         "links": null,
+         "images": null,
+         "references": null
+        }
+       ],
+       "references": [
+        {
+         "type": "ai_overview_reference",
+         "position": "right",
+         "source": "Pixelmatters",
+         "domain": "www.pixelmatters.com",
+         "url": "https://www.pixelmatters.com/insights/top-ai-agent-development-companies",
+         "title": "Top AI agent development companies in 2026: who builds what",
+         "text": "In this article AI agent development companies at a glance Company Type Best for How it bills Standout OpenAI Deployment Company AI lab's deployment team Large org..."
+        },
+        {
+         "type": "ai_overview_reference",
+         "position": "right",
+         "source": "Deployflow",
+         "domain": "deployflow.co",
+         "url": "https://deployflow.co/blog/top-10-agentic-ai-development-companies-worldwide/",
+         "title": "Top 10 Agentic AI Development Companies in 2026",
+         "text": "The Best Agentic AI Development Companies in 2026, Reviewed 1. Deployflow: Best Agentic AI Company for DevOps and Infrastructure 2. Neurons Lab: Best for Agents Th..."
+        },
+        {
+         "type": "ai_overview_reference",
+         "position": "right",
+         "source": "Airtable",
+         "domain": "www.airtable.com",
+         "url": "https://www.airtable.com/articles/enterprise-ai-agent-builder-platforms",
+         "title": "Enterprise AI Agent Builder Platforms - Airtable",
+         "text": "Build frameworks: Open-source libraries like LangChain, LangGraph, CrewAI, and AutoGen \u2014 handle the logic of an agent: how it reasons, calls tools, and hands work ..."
+        }
+       ],
+       "rectangle": null
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

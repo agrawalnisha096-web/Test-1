@@ -1,0 +1,941 @@
+{
+ "version": "0.1.20261022",
+ "status_code": 20000,
+ "status_message": "Ok.",
+ "time": "30.7691 sec.",
+ "cost": 0.004,
+ "tasks_count": 1,
+ "tasks_error": 0,
+ "tasks": [
+  {
+   "id": "10270243-2577-0629-0000-0647c652152a",
+   "status_code": 20000,
+   "status_message": "Ok.",
+   "time": "30.6897 sec.",
+   "cost": 0.004,
+   "result_count": 1,
+   "path": [
+    "v3",
+    "ai_optimization",
+    "chat_gpt",
+    "llm_scraper",
+    "live",
+    "advanced"
+   ],
+   "data": {
+    "api": "ai_optimization",
+    "function": "live",
+    "se": "chat_gpt",
+    "keyword": "What are the top AI development companies in Dubai for enterprise projects?",
+    "location_code": 2784,
+    "language_code": "en",
+    "force_web_search": true,
+    "tag": "Q3-chatgpt-1",
+    "device": "desktop",
+    "os": "windows"
+   },
+   "result": [
+    {
+     "keyword": "What are the top AI development companies in Dubai for enterprise projects?",
+     "location_code": 2784,
+     "language_code": "en",
+     "model": "gpt-6",
+     "check_url": "https://chatgpt.com/?prompt=What%20are%20the%20top%20AI%20development%20companies%20in%20Dubai%20for%20enterprise%20projects%3F&hints=search",
+     "datetime": "2026-10-27 02:44:16 +00:00",
+     "markdown": "# Top AI development companies in Dubai for enterprise projects (2026)\n\nFor enterprise AI projects in Dubai, I\u2019d shortlist companies based on their ability to deliver secure, production-ready systems\u2014not just AI demos or chatbots. The strongest fit depends on whether you need custom generative AI, enterprise system integration, predictive analytics, or AI infrastructure for regulated workloads.\n\nRecent 2026 industry roundups identify providers including GBM, Core42, Presight, e&amp; enterprise, Alpha Data, and specialist AI development firms as options for businesses across Dubai and the wider UAE. These lists are useful starting points, rather than definitive independent rankings. [emtech.ae](https://emtech.ae/best-ai-solutions-companies-uae-2/?utm_source=chatgpt.com)[www.quytech.com](https://www.quytech.com/blog/top-ai-development-companies-in-dubai/?utm_source=chatgpt.com)[obgulf.com](https://obgulf.com/insights/ai-companies-in-uae?utm_source=chatgpt.com)\n\n## My enterprise shortlist\n\n![GBM Brandvoice](https://images.openai.com/static-rsc-4/0iiZHvDpk3ZP_bCm5OW8aCIG7frctGBfMn23oIElBD-GnGWXokLYBaKzucTeYXhPXKRrTMcbAuLpRiRmuHn9ECdrZHF7Lf1xH6CAYUTSY0YafDKIJJD-XmeJGCH_xMqcsdPnJOXqzsBMYvvVjGGwINgL1coXcmjwHyH35Dr3PNwgUZYkhz-5NjrCUE7CPS9I?purpose=fullsize)\n\n### 1\\. Gulf Business Machines (GBM)\n\n(Best for enterprise integration)\n\nStrong candidate for large organisations that need AI integrated with existing data platforms, enterprise applications, infrastructure and security. GBM has a substantial regional delivery organisation and announced a UAE AI lab powered by Cisco and NVIDIA technologies. [www.gbmme.com](https://www.gbmme.com/?utm_source=chatgpt.com)\n\nWebsite: [gbmme.com](https://www.gbmme.com/)\n\n---\n\n![e& + Intel Team Up to Build an AI Centre in Dubai](https://images.openai.com/static-rsc-4/PZ1E6aOzT3OY-IL7DgDKK9YczTW8N5WpUSW04ymsA9xJnGGuPkhxO0DQrXD8nKfNEjYu5Oujjm9Lh5qa-mvsZ2HWAgN-SgH4VySYz59naJ2UwQOlFkJssBtCU2RSvh5q6WXcm8kDDcH9KhDhK_Exb2iWRJqUtvRAoTr1hQoxhsVUyRQ4Wiu-TPcdvSqo3SyK?purpose=fullsize)\n\n### 2\\. e& enterprise\n\nA strong option for enterprise-wide transformation programmes involving AI, data platforms, automation, cloud and connected business processes. Consider it when AI needs to work across multiple departments and enterprise systems. [emtech.ae](https://emtech.ae/best-ai-solutions-companies-uae-2/?utm_source=chatgpt.com)\n\nWebsite: [eandenterprise.com](https://www.eandenterprise.com/)\n\n---\n\n![Core42 raises US$550 million from HSBC to scale global AI infrastructure | Emirates News Agency](https://images.openai.com/static-rsc-4/nJSLgk4LYiee66thn55dT-A3uNiqMhnMQCDjQtIr1-hB1ZmupnTdcVGRnYYeYyhUgsmIQEZ_3m5GtNUf6fAiFDgT3YBigQ6jSKST9ykryxUZ8gOraiID-BhJSGVHb9OycWimVcax6nM9Vt6hcdXO2leX7kBYyDI3UQVMIG-jsrclZvCi_4ERSLrqBB90sqLg?purpose=fullsize)\n\n### 3\\. Core42\n\nBest suited to projects where data residency, security, controlled AI hosting and scalable computing are central requirements. Its sovereign-cloud and AI infrastructure capabilities are particularly relevant for regulated enterprises and government-related workloads. [www.mediaoffice.abudhabi](https://www.mediaoffice.abudhabi/en/technology/core42-and-solutions-partner-to-build-sovereign-ai-infrastructure/?utm_source=chatgpt.com)[www.centralbank.ae](https://www.centralbank.ae/media/21me4pex/cbuae-and-core42-launch-the-world-s-first-sovereign-financial-cloud-to-strengthen-uae-s-financial-resilience-and-competitiveness-en.pdf?utm_source=chatgpt.com)\n\nWebsite: [core42.ai](https://core42.ai/)\n\n---\n\n![Presight reports sharp rise in revenue and continued international expansion | Khaleej Times](https://images.openai.com/static-rsc-4/vLabtz1iRxBLm48I0srlclvycDOc38KisXGZualmjTXZhcC9SURMSCLkLp-py1nIB9IfGWn3hkCRPFSvT50uyXlqq5g2sFw1V4PK9qBl2LexzHNoRVB5b_Y-PYcaxQr9-b1c8JX7ZFsUazwEpQ3llA19j0nXUsCUwlrKBSDkEK2gCFWp2TaIxGIC2G4jaaR0?purpose=fullsize)\n\n### 4\\. Presight\n\nParticularly relevant for complex analytics, predictive intelligence, computer vision and AI-driven operational decision-making. It is worth evaluating for large-scale government, finance, energy and smart-city projects. Presight is headquartered in Abu Dhabi and serves markets internationally. [www.presight.ai](https://www.presight.ai/?utm_source=chatgpt.com)[www.presight.ai](https://www.presight.ai/about?utm_source=chatgpt.com)\n\nWebsite: [presight.ai](https://www.presight.ai/)\n\n---\n\n![#alphadata #customertestimonial #cloudtransformation #digitaltransformation #techsupport #ai #partnership #trustedpartner #itsolutions #customerexperience #uae | Alpha Data](https://images.openai.com/static-rsc-4/FeMlqbVZwCefPHxNH9mvqG_XWjruh9d4TdmQgIKGXtadF-a87SZ4nHKeXKRLYV7LeWZ8uj4GmhGMo_0g7_4N3vPjk58BZuMiUxWS8tuG4HUAZzIs4_lPa_OMta4MZZtlt9Q1aeGCQd96K8e8RSUWRQDGPIkIQ4Rlco_n_ove2tFw9k6cFaEsAWM1W3Ulh6uq?purpose=fullsize)\n\n### 5\\. Alpha Data\n\nWorth considering for AI-enabled business applications, machine learning, intelligent automation and integration with existing enterprise infrastructure. Its regional IT services background is relevant when implementation and ongoing support matter as much as model development. [emtech.ae](https://emtech.ae/best-ai-solutions-companies-uae-2/?utm_source=chatgpt.com)\n\nWebsite: [alphadata.ae](https://alphadata.ae/)\n\n---\n\n![Quytech (@Quytech) on X](https://images.openai.com/static-rsc-4/99KS3917lWzjhTesa2YlIqhYC54pkF-GbNPoQ8I0KnoJECdl1qL_IXRW6f61sXy7kxJQab9eSIOPnSBNGOGoL-POGC4bSe7qwkBUmEUobqo9PrkdDHLIq8YQZAslN3TKbdw1FPng20BRQpkbLjemTLCG3rbJ9JRDiFZeeJRMTJSzxFZxI11UJXeXuz8R3zCg?purpose=fullsize)\n\n### 6\\. Quytech\n\nAn option for bespoke AI application development, generative AI, machine learning, computer vision and mobile or web products. Consider it if you need a custom-built application rather than primarily an enterprise infrastructure or consulting engagement. Verify the proposed UAE delivery team and relevant enterprise references. [emtech.ae](https://emtech.ae/best-ai-solutions-companies-uae-2/?utm_source=chatgpt.com)[www.quytech.com](https://www.quytech.com/blog/top-ai-development-companies-in-dubai/?utm_source=chatgpt.com)[obgulf.com](https://obgulf.com/insights/ai-companies-in-uae?utm_source=chatgpt.com)\n\nWebsite: [quytech.com](https://www.quytech.com/)\n\n## Which company should you choose?\n\n| Your enterprise requirement | Start with |\n|--------|--------|\n| AI integration with legacy systems and enterprise infrastructure | GBM |\n| Organisation-wide AI and digital transformation | e&amp; enterprise |\n| Private, sovereign or tightly controlled AI hosting | Core42 |\n| Predictive analytics and large-scale decision intelligence | Presight |\n| Enterprise IT implementation and ongoing support | Alpha Data |\n| Bespoke AI applications and custom software development | Quytech |\n\n\nThis is a fit-based shortlist, not a measured ranking of delivery quality. Several companies are headquartered in Abu Dhabi or operate across the UAE rather than being exclusively Dubai-based.\n\n## What to evaluate before signing a contract\n\nFor an enterprise project, I recommend requesting the following from every shortlisted vendor\\:\n\n- **Relevant case studies\\:** Two or three comparable projects, with measurable business outcomes and client references.\n- **Security and governance\\:** Data residency, access controls, encryption, audit trails, retention policies and applicable UAE regulatory requirements.\n- **Integration capabilities\\:** Demonstrated experience with your ERP, CRM, data warehouse, APIs and identity-management systems.\n- **Production readiness\\:** Monitoring, model evaluation, human oversight, versioning, incident response and ongoing maintenance.\n- **Commercial transparency\\:** Implementation costs, cloud and model usage fees, support SLAs, change requests and ownership of custom code.\n- **A paid proof of concept\\:** Agree on measurable success criteria before committing to a full rollout.\n\nOne important distinction: a company that provides AI infrastructure is not necessarily the company that will build your business application. For some projects, the best solution is a delivery partner combined with a separate cloud or model provider.\n\n## Let\u2019s narrow this down to your project\n\nSelect your requirements to get a more targeted shortlist of companies for your enterprise project in Dubai.\n\n1\\. What are you building?\n\nGenerative AI, copilots or AI agents\n\nCustom AI software or an AI-powered platform\n\nPredictive analytics or machine learning\n\nEnterprise automation and system integration\n\nPrivate AI infrastructure and deployment\n\n---\n\n2\\. Which industry?\n\nFinance / fintech\n\nHealthcare\n\nReal estate / construction\n\nRetail / e-commerce\n\nLogistics / manufacturing\n\nGovernment / other enterprise\n\n---\n\n3\\. Approximate project budget (AED)\n\nUnder AED 100,000\n\nAED 100,000\u2013250,000\n\nAED 250,000\u20131 million\n\nOver AED 1 million\n\nNot decided yet\n\n---\n\n4\\. Most important priority\n\nSecurity, compliance and data residency\n\nTechnical expertise and scalability\n\nFast delivery and cost efficiency\n\nLong-term support and maintenance\n\n[Find the best-fit companies]",
+     "search_results": [
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://www.quytech.com/blog/top-ai-development-companies-in-dubai/",
+       "domain": "www.quytech.com",
+       "title": "Top 10 AI Development Companies in Dubai, UAE for 2026",
+       "description": null,
+       "breadcrumb": "www.quytech.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://www.quytech.com/blog/top-ai-development-companies-in-dubai/",
+       "domain": "www.quytech.com",
+       "title": "Top 10 AI Development Companies in Dubai, UAE for 2026",
+       "description": null,
+       "breadcrumb": "www.quytech.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://emtech.ae/best-ai-solutions-companies-uae-2/",
+       "domain": "emtech.ae",
+       "title": "Top 10 AI Solutions Companies in UAE, Dubai & Abu Dhabi",
+       "description": null,
+       "breadcrumb": "emtech.ae"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://emtech.ae/best-ai-solutions-companies-uae-2/",
+       "domain": "emtech.ae",
+       "title": "Top 10 AI Solutions Companies in UAE, Dubai & Abu Dhabi",
+       "description": null,
+       "breadcrumb": "emtech.ae"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://artificial.ae/explainers/dubai-ai-companies/",
+       "domain": "artificial.ae",
+       "title": "Which are the biggest Dubai AI companies? \u2014 UAE AI explainer \u00b7 artificial.ae",
+       "description": null,
+       "breadcrumb": "artificial.ae"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://artificial.ae/companies/",
+       "domain": "artificial.ae",
+       "title": "UAE AI Companies \u2014 G42, Core42, MBZUAI, TII & More \u00b7 artificial.ae",
+       "description": null,
+       "breadcrumb": "artificial.ae"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://www.techvoot.com/blog/top-10-ai-development-companies-in-uae",
+       "domain": "www.techvoot.com",
+       "title": "Top 10 AI Development Companies in Dubai, UAE (2026 Guide)",
+       "description": null,
+       "breadcrumb": "www.techvoot.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://startupsmena.com/top-12-ai-development-companies-in-dubai-uae-2026-mqjfduku",
+       "domain": "startupsmena.com",
+       "title": "Top 12 AI Development Companies in Dubai, UAE \u2013 2026 | StartupsMENA",
+       "description": null,
+       "breadcrumb": "startupsmena.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://www.pixelwebsolutions.com/ai-development-companies-in-uae/",
+       "domain": "www.pixelwebsolutions.com",
+       "title": "Top 10 AI Development Companies in UAE (2026)",
+       "description": null,
+       "breadcrumb": "www.pixelwebsolutions.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://obgulf.com/insights/ai-companies-in-uae",
+       "domain": "obgulf.com",
+       "title": "AI Companies in the UAE: Who Does What (2026 Guide) | OneBonsAI Gulf",
+       "description": null,
+       "breadcrumb": "obgulf.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://obgulf.com/insights/ai-companies-in-uae",
+       "domain": "obgulf.com",
+       "title": "AI Companies in the UAE: Who Does What (2026 Guide) | OneBonsAI Gulf",
+       "description": null,
+       "breadcrumb": "obgulf.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://www.troniextechnologies.com/blog/ai-development-companies-in-uae",
+       "domain": "www.troniextechnologies.com",
+       "title": "9 Best AI Development Companies in UAE (2026)",
+       "description": null,
+       "breadcrumb": "www.troniextechnologies.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://www.molecularcloud.org/p/top-10-ai-development-companies-in-dubai-2026",
+       "domain": "www.molecularcloud.org",
+       "title": "Top 10+ AI Development Companies in Dubai 2026 | MolecularCloud",
+       "description": null,
+       "breadcrumb": "www.molecularcloud.org"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://techeniac.com/blog/top-ai-development-companies-in-dubai",
+       "domain": "techeniac.com",
+       "title": "Top AI Development Companies in Dubai: 2026 Guide",
+       "description": null,
+       "breadcrumb": "techeniac.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://masterofcode.com/blog/ai-companies-in-dubai",
+       "domain": "masterofcode.com",
+       "title": "Top 10 AI Companies in Dubai [2026]",
+       "description": null,
+       "breadcrumb": "masterofcode.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://blocsys.com/top-ai-development-companies-in-dubai-for-enterprise-ai-solutions/",
+       "domain": "blocsys.com",
+       "title": "Top AI Development Companies in Dubai for Enterprise 2026",
+       "description": null,
+       "breadcrumb": "blocsys.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://www.servchip.com/ae/blog/best-ai-companies-in-uae",
+       "domain": "www.servchip.com",
+       "title": "Best AI Companies in the UAE | Servchip",
+       "description": null,
+       "breadcrumb": "www.servchip.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://www.datatheta.com/blog/top-data-ai-consulting-companies-uae-united-arab-emirates/",
+       "domain": "www.datatheta.com",
+       "title": "Top 10 Data & AI Companies in UAE (United Arab Emirates)",
+       "description": null,
+       "breadcrumb": "www.datatheta.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://www.uaeaicenter.com/blog/ai-companies-in-the-uae",
+       "domain": "www.uaeaicenter.com",
+       "title": "AI Companies in the UAE: The Complete Map for 2026 | UAE AI Center",
+       "description": null,
+       "breadcrumb": "www.uaeaicenter.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://www.presight.ai/",
+       "domain": "www.presight.ai",
+       "title": "Presight AI | See the Future Today",
+       "description": null,
+       "breadcrumb": "www.presight.ai"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://www.presight.ai/about",
+       "domain": "www.presight.ai",
+       "title": "About Us | See the future Today",
+       "description": null,
+       "breadcrumb": "www.presight.ai"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://g42.ai/companies/presight",
+       "domain": "g42.ai",
+       "title": "Presight",
+       "description": null,
+       "breadcrumb": "g42.ai"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://www.mediaoffice.abudhabi/en/technology/core42-and-solutions-partner-to-build-sovereign-ai-infrastructure/",
+       "domain": "www.mediaoffice.abudhabi",
+       "title": "Core42 and Solutions+ partner to build sovereign AI infrastructure",
+       "description": null,
+       "breadcrumb": "www.mediaoffice.abudhabi"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://www.gbmme.com/",
+       "domain": "www.gbmme.com",
+       "title": "Gulf Business Machines | GBM",
+       "description": null,
+       "breadcrumb": "www.gbmme.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://www.centralbank.ae/media/21me4pex/cbuae-and-core42-launch-the-world-s-first-sovereign-financial-cloud-to-strengthen-uae-s-financial-resilience-and-competitiveness-en.pdf",
+       "domain": "www.centralbank.ae",
+       "title": "CBUAE Classification: Public",
+       "description": null,
+       "breadcrumb": "www.centralbank.ae"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://www.centralbank.ae/media/y0ufcewu/cbuae-and-presight-launch-a-technology-services-based-joint-venture-to-support-the-financial-infrastructure-transformation-programme-en.pdf",
+       "domain": "www.centralbank.ae",
+       "title": "CBUAE Classification: Restricted",
+       "description": null,
+       "breadcrumb": "www.centralbank.ae"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://usuaebusiness.org/wp-content/uploads/2024/09/SectorUpdate_AIReport_Sep24_Web.pdf",
+       "domain": "usuaebusiness.org",
+       "title": "The U.A.E.\u2019s top AI institutions include:",
+       "description": null,
+       "breadcrumb": "usuaebusiness.org"
+      }
+     ],
+     "sources": [
+      {
+       "type": "chat_gpt_source",
+       "title": "Top 10 AI Solutions Companies in UAE, Dubai & Abu Dhabi",
+       "snippet": null,
+       "domain": "emtech.ae",
+       "url": "https://emtech.ae/best-ai-solutions-companies-uae-2/?utm_source=chatgpt.com",
+       "thumbnail": null,
+       "source_name": "emtech.ae",
+       "publication_date": "2026-10-03 00:00:00 +00:00",
+       "markdown": null
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Top 10 AI Development Companies in Dubai, UAE for 2026",
+       "snippet": null,
+       "domain": "www.quytech.com",
+       "url": "https://www.quytech.com/blog/top-ai-development-companies-in-dubai/?utm_source=chatgpt.com",
+       "thumbnail": null,
+       "source_name": "quytech.com",
+       "publication_date": "2026-09-16 00:00:00 +00:00",
+       "markdown": null
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "AI Companies in the UAE: Who Does What (2026 Guide)",
+       "snippet": null,
+       "domain": "obgulf.com",
+       "url": "https://obgulf.com/insights/ai-companies-in-uae?utm_source=chatgpt.com",
+       "thumbnail": null,
+       "source_name": "OneBonsAI Gulf",
+       "publication_date": "2026-10-22 00:00:00 +00:00",
+       "markdown": null
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Gulf Business Machines",
+       "snippet": null,
+       "domain": "www.gbmme.com",
+       "url": "https://www.gbmme.com/?utm_source=chatgpt.com",
+       "thumbnail": null,
+       "source_name": "GBM",
+       "publication_date": null,
+       "markdown": null
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "gbmme.com",
+       "snippet": null,
+       "domain": "www.gbmme.com",
+       "url": "https://www.gbmme.com/",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[gbmme.com](https://www.gbmme.com/)"
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "eandenterprise.com",
+       "snippet": null,
+       "domain": "www.eandenterprise.com",
+       "url": "https://www.eandenterprise.com/",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[eandenterprise.com](https://www.eandenterprise.com/)"
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Core42 and Solutions+ partner to build sovereign AI infrastructure",
+       "snippet": null,
+       "domain": "www.mediaoffice.abudhabi",
+       "url": "https://www.mediaoffice.abudhabi/en/technology/core42-and-solutions-partner-to-build-sovereign-ai-infrastructure/?utm_source=chatgpt.com",
+       "thumbnail": null,
+       "source_name": "Media Office Abu Dhabi",
+       "publication_date": "2026-05-06 00:00:00 +00:00",
+       "markdown": null
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "CBUAE Classification: Public",
+       "snippet": null,
+       "domain": "www.centralbank.ae",
+       "url": "https://www.centralbank.ae/media/21me4pex/cbuae-and-core42-launch-the-world-s-first-sovereign-financial-cloud-to-strengthen-uae-s-financial-resilience-and-competitiveness-en.pdf?utm_source=chatgpt.com",
+       "thumbnail": null,
+       "source_name": "Central Bank of the UAE",
+       "publication_date": "2026-02-25 09:17:31 +00:00",
+       "markdown": null
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "core42.ai",
+       "snippet": null,
+       "domain": "core42.ai",
+       "url": "https://core42.ai/",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[core42.ai](https://core42.ai/)"
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Presight AI",
+       "snippet": null,
+       "domain": "www.presight.ai",
+       "url": "https://www.presight.ai/?utm_source=chatgpt.com",
+       "thumbnail": null,
+       "source_name": "See the Future Today",
+       "publication_date": null,
+       "markdown": null
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "About Us",
+       "snippet": null,
+       "domain": "www.presight.ai",
+       "url": "https://www.presight.ai/about?utm_source=chatgpt.com",
+       "thumbnail": null,
+       "source_name": "See the future Today",
+       "publication_date": null,
+       "markdown": null
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "presight.ai",
+       "snippet": null,
+       "domain": "www.presight.ai",
+       "url": "https://www.presight.ai/",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[presight.ai](https://www.presight.ai/)"
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "alphadata.ae",
+       "snippet": null,
+       "domain": "alphadata.ae",
+       "url": "https://alphadata.ae/",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[alphadata.ae](https://alphadata.ae/)"
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "quytech.com",
+       "snippet": null,
+       "domain": "www.quytech.com",
+       "url": "https://www.quytech.com/",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[quytech.com](https://www.quytech.com/)"
+      }
+     ],
+     "fan_out_queries": [
+      "top AI development companies Dubai UAE enterprise projects 2026",
+      "enterprise AI development companies",
+      "AI consulting and implementation",
+      "machine learning software development firms"
+     ],
+     "brand_entities": [
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "Middle East enterprise IT and digital solutions provider",
+       "category": "company",
+       "markdown": "Gulf Business Machines (GBM)",
+       "urls": null
+      },
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "Enterprise digital transformation and technology services",
+       "category": "company",
+       "markdown": "e& enterprise",
+       "urls": null
+      },
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "UAE sovereign cloud and AI infrastructure provider",
+       "category": "company",
+       "markdown": "Core42",
+       "urls": null
+      },
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "Applied AI and big-data analytics company",
+       "category": "company",
+       "markdown": "Presight",
+       "urls": null
+      },
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "UAE IT services and digital transformation provider",
+       "category": "company",
+       "markdown": "Alpha Data",
+       "urls": null
+      },
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "Custom AI and software development company",
+       "category": "company",
+       "markdown": "Quytech",
+       "urls": null
+      }
+     ],
+     "se_results_count": 0,
+     "item_types": [
+      "chat_gpt_text",
+      "chat_gpt_images",
+      "chat_gpt_table"
+     ],
+     "items_count": 15,
+     "items": [
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 1,
+       "rank_absolute": 1,
+       "markdown": "# Top AI development companies in Dubai for enterprise projects (2026)\n\nFor enterprise AI projects in Dubai, I\u2019d shortlist companies based on their ability to deliver secure, production-ready systems\u2014not just AI demos or chatbots. The strongest fit depends on whether you need custom generative AI, enterprise system integration, predictive analytics, or AI infrastructure for regulated workloads.\n\nRecent 2026 industry roundups identify providers including GBM, Core42, Presight, e&amp; enterprise, Alpha Data, and specialist AI development firms as options for businesses across Dubai and the wider UAE. These lists are useful starting points, rather than definitive independent rankings. [emtech.ae](https://emtech.ae/best-ai-solutions-companies-uae-2/?utm_source=chatgpt.com)[www.quytech.com](https://www.quytech.com/blog/top-ai-development-companies-in-dubai/?utm_source=chatgpt.com)[obgulf.com](https://obgulf.com/insights/ai-companies-in-uae?utm_source=chatgpt.com)\n\n## My enterprise shortlist\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "Top 10 AI Solutions Companies in UAE, Dubai & Abu Dhabi",
+         "snippet": null,
+         "domain": "emtech.ae",
+         "url": "https://emtech.ae/best-ai-solutions-companies-uae-2/?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "emtech.ae",
+         "publication_date": "2026-10-03 00:00:00 +00:00",
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Top 10 AI Development Companies in Dubai, UAE for 2026",
+         "snippet": null,
+         "domain": "www.quytech.com",
+         "url": "https://www.quytech.com/blog/top-ai-development-companies-in-dubai/?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "quytech.com",
+         "publication_date": "2026-09-16 00:00:00 +00:00",
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "AI Companies in the UAE: Who Does What (2026 Guide)",
+         "snippet": null,
+         "domain": "obgulf.com",
+         "url": "https://obgulf.com/insights/ai-companies-in-uae?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "OneBonsAI Gulf",
+         "publication_date": "2026-10-22 00:00:00 +00:00",
+         "markdown": null
+        }
+       ],
+       "brand_entities": null
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 1,
+       "rank_absolute": 2,
+       "markdown": "![GBM Brandvoice](https://images.openai.com/static-rsc-4/0iiZHvDpk3ZP_bCm5OW8aCIG7frctGBfMn23oIElBD-GnGWXokLYBaKzucTeYXhPXKRrTMcbAuLpRiRmuHn9ECdrZHF7Lf1xH6CAYUTSY0YafDKIJJD-XmeJGCH_xMqcsdPnJOXqzsBMYvvVjGGwINgL1coXcmjwHyH35Dr3PNwgUZYkhz-5NjrCUE7CPS9I?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://www.forbesmiddleeast.com/brandvoice/gulf-business-machinesgbm-1",
+         "alt": "GBM Brandvoice",
+         "image_url": "https://images.openai.com/static-rsc-4/0iiZHvDpk3ZP_bCm5OW8aCIG7frctGBfMn23oIElBD-GnGWXokLYBaKzucTeYXhPXKRrTMcbAuLpRiRmuHn9ECdrZHF7Lf1xH6CAYUTSY0YafDKIJJD-XmeJGCH_xMqcsdPnJOXqzsBMYvvVjGGwINgL1coXcmjwHyH35Dr3PNwgUZYkhz-5NjrCUE7CPS9I?purpose=fullsize",
+         "markdown": "![GBM Brandvoice](https://images.openai.com/static-rsc-4/0iiZHvDpk3ZP_bCm5OW8aCIG7frctGBfMn23oIElBD-GnGWXokLYBaKzucTeYXhPXKRrTMcbAuLpRiRmuHn9ECdrZHF7Lf1xH6CAYUTSY0YafDKIJJD-XmeJGCH_xMqcsdPnJOXqzsBMYvvVjGGwINgL1coXcmjwHyH35Dr3PNwgUZYkhz-5NjrCUE7CPS9I?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 2,
+       "rank_absolute": 3,
+       "markdown": "\n\n### 1\\. Gulf Business Machines (GBM)\n\n(Best for enterprise integration)\n\nStrong candidate for large organisations that need AI integrated with existing data platforms, enterprise applications, infrastructure and security. GBM has a substantial regional delivery organisation and announced a UAE AI lab powered by Cisco and NVIDIA technologies. [www.gbmme.com](https://www.gbmme.com/?utm_source=chatgpt.com)\n\nWebsite: [gbmme.com](https://www.gbmme.com/)\n\n---\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "Gulf Business Machines",
+         "snippet": null,
+         "domain": "www.gbmme.com",
+         "url": "https://www.gbmme.com/?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "GBM",
+         "publication_date": null,
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "gbmme.com",
+         "snippet": null,
+         "domain": "www.gbmme.com",
+         "url": "https://www.gbmme.com/",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[gbmme.com](https://www.gbmme.com/)"
+        }
+       ],
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "Middle East enterprise IT and digital solutions provider",
+         "category": "company",
+         "markdown": "Gulf Business Machines (GBM)",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 2,
+       "rank_absolute": 4,
+       "markdown": "![e& + Intel Team Up to Build an AI Centre in Dubai](https://images.openai.com/static-rsc-4/PZ1E6aOzT3OY-IL7DgDKK9YczTW8N5WpUSW04ymsA9xJnGGuPkhxO0DQrXD8nKfNEjYu5Oujjm9Lh5qa-mvsZ2HWAgN-SgH4VySYz59naJ2UwQOlFkJssBtCU2RSvh5q6WXcm8kDDcH9KhDhK_Exb2iWRJqUtvRAoTr1hQoxhsVUyRQ4Wiu-TPcdvSqo3SyK?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://tbreak.com/e-and-intel-ai-centre-of-excellence-uae/",
+         "alt": "e& + Intel Team Up to Build an AI Centre in Dubai",
+         "image_url": "https://images.openai.com/static-rsc-4/PZ1E6aOzT3OY-IL7DgDKK9YczTW8N5WpUSW04ymsA9xJnGGuPkhxO0DQrXD8nKfNEjYu5Oujjm9Lh5qa-mvsZ2HWAgN-SgH4VySYz59naJ2UwQOlFkJssBtCU2RSvh5q6WXcm8kDDcH9KhDhK_Exb2iWRJqUtvRAoTr1hQoxhsVUyRQ4Wiu-TPcdvSqo3SyK?purpose=fullsize",
+         "markdown": "![e& + Intel Team Up to Build an AI Centre in Dubai](https://images.openai.com/static-rsc-4/PZ1E6aOzT3OY-IL7DgDKK9YczTW8N5WpUSW04ymsA9xJnGGuPkhxO0DQrXD8nKfNEjYu5Oujjm9Lh5qa-mvsZ2HWAgN-SgH4VySYz59naJ2UwQOlFkJssBtCU2RSvh5q6WXcm8kDDcH9KhDhK_Exb2iWRJqUtvRAoTr1hQoxhsVUyRQ4Wiu-TPcdvSqo3SyK?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 3,
+       "rank_absolute": 5,
+       "markdown": "\n\n### 2\\. e& enterprise\n\nA strong option for enterprise-wide transformation programmes involving AI, data platforms, automation, cloud and connected business processes. Consider it when AI needs to work across multiple departments and enterprise systems. [emtech.ae](https://emtech.ae/best-ai-solutions-companies-uae-2/?utm_source=chatgpt.com)\n\nWebsite: [eandenterprise.com](https://www.eandenterprise.com/)\n\n---\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "Top 10 AI Solutions Companies in UAE, Dubai & Abu Dhabi",
+         "snippet": null,
+         "domain": "emtech.ae",
+         "url": "https://emtech.ae/best-ai-solutions-companies-uae-2/?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "emtech.ae",
+         "publication_date": "2026-10-03 00:00:00 +00:00",
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "eandenterprise.com",
+         "snippet": null,
+         "domain": "www.eandenterprise.com",
+         "url": "https://www.eandenterprise.com/",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[eandenterprise.com](https://www.eandenterprise.com/)"
+        }
+       ],
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "Enterprise digital transformation and technology services",
+         "category": "company",
+         "markdown": "e& enterprise",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 3,
+       "rank_absolute": 6,
+       "markdown": "![Core42 raises US$550 million from HSBC to scale global AI infrastructure | Emirates News Agency](https://images.openai.com/static-rsc-4/nJSLgk4LYiee66thn55dT-A3uNiqMhnMQCDjQtIr1-hB1ZmupnTdcVGRnYYeYyhUgsmIQEZ_3m5GtNUf6fAiFDgT3YBigQ6jSKST9ykryxUZ8gOraiID-BhJSGVHb9OycWimVcax6nM9Vt6hcdXO2leX7kBYyDI3UQVMIG-jsrclZvCi_4ERSLrqBB90sqLg?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://www.wam.ae/en/article/c0e2jsy-core42-raises-us550-million-from-hsbc-scale-global",
+         "alt": "Core42 raises US$550 million from HSBC to scale global AI infrastructure | Emirates News Agency",
+         "image_url": "https://images.openai.com/static-rsc-4/nJSLgk4LYiee66thn55dT-A3uNiqMhnMQCDjQtIr1-hB1ZmupnTdcVGRnYYeYyhUgsmIQEZ_3m5GtNUf6fAiFDgT3YBigQ6jSKST9ykryxUZ8gOraiID-BhJSGVHb9OycWimVcax6nM9Vt6hcdXO2leX7kBYyDI3UQVMIG-jsrclZvCi_4ERSLrqBB90sqLg?purpose=fullsize",
+         "markdown": "![Core42 raises US$550 million from HSBC to scale global AI infrastructure | Emirates News Agency](https://images.openai.com/static-rsc-4/nJSLgk4LYiee66thn55dT-A3uNiqMhnMQCDjQtIr1-hB1ZmupnTdcVGRnYYeYyhUgsmIQEZ_3m5GtNUf6fAiFDgT3YBigQ6jSKST9ykryxUZ8gOraiID-BhJSGVHb9OycWimVcax6nM9Vt6hcdXO2leX7kBYyDI3UQVMIG-jsrclZvCi_4ERSLrqBB90sqLg?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 4,
+       "rank_absolute": 7,
+       "markdown": "\n\n### 3\\. Core42\n\nBest suited to projects where data residency, security, controlled AI hosting and scalable computing are central requirements. Its sovereign-cloud and AI infrastructure capabilities are particularly relevant for regulated enterprises and government-related workloads. [www.mediaoffice.abudhabi](https://www.mediaoffice.abudhabi/en/technology/core42-and-solutions-partner-to-build-sovereign-ai-infrastructure/?utm_source=chatgpt.com)[www.centralbank.ae](https://www.centralbank.ae/media/21me4pex/cbuae-and-core42-launch-the-world-s-first-sovereign-financial-cloud-to-strengthen-uae-s-financial-resilience-and-competitiveness-en.pdf?utm_source=chatgpt.com)\n\nWebsite: [core42.ai](https://core42.ai/)\n\n---\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "Core42 and Solutions+ partner to build sovereign AI infrastructure",
+         "snippet": null,
+         "domain": "www.mediaoffice.abudhabi",
+         "url": "https://www.mediaoffice.abudhabi/en/technology/core42-and-solutions-partner-to-build-sovereign-ai-infrastructure/?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Media Office Abu Dhabi",
+         "publication_date": "2026-05-06 00:00:00 +00:00",
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "CBUAE Classification: Public",
+         "snippet": null,
+         "domain": "www.centralbank.ae",
+         "url": "https://www.centralbank.ae/media/21me4pex/cbuae-and-core42-launch-the-world-s-first-sovereign-financial-cloud-to-strengthen-uae-s-financial-resilience-and-competitiveness-en.pdf?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Central Bank of the UAE",
+         "publication_date": "2026-02-25 09:17:31 +00:00",
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "core42.ai",
+         "snippet": null,
+         "domain": "core42.ai",
+         "url": "https://core42.ai/",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[core42.ai](https://core42.ai/)"
+        }
+       ],
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "UAE sovereign cloud and AI infrastructure provider",
+         "category": "company",
+         "markdown": "Core42",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 4,
+       "rank_absolute": 8,
+       "markdown": "![Presight reports sharp rise in revenue and continued international expansion | Khaleej Times](https://images.openai.com/static-rsc-4/vLabtz1iRxBLm48I0srlclvycDOc38KisXGZualmjTXZhcC9SURMSCLkLp-py1nIB9IfGWn3hkCRPFSvT50uyXlqq5g2sFw1V4PK9qBl2LexzHNoRVB5b_Y-PYcaxQr9-b1c8JX7ZFsUazwEpQ3llA19j0nXUsCUwlrKBSDkEK2gCFWp2TaIxGIC2G4jaaR0?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://www.khaleejtimes.com/business/tech/presight-reports-sharp-rise-in-revenue-and-continued-international-expansion",
+         "alt": "Presight reports sharp rise in revenue and continued international expansion | Khaleej Times",
+         "image_url": "https://images.openai.com/static-rsc-4/vLabtz1iRxBLm48I0srlclvycDOc38KisXGZualmjTXZhcC9SURMSCLkLp-py1nIB9IfGWn3hkCRPFSvT50uyXlqq5g2sFw1V4PK9qBl2LexzHNoRVB5b_Y-PYcaxQr9-b1c8JX7ZFsUazwEpQ3llA19j0nXUsCUwlrKBSDkEK2gCFWp2TaIxGIC2G4jaaR0?purpose=fullsize",
+         "markdown": "![Presight reports sharp rise in revenue and continued international expansion | Khaleej Times](https://images.openai.com/static-rsc-4/vLabtz1iRxBLm48I0srlclvycDOc38KisXGZualmjTXZhcC9SURMSCLkLp-py1nIB9IfGWn3hkCRPFSvT50uyXlqq5g2sFw1V4PK9qBl2LexzHNoRVB5b_Y-PYcaxQr9-b1c8JX7ZFsUazwEpQ3llA19j0nXUsCUwlrKBSDkEK2gCFWp2TaIxGIC2G4jaaR0?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 5,
+       "rank_absolute": 9,
+       "markdown": "\n\n### 4\\. Presight\n\nParticularly relevant for complex analytics, predictive intelligence, computer vision and AI-driven operational decision-making. It is worth evaluating for large-scale government, finance, energy and smart-city projects. Presight is headquartered in Abu Dhabi and serves markets internationally. [www.presight.ai](https://www.presight.ai/?utm_source=chatgpt.com)[www.presight.ai](https://www.presight.ai/about?utm_source=chatgpt.com)\n\nWebsite: [presight.ai](https://www.presight.ai/)\n\n---\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "Presight AI",
+         "snippet": null,
+         "domain": "www.presight.ai",
+         "url": "https://www.presight.ai/?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "See the Future Today",
+         "publication_date": null,
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "About Us",
+         "snippet": null,
+         "domain": "www.presight.ai",
+         "url": "https://www.presight.ai/about?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "See the future Today",
+         "publication_date": null,
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "presight.ai",
+         "snippet": null,
+         "domain": "www.presight.ai",
+         "url": "https://www.presight.ai/",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[presight.ai](https://www.presight.ai/)"
+        }
+       ],
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "Applied AI and big-data analytics company",
+         "category": "company",
+         "markdown": "Presight",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 5,
+       "rank_absolute": 10,
+       "markdown": "![#alphadata #customertestimonial #cloudtransformation #digitaltransformation #techsupport #ai #partnership #trustedpartner #itsolutions #customerexperience #uae | Alpha Data](https://images.openai.com/static-rsc-4/FeMlqbVZwCefPHxNH9mvqG_XWjruh9d4TdmQgIKGXtadF-a87SZ4nHKeXKRLYV7LeWZ8uj4GmhGMo_0g7_4N3vPjk58BZuMiUxWS8tuG4HUAZzIs4_lPa_OMta4MZZtlt9Q1aeGCQd96K8e8RSUWRQDGPIkIQ4Rlco_n_ove2tFw9k6cFaEsAWM1W3Ulh6uq?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://www.linkedin.com/posts/alpha-data_2_alphadata-customertestimonial-cloudtransformation-activity-7261978846881583105-DGK_",
+         "alt": "#alphadata #customertestimonial #cloudtransformation #digitaltransformation #techsupport #ai #partnership #trustedpartner #itsolutions #customerexperience #uae | Alpha Data",
+         "image_url": "https://images.openai.com/static-rsc-4/FeMlqbVZwCefPHxNH9mvqG_XWjruh9d4TdmQgIKGXtadF-a87SZ4nHKeXKRLYV7LeWZ8uj4GmhGMo_0g7_4N3vPjk58BZuMiUxWS8tuG4HUAZzIs4_lPa_OMta4MZZtlt9Q1aeGCQd96K8e8RSUWRQDGPIkIQ4Rlco_n_ove2tFw9k6cFaEsAWM1W3Ulh6uq?purpose=fullsize",
+         "markdown": "![#alphadata #customertestimonial #cloudtransformation #digitaltransformation #techsupport #ai #partnership #trustedpartner #itsolutions #customerexperience #uae | Alpha Data](https://images.openai.com/static-rsc-4/FeMlqbVZwCefPHxNH9mvqG_XWjruh9d4TdmQgIKGXtadF-a87SZ4nHKeXKRLYV7LeWZ8uj4GmhGMo_0g7_4N3vPjk58BZuMiUxWS8tuG4HUAZzIs4_lPa_OMta4MZZtlt9Q1aeGCQd96K8e8RSUWRQDGPIkIQ4Rlco_n_ove2tFw9k6cFaEsAWM1W3Ulh6uq?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 6,
+       "rank_absolute": 11,
+       "markdown": "\n\n### 5\\. Alpha Data\n\nWorth considering for AI-enabled business applications, machine learning, intelligent automation and integration with existing enterprise infrastructure. Its regional IT services background is relevant when implementation and ongoing support matter as much as model development. [emtech.ae](https://emtech.ae/best-ai-solutions-companies-uae-2/?utm_source=chatgpt.com)\n\nWebsite: [alphadata.ae](https://alphadata.ae/)\n\n---\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "Top 10 AI Solutions Companies in UAE, Dubai & Abu Dhabi",
+         "snippet": null,
+         "domain": "emtech.ae",
+         "url": "https://emtech.ae/best-ai-solutions-companies-uae-2/?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "emtech.ae",
+         "publication_date": "2026-10-03 00:00:00 +00:00",
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "alphadata.ae",
+         "snippet": null,
+         "domain": "alphadata.ae",
+         "url": "https://alphadata.ae/",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[alphadata.ae](https://alphadata.ae/)"
+        }
+       ],
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "UAE IT services and digital transformation provider",
+         "category": "company",
+         "markdown": "Alpha Data",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 6,
+       "rank_absolute": 12,
+       "markdown": "![Quytech (@Quytech) on X](https://images.openai.com/static-rsc-4/99KS3917lWzjhTesa2YlIqhYC54pkF-GbNPoQ8I0KnoJECdl1qL_IXRW6f61sXy7kxJQab9eSIOPnSBNGOGoL-POGC4bSe7qwkBUmEUobqo9PrkdDHLIq8YQZAslN3TKbdw1FPng20BRQpkbLjemTLCG3rbJ9JRDiFZeeJRMTJSzxFZxI11UJXeXuz8R3zCg?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://x.com/quytech",
+         "alt": "Quytech (@Quytech) on X",
+         "image_url": "https://images.openai.com/static-rsc-4/99KS3917lWzjhTesa2YlIqhYC54pkF-GbNPoQ8I0KnoJECdl1qL_IXRW6f61sXy7kxJQab9eSIOPnSBNGOGoL-POGC4bSe7qwkBUmEUobqo9PrkdDHLIq8YQZAslN3TKbdw1FPng20BRQpkbLjemTLCG3rbJ9JRDiFZeeJRMTJSzxFZxI11UJXeXuz8R3zCg?purpose=fullsize",
+         "markdown": "![Quytech (@Quytech) on X](https://images.openai.com/static-rsc-4/99KS3917lWzjhTesa2YlIqhYC54pkF-GbNPoQ8I0KnoJECdl1qL_IXRW6f61sXy7kxJQab9eSIOPnSBNGOGoL-POGC4bSe7qwkBUmEUobqo9PrkdDHLIq8YQZAslN3TKbdw1FPng20BRQpkbLjemTLCG3rbJ9JRDiFZeeJRMTJSzxFZxI11UJXeXuz8R3zCg?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 7,
+       "rank_absolute": 13,
+       "markdown": "\n\n### 6\\. Quytech\n\nAn option for bespoke AI application development, generative AI, machine learning, computer vision and mobile or web products. Consider it if you need a custom-built application rather than primarily an enterprise infrastructure or consulting engagement. Verify the proposed UAE delivery team and relevant enterprise references. [emtech.ae](https://emtech.ae/best-ai-solutions-companies-uae-2/?utm_source=chatgpt.com)[www.quytech.com](https://www.quytech.com/blog/top-ai-development-companies-in-dubai/?utm_source=chatgpt.com)[obgulf.com](https://obgulf.com/insights/ai-companies-in-uae?utm_source=chatgpt.com)\n\nWebsite: [quytech.com](https://www.quytech.com/)\n\n## Which company should you choose?\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "Top 10 AI Solutions Companies in UAE, Dubai & Abu Dhabi",
+         "snippet": null,
+         "domain": "emtech.ae",
+         "url": "https://emtech.ae/best-ai-solutions-companies-uae-2/?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "emtech.ae",
+         "publication_date": "2026-10-03 00:00:00 +00:00",
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Top 10 AI Development Companies in Dubai, UAE for 2026",
+         "snippet": null,
+         "domain": "www.quytech.com",
+         "url": "https://www.quytech.com/blog/top-ai-development-companies-in-dubai/?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "quytech.com",
+         "publication_date": "2026-09-16 00:00:00 +00:00",
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "AI Companies in the UAE: Who Does What (2026 Guide)",
+         "snippet": null,
+         "domain": "obgulf.com",
+         "url": "https://obgulf.com/insights/ai-companies-in-uae?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "OneBonsAI Gulf",
+         "publication_date": "2026-10-22 00:00:00 +00:00",
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "quytech.com",
+         "snippet": null,
+         "domain": "www.quytech.com",
+         "url": "https://www.quytech.com/",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[quytech.com](https://www.quytech.com/)"
+        }
+       ],
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "Custom AI and software development company",
+         "category": "company",
+         "markdown": "Quytech",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_table",
+       "rank_group": 1,
+       "rank_absolute": 14,
+       "text": null,
+       "markdown": "| Your enterprise requirement | Start with |\n|--------|--------|\n| AI integration with legacy systems and enterprise infrastructure | GBM |\n| Organisation-wide AI and digital transformation | e&amp; enterprise |\n| Private, sovereign or tightly controlled AI hosting | Core42 |\n| Predictive analytics and large-scale decision intelligence | Presight |\n| Enterprise IT implementation and ongoing support | Alpha Data |\n| Bespoke AI applications and custom software development | Quytech |\n\n",
+       "table": {
+        "table_header": [
+         "Your enterprise requirement",
+         "Start with"
+        ],
+        "table_content": [
+         [
+          "AI integration with legacy systems and enterprise infrastructure",
+          "GBM"
+         ],
+         [
+          "Organisation-wide AI and digital transformation",
+          "e&amp; enterprise"
+         ],
+         [
+          "Private, sovereign or tightly controlled AI hosting",
+          "Core42"
+         ],
+         [
+          "Predictive analytics and large-scale decision intelligence",
+          "Presight"
+         ],
+         [
+          "Enterprise IT implementation and ongoing support",
+          "Alpha Data"
+         ],
+         [
+          "Bespoke AI applications and custom software development",
+          "Quytech"
+         ]
+        ]
+       },
+       "brand_entities": null
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 8,
+       "rank_absolute": 15,
+       "markdown": "\nThis is a fit-based shortlist, not a measured ranking of delivery quality. Several companies are headquartered in Abu Dhabi or operate across the UAE rather than being exclusively Dubai-based.\n\n## What to evaluate before signing a contract\n\nFor an enterprise project, I recommend requesting the following from every shortlisted vendor\\:\n\n- **Relevant case studies\\:** Two or three comparable projects, with measurable business outcomes and client references.\n- **Security and governance\\:** Data residency, access controls, encryption, audit trails, retention policies and applicable UAE regulatory requirements.\n- **Integration capabilities\\:** Demonstrated experience with your ERP, CRM, data warehouse, APIs and identity-management systems.\n- **Production readiness\\:** Monitoring, model evaluation, human oversight, versioning, incident response and ongoing maintenance.\n- **Commercial transparency\\:** Implementation costs, cloud and model usage fees, support SLAs, change requests and ownership of custom code.\n- **A paid proof of concept\\:** Agree on measurable success criteria before committing to a full rollout.\n\nOne important distinction: a company that provides AI infrastructure is not necessarily the company that will build your business application. For some projects, the best solution is a delivery partner combined with a separate cloud or model provider.\n\n## Let\u2019s narrow this down to your project\n\nSelect your requirements to get a more targeted shortlist of companies for your enterprise project in Dubai.\n\n1\\. What are you building?\n\nGenerative AI, copilots or AI agents\n\nCustom AI software or an AI-powered platform\n\nPredictive analytics or machine learning\n\nEnterprise automation and system integration\n\nPrivate AI infrastructure and deployment\n\n---\n\n2\\. Which industry?\n\nFinance / fintech\n\nHealthcare\n\nReal estate / construction\n\nRetail / e-commerce\n\nLogistics / manufacturing\n\nGovernment / other enterprise\n\n---\n\n3\\. Approximate project budget (AED)\n\nUnder AED 100,000\n\nAED 100,000\u2013250,000\n\nAED 250,000\u20131 million\n\nOver AED 1 million\n\nNot decided yet\n\n---\n\n4\\. Most important priority\n\nSecurity, compliance and data residency\n\nTechnical expertise and scalability\n\nFast delivery and cost efficiency\n\nLong-term support and maintenance\n\n[Find the best-fit companies]",
+       "sources": null,
+       "brand_entities": null
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

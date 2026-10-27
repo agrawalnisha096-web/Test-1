@@ -1,0 +1,822 @@
+{
+ "version": "0.1.20261022",
+ "status_code": 20000,
+ "status_message": "Ok.",
+ "time": "30.2686 sec.",
+ "cost": 0.004,
+ "tasks_count": 1,
+ "tasks_error": 0,
+ "tasks": [
+  {
+   "id": "10270243-2577-0629-0000-8f96b1feaf03",
+   "status_code": 20000,
+   "status_message": "Ok.",
+   "time": "30.2086 sec.",
+   "cost": 0.004,
+   "result_count": 1,
+   "path": [
+    "v3",
+    "ai_optimization",
+    "chat_gpt",
+    "llm_scraper",
+    "live",
+    "advanced"
+   ],
+   "data": {
+    "api": "ai_optimization",
+    "function": "live",
+    "se": "chat_gpt",
+    "keyword": "What are the top AI development companies in Dubai for enterprise projects?",
+    "location_code": 2784,
+    "language_code": "en",
+    "force_web_search": true,
+    "tag": "Q3-chatgpt-2",
+    "device": "desktop",
+    "os": "windows"
+   },
+   "result": [
+    {
+     "keyword": "What are the top AI development companies in Dubai for enterprise projects?",
+     "location_code": 2784,
+     "language_code": "en",
+     "model": "gpt-6",
+     "check_url": "https://chatgpt.com/?prompt=What%20are%20the%20top%20AI%20development%20companies%20in%20Dubai%20for%20enterprise%20projects%3F&hints=search",
+     "datetime": "2026-10-27 02:44:19 +00:00",
+     "markdown": "# Top AI development companies in Dubai for enterprise projects\n\nFor enterprise AI projects in Dubai, I\u2019d prioritize companies that can do more than build a chatbot: look for expertise in AI strategy, system integration, data engineering, generative AI, security, governance, and production deployment.\n\nThe best partner depends on whether you're building an AI-powered enterprise platform, automating business operations, modernizing legacy systems, or deploying AI across a regulated industry such as banking, healthcare, or government.\n\n## 7 companies worth shortlisting\n\nThis is a practical shortlist based on enterprise fit, the type of AI work offered, and UAE presence\u2014not a definitive ranking of delivery quality. Enterprise platform providers and custom software developers serve different needs, so I've separated them by their strengths.\n\n![GBM Brandvoice](https://images.openai.com/static-rsc-4/0iiZHvDpk3ZP_bCm5OW8aCIG7frctGBfMn23oIElBD-GnGWXokLYBaKzucTeYXhPXKRrTMcbAuLpRiRmuHn9ECdrZHF7Lf1xH6CAYUTSY0YafDKIJJD-XmeJGCH_xMqcsdPnJOXqzsBMYvvVjGGwINgL1coXcmjwHyH35Dr3PNwgUZYkhz-5NjrCUE7CPS9I?purpose=fullsize)\n\n**1\\. Gulf Business Machines (GBM)**\n\n(Large enterprise)\n\nA strong candidate for complex enterprise transformation involving data platforms, analytics, AI integration, and existing business systems.\n\n**Best for\\:** Large organizations that need AI integrated with enterprise infrastructure, data management, and business applications.\n\nWebsite: [gbmme.com](https://www.gbmme.com/)\n\n---\n\n![E& enterprise and NICE partner to revolutionise CX with CCaaS solutions](https://images.openai.com/static-rsc-4/3H9KRf3fHK-pNXS0DiHr47R19FznqAfMLMGKYpgO7__wuKOcZar7zy2QT0IdAELrbh2nMfC2tnH1eRXhT1FW9Ov-VZZfXqn2pRLclpIf0Pof3nYJISv2ZAwKh6RIuT4St0hjfD9hQhpAR9gYOlHWeCJgFy5NfmOQMBqW4h8LF2PDT75iolbdjKld6QoAY4mH?purpose=fullsize)\n\n**2\\. e& enterprise**\n\nAn enterprise-focused digital transformation provider worth evaluating for AI adoption across business processes, cloud platforms, data, and large-scale IT environments.\n\n**Best for\\:** Organizations seeking a broader implementation partner rather than a standalone AI application developer.\n\nWebsite: [eandenterprise.com](https://www.eandenterprise.com/)\n\n---\n\n![Dataiku Announces the Release of Dataiku Lite Edition](https://images.openai.com/static-rsc-4/gyxgZ-BLb6GMfI1JE5HKsPPvKxx7ls4ubZxWCAUe77FcWqXRoz6Lx1Ettxb9UXONpvdfOSdv13bOHkq4feyP7OAwD5G_ZT2YCmYWzaRmx40jgOnuICz0mfjBqeIIceGWXzFCt_58I6LLKKFa_f8BqadX9vxHNecLPIBaHfv8--rqchfR_YHwHP_qZTRqBspB?purpose=fullsize)\n\n**3\\. Dataiku AI FZ LLC**\n\nDataiku provides an enterprise AI platform for developing, deploying, and governing analytics and machine-learning solutions. Its Dubai office serves organizations in the UAE and wider region. [emtech.ae](https://emtech.ae/best-ai-solutions-companies-uae-2/?utm_source=chatgpt.com)[obgulf.com](https://obgulf.com/insights/ai-companies-in-uae?utm_source=chatgpt.com)\n\n**Best for\\:** Enterprises that need governed AI development across multiple teams, with reusable workflows and oversight.\n\nWebsite: [dataiku.com](https://www.dataiku.com/)\n\n---\n\n![AI Support Center | Meydan FZ Business Directory](https://images.openai.com/static-rsc-4/GaTjSBBWYaPyz9p6FYyoo7bSJzslW6cDTjLwAjTBTqZs6JKetxmm858Gg-VNsnKXRtOdcqS-UNvGDn8xHnQqn4IejTdBtUfkL74OXtLoRwTW2ntzoALX7i7QUkhnn3fI9HD5rbCuiTJsZd9uY64jcYYVmpF5Wn5NKeipddRkJG3Qt1Fv2VmlMRUTr2x2CCPr?purpose=fullsize)\n\n**4\\. AIdeology**\n\nA Dubai-based AI consultancy offering generative AI, large language model integration, conversational AI, AI agents, and machine-learning solutions.\n\n**Best for\\:** Custom AI systems and moving business use cases from experimentation toward production.\n\nLocation: Jumeirah 1, Dubai.\n\n---\n\n![](https://images.openai.com/static-rsc-4/Bf7Mr13lVBbtABSMK3KlqEruD6SbnLqLlVlsv7_G16-60RI2zAY8ABVZB_mYTrEXAyq56QZojKLdq7VN4NdhxRUEWb71XcHAi5ZJm52SIbzRQMjeTdBDbQ8DtBMumIEn5crMucyAs4dE4tRm9BrFoo6U4c7UsNTbpXWRzuUqE7b0bnOdvm8jm3GebujIX3Az?purpose=fullsize)\n\n**5\\. Hidden Brains**\n\nA software engineering and IT consulting company with Dubai operations and offerings across custom AI development, generative AI, NLP, and enterprise software.\n\n**Best for\\:** Organizations that need an AI solution built into a web platform, mobile application, or existing software product.\n\nLocation: Business Bay, Dubai.\n\nWebsite: [hiddenbrains.com](https://www.hiddenbrains.com/)\n\n---\n\n![Presight AI Holding PLC? | Company Profile | Manhom](https://images.openai.com/static-rsc-4/ICenvcoYP0v8_wQjCtQ0uPmuHfsIvwyCaVYUKRoRUKNPQEP0owjWwIrNDukJzWzKgs5vm3gDmdg1mgFgfmjiFVEVfip_8hIgKBWwOJSi5MadfE_ESgS_E8BF2gbJllld_xILBLslz_69bdl0nGVZx-BSB95CV_P43_37jUcUTno7A9sEwfIMaKtwaO1LEZsJ?purpose=fullsize)\n\n**6\\. Presight**\n\nA UAE-based AI and big-data analytics company focused on large-scale decision intelligence and data-driven solutions across industries. It is headquartered in Abu Dhabi rather than Dubai, but is worth considering for major regional programs. [artificial.ae](https://artificial.ae/explainers/dubai-ai-companies/?utm_source=chatgpt.com)[www.analyticsinsight.ae](https://www.analyticsinsight.ae/top-list/top-listtop-100-ai-companies-in-uae-2026?utm_source=chatgpt.com)\n\n**Best for\\:** Government, infrastructure, energy, and other data-intensive enterprise projects.\n\nWebsite: [presight.ai](https://www.presight.ai/)\n\n---\n\n![Build, deploy, and scale AI models securely with gravityAI. Private Cloud, on-prem, and air-gapped deployments with enterprise governance built in.](https://images.openai.com/static-rsc-4/hb8dXqEvjWS08Ghm419aMO6nG6uZkIXmSN9y4cLCdvlULykBXiNaDVDlacTWmgvXizXLpCSiAPT2-H5ZHuvOLx1mWxGDKt01vpoyukMC2Lr6G0qmb6iuHJWQAHMcx7ijhvkxds9rV9RS82nUB3yXDVt2_5AMGclc4gwdpNZonoUXpIG1AmorqyY0U6E_Wwo5?purpose=fullsize)\n\n**7\\. Gravity Base**\n\nA Dubai-based AI and software development firm offering enterprise AI development, workflow automation, conversational AI, and custom AI applications.\n\n**Best for\\:** Companies seeking a more implementation-focused partner to build AI assistants, knowledge search, and automated workflows.\n\nLocation: Al Quoz, Dubai.\n\nWebsite: [gravitybase.ai](https://gravitybase.ai/)\n\nThese candidates reflect different delivery models. For larger, complex programs, start by evaluating GBM and e&amp; enterprise; for a governed AI development platform, consider Dataiku; for custom-built solutions, evaluate AIdeology, Hidden Brains, and Gravity Base. Presight is a separate option for large-scale analytics programs. These are suggested starting points, not verified head-to-head performance rankings. [emtech.ae](https://emtech.ae/best-ai-solutions-companies-uae-2/?utm_source=chatgpt.com)[clutch.co](https://clutch.co/ae/developers/artificial-intelligence/dubai?utm_source=chatgpt.com)\n\n## Compare them by enterprise use case\n\n| Your requirement | Best starting shortlist |\n|--------|--------|\n| Enterprise-wide AI transformation | GBM, e&amp; enterprise |\n| AI governance and repeatable ML workflows | Dataiku |\n| Custom generative AI and AI agents | AIdeology, Gravity Base |\n| AI integrated into custom software | Hidden Brains |\n| Large-scale analytics and decision intelligence | Presight |\n\n\n\n\n## How to choose the right vendor\n\nBefore signing a contract, ask each shortlisted company for\\:\n\n- **Relevant case studies\\:** At least two comparable enterprise deployments, ideally with measurable business results.\n- **Security and data residency\\:** Where data, model inputs, logs, and backups are stored; whether private-cloud or on-premises deployment is supported.\n- **Integration capability\\:** Experience with your ERP, CRM, document systems, APIs, identity provider, and data warehouse.\n- **Production readiness\\:** Evaluation benchmarks, monitoring, human oversight, fallback procedures, and ongoing support SLAs.\n- **Commercial transparency\\:** Discovery costs, implementation milestones, cloud and model usage fees, maintenance, and ownership of custom code.\n\nFor UAE deployments, also ask how the solution addresses applicable data protection requirements and sector-specific regulations.\n\n## My recommendation\n\nFor a substantial enterprise project, I would shortlist **three vendors with different strengths** rather than choose solely by online rankings\\:\n\n1. GBM or e&amp; enterprise for enterprise-wide integration.\n2. Dataiku for a governed AI platform and repeatable AI delivery.\n3. AIdeology or Gravity Base for a custom-built AI solution.\n\nThe final choice should depend on the actual project scope and demonstrated delivery experience.\n\n**What kind of enterprise AI project are you planning?** For example, an internal knowledge assistant, AI agents and workflow automation, predictive analytics, or a full custom AI platform. I can narrow this to the most suitable companies and compare their capabilities, estimated budget ranges, and delivery models.",
+     "search_results": [
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://www.quytech.com/blog/top-ai-development-companies-in-dubai/",
+       "domain": "www.quytech.com",
+       "title": "Top 10 AI Development Companies in Dubai, UAE for 2026",
+       "description": null,
+       "breadcrumb": "www.quytech.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://artificial.ae/explainers/dubai-ai-companies/",
+       "domain": "artificial.ae",
+       "title": "Which are the biggest Dubai AI companies? \u2014 UAE AI explainer \u00b7 artificial.ae",
+       "description": null,
+       "breadcrumb": "artificial.ae"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://emtech.ae/best-ai-solutions-companies-uae-2/",
+       "domain": "emtech.ae",
+       "title": "Top 10 AI Solutions Companies in UAE, Dubai & Abu Dhabi",
+       "description": null,
+       "breadcrumb": "emtech.ae"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://sisgain.ae/blogs/ai-development-companies-dubai",
+       "domain": "sisgain.ae",
+       "title": "Top 10 AI Development Companies in Dubai, UAE (2026)",
+       "description": null,
+       "breadcrumb": "sisgain.ae"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://obgulf.com/insights/ai-companies-in-uae",
+       "domain": "obgulf.com",
+       "title": "AI Companies in the UAE: Who Does What (2026 Guide) | OneBonsAI Gulf",
+       "description": null,
+       "breadcrumb": "obgulf.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://startupsmena.com/top-12-ai-development-companies-in-dubai-uae-2026-mqjfduku",
+       "domain": "startupsmena.com",
+       "title": "Top 12 AI Development Companies in Dubai, UAE \u2013 2026 | StartupsMENA",
+       "description": null,
+       "breadcrumb": "startupsmena.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://www.techvoot.com/blog/top-10-ai-development-companies-in-uae",
+       "domain": "www.techvoot.com",
+       "title": "Top 10 AI Development Companies in Dubai, UAE (2026 Guide)",
+       "description": null,
+       "breadcrumb": "www.techvoot.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://www.analyticsinsight.ae/top-list/top-listtop-100-ai-companies-in-uae-2026",
+       "domain": "www.analyticsinsight.ae",
+       "title": "Top 100 AI Companies in UAE (2026)",
+       "description": null,
+       "breadcrumb": "www.analyticsinsight.ae"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://masterofcode.com/blog/ai-companies-in-dubai",
+       "domain": "masterofcode.com",
+       "title": "Top 10 AI Companies in Dubai [2026]",
+       "description": null,
+       "breadcrumb": "masterofcode.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://www.uaeaicenter.com/blog/ai-companies-in-the-uae",
+       "domain": "www.uaeaicenter.com",
+       "title": "AI Companies in the UAE: The Complete Map for 2026 | UAE AI Center",
+       "description": null,
+       "breadcrumb": "www.uaeaicenter.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://www.troniextechnologies.com/blog/ai-development-companies-in-uae",
+       "domain": "www.troniextechnologies.com",
+       "title": "9 Best AI Development Companies in UAE (2026)",
+       "description": null,
+       "breadcrumb": "www.troniextechnologies.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://clutch.co/ae/developers/artificial-intelligence/dubai",
+       "domain": "clutch.co",
+       "title": "Top Artificial Intelligence Companies in Dubai - Oct 2026 Rankings | Clutch.co",
+       "description": null,
+       "breadcrumb": "clutch.co"
+      }
+     ],
+     "sources": [
+      {
+       "type": "chat_gpt_source",
+       "title": "gbmme.com",
+       "snippet": null,
+       "domain": "www.gbmme.com",
+       "url": "https://www.gbmme.com/",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[gbmme.com](https://www.gbmme.com/)"
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "eandenterprise.com",
+       "snippet": null,
+       "domain": "www.eandenterprise.com",
+       "url": "https://www.eandenterprise.com/",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[eandenterprise.com](https://www.eandenterprise.com/)"
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Top 10 AI Solutions Companies in UAE, Dubai & Abu Dhabi",
+       "snippet": null,
+       "domain": "emtech.ae",
+       "url": "https://emtech.ae/best-ai-solutions-companies-uae-2/?utm_source=chatgpt.com",
+       "thumbnail": null,
+       "source_name": "emtech.ae",
+       "publication_date": "2026-10-03 00:00:00 +00:00",
+       "markdown": null
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "AI Companies in the UAE: Who Does What (2026 Guide)",
+       "snippet": null,
+       "domain": "obgulf.com",
+       "url": "https://obgulf.com/insights/ai-companies-in-uae?utm_source=chatgpt.com",
+       "thumbnail": null,
+       "source_name": "OneBonsAI Gulf",
+       "publication_date": "2026-10-22 00:00:00 +00:00",
+       "markdown": null
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "dataiku.com",
+       "snippet": null,
+       "domain": "www.dataiku.com",
+       "url": "https://www.dataiku.com/",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[dataiku.com](https://www.dataiku.com/)"
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "hiddenbrains.com",
+       "snippet": null,
+       "domain": "www.hiddenbrains.com",
+       "url": "https://www.hiddenbrains.com/",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[hiddenbrains.com](https://www.hiddenbrains.com/)"
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Which are the biggest Dubai AI companies?",
+       "snippet": null,
+       "domain": "artificial.ae",
+       "url": "https://artificial.ae/explainers/dubai-ai-companies/?utm_source=chatgpt.com",
+       "thumbnail": null,
+       "source_name": "UAE AI explainer \u00b7 artificial.ae",
+       "publication_date": null,
+       "markdown": null
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Top 100 AI Companies in UAE (2026)",
+       "snippet": null,
+       "domain": "www.analyticsinsight.ae",
+       "url": "https://www.analyticsinsight.ae/top-list/top-listtop-100-ai-companies-in-uae-2026?utm_source=chatgpt.com",
+       "thumbnail": null,
+       "source_name": "Analytics Insight UAE",
+       "publication_date": "2026-06-22 00:00:00 +00:00",
+       "markdown": null
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "presight.ai",
+       "snippet": null,
+       "domain": "www.presight.ai",
+       "url": "https://www.presight.ai/",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[presight.ai](https://www.presight.ai/)"
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "gravitybase.ai",
+       "snippet": null,
+       "domain": "gravitybase.ai",
+       "url": "https://gravitybase.ai/",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[gravitybase.ai](https://gravitybase.ai/)"
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Top Artificial Intelligence Companies in Dubai - Oct 2026 Rankings",
+       "snippet": null,
+       "domain": "clutch.co",
+       "url": "https://clutch.co/ae/developers/artificial-intelligence/dubai?utm_source=chatgpt.com",
+       "thumbnail": null,
+       "source_name": "Clutch",
+       "publication_date": null,
+       "markdown": null
+      }
+     ],
+     "fan_out_queries": [
+      "top AI development companies in Dubai UAE enterprise projects 2026"
+     ],
+     "brand_entities": [
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "Enterprise IT systems integration and technology services in the Middle East",
+       "category": "company",
+       "markdown": "Gulf Business Machines (GBM)",
+       "urls": null
+      },
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "Enterprise digital transformation, cloud, data and AI services",
+       "category": "company",
+       "markdown": "e& enterprise",
+       "urls": null
+      },
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "Dataiku AI FZ LLC",
+       "category": "local_business",
+       "markdown": "Dataiku AI FZ LLC",
+       "urls": null
+      },
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "AIdeology",
+       "category": "local_business",
+       "markdown": "AIdeology",
+       "urls": null
+      },
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "Hidden Brains",
+       "category": "local_business",
+       "markdown": "Hidden Brains",
+       "urls": null
+      },
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "AI-powered big data analytics and decision intelligence",
+       "category": "company",
+       "markdown": "Presight",
+       "urls": null
+      },
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "Gravity Base",
+       "category": "local_business",
+       "markdown": "Gravity Base",
+       "urls": null
+      }
+     ],
+     "se_results_count": 0,
+     "item_types": [
+      "chat_gpt_text",
+      "chat_gpt_images",
+      "chat_gpt_table",
+      "chat_gpt_local_businesses"
+     ],
+     "items_count": 19,
+     "items": [
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 1,
+       "rank_absolute": 1,
+       "markdown": "# Top AI development companies in Dubai for enterprise projects\n\nFor enterprise AI projects in Dubai, I\u2019d prioritize companies that can do more than build a chatbot: look for expertise in AI strategy, system integration, data engineering, generative AI, security, governance, and production deployment.\n\nThe best partner depends on whether you're building an AI-powered enterprise platform, automating business operations, modernizing legacy systems, or deploying AI across a regulated industry such as banking, healthcare, or government.\n\n## 7 companies worth shortlisting\n\nThis is a practical shortlist based on enterprise fit, the type of AI work offered, and UAE presence\u2014not a definitive ranking of delivery quality. Enterprise platform providers and custom software developers serve different needs, so I've separated them by their strengths.\n\n",
+       "sources": null,
+       "brand_entities": null
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 1,
+       "rank_absolute": 2,
+       "markdown": "![GBM Brandvoice](https://images.openai.com/static-rsc-4/0iiZHvDpk3ZP_bCm5OW8aCIG7frctGBfMn23oIElBD-GnGWXokLYBaKzucTeYXhPXKRrTMcbAuLpRiRmuHn9ECdrZHF7Lf1xH6CAYUTSY0YafDKIJJD-XmeJGCH_xMqcsdPnJOXqzsBMYvvVjGGwINgL1coXcmjwHyH35Dr3PNwgUZYkhz-5NjrCUE7CPS9I?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://www.forbesmiddleeast.com/brandvoice/gulf-business-machinesgbm-1",
+         "alt": "GBM Brandvoice",
+         "image_url": "https://images.openai.com/static-rsc-4/0iiZHvDpk3ZP_bCm5OW8aCIG7frctGBfMn23oIElBD-GnGWXokLYBaKzucTeYXhPXKRrTMcbAuLpRiRmuHn9ECdrZHF7Lf1xH6CAYUTSY0YafDKIJJD-XmeJGCH_xMqcsdPnJOXqzsBMYvvVjGGwINgL1coXcmjwHyH35Dr3PNwgUZYkhz-5NjrCUE7CPS9I?purpose=fullsize",
+         "markdown": "![GBM Brandvoice](https://images.openai.com/static-rsc-4/0iiZHvDpk3ZP_bCm5OW8aCIG7frctGBfMn23oIElBD-GnGWXokLYBaKzucTeYXhPXKRrTMcbAuLpRiRmuHn9ECdrZHF7Lf1xH6CAYUTSY0YafDKIJJD-XmeJGCH_xMqcsdPnJOXqzsBMYvvVjGGwINgL1coXcmjwHyH35Dr3PNwgUZYkhz-5NjrCUE7CPS9I?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 2,
+       "rank_absolute": 3,
+       "markdown": "\n\n**1\\. Gulf Business Machines (GBM)**\n\n(Large enterprise)\n\nA strong candidate for complex enterprise transformation involving data platforms, analytics, AI integration, and existing business systems.\n\n**Best for\\:** Large organizations that need AI integrated with enterprise infrastructure, data management, and business applications.\n\nWebsite: [gbmme.com](https://www.gbmme.com/)\n\n---\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "gbmme.com",
+         "snippet": null,
+         "domain": "www.gbmme.com",
+         "url": "https://www.gbmme.com/",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[gbmme.com](https://www.gbmme.com/)"
+        }
+       ],
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "Enterprise IT systems integration and technology services in the Middle East",
+         "category": "company",
+         "markdown": "Gulf Business Machines (GBM)",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 2,
+       "rank_absolute": 4,
+       "markdown": "![E& enterprise and NICE partner to revolutionise CX with CCaaS solutions](https://images.openai.com/static-rsc-4/3H9KRf3fHK-pNXS0DiHr47R19FznqAfMLMGKYpgO7__wuKOcZar7zy2QT0IdAELrbh2nMfC2tnH1eRXhT1FW9Ov-VZZfXqn2pRLclpIf0Pof3nYJISv2ZAwKh6RIuT4St0hjfD9hQhpAR9gYOlHWeCJgFy5NfmOQMBqW4h8LF2PDT75iolbdjKld6QoAY4mH?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://www.zawya.com/en/press-release/companies-news/e-and-enterprise-and-nice-partner-to-revolutionise-cx-with-ccaas-solutions-wn9b0r0v",
+         "alt": "E& enterprise and NICE partner to revolutionise CX with CCaaS solutions",
+         "image_url": "https://images.openai.com/static-rsc-4/3H9KRf3fHK-pNXS0DiHr47R19FznqAfMLMGKYpgO7__wuKOcZar7zy2QT0IdAELrbh2nMfC2tnH1eRXhT1FW9Ov-VZZfXqn2pRLclpIf0Pof3nYJISv2ZAwKh6RIuT4St0hjfD9hQhpAR9gYOlHWeCJgFy5NfmOQMBqW4h8LF2PDT75iolbdjKld6QoAY4mH?purpose=fullsize",
+         "markdown": "![E& enterprise and NICE partner to revolutionise CX with CCaaS solutions](https://images.openai.com/static-rsc-4/3H9KRf3fHK-pNXS0DiHr47R19FznqAfMLMGKYpgO7__wuKOcZar7zy2QT0IdAELrbh2nMfC2tnH1eRXhT1FW9Ov-VZZfXqn2pRLclpIf0Pof3nYJISv2ZAwKh6RIuT4St0hjfD9hQhpAR9gYOlHWeCJgFy5NfmOQMBqW4h8LF2PDT75iolbdjKld6QoAY4mH?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 3,
+       "rank_absolute": 5,
+       "markdown": "\n\n**2\\. e& enterprise**\n\nAn enterprise-focused digital transformation provider worth evaluating for AI adoption across business processes, cloud platforms, data, and large-scale IT environments.\n\n**Best for\\:** Organizations seeking a broader implementation partner rather than a standalone AI application developer.\n\nWebsite: [eandenterprise.com](https://www.eandenterprise.com/)\n\n---\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "eandenterprise.com",
+         "snippet": null,
+         "domain": "www.eandenterprise.com",
+         "url": "https://www.eandenterprise.com/",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[eandenterprise.com](https://www.eandenterprise.com/)"
+        }
+       ],
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "Enterprise digital transformation, cloud, data and AI services",
+         "category": "company",
+         "markdown": "e& enterprise",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 3,
+       "rank_absolute": 6,
+       "markdown": "![Dataiku Announces the Release of Dataiku Lite Edition](https://images.openai.com/static-rsc-4/gyxgZ-BLb6GMfI1JE5HKsPPvKxx7ls4ubZxWCAUe77FcWqXRoz6Lx1Ettxb9UXONpvdfOSdv13bOHkq4feyP7OAwD5G_ZT2YCmYWzaRmx40jgOnuICz0mfjBqeIIceGWXzFCt_58I6LLKKFa_f8BqadX9vxHNecLPIBaHfv8--rqchfR_YHwHP_qZTRqBspB?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://www.prnewswire.com/news-releases/dataiku-announces-the-release-of-dataiku-lite-edition-300822804.html",
+         "alt": "Dataiku Announces the Release of Dataiku Lite Edition",
+         "image_url": "https://images.openai.com/static-rsc-4/gyxgZ-BLb6GMfI1JE5HKsPPvKxx7ls4ubZxWCAUe77FcWqXRoz6Lx1Ettxb9UXONpvdfOSdv13bOHkq4feyP7OAwD5G_ZT2YCmYWzaRmx40jgOnuICz0mfjBqeIIceGWXzFCt_58I6LLKKFa_f8BqadX9vxHNecLPIBaHfv8--rqchfR_YHwHP_qZTRqBspB?purpose=fullsize",
+         "markdown": "![Dataiku Announces the Release of Dataiku Lite Edition](https://images.openai.com/static-rsc-4/gyxgZ-BLb6GMfI1JE5HKsPPvKxx7ls4ubZxWCAUe77FcWqXRoz6Lx1Ettxb9UXONpvdfOSdv13bOHkq4feyP7OAwD5G_ZT2YCmYWzaRmx40jgOnuICz0mfjBqeIIceGWXzFCt_58I6LLKKFa_f8BqadX9vxHNecLPIBaHfv8--rqchfR_YHwHP_qZTRqBspB?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 4,
+       "rank_absolute": 7,
+       "markdown": "\n\n**3\\. Dataiku AI FZ LLC**\n\nDataiku provides an enterprise AI platform for developing, deploying, and governing analytics and machine-learning solutions. Its Dubai office serves organizations in the UAE and wider region. [emtech.ae](https://emtech.ae/best-ai-solutions-companies-uae-2/?utm_source=chatgpt.com)[obgulf.com](https://obgulf.com/insights/ai-companies-in-uae?utm_source=chatgpt.com)\n\n**Best for\\:** Enterprises that need governed AI development across multiple teams, with reusable workflows and oversight.\n\nWebsite: [dataiku.com](https://www.dataiku.com/)\n\n---\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "Top 10 AI Solutions Companies in UAE, Dubai & Abu Dhabi",
+         "snippet": null,
+         "domain": "emtech.ae",
+         "url": "https://emtech.ae/best-ai-solutions-companies-uae-2/?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "emtech.ae",
+         "publication_date": "2026-10-03 00:00:00 +00:00",
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "AI Companies in the UAE: Who Does What (2026 Guide)",
+         "snippet": null,
+         "domain": "obgulf.com",
+         "url": "https://obgulf.com/insights/ai-companies-in-uae?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "OneBonsAI Gulf",
+         "publication_date": "2026-10-22 00:00:00 +00:00",
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "dataiku.com",
+         "snippet": null,
+         "domain": "www.dataiku.com",
+         "url": "https://www.dataiku.com/",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[dataiku.com](https://www.dataiku.com/)"
+        }
+       ],
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "Dataiku AI FZ LLC",
+         "category": "local_business",
+         "markdown": "Dataiku AI FZ LLC",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 4,
+       "rank_absolute": 8,
+       "markdown": "![AI Support Center | Meydan FZ Business Directory](https://images.openai.com/static-rsc-4/GaTjSBBWYaPyz9p6FYyoo7bSJzslW6cDTjLwAjTBTqZs6JKetxmm858Gg-VNsnKXRtOdcqS-UNvGDn8xHnQqn4IejTdBtUfkL74OXtLoRwTW2ntzoALX7i7QUkhnn3fI9HD5rbCuiTJsZd9uY64jcYYVmpF5Wn5NKeipddRkJG3Qt1Fv2VmlMRUTr2x2CCPr?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://maicenter.ae/",
+         "alt": "AI Support Center | Meydan FZ Business Directory",
+         "image_url": "https://images.openai.com/static-rsc-4/GaTjSBBWYaPyz9p6FYyoo7bSJzslW6cDTjLwAjTBTqZs6JKetxmm858Gg-VNsnKXRtOdcqS-UNvGDn8xHnQqn4IejTdBtUfkL74OXtLoRwTW2ntzoALX7i7QUkhnn3fI9HD5rbCuiTJsZd9uY64jcYYVmpF5Wn5NKeipddRkJG3Qt1Fv2VmlMRUTr2x2CCPr?purpose=fullsize",
+         "markdown": "![AI Support Center | Meydan FZ Business Directory](https://images.openai.com/static-rsc-4/GaTjSBBWYaPyz9p6FYyoo7bSJzslW6cDTjLwAjTBTqZs6JKetxmm858Gg-VNsnKXRtOdcqS-UNvGDn8xHnQqn4IejTdBtUfkL74OXtLoRwTW2ntzoALX7i7QUkhnn3fI9HD5rbCuiTJsZd9uY64jcYYVmpF5Wn5NKeipddRkJG3Qt1Fv2VmlMRUTr2x2CCPr?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 5,
+       "rank_absolute": 9,
+       "markdown": "\n\n**4\\. AIdeology**\n\nA Dubai-based AI consultancy offering generative AI, large language model integration, conversational AI, AI agents, and machine-learning solutions.\n\n**Best for\\:** Custom AI systems and moving business use cases from experimentation toward production.\n\nLocation: Jumeirah 1, Dubai.\n\n---\n\n",
+       "sources": null,
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "AIdeology",
+         "category": "local_business",
+         "markdown": "AIdeology",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 5,
+       "rank_absolute": 10,
+       "markdown": "![](https://images.openai.com/static-rsc-4/Bf7Mr13lVBbtABSMK3KlqEruD6SbnLqLlVlsv7_G16-60RI2zAY8ABVZB_mYTrEXAyq56QZojKLdq7VN4NdhxRUEWb71XcHAi5ZJm52SIbzRQMjeTdBDbQ8DtBMumIEn5crMucyAs4dE4tRm9BrFoo6U4c7UsNTbpXWRzuUqE7b0bnOdvm8jm3GebujIX3Az?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://roi4cio.com/catalog/en/vendor/hidden-brains-infotech-llc",
+         "alt": null,
+         "image_url": "https://images.openai.com/static-rsc-4/Bf7Mr13lVBbtABSMK3KlqEruD6SbnLqLlVlsv7_G16-60RI2zAY8ABVZB_mYTrEXAyq56QZojKLdq7VN4NdhxRUEWb71XcHAi5ZJm52SIbzRQMjeTdBDbQ8DtBMumIEn5crMucyAs4dE4tRm9BrFoo6U4c7UsNTbpXWRzuUqE7b0bnOdvm8jm3GebujIX3Az?purpose=fullsize",
+         "markdown": "![](https://images.openai.com/static-rsc-4/Bf7Mr13lVBbtABSMK3KlqEruD6SbnLqLlVlsv7_G16-60RI2zAY8ABVZB_mYTrEXAyq56QZojKLdq7VN4NdhxRUEWb71XcHAi5ZJm52SIbzRQMjeTdBDbQ8DtBMumIEn5crMucyAs4dE4tRm9BrFoo6U4c7UsNTbpXWRzuUqE7b0bnOdvm8jm3GebujIX3Az?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 6,
+       "rank_absolute": 11,
+       "markdown": "\n\n**5\\. Hidden Brains**\n\nA software engineering and IT consulting company with Dubai operations and offerings across custom AI development, generative AI, NLP, and enterprise software.\n\n**Best for\\:** Organizations that need an AI solution built into a web platform, mobile application, or existing software product.\n\nLocation: Business Bay, Dubai.\n\nWebsite: [hiddenbrains.com](https://www.hiddenbrains.com/)\n\n---\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "hiddenbrains.com",
+         "snippet": null,
+         "domain": "www.hiddenbrains.com",
+         "url": "https://www.hiddenbrains.com/",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[hiddenbrains.com](https://www.hiddenbrains.com/)"
+        }
+       ],
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "Hidden Brains",
+         "category": "local_business",
+         "markdown": "Hidden Brains",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 6,
+       "rank_absolute": 12,
+       "markdown": "![Presight AI Holding PLC? | Company Profile | Manhom](https://images.openai.com/static-rsc-4/ICenvcoYP0v8_wQjCtQ0uPmuHfsIvwyCaVYUKRoRUKNPQEP0owjWwIrNDukJzWzKgs5vm3gDmdg1mgFgfmjiFVEVfip_8hIgKBWwOJSi5MadfE_ESgS_E8BF2gbJllld_xILBLslz_69bdl0nGVZx-BSB95CV_P43_37jUcUTno7A9sEwfIMaKtwaO1LEZsJ?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://manhom.com/en/companies/presight-ai-holding-plc/",
+         "alt": "Presight AI Holding PLC? | Company Profile | Manhom",
+         "image_url": "https://images.openai.com/static-rsc-4/ICenvcoYP0v8_wQjCtQ0uPmuHfsIvwyCaVYUKRoRUKNPQEP0owjWwIrNDukJzWzKgs5vm3gDmdg1mgFgfmjiFVEVfip_8hIgKBWwOJSi5MadfE_ESgS_E8BF2gbJllld_xILBLslz_69bdl0nGVZx-BSB95CV_P43_37jUcUTno7A9sEwfIMaKtwaO1LEZsJ?purpose=fullsize",
+         "markdown": "![Presight AI Holding PLC? | Company Profile | Manhom](https://images.openai.com/static-rsc-4/ICenvcoYP0v8_wQjCtQ0uPmuHfsIvwyCaVYUKRoRUKNPQEP0owjWwIrNDukJzWzKgs5vm3gDmdg1mgFgfmjiFVEVfip_8hIgKBWwOJSi5MadfE_ESgS_E8BF2gbJllld_xILBLslz_69bdl0nGVZx-BSB95CV_P43_37jUcUTno7A9sEwfIMaKtwaO1LEZsJ?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 7,
+       "rank_absolute": 13,
+       "markdown": "\n\n**6\\. Presight**\n\nA UAE-based AI and big-data analytics company focused on large-scale decision intelligence and data-driven solutions across industries. It is headquartered in Abu Dhabi rather than Dubai, but is worth considering for major regional programs. [artificial.ae](https://artificial.ae/explainers/dubai-ai-companies/?utm_source=chatgpt.com)[www.analyticsinsight.ae](https://www.analyticsinsight.ae/top-list/top-listtop-100-ai-companies-in-uae-2026?utm_source=chatgpt.com)\n\n**Best for\\:** Government, infrastructure, energy, and other data-intensive enterprise projects.\n\nWebsite: [presight.ai](https://www.presight.ai/)\n\n---\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "Which are the biggest Dubai AI companies?",
+         "snippet": null,
+         "domain": "artificial.ae",
+         "url": "https://artificial.ae/explainers/dubai-ai-companies/?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "UAE AI explainer \u00b7 artificial.ae",
+         "publication_date": null,
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Top 100 AI Companies in UAE (2026)",
+         "snippet": null,
+         "domain": "www.analyticsinsight.ae",
+         "url": "https://www.analyticsinsight.ae/top-list/top-listtop-100-ai-companies-in-uae-2026?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Analytics Insight UAE",
+         "publication_date": "2026-06-22 00:00:00 +00:00",
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "presight.ai",
+         "snippet": null,
+         "domain": "www.presight.ai",
+         "url": "https://www.presight.ai/",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[presight.ai](https://www.presight.ai/)"
+        }
+       ],
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "AI-powered big data analytics and decision intelligence",
+         "category": "company",
+         "markdown": "Presight",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 7,
+       "rank_absolute": 14,
+       "markdown": "![Build, deploy, and scale AI models securely with gravityAI. Private Cloud, on-prem, and air-gapped deployments with enterprise governance built in.](https://images.openai.com/static-rsc-4/hb8dXqEvjWS08Ghm419aMO6nG6uZkIXmSN9y4cLCdvlULykBXiNaDVDlacTWmgvXizXLpCSiAPT2-H5ZHuvOLx1mWxGDKt01vpoyukMC2Lr6G0qmb6iuHJWQAHMcx7ijhvkxds9rV9RS82nUB3yXDVt2_5AMGclc4gwdpNZonoUXpIG1AmorqyY0U6E_Wwo5?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://www.gravity-ai.com/",
+         "alt": "Build, deploy, and scale AI models securely with gravityAI. Private Cloud, on-prem, and air-gapped deployments with enterprise governance built in.",
+         "image_url": "https://images.openai.com/static-rsc-4/hb8dXqEvjWS08Ghm419aMO6nG6uZkIXmSN9y4cLCdvlULykBXiNaDVDlacTWmgvXizXLpCSiAPT2-H5ZHuvOLx1mWxGDKt01vpoyukMC2Lr6G0qmb6iuHJWQAHMcx7ijhvkxds9rV9RS82nUB3yXDVt2_5AMGclc4gwdpNZonoUXpIG1AmorqyY0U6E_Wwo5?purpose=fullsize",
+         "markdown": "![Build, deploy, and scale AI models securely with gravityAI. Private Cloud, on-prem, and air-gapped deployments with enterprise governance built in.](https://images.openai.com/static-rsc-4/hb8dXqEvjWS08Ghm419aMO6nG6uZkIXmSN9y4cLCdvlULykBXiNaDVDlacTWmgvXizXLpCSiAPT2-H5ZHuvOLx1mWxGDKt01vpoyukMC2Lr6G0qmb6iuHJWQAHMcx7ijhvkxds9rV9RS82nUB3yXDVt2_5AMGclc4gwdpNZonoUXpIG1AmorqyY0U6E_Wwo5?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 8,
+       "rank_absolute": 15,
+       "markdown": "\n\n**7\\. Gravity Base**\n\nA Dubai-based AI and software development firm offering enterprise AI development, workflow automation, conversational AI, and custom AI applications.\n\n**Best for\\:** Companies seeking a more implementation-focused partner to build AI assistants, knowledge search, and automated workflows.\n\nLocation: Al Quoz, Dubai.\n\nWebsite: [gravitybase.ai](https://gravitybase.ai/)\n\nThese candidates reflect different delivery models. For larger, complex programs, start by evaluating GBM and e&amp; enterprise; for a governed AI development platform, consider Dataiku; for custom-built solutions, evaluate AIdeology, Hidden Brains, and Gravity Base. Presight is a separate option for large-scale analytics programs. These are suggested starting points, not verified head-to-head performance rankings. [emtech.ae](https://emtech.ae/best-ai-solutions-companies-uae-2/?utm_source=chatgpt.com)[clutch.co](https://clutch.co/ae/developers/artificial-intelligence/dubai?utm_source=chatgpt.com)\n\n## Compare them by enterprise use case\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "gravitybase.ai",
+         "snippet": null,
+         "domain": "gravitybase.ai",
+         "url": "https://gravitybase.ai/",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[gravitybase.ai](https://gravitybase.ai/)"
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Top 10 AI Solutions Companies in UAE, Dubai & Abu Dhabi",
+         "snippet": null,
+         "domain": "emtech.ae",
+         "url": "https://emtech.ae/best-ai-solutions-companies-uae-2/?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "emtech.ae",
+         "publication_date": "2026-10-03 00:00:00 +00:00",
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Top Artificial Intelligence Companies in Dubai - Oct 2026 Rankings",
+         "snippet": null,
+         "domain": "clutch.co",
+         "url": "https://clutch.co/ae/developers/artificial-intelligence/dubai?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Clutch",
+         "publication_date": null,
+         "markdown": null
+        }
+       ],
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "Gravity Base",
+         "category": "local_business",
+         "markdown": "Gravity Base",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_table",
+       "rank_group": 1,
+       "rank_absolute": 16,
+       "text": null,
+       "markdown": "| Your requirement | Best starting shortlist |\n|--------|--------|\n| Enterprise-wide AI transformation | GBM, e&amp; enterprise |\n| AI governance and repeatable ML workflows | Dataiku |\n| Custom generative AI and AI agents | AIdeology, Gravity Base |\n| AI integrated into custom software | Hidden Brains |\n| Large-scale analytics and decision intelligence | Presight |\n\n",
+       "table": {
+        "table_header": [
+         "Your requirement",
+         "Best starting shortlist"
+        ],
+        "table_content": [
+         [
+          "Enterprise-wide AI transformation",
+          "GBM, e&amp; enterprise"
+         ],
+         [
+          "AI governance and repeatable ML workflows",
+          "Dataiku"
+         ],
+         [
+          "Custom generative AI and AI agents",
+          "AIdeology, Gravity Base"
+         ],
+         [
+          "AI integrated into custom software",
+          "Hidden Brains"
+         ],
+         [
+          "Large-scale analytics and decision intelligence",
+          "Presight"
+         ]
+        ]
+       },
+       "brand_entities": null
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 9,
+       "rank_absolute": 17,
+       "markdown": "\n",
+       "sources": null,
+       "brand_entities": null
+      },
+      {
+       "type": "chat_gpt_local_businesses",
+       "rank_group": 1,
+       "rank_absolute": 18,
+       "markdown": null,
+       "items": [
+        {
+         "type": "chat_gpt_local_businesses_element",
+         "title": "Dataiku AI FZ LLC",
+         "description": "Software company",
+         "address": "Innovation Hub - Building - 2B Office 307 Al Falak St - Al Sufouh 2 - Al Sufouh - Dubai - United Arab Emirates",
+         "phone": null,
+         "reviews_count": 6,
+         "url": "https://www.dataiku.com/",
+         "domain": "www.dataiku.com",
+         "rating": {
+          "rating_type": "Max5",
+          "value": 5,
+          "votes_count": 6,
+          "rating_max": 5
+         }
+        },
+        {
+         "type": "chat_gpt_local_businesses_element",
+         "title": "AIdeology",
+         "description": "Computer consultant",
+         "address": "120 4A St - Jumeirah 1 - Jumeirah - Dubai - United Arab Emirates",
+         "phone": "+971 56 573 9276",
+         "reviews_count": 5,
+         "url": "http://www.aideology.ai/",
+         "domain": "www.aideology.ai",
+         "rating": {
+          "rating_type": "Max5",
+          "value": 5,
+          "votes_count": 5,
+          "rating_max": 5
+         }
+        },
+        {
+         "type": "chat_gpt_local_businesses_element",
+         "title": "Hidden Brains : AI Software Development Dubai, UAE",
+         "description": "Software company",
+         "address": "The Metropolis Tower - Office No: 01, Unit 2201, 22nd Floor - Marasi Dr - Business Bay - Dubai - United Arab Emirates",
+         "phone": "+971 50 541 7174",
+         "reviews_count": 30,
+         "url": "https://www.hiddenbrains.ae/",
+         "domain": "www.hiddenbrains.ae",
+         "rating": {
+          "rating_type": "Max5",
+          "value": 5,
+          "votes_count": 30,
+          "rating_max": 5
+         }
+        },
+        {
+         "type": "chat_gpt_local_businesses_element",
+         "title": "Gravity Base - AI Development and App Development Company",
+         "description": "Software company",
+         "address": "Building, The Curve - Sheikh Zayed Rd - Al Qouz Third - Al Quoz - Dubai - United Arab Emirates",
+         "phone": "+971 4 395 9585",
+         "reviews_count": 1,
+         "url": "https://www.gravitybase.ai/?utm_source=gbp",
+         "domain": "www.gravitybase.ai",
+         "rating": {
+          "rating_type": "Max5",
+          "value": 5,
+          "votes_count": 1,
+          "rating_max": 5
+         }
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 10,
+       "rank_absolute": 19,
+       "markdown": "\n\n## How to choose the right vendor\n\nBefore signing a contract, ask each shortlisted company for\\:\n\n- **Relevant case studies\\:** At least two comparable enterprise deployments, ideally with measurable business results.\n- **Security and data residency\\:** Where data, model inputs, logs, and backups are stored; whether private-cloud or on-premises deployment is supported.\n- **Integration capability\\:** Experience with your ERP, CRM, document systems, APIs, identity provider, and data warehouse.\n- **Production readiness\\:** Evaluation benchmarks, monitoring, human oversight, fallback procedures, and ongoing support SLAs.\n- **Commercial transparency\\:** Discovery costs, implementation milestones, cloud and model usage fees, maintenance, and ownership of custom code.\n\nFor UAE deployments, also ask how the solution addresses applicable data protection requirements and sector-specific regulations.\n\n## My recommendation\n\nFor a substantial enterprise project, I would shortlist **three vendors with different strengths** rather than choose solely by online rankings\\:\n\n1. GBM or e&amp; enterprise for enterprise-wide integration.\n2. Dataiku for a governed AI platform and repeatable AI delivery.\n3. AIdeology or Gravity Base for a custom-built AI solution.\n\nThe final choice should depend on the actual project scope and demonstrated delivery experience.\n\n**What kind of enterprise AI project are you planning?** For example, an internal knowledge assistant, AI agents and workflow automation, predictive analytics, or a full custom AI platform. I can narrow this to the most suitable companies and compare their capabilities, estimated budget ranges, and delivery models.",
+       "sources": null,
+       "brand_entities": null
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

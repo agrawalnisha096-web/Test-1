@@ -1,0 +1,162 @@
+{
+ "version": "0.1.20261022",
+ "status_code": 20000,
+ "status_message": "Ok.",
+ "time": "5.9983 sec.",
+ "cost": 0.004,
+ "tasks_count": 1,
+ "tasks_error": 0,
+ "tasks": [
+  {
+   "id": "10270244-2577-0139-0000-13b07740b3ac",
+   "status_code": 20000,
+   "status_message": "Ok.",
+   "time": "5.9417 sec.",
+   "cost": 0.004,
+   "result_count": 1,
+   "path": [
+    "v3",
+    "serp",
+    "google",
+    "ai_mode",
+    "live",
+    "advanced"
+   ],
+   "data": {
+    "api": "serp",
+    "function": "live",
+    "se": "google",
+    "se_type": "ai_mode",
+    "keyword": "What are the top AI development companies in Dubai for enterprise projects?",
+    "location_code": 2784,
+    "language_code": "en",
+    "device": "desktop",
+    "tag": "Q3-ai_mode-1",
+    "os": "windows"
+   },
+   "result": [
+    {
+     "keyword": "What are the top AI development companies in Dubai for enterprise projects?",
+     "type": "ai_mode",
+     "se_domain": "google.com",
+     "location_code": 2784,
+     "language_code": "en",
+     "check_url": "https://www.google.com/search?q=What%20are%20the%20top%20AI%20development%20companies%20in%20Dubai%20for%20enterprise%20projects%3F&hl=en&gl=AE&udm=50&uule=w+CAIQIFISCb0Sq7HfSF4-EacKCMBWL9Mz",
+     "datetime": "2026-10-27 02:44:14 +00:00",
+     "spell": null,
+     "refinement_chips": null,
+     "item_types": [
+      "ai_overview"
+     ],
+     "se_results_count": 0,
+     "items_count": 1,
+     "items": [
+      {
+       "type": "ai_overview",
+       "rank_group": 1,
+       "rank_absolute": 1,
+       "page": 1,
+       "position": "left",
+       "xpath": "/html[1]/body[1]/div[2]/div[1]/div[9]/div[1]/section[1]/div[1]/div[1]/div[3]/div[4]/div[1]/div[1]/div[1]/div[3]",
+       "markdown": "When targeting enterprise-grade artificial intelligence projects in Dubai, organizations generally look for `firms capable of handling secure data infrastructure, large-scale machine learning, natural language processing (NLP), and regulatory compliance aligned with the UAE's National AI Strategy`.[[1]](https://masterofcode.com/blog/ai-companies-in-dubai)\n\nTop-tier companies and enterprise solution providers operating in Dubai with strong AI credentials include:\n\n- Core42 \u2013 A prominent regional player focused on national-scale AI, cloud infrastructure, and advanced data enablement for large enterprises and government entities.\n- Presight \u2013 An Abu Dhabi-headquartered powerhouse with a massive footprint across the UAE (including Dubai), specializing in big data analytics powered by artificial intelligence and digital transformation for public and private sectors.\n- e& enterprise \u2013 The enterprise digital arm of e&, offering robust cloud, IoT, hyper-automation, and custom AI integration capabilities tailored for large corporate environments.\n- Sigma Software Group \u2013 A global software engineering firm with a strong Dubai presence, delivering enterprise-grade AI/ML architecture, product engineering, and digital transformation for major sectors like fintech, aviation, and healthcare.\n- DataArt \u2013 A global technology consultancy with a dedicated Dubai office, heavily focused on advanced data analytics, modernization, and enterprise-scale AI implementation supported by major international investments in AI capabilities.\n- Gulf Business Machines (GBM) \u2013 A deeply established regional IT consultancy providing robust cognitive and AI-driven infrastructure integrations for large enterprises across the Gulf.\n- Master of Code Global \u2013 Recognized for conversational and generative AI solutions, building enterprise-grade intelligent virtual assistants and automation frameworks.[[1]](https://masterofcode.com/blog/ai-companies-in-dubai)\n- Code Brew Labs \u2013 Frequently utilized for custom enterprise application development integrated with machine learning and intelligent automation workflows.[[1]](https://masterofcode.com/blog/ai-companies-in-dubai)\n\nIf you'd like to narrow down this list, tell me:\n\n- What **industry** is your enterprise in (fintech, healthcare, logistics, retail, etc.)?\n- Are you looking for **Generative AI/LLMs**, **predictive analytics** , or **computer vision/automation**?\n\nI can help tailor the recommendation to your **specific technical scope**.",
+       "items": [
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "When targeting enterprise-grade artificial intelligence projects in Dubai, organizations generally look for firms capable of handling secure data infrastructure, large-scale machine learning, natural language processing (NLP), and regulatory compliance aligned with the UAE's National AI Strategy.",
+         "markdown": "When targeting enterprise-grade artificial intelligence projects in Dubai, organizations generally look for `firms capable of handling secure data infrastructure, large-scale machine learning, natural language processing (NLP), and regulatory compliance aligned with the UAE's National AI Strategy`.[[1]](https://masterofcode.com/blog/ai-companies-in-dubai)",
+         "links": null,
+         "images": null,
+         "references": [
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Master of Code Global",
+           "domain": "masterofcode.com",
+           "url": "https://masterofcode.com/blog/ai-companies-in-dubai",
+           "title": "Top 10 AI Companies in Dubai [2026]",
+           "text": "Dubai AI Innovators: Master of Code Global. Krazimo Private Limited"
+          }
+         ]
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "Top-tier companies and enterprise solution providers operating in Dubai with strong AI credentials include:",
+         "markdown": "Top-tier companies and enterprise solution providers operating in Dubai with strong AI credentials include:",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "Core42 \u2013 A prominent regional player focused on national-scale AI, cloud infrastructure, and advanced data enablement for large enterprises and government entities. Core42 Presight \u2013 An Abu Dhabi-headquartered powerhouse with a massive footprint across the UAE (including Dubai), specializing in big data analytics powered by artificial intelligence and digital transformation for public and private sectors. Presight e& enterprise \u2013 The enterprise digital arm of e&, offering robust cloud, IoT, hyper-automation, and custom AI integration capabilities tailored for large corporate environments. e& enterprise Sigma Software Group \u2013 A global software engineering firm with a strong Dubai presence, delivering enterprise-grade AI/ML architecture, product engineering, and digital transformation for major sectors like fintech, aviation, and healthcare. Sigma Software Group DataArt \u2013 A global technology consultancy with a dedicated Dubai office, heavily focused on advanced data analytics, modernization, and enterprise-scale AI implementation supported by major international investments in AI capabilities. DataArt Gulf Business Machines (GBM) \u2013 A deeply established regional IT consultancy providing robust cognitive and AI-driven infrastructure integrations for large enterprises across the Gulf. Gulf Business Machines (GBM) Master of Code Global \u2013 Recognized for conversational and generative AI solutions, building enterprise-grade intelligent virtual assistants and automation frameworks. Master of Code Global Code Brew Labs \u2013 Frequently utilized for custom enterprise application development integrated with machine learning and intelligent automation workflows. Code Brew Labs",
+         "markdown": "- Core42 \u2013 A prominent regional player focused on national-scale AI, cloud infrastructure, and advanced data enablement for large enterprises and government entities.\n- Presight \u2013 An Abu Dhabi-headquartered powerhouse with a massive footprint across the UAE (including Dubai), specializing in big data analytics powered by artificial intelligence and digital transformation for public and private sectors.\n- e& enterprise \u2013 The enterprise digital arm of e&, offering robust cloud, IoT, hyper-automation, and custom AI integration capabilities tailored for large corporate environments.\n- Sigma Software Group \u2013 A global software engineering firm with a strong Dubai presence, delivering enterprise-grade AI/ML architecture, product engineering, and digital transformation for major sectors like fintech, aviation, and healthcare.\n- DataArt \u2013 A global technology consultancy with a dedicated Dubai office, heavily focused on advanced data analytics, modernization, and enterprise-scale AI implementation supported by major international investments in AI capabilities.\n- Gulf Business Machines (GBM) \u2013 A deeply established regional IT consultancy providing robust cognitive and AI-driven infrastructure integrations for large enterprises across the Gulf.\n- Master of Code Global \u2013 Recognized for conversational and generative AI solutions, building enterprise-grade intelligent virtual assistants and automation frameworks.[[1]](https://masterofcode.com/blog/ai-companies-in-dubai)\n- Code Brew Labs \u2013 Frequently utilized for custom enterprise application development integrated with machine learning and intelligent automation workflows.[[1]](https://masterofcode.com/blog/ai-companies-in-dubai)",
+         "links": null,
+         "images": null,
+         "references": [
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Master of Code Global",
+           "domain": "masterofcode.com",
+           "url": "https://masterofcode.com/blog/ai-companies-in-dubai",
+           "title": "Top 10 AI Companies in Dubai [2026]",
+           "text": "Code Brew Labs (AI app dev, machine learning, intelligent automation); for enterprise-scale deployments."
+          }
+         ]
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "If you'd like to narrow down this list, tell me:",
+         "markdown": "If you'd like to narrow down this list, tell me:",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "What industry is your enterprise in (fintech, healthcare, logistics, retail, etc.)? Are you looking for Generative AI/LLMs, predictive analytics, or computer vision/automation ?",
+         "markdown": "- What **industry** is your enterprise in (fintech, healthcare, logistics, retail, etc.)?\n- Are you looking for **Generative AI/LLMs**, **predictive analytics** , or **computer vision/automation**?",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "I can help tailor the recommendation to your specific technical scope.",
+         "markdown": "I can help tailor the recommendation to your **specific technical scope**.",
+         "links": null,
+         "images": null,
+         "references": null
+        }
+       ],
+       "references": [
+        {
+         "type": "ai_overview_reference",
+         "position": "right",
+         "source": "Master of Code Global",
+         "domain": "masterofcode.com",
+         "url": "https://masterofcode.com/blog/ai-companies-in-dubai",
+         "title": "Top 10 AI Companies in Dubai [2026]",
+         "text": "Code Brew Labs (AI app dev, machine learning, intelligent automation); for enterprise-scale deployments."
+        }
+       ],
+       "rectangle": null
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

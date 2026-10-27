@@ -1,0 +1,1290 @@
+{
+ "version": "0.1.20261022",
+ "status_code": 20000,
+ "status_message": "Ok.",
+ "time": "45.9172 sec.",
+ "cost": 0.004,
+ "tasks_count": 1,
+ "tasks_error": 0,
+ "tasks": [
+  {
+   "id": "10270244-2577-0629-0000-a646cf6b5698",
+   "status_code": 20000,
+   "status_message": "Ok.",
+   "time": "45.8668 sec.",
+   "cost": 0.004,
+   "result_count": 1,
+   "path": [
+    "v3",
+    "ai_optimization",
+    "chat_gpt",
+    "llm_scraper",
+    "live",
+    "advanced"
+   ],
+   "data": {
+    "api": "ai_optimization",
+    "function": "live",
+    "se": "chat_gpt",
+    "keyword": "How much does it cost to hire a company to build an AI agent, and which firms offer this service?",
+    "location_code": 2840,
+    "language_code": "en",
+    "force_web_search": true,
+    "tag": "Q5-chatgpt-1",
+    "device": "desktop",
+    "os": "windows"
+   },
+   "result": [
+    {
+     "keyword": "How much does it cost to hire a company to build an AI agent, and which firms offer this service?",
+     "location_code": 2840,
+     "language_code": "en",
+     "model": "gpt-6",
+     "check_url": "https://chatgpt.com/?prompt=How%20much%20does%20it%20cost%20to%20hire%20a%20company%20to%20build%20an%20AI%20agent%2C%20and%20which%20firms%20offer%20this%20service%3F&hints=search",
+     "datetime": "2026-10-27 02:45:25 +00:00",
+     "markdown": "# How much does it cost to hire a company to build an AI agent?\n\nAs of October 2026, **a custom AI agent typically costs \\$10,000\u2013\\$80,000 for a business-ready, single-workflow solution**, while complex enterprise systems can cost \\$100,000\u2013\\$500,000 or more. You can also find smaller, fixed-price projects starting around \\$3,000\u2013\\$10,000. The biggest cost drivers are integrations, reliability, security, and the complexity of the work the agent must perform. [botgigs.com](https://botgigs.com/lp/ai-agent-development-company?utm_source=chatgpt.com)[fusionhit.com](https://fusionhit.com/blog/ai-agent-development-cost/?utm_source=chatgpt.com)[www.intuz.com](https://www.intuz.com/blog/top-10-ai-agent-development-companies-in-us/?utm_source=chatgpt.com)[www.nexeagent.com](https://www.nexeagent.com/services/ai-agent-pricing?utm_source=chatgpt.com)\n\nAn AI agent is more than a chatbot: it can access company data, use software tools, complete multistep tasks, and take actions within defined permissions.\n\n## 1\\. Typical AI agent development costs\n\n![AI Workflow Automation Dashboard by Sharif Ahmmed on Dribbble](https://images.openai.com/static-rsc-4/MZ3LSbT1fPJBaLNJlunwRnKKXpC9-5ktj2x9b_ztyyA9Ks-qFjZcxogQPT4eyQI0NB0-aGuKCGJmSn1r8yNac8L3lQXA1cbRsX8MuyK8wCZNNay23upQpZfXNmKA8Wv0tV7yUJGcZkafdpYed3Wvrgp2JOEi3DPr64ZXCvrewc5dncni3Bsp6E_aGzdqy0ny?purpose=fullsize)\n\n**Basic agent or proof of concept**\n\n## \\$3,000\u2013\\$15,000\n\n1\u20136 weeks, depending on scope\n\nExamples: lead qualification, document extraction, email drafting, simple internal Q&amp;A, or a basic automated workflow.\n\n---\n\n![AI Automation and Chatbots - MarTech Union](https://images.openai.com/static-rsc-4/qWVV-aPs0n9zMFoIbPYGBdIOYOml0PUybvyVVJh6HNbNdZI9dd3rWcbwEVc1dY_MwSNb2yT-Y_vGpDKdpEfLtw209WDvVZs0nU9S80DivKP3DdfN0v9_KLjEzbGJKqsnEZOgVrcHNOLxbmi4bXTKIMYqEduV29QAwnjNSUEaSBaGTbA-EbsYbM2vYuorTgMN?purpose=fullsize)\n\n**Business-ready custom agent**\n\n## \\$15,000\u2013\\$50,000\n\nApproximately 1\u20133 months\n\nExamples: an AI sales assistant connected to a CRM, a customer-support agent, or an agent that processes documents and updates business systems.\n\n---\n\n![Enterprise AI Agents & Orchestration Systems | ADSP](https://images.openai.com/static-rsc-4/qoSSk5qqhpuF77McG0LXXXL-bfsJv1DWVlsl_HI3sB4fUtIfSrFuhnGNQ5qAAwVxD1pcWBAynECyzjlSmy2Eyt1Vgc1eeG4PhWaPEVDceWg2cUDqJP1PFJwo5cGcoAElJvwf_EPRyrNNNbibUVNnIHwIl0Ksn1nFcAcIsZ_H3AUtetksTdWb3FXGefR6IyXE?purpose=fullsize)\n\n**Advanced or multi-agent system**\n\n## \\$50,000\u2013\\$150,000+\n\nApproximately 3\u20136+ months\n\nExamples: agents coordinating across departments, complex data retrieval, approval workflows, audit trails, and multiple enterprise integrations.\n\n---\n\n![A how-to guide to design an enterprise Genai platform](https://images.openai.com/static-rsc-4/OUmmBN4Q_PuQjUvHWU3zaQw77uNGdnoDrDsgD0r34m3z1Q2W7spKQjKPWmYTxAFvnYy9jqvXjXPO8o8srm_SMas13sL9FCqeS0ejNsEMd5DOcHUgW19YnQ-qCkpvUMiR1000qlApX2TYR8_6kX-D03FD5xIc9G1Y-WgT68TkyiEgV5WL7LXCiLz3anJTI5Lz?purpose=fullsize)\n\n**Enterprise-scale AI platform**\n\n## \\$150,000\u2013\\$500,000+\n\nOften 6\u201312 months or longer\n\nExamples: company-wide AI systems, highly regulated workflows, multiple specialized agents, and extensive security and governance.\n\nThese are indicative budgeting ranges synthesized from published 2026 cost guides, not guaranteed quotes. Individual projects can fall outside these bands. [botgigs.com](https://botgigs.com/lp/ai-agent-development-company?utm_source=chatgpt.com)[fusionhit.com](https://fusionhit.com/blog/ai-agent-development-cost/?utm_source=chatgpt.com)[www.intuz.com](https://www.intuz.com/blog/top-10-ai-agent-development-companies-in-us/?utm_source=chatgpt.com)[www.nexeagent.com](https://www.nexeagent.com/services/ai-agent-pricing?utm_source=chatgpt.com)\n\nRemember to budget separately for ongoing expenses\\:\n\n- **AI model usage and cloud hosting\\:** depend on volume and model choice.\n- **Maintenance and monitoring\\:** a rough initial allowance is \\$500\u2013\\$3,000 per month for a smaller system, potentially much more for enterprise deployments. [www.intuz.com](https://www.intuz.com/blog/top-10-ai-agent-development-companies-in-us/?utm_source=chatgpt.com)[theequationagencyllc.com](https://theequationagencyllc.com/services/ai-agents-api?utm_source=chatgpt.com)\n- **Security, integrations, and upgrades\\:** may be included in the initial quote or charged separately.\n\n## 2\\. Companies that build AI agents\n\nHere are eight firms worth considering, ranging from smaller specialist developers to large enterprise consultancies. I've prioritized firms with identifiable services and public pricing where available.\n\n![AI MTD - Modern Technical Devices | Intelligent Living & Advanced Laboratory Innovation](https://images.openai.com/static-rsc-4/zvUQWdEJHcqssSBRVS6QuL0vIdBveSKU_0_nLFBv2DHZ2fa29UHqzOAEiOx6Ws0BPLXQzDvYKoUXLuqTXLr9pX5EV6vo1RfwGVoeGQPdfg9pdG-JLjY-jqUT3O9r6Qt_giyjGydbc14PPzNe8Hh5cIvgJ9uVNaON9WMbpYS2aqLBzN9pIWljF_b4AkqOB_Or?purpose=fullsize)\n\n**1\\. MTD Technologies**\n\n(Lower-cost starting point)\n\n### \\$4,000\u2013\\$12,000\n\nFocused agents; complex multi-agent programs start at \\$15,000+. Offers fixed-scope builds, discovery sprints, and engineering-team extensions. Its site states that source code and intellectual property are assigned to the customer under the agreement.\n\nBest for: startups and small-to-mid-sized businesses.\n\n[Visit MTD Technologies](https://mtdtechnologies.com/services/ai-agent-development/) [mtdtechnologies.com](https://mtdtechnologies.com/services/ai-agent-development/?utm_source=chatgpt.com)\n\n---\n\n![](https://images.openai.com/static-rsc-4/Z9VqjYQ2lMzjZJC7Jdc2OC9EGwjM2ZSZazB2JUs1pVnCaaEhM7XAN3pC6Nc5DJ0uQKIy6mdPMKiyzvFIe8bclbuzWdqTEbruQcLjWCHAAjzcgRviuMaE4ZLXkbtyac4lzLsTBoopRn004nAwQ1ytfq_YI1LSjCkH9mNOShu3vY2kOysZqzQxoCPgxdj9OfnY?purpose=fullsize)\n\n**2\\. Expedey**\n\n### From \\$5,000\n\nBuilds AI agents, retrieval-augmented generation (RAG) systems, and multistep workflows with API integrations. Published rates are \\$25\u2013\\$49/hour.\n\nBest for: practical business automation with a relatively accessible entry price.\n\n[Visit Expedey](https://www.expedey.com/services/agentic-ai-development/) [www.expedey.com](https://www.expedey.com/services/agentic-ai-development/?utm_source=chatgpt.com)\n\n---\n\n![Qurio \u2013 AI agent for follow-ups, briefings, and ops workflows](https://images.openai.com/static-rsc-4/L1IYUBawe81qUqD7R-MdG-pTBf4Pam-quQH2jw8RzsHRK2-L9FgnOc7J8n7SF56ZlBDn1FwefEdLIrhpZC233JfyP09rzowqR5VG9q6jAUeWze0wlWT8VmLKsWd85dqMRpGWrSFN8kkMLcv_GjcNVh1hp4ojx9zaqr2SmK9yrBzaAHdcese2wTG3KvMybWcP?purpose=fullsize)\n\n**3\\. QueryNow**\n\n### \\$10,000 per workflow\n\nAdvertises a two-week build with payment due after agreed acceptance tests pass. Focuses on finance, compliance, document processing, and other defined business processes.\n\nBest for: businesses wanting a fixed price and measurable acceptance criteria.\n\n[Visit QueryNow](https://www.querynow.com/) [www.querynow.com](https://www.querynow.com/?utm_source=chatgpt.com)\n\n---\n\n![Cision - MediaStudio View Media](https://images.openai.com/static-rsc-4/hxkWqBlW39RMHq4YTLQk-6AVhKRSGGG4KropdNSHalD9vaTjyx3KfJu3R61mZuCglJvbNorGArRcJWtxKV0tGrR1CkqKaHLtgsl7U8UDc3fROc7TxkPKtv2aZwuZuu8Aux57LMqQrRBUouIo7wzy8HdtvTf_l_IqdHaawilAQimWEDUK6cefUXhE00wwgWbq?purpose=fullsize)\n\n**4\\. Arcesso**\n\n### From \\$11,500\n\nOffers fixed-price pilots and production agents, with published production pricing of \\$22,500\u2013\\$85,000. Emphasizes testing, monitoring, human approval, and customer ownership of code.\n\nBest for: US businesses that want a small pilot before scaling.\n\n[Visit Arcesso](https://arcesso.ai/ai/ai-agent-development/) [arcesso.ai](https://arcesso.ai/ai/ai-agent-development/?utm_source=chatgpt.com)\n\n---\n\n![LeewayHertz Profile & Reviews - Techreviewer](https://images.openai.com/static-rsc-4/LtKQtE-pt-0pdWZ7azHXyBxo0FayDuOPQuoEPp1t8SAOUHAVtRIoxOphqKACQNGnge2oG09bNXwaWX-6nUAJ8HjsYOrJijA2Fk-1KObqQ3dS08Rq_GzcK4_SfduVP6oVkMC1VRB-Dgthdli8eoWFgaOQhBXolAP0lUEVG1LTFR-Em5tEDBKBpqnH4V4JiWun?purpose=fullsize)\n\n**5\\. LeewayHertz**\n\n### Typically quote-based\n\nDevelops custom AI agents and multi-agent architectures using frameworks such as LangGraph, CrewAI, and AutoGen. A third-party directory lists a \\$10,000 minimum project and \\$50\u2013\\$99/hour pricing.\n\nBest for: custom integrations and more sophisticated AI architectures.\n\n[Visit LeewayHertz](https://www.leewayhertz.com/) [www.ryzlabs.com](https://www.ryzlabs.com/best/ai-agent-development-companies?utm_source=chatgpt.com)[www.scalacode.com](https://www.scalacode.com/blog/top-ai-agent-development-companies/?utm_source=chatgpt.com)\n\n---\n\n![Get in Touch with Azumo | Top-Rated Nearshore Software Developer](https://images.openai.com/static-rsc-4/x9e2cLxSTjZiJQ1w7L546oJzuNhs7NPBWKbZWR4HeIi8JYNkvuKlB17dixlxi9m3uv60eYgVTXD325K_uGJBhMpcBZ500SfeeAOmgWxOFC0eEFQfcrinRrPoRYZYIX8VUrEGrdITD2iCrE_A6MM7qS-4mKU0zqBzwC4COS7m8ReUs5GB7ISYTkssOHpVOPqt?purpose=fullsize)\n\n**6\\. Azumo**\n\n### Quote-based\n\nOffers AI engineering and software development with nearshore teams. Industry directories list rates of \\$25\u2013\\$49/hour.\n\nBest for: businesses that need ongoing development capacity and US-time-zone collaboration.\n\n[Visit Azumo](https://azumo.com/) [www.outrightcrm.com](https://www.outrightcrm.com/blog/ai-agent-development-companies/?utm_source=chatgpt.com)[www.scalacode.com](https://www.scalacode.com/blog/top-ai-agent-development-companies/?utm_source=chatgpt.com)\n\n---\n\n![EPAM: Channel Profile & Services | Channel Insider](https://images.openai.com/static-rsc-4/699duAjB1oBicBxG8doRjKNGyLwYtRuBePrOcTifzIVuPcCHZZjHQbKbud_zUadhGmaiUuDcfl66YBCzzuP-Aq14wai1WhiH0mkbqIy1Thk6BhaAZr1jnmlECSrbMbitl-eyorGBemUI0vBgRoPwzQQV-VFstt5hLCjoruMUUu-kq1HR5Ul6NIsUQ6OzxUNJ?purpose=fullsize)\n\n**7\\. EPAM Systems**\n\n### \\$100,000+ minimum project listed\n\nProvides large-scale AI engineering and enterprise transformation services. Third-party listings indicate premium engineering rates.\n\nBest for: large organizations with complex legacy systems, governance, and integration requirements.\n\n[Visit EPAM](https://www.epam.com/) [www.ryzlabs.com](https://www.ryzlabs.com/best/ai-agent-development-companies?utm_source=chatgpt.com)[www.scalacode.com](https://www.scalacode.com/blog/top-ai-agent-development-companies/?utm_source=chatgpt.com)\n\n---\n\n![Partner with London Tech Week 2026 | Get involved](https://images.openai.com/static-rsc-4/23EzBqQJ7-oC78Jigx5vfICm44y9eb2BI30ks31xlas3FX32UWkGDOqhIZK547wTv3bqG-0wVJ8wlGd18MXK_FwTu-yF5YhqzgZWlh-wsxP9hvkqaemEoGWFdoUJVIUjSmKkG3p9ZKFfStXxC4cIUqNJwNzCW71T2DYU4SKphPw9vSteywlvljl8C_56nuZF?purpose=fullsize)\n\n**8\\. Accenture**\n\n### Custom enterprise pricing\n\nOffers enterprise AI services and agent solutions through its AI Refinery platform and consulting practice. Public project pricing is not generally listed.\n\nBest for: global businesses seeking organization-wide AI deployment and integration.\n\n[Visit Accenture](https://www.accenture.com/) [www.ryzlabs.com](https://www.ryzlabs.com/best/ai-agent-development-companies?utm_source=chatgpt.com)[www.scalacode.com](https://www.scalacode.com/blog/top-ai-agent-development-companies/?utm_source=chatgpt.com)\n\nThese are a shortlist, not a definitive ranking. Prices are advertised starting points or third-party estimates, not comparable quotes. Verify current pricing, references, and contract terms directly.\n\n## 3\\. Which company should you hire?\n\nMy practical recommendation\\:\n\n| Your situation | Start by contacting |\n|--------|--------|\n| Budget under \\$10,000 | MTD Technologies or Expedey |\n| One well-defined task with a fixed budget | QueryNow or MTD Technologies |\n| A pilot that can expand into a production system | Arcesso or Expedey |\n| Multiple systems and custom integrations | LeewayHertz or Azumo |\n| Enterprise-wide deployment | EPAM or Accenture |\n\n\nFor a first project, I'd generally avoid committing \\$100,000 or more before validating one workflow. A narrowly scoped pilot makes it easier to measure accuracy, time saved, and actual return on investment.\n\n## 4\\. What to ask before signing a contract\n\nUse these questions when requesting proposals from three or four firms\\:\n\n- **Scope\\:** Exactly which tasks will the agent complete, and which require human approval?\n- **Integrations\\:** Are CRM, email, databases, and other software connections included?\n- **Performance\\:** Will the vendor test the agent against real examples and agree on measurable acceptance criteria?\n- **Ownership\\:** Will you own the source code, prompts, configurations, and documentation?\n- **Security\\:** Where will your data be processed and stored? What access permissions and audit logs are provided?\n- **Ongoing costs\\:** What are the monthly hosting, model usage, support, and maintenance charges?\n- **Exit plan\\:** Can another developer maintain the system if you change vendors?\n\nAsk each firm to quote the same deliverables, so you can compare more than just its headline price.\n\n## 5\\. Let\u2019s narrow this down to your project\n\nI can give you a more useful shortlist and realistic budget if I know what you want the agent to do.\n\nWhat kind of AI agent do you want built?\n\nCustomer service or voice agent\n\nSales, prospecting, and lead generation\n\nBusiness workflow automation\n\nInternal knowledge assistant trained on company documents\n\nA custom AI product or SaaS platform\n\n---\n\nWhat's your development budget?\n\nUnder \\$5,000\n\n\\$5,000\u2013\\$15,000\n\n\\$15,000\u2013\\$50,000\n\n\\$50,000\u2013\\$150,000\n\n\\$150,000+\n\n---\n\nWhich kind of provider do you prefer?\n\nUS-based company\n\nUS-based company or nearshore team\n\nBest value globally, including offshore firms\n\nLarge enterprise consultancy\n\n---\n\nHow complex is it?\n\nOne agent with a few integrations\n\nMultiple workflows and business systems\n\nMultiple coordinated AI agents\n\nNot sure yet\n\n[Find the best-fit companies]",
+     "search_results": [
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://www.ryzlabs.com/best/ai-agent-development-companies",
+       "domain": "www.ryzlabs.com",
+       "title": "Best AI Agent Development Companies (2026) | Ryz Labs",
+       "description": null,
+       "breadcrumb": "www.ryzlabs.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://www.ryzlabs.com/best/ai-agent-development-companies",
+       "domain": "www.ryzlabs.com",
+       "title": "Best AI Agent Development Companies (2026) | Ryz Labs",
+       "description": null,
+       "breadcrumb": "www.ryzlabs.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://www.expedey.com/services/agentic-ai-development/",
+       "domain": "www.expedey.com",
+       "title": "Agentic AI Development & Harness Engineering - Expedey",
+       "description": null,
+       "breadcrumb": "www.expedey.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://www.expedey.com/services/agentic-ai-development/",
+       "domain": "www.expedey.com",
+       "title": "Agentic AI Development & Harness Engineering - Expedey",
+       "description": null,
+       "breadcrumb": "www.expedey.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://www.querynow.com/ai-agent-development",
+       "domain": "www.querynow.com",
+       "title": "AI Agent Development Company for Business Workflows | QueryNow\u00ae",
+       "description": null,
+       "breadcrumb": "www.querynow.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://www.querynow.com/",
+       "domain": "www.querynow.com",
+       "title": "QueryNow\u00ae | AI Development Company. You Pay When It Works.",
+       "description": null,
+       "breadcrumb": "www.querynow.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://www.goodfirms.co/artificial-intelligence/ai-agent-development?locations=us",
+       "domain": "www.goodfirms.co",
+       "title": "Top AI Agent Development Companies - 2026 Reviews | Goodfirms",
+       "description": null,
+       "breadcrumb": "www.goodfirms.co"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://www.goodfirms.co/artificial-intelligence/ai-agent-development?locations=us&sort_by=rating",
+       "domain": "www.goodfirms.co",
+       "title": "Top AI Agent Development Companies - 2026 Reviews | Goodfirms",
+       "description": null,
+       "breadcrumb": "www.goodfirms.co"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://www.goodfirms.co/artificial-intelligence/ai-agent-development?locations=us",
+       "domain": "www.goodfirms.co",
+       "title": "Top AI Agent Development Companies - 2026 Reviews | Goodfirms",
+       "description": null,
+       "breadcrumb": "www.goodfirms.co"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://botgigs.com/lp/ai-agent-development-company",
+       "domain": "botgigs.com",
+       "title": "AI Agent Development Company Services and Costs | BotGigs",
+       "description": null,
+       "breadcrumb": "botgigs.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://botgigs.com/lp/ai-agent-development-company",
+       "domain": "botgigs.com",
+       "title": "AI Agent Development Company Services and Costs | BotGigs",
+       "description": null,
+       "breadcrumb": "botgigs.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://fusionhit.com/blog/ai-agent-development-cost/",
+       "domain": "fusionhit.com",
+       "title": "AI Agent Development Cost in 2026: Build, Run and Breakeven",
+       "description": null,
+       "breadcrumb": "fusionhit.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://www.enacton.com/services/ai-agent-development/",
+       "domain": "www.enacton.com",
+       "title": "AI Agent Development Services | Agents That Plan, Act & Execute",
+       "description": null,
+       "breadcrumb": "www.enacton.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://www.programmersventure.com/blog/best-ai-agent-development-companies-usa/",
+       "domain": "www.programmersventure.com",
+       "title": "Best AI Agent Development Company in USA: Top 10 (2026)",
+       "description": null,
+       "breadcrumb": "www.programmersventure.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://aisuffer.com/solutions/ai-agent-development/",
+       "domain": "aisuffer.com",
+       "title": "AI Agent Development Company | AISuffer",
+       "description": null,
+       "breadcrumb": "aisuffer.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://www.scalacode.com/blog/top-ai-agent-development-companies/",
+       "domain": "www.scalacode.com",
+       "title": "Top 15 AI Agent Development Companies 2026: How To Choose",
+       "description": null,
+       "breadcrumb": "www.scalacode.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://www.scalacode.com/blog/top-ai-agent-development-companies/",
+       "domain": "www.scalacode.com",
+       "title": "Top 15 AI Agent Development Companies 2026: How To Choose",
+       "description": null,
+       "breadcrumb": "www.scalacode.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://www.keyved.com/blog/ai-agent-development-cost",
+       "domain": "www.keyved.com",
+       "title": "How Much Does It Cost to Build an AI Agent in 2026? | Keyved",
+       "description": null,
+       "breadcrumb": "www.keyved.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://www.outrightcrm.com/blog/ai-agent-development-companies/",
+       "domain": "www.outrightcrm.com",
+       "title": "10 AI Agent Development Companies in the USA to Shortlist",
+       "description": null,
+       "breadcrumb": "www.outrightcrm.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://www.aiautomationdb.com/ai-automation-services/custom-ai-development/united-states",
+       "domain": "www.aiautomationdb.com",
+       "title": "Custom AI Development Agencies in the US (2026): Compare 67",
+       "description": null,
+       "breadcrumb": "www.aiautomationdb.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://sthenostechnologies.com/services/agentic-ai/",
+       "domain": "sthenostechnologies.com",
+       "title": "Agentic AI Consulting Services for Enterprise | Sthenos",
+       "description": null,
+       "breadcrumb": "sthenostechnologies.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://theequationagencyllc.com/services/ai-agents-api",
+       "domain": "theequationagencyllc.com",
+       "title": "Custom AI Agent Development | The Equation Agency LLC",
+       "description": null,
+       "breadcrumb": "theequationagencyllc.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://www.intuz.com/blog/top-10-ai-agent-development-companies-in-us/",
+       "domain": "www.intuz.com",
+       "title": "Top 13 AI Agent Development Companies in USA [2026]",
+       "description": null,
+       "breadcrumb": "www.intuz.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://www.nexeagent.com/services/ai-agent-pricing",
+       "domain": "www.nexeagent.com",
+       "title": "AI Agent Development Cost \u2014 2026 Pricing Guide | Nexe-Agent",
+       "description": null,
+       "breadcrumb": "www.nexeagent.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://marotino.com/services/ai-agents",
+       "domain": "marotino.com",
+       "title": "AI Agent Development Company USA | Marotino",
+       "description": null,
+       "breadcrumb": "marotino.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://mtdtechnologies.com/services/ai-agent-development/",
+       "domain": "mtdtechnologies.com",
+       "title": "AI Agent Development Company | MTD Technologies",
+       "description": null,
+       "breadcrumb": "mtdtechnologies.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://www.suffescom.com/services/ai-agent-development",
+       "domain": "www.suffescom.com",
+       "title": "AI Agent Development Services - Suffescom Solutions",
+       "description": null,
+       "breadcrumb": "www.suffescom.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://arcesso.ai/ai/ai-agent-development/",
+       "domain": "arcesso.ai",
+       "title": "AI Agent Development Company | Arcesso",
+       "description": null,
+       "breadcrumb": "arcesso.ai"
+      }
+     ],
+     "sources": [
+      {
+       "type": "chat_gpt_source",
+       "title": "AI Agent Development Company Services and Costs",
+       "snippet": null,
+       "domain": "botgigs.com",
+       "url": "https://botgigs.com/lp/ai-agent-development-company?utm_source=chatgpt.com",
+       "thumbnail": null,
+       "source_name": "BotGigs",
+       "publication_date": null,
+       "markdown": null
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "AI Agent Development Cost in 2026: Build, Run and Breakeven",
+       "snippet": null,
+       "domain": "fusionhit.com",
+       "url": "https://fusionhit.com/blog/ai-agent-development-cost/?utm_source=chatgpt.com",
+       "thumbnail": null,
+       "source_name": "FusionHit",
+       "publication_date": "2026-10-14 00:00:00 +00:00",
+       "markdown": null
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Top 13 AI Agent Development Companies in USA [2026]",
+       "snippet": null,
+       "domain": "www.intuz.com",
+       "url": "https://www.intuz.com/blog/top-10-ai-agent-development-companies-in-us/?utm_source=chatgpt.com",
+       "thumbnail": null,
+       "source_name": "Intuz",
+       "publication_date": "2026-10-12 00:00:00 +00:00",
+       "markdown": null
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "AI Agent Development Cost \u2014 2026 Pricing Guide",
+       "snippet": null,
+       "domain": "www.nexeagent.com",
+       "url": "https://www.nexeagent.com/services/ai-agent-pricing?utm_source=chatgpt.com",
+       "thumbnail": null,
+       "source_name": "Nexe-Agent",
+       "publication_date": null,
+       "markdown": null
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Custom AI Agent Development",
+       "snippet": null,
+       "domain": "theequationagencyllc.com",
+       "url": "https://theequationagencyllc.com/services/ai-agents-api?utm_source=chatgpt.com",
+       "thumbnail": null,
+       "source_name": "The Equation Agency LLC",
+       "publication_date": null,
+       "markdown": null
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Visit MTD Technologies",
+       "snippet": null,
+       "domain": "mtdtechnologies.com",
+       "url": "https://mtdtechnologies.com/services/ai-agent-development/",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[Visit MTD Technologies](https://mtdtechnologies.com/services/ai-agent-development/)"
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "AI Agent Development Company",
+       "snippet": null,
+       "domain": "mtdtechnologies.com",
+       "url": "https://mtdtechnologies.com/services/ai-agent-development/?utm_source=chatgpt.com",
+       "thumbnail": null,
+       "source_name": "MTD Technologies",
+       "publication_date": "2026-10-09 04:34:02 +00:00",
+       "markdown": null
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Visit Expedey",
+       "snippet": null,
+       "domain": "www.expedey.com",
+       "url": "https://www.expedey.com/services/agentic-ai-development/",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[Visit Expedey](https://www.expedey.com/services/agentic-ai-development/)"
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Agentic AI Development & Harness Engineering",
+       "snippet": null,
+       "domain": "www.expedey.com",
+       "url": "https://www.expedey.com/services/agentic-ai-development/?utm_source=chatgpt.com",
+       "thumbnail": null,
+       "source_name": "Expedey",
+       "publication_date": null,
+       "markdown": null
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Visit QueryNow",
+       "snippet": null,
+       "domain": "www.querynow.com",
+       "url": "https://www.querynow.com/",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[Visit QueryNow](https://www.querynow.com/)"
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "QueryNow\u00ae | AI Development Company. You Pay When It Works.",
+       "snippet": null,
+       "domain": "www.querynow.com",
+       "url": "https://www.querynow.com/?utm_source=chatgpt.com",
+       "thumbnail": null,
+       "source_name": "QueryNow",
+       "publication_date": null,
+       "markdown": null
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Visit Arcesso",
+       "snippet": null,
+       "domain": "arcesso.ai",
+       "url": "https://arcesso.ai/ai/ai-agent-development/",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[Visit Arcesso](https://arcesso.ai/ai/ai-agent-development/)"
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "AI Agent Development Company",
+       "snippet": null,
+       "domain": "arcesso.ai",
+       "url": "https://arcesso.ai/ai/ai-agent-development/?utm_source=chatgpt.com",
+       "thumbnail": null,
+       "source_name": "Arcesso",
+       "publication_date": "2026-10-15 00:00:00 +00:00",
+       "markdown": null
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Visit LeewayHertz",
+       "snippet": null,
+       "domain": "www.leewayhertz.com",
+       "url": "https://www.leewayhertz.com/",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[Visit LeewayHertz](https://www.leewayhertz.com/)"
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Best AI Agent Development Companies (2026)",
+       "snippet": null,
+       "domain": "www.ryzlabs.com",
+       "url": "https://www.ryzlabs.com/best/ai-agent-development-companies?utm_source=chatgpt.com",
+       "thumbnail": null,
+       "source_name": "Ryz Labs",
+       "publication_date": null,
+       "markdown": null
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Top 15 AI Agent Development Companies 2026: How To Choose",
+       "snippet": null,
+       "domain": "www.scalacode.com",
+       "url": "https://www.scalacode.com/blog/top-ai-agent-development-companies/?utm_source=chatgpt.com",
+       "thumbnail": null,
+       "source_name": "ScalaCode",
+       "publication_date": "2025-09-04 00:00:00 +00:00",
+       "markdown": null
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Visit Azumo",
+       "snippet": null,
+       "domain": "azumo.com",
+       "url": "https://azumo.com/",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[Visit Azumo](https://azumo.com/)"
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "10 AI Agent Development Companies in the USA to Shortlist",
+       "snippet": null,
+       "domain": "www.outrightcrm.com",
+       "url": "https://www.outrightcrm.com/blog/ai-agent-development-companies/?utm_source=chatgpt.com",
+       "thumbnail": null,
+       "source_name": "outrightcrm.com",
+       "publication_date": "2026-08-11 00:00:00 +00:00",
+       "markdown": null
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Visit EPAM",
+       "snippet": null,
+       "domain": "www.epam.com",
+       "url": "https://www.epam.com/",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[Visit EPAM](https://www.epam.com/)"
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Visit Accenture",
+       "snippet": null,
+       "domain": "www.accenture.com",
+       "url": "https://www.accenture.com/",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[Visit Accenture](https://www.accenture.com/)"
+      }
+     ],
+     "fan_out_queries": [
+      "AI agent development company pricing cost custom AI agent development 2026",
+      "AI agent development companies services pricing hourly rates US firms"
+     ],
+     "brand_entities": [
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "AI agent and software development firm",
+       "category": "company",
+       "markdown": "MTD Technologies",
+       "urls": null
+      },
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "Agentic AI engineering and software development",
+       "category": "company",
+       "markdown": "Expedey",
+       "urls": null
+      },
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "Business AI agent and workflow automation firm",
+       "category": "company",
+       "markdown": "QueryNow",
+       "urls": null
+      },
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "US AI agent development firm",
+       "category": "company",
+       "markdown": "Arcesso",
+       "urls": null
+      },
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "Enterprise AI and software development consultancy",
+       "category": "company",
+       "markdown": "LeewayHertz",
+       "urls": null
+      },
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "Nearshore AI and software engineering services",
+       "category": "company",
+       "markdown": "Azumo",
+       "urls": null
+      },
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "Global software engineering and digital consulting firm",
+       "category": "company",
+       "markdown": "EPAM Systems",
+       "urls": null
+      },
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "Global management consulting and technology services firm",
+       "category": "company",
+       "markdown": "Accenture",
+       "urls": null
+      }
+     ],
+     "se_results_count": 0,
+     "item_types": [
+      "chat_gpt_text",
+      "chat_gpt_images",
+      "chat_gpt_table"
+     ],
+     "items_count": 27,
+     "items": [
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 1,
+       "rank_absolute": 1,
+       "markdown": "# How much does it cost to hire a company to build an AI agent?\n\nAs of October 2026, **a custom AI agent typically costs \\$10,000\u2013\\$80,000 for a business-ready, single-workflow solution**, while complex enterprise systems can cost \\$100,000\u2013\\$500,000 or more. You can also find smaller, fixed-price projects starting around \\$3,000\u2013\\$10,000. The biggest cost drivers are integrations, reliability, security, and the complexity of the work the agent must perform. [botgigs.com](https://botgigs.com/lp/ai-agent-development-company?utm_source=chatgpt.com)[fusionhit.com](https://fusionhit.com/blog/ai-agent-development-cost/?utm_source=chatgpt.com)[www.intuz.com](https://www.intuz.com/blog/top-10-ai-agent-development-companies-in-us/?utm_source=chatgpt.com)[www.nexeagent.com](https://www.nexeagent.com/services/ai-agent-pricing?utm_source=chatgpt.com)\n\nAn AI agent is more than a chatbot: it can access company data, use software tools, complete multistep tasks, and take actions within defined permissions.\n\n## 1\\. Typical AI agent development costs\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "AI Agent Development Company Services and Costs",
+         "snippet": null,
+         "domain": "botgigs.com",
+         "url": "https://botgigs.com/lp/ai-agent-development-company?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "BotGigs",
+         "publication_date": null,
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "AI Agent Development Cost in 2026: Build, Run and Breakeven",
+         "snippet": null,
+         "domain": "fusionhit.com",
+         "url": "https://fusionhit.com/blog/ai-agent-development-cost/?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "FusionHit",
+         "publication_date": "2026-10-14 00:00:00 +00:00",
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Top 13 AI Agent Development Companies in USA [2026]",
+         "snippet": null,
+         "domain": "www.intuz.com",
+         "url": "https://www.intuz.com/blog/top-10-ai-agent-development-companies-in-us/?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Intuz",
+         "publication_date": "2026-10-12 00:00:00 +00:00",
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "AI Agent Development Cost \u2014 2026 Pricing Guide",
+         "snippet": null,
+         "domain": "www.nexeagent.com",
+         "url": "https://www.nexeagent.com/services/ai-agent-pricing?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Nexe-Agent",
+         "publication_date": null,
+         "markdown": null
+        }
+       ],
+       "brand_entities": null
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 1,
+       "rank_absolute": 2,
+       "markdown": "![AI Workflow Automation Dashboard by Sharif Ahmmed on Dribbble](https://images.openai.com/static-rsc-4/MZ3LSbT1fPJBaLNJlunwRnKKXpC9-5ktj2x9b_ztyyA9Ks-qFjZcxogQPT4eyQI0NB0-aGuKCGJmSn1r8yNac8L3lQXA1cbRsX8MuyK8wCZNNay23upQpZfXNmKA8Wv0tV7yUJGcZkafdpYed3Wvrgp2JOEi3DPr64ZXCvrewc5dncni3Bsp6E_aGzdqy0ny?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://dribbble.com/shots/27776396-AI-Workflow-Automation-Dashboard",
+         "alt": "AI Workflow Automation Dashboard by Sharif Ahmmed on Dribbble",
+         "image_url": "https://images.openai.com/static-rsc-4/MZ3LSbT1fPJBaLNJlunwRnKKXpC9-5ktj2x9b_ztyyA9Ks-qFjZcxogQPT4eyQI0NB0-aGuKCGJmSn1r8yNac8L3lQXA1cbRsX8MuyK8wCZNNay23upQpZfXNmKA8Wv0tV7yUJGcZkafdpYed3Wvrgp2JOEi3DPr64ZXCvrewc5dncni3Bsp6E_aGzdqy0ny?purpose=fullsize",
+         "markdown": "![AI Workflow Automation Dashboard by Sharif Ahmmed on Dribbble](https://images.openai.com/static-rsc-4/MZ3LSbT1fPJBaLNJlunwRnKKXpC9-5ktj2x9b_ztyyA9Ks-qFjZcxogQPT4eyQI0NB0-aGuKCGJmSn1r8yNac8L3lQXA1cbRsX8MuyK8wCZNNay23upQpZfXNmKA8Wv0tV7yUJGcZkafdpYed3Wvrgp2JOEi3DPr64ZXCvrewc5dncni3Bsp6E_aGzdqy0ny?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 2,
+       "rank_absolute": 3,
+       "markdown": "\n\n**Basic agent or proof of concept**\n\n## \\$3,000\u2013\\$15,000\n\n1\u20136 weeks, depending on scope\n\nExamples: lead qualification, document extraction, email drafting, simple internal Q&amp;A, or a basic automated workflow.\n\n---\n\n",
+       "sources": null,
+       "brand_entities": null
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 2,
+       "rank_absolute": 4,
+       "markdown": "![AI Automation and Chatbots - MarTech Union](https://images.openai.com/static-rsc-4/qWVV-aPs0n9zMFoIbPYGBdIOYOml0PUybvyVVJh6HNbNdZI9dd3rWcbwEVc1dY_MwSNb2yT-Y_vGpDKdpEfLtw209WDvVZs0nU9S80DivKP3DdfN0v9_KLjEzbGJKqsnEZOgVrcHNOLxbmi4bXTKIMYqEduV29QAwnjNSUEaSBaGTbA-EbsYbM2vYuorTgMN?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://martechunion.com/ai-automation-and-chatbots-agency/",
+         "alt": "AI Automation and Chatbots - MarTech Union",
+         "image_url": "https://images.openai.com/static-rsc-4/qWVV-aPs0n9zMFoIbPYGBdIOYOml0PUybvyVVJh6HNbNdZI9dd3rWcbwEVc1dY_MwSNb2yT-Y_vGpDKdpEfLtw209WDvVZs0nU9S80DivKP3DdfN0v9_KLjEzbGJKqsnEZOgVrcHNOLxbmi4bXTKIMYqEduV29QAwnjNSUEaSBaGTbA-EbsYbM2vYuorTgMN?purpose=fullsize",
+         "markdown": "![AI Automation and Chatbots - MarTech Union](https://images.openai.com/static-rsc-4/qWVV-aPs0n9zMFoIbPYGBdIOYOml0PUybvyVVJh6HNbNdZI9dd3rWcbwEVc1dY_MwSNb2yT-Y_vGpDKdpEfLtw209WDvVZs0nU9S80DivKP3DdfN0v9_KLjEzbGJKqsnEZOgVrcHNOLxbmi4bXTKIMYqEduV29QAwnjNSUEaSBaGTbA-EbsYbM2vYuorTgMN?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 3,
+       "rank_absolute": 5,
+       "markdown": "\n\n**Business-ready custom agent**\n\n## \\$15,000\u2013\\$50,000\n\nApproximately 1\u20133 months\n\nExamples: an AI sales assistant connected to a CRM, a customer-support agent, or an agent that processes documents and updates business systems.\n\n---\n\n",
+       "sources": null,
+       "brand_entities": null
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 3,
+       "rank_absolute": 6,
+       "markdown": "![Enterprise AI Agents & Orchestration Systems | ADSP](https://images.openai.com/static-rsc-4/qoSSk5qqhpuF77McG0LXXXL-bfsJv1DWVlsl_HI3sB4fUtIfSrFuhnGNQ5qAAwVxD1pcWBAynECyzjlSmy2Eyt1Vgc1eeG4PhWaPEVDceWg2cUDqJP1PFJwo5cGcoAElJvwf_EPRyrNNNbibUVNnIHwIl0Ksn1nFcAcIsZ_H3AUtetksTdWb3FXGefR6IyXE?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://adsp.ai/ai-orchestration",
+         "alt": "Enterprise AI Agents & Orchestration Systems | ADSP",
+         "image_url": "https://images.openai.com/static-rsc-4/qoSSk5qqhpuF77McG0LXXXL-bfsJv1DWVlsl_HI3sB4fUtIfSrFuhnGNQ5qAAwVxD1pcWBAynECyzjlSmy2Eyt1Vgc1eeG4PhWaPEVDceWg2cUDqJP1PFJwo5cGcoAElJvwf_EPRyrNNNbibUVNnIHwIl0Ksn1nFcAcIsZ_H3AUtetksTdWb3FXGefR6IyXE?purpose=fullsize",
+         "markdown": "![Enterprise AI Agents & Orchestration Systems | ADSP](https://images.openai.com/static-rsc-4/qoSSk5qqhpuF77McG0LXXXL-bfsJv1DWVlsl_HI3sB4fUtIfSrFuhnGNQ5qAAwVxD1pcWBAynECyzjlSmy2Eyt1Vgc1eeG4PhWaPEVDceWg2cUDqJP1PFJwo5cGcoAElJvwf_EPRyrNNNbibUVNnIHwIl0Ksn1nFcAcIsZ_H3AUtetksTdWb3FXGefR6IyXE?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 4,
+       "rank_absolute": 7,
+       "markdown": "\n\n**Advanced or multi-agent system**\n\n## \\$50,000\u2013\\$150,000+\n\nApproximately 3\u20136+ months\n\nExamples: agents coordinating across departments, complex data retrieval, approval workflows, audit trails, and multiple enterprise integrations.\n\n---\n\n",
+       "sources": null,
+       "brand_entities": null
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 4,
+       "rank_absolute": 8,
+       "markdown": "![A how-to guide to design an enterprise Genai platform](https://images.openai.com/static-rsc-4/OUmmBN4Q_PuQjUvHWU3zaQw77uNGdnoDrDsgD0r34m3z1Q2W7spKQjKPWmYTxAFvnYy9jqvXjXPO8o8srm_SMas13sL9FCqeS0ejNsEMd5DOcHUgW19YnQ-qCkpvUMiR1000qlApX2TYR8_6kX-D03FD5xIc9G1Y-WgT68TkyiEgV5WL7LXCiLz3anJTI5Lz?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://www.dataiku.com/stories/blog/design-an-enterprise-genai-platform",
+         "alt": "A how-to guide to design an enterprise Genai platform",
+         "image_url": "https://images.openai.com/static-rsc-4/OUmmBN4Q_PuQjUvHWU3zaQw77uNGdnoDrDsgD0r34m3z1Q2W7spKQjKPWmYTxAFvnYy9jqvXjXPO8o8srm_SMas13sL9FCqeS0ejNsEMd5DOcHUgW19YnQ-qCkpvUMiR1000qlApX2TYR8_6kX-D03FD5xIc9G1Y-WgT68TkyiEgV5WL7LXCiLz3anJTI5Lz?purpose=fullsize",
+         "markdown": "![A how-to guide to design an enterprise Genai platform](https://images.openai.com/static-rsc-4/OUmmBN4Q_PuQjUvHWU3zaQw77uNGdnoDrDsgD0r34m3z1Q2W7spKQjKPWmYTxAFvnYy9jqvXjXPO8o8srm_SMas13sL9FCqeS0ejNsEMd5DOcHUgW19YnQ-qCkpvUMiR1000qlApX2TYR8_6kX-D03FD5xIc9G1Y-WgT68TkyiEgV5WL7LXCiLz3anJTI5Lz?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 5,
+       "rank_absolute": 9,
+       "markdown": "\n\n**Enterprise-scale AI platform**\n\n## \\$150,000\u2013\\$500,000+\n\nOften 6\u201312 months or longer\n\nExamples: company-wide AI systems, highly regulated workflows, multiple specialized agents, and extensive security and governance.\n\nThese are indicative budgeting ranges synthesized from published 2026 cost guides, not guaranteed quotes. Individual projects can fall outside these bands. [botgigs.com](https://botgigs.com/lp/ai-agent-development-company?utm_source=chatgpt.com)[fusionhit.com](https://fusionhit.com/blog/ai-agent-development-cost/?utm_source=chatgpt.com)[www.intuz.com](https://www.intuz.com/blog/top-10-ai-agent-development-companies-in-us/?utm_source=chatgpt.com)[www.nexeagent.com](https://www.nexeagent.com/services/ai-agent-pricing?utm_source=chatgpt.com)\n\nRemember to budget separately for ongoing expenses\\:\n\n- **AI model usage and cloud hosting\\:** depend on volume and model choice.\n- **Maintenance and monitoring\\:** a rough initial allowance is \\$500\u2013\\$3,000 per month for a smaller system, potentially much more for enterprise deployments. [www.intuz.com](https://www.intuz.com/blog/top-10-ai-agent-development-companies-in-us/?utm_source=chatgpt.com)[theequationagencyllc.com](https://theequationagencyllc.com/services/ai-agents-api?utm_source=chatgpt.com)\n- **Security, integrations, and upgrades\\:** may be included in the initial quote or charged separately.\n\n## 2\\. Companies that build AI agents\n\nHere are eight firms worth considering, ranging from smaller specialist developers to large enterprise consultancies. I've prioritized firms with identifiable services and public pricing where available.\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "AI Agent Development Company Services and Costs",
+         "snippet": null,
+         "domain": "botgigs.com",
+         "url": "https://botgigs.com/lp/ai-agent-development-company?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "BotGigs",
+         "publication_date": null,
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "AI Agent Development Cost in 2026: Build, Run and Breakeven",
+         "snippet": null,
+         "domain": "fusionhit.com",
+         "url": "https://fusionhit.com/blog/ai-agent-development-cost/?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "FusionHit",
+         "publication_date": "2026-10-14 00:00:00 +00:00",
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Top 13 AI Agent Development Companies in USA [2026]",
+         "snippet": null,
+         "domain": "www.intuz.com",
+         "url": "https://www.intuz.com/blog/top-10-ai-agent-development-companies-in-us/?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Intuz",
+         "publication_date": "2026-10-12 00:00:00 +00:00",
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "AI Agent Development Cost \u2014 2026 Pricing Guide",
+         "snippet": null,
+         "domain": "www.nexeagent.com",
+         "url": "https://www.nexeagent.com/services/ai-agent-pricing?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Nexe-Agent",
+         "publication_date": null,
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Custom AI Agent Development",
+         "snippet": null,
+         "domain": "theequationagencyllc.com",
+         "url": "https://theequationagencyllc.com/services/ai-agents-api?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "The Equation Agency LLC",
+         "publication_date": null,
+         "markdown": null
+        }
+       ],
+       "brand_entities": null
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 5,
+       "rank_absolute": 10,
+       "markdown": "![AI MTD - Modern Technical Devices | Intelligent Living & Advanced Laboratory Innovation](https://images.openai.com/static-rsc-4/zvUQWdEJHcqssSBRVS6QuL0vIdBveSKU_0_nLFBv2DHZ2fa29UHqzOAEiOx6Ws0BPLXQzDvYKoUXLuqTXLr9pX5EV6vo1RfwGVoeGQPdfg9pdG-JLjY-jqUT3O9r6Qt_giyjGydbc14PPzNe8Hh5cIvgJ9uVNaON9WMbpYS2aqLBzN9pIWljF_b4AkqOB_Or?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://aimtd.co/Default.aspx",
+         "alt": "AI MTD - Modern Technical Devices | Intelligent Living & Advanced Laboratory Innovation",
+         "image_url": "https://images.openai.com/static-rsc-4/zvUQWdEJHcqssSBRVS6QuL0vIdBveSKU_0_nLFBv2DHZ2fa29UHqzOAEiOx6Ws0BPLXQzDvYKoUXLuqTXLr9pX5EV6vo1RfwGVoeGQPdfg9pdG-JLjY-jqUT3O9r6Qt_giyjGydbc14PPzNe8Hh5cIvgJ9uVNaON9WMbpYS2aqLBzN9pIWljF_b4AkqOB_Or?purpose=fullsize",
+         "markdown": "![AI MTD - Modern Technical Devices | Intelligent Living & Advanced Laboratory Innovation](https://images.openai.com/static-rsc-4/zvUQWdEJHcqssSBRVS6QuL0vIdBveSKU_0_nLFBv2DHZ2fa29UHqzOAEiOx6Ws0BPLXQzDvYKoUXLuqTXLr9pX5EV6vo1RfwGVoeGQPdfg9pdG-JLjY-jqUT3O9r6Qt_giyjGydbc14PPzNe8Hh5cIvgJ9uVNaON9WMbpYS2aqLBzN9pIWljF_b4AkqOB_Or?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 6,
+       "rank_absolute": 11,
+       "markdown": "\n\n**1\\. MTD Technologies**\n\n(Lower-cost starting point)\n\n### \\$4,000\u2013\\$12,000\n\nFocused agents; complex multi-agent programs start at \\$15,000+. Offers fixed-scope builds, discovery sprints, and engineering-team extensions. Its site states that source code and intellectual property are assigned to the customer under the agreement.\n\nBest for: startups and small-to-mid-sized businesses.\n\n[Visit MTD Technologies](https://mtdtechnologies.com/services/ai-agent-development/) [mtdtechnologies.com](https://mtdtechnologies.com/services/ai-agent-development/?utm_source=chatgpt.com)\n\n---\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "Visit MTD Technologies",
+         "snippet": null,
+         "domain": "mtdtechnologies.com",
+         "url": "https://mtdtechnologies.com/services/ai-agent-development/",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[Visit MTD Technologies](https://mtdtechnologies.com/services/ai-agent-development/)"
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "AI Agent Development Company",
+         "snippet": null,
+         "domain": "mtdtechnologies.com",
+         "url": "https://mtdtechnologies.com/services/ai-agent-development/?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "MTD Technologies",
+         "publication_date": "2026-10-09 04:34:02 +00:00",
+         "markdown": null
+        }
+       ],
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "AI agent and software development firm",
+         "category": "company",
+         "markdown": "MTD Technologies",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 6,
+       "rank_absolute": 12,
+       "markdown": "![](https://images.openai.com/static-rsc-4/Z9VqjYQ2lMzjZJC7Jdc2OC9EGwjM2ZSZazB2JUs1pVnCaaEhM7XAN3pC6Nc5DJ0uQKIy6mdPMKiyzvFIe8bclbuzWdqTEbruQcLjWCHAAjzcgRviuMaE4ZLXkbtyac4lzLsTBoopRn004nAwQ1ytfq_YI1LSjCkH9mNOShu3vY2kOysZqzQxoCPgxdj9OfnY?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://www.capterra.in/software/1078109/Expedify",
+         "alt": null,
+         "image_url": "https://images.openai.com/static-rsc-4/Z9VqjYQ2lMzjZJC7Jdc2OC9EGwjM2ZSZazB2JUs1pVnCaaEhM7XAN3pC6Nc5DJ0uQKIy6mdPMKiyzvFIe8bclbuzWdqTEbruQcLjWCHAAjzcgRviuMaE4ZLXkbtyac4lzLsTBoopRn004nAwQ1ytfq_YI1LSjCkH9mNOShu3vY2kOysZqzQxoCPgxdj9OfnY?purpose=fullsize",
+         "markdown": "![](https://images.openai.com/static-rsc-4/Z9VqjYQ2lMzjZJC7Jdc2OC9EGwjM2ZSZazB2JUs1pVnCaaEhM7XAN3pC6Nc5DJ0uQKIy6mdPMKiyzvFIe8bclbuzWdqTEbruQcLjWCHAAjzcgRviuMaE4ZLXkbtyac4lzLsTBoopRn004nAwQ1ytfq_YI1LSjCkH9mNOShu3vY2kOysZqzQxoCPgxdj9OfnY?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 7,
+       "rank_absolute": 13,
+       "markdown": "\n\n**2\\. Expedey**\n\n### From \\$5,000\n\nBuilds AI agents, retrieval-augmented generation (RAG) systems, and multistep workflows with API integrations. Published rates are \\$25\u2013\\$49/hour.\n\nBest for: practical business automation with a relatively accessible entry price.\n\n[Visit Expedey](https://www.expedey.com/services/agentic-ai-development/) [www.expedey.com](https://www.expedey.com/services/agentic-ai-development/?utm_source=chatgpt.com)\n\n---\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "Visit Expedey",
+         "snippet": null,
+         "domain": "www.expedey.com",
+         "url": "https://www.expedey.com/services/agentic-ai-development/",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[Visit Expedey](https://www.expedey.com/services/agentic-ai-development/)"
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Agentic AI Development & Harness Engineering",
+         "snippet": null,
+         "domain": "www.expedey.com",
+         "url": "https://www.expedey.com/services/agentic-ai-development/?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Expedey",
+         "publication_date": null,
+         "markdown": null
+        }
+       ],
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "Agentic AI engineering and software development",
+         "category": "company",
+         "markdown": "Expedey",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 7,
+       "rank_absolute": 14,
+       "markdown": "![Qurio \u2013 AI agent for follow-ups, briefings, and ops workflows](https://images.openai.com/static-rsc-4/L1IYUBawe81qUqD7R-MdG-pTBf4Pam-quQH2jw8RzsHRK2-L9FgnOc7J8n7SF56ZlBDn1FwefEdLIrhpZC233JfyP09rzowqR5VG9q6jAUeWze0wlWT8VmLKsWd85dqMRpGWrSFN8kkMLcv_GjcNVh1hp4ojx9zaqr2SmK9yrBzaAHdcese2wTG3KvMybWcP?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://www.qurio.pro/",
+         "alt": "Qurio \u2013 AI agent for follow-ups, briefings, and ops workflows",
+         "image_url": "https://images.openai.com/static-rsc-4/L1IYUBawe81qUqD7R-MdG-pTBf4Pam-quQH2jw8RzsHRK2-L9FgnOc7J8n7SF56ZlBDn1FwefEdLIrhpZC233JfyP09rzowqR5VG9q6jAUeWze0wlWT8VmLKsWd85dqMRpGWrSFN8kkMLcv_GjcNVh1hp4ojx9zaqr2SmK9yrBzaAHdcese2wTG3KvMybWcP?purpose=fullsize",
+         "markdown": "![Qurio \u2013 AI agent for follow-ups, briefings, and ops workflows](https://images.openai.com/static-rsc-4/L1IYUBawe81qUqD7R-MdG-pTBf4Pam-quQH2jw8RzsHRK2-L9FgnOc7J8n7SF56ZlBDn1FwefEdLIrhpZC233JfyP09rzowqR5VG9q6jAUeWze0wlWT8VmLKsWd85dqMRpGWrSFN8kkMLcv_GjcNVh1hp4ojx9zaqr2SmK9yrBzaAHdcese2wTG3KvMybWcP?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 8,
+       "rank_absolute": 15,
+       "markdown": "\n\n**3\\. QueryNow**\n\n### \\$10,000 per workflow\n\nAdvertises a two-week build with payment due after agreed acceptance tests pass. Focuses on finance, compliance, document processing, and other defined business processes.\n\nBest for: businesses wanting a fixed price and measurable acceptance criteria.\n\n[Visit QueryNow](https://www.querynow.com/) [www.querynow.com](https://www.querynow.com/?utm_source=chatgpt.com)\n\n---\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "Visit QueryNow",
+         "snippet": null,
+         "domain": "www.querynow.com",
+         "url": "https://www.querynow.com/",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[Visit QueryNow](https://www.querynow.com/)"
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "QueryNow\u00ae | AI Development Company. You Pay When It Works.",
+         "snippet": null,
+         "domain": "www.querynow.com",
+         "url": "https://www.querynow.com/?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "QueryNow",
+         "publication_date": null,
+         "markdown": null
+        }
+       ],
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "Business AI agent and workflow automation firm",
+         "category": "company",
+         "markdown": "QueryNow",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 8,
+       "rank_absolute": 16,
+       "markdown": "![Cision - MediaStudio View Media](https://images.openai.com/static-rsc-4/hxkWqBlW39RMHq4YTLQk-6AVhKRSGGG4KropdNSHalD9vaTjyx3KfJu3R61mZuCglJvbNorGArRcJWtxKV0tGrR1CkqKaHLtgsl7U8UDc3fROc7TxkPKtv2aZwuZuu8Aux57LMqQrRBUouIo7wzy8HdtvTf_l_IqdHaawilAQimWEDUK6cefUXhE00wwgWbq?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://mma.prnewswire.com/media/2391505/Arceeai_Logo.html",
+         "alt": "Cision - MediaStudio View Media",
+         "image_url": "https://images.openai.com/static-rsc-4/hxkWqBlW39RMHq4YTLQk-6AVhKRSGGG4KropdNSHalD9vaTjyx3KfJu3R61mZuCglJvbNorGArRcJWtxKV0tGrR1CkqKaHLtgsl7U8UDc3fROc7TxkPKtv2aZwuZuu8Aux57LMqQrRBUouIo7wzy8HdtvTf_l_IqdHaawilAQimWEDUK6cefUXhE00wwgWbq?purpose=fullsize",
+         "markdown": "![Cision - MediaStudio View Media](https://images.openai.com/static-rsc-4/hxkWqBlW39RMHq4YTLQk-6AVhKRSGGG4KropdNSHalD9vaTjyx3KfJu3R61mZuCglJvbNorGArRcJWtxKV0tGrR1CkqKaHLtgsl7U8UDc3fROc7TxkPKtv2aZwuZuu8Aux57LMqQrRBUouIo7wzy8HdtvTf_l_IqdHaawilAQimWEDUK6cefUXhE00wwgWbq?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 9,
+       "rank_absolute": 17,
+       "markdown": "\n\n**4\\. Arcesso**\n\n### From \\$11,500\n\nOffers fixed-price pilots and production agents, with published production pricing of \\$22,500\u2013\\$85,000. Emphasizes testing, monitoring, human approval, and customer ownership of code.\n\nBest for: US businesses that want a small pilot before scaling.\n\n[Visit Arcesso](https://arcesso.ai/ai/ai-agent-development/) [arcesso.ai](https://arcesso.ai/ai/ai-agent-development/?utm_source=chatgpt.com)\n\n---\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "Visit Arcesso",
+         "snippet": null,
+         "domain": "arcesso.ai",
+         "url": "https://arcesso.ai/ai/ai-agent-development/",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[Visit Arcesso](https://arcesso.ai/ai/ai-agent-development/)"
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "AI Agent Development Company",
+         "snippet": null,
+         "domain": "arcesso.ai",
+         "url": "https://arcesso.ai/ai/ai-agent-development/?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Arcesso",
+         "publication_date": "2026-10-15 00:00:00 +00:00",
+         "markdown": null
+        }
+       ],
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "US AI agent development firm",
+         "category": "company",
+         "markdown": "Arcesso",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 9,
+       "rank_absolute": 18,
+       "markdown": "![LeewayHertz Profile & Reviews - Techreviewer](https://images.openai.com/static-rsc-4/LtKQtE-pt-0pdWZ7azHXyBxo0FayDuOPQuoEPp1t8SAOUHAVtRIoxOphqKACQNGnge2oG09bNXwaWX-6nUAJ8HjsYOrJijA2Fk-1KObqQ3dS08Rq_GzcK4_SfduVP6oVkMC1VRB-Dgthdli8eoWFgaOQhBXolAP0lUEVG1LTFR-Em5tEDBKBpqnH4V4JiWun?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://techreviewer.co/companies/leewayhertz",
+         "alt": "LeewayHertz Profile & Reviews - Techreviewer",
+         "image_url": "https://images.openai.com/static-rsc-4/LtKQtE-pt-0pdWZ7azHXyBxo0FayDuOPQuoEPp1t8SAOUHAVtRIoxOphqKACQNGnge2oG09bNXwaWX-6nUAJ8HjsYOrJijA2Fk-1KObqQ3dS08Rq_GzcK4_SfduVP6oVkMC1VRB-Dgthdli8eoWFgaOQhBXolAP0lUEVG1LTFR-Em5tEDBKBpqnH4V4JiWun?purpose=fullsize",
+         "markdown": "![LeewayHertz Profile & Reviews - Techreviewer](https://images.openai.com/static-rsc-4/LtKQtE-pt-0pdWZ7azHXyBxo0FayDuOPQuoEPp1t8SAOUHAVtRIoxOphqKACQNGnge2oG09bNXwaWX-6nUAJ8HjsYOrJijA2Fk-1KObqQ3dS08Rq_GzcK4_SfduVP6oVkMC1VRB-Dgthdli8eoWFgaOQhBXolAP0lUEVG1LTFR-Em5tEDBKBpqnH4V4JiWun?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 10,
+       "rank_absolute": 19,
+       "markdown": "\n\n**5\\. LeewayHertz**\n\n### Typically quote-based\n\nDevelops custom AI agents and multi-agent architectures using frameworks such as LangGraph, CrewAI, and AutoGen. A third-party directory lists a \\$10,000 minimum project and \\$50\u2013\\$99/hour pricing.\n\nBest for: custom integrations and more sophisticated AI architectures.\n\n[Visit LeewayHertz](https://www.leewayhertz.com/) [www.ryzlabs.com](https://www.ryzlabs.com/best/ai-agent-development-companies?utm_source=chatgpt.com)[www.scalacode.com](https://www.scalacode.com/blog/top-ai-agent-development-companies/?utm_source=chatgpt.com)\n\n---\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "Visit LeewayHertz",
+         "snippet": null,
+         "domain": "www.leewayhertz.com",
+         "url": "https://www.leewayhertz.com/",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[Visit LeewayHertz](https://www.leewayhertz.com/)"
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Best AI Agent Development Companies (2026)",
+         "snippet": null,
+         "domain": "www.ryzlabs.com",
+         "url": "https://www.ryzlabs.com/best/ai-agent-development-companies?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Ryz Labs",
+         "publication_date": null,
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Top 15 AI Agent Development Companies 2026: How To Choose",
+         "snippet": null,
+         "domain": "www.scalacode.com",
+         "url": "https://www.scalacode.com/blog/top-ai-agent-development-companies/?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "ScalaCode",
+         "publication_date": "2025-09-04 00:00:00 +00:00",
+         "markdown": null
+        }
+       ],
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "Enterprise AI and software development consultancy",
+         "category": "company",
+         "markdown": "LeewayHertz",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 10,
+       "rank_absolute": 20,
+       "markdown": "![Get in Touch with Azumo | Top-Rated Nearshore Software Developer](https://images.openai.com/static-rsc-4/x9e2cLxSTjZiJQ1w7L546oJzuNhs7NPBWKbZWR4HeIi8JYNkvuKlB17dixlxi9m3uv60eYgVTXD325K_uGJBhMpcBZ500SfeeAOmgWxOFC0eEFQfcrinRrPoRYZYIX8VUrEGrdITD2iCrE_A6MM7qS-4mKU0zqBzwC4COS7m8ReUs5GB7ISYTkssOHpVOPqt?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://azumo.com/get-in-touch",
+         "alt": "Get in Touch with Azumo | Top-Rated Nearshore Software Developer",
+         "image_url": "https://images.openai.com/static-rsc-4/x9e2cLxSTjZiJQ1w7L546oJzuNhs7NPBWKbZWR4HeIi8JYNkvuKlB17dixlxi9m3uv60eYgVTXD325K_uGJBhMpcBZ500SfeeAOmgWxOFC0eEFQfcrinRrPoRYZYIX8VUrEGrdITD2iCrE_A6MM7qS-4mKU0zqBzwC4COS7m8ReUs5GB7ISYTkssOHpVOPqt?purpose=fullsize",
+         "markdown": "![Get in Touch with Azumo | Top-Rated Nearshore Software Developer](https://images.openai.com/static-rsc-4/x9e2cLxSTjZiJQ1w7L546oJzuNhs7NPBWKbZWR4HeIi8JYNkvuKlB17dixlxi9m3uv60eYgVTXD325K_uGJBhMpcBZ500SfeeAOmgWxOFC0eEFQfcrinRrPoRYZYIX8VUrEGrdITD2iCrE_A6MM7qS-4mKU0zqBzwC4COS7m8ReUs5GB7ISYTkssOHpVOPqt?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 11,
+       "rank_absolute": 21,
+       "markdown": "\n\n**6\\. Azumo**\n\n### Quote-based\n\nOffers AI engineering and software development with nearshore teams. Industry directories list rates of \\$25\u2013\\$49/hour.\n\nBest for: businesses that need ongoing development capacity and US-time-zone collaboration.\n\n[Visit Azumo](https://azumo.com/) [www.outrightcrm.com](https://www.outrightcrm.com/blog/ai-agent-development-companies/?utm_source=chatgpt.com)[www.scalacode.com](https://www.scalacode.com/blog/top-ai-agent-development-companies/?utm_source=chatgpt.com)\n\n---\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "Visit Azumo",
+         "snippet": null,
+         "domain": "azumo.com",
+         "url": "https://azumo.com/",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[Visit Azumo](https://azumo.com/)"
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "10 AI Agent Development Companies in the USA to Shortlist",
+         "snippet": null,
+         "domain": "www.outrightcrm.com",
+         "url": "https://www.outrightcrm.com/blog/ai-agent-development-companies/?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "outrightcrm.com",
+         "publication_date": "2026-08-11 00:00:00 +00:00",
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Top 15 AI Agent Development Companies 2026: How To Choose",
+         "snippet": null,
+         "domain": "www.scalacode.com",
+         "url": "https://www.scalacode.com/blog/top-ai-agent-development-companies/?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "ScalaCode",
+         "publication_date": "2025-09-04 00:00:00 +00:00",
+         "markdown": null
+        }
+       ],
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "Nearshore AI and software engineering services",
+         "category": "company",
+         "markdown": "Azumo",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 11,
+       "rank_absolute": 22,
+       "markdown": "![EPAM: Channel Profile & Services | Channel Insider](https://images.openai.com/static-rsc-4/699duAjB1oBicBxG8doRjKNGyLwYtRuBePrOcTifzIVuPcCHZZjHQbKbud_zUadhGmaiUuDcfl66YBCzzuP-Aq14wai1WhiH0mkbqIy1Thk6BhaAZr1jnmlECSrbMbitl-eyorGBemUI0vBgRoPwzQQV-VFstt5hLCjoruMUUu-kq1HR5Ul6NIsUQ6OzxUNJ?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://www.channelinsider.com/partners/epam/",
+         "alt": "EPAM: Channel Profile & Services | Channel Insider",
+         "image_url": "https://images.openai.com/static-rsc-4/699duAjB1oBicBxG8doRjKNGyLwYtRuBePrOcTifzIVuPcCHZZjHQbKbud_zUadhGmaiUuDcfl66YBCzzuP-Aq14wai1WhiH0mkbqIy1Thk6BhaAZr1jnmlECSrbMbitl-eyorGBemUI0vBgRoPwzQQV-VFstt5hLCjoruMUUu-kq1HR5Ul6NIsUQ6OzxUNJ?purpose=fullsize",
+         "markdown": "![EPAM: Channel Profile & Services | Channel Insider](https://images.openai.com/static-rsc-4/699duAjB1oBicBxG8doRjKNGyLwYtRuBePrOcTifzIVuPcCHZZjHQbKbud_zUadhGmaiUuDcfl66YBCzzuP-Aq14wai1WhiH0mkbqIy1Thk6BhaAZr1jnmlECSrbMbitl-eyorGBemUI0vBgRoPwzQQV-VFstt5hLCjoruMUUu-kq1HR5Ul6NIsUQ6OzxUNJ?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 12,
+       "rank_absolute": 23,
+       "markdown": "\n\n**7\\. EPAM Systems**\n\n### \\$100,000+ minimum project listed\n\nProvides large-scale AI engineering and enterprise transformation services. Third-party listings indicate premium engineering rates.\n\nBest for: large organizations with complex legacy systems, governance, and integration requirements.\n\n[Visit EPAM](https://www.epam.com/) [www.ryzlabs.com](https://www.ryzlabs.com/best/ai-agent-development-companies?utm_source=chatgpt.com)[www.scalacode.com](https://www.scalacode.com/blog/top-ai-agent-development-companies/?utm_source=chatgpt.com)\n\n---\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "Visit EPAM",
+         "snippet": null,
+         "domain": "www.epam.com",
+         "url": "https://www.epam.com/",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[Visit EPAM](https://www.epam.com/)"
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Best AI Agent Development Companies (2026)",
+         "snippet": null,
+         "domain": "www.ryzlabs.com",
+         "url": "https://www.ryzlabs.com/best/ai-agent-development-companies?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Ryz Labs",
+         "publication_date": null,
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Top 15 AI Agent Development Companies 2026: How To Choose",
+         "snippet": null,
+         "domain": "www.scalacode.com",
+         "url": "https://www.scalacode.com/blog/top-ai-agent-development-companies/?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "ScalaCode",
+         "publication_date": "2025-09-04 00:00:00 +00:00",
+         "markdown": null
+        }
+       ],
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "Global software engineering and digital consulting firm",
+         "category": "company",
+         "markdown": "EPAM Systems",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 12,
+       "rank_absolute": 24,
+       "markdown": "![Partner with London Tech Week 2026 | Get involved](https://images.openai.com/static-rsc-4/23EzBqQJ7-oC78Jigx5vfICm44y9eb2BI30ks31xlas3FX32UWkGDOqhIZK547wTv3bqG-0wVJ8wlGd18MXK_FwTu-yF5YhqzgZWlh-wsxP9hvkqaemEoGWFdoUJVIUjSmKkG3p9ZKFfStXxC4cIUqNJwNzCW71T2DYU4SKphPw9vSteywlvljl8C_56nuZF?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://londontechweek.com/exhibit-sponsor",
+         "alt": "Partner with London Tech Week 2026 | Get involved",
+         "image_url": "https://images.openai.com/static-rsc-4/23EzBqQJ7-oC78Jigx5vfICm44y9eb2BI30ks31xlas3FX32UWkGDOqhIZK547wTv3bqG-0wVJ8wlGd18MXK_FwTu-yF5YhqzgZWlh-wsxP9hvkqaemEoGWFdoUJVIUjSmKkG3p9ZKFfStXxC4cIUqNJwNzCW71T2DYU4SKphPw9vSteywlvljl8C_56nuZF?purpose=fullsize",
+         "markdown": "![Partner with London Tech Week 2026 | Get involved](https://images.openai.com/static-rsc-4/23EzBqQJ7-oC78Jigx5vfICm44y9eb2BI30ks31xlas3FX32UWkGDOqhIZK547wTv3bqG-0wVJ8wlGd18MXK_FwTu-yF5YhqzgZWlh-wsxP9hvkqaemEoGWFdoUJVIUjSmKkG3p9ZKFfStXxC4cIUqNJwNzCW71T2DYU4SKphPw9vSteywlvljl8C_56nuZF?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 13,
+       "rank_absolute": 25,
+       "markdown": "\n\n**8\\. Accenture**\n\n### Custom enterprise pricing\n\nOffers enterprise AI services and agent solutions through its AI Refinery platform and consulting practice. Public project pricing is not generally listed.\n\nBest for: global businesses seeking organization-wide AI deployment and integration.\n\n[Visit Accenture](https://www.accenture.com/) [www.ryzlabs.com](https://www.ryzlabs.com/best/ai-agent-development-companies?utm_source=chatgpt.com)[www.scalacode.com](https://www.scalacode.com/blog/top-ai-agent-development-companies/?utm_source=chatgpt.com)\n\nThese are a shortlist, not a definitive ranking. Prices are advertised starting points or third-party estimates, not comparable quotes. Verify current pricing, references, and contract terms directly.\n\n## 3\\. Which company should you hire?\n\nMy practical recommendation\\:\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "Visit Accenture",
+         "snippet": null,
+         "domain": "www.accenture.com",
+         "url": "https://www.accenture.com/",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[Visit Accenture](https://www.accenture.com/)"
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Best AI Agent Development Companies (2026)",
+         "snippet": null,
+         "domain": "www.ryzlabs.com",
+         "url": "https://www.ryzlabs.com/best/ai-agent-development-companies?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Ryz Labs",
+         "publication_date": null,
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Top 15 AI Agent Development Companies 2026: How To Choose",
+         "snippet": null,
+         "domain": "www.scalacode.com",
+         "url": "https://www.scalacode.com/blog/top-ai-agent-development-companies/?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "ScalaCode",
+         "publication_date": "2025-09-04 00:00:00 +00:00",
+         "markdown": null
+        }
+       ],
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "Global management consulting and technology services firm",
+         "category": "company",
+         "markdown": "Accenture",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_table",
+       "rank_group": 1,
+       "rank_absolute": 26,
+       "text": null,
+       "markdown": "| Your situation | Start by contacting |\n|--------|--------|\n| Budget under \\$10,000 | MTD Technologies or Expedey |\n| One well-defined task with a fixed budget | QueryNow or MTD Technologies |\n| A pilot that can expand into a production system | Arcesso or Expedey |\n| Multiple systems and custom integrations | LeewayHertz or Azumo |\n| Enterprise-wide deployment | EPAM or Accenture |\n\n",
+       "table": {
+        "table_header": [
+         "Your situation",
+         "Start by contacting"
+        ],
+        "table_content": [
+         [
+          "Budget under \\$10,000",
+          "MTD Technologies or Expedey"
+         ],
+         [
+          "One well-defined task with a fixed budget",
+          "QueryNow or MTD Technologies"
+         ],
+         [
+          "A pilot that can expand into a production system",
+          "Arcesso or Expedey"
+         ],
+         [
+          "Multiple systems and custom integrations",
+          "LeewayHertz or Azumo"
+         ],
+         [
+          "Enterprise-wide deployment",
+          "EPAM or Accenture"
+         ]
+        ]
+       },
+       "brand_entities": null
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 14,
+       "rank_absolute": 27,
+       "markdown": "\nFor a first project, I'd generally avoid committing \\$100,000 or more before validating one workflow. A narrowly scoped pilot makes it easier to measure accuracy, time saved, and actual return on investment.\n\n## 4\\. What to ask before signing a contract\n\nUse these questions when requesting proposals from three or four firms\\:\n\n- **Scope\\:** Exactly which tasks will the agent complete, and which require human approval?\n- **Integrations\\:** Are CRM, email, databases, and other software connections included?\n- **Performance\\:** Will the vendor test the agent against real examples and agree on measurable acceptance criteria?\n- **Ownership\\:** Will you own the source code, prompts, configurations, and documentation?\n- **Security\\:** Where will your data be processed and stored? What access permissions and audit logs are provided?\n- **Ongoing costs\\:** What are the monthly hosting, model usage, support, and maintenance charges?\n- **Exit plan\\:** Can another developer maintain the system if you change vendors?\n\nAsk each firm to quote the same deliverables, so you can compare more than just its headline price.\n\n## 5\\. Let\u2019s narrow this down to your project\n\nI can give you a more useful shortlist and realistic budget if I know what you want the agent to do.\n\nWhat kind of AI agent do you want built?\n\nCustomer service or voice agent\n\nSales, prospecting, and lead generation\n\nBusiness workflow automation\n\nInternal knowledge assistant trained on company documents\n\nA custom AI product or SaaS platform\n\n---\n\nWhat's your development budget?\n\nUnder \\$5,000\n\n\\$5,000\u2013\\$15,000\n\n\\$15,000\u2013\\$50,000\n\n\\$50,000\u2013\\$150,000\n\n\\$150,000+\n\n---\n\nWhich kind of provider do you prefer?\n\nUS-based company\n\nUS-based company or nearshore team\n\nBest value globally, including offshore firms\n\nLarge enterprise consultancy\n\n---\n\nHow complex is it?\n\nOne agent with a few integrations\n\nMultiple workflows and business systems\n\nMultiple coordinated AI agents\n\nNot sure yet\n\n[Find the best-fit companies]",
+       "sources": null,
+       "brand_entities": null
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

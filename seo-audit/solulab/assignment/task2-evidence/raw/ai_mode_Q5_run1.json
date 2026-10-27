@@ -1,0 +1,228 @@
+{
+ "version": "0.1.20261022",
+ "status_code": 20000,
+ "status_message": "Ok.",
+ "time": "7.6291 sec.",
+ "cost": 0.004,
+ "tasks_count": 1,
+ "tasks_error": 0,
+ "tasks": [
+  {
+   "id": "10270244-2577-0139-0000-d2594676d49b",
+   "status_code": 20000,
+   "status_message": "Ok.",
+   "time": "7.5291 sec.",
+   "cost": 0.004,
+   "result_count": 1,
+   "path": [
+    "v3",
+    "serp",
+    "google",
+    "ai_mode",
+    "live",
+    "advanced"
+   ],
+   "data": {
+    "api": "serp",
+    "function": "live",
+    "se": "google",
+    "se_type": "ai_mode",
+    "keyword": "How much does it cost to hire a company to build an AI agent, and which firms offer this service?",
+    "location_code": 2840,
+    "language_code": "en",
+    "device": "desktop",
+    "tag": "Q5-ai_mode-1",
+    "os": "windows"
+   },
+   "result": [
+    {
+     "keyword": "How much does it cost to hire a company to build an AI agent, and which firms offer this service?",
+     "type": "ai_mode",
+     "se_domain": "google.com",
+     "location_code": 2840,
+     "language_code": "en",
+     "check_url": "https://www.google.com/search?q=How%20much%20does%20it%20cost%20to%20hire%20a%20company%20to%20build%20an%20AI%20agent%2C%20and%20which%20firms%20offer%20this%20service%3F&hl=en&gl=US&udm=50&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+     "datetime": "2026-10-27 02:44:56 +00:00",
+     "spell": null,
+     "refinement_chips": null,
+     "item_types": [
+      "ai_overview"
+     ],
+     "se_results_count": 0,
+     "items_count": 1,
+     "items": [
+      {
+       "type": "ai_overview",
+       "rank_group": 1,
+       "rank_absolute": 1,
+       "page": 1,
+       "position": "left",
+       "xpath": "/html[1]/body[1]/div[2]/div[1]/div[9]/div[1]/section[1]/div[1]/div[1]/div[3]/div[4]/div[1]/div[1]/div[1]/div[3]",
+       "markdown": "Hiring a company to build a custom AI agent varies drastically depending on the complexity, scale, and integration requirements of your business.[[1]](https://productcrafters.io/blog/how-much-does-it-cost-to-build-an-ai-agent/)[[2]](https://www.reddit.com/r/AI_Agents/comments/1vsk3rq/how_much_does_it_actually_cost_to_build_a_custom/)\n\n### **How Much Does It Cost?** \n\nThe pricing scales based on what you need the agent to accomplish:\n\n- *Basic Single-Task Agent ($10,000 \u2013 $30,000):* Simple FAQ assistants, basic retrieval-augmented generation (RAG) knowledge retrieval, or standard customer service bots.[[1]](https://www.reddit.com/r/AI_Agents/comments/1vsk3rq/how_much_does_it_actually_cost_to_build_a_custom/)\n- *Production-Grade Task-Execution Agent ($70,000 \u2013 $150,000):* Agents integrated directly into your CRM, ERP, or internal databases that can execute multi-step workflows autonomously.[[1]](https://www.reddit.com/r/AI_Agents/comments/1vsk3rq/how_much_does_it_actually_cost_to_build_a_custom/)\n- *Full Multi-Agent Enterprise Platform ($150,000 \u2013 $500,000+):* Complex systems featuring multi-agent orchestration, robust security, compliance controls, and custom governance. Heavily regulated sectors (like healthcare or finance) can push past $1M.[[1]](https://www.reddit.com/r/AI_Agents/comments/1vsk3rq/how_much_does_it_actually_cost_to_build_a_custom/)\n- *Ongoing Maintenance & Cloud Compute ($10,000 \u2013 $50,000+ annually):* Covers API costs, token usage, cloud hosting, model retraining, and performance tracking.[[1]](https://productcrafters.io/blog/how-much-does-it-cost-to-build-an-ai-agent/)\n\n### **Which Firms Offer This Service?** \n\nThe ecosystem is split between massive global consultancies, tech giants/specialized venture studios, and boutique development agencies:[[1]](https://www.pixelmatters.com/insights/top-ai-agent-development-companies)\n\n- **Global & Enterprise Consultancies:** Firms like IBM Consulting, Accenture , and Deloitte specialize in large-scale, enterprise-wide multi-agent programs with built-in data governance, trust, and compliance.\n- **Specialized AI Studios & Tech Partners:** Specialized boutique firms and digital product agencies (such as [Pixelmatters](https://www.pixelmatters.com/insights/top-ai-agent-development-companies) and [Product Crafters](https://productcrafters.io/blog/how-much-does-it-cost-to-build-an-ai-agent/) ) handle custom workflow automation and integrate agents directly into existing software or products.\n- **Platform & Ecosystem Providers:** Platforms like Moveworks Agent Studio provide enterprise-grade environments for building and deploying internal IT/HR or workplace agents without building from scratch.[[1]](https://www.pixelmatters.com/insights/top-ai-agent-development-companies)\n\nIf you'd like to narrow this down, tell me:\n\n- What is the **primary task** you want the AI agent to handle?\n- Do you need it to **integrate with specific software** (like Salesforce, Zendesk, or internal databases)?\n- What is your approximate **budget range**?",
+       "items": [
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "Hiring a company to build a custom AI agent varies drastically depending on the complexity, scale, and integration requirements of your business.",
+         "markdown": "Hiring a company to build a custom AI agent varies drastically depending on the complexity, scale, and integration requirements of your business.[[1]](https://productcrafters.io/blog/how-much-does-it-cost-to-build-an-ai-agent/)[[2]](https://www.reddit.com/r/AI_Agents/comments/1vsk3rq/how_much_does_it_actually_cost_to_build_a_custom/)",
+         "links": null,
+         "images": null,
+         "references": [
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "ProductCrafters",
+           "domain": "productcrafters.io",
+           "url": "https://productcrafters.io/blog/how-much-does-it-cost-to-build-an-ai-agent/",
+           "title": "AI Agent Development Cost $5K to $180K+ (2026)",
+           "text": "Total project ranges from $5K to $180K+. Pricing models include per-seat ($20-$500/mo), per-task ($0.02-$1.50), and tiered ($500-$"
+          },
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Reddit",
+           "domain": "www.reddit.com",
+           "url": "https://www.reddit.com/r/AI_Agents/comments/1vsk3rq/how_much_does_it_actually_cost_to_build_a_custom/",
+           "title": "How Much Does It Actually Cost to Build a Custom Agentic AI ...",
+           "text": "a basic single-task agent \u30fb can be done for $10K\u2013$30K. $70K\u2013$150K. A full multi-agent enterprise platform with orchestration, comp..."
+          }
+         ]
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": "How Much Does It Cost?",
+         "text": "The pricing scales based on what you need the agent to accomplish:",
+         "markdown": "The pricing scales based on what you need the agent to accomplish:",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "Basic Single-Task Agent ($10,000 \u2013 $30,000): Simple FAQ assistants, basic retrieval-augmented generation (RAG) knowledge retrieval, or standard customer service bots. Production-Grade Task-Execution Agent ($70,000 \u2013 $150,000): Agents integrated directly into your CRM, ERP, or internal databases that can execute multi-step workflows autonomously. Full Multi-Agent Enterprise Platform ($150,000 \u2013 $500,000+): Complex systems featuring multi-agent orchestration, robust security, compliance controls, and custom governance. Heavily regulated sectors (like healthcare or finance) can push past $1M. Ongoing Maintenance & Cloud Compute ($10,000 \u2013 $50,000+ annually): Covers API costs, token usage, cloud hosting, model retraining, and performance tracking.",
+         "markdown": "- *Basic Single-Task Agent ($10,000 \u2013 $30,000):* Simple FAQ assistants, basic retrieval-augmented generation (RAG) knowledge retrieval, or standard customer service bots.[[1]](https://www.reddit.com/r/AI_Agents/comments/1vsk3rq/how_much_does_it_actually_cost_to_build_a_custom/)\n- *Production-Grade Task-Execution Agent ($70,000 \u2013 $150,000):* Agents integrated directly into your CRM, ERP, or internal databases that can execute multi-step workflows autonomously.[[1]](https://www.reddit.com/r/AI_Agents/comments/1vsk3rq/how_much_does_it_actually_cost_to_build_a_custom/)\n- *Full Multi-Agent Enterprise Platform ($150,000 \u2013 $500,000+):* Complex systems featuring multi-agent orchestration, robust security, compliance controls, and custom governance. Heavily regulated sectors (like healthcare or finance) can push past $1M.[[1]](https://www.reddit.com/r/AI_Agents/comments/1vsk3rq/how_much_does_it_actually_cost_to_build_a_custom/)\n- *Ongoing Maintenance & Cloud Compute ($10,000 \u2013 $50,000+ annually):* Covers API costs, token usage, cloud hosting, model retraining, and performance tracking.[[1]](https://productcrafters.io/blog/how-much-does-it-cost-to-build-an-ai-agent/)",
+         "links": null,
+         "images": null,
+         "references": [
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Reddit",
+           "domain": "www.reddit.com",
+           "url": "https://www.reddit.com/r/AI_Agents/comments/1vsk3rq/how_much_does_it_actually_cost_to_build_a_custom/",
+           "title": "How Much Does It Actually Cost to Build a Custom Agentic AI ...",
+           "text": "A full multi-agent enterprise platform with orchestration, compliance, and governance is $150K\u2013$500K+, and some heavily regulated builds (finance"
+          },
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "ProductCrafters",
+           "domain": "productcrafters.io",
+           "url": "https://productcrafters.io/blog/how-much-does-it-cost-to-build-an-ai-agent/",
+           "title": "AI Agent Development Cost $5K to $180K+ (2026)",
+           "text": "Annual Maintenance ($10K-$50K+). Total project ranges from $5K to $180K+. Pricing models include per-seat ($20-$500/mo), per-task \u30fb and tiered ($500-$5,000/mo). cl..."
+          }
+         ]
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": "Which Firms Offer This Service?",
+         "text": "The ecosystem is split between massive global consultancies, tech giants/specialized venture studios, and boutique development agencies:",
+         "markdown": "The ecosystem is split between massive global consultancies, tech giants/specialized venture studios, and boutique development agencies:[[1]](https://www.pixelmatters.com/insights/top-ai-agent-development-companies)",
+         "links": null,
+         "images": null,
+         "references": [
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Pixelmatters",
+           "domain": "www.pixelmatters.com",
+           "url": "https://www.pixelmatters.com/insights/top-ai-agent-development-companies",
+           "title": "Top AI agent development companies in 2026: who builds what",
+           "text": "Accenture, Deloitte and IBM Consulting enterprise-wide agent programs, and studios such as ustwo, Work & Co and Pixelmatters agent..."
+          }
+         ]
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "Global & Enterprise Consultancies: Firms like IBM Consulting, Accenture, and Deloitte specialize in large-scale, enterprise-wide multi-agent programs with built-in data governance, trust, and compliance. IBM Consulting Accenture Deloitte Specialized AI Studios & Tech Partners: Specialized boutique firms and digital product agencies (such as Pixelmatters and Product Crafters ) handle custom workflow automation and integrate agents directly into existing software or products. Platform & Ecosystem Providers: Platforms like Moveworks Agent Studio provide enterprise-grade environments for building and deploying internal IT/HR or workplace agents without building from scratch. Moveworks Agent Studio",
+         "markdown": "- **Global & Enterprise Consultancies:** Firms like IBM Consulting, Accenture , and Deloitte specialize in large-scale, enterprise-wide multi-agent programs with built-in data governance, trust, and compliance.\n- **Specialized AI Studios & Tech Partners:** Specialized boutique firms and digital product agencies (such as [Pixelmatters](https://www.pixelmatters.com/insights/top-ai-agent-development-companies) and [Product Crafters](https://productcrafters.io/blog/how-much-does-it-cost-to-build-an-ai-agent/) ) handle custom workflow automation and integrate agents directly into existing software or products.\n- **Platform & Ecosystem Providers:** Platforms like Moveworks Agent Studio provide enterprise-grade environments for building and deploying internal IT/HR or workplace agents without building from scratch.[[1]](https://www.pixelmatters.com/insights/top-ai-agent-development-companies)",
+         "links": null,
+         "images": null,
+         "references": [
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Pixelmatters",
+           "domain": "www.pixelmatters.com",
+           "url": "https://www.pixelmatters.com/insights/top-ai-agent-development-companies",
+           "title": "Top AI agent development companies in 2026: who builds what",
+           "text": "Deloitte and IBM Consulting enterprise-wide agent programs, and studios such as ustwo, Work & Co and Pixelmatters agents designed into a product or workflow."
+          }
+         ]
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "If you'd like to narrow this down, tell me:",
+         "markdown": "If you'd like to narrow this down, tell me:",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "What is the primary task you want the AI agent to handle? Do you need it to integrate with specific software (like Salesforce, Zendesk, or internal databases)? What is your approximate budget range ?",
+         "markdown": "- What is the **primary task** you want the AI agent to handle?\n- Do you need it to **integrate with specific software** (like Salesforce, Zendesk, or internal databases)?\n- What is your approximate **budget range**?",
+         "links": null,
+         "images": null,
+         "references": null
+        }
+       ],
+       "references": [
+        {
+         "type": "ai_overview_reference",
+         "position": "right",
+         "source": "ProductCrafters",
+         "domain": "productcrafters.io",
+         "url": "https://productcrafters.io/blog/how-much-does-it-cost-to-build-an-ai-agent/",
+         "title": "AI Agent Development Cost $5K to $180K+ (2026)",
+         "text": "Annual Maintenance ($10K-$50K+). Total project ranges from $5K to $180K+. Pricing models include per-seat ($20-$500/mo), per-task \u30fb and tiered ($500-$5,000/mo). cl..."
+        },
+        {
+         "type": "ai_overview_reference",
+         "position": "right",
+         "source": "Reddit",
+         "domain": "www.reddit.com",
+         "url": "https://www.reddit.com/r/AI_Agents/comments/1vsk3rq/how_much_does_it_actually_cost_to_build_a_custom/",
+         "title": "How Much Does It Actually Cost to Build a Custom Agentic AI ...",
+         "text": "A full multi-agent enterprise platform with orchestration, compliance, and governance is $150K\u2013$500K+, and some heavily regulated builds (finance"
+        },
+        {
+         "type": "ai_overview_reference",
+         "position": "right",
+         "source": "Pixelmatters",
+         "domain": "www.pixelmatters.com",
+         "url": "https://www.pixelmatters.com/insights/top-ai-agent-development-companies",
+         "title": "Top AI agent development companies in 2026: who builds what",
+         "text": "Deloitte and IBM Consulting enterprise-wide agent programs, and studios such as ustwo, Work & Co and Pixelmatters agents designed into a product or workflow."
+        }
+       ],
+       "rectangle": null
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

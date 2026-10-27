@@ -1,0 +1,286 @@
+{
+ "version": "0.1.20261022",
+ "status_code": 20000,
+ "status_message": "Ok.",
+ "time": "15.3583 sec.",
+ "cost": 0.004,
+ "tasks_count": 1,
+ "tasks_error": 0,
+ "tasks": [
+  {
+   "id": "10270244-2577-0139-0000-6cd6934d764a",
+   "status_code": 20000,
+   "status_message": "Ok.",
+   "time": "15.2841 sec.",
+   "cost": 0.004,
+   "result_count": 1,
+   "path": [
+    "v3",
+    "serp",
+    "google",
+    "ai_mode",
+    "live",
+    "advanced"
+   ],
+   "data": {
+    "api": "serp",
+    "function": "live",
+    "se": "google",
+    "se_type": "ai_mode",
+    "keyword": "Recommend AI consulting firms in Saudi Arabia that can help a company with AI strategy and implementation.",
+    "location_code": 2682,
+    "language_code": "en",
+    "device": "desktop",
+    "tag": "Q4-ai_mode-2",
+    "os": "windows"
+   },
+   "result": [
+    {
+     "keyword": "Recommend AI consulting firms in Saudi Arabia that can help a company with AI strategy and implementation.",
+     "type": "ai_mode",
+     "se_domain": "google.com",
+     "location_code": 2682,
+     "language_code": "en",
+     "check_url": "https://www.google.com/search?q=Recommend%20AI%20consulting%20firms%20in%20Saudi%20Arabia%20that%20can%20help%20a%20company%20with%20AI%20strategy%20and%20implementation.&hl=en&gl=SA&udm=50&uule=w+CAIQIFISCUEqlec_s-cVEZu2GsJLUGBZ",
+     "datetime": "2026-10-27 02:44:38 +00:00",
+     "spell": null,
+     "refinement_chips": null,
+     "item_types": [
+      "ai_overview"
+     ],
+     "se_results_count": 0,
+     "items_count": 1,
+     "items": [
+      {
+       "type": "ai_overview",
+       "rank_group": 1,
+       "rank_absolute": 1,
+       "page": 1,
+       "position": "left",
+       "xpath": "/html[1]/body[1]/div[2]/div[1]/div[9]/div[1]/section[1]/div[1]/div[1]/div[3]/div[4]/div[1]/div[1]/div[1]/div[3]",
+       "markdown": "When looking for AI consulting firms in Saudi Arabia to help with **AI strategy** and **end-to-end implementation** , options generally span `global management consultancies with massive regional tech practices, specialized regional AI/data powerhouses, and local advisory firms aligned closely with Vision 2030 and SDAIA regulations`.[[1]](https://vstorm.co/agentic-ai/top-5-ai-firms-for-saudi-arabias-ai-transformation-vision-2030/)[[2]](https://www.consultancy-me.com/rankings/top-consulting-firms-in-the-middle-east-by-area-of-expertise/ai-genai)\n\nTop-tier AI consulting firms operating in the Kingdom are categorized below by their market strengths:\n\n### 1. Global Strategy & Management Consultancies (Diamond & Platinum Tiers)\n\nBest for large-scale enterprise transformation, high-level AI governance, national compliance, and strategic roadmaps.\n\n- **Accenture:** Recognized as a top-tier leader in AI and Generative AI services across the Middle East, offering massive scale in enterprise-wide transformation, tech integration, and operational AI.[[1]](https://www.consultancy-me.com/rankings/top-consulting-firms-in-the-middle-east-by-area-of-expertise/ai-genai)\n- **Boston Consulting Group (BCG) / BCG X:** Exceptional at building deep corporate AI strategies, economic impact modeling, and hands-on prototype engineering through their tech build arm, BCG X.\n- **Oliver Wyman:** Frequently collaborates directly with the **Saudi Data and Artificial Intelligence Authority (SDAIA)** on national AI frameworks (such as the Kingdom AIQ framework), making them uniquely positioned for regulatory-heavy strategies.[[1]](https://spa.gov.sa/en/N2171383)\n- **PwC / EY / Deloitte / KPMG:** Extensive regional offices in Riyadh with dedicated digital and AI advisory practices specializing in AI readiness assessments, risk management, and data governance.\n\n### 2. Specialized Regional AI & Data Powerhouses\n\nBest for localized expertise, native Arabic language models, and targeted industry solutions (fintech, government, supply chain).\n\n- **Mozn:** A prominent Saudi-founded AI enterprise specializing in advanced analytics, risk management, and financial-sector AI solutions tailored specifically to the regional market context.\n- **Elm:** A powerhouse digital transformation and digital products firm owned by the Public Investment Fund (PIF), heavily embedded in Saudi government and enterprise digitization.\n- **Lucidya:** Ideal if your AI strategy focuses on customer experience, sentiment analysis, and Arabic-first Natural Language Processing (NLP).[[1]](https://vstorm.co/agentic-ai/top-5-ai-firms-for-saudi-arabias-ai-transformation-vision-2030/)\n\n### 3. Local Technology & AI Advisory Firms\n\nBest for agile implementation, small-to-medium enterprise (SME) scaling, and customized operational integrations.[[1]](https://www.linkedin.com/pulse/top-20-ai-consulting-firms-saudi-arabia-how-choose-right-kochar-k2jze)\n\n- **[Tharwah](https://consulting.tharwah.net/technology-and-ai-advisory/):** Offers targeted technology and AI advisory, focusing heavily on digital maturity, AI readiness assessments, and AI governance frameworks tailored to Saudi regulatory requirements.\n- **MAZ NEXA AI Lab:** Operates an executive office in Riyadh providing workshops, strategic prototyping, and implementation frameworks bridging research and local execution.\n- **[Ozone Technology](https://www.ozonetech.com.sa/artificial-intelligence-solutions-consulting):** Partners with global providers (like AWS) to deliver cloud-native AI applications, generative AI roadmaps, and business process optimization in the Kingdom.[[1]](https://www.ozonetech.com.sa/artificial-intelligence-solutions-consulting)[[2]](https://consulting.tharwah.net/technology-and-ai-advisory/)[[3]](https://maznexa.sa/en/ai-lab)\n\nTo help narrow down the ideal partner, could you share:\n\n- Your **industry vertical** (e.g., government, fintech, retail, energy)?\n- Whether you need help primarily with **high-level strategy/governance** or **hands-on technical deployment/coding**?",
+       "items": [
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "When looking for AI consulting firms in Saudi Arabia to help with AI strategy and end-to-end implementation, options generally span global management consultancies with massive regional tech practices, specialized regional AI/data powerhouses, and local advisory firms aligned closely with Vision 2030 and SDAIA regulations.",
+         "markdown": "When looking for AI consulting firms in Saudi Arabia to help with **AI strategy** and **end-to-end implementation** , options generally span `global management consultancies with massive regional tech practices, specialized regional AI/data powerhouses, and local advisory firms aligned closely with Vision 2030 and SDAIA regulations`.[[1]](https://vstorm.co/agentic-ai/top-5-ai-firms-for-saudi-arabias-ai-transformation-vision-2030/)[[2]](https://www.consultancy-me.com/rankings/top-consulting-firms-in-the-middle-east-by-area-of-expertise/ai-genai)",
+         "links": null,
+         "images": null,
+         "references": [
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "vstorm.co",
+           "domain": "vstorm.co",
+           "url": "https://vstorm.co/agentic-ai/top-5-ai-firms-for-saudi-arabias-ai-transformation-vision-2030/",
+           "title": "Top 5 AI firms for Saudi Arabia Vision 2030 - Vstorm",
+           "text": "The leading firms for Saudi Arabia AI transformation 2030 are Vstorm, Mozn, Accenture, Deloitte, and Lucidya. Each occupies a dist..."
+          },
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Consultancy-me.com",
+           "domain": "www.consultancy-me.com",
+           "url": "https://www.consultancy-me.com/rankings/top-consulting-firms-in-the-middle-east-by-area-of-expertise/ai-genai",
+           "title": "Top AI & Gen AI consulting firms in the Middle East",
+           "text": "Assessments of over 500 consulting firms identified 37 top players in the Middle East for AI and Gen AI services, categorized acro..."
+          }
+         ]
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "Top-tier AI consulting firms operating in the Kingdom are categorized below by their market strengths:",
+         "markdown": "Top-tier AI consulting firms operating in the Kingdom are categorized below by their market strengths:",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": "1. Global Strategy & Management Consultancies (Diamond & Platinum Tiers)",
+         "text": "Best for large-scale enterprise transformation, high-level AI governance, national compliance, and strategic roadmaps.",
+         "markdown": "Best for large-scale enterprise transformation, high-level AI governance, national compliance, and strategic roadmaps.",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "Accenture : Recognized as a top-tier leader in AI and Generative AI services across the Middle East, offering massive scale in enterprise-wide transformation, tech integration, and operational AI. Accenture Boston Consulting Group (BCG) / BCG X : Exceptional at building deep corporate AI strategies, economic impact modeling, and hands-on prototype engineering through their tech build arm, BCG X. Boston Consulting Group (BCG) / BCG X Oliver Wyman : Frequently collaborates directly with the Saudi Data and Artificial Intelligence Authority (SDAIA) on national AI frameworks (such as the Kingdom AIQ framework), making them uniquely positioned for regulatory-heavy strategies. Oliver Wyman PwC / EY / Deloitte / KPMG : Extensive regional offices in Riyadh with dedicated digital and AI advisory practices specializing in AI readiness assessments, risk management, and data governance. PwC / EY / Deloitte / KPMG",
+         "markdown": "- **Accenture:** Recognized as a top-tier leader in AI and Generative AI services across the Middle East, offering massive scale in enterprise-wide transformation, tech integration, and operational AI.[[1]](https://www.consultancy-me.com/rankings/top-consulting-firms-in-the-middle-east-by-area-of-expertise/ai-genai)\n- **Boston Consulting Group (BCG) / BCG X:** Exceptional at building deep corporate AI strategies, economic impact modeling, and hands-on prototype engineering through their tech build arm, BCG X.\n- **Oliver Wyman:** Frequently collaborates directly with the **Saudi Data and Artificial Intelligence Authority (SDAIA)** on national AI frameworks (such as the Kingdom AIQ framework), making them uniquely positioned for regulatory-heavy strategies.[[1]](https://spa.gov.sa/en/N2171383)\n- **PwC / EY / Deloitte / KPMG:** Extensive regional offices in Riyadh with dedicated digital and AI advisory practices specializing in AI readiness assessments, risk management, and data governance.",
+         "links": null,
+         "images": null,
+         "references": [
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Consultancy-me.com",
+           "domain": "www.consultancy-me.com",
+           "url": "https://www.consultancy-me.com/rankings/top-consulting-firms-in-the-middle-east-by-area-of-expertise/ai-genai",
+           "title": "Top AI & Gen AI consulting firms in the Middle East",
+           "text": "Assessments of over 500 consulting firms identified 37 top players in the Middle East for AI and Gen AI services, categorized acro..."
+          },
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "\u0648\u0643\u0627\u0644\u0629 \u0627\u0644\u0623\u0646\u0628\u0627\u0621 \u0627\u0644\u0633\u0639\u0648\u062f\u064a\u0629",
+           "domain": "spa.gov.sa",
+           "url": "https://spa.gov.sa/en/N2171383",
+           "title": "SDAIA, Oliver Wyman to Accelerate AI Adoption in Saudi Arabia",
+           "text": "Oliver Wyman, a global management consulting firm and subsidiary of Marsh McLennan have signed a memorandum of cooperation aimed a..."
+          }
+         ]
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": "2. Specialized Regional AI & Data Powerhouses",
+         "text": "Best for localized expertise, native Arabic language models, and targeted industry solutions (fintech, government, supply chain).",
+         "markdown": "Best for localized expertise, native Arabic language models, and targeted industry solutions (fintech, government, supply chain).",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "Mozn : A prominent Saudi-founded AI enterprise specializing in advanced analytics, risk management, and financial-sector AI solutions tailored specifically to the regional market context. Mozn Elm : A powerhouse digital transformation and digital products firm owned by the Public Investment Fund (PIF), heavily embedded in Saudi government and enterprise digitization. Elm Lucidya : Ideal if your AI strategy focuses on customer experience, sentiment analysis, and Arabic-first Natural Language Processing (NLP). Lucidya",
+         "markdown": "- **Mozn:** A prominent Saudi-founded AI enterprise specializing in advanced analytics, risk management, and financial-sector AI solutions tailored specifically to the regional market context.\n- **Elm:** A powerhouse digital transformation and digital products firm owned by the Public Investment Fund (PIF), heavily embedded in Saudi government and enterprise digitization.\n- **Lucidya:** Ideal if your AI strategy focuses on customer experience, sentiment analysis, and Arabic-first Natural Language Processing (NLP).[[1]](https://vstorm.co/agentic-ai/top-5-ai-firms-for-saudi-arabias-ai-transformation-vision-2030/)",
+         "links": null,
+         "images": null,
+         "references": [
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "vstorm.co",
+           "domain": "vstorm.co",
+           "url": "https://vstorm.co/agentic-ai/top-5-ai-firms-for-saudi-arabias-ai-transformation-vision-2030/",
+           "title": "Top 5 AI firms for Saudi Arabia Vision 2030 - Vstorm",
+           "text": "The leading firms for Saudi Arabia AI transformation 2030 are Vstorm, Mozn, Accenture, Deloitte, and Lucidya. Each occupies a dist..."
+          }
+         ]
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": "3. Local Technology & AI Advisory Firms",
+         "text": "Best for agile implementation, small-to-medium enterprise (SME) scaling, and customized operational integrations.",
+         "markdown": "Best for agile implementation, small-to-medium enterprise (SME) scaling, and customized operational integrations.[[1]](https://www.linkedin.com/pulse/top-20-ai-consulting-firms-saudi-arabia-how-choose-right-kochar-k2jze)",
+         "links": null,
+         "images": null,
+         "references": [
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "LinkedIn",
+           "domain": "www.linkedin.com",
+           "url": "https://www.linkedin.com/pulse/top-20-ai-consulting-firms-saudi-arabia-how-choose-right-kochar-k2jze",
+           "title": "Top 20 AI Consulting Firms in Saudi Arabia",
+           "text": "Foxcode is an emerging player in Saudi Arabia's AI space, offering smart, adaptive AI solutions for startups and SMEs. With streng..."
+          }
+         ]
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "Tharwah : Offers targeted technology and AI advisory, focusing heavily on digital maturity, AI readiness assessments, and AI governance frameworks tailored to Saudi regulatory requirements. MAZ NEXA AI Lab : Operates an executive office in Riyadh providing workshops, strategic prototyping, and implementation frameworks bridging research and local execution. MAZ NEXA AI Lab Ozone Technology : Partners with global providers (like AWS) to deliver cloud-native AI applications, generative AI roadmaps, and business process optimization in the Kingdom.",
+         "markdown": "- **[Tharwah](https://consulting.tharwah.net/technology-and-ai-advisory/):** Offers targeted technology and AI advisory, focusing heavily on digital maturity, AI readiness assessments, and AI governance frameworks tailored to Saudi regulatory requirements.\n- **MAZ NEXA AI Lab:** Operates an executive office in Riyadh providing workshops, strategic prototyping, and implementation frameworks bridging research and local execution.\n- **[Ozone Technology](https://www.ozonetech.com.sa/artificial-intelligence-solutions-consulting):** Partners with global providers (like AWS) to deliver cloud-native AI applications, generative AI roadmaps, and business process optimization in the Kingdom.[[1]](https://www.ozonetech.com.sa/artificial-intelligence-solutions-consulting)[[2]](https://consulting.tharwah.net/technology-and-ai-advisory/)[[3]](https://maznexa.sa/en/ai-lab)",
+         "links": null,
+         "images": null,
+         "references": [
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "www.ozonetech.com.sa",
+           "domain": "www.ozonetech.com.sa",
+           "url": "https://www.ozonetech.com.sa/artificial-intelligence-solutions-consulting",
+           "title": "AI Solutions & Consulting Saudi Arabia | Ozone Technology",
+           "text": "Ozone Technology provides AI solutions and consulting in Saudi Arabia. Cloud-Native AI Application Development"
+          },
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Tharwah Group",
+           "domain": "consulting.tharwah.net",
+           "url": "https://consulting.tharwah.net/technology-and-ai-advisory/",
+           "title": "Technology and AI Advisory",
+           "text": "Assessing digital readiness to build a roadmap for growth and efficiency. Establishing frameworks for responsible, balanced AI inn..."
+          },
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "MAZ NEXA",
+           "domain": "maznexa.sa",
+           "url": "https://maznexa.sa/en/ai-lab",
+           "title": "AI Consulting & Solutions in Riyadh | MAZ NEXA AI Lab",
+           "text": "By uniting licensed consultants, regional leaders, development partners, and academic research, we create a fully integrated AI ec..."
+          }
+         ]
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "To help narrow down the ideal partner, could you share:",
+         "markdown": "To help narrow down the ideal partner, could you share:",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "Your industry vertical (e.g., government, fintech, retail, energy)? Whether you need help primarily with high-level strategy/governance or hands-on technical deployment/coding ?",
+         "markdown": "- Your **industry vertical** (e.g., government, fintech, retail, energy)?\n- Whether you need help primarily with **high-level strategy/governance** or **hands-on technical deployment/coding**?",
+         "links": null,
+         "images": null,
+         "references": null
+        }
+       ],
+       "references": [
+        {
+         "type": "ai_overview_reference",
+         "position": "right",
+         "source": "\u0648\u0643\u0627\u0644\u0629 \u0627\u0644\u0623\u0646\u0628\u0627\u0621 \u0627\u0644\u0633\u0639\u0648\u062f\u064a\u0629",
+         "domain": "spa.gov.sa",
+         "url": "https://spa.gov.sa/en/N2171383",
+         "title": "SDAIA, Oliver Wyman to Accelerate AI Adoption in Saudi Arabia",
+         "text": "Oliver Wyman, a global management consulting firm and subsidiary of Marsh McLennan have signed a memorandum of cooperation aimed at enhancing Saudi Arabia's capabi..."
+        },
+        {
+         "type": "ai_overview_reference",
+         "position": "right",
+         "source": "LinkedIn",
+         "domain": "www.linkedin.com",
+         "url": "https://www.linkedin.com/pulse/top-20-ai-consulting-firms-saudi-arabia-how-choose-right-kochar-k2jze",
+         "title": "Top 20 AI Consulting Firms in Saudi Arabia",
+         "text": "Foxcode is an emerging player in Saudi Arabia's AI space, offering smart, adaptive AI solutions for startups and SMEs. With strengths in data engineering and chatb..."
+        },
+        {
+         "type": "ai_overview_reference",
+         "position": "right",
+         "source": "www.ozonetech.com.sa",
+         "domain": "www.ozonetech.com.sa",
+         "url": "https://www.ozonetech.com.sa/artificial-intelligence-solutions-consulting",
+         "title": "AI Solutions & Consulting Saudi Arabia | Ozone Technology",
+         "text": "Ozone Technology provides AI solutions and consulting in Saudi Arabia. Cloud-Native AI Application Development"
+        }
+       ],
+       "rectangle": null
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

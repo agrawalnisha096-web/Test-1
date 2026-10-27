@@ -1,0 +1,199 @@
+{
+ "version": "0.1.20261022",
+ "status_code": 20000,
+ "status_message": "Ok.",
+ "time": "9.1466 sec.",
+ "cost": 0.004,
+ "tasks_count": 1,
+ "tasks_error": 0,
+ "tasks": [
+  {
+   "id": "10270244-2577-0139-0000-6fa787488af3",
+   "status_code": 20000,
+   "status_message": "Ok.",
+   "time": "9.0702 sec.",
+   "cost": 0.004,
+   "result_count": 1,
+   "path": [
+    "v3",
+    "serp",
+    "google",
+    "ai_mode",
+    "live",
+    "advanced"
+   ],
+   "data": {
+    "api": "serp",
+    "function": "live",
+    "se": "google",
+    "se_type": "ai_mode",
+    "keyword": "What are the top AI development companies in Dubai for enterprise projects?",
+    "location_code": 2784,
+    "language_code": "en",
+    "device": "desktop",
+    "tag": "Q3-ai_mode-2",
+    "os": "windows"
+   },
+   "result": [
+    {
+     "keyword": "What are the top AI development companies in Dubai for enterprise projects?",
+     "type": "ai_mode",
+     "se_domain": "google.com",
+     "location_code": 2784,
+     "language_code": "en",
+     "check_url": "https://www.google.com/search?q=What%20are%20the%20top%20AI%20development%20companies%20in%20Dubai%20for%20enterprise%20projects%3F&hl=en&gl=AE&udm=50&uule=w+CAIQIFISCb0Sq7HfSF4-EacKCMBWL9Mz",
+     "datetime": "2026-10-27 02:44:18 +00:00",
+     "spell": null,
+     "refinement_chips": null,
+     "item_types": [
+      "ai_overview"
+     ],
+     "se_results_count": 0,
+     "items_count": 1,
+     "items": [
+      {
+       "type": "ai_overview",
+       "rank_group": 1,
+       "rank_absolute": 1,
+       "page": 1,
+       "position": "left",
+       "xpath": "/html[1]/body[1]/div[2]/div[1]/div[9]/div[1]/section[1]/div[1]/div[1]/div[3]/div[4]/div[1]/div[1]/div[1]/div[3]",
+       "markdown": "Dubai has rapidly evolved into a global hub for artificial intelligence, backed heavily by the [UAE National AI Strategy](https://masterofcode.com/blog/ai-companies-in-dubai) . For high-level enterprise projects, government implementations, and large-scale digital transformations, organizations typically look for firms capable of handling sovereign data compliance, heavy infrastructure, and complex machine learning pipelines.[[1]](https://masterofcode.com/blog/ai-companies-in-dubai)\n\nThe top-tier AI entities and development partners operating in and around Dubai for enterprise-grade initiatives include:\n\n### 1. Enterprise & Sovereign Scale Powerhouses\n\n- **Core42 (a G42 Company):** Operating at the intersection of sovereign cloud infrastructure, high-performance computing (HPC), and national-scale AI. They are the premier choice for large government entities and heavily regulated enterprises needing complete data sovereignty, custom large language model training (such as the *Jais* Arabic-English foundational model ecosystem), and secure multi-department cloud execution.[[1]](https://www.core42.ai/)\n- **G42:** As the parent group driving the region's intelligence grid, G42 handles massive predictive analytics, healthcare intelligence, and national digital transformations. Ideal for corporations needing enterprise-wide AI operations platforms and robust data governance.[[1]](https://www.g42.ai/)\n\n### 2. Specialized Enterprise AI & Integration Consultancies\n\n- **Master of Code Global:** Recognized for conversational and generative AI solutions, leveraging structured frameworks (like LOFT) to build robust, scalable customer-facing and internal enterprise conversational agents.[[1]](https://masterofcode.com/blog/ai-companies-in-dubai)\n- **Code Brew Labs:** Renowned for custom AI application development, machine learning model integration, and intelligent process automation tailored to retail, finance, and logistics sectors.[[1]](https://masterofcode.com/blog/ai-companies-in-dubai)\n- **Apptunix:** Focuses heavily on fusing intelligent automation with core enterprise architecture, helping regional businesses optimize operational workflows and transition smoothly into predictive data models.[[1]](https://masterofcode.com/blog/ai-companies-in-dubai)\n- **Innovacio Technologies:** Specializes in advanced Natural Language Processing (NLP), computer vision, and secure AI-driven document verification systems suited for enterprise compliance and automated data extraction.[[1]](https://masterofcode.com/blog/ai-companies-in-dubai)\n\n### Key Factors to Evaluate for Enterprise AI:\n\n- **Data Residency & Compliance:** Ensure the vendor complies with UAE data protection laws, especially if your data requires local cloud hosting.\n- **MLOps Maturity:** Look for companies that don't just build a proof-of-concept model, but offer robust MLOps practices for continuous model monitoring, retraining, and scalability.\n- **Domain Experience:** Verify past case studies in your specific vertical (e.g., logistics, finance, healthcare, or public sector).\n\nIf you can share your **industry** and the **specific use case** (e.g., customer service automation, predictive supply chain analytics, or internal document processing), I can narrow down which of these firms best matches your technical scope and budget.",
+       "items": [
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "Dubai has rapidly evolved into a global hub for artificial intelligence, backed heavily by the UAE National AI Strategy. For high-level enterprise projects, government implementations, and large-scale digital transformations, organizations typically look for firms capable of handling sovereign data compliance, heavy infrastructure, and complex machine learning pipelines.",
+         "markdown": "Dubai has rapidly evolved into a global hub for artificial intelligence, backed heavily by the [UAE National AI Strategy](https://masterofcode.com/blog/ai-companies-in-dubai) . For high-level enterprise projects, government implementations, and large-scale digital transformations, organizations typically look for firms capable of handling sovereign data compliance, heavy infrastructure, and complex machine learning pipelines.[[1]](https://masterofcode.com/blog/ai-companies-in-dubai)",
+         "links": null,
+         "images": null,
+         "references": [
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Master of Code Global",
+           "domain": "masterofcode.com",
+           "url": "https://masterofcode.com/blog/ai-companies-in-dubai",
+           "title": "Top 10 AI Companies in Dubai [2026]",
+           "text": "Dubai AI Innovators: Master of Code Global. Supported by UAE National AI Strategy 2031 for enterprise-scale deployments."
+          }
+         ]
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "The top-tier AI entities and development partners operating in and around Dubai for enterprise-grade initiatives include:",
+         "markdown": "The top-tier AI entities and development partners operating in and around Dubai for enterprise-grade initiatives include:",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": "1. Enterprise & Sovereign Scale Powerhouses",
+         "text": "Core42 (a G42 Company): Operating at the intersection of sovereign cloud infrastructure, high-performance computing (HPC), and national-scale AI. They are the premier choice for large government entities and heavily regulated enterprises needing complete data sovereignty, custom large language model training (such as the Jais Arabic-English foundational model ecosystem), and secure multi-department cloud execution. G42: As the parent group driving the region's intelligence grid, G42 handles massive predictive analytics, healthcare intelligence, and national digital transformations. Ideal for corporations needing enterprise-wide AI operations platforms and robust data governance.",
+         "markdown": "- **Core42 (a G42 Company):** Operating at the intersection of sovereign cloud infrastructure, high-performance computing (HPC), and national-scale AI. They are the premier choice for large government entities and heavily regulated enterprises needing complete data sovereignty, custom large language model training (such as the *Jais* Arabic-English foundational model ecosystem), and secure multi-department cloud execution.[[1]](https://www.core42.ai/)\n- **G42:** As the parent group driving the region's intelligence grid, G42 handles massive predictive analytics, healthcare intelligence, and national digital transformations. Ideal for corporations needing enterprise-wide AI operations platforms and robust data governance.[[1]](https://www.g42.ai/)",
+         "links": null,
+         "images": null,
+         "references": [
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Core42",
+           "domain": "www.core42.ai",
+           "url": "https://www.core42.ai/",
+           "title": "Core42 | Sovereign AI Infrastructure",
+           "text": "Our AI Cloud enables the training of advanced reasoning models, climate systems, multilingual models, and large scale scientific w..."
+          },
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "G42",
+           "domain": "www.g42.ai",
+           "url": "https://www.g42.ai/",
+           "title": "G42 | Inventing a Better Everyday",
+           "text": "Abu Dhabi-founded AI company operating in 30+ countries with 23,000+ people and 10 companies building the Intelligence Grid."
+          }
+         ]
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": "2. Specialized Enterprise AI & Integration Consultancies",
+         "text": "Master of Code Global: Recognized for conversational and generative AI solutions, leveraging structured frameworks (like LOFT) to build robust, scalable customer-facing and internal enterprise conversational agents. Code Brew Labs: Renowned for custom AI application development, machine learning model integration, and intelligent process automation tailored to retail, finance, and logistics sectors. Apptunix: Focuses heavily on fusing intelligent automation with core enterprise architecture, helping regional businesses optimize operational workflows and transition smoothly into predictive data models. Innovacio Technologies: Specializes in advanced Natural Language Processing (NLP), computer vision, and secure AI-driven document verification systems suited for enterprise compliance and automated data extraction.",
+         "markdown": "- **Master of Code Global:** Recognized for conversational and generative AI solutions, leveraging structured frameworks (like LOFT) to build robust, scalable customer-facing and internal enterprise conversational agents.[[1]](https://masterofcode.com/blog/ai-companies-in-dubai)\n- **Code Brew Labs:** Renowned for custom AI application development, machine learning model integration, and intelligent process automation tailored to retail, finance, and logistics sectors.[[1]](https://masterofcode.com/blog/ai-companies-in-dubai)\n- **Apptunix:** Focuses heavily on fusing intelligent automation with core enterprise architecture, helping regional businesses optimize operational workflows and transition smoothly into predictive data models.[[1]](https://masterofcode.com/blog/ai-companies-in-dubai)\n- **Innovacio Technologies:** Specializes in advanced Natural Language Processing (NLP), computer vision, and secure AI-driven document verification systems suited for enterprise compliance and automated data extraction.[[1]](https://masterofcode.com/blog/ai-companies-in-dubai)",
+         "links": null,
+         "images": null,
+         "references": [
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Master of Code Global",
+           "domain": "masterofcode.com",
+           "url": "https://masterofcode.com/blog/ai-companies-in-dubai",
+           "title": "Top 10 AI Companies in Dubai [2026]",
+           "text": "Innovacio Technologies (NLP, computer vision, document verification); STS Software (enterprise integrations, full-stack platforms); enterprise-scale deployments."
+          }
+         ]
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": "Key Factors to Evaluate for Enterprise AI:",
+         "text": "Data Residency & Compliance: Ensure the vendor complies with UAE data protection laws, especially if your data requires local cloud hosting. MLOps Maturity: Look for companies that don't just build a proof-of-concept model, but offer robust MLOps practices for continuous model monitoring, retraining, and scalability. Domain Experience: Verify past case studies in your specific vertical (e.g., logistics, finance, healthcare, or public sector).",
+         "markdown": "- **Data Residency & Compliance:** Ensure the vendor complies with UAE data protection laws, especially if your data requires local cloud hosting.\n- **MLOps Maturity:** Look for companies that don't just build a proof-of-concept model, but offer robust MLOps practices for continuous model monitoring, retraining, and scalability.\n- **Domain Experience:** Verify past case studies in your specific vertical (e.g., logistics, finance, healthcare, or public sector).",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "If you can share your industry and the specific use case (e.g., customer service automation, predictive supply chain analytics, or internal document processing), I can narrow down which of these firms best matches your technical scope and budget.",
+         "markdown": "If you can share your **industry** and the **specific use case** (e.g., customer service automation, predictive supply chain analytics, or internal document processing), I can narrow down which of these firms best matches your technical scope and budget.",
+         "links": null,
+         "images": null,
+         "references": null
+        }
+       ],
+       "references": [
+        {
+         "type": "ai_overview_reference",
+         "position": "right",
+         "source": "Core42",
+         "domain": "www.core42.ai",
+         "url": "https://www.core42.ai/",
+         "title": "Core42 | Sovereign AI Infrastructure",
+         "text": "Our AI Cloud enables the training of advanced reasoning models, climate systems, multilingual models, and large scale scientific workloads with full data control."
+        },
+        {
+         "type": "ai_overview_reference",
+         "position": "right",
+         "source": "Master of Code Global",
+         "domain": "masterofcode.com",
+         "url": "https://masterofcode.com/blog/ai-companies-in-dubai",
+         "title": "Top 10 AI Companies in Dubai [2026]",
+         "text": "Innovacio Technologies (NLP, computer vision, document verification); STS Software (enterprise integrations, full-stack platforms); enterprise-scale deployments."
+        },
+        {
+         "type": "ai_overview_reference",
+         "position": "right",
+         "source": "G42",
+         "domain": "www.g42.ai",
+         "url": "https://www.g42.ai/",
+         "title": "G42 | Inventing a Better Everyday",
+         "text": "Abu Dhabi-founded AI company operating in 30+ countries with 23,000+ people and 10 companies building the Intelligence Grid."
+        }
+       ],
+       "rectangle": null
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

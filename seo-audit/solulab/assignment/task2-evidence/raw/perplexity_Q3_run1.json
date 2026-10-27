@@ -1,0 +1,131 @@
+{
+ "version": "0.1.20261022",
+ "status_code": 20000,
+ "status_message": "Ok.",
+ "time": "5.5922 sec.",
+ "cost": 0.006375,
+ "tasks_count": 1,
+ "tasks_error": 0,
+ "tasks": [
+  {
+   "id": "10270244-2577-0612-0000-f3dd59c228a5",
+   "status_code": 20000,
+   "status_message": "Ok.",
+   "time": "4.8616 sec.",
+   "cost": 0.006375,
+   "result_count": 1,
+   "path": [
+    "v3",
+    "ai_optimization",
+    "perplexity",
+    "llm_responses",
+    "live"
+   ],
+   "data": {
+    "api": "ai_optimization",
+    "function": "llm_responses",
+    "se": "perplexity",
+    "user_prompt": "What are the top AI development companies in Dubai for enterprise projects?",
+    "model_name": "sonar",
+    "max_output_tokens": 2048,
+    "web_search_country_iso_code": "AE",
+    "tag": "Q3-perplexity-1"
+   },
+   "result": [
+    {
+     "model_name": "sonar",
+     "input_tokens": 20,
+     "output_tokens": 755,
+     "reasoning_tokens": 0,
+     "web_search": true,
+     "money_spent": 0.005775,
+     "datetime": "2026-10-27 02:44:20 +00:00",
+     "items": [
+      {
+       "type": "message",
+       "sections": [
+        {
+         "type": "text",
+         "text": "For enterprise AI projects in Dubai, the strongest shortlist is:\n\n- **G42 / Core42** \u2014 Best for sovereign-scale AI, cloud infrastructure, data platforms, healthcare, government, and highly regulated workloads. G42 is headquartered in Abu Dhabi but serves UAE-wide enterprise and public-sector programs.[1][3]\n- **Microsoft Gulf** \u2014 Best for Azure AI, Copilot, cloud-native applications, large-language models, MLOps, and organizations already using Microsoft technologies.[5][10]\n- **IBM Middle East** \u2014 Best for hybrid-cloud AI, governance, explainable AI, predictive analytics, and enterprises integrating AI with complex legacy systems.[5][10]\n- **Accenture Applied Intelligence** \u2014 Best for large transformation programs spanning strategy, data modernization, AI implementation, and operational change across banking, aviation, retail, and government.[5][10]\n- **Injazat** \u2014 Best for UAE-based government and large-enterprise projects requiring local delivery, secure cloud, managed services, and compliance-oriented AI operations.[3][5]\n- **Presight** \u2014 Best for large-scale analytics, smart-city programs, public-sector data platforms, and operational intelligence. It is part of the UAE\u2019s broader AI ecosystem alongside G42 and other national-scale companies.[8]\n- **Derq** \u2014 Best for computer vision, road safety, intelligent transport systems, and mobility analytics.[5]\n- **Bayanat** \u2014 Best for geospatial AI, satellite and aerial imagery, mapping, infrastructure monitoring, and digital twins.[5]\n- **Simform** \u2014 Best for integrating AI into enterprise software, cloud platforms, data systems, and customer-facing products.[1][2][8]\n- **SoluLab** \u2014 Best for generative AI, AI agents, automation, blockchain-connected systems, and IoT-enabled enterprise products.[1][8]\n- **Lumitech** \u2014 Best for end-to-end AI delivery, including RAG systems, agentic AI, machine learning, and production deployment.[8]\n- **Code Brew Labs** \u2014 Best for custom LLM chatbots, computer vision, NLP, MLOps, data engineering, and combined AI-plus-enterprise application development.[7]\n\n## Recommended shortlist by project type\n\n| Enterprise requirement | Best starting options |\n|---|---|\n| Government, sovereign cloud, or national-scale AI | G42/Core42, Presight, Injazat |\n| Banking, insurance, and regulated industries | Microsoft, IBM, Accenture, Appinventiv |\n| Legacy-system modernization | IBM, Microsoft, Accenture, Simform |\n| Generative AI and internal knowledge assistants | Microsoft, IBM, Lumitech, SoluLab |\n| Custom enterprise applications | Simform, Code Brew Labs, Appinventiv |\n| Smart cities, transport, and computer vision | Presight, Derq, Bayanat |\n| Mid-market enterprise seeking a hands-on build partner | Lumitech, Simform, SoluLab, Code Brew Labs |\n\nFor most Dubai enterprises, a practical first-round shortlist would be **Microsoft or IBM** for platform-led transformation, **Accenture** for a large multi-year program, **G42/Core42 or Injazat** for UAE-local and regulated workloads, and **Simform or Lumitech** for a focused production system. Treat public \u201ctop company\u201d rankings as a starting point and validate each vendor through relevant case studies, security certifications, data-residency arrangements, model-governance processes, and post-launch support.[2][3][8]",
+         "annotations": [
+          {
+           "title": "Top 11 AI Development Companies in Dubai, UAE (2026)",
+           "url": "https://www.apptunix.com/blog/top-ai-development-companies-in-dubai-uae/",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "Top AI Development Companies in Dubai | 2026",
+           "url": "https://www.designrush.com/agency/ai-companies/ae/dubai",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "Top 10 AI Development Companies in Dubai (2026) - Algosoft",
+           "url": "https://www.algosoft.co/blogs/ai-development-companies-in-dubai/",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "Top Generative AI Companies in Dubai - Aug 2026 Rankings",
+           "url": "https://clutch.co/ae/developers/artificial-intelligence/generative/dubai",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "Top 10 AI Development Companies in Dubai, UAE 2026 - Spreaker",
+           "url": "https://www.spreaker.com/post/top-10-ai-development-companies-in-dubai-uae-2026--71072489",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "AI Development Companies in Dubai You Should Know in 2026",
+           "url": "https://www.datatobiz.com/blog/ai-development-companies-dubai/",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "Clutch Recognizes Code Brew Labs as The Top App Development",
+           "url": "https://www.openpr.com/news/4667620/clutch-recognizes-code-brew-labs-as-the-top-app-development",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "Top Ai Development Companies...",
+           "url": "https://lumitech.co/insights/top-mena-ai-companies",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "Top 7 AI Development Companies in Dubai - 2026 Reviews - Feedbax",
+           "url": "https://feedbax.ai/ai/dubai",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "Top 10 AI Development Companies in UAE",
+           "url": "https://vegavid.com/blog/top-ai-development-companies-in-uae",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "fan_out_queries": null
+    }
+   ]
+  }
+ ]
+}

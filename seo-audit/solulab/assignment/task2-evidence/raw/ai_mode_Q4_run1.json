@@ -1,0 +1,178 @@
+{
+ "version": "0.1.20261022",
+ "status_code": 20000,
+ "status_message": "Ok.",
+ "time": "4.5972 sec.",
+ "cost": 0.004,
+ "tasks_count": 1,
+ "tasks_error": 0,
+ "tasks": [
+  {
+   "id": "10270244-2577-0139-0000-318cb720c9a7",
+   "status_code": 20000,
+   "status_message": "Ok.",
+   "time": "4.5280 sec.",
+   "cost": 0.004,
+   "result_count": 1,
+   "path": [
+    "v3",
+    "serp",
+    "google",
+    "ai_mode",
+    "live",
+    "advanced"
+   ],
+   "data": {
+    "api": "serp",
+    "function": "live",
+    "se": "google",
+    "se_type": "ai_mode",
+    "keyword": "Recommend AI consulting firms in Saudi Arabia that can help a company with AI strategy and implementation.",
+    "location_code": 2682,
+    "language_code": "en",
+    "device": "desktop",
+    "tag": "Q4-ai_mode-1",
+    "os": "windows"
+   },
+   "result": [
+    {
+     "keyword": "Recommend AI consulting firms in Saudi Arabia that can help a company with AI strategy and implementation.",
+     "type": "ai_mode",
+     "se_domain": "google.com",
+     "location_code": 2682,
+     "language_code": "en",
+     "check_url": "https://www.google.com/search?q=Recommend%20AI%20consulting%20firms%20in%20Saudi%20Arabia%20that%20can%20help%20a%20company%20with%20AI%20strategy%20and%20implementation.&hl=en&gl=SA&udm=50&uule=w+CAIQIFISCUEqlec_s-cVEZu2GsJLUGBZ",
+     "datetime": "2026-10-27 02:44:26 +00:00",
+     "spell": null,
+     "refinement_chips": null,
+     "item_types": [
+      "ai_overview"
+     ],
+     "se_results_count": 0,
+     "items_count": 1,
+     "items": [
+      {
+       "type": "ai_overview",
+       "rank_group": 1,
+       "rank_absolute": 1,
+       "page": 1,
+       "position": "left",
+       "xpath": "/html[1]/body[1]/div[2]/div[1]/div[9]/div[1]/section[1]/div[1]/div[1]/div[3]/div[4]/div[1]/div[2]/div[1]/div[3]",
+       "markdown": "Here are notable AI consulting firms and technology providers in Saudi Arabia that specialize in `strategic AI advisory, digital roadmaps, and full-scale implementation`:\n\n- **[Tech Partner](https://www.linkedin.com/pulse/top-20-ai-consulting-firms-saudi-arabia-how-choose-right-kochar-k2jze)** (Riyadh) \u2013 Blends strategic enterprise consulting with technical execution. They specialize in deploying scalable AI platforms, system integrations, and data-driven optimization for heavy industries like oil & gas, fintech, and public services.[[1]](https://www.linkedin.com/pulse/top-20-ai-consulting-firms-saudi-arabia-how-choose-right-kochar-k2jze)\n- **[Ozone Technology](https://www.ozonetech.com.sa/artificial-intelligence-solutions-consulting)** (Saudi Arabia) \u2013 A KSA-based tech and consulting firm focusing on artificial intelligence, data modernization, and cloud transformations. They assist enterprises with custom generative AI strategies and modern AWS-powered analytics infrastructure.[[1]](https://www.ozonetech.com.sa/artificial-intelligence-solutions-consulting)\n- **[Tharwah](https://consulting.tharwah.net/technology-and-ai-advisory/)** (Riyadh) \u2013 Offers dedicated technology and AI advisory services, including AI readiness assessments, digital maturity audits, AI transformation planning, and governance frameworks for responsible AI deployment.[[1]](https://consulting.tharwah.net/technology-and-ai-advisory/)\n- **IBM Consulting Saudi Arabia** (Riyadh) \u2013 A heavyweight global enterprise choice with a major regional presence in Riyadh. Ideal for large-scale operations, government entities, and highly regulated sectors (like banking and healthcare) requiring hybrid cloud architectures, automation, and enterprise-grade AI integration via platforms like watsonx.\n- **[Foxcode](https://www.linkedin.com/pulse/top-20-ai-consulting-firms-saudi-arabia-how-choose-right-kochar-k2jze)** (Saudi Arabia) \u2013 An emerging agile player well-suited for startups and mid-market enterprises looking for rapid business intelligence, data engineering, and tailored AI chatbot development.[[1]](https://www.linkedin.com/pulse/top-20-ai-consulting-firms-saudi-arabia-how-choose-right-kochar-k2jze)\n\nIf you can share:\n\n- Your **industry or sector** \n- Whether you need a **boutique local advisor** or a **large enterprise system integrator** \n\nI can help narrow down which firm best fits your **specific project scope and budget**.",
+       "items": [
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "Here are notable AI consulting firms and technology providers in Saudi Arabia that specialize in strategic AI advisory, digital roadmaps, and full-scale implementation :",
+         "markdown": "Here are notable AI consulting firms and technology providers in Saudi Arabia that specialize in `strategic AI advisory, digital roadmaps, and full-scale implementation`:",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "Tech Partner (Riyadh) \u2013 Blends strategic enterprise consulting with technical execution. They specialize in deploying scalable AI platforms, system integrations, and data-driven optimization for heavy industries like oil & gas, fintech, and public services. Ozone Technology (Saudi Arabia) \u2013 A KSA-based tech and consulting firm focusing on artificial intelligence, data modernization, and cloud transformations. They assist enterprises with custom generative AI strategies and modern AWS-powered analytics infrastructure. Tharwah (Riyadh) \u2013 Offers dedicated technology and AI advisory services, including AI readiness assessments, digital maturity audits, AI transformation planning, and governance frameworks for responsible AI deployment. IBM Consulting Saudi Arabia (Riyadh) \u2013 A heavyweight global enterprise choice with a major regional presence in Riyadh. Ideal for large-scale operations, government entities, and highly regulated sectors (like banking and healthcare) requiring hybrid cloud architectures, automation, and enterprise-grade AI integration via platforms like watsonx. IBM Consulting Saudi Arabia Foxcode (Saudi Arabia) \u2013 An emerging agile player well-suited for startups and mid-market enterprises looking for rapid business intelligence, data engineering, and tailored AI chatbot development.",
+         "markdown": "- **[Tech Partner](https://www.linkedin.com/pulse/top-20-ai-consulting-firms-saudi-arabia-how-choose-right-kochar-k2jze)** (Riyadh) \u2013 Blends strategic enterprise consulting with technical execution. They specialize in deploying scalable AI platforms, system integrations, and data-driven optimization for heavy industries like oil & gas, fintech, and public services.[[1]](https://www.linkedin.com/pulse/top-20-ai-consulting-firms-saudi-arabia-how-choose-right-kochar-k2jze)\n- **[Ozone Technology](https://www.ozonetech.com.sa/artificial-intelligence-solutions-consulting)** (Saudi Arabia) \u2013 A KSA-based tech and consulting firm focusing on artificial intelligence, data modernization, and cloud transformations. They assist enterprises with custom generative AI strategies and modern AWS-powered analytics infrastructure.[[1]](https://www.ozonetech.com.sa/artificial-intelligence-solutions-consulting)\n- **[Tharwah](https://consulting.tharwah.net/technology-and-ai-advisory/)** (Riyadh) \u2013 Offers dedicated technology and AI advisory services, including AI readiness assessments, digital maturity audits, AI transformation planning, and governance frameworks for responsible AI deployment.[[1]](https://consulting.tharwah.net/technology-and-ai-advisory/)\n- **IBM Consulting Saudi Arabia** (Riyadh) \u2013 A heavyweight global enterprise choice with a major regional presence in Riyadh. Ideal for large-scale operations, government entities, and highly regulated sectors (like banking and healthcare) requiring hybrid cloud architectures, automation, and enterprise-grade AI integration via platforms like watsonx.\n- **[Foxcode](https://www.linkedin.com/pulse/top-20-ai-consulting-firms-saudi-arabia-how-choose-right-kochar-k2jze)** (Saudi Arabia) \u2013 An emerging agile player well-suited for startups and mid-market enterprises looking for rapid business intelligence, data engineering, and tailored AI chatbot development.[[1]](https://www.linkedin.com/pulse/top-20-ai-consulting-firms-saudi-arabia-how-choose-right-kochar-k2jze)",
+         "links": null,
+         "images": null,
+         "references": [
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "LinkedIn",
+           "domain": "www.linkedin.com",
+           "url": "https://www.linkedin.com/pulse/top-20-ai-consulting-firms-saudi-arabia-how-choose-right-kochar-k2jze",
+           "title": "Top 20 AI Consulting Firms in Saudi Arabia",
+           "text": "Tech Partner delivers enterprise-grade AI platforms and digital transformation services tailored to the Saudi market."
+          },
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "www.ozonetech.com.sa",
+           "domain": "www.ozonetech.com.sa",
+           "url": "https://www.ozonetech.com.sa/artificial-intelligence-solutions-consulting",
+           "title": "AI Solutions & Consulting Saudi Arabia | Ozone Technology",
+           "text": "Ozone Technology is a Saudi-based company that specializes in artificial intelligence (AI) solutions and consulting."
+          },
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Tharwah Group",
+           "domain": "consulting.tharwah.net",
+           "url": "https://consulting.tharwah.net/technology-and-ai-advisory/",
+           "title": "Technology and AI Advisory",
+           "text": "Technology & AI Advisory Solutions. Assessing digital readiness to build a roadmap for growth and efficiency. Establishing framewo..."
+          }
+         ]
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "If you can share:",
+         "markdown": "If you can share:",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "Your industry or sector Whether you need a boutique local advisor or a large enterprise system integrator",
+         "markdown": "- Your **industry or sector** \n- Whether you need a **boutique local advisor** or a **large enterprise system integrator**",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "I can help narrow down which firm best fits your specific project scope and budget.",
+         "markdown": "I can help narrow down which firm best fits your **specific project scope and budget**.",
+         "links": null,
+         "images": null,
+         "references": null
+        }
+       ],
+       "references": [
+        {
+         "type": "ai_overview_reference",
+         "position": "right",
+         "source": "LinkedIn",
+         "domain": "www.linkedin.com",
+         "url": "https://www.linkedin.com/pulse/top-20-ai-consulting-firms-saudi-arabia-how-choose-right-kochar-k2jze",
+         "title": "Top 20 AI Consulting Firms in Saudi Arabia",
+         "text": "Foxcode is an emerging player in Saudi Arabia's AI space, offering smart, adaptive AI solutions for startups and SMEs. With strengths in data engineering. Rating"
+        },
+        {
+         "type": "ai_overview_reference",
+         "position": "right",
+         "source": "www.ozonetech.com.sa",
+         "domain": "www.ozonetech.com.sa",
+         "url": "https://www.ozonetech.com.sa/artificial-intelligence-solutions-consulting",
+         "title": "AI Solutions & Consulting Saudi Arabia | Ozone Technology",
+         "text": "Ozone Technology is a Saudi-based company that specializes in artificial intelligence (AI) solutions and consulting."
+        },
+        {
+         "type": "ai_overview_reference",
+         "position": "right",
+         "source": "Tharwah Group",
+         "domain": "consulting.tharwah.net",
+         "url": "https://consulting.tharwah.net/technology-and-ai-advisory/",
+         "title": "Technology and AI Advisory",
+         "text": "Technology & AI Advisory Solutions. Assessing digital readiness to build a roadmap for growth and efficiency. Establishing frameworks for responsible, balanced AI..."
+        }
+       ],
+       "rectangle": null
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

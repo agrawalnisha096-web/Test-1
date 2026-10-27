@@ -1,0 +1,219 @@
+{
+ "version": "0.1.20261022",
+ "status_code": 20000,
+ "status_message": "Ok.",
+ "time": "10.0049 sec.",
+ "cost": 0.004,
+ "tasks_count": 1,
+ "tasks_error": 0,
+ "tasks": [
+  {
+   "id": "10270243-2577-0139-0000-c7a0d618a144",
+   "status_code": 20000,
+   "status_message": "Ok.",
+   "time": "9.9506 sec.",
+   "cost": 0.004,
+   "result_count": 1,
+   "path": [
+    "v3",
+    "serp",
+    "google",
+    "ai_mode",
+    "live",
+    "advanced"
+   ],
+   "data": {
+    "api": "serp",
+    "function": "live",
+    "se": "google",
+    "se_type": "ai_mode",
+    "keyword": "What are the best generative AI development companies in the USA for building an enterprise LLM application?",
+    "location_code": 2840,
+    "language_code": "en",
+    "device": "desktop",
+    "tag": "Q2-ai_mode-3",
+    "os": "windows"
+   },
+   "result": [
+    {
+     "keyword": "What are the best generative AI development companies in the USA for building an enterprise LLM application?",
+     "type": "ai_mode",
+     "se_domain": "google.com",
+     "location_code": 2840,
+     "language_code": "en",
+     "check_url": "https://www.google.com/search?q=What%20are%20the%20best%20generative%20AI%20development%20companies%20in%20the%20USA%20for%20building%20an%20enterprise%20LLM%20application%3F&hl=en&gl=US&udm=50&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+     "datetime": "2026-10-27 02:43:38 +00:00",
+     "spell": null,
+     "refinement_chips": null,
+     "item_types": [
+      "ai_overview"
+     ],
+     "se_results_count": 0,
+     "items_count": 1,
+     "items": [
+      {
+       "type": "ai_overview",
+       "rank_group": 1,
+       "rank_absolute": 1,
+       "page": 1,
+       "position": "left",
+       "xpath": "/html[1]/body[1]/div[2]/div[1]/div[9]/div[1]/section[1]/div[1]/div[1]/div[3]/div[4]/div[1]/div[1]/div[1]/div[3]",
+       "markdown": "When building an enterprise LLM application, the \"best\" partner depends heavily on whether you need **hyperscale cloud infrastructure**, **enterprise data and AI platforms**, **specialized boutique AI engineering** , or **massive global digital transformation consulting**.[[1]](https://www.reddit.com/r/Agentic_Marketing/comments/1u6ertw/top_generative_ai_development_companies_in_the/)[[2]](https://www.pixelmatters.com/insights/best-generative-ai-development-companies)\n\nThe US generative AI ecosystem for enterprise applications is divided into distinct categories based on your organization's specific technical depth and scale:\n\n### 1. Enterprise Platforms & Data Infrastructure\n\n- **Databricks** (Austin/San Francisco, TX/CA)\n\t- *Best for:* Enterprises looking to build, evaluate, and govern LLM apps directly on top of massive proprietary data lakes.\n\t- *Key Strengths:* Mosaic AI Agent Framework, MLflow for LLM tracing and evaluation, and robust data governance.[[1]](https://www.reddit.com/r/Agentic_Marketing/comments/1u6ertw/top_generative_ai_development_companies_in_the/)\n- **Cohere** (US/Canada operations)\n\t- *Best for:* Enterprises requiring secure, business-context-focused language models that prioritize privacy and high accuracy.\n\t- *Key Strengths:* Highly tailored enterprise LLMs (Command) with flexible deployment (including zero data-retention guarantees).\n- **Scale AI** (San Francisco, CA)\n\t- *Best for:* Fine-tuning frontier models and building high-quality evaluation/annotation pipelines using proprietary enterprise data.\n\n### 2. Major Cloud Ecosystem Providers\n\n- **Microsoft Azure OpenAI Service** (Redmond, WA)\n\t- *Best for:* Organizations already embedded in the enterprise Microsoft ecosystem needing enterprise-grade security, data sovereignty, and direct access to OpenAI\u2019s frontier models.\n- **Amazon Bedrock / AWS** (Seattle, WA)\n\t- *Best for:* Scalable, serverless access to multiple leading foundation models (Claude, Mistral, Llama, and Amazon Titan) with deep AWS data integration.\n- **Google Cloud Vertex AI** (Mountain View, CA)\n\t- *Best for:* Leveraging Google\u2019s Gemini models, advanced multimodal capabilities, and powerful search/retrieval (RAG) toolkits.\n\n### 3. Specialized Boutique & Agile AI Engineering\n\n- **LeewayHertz** (San Francisco, CA / Global)\n\t- *Best for:* Fast-moving enterprise pilots, custom generative AI agents, and end-to-end MVP/application development.\n\t- *Key Strengths:* Nimble engineering teams specializing in rapid integration of LLMs with modern enterprise software workflows.\n\n### 4. Global Enterprise Consulting & System Integrators\n\n- **Accenture** (US & Global practices)\n\t- *Best for:* Fortune 500 companies folding enterprise-wide generative AI into multi-year digital transformations.\n\t- *Key Strengths:* Massive scale, deep industry-vertical expertise, and broad partnerships across every major hyperscaler.[[1]](https://www.reddit.com/r/AI_Agents/comments/1x441em/we_compared_9_enterprise_ai_consulting_firms_for/)\n- **IBM Consulting** (Armonk, NY)\n\t- *Best for:* Highly regulated sectors (healthcare, finance, government) requiring strict governance, multi-model flexibility, and secure environments via watsonx.[[1]](https://www.reddit.com/r/AI_Agents/comments/1x441em/we_compared_9_enterprise_ai_consulting_firms_for/)\n\nTo help narrow down which partner aligns best with your goals, could you share:\n\n- What is your **primary use case** (e.g., internal knowledge retrieval/RAG, customer-facing agent, automated workflow)?\n- Are you restricted to **on-premises/private cloud deployment** , or are you open to **public cloud hyperscalers** (AWS, Azure, GCP)?",
+       "items": [
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "When building an enterprise LLM application, the \"best\" partner depends heavily on whether you need hyperscale cloud infrastructure, enterprise data and AI platforms, specialized boutique AI engineering, or massive global digital transformation consulting.",
+         "markdown": "When building an enterprise LLM application, the \"best\" partner depends heavily on whether you need **hyperscale cloud infrastructure**, **enterprise data and AI platforms**, **specialized boutique AI engineering** , or **massive global digital transformation consulting**.[[1]](https://www.reddit.com/r/Agentic_Marketing/comments/1u6ertw/top_generative_ai_development_companies_in_the/)[[2]](https://www.pixelmatters.com/insights/best-generative-ai-development-companies)",
+         "links": null,
+         "images": null,
+         "references": [
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Reddit",
+           "domain": "www.reddit.com",
+           "url": "https://www.reddit.com/r/Agentic_Marketing/comments/1u6ertw/top_generative_ai_development_companies_in_the/",
+           "title": "Top Generative AI Development Companies in the USA (2026)",
+           "text": "Scale AI specializes in data infrastructure for AI systems, large-scale enterprise AI transformation, combining consulting, system..."
+          },
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Pixelmatters",
+           "domain": "www.pixelmatters.com",
+           "url": "https://www.pixelmatters.com/insights/best-generative-ai-development-companies",
+           "title": "Best generative AI development companies in 2026, by depth",
+           "text": "The right generative AI development company depends on how deep into the model your project goes. Caylent, Slalom and Provectus fi..."
+          }
+         ]
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "The US generative AI ecosystem for enterprise applications is divided into distinct categories based on your organization's specific technical depth and scale:",
+         "markdown": "The US generative AI ecosystem for enterprise applications is divided into distinct categories based on your organization's specific technical depth and scale:",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": "1. Enterprise Platforms & Data Infrastructure",
+         "text": "Databricks (Austin/San Francisco, TX/CA) Databricks Best for: Enterprises looking to build, evaluate, and govern LLM apps directly on top of massive proprietary data lakes. Key Strengths: Mosaic AI Agent Framework, MLflow for LLM tracing and evaluation, and robust data governance. Cohere (US/Canada operations) Cohere Best for: Enterprises requiring secure, business-context-focused language models that prioritize privacy and high accuracy. Key Strengths: Highly tailored enterprise LLMs (Command) with flexible deployment (including zero data-retention guarantees). Scale AI (San Francisco, CA) Scale AI Best for: Fine-tuning frontier models and building high-quality evaluation/annotation pipelines using proprietary enterprise data.",
+         "markdown": "- **Databricks** (Austin/San Francisco, TX/CA)\n\t- *Best for:* Enterprises looking to build, evaluate, and govern LLM apps directly on top of massive proprietary data lakes.\n\t- *Key Strengths:* Mosaic AI Agent Framework, MLflow for LLM tracing and evaluation, and robust data governance.[[1]](https://www.reddit.com/r/Agentic_Marketing/comments/1u6ertw/top_generative_ai_development_companies_in_the/)\n- **Cohere** (US/Canada operations)\n\t- *Best for:* Enterprises requiring secure, business-context-focused language models that prioritize privacy and high accuracy.\n\t- *Key Strengths:* Highly tailored enterprise LLMs (Command) with flexible deployment (including zero data-retention guarantees).\n- **Scale AI** (San Francisco, CA)\n\t- *Best for:* Fine-tuning frontier models and building high-quality evaluation/annotation pipelines using proprietary enterprise data.",
+         "links": null,
+         "images": null,
+         "references": [
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Reddit",
+           "domain": "www.reddit.com",
+           "url": "https://www.reddit.com/r/Agentic_Marketing/comments/1u6ertw/top_generative_ai_development_companies_in_the/",
+           "title": "Top Generative AI Development Companies in the USA (2026)",
+           "text": "Databricks provides a unified data and AI platform widely used for building, training, and deploying GenAI systems on enterprise data."
+          }
+         ]
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": "2. Major Cloud Ecosystem Providers",
+         "text": "Microsoft Azure OpenAI Service (Redmond, WA) Microsoft Azure OpenAI Service Best for: Organizations already embedded in the enterprise Microsoft ecosystem needing enterprise-grade security, data sovereignty, and direct access to OpenAI\u2019s frontier models. Amazon Bedrock / AWS (Seattle, WA) Amazon Bedrock / AWS Best for: Scalable, serverless access to multiple leading foundation models (Claude, Mistral, Llama, and Amazon Titan) with deep AWS data integration. Google Cloud Vertex AI (Mountain View, CA) Google Cloud Vertex AI Best for: Leveraging Google\u2019s Gemini models, advanced multimodal capabilities, and powerful search/retrieval (RAG) toolkits.",
+         "markdown": "- **Microsoft Azure OpenAI Service** (Redmond, WA)\n\t- *Best for:* Organizations already embedded in the enterprise Microsoft ecosystem needing enterprise-grade security, data sovereignty, and direct access to OpenAI\u2019s frontier models.\n- **Amazon Bedrock / AWS** (Seattle, WA)\n\t- *Best for:* Scalable, serverless access to multiple leading foundation models (Claude, Mistral, Llama, and Amazon Titan) with deep AWS data integration.\n- **Google Cloud Vertex AI** (Mountain View, CA)\n\t- *Best for:* Leveraging Google\u2019s Gemini models, advanced multimodal capabilities, and powerful search/retrieval (RAG) toolkits.",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": "3. Specialized Boutique & Agile AI Engineering",
+         "text": "LeewayHertz (San Francisco, CA / Global) LeewayHertz Best for: Fast-moving enterprise pilots, custom generative AI agents, and end-to-end MVP/application development. Key Strengths: Nimble engineering teams specializing in rapid integration of LLMs with modern enterprise software workflows.",
+         "markdown": "- **LeewayHertz** (San Francisco, CA / Global)\n\t- *Best for:* Fast-moving enterprise pilots, custom generative AI agents, and end-to-end MVP/application development.\n\t- *Key Strengths:* Nimble engineering teams specializing in rapid integration of LLMs with modern enterprise software workflows.",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": "4. Global Enterprise Consulting & System Integrators",
+         "text": "Accenture (US & Global practices) Accenture Best for: Fortune 500 companies folding enterprise-wide generative AI into multi-year digital transformations. Key Strengths: Massive scale, deep industry-vertical expertise, and broad partnerships across every major hyperscaler. IBM Consulting (Armonk, NY) IBM Consulting Best for: Highly regulated sectors (healthcare, finance, government) requiring strict governance, multi-model flexibility, and secure environments via watsonx. watsonx",
+         "markdown": "- **Accenture** (US & Global practices)\n\t- *Best for:* Fortune 500 companies folding enterprise-wide generative AI into multi-year digital transformations.\n\t- *Key Strengths:* Massive scale, deep industry-vertical expertise, and broad partnerships across every major hyperscaler.[[1]](https://www.reddit.com/r/AI_Agents/comments/1x441em/we_compared_9_enterprise_ai_consulting_firms_for/)\n- **IBM Consulting** (Armonk, NY)\n\t- *Best for:* Highly regulated sectors (healthcare, finance, government) requiring strict governance, multi-model flexibility, and secure environments via watsonx.[[1]](https://www.reddit.com/r/AI_Agents/comments/1x441em/we_compared_9_enterprise_ai_consulting_firms_for/)",
+         "links": null,
+         "images": null,
+         "references": [
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Reddit",
+           "domain": "www.reddit.com",
+           "url": "https://www.reddit.com/r/AI_Agents/comments/1x441em/we_compared_9_enterprise_ai_consulting_firms_for/",
+           "title": "We compared 9 enterprise AI consulting firms for 2026, from ...",
+           "text": "Clients include BBVA, Merck, and S&P Global Best for: Fortune 500s folding AI into a multi-year program. Trade-off: cost, timeline..."
+          }
+         ]
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "To help narrow down which partner aligns best with your goals, could you share:",
+         "markdown": "To help narrow down which partner aligns best with your goals, could you share:",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "What is your primary use case (e.g., internal knowledge retrieval/RAG, customer-facing agent, automated workflow)? Are you restricted to on-premises/private cloud deployment, or are you open to public cloud hyperscalers (AWS, Azure, GCP)?",
+         "markdown": "- What is your **primary use case** (e.g., internal knowledge retrieval/RAG, customer-facing agent, automated workflow)?\n- Are you restricted to **on-premises/private cloud deployment** , or are you open to **public cloud hyperscalers** (AWS, Azure, GCP)?",
+         "links": null,
+         "images": null,
+         "references": null
+        }
+       ],
+       "references": [
+        {
+         "type": "ai_overview_reference",
+         "position": "right",
+         "source": "Reddit",
+         "domain": "www.reddit.com",
+         "url": "https://www.reddit.com/r/Agentic_Marketing/comments/1u6ertw/top_generative_ai_development_companies_in_the/",
+         "title": "Top Generative AI Development Companies in the USA (2026)",
+         "text": "Databricks provides a unified data and AI platform widely used for building, training, and deploying GenAI systems on enterprise data."
+        },
+        {
+         "type": "ai_overview_reference",
+         "position": "right",
+         "source": "Reddit",
+         "domain": "www.reddit.com",
+         "url": "https://www.reddit.com/r/AI_Agents/comments/1x441em/we_compared_9_enterprise_ai_consulting_firms_for/",
+         "title": "We compared 9 enterprise AI consulting firms for 2026, from ...",
+         "text": "IBM Consulting Size ~290,000 | HQ Armonk, NY Turned its internal consulting platform into a product, IBM Enterprise Advantage: human consultants"
+        },
+        {
+         "type": "ai_overview_reference",
+         "position": "right",
+         "source": "Pixelmatters",
+         "domain": "www.pixelmatters.com",
+         "url": "https://www.pixelmatters.com/insights/best-generative-ai-development-companies",
+         "title": "Best generative AI development companies in 2026, by depth",
+         "text": "The right generative AI development company depends on how deep into the model your project goes. Caylent, Slalom and Provectus fit features built on an"
+        }
+       ],
+       "rectangle": null
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

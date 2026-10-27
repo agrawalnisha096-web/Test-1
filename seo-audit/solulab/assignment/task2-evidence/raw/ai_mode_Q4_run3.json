@@ -1,0 +1,227 @@
+{
+ "version": "0.1.20261022",
+ "status_code": 20000,
+ "status_message": "Ok.",
+ "time": "14.4431 sec.",
+ "cost": 0.004,
+ "tasks_count": 1,
+ "tasks_error": 0,
+ "tasks": [
+  {
+   "id": "10270244-2577-0139-0000-953586e23cce",
+   "status_code": 20000,
+   "status_message": "Ok.",
+   "time": "14.3727 sec.",
+   "cost": 0.004,
+   "result_count": 1,
+   "path": [
+    "v3",
+    "serp",
+    "google",
+    "ai_mode",
+    "live",
+    "advanced"
+   ],
+   "data": {
+    "api": "serp",
+    "function": "live",
+    "se": "google",
+    "se_type": "ai_mode",
+    "keyword": "Recommend AI consulting firms in Saudi Arabia that can help a company with AI strategy and implementation.",
+    "location_code": 2682,
+    "language_code": "en",
+    "device": "desktop",
+    "tag": "Q4-ai_mode-3",
+    "os": "windows"
+   },
+   "result": [
+    {
+     "keyword": "Recommend AI consulting firms in Saudi Arabia that can help a company with AI strategy and implementation.",
+     "type": "ai_mode",
+     "se_domain": "google.com",
+     "location_code": 2682,
+     "language_code": "en",
+     "check_url": "https://www.google.com/search?q=Recommend%20AI%20consulting%20firms%20in%20Saudi%20Arabia%20that%20can%20help%20a%20company%20with%20AI%20strategy%20and%20implementation.&hl=en&gl=SA&udm=50&uule=w+CAIQIFISCUEqlec_s-cVEZu2GsJLUGBZ",
+     "datetime": "2026-10-27 02:44:40 +00:00",
+     "spell": null,
+     "refinement_chips": null,
+     "item_types": [
+      "ai_overview"
+     ],
+     "se_results_count": 0,
+     "items_count": 1,
+     "items": [
+      {
+       "type": "ai_overview",
+       "rank_group": 1,
+       "rank_absolute": 1,
+       "page": 1,
+       "position": "left",
+       "xpath": "/html[1]/body[1]/div[2]/div[1]/div[9]/div[1]/section[1]/div[1]/div[1]/div[3]/div[4]/div[1]/div[1]/div[1]/div[3]",
+       "markdown": "When seeking AI consulting and implementation in Saudi Arabia, organizations typically choose between **global strategy & management consultancies** (for large-scale transformation), **Big Four professional services** (for governance, risk, and compliance integrated with tech), or **specialized local/boutique technical firms** (for rapid use-case prototyping and deployment).\n\nA categorized overview of key players operating in the Saudi market to support AI strategy and implementation includes:\n\n### 1. Global Strategy & Management Consultancies\n\n- **McKinsey & Company, Boston Consulting Group (BCG), and Bain & Company:** These firms operate major offices in Riyadh and have dedicated digital/AI arms (such as *BCG X* ). They excel at top-level enterprise AI vision, identifying high-ROI use cases, transforming operating models, and aligning AI roadmaps directly with corporate P&L and Saudi Vision 2030 objectives.[[1]](https://www.rapiddata.com/services/ai/ai-consulting-services-riyadh-saudi-arabia.html)\n- **Strategy& (Part of the PwC network) and Kearney:** Deeply embedded in the Middle East transformation landscape, offering rigorous economic impact analysis, national-scale sector strategies, and end-to-end digital/AI implementations.\n\n### 2. The Big Four (Technology, Governance & Risk)\n\n- **PwC, EY, Deloitte, and KPMG:** All maintain a heavy presence in Riyadh and Jeddah. They are exceptionally strong if your AI strategy requires robust navigation of local regulatory frameworks\u2014such as compliance with the **Saudi Personal Data Protection Law (PDPL)**, **SDAIA AI ethics principles** , and **NDMO data governance standards** . They bridge the gap between high-level AI strategy and audit-ready data pipelines.[[1]](https://www.rapiddata.com/services/ai/ai-consulting-services-riyadh-saudi-arabia.html)\n\n### 3. Specialized & Regional Technical AI Consultancies\n\n- **SITE Advisory (Saudi Information Technology Company):** Backed by the PIF ecosystem, SITE Advisory focuses heavily on secure digital transformation, making them an ideal partner if your AI strategy involves sensitive government or enterprise data requiring sovereign cloud frameworks and stringent cybersecurity integration.[[1]](https://www.site.sa/news)\n- **Deevo Analytics:** A Riyadh-based specialized AI consulting and analytics firm focusing on turning data readiness assessments into concrete machine learning and artificial intelligence solutions.[[1]](https://themanifest.com/sa/artificial-intelligence/companies)\n- **NextGenSol & RapidData:** Local specialized technology consultancies offering targeted AI roadmap creation, use-case prioritization, build-vs-buy evaluations, and GenAI model selection suited for mid-to-large enterprises scaling up digital budgets.[[1]](https://nextgensol.com.sa/ai-consulting/)[[2]](https://www.rapiddata.com/services/ai/ai-consulting-services-riyadh-saudi-arabia.html)\n\nIf you can share a bit more context, I can help narrow down the best fit:\n\n- What is your **industry** (e.g., healthcare, finance, retail, government)?\n- Are you looking for **high-level corporate strategy** or **hands-on technical deployment/coding**?\n- What is the rough **scale of the project**?",
+       "items": [
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "When seeking AI consulting and implementation in Saudi Arabia, organizations typically choose between global strategy & management consultancies (for large-scale transformation), Big Four professional services (for governance, risk, and compliance integrated with tech), or specialized local/boutique technical firms (for rapid use-case prototyping and deployment).",
+         "markdown": "When seeking AI consulting and implementation in Saudi Arabia, organizations typically choose between **global strategy & management consultancies** (for large-scale transformation), **Big Four professional services** (for governance, risk, and compliance integrated with tech), or **specialized local/boutique technical firms** (for rapid use-case prototyping and deployment).",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "A categorized overview of key players operating in the Saudi market to support AI strategy and implementation includes:",
+         "markdown": "A categorized overview of key players operating in the Saudi market to support AI strategy and implementation includes:",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": "1. Global Strategy & Management Consultancies",
+         "text": "McKinsey & Company, Boston Consulting Group (BCG), and Bain & Company: These firms operate major offices in Riyadh and have dedicated digital/AI arms (such as BCG X). They excel at top-level enterprise AI vision, identifying high-ROI use cases, transforming operating models, and aligning AI roadmaps directly with corporate P&L and Saudi Vision 2030 objectives. Strategy& (Part of the PwC network) and Kearney: Deeply embedded in the Middle East transformation landscape, offering rigorous economic impact analysis, national-scale sector strategies, and end-to-end digital/AI implementations.",
+         "markdown": "- **McKinsey & Company, Boston Consulting Group (BCG), and Bain & Company:** These firms operate major offices in Riyadh and have dedicated digital/AI arms (such as *BCG X* ). They excel at top-level enterprise AI vision, identifying high-ROI use cases, transforming operating models, and aligning AI roadmaps directly with corporate P&L and Saudi Vision 2030 objectives.[[1]](https://www.rapiddata.com/services/ai/ai-consulting-services-riyadh-saudi-arabia.html)\n- **Strategy& (Part of the PwC network) and Kearney:** Deeply embedded in the Middle East transformation landscape, offering rigorous economic impact analysis, national-scale sector strategies, and end-to-end digital/AI implementations.",
+         "links": null,
+         "images": null,
+         "references": [
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "RapidData",
+           "domain": "www.rapiddata.com",
+           "url": "https://www.rapiddata.com/services/ai/ai-consulting-services-riyadh-saudi-arabia.html",
+           "title": "AI Consulting Services in Riyadh, Saudi Arabia",
+           "text": "A clear AI vision, target operating model and portfolio that ties artificial intelligence to enterprise strategy and P&L."
+          }
+         ]
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": "2. The Big Four (Technology, Governance & Risk)",
+         "text": "PwC, EY, Deloitte, and KPMG: All maintain a heavy presence in Riyadh and Jeddah. They are exceptionally strong if your AI strategy requires robust navigation of local regulatory frameworks\u2014such as compliance with the Saudi Personal Data Protection Law (PDPL), SDAIA AI ethics principles, and NDMO data governance standards. They bridge the gap between high-level AI strategy and audit-ready data pipelines.",
+         "markdown": "- **PwC, EY, Deloitte, and KPMG:** All maintain a heavy presence in Riyadh and Jeddah. They are exceptionally strong if your AI strategy requires robust navigation of local regulatory frameworks\u2014such as compliance with the **Saudi Personal Data Protection Law (PDPL)**, **SDAIA AI ethics principles** , and **NDMO data governance standards** . They bridge the gap between high-level AI strategy and audit-ready data pipelines.[[1]](https://www.rapiddata.com/services/ai/ai-consulting-services-riyadh-saudi-arabia.html)",
+         "links": null,
+         "images": null,
+         "references": [
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "RapidData",
+           "domain": "www.rapiddata.com",
+           "url": "https://www.rapiddata.com/services/ai/ai-consulting-services-riyadh-saudi-arabia.html",
+           "title": "AI Consulting Services in Riyadh, Saudi Arabia",
+           "text": "Structured discovery and scoring of AI and GenAI use cases by value, feasibility and risk \u2014 so you invest where it pays."
+          }
+         ]
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": "3. Specialized & Regional Technical AI Consultancies",
+         "text": "SITE Advisory (Saudi Information Technology Company): Backed by the PIF ecosystem, SITE Advisory focuses heavily on secure digital transformation, making them an ideal partner if your AI strategy involves sensitive government or enterprise data requiring sovereign cloud frameworks and stringent cybersecurity integration. Deevo Analytics: A Riyadh-based specialized AI consulting and analytics firm focusing on turning data readiness assessments into concrete machine learning and artificial intelligence solutions. NextGenSol & RapidData: Local specialized technology consultancies offering targeted AI roadmap creation, use-case prioritization, build-vs-buy evaluations, and GenAI model selection suited for mid-to-large enterprises scaling up digital budgets.",
+         "markdown": "- **SITE Advisory (Saudi Information Technology Company):** Backed by the PIF ecosystem, SITE Advisory focuses heavily on secure digital transformation, making them an ideal partner if your AI strategy involves sensitive government or enterprise data requiring sovereign cloud frameworks and stringent cybersecurity integration.[[1]](https://www.site.sa/news)\n- **Deevo Analytics:** A Riyadh-based specialized AI consulting and analytics firm focusing on turning data readiness assessments into concrete machine learning and artificial intelligence solutions.[[1]](https://themanifest.com/sa/artificial-intelligence/companies)\n- **NextGenSol & RapidData:** Local specialized technology consultancies offering targeted AI roadmap creation, use-case prioritization, build-vs-buy evaluations, and GenAI model selection suited for mid-to-large enterprises scaling up digital budgets.[[1]](https://nextgensol.com.sa/ai-consulting/)[[2]](https://www.rapiddata.com/services/ai/ai-consulting-services-riyadh-saudi-arabia.html)",
+         "links": null,
+         "images": null,
+         "references": [
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Saudi Information Technology Company - SITE",
+           "domain": "www.site.sa",
+           "url": "https://www.site.sa/news",
+           "title": "News - SITE",
+           "text": "Saudi Information Technology Company (SITE), a PIF company and the national cybersecurity champ..."
+          },
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "themanifest.com",
+           "domain": "themanifest.com",
+           "url": "https://themanifest.com/sa/artificial-intelligence/companies",
+           "title": "The Best Artificial Intelligence Companies in Saudi Arabia",
+           "text": "Deevo Analytics is an AI Consulting company. They were founded in 2021 and specialize in AI Consulting and Artificial Intelligence..."
+          },
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "nextgensol.com.sa",
+           "domain": "nextgensol.com.sa",
+           "url": "https://nextgensol.com.sa/ai-consulting/",
+           "title": "AI Consulting Services in Saudi Arabia | NextGenSol",
+           "text": "Our AI strategy consulting links AI to your business goals. Build, buy or partner decisions; New AI budgets."
+          },
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "RapidData",
+           "domain": "www.rapiddata.com",
+           "url": "https://www.rapiddata.com/services/ai/ai-consulting-services-riyadh-saudi-arabia.html",
+           "title": "AI Consulting Services in Riyadh, Saudi Arabia",
+           "text": "Structured discovery and scoring of AI and GenAI use cases by value, feasibility and risk \u2014 so you invest where it pays."
+          }
+         ]
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "If you can share a bit more context, I can help narrow down the best fit:",
+         "markdown": "If you can share a bit more context, I can help narrow down the best fit:",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "What is your industry (e.g., healthcare, finance, retail, government)? Are you looking for high-level corporate strategy or hands-on technical deployment/coding ? What is the rough scale of the project ?",
+         "markdown": "- What is your **industry** (e.g., healthcare, finance, retail, government)?\n- Are you looking for **high-level corporate strategy** or **hands-on technical deployment/coding**?\n- What is the rough **scale of the project**?",
+         "links": null,
+         "images": null,
+         "references": null
+        }
+       ],
+       "references": [
+        {
+         "type": "ai_overview_reference",
+         "position": "right",
+         "source": "themanifest.com",
+         "domain": "themanifest.com",
+         "url": "https://themanifest.com/sa/artificial-intelligence/companies",
+         "title": "The Best Artificial Intelligence Companies in Saudi Arabia",
+         "text": "Deevo Analytics is an AI Consulting company. They were founded in 2021 and specialize in AI Consulting and Artificial Intelligence."
+        },
+        {
+         "type": "ai_overview_reference",
+         "position": "right",
+         "source": "RapidData",
+         "domain": "www.rapiddata.com",
+         "url": "https://www.rapiddata.com/services/ai/ai-consulting-services-riyadh-saudi-arabia.html",
+         "title": "AI Consulting Services in Riyadh, Saudi Arabia",
+         "text": "Structured discovery and scoring of AI and GenAI use cases by value, feasibility and risk \u2014 so you invest where it pays."
+        },
+        {
+         "type": "ai_overview_reference",
+         "position": "right",
+         "source": "Saudi Information Technology Company - SITE",
+         "domain": "www.site.sa",
+         "url": "https://www.site.sa/news",
+         "title": "News - SITE",
+         "text": "Saudi Information Technology Company (SITE), a PIF company and the national cybersecurity champ..."
+        }
+       ],
+       "rectangle": null
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

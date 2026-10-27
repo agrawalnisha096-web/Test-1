@@ -1,0 +1,131 @@
+{
+ "version": "0.1.20261022",
+ "status_code": 20000,
+ "status_message": "Ok.",
+ "time": "4.2837 sec.",
+ "cost": 0.006247,
+ "tasks_count": 1,
+ "tasks_error": 0,
+ "tasks": [
+  {
+   "id": "10270244-2577-0612-0000-2e43ed5bc56f",
+   "status_code": 20000,
+   "status_message": "Ok.",
+   "time": "4.2555 sec.",
+   "cost": 0.006247,
+   "result_count": 1,
+   "path": [
+    "v3",
+    "ai_optimization",
+    "perplexity",
+    "llm_responses",
+    "live"
+   ],
+   "data": {
+    "api": "ai_optimization",
+    "function": "llm_responses",
+    "se": "perplexity",
+    "user_prompt": "Recommend AI consulting firms in Saudi Arabia that can help a company with AI strategy and implementation.",
+    "model_name": "sonar",
+    "max_output_tokens": 2048,
+    "web_search_country_iso_code": "SA",
+    "tag": "Q4-perplexity-1"
+   },
+   "result": [
+    {
+     "model_name": "sonar",
+     "input_tokens": 25,
+     "output_tokens": 622,
+     "reasoning_tokens": 0,
+     "web_search": true,
+     "money_spent": 0.005647,
+     "datetime": "2026-10-27 02:44:35 +00:00",
+     "items": [
+      {
+       "type": "message",
+       "sections": [
+        {
+         "type": "text",
+         "text": "For a Saudi company seeking both **AI strategy and implementation**, consider these firms:\n\n| Firm | Best suited for | Relevant capabilities |\n|---|---|---|\n| **Crux Technology** | Saudi enterprises wanting a locally focused AI roadmap | AI strategy, use-case prioritization, data-readiness assessment, and implementation planning; based in Riyadh.[1] |\n| **Saudi Digital Consulting** | Organizations beginning their AI adoption journey | Business-led AI strategy, use-case identification, data governance, and implementation guidance.[2] |\n| **Opinosis Analytics** | Companies needing hands-on AI and machine-learning delivery | AI and generative-AI strategy, workflow automation, system integration, and full-cycle implementation.[4] |\n| **MHK Services** | Businesses seeking end-to-end deployment | AI solution design, deployment, monitoring, compliance, and scalability for Saudi organizations.[5] |\n| **Digital Transformation KSA** | Mid-sized companies needing practical execution support | AI roadmaps, use-case prioritization, architecture, vendor coordination, project management, testing, and integration.[6] |\n| **McKinsey / QuantumBlack** | Large enterprises and executive-level transformation programs | Board-level AI strategy, analytics engineering, machine learning, and transformation planning for regulated or complex sectors.[8] |\n| **BCG / BCG X** | Large, multi-stakeholder programs and product development | AI strategy plus stronger execution capabilities through BCG X, including digital-product and transformation work.[8] |\n| **Accenture or IBM** | Large-scale enterprise platform rollouts | Systems integration, cloud, data platforms, and production-scale AI deployments.[8] |\n| **Deloitte, PwC, KPMG, or Protiviti** | Regulated industries prioritizing risk and governance | AI strategy, governance, compliance, implementation, and integration for sectors such as banking and healthcare.[8][10] |\n\n**Practical shortlist:**\n\n- Choose **Crux Technology** or **Saudi Digital Consulting** for a locally oriented strategy and roadmap.\n- Choose **Opinosis Analytics**, **MHK**, or **Digital Transformation KSA** when you want a partner to build and integrate solutions.\n- Choose **BCG X**, **Accenture**, or **IBM** for complex enterprise-wide programs.\n- Choose **Deloitte**, **PwC**, **KPMG**, or **Protiviti** when governance, regulatory risk, and auditability are central.\n- Choose **McKinsey / QuantumBlack** when the primary need is executive alignment, investment prioritization, and transformation design.\n\nBefore selecting a firm, ask for two or three Saudi or GCC references, evidence of production deployments\u2014not only prototypes\u2014and a proposal covering data residency, cybersecurity, Saudi regulatory requirements, model ownership, integration with existing systems, staff training, and post-launch support. A useful engagement structure is: **AI readiness assessment \u2192 prioritized use-case roadmap \u2192 proof of concept \u2192 production deployment \u2192 governance and continuous improvement**.",
+         "annotations": [
+          {
+           "title": "AI Strategy Consulting Saudi Arabia | Enterprise AI Advisory",
+           "url": "https://crux.sa/services/ai-strategy-consulting",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "AI Consulting for Saudi Arabia | Strategy, Implementation ...",
+           "url": "https://saudidigitalconsulting.com/ai-consulting.html",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "Value-Driven AI Consulting Services in Saudi Arabia",
+           "url": "https://www.bytestechnolab.com/sa/ai-strategy-consulting/",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "AI Consulting Company in Saudi Arabia | Agentic AI | Machine ...",
+           "url": "https://www.opinosis-analytics.com/ai-consulting-in-saudi-arabia/",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "Advanced Artificial Intelligence Services in KSA",
+           "url": "https://mhk-services.com/digitalization-and-automation/artificial-intelligence/",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "Professional AI Consulting Services in Saudi Arabia",
+           "url": "https://digitaltransformationksa.com/ai-consulting-services-ksa/",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "\u0623\u0641\u0636\u0644 5 \u0634\u0631\u0643\u0627\u062a \u0627\u0633\u062a\u0634\u0627\u0631\u064a\u0629 \u0641\u064a \u0645\u062c\u0627\u0644 \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0641\u064a \u0627\u0644\u0645\u0645\u0644\u0643\u0629 ...",
+           "url": "https://aisuperior.com/ar/ai-consulting-companies-in-saudi-arabia/",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "Top Consulting Firms for Enterprise AI in Saudi Arabia",
+           "url": "https://www.labarna.ai/blog/top-consulting-firms-enterprise-ai-saudi-arabia",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "Top Generative AI Companies in Saudi Arabia - Aug 2026 Rankings",
+           "url": "https://clutch.co/sa/developers/artificial-intelligence/generative",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "Best AI Consulting Companies in Dammam, Saudi Arabia",
+           "url": "https://aisuperior.com/ai-consulting-companies-in-dammam/",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "fan_out_queries": null
+    }
+   ]
+  }
+ ]
+}

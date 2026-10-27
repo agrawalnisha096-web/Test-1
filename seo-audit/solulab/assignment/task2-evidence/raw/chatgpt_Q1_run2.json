@@ -1,0 +1,851 @@
+{
+ "version": "0.1.20261022",
+ "status_code": 20000,
+ "status_message": "Ok.",
+ "time": "75.4399 sec.",
+ "cost": 0.004,
+ "tasks_count": 1,
+ "tasks_error": 0,
+ "tasks": [
+  {
+   "id": "10270242-2577-0629-0000-f9fed40ab841",
+   "status_code": 20000,
+   "status_message": "Ok.",
+   "time": "75.3668 sec.",
+   "cost": 0.004,
+   "result_count": 1,
+   "path": [
+    "v3",
+    "ai_optimization",
+    "chat_gpt",
+    "llm_scraper",
+    "live",
+    "advanced"
+   ],
+   "data": {
+    "api": "ai_optimization",
+    "function": "live",
+    "se": "chat_gpt",
+    "keyword": "Which companies should a US enterprise consider to build custom AI agents? Give me a shortlist with a reason for each.",
+    "location_code": 2840,
+    "language_code": "en",
+    "force_web_search": true,
+    "tag": "Q1-chatgpt-2",
+    "device": "desktop",
+    "os": "windows"
+   },
+   "result": [
+    {
+     "keyword": "Which companies should a US enterprise consider to build custom AI agents? Give me a shortlist with a reason for each.",
+     "location_code": 2840,
+     "language_code": "en",
+     "model": "gpt-6",
+     "check_url": "https://chatgpt.com/?prompt=Which%20companies%20should%20a%20US%20enterprise%20consider%20to%20build%20custom%20AI%20agents%3F%20Give%20me%20a%20shortlist%20with%20a%20reason%20for%20each.&hints=search",
+     "datetime": "2026-10-27 02:44:04 +00:00",
+     "markdown": "# Shortlist: companies to build custom AI agents for a US enterprise\n\nFor a US enterprise investing in custom AI agents, I\u2019d evaluate a mix of **enterprise AI platforms, cloud providers, and specialist implementation firms**\\. The right choice depends on whether you want to build agents in-house, integrate them into existing enterprise systems, or hire a partner to deliver production-ready agents.\n\nI\u2019d assess each company on five criteria: enterprise security and governance, integration with existing systems, ability to handle multi-step workflows, human approval and auditability, and the cost of operating agents at scale.\n\n## 1\\. Recommended shortlist\n\nThe companies below are a mix of implementation partners and platforms you can use to build agents. They are not all direct substitutes, so I\u2019ve grouped them by the job they are best suited to do.\n\n![Accenture's Manisha Bhattacharya on building careers, changing lives, and empowering the underprivileged  | YourStory](https://images.openai.com/static-rsc-4/Wv8zdx16GU2_6NLbG7a5tDeanor9otRNUwxjiv-ddmuxJ_5QngkQqCPiFjKd89uhvXhnltBU2j4LEyWHTBsokjaGk8auBFmSemNxt7jsGnLfXy4_A700_c--BoFz_6kBMbAoqvorDyqMg98yiz7hTtHGJFfHMBEsBYbh_GE_dTBmgDgyHlh7AUOlWKvPoLDM?purpose=fullsize)\n\n**1\\. Accenture**\n\n(Best for large-scale transformation)\n\nBest when you need agents deployed across multiple business units, geographies, and legacy systems. Accenture is worth considering for enterprise-wide workflow redesign, systems integration, industry-specific solutions, and organizational change management.\n\n**Why shortlist it\\:** Strong fit for complex programs involving SAP, Oracle, cloud platforms, and multiple stakeholders.\n\nTrade-off: potentially substantial consulting costs and program overhead.\n\n[Official website](https://www.accenture.com/)\n\n---\n\n![IBM Hrvatska d.o.o.- AmCham Croatia](https://images.openai.com/static-rsc-4/E_it3ZPJayo5XzWrgf5Z9tD_YWLTDeFq5BIZCPZCbAasAfvm41rkC6v_t69wbpuXbPmMhrZivJLMHkH-88Bzo478a1dg0VTrj8T9PlNlcgFst0AFMtCewI79yn0CSMELcLaE_mZfwy3LBDjSZ46gATfiFA6HMb0-KXGupC2v9nnH4c0c8VOP_SteoEGWGFL-?purpose=fullsize)\n\n**2\\. IBM Consulting**\n\n(Best for governance and hybrid environments)\n\nA strong candidate for enterprises with sensitive data, complex access controls, legacy infrastructure, or a need to coordinate AI across multiple technology vendors.\n\n**Why shortlist it\\:** Combines enterprise consulting with IBM's watsonx ecosystem and experience in hybrid-cloud and regulated environments.\n\nTrade-off: validate the proposed architecture against your preferred cloud and avoid unnecessary platform lock-in.\n\n[Official website](https://www.ibm.com/consulting)\n\n---\n\n![Deloitte Jobs - 24 offerte di lavoro - talendo](https://images.openai.com/static-rsc-4/hG4n0AcZB0o-wgxHA2xQy4bXyTUc4N6j-O1bqz5aGBbPmVwYOu8yHtXC1YbJyszi9HIFP-MJi3uKRa1KRhTGJhBvUAVL05Fryw6hzj-rfX9XzcZdLAqXY4dHn1m5YadmqPiTnVbrGwyinTWQLO7AUAjISUlLf69V-obvsnDCra4Pz9HfAeTmUaj6GQrU9b3P?purpose=fullsize)\n\n**3\\. Deloitte**\n\n(Best for regulated or high-stakes workflows)\n\nConsider Deloitte for agents used in financial operations, risk management, compliance, insurance, or other workflows where controls and auditability matter as much as automation.\n\n**Why shortlist it\\:** Can combine business-process expertise, risk and control design, and technical implementation.\n\nTrade-off: make sure the engagement includes hands-on engineering and production ownership, not just strategy.\n\n[Official website](https://www.deloitte.com/)\n\n---\n\n![EPAM System - The MarTech Summit Sponsor](https://images.openai.com/static-rsc-4/O309nAzfYbK5sdB1mxsWwMne8-HulHaP2lQkNquSOsjM5Sl062p87v1fXobBDHTradd8SSPO9tiXJYay96n9RgxM357ue3DRx4XU9mvHJWLIIanTd_nfIdQJz7tfPjd-arMQk0XeshKT4NMgDqg8-tXzZ_2pBAmyK7bqePx0XtmqSNhzA-tzlyp2qUEtjyHK?purpose=fullsize)\n\n**4\\. EPAM Systems**\n\n(Best for deeply customized agents)\n\nA good candidate when the agent is effectively a new software product: it must use proprietary APIs, orchestrate several systems, follow complex business logic, or be embedded in an existing application.\n\n**Why shortlist it\\:** Engineering-led product development is particularly relevant when customization, reliability, and integration are more important than deploying a standard packaged assistant.\n\nTrade-off: define ownership of source code, evaluation infrastructure, and ongoing maintenance in the contract.\n\n[Official website](https://www.epam.com/)\n\n---\n\n![Slalom Logo PNG Vector (SVG) Free Download](https://images.openai.com/static-rsc-4/V_NXxKbmtHJakWO1na9QZR_bpXYcMVWMcE1WItH-4jsa213WwPHfye2_bC1FRII7Am4x9NQLpBQcofoWrbmw-thhJG66SJu8KD-5Eh1wRzW4lxDjM5DRD3eLqT0QsZHqwt97guSZNM_c2JQOEXVNQOHlhiBWUaBL2-Q8fgGnCSgBCa-9ooGRKoHbt_TvoMDz?purpose=fullsize)\n\n**5\\. Slalom**\n\n(Best for hands-on delivery)\n\nWorth considering if you want a consulting partner to work closely with your internal team on a bounded agent use case, integrate with your cloud environment, and help get it adopted by employees.\n\n**Why shortlist it\\:** A useful middle ground between a large global transformation consultancy and a smaller specialist engineering shop.\n\nTrade-off: verify the specific team's production-agent experience and availability before selecting it.\n\n[Official website](https://www.slalom.com/)\n\n---\n\n![Chutes | Breakthrough Serverless AI Compute](https://images.openai.com/static-rsc-4/a6ThlGATatKymTTqG99iXjnJDx5xU0jorTI_3GIpb-2Q3FR1XJXtcosG3VbFoT5vvqSv8rDT3bkKRmrWbVRCPKwGWqBHUlYNXb6TMqkeqxYqIn1iXMABJ2PhRL-txKfyyqX5RX3UMbmWO5zU38wHm-koyqslRauUFoR6LTNzWHpqQIAZgUoq2F39VjE7VKi1?purpose=fullsize)\n\n**6\\. Microsoft**\n\n(Best for Microsoft-centric enterprises)\n\nConsider Microsoft when employees work primarily in Microsoft 365, Teams, Dynamics, and Azure. Copilot Studio supports custom agents that use enterprise knowledge, connectors, APIs, workflows, and other agents. [learn.microsoft.com](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-overview?utm_source=chatgpt.com)\n\n**Why shortlist it\\:** Existing identity, collaboration, and business-system integration can simplify deployment and administration.\n\nTrade-off: assess licensing, consumption costs, connector limitations, and how much custom code your use case needs.\n\n[Agent platform documentation](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-overview)\n\n---\n\n![AI Identity Summit Paris](https://images.openai.com/static-rsc-4/kbmmvLFTdYm1pdo1rsMw8YgDzbu3VNpgjSKlqw67dBP9rjNGVE90my8yB9xSNwlCKZzMQeEgBw5-PMY971eB5zlM-m_hJYcFCcMUOXxfy8wYGdutB9k9HtSMGl2k-BV_Ie6wkFRZH4_PkXXb156iuAK_8i6ez6IZCaloq3HwcYROhpvl-9Hl-ZG8iaOin3rX?purpose=fullsize)\n\n**7\\. Amazon Web Services (AWS)**\n\n(Best for cloud-native custom agents)\n\nA strong option if your workloads and data already live on AWS, or you want engineering teams to build agents directly into your applications and operational systems.\n\n**Why shortlist it\\:** Amazon Bedrock provides model access and agent capabilities, while Bedrock AgentCore supports deploying and operating agents using different models and frameworks. [aws.amazon.com](https://aws.amazon.com/bedrock/agents/?utm_source=chatgpt.com)\n\nTrade-off: you'll need engineering expertise to design the agent architecture, integrations, evaluation, and operational controls.\n\n[AWS agent services](https://aws.amazon.com/bedrock/agents/)\n\n---\n\n![Parceiros de Cloud | Contacta](https://images.openai.com/static-rsc-4/ZqdiJfY4xiSmn1XmnoaQhJff5dG-Jq4Wy0Y6JUpNAaWwN3YY1bVyrcXCCYPQck27-W1fDKs4zU8T5iXZIt5L6wfRBd4Z4FQJqHgtEYIOfrV7OAJaTofLf-Yu-0WxEEVL3FQH44e_4nuZmeWlAqQIoQL2devV-58q1b6g6H_drGTTJ4pj0p5RWbpI9F24BgXp?purpose=fullsize)\n\n**8\\. Google Cloud**\n\nBest if you need a flexible agent platform connected to enterprise data, analytics, and multiple model families.\n\n**Why shortlist it\\:** Gemini Enterprise Agent Platform provides low-code and code-based development, model choice, agent deployment, evaluation, identity, and governance features. [docs.cloud.google.com](https://docs.cloud.google.com/gemini-enterprise-agent-platform/overview?trk=article-ssr-frontend-pulse_little-text-block&utm_source=chatgpt.com)\n\nTrade-off: compare operational maturity and integration requirements against your existing cloud estate.\n\n[Agent platform documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/overview)\n\n---\n\n![Salesforce - AI Tool Review | LinkGo](https://images.openai.com/static-rsc-4/I_Jsun259NxXgspjAS9ba6hv5D2HjnKRV8zmWfkaJs1inE2ektYtWv6Q1ehQn0NvyXjoW_r9mV3pUW-CZ7xQqGIJlnMb5KGJeVEgigEBon4VrfOMELAjPuQfOtponMZn7MJHD0ImybVqQXdOwFGfkIqNccyeKfo8ofqUJ61Jup2JtwRfreZl5APCQGHFj0ny?purpose=fullsize)\n\n**9\\. Salesforce**\n\nBest for customer-facing agents and sales, service, and CRM workflows.\n\n**Why shortlist it\\:** Agentforce combines agent building, Salesforce business context, workflow automation, integrations through MuleSoft, and monitoring. [www.salesforce.com](https://www.salesforce.com/platform/agentforce-platform/?bc=OTH&utm_source=chatgpt.com)\n\nTrade-off: strongest when the workflows are close to Salesforce; assess costs and flexibility for broader cross-enterprise use cases.\n\n[Agentforce platform](https://www.salesforce.com/platform/agentforce-platform/)\n\n## 2\\. Which three would I start with?\n\nFor a typical large US enterprise seeking genuinely custom agents, rather than just chatbots, I'd start with these three partner conversations\\:\n\n| Priority | Company | Initial use case |\n|--------|--------|--------|\n| 1 | EPAM Systems | A bespoke agent requiring complex integrations and custom engineering |\n| 2 | Accenture | A multi-department rollout involving major enterprise systems and process change |\n| 3 | Slalom | A focused pilot that needs close collaboration with internal engineering and business teams |\n\n\nThen add the platform provider that best matches your existing stack: Microsoft, AWS, Google Cloud, or Salesforce. IBM Consulting and Deloitte deserve early consideration if governance, regulation, or legacy infrastructure are dominant concerns.\n\nThis is a **fit-based shortlist, not a ranking of objectively superior vendors**\\. The implementation partners should be evaluated on named delivery teams and references, not brand reputation alone.\n\n## 3\\. What to ask during vendor selection\n\nUse the same questions with every finalist\\:\n\n- **Production proof\\:** Can you demonstrate an agent running in production with measurable business results?\n- **Integration\\:** Can it securely read and write to our ERP, CRM, document repositories, and internal APIs?\n- **Reliability\\:** How do you test multi-step decisions, tool failures, hallucinations, and edge cases?\n- **Control\\:** Can we enforce least-privilege access, approval gates, audit logs, and human escalation?\n- **Ownership\\:** Do we own the code, prompts, evaluation tests, and deployment configuration?\n- **Economics\\:** What are the total build and run costs at our expected transaction volume?\n- **Exit strategy\\:** Can we switch models or providers without rebuilding the entire solution?\n\nI would ask each finalist to propose a paid pilot with a baseline, a defined business outcome, security requirements, and explicit production acceptance criteria.\n\n## 4\\. One question that would narrow this down considerably\n\nWhat kind of custom AI agents are you looking to build?\n\nPrimary use case\n\nCustomer service, sales, or contact center\n\nInternal knowledge and employee productivity\n\nCross-functional workflows across ERP, CRM, finance, or operations\n\nSoftware engineering, IT, or cybersecurity\n\nIndustry-specific or regulated workflows\n\n---\n\nPreferred delivery model\n\nHire a company to design and build the agents\n\nBuild internally using an AI platform or framework\n\nPartner builds the first version; our team operates and extends it\n\n---\n\nOrganization size\n\nMid-market\n\nLarge enterprise / Fortune 500\n\nRegulated enterprise or government contractor\n\n[Refine shortlist]",
+     "search_results": [
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-overview",
+       "domain": "learn.microsoft.com",
+       "title": "Agents overview - Microsoft Copilot Studio | Microsoft Learn",
+       "description": null,
+       "breadcrumb": "learn.microsoft.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/overview?trk=article-ssr-frontend-pulse_little-text-block",
+       "domain": "docs.cloud.google.com",
+       "title": "Agent Platform overview \u00a0|\u00a0 Gemini Enterprise Agent Platform \u00a0|\u00a0 Google Cloud Documentation",
+       "description": null,
+       "breadcrumb": "docs.cloud.google.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://www.salesforce.com/platform/agentforce-platform/?bc=OTH",
+       "domain": "www.salesforce.com",
+       "title": "Agentforce 360 Platform \u2013 Agentic Capabilities | Salesforce",
+       "description": null,
+       "breadcrumb": "www.salesforce.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://aws.amazon.com/bedrock/agents/",
+       "domain": "aws.amazon.com",
+       "title": "AI Agents \u2013 Amazon Bedrock Agents \u2013 AWS",
+       "description": null,
+       "breadcrumb": "aws.amazon.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://powergatesoftware.com/tech-blog/top-rated-firms-that-specialize-in-building-custom-ai-agents-for-enterprise-automation",
+       "domain": "powergatesoftware.com",
+       "title": "Top-rated firms that specialize in building custom AI agents for enterprise automation",
+       "description": null,
+       "breadcrumb": "powergatesoftware.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://reverbico.com/blog/top-ai-agent-development-companies-in-the-usa/",
+       "domain": "reverbico.com",
+       "title": "Top AI Agent Development Companies In The USA For 2026",
+       "description": null,
+       "breadcrumb": "reverbico.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://www.ryzlabs.com/best/ai-agent-development-companies",
+       "domain": "www.ryzlabs.com",
+       "title": "Best AI Agent Development Companies (2026) | Ryz Labs",
+       "description": null,
+       "breadcrumb": "www.ryzlabs.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://assets.kpmg.com/content/dam/kpmgsites/xx/pdf/2026/04/hfs-horizons-agentic-services-2026.pdf",
+       "domain": "assets.kpmg.com",
+       "title": "HFS Horizon: Agentic Services, 2026",
+       "description": null,
+       "breadcrumb": "assets.kpmg.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://www.ayautomate.com/blog/best-ai-agent-development-companies-enterprise",
+       "domain": "www.ayautomate.com",
+       "title": "10 Best Enterprise AI Agent Development Companies (2026)",
+       "description": null,
+       "breadcrumb": "www.ayautomate.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://www.pixelmatters.com/insights/top-ai-agent-development-companies",
+       "domain": "www.pixelmatters.com",
+       "title": "Top AI agent development companies in 2026: who builds what",
+       "description": null,
+       "breadcrumb": "www.pixelmatters.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://rtslabs.com/enterprise-ai-agent-deployment-consultants",
+       "domain": "rtslabs.com",
+       "title": "Best Enterprise AI Agent Deployment Consultants 2026",
+       "description": null,
+       "breadcrumb": "rtslabs.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://zenaicorp.com/en/insights/ai-implementation-companies",
+       "domain": "zenaicorp.com",
+       "title": "6 AI Implementation Companies to Consider in 2026",
+       "description": null,
+       "breadcrumb": "zenaicorp.com"
+      }
+     ],
+     "sources": [
+      {
+       "type": "chat_gpt_source",
+       "title": "Official website",
+       "snippet": null,
+       "domain": "www.accenture.com",
+       "url": "https://www.accenture.com/",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[Official website](https://www.accenture.com/)"
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Official website",
+       "snippet": null,
+       "domain": "www.ibm.com",
+       "url": "https://www.ibm.com/consulting",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[Official website](https://www.ibm.com/consulting)"
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Official website",
+       "snippet": null,
+       "domain": "www.deloitte.com",
+       "url": "https://www.deloitte.com/",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[Official website](https://www.deloitte.com/)"
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Official website",
+       "snippet": null,
+       "domain": "www.epam.com",
+       "url": "https://www.epam.com/",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[Official website](https://www.epam.com/)"
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Official website",
+       "snippet": null,
+       "domain": "www.slalom.com",
+       "url": "https://www.slalom.com/",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[Official website](https://www.slalom.com/)"
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Agents overview - Microsoft Copilot Studio",
+       "snippet": null,
+       "domain": "learn.microsoft.com",
+       "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-overview?utm_source=chatgpt.com",
+       "thumbnail": null,
+       "source_name": "Microsoft Learn",
+       "publication_date": null,
+       "markdown": null
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Agent platform documentation",
+       "snippet": null,
+       "domain": "learn.microsoft.com",
+       "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-overview",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[Agent platform documentation](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-overview)"
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "AI Agents \u2013 Amazon Bedrock Agents",
+       "snippet": null,
+       "domain": "aws.amazon.com",
+       "url": "https://aws.amazon.com/bedrock/agents/?utm_source=chatgpt.com",
+       "thumbnail": null,
+       "source_name": "AWS",
+       "publication_date": null,
+       "markdown": null
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "AWS agent services",
+       "snippet": null,
+       "domain": "aws.amazon.com",
+       "url": "https://aws.amazon.com/bedrock/agents/",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[AWS agent services](https://aws.amazon.com/bedrock/agents/)"
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Agent Platform overview \u00a0|\u00a0 Gemini Enterprise Agent Platform \u00a0|\u00a0 Google Cloud Documentation",
+       "snippet": null,
+       "domain": "docs.cloud.google.com",
+       "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/overview?trk=article-ssr-frontend-pulse_little-text-block&utm_source=chatgpt.com",
+       "thumbnail": null,
+       "source_name": "Google Cloud Documentation",
+       "publication_date": null,
+       "markdown": null
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Agent platform documentation",
+       "snippet": null,
+       "domain": "docs.cloud.google.com",
+       "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/overview",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[Agent platform documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/overview)"
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Agentforce 360 Platform \u2013 Agentic Capabilities",
+       "snippet": null,
+       "domain": "www.salesforce.com",
+       "url": "https://www.salesforce.com/platform/agentforce-platform/?bc=OTH&utm_source=chatgpt.com",
+       "thumbnail": null,
+       "source_name": "Salesforce",
+       "publication_date": null,
+       "markdown": null
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Agentforce platform",
+       "snippet": null,
+       "domain": "www.salesforce.com",
+       "url": "https://www.salesforce.com/platform/agentforce-platform/",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[Agentforce platform](https://www.salesforce.com/platform/agentforce-platform/)"
+      }
+     ],
+     "fan_out_queries": [
+      "enterprise AI agents platform official documentation Microsoft Copilot Studio AWS Bedrock Agents Google Vertex AI Agent Builder Salesforce Agentforce IBM watsonx 2026",
+      "best enterprise custom AI agent development companies US enterprise 2026 Microsoft Accenture Deloitte IBM AWS Google Salesforce",
+      "AI agent implementation consulting firms enterprise Accenture Deloitte IBM Slalom 2026 custom agents"
+     ],
+     "brand_entities": [
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "global consulting and technology services",
+       "category": "company",
+       "markdown": "Accenture",
+       "urls": null
+      },
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "enterprise technology consulting and AI implementation",
+       "category": "company",
+       "markdown": "IBM Consulting",
+       "urls": null
+      },
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "professional services, consulting, risk and technology",
+       "category": "company",
+       "markdown": "Deloitte",
+       "urls": null
+      },
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "software engineering and digital product development",
+       "category": "company",
+       "markdown": "EPAM Systems",
+       "urls": null
+      },
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "business and technology consulting",
+       "category": "company",
+       "markdown": "Slalom",
+       "urls": null
+      },
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "enterprise cloud software and AI platform provider",
+       "category": "company",
+       "markdown": "Microsoft",
+       "urls": null
+      },
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "cloud computing and enterprise AI services",
+       "category": "company",
+       "markdown": "Amazon Web Services (AWS)",
+       "urls": null
+      },
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "cloud computing, data and AI platform provider",
+       "category": "company",
+       "markdown": "Google Cloud",
+       "urls": null
+      },
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "customer relationship management software and enterprise AI",
+       "category": "company",
+       "markdown": "Salesforce",
+       "urls": null
+      }
+     ],
+     "se_results_count": 0,
+     "item_types": [
+      "chat_gpt_text",
+      "chat_gpt_images",
+      "chat_gpt_table"
+     ],
+     "items_count": 21,
+     "items": [
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 1,
+       "rank_absolute": 1,
+       "markdown": "# Shortlist: companies to build custom AI agents for a US enterprise\n\nFor a US enterprise investing in custom AI agents, I\u2019d evaluate a mix of **enterprise AI platforms, cloud providers, and specialist implementation firms**\\. The right choice depends on whether you want to build agents in-house, integrate them into existing enterprise systems, or hire a partner to deliver production-ready agents.\n\nI\u2019d assess each company on five criteria: enterprise security and governance, integration with existing systems, ability to handle multi-step workflows, human approval and auditability, and the cost of operating agents at scale.\n\n## 1\\. Recommended shortlist\n\nThe companies below are a mix of implementation partners and platforms you can use to build agents. They are not all direct substitutes, so I\u2019ve grouped them by the job they are best suited to do.\n\n",
+       "sources": null,
+       "brand_entities": null
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 1,
+       "rank_absolute": 2,
+       "markdown": "![Accenture's Manisha Bhattacharya on building careers, changing lives, and empowering the underprivileged  | YourStory](https://images.openai.com/static-rsc-4/Wv8zdx16GU2_6NLbG7a5tDeanor9otRNUwxjiv-ddmuxJ_5QngkQqCPiFjKd89uhvXhnltBU2j4LEyWHTBsokjaGk8auBFmSemNxt7jsGnLfXy4_A700_c--BoFz_6kBMbAoqvorDyqMg98yiz7hTtHGJFfHMBEsBYbh_GE_dTBmgDgyHlh7AUOlWKvPoLDM?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://yourstory.com/2024/04/accentures-manisha-bhattacharya-empowering-underprivileged-women",
+         "alt": "Accenture's Manisha Bhattacharya on building careers, changing lives, and empowering the underprivileged  | YourStory",
+         "image_url": "https://images.openai.com/static-rsc-4/Wv8zdx16GU2_6NLbG7a5tDeanor9otRNUwxjiv-ddmuxJ_5QngkQqCPiFjKd89uhvXhnltBU2j4LEyWHTBsokjaGk8auBFmSemNxt7jsGnLfXy4_A700_c--BoFz_6kBMbAoqvorDyqMg98yiz7hTtHGJFfHMBEsBYbh_GE_dTBmgDgyHlh7AUOlWKvPoLDM?purpose=fullsize",
+         "markdown": "![Accenture's Manisha Bhattacharya on building careers, changing lives, and empowering the underprivileged  | YourStory](https://images.openai.com/static-rsc-4/Wv8zdx16GU2_6NLbG7a5tDeanor9otRNUwxjiv-ddmuxJ_5QngkQqCPiFjKd89uhvXhnltBU2j4LEyWHTBsokjaGk8auBFmSemNxt7jsGnLfXy4_A700_c--BoFz_6kBMbAoqvorDyqMg98yiz7hTtHGJFfHMBEsBYbh_GE_dTBmgDgyHlh7AUOlWKvPoLDM?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 2,
+       "rank_absolute": 3,
+       "markdown": "\n\n**1\\. Accenture**\n\n(Best for large-scale transformation)\n\nBest when you need agents deployed across multiple business units, geographies, and legacy systems. Accenture is worth considering for enterprise-wide workflow redesign, systems integration, industry-specific solutions, and organizational change management.\n\n**Why shortlist it\\:** Strong fit for complex programs involving SAP, Oracle, cloud platforms, and multiple stakeholders.\n\nTrade-off: potentially substantial consulting costs and program overhead.\n\n[Official website](https://www.accenture.com/)\n\n---\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "Official website",
+         "snippet": null,
+         "domain": "www.accenture.com",
+         "url": "https://www.accenture.com/",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[Official website](https://www.accenture.com/)"
+        }
+       ],
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "global consulting and technology services",
+         "category": "company",
+         "markdown": "Accenture",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 2,
+       "rank_absolute": 4,
+       "markdown": "![IBM Hrvatska d.o.o.- AmCham Croatia](https://images.openai.com/static-rsc-4/E_it3ZPJayo5XzWrgf5Z9tD_YWLTDeFq5BIZCPZCbAasAfvm41rkC6v_t69wbpuXbPmMhrZivJLMHkH-88Bzo478a1dg0VTrj8T9PlNlcgFst0AFMtCewI79yn0CSMELcLaE_mZfwy3LBDjSZ46gATfiFA6HMb0-KXGupC2v9nnH4c0c8VOP_SteoEGWGFL-?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://www.amcham.hr/en/members/ibm-hrvatska-doo",
+         "alt": "IBM Hrvatska d.o.o.- AmCham Croatia",
+         "image_url": "https://images.openai.com/static-rsc-4/E_it3ZPJayo5XzWrgf5Z9tD_YWLTDeFq5BIZCPZCbAasAfvm41rkC6v_t69wbpuXbPmMhrZivJLMHkH-88Bzo478a1dg0VTrj8T9PlNlcgFst0AFMtCewI79yn0CSMELcLaE_mZfwy3LBDjSZ46gATfiFA6HMb0-KXGupC2v9nnH4c0c8VOP_SteoEGWGFL-?purpose=fullsize",
+         "markdown": "![IBM Hrvatska d.o.o.- AmCham Croatia](https://images.openai.com/static-rsc-4/E_it3ZPJayo5XzWrgf5Z9tD_YWLTDeFq5BIZCPZCbAasAfvm41rkC6v_t69wbpuXbPmMhrZivJLMHkH-88Bzo478a1dg0VTrj8T9PlNlcgFst0AFMtCewI79yn0CSMELcLaE_mZfwy3LBDjSZ46gATfiFA6HMb0-KXGupC2v9nnH4c0c8VOP_SteoEGWGFL-?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 3,
+       "rank_absolute": 5,
+       "markdown": "\n\n**2\\. IBM Consulting**\n\n(Best for governance and hybrid environments)\n\nA strong candidate for enterprises with sensitive data, complex access controls, legacy infrastructure, or a need to coordinate AI across multiple technology vendors.\n\n**Why shortlist it\\:** Combines enterprise consulting with IBM's watsonx ecosystem and experience in hybrid-cloud and regulated environments.\n\nTrade-off: validate the proposed architecture against your preferred cloud and avoid unnecessary platform lock-in.\n\n[Official website](https://www.ibm.com/consulting)\n\n---\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "Official website",
+         "snippet": null,
+         "domain": "www.ibm.com",
+         "url": "https://www.ibm.com/consulting",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[Official website](https://www.ibm.com/consulting)"
+        }
+       ],
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "enterprise technology consulting and AI implementation",
+         "category": "company",
+         "markdown": "IBM Consulting",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 3,
+       "rank_absolute": 6,
+       "markdown": "![Deloitte Jobs - 24 offerte di lavoro - talendo](https://images.openai.com/static-rsc-4/hG4n0AcZB0o-wgxHA2xQy4bXyTUc4N6j-O1bqz5aGBbPmVwYOu8yHtXC1YbJyszi9HIFP-MJi3uKRa1KRhTGJhBvUAVL05Fryw6hzj-rfX9XzcZdLAqXY4dHn1m5YadmqPiTnVbrGwyinTWQLO7AUAjISUlLf69V-obvsnDCra4Pz9HfAeTmUaj6GQrU9b3P?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://talendo.ch/it/compagnie/516-deloitte",
+         "alt": "Deloitte Jobs - 24 offerte di lavoro - talendo",
+         "image_url": "https://images.openai.com/static-rsc-4/hG4n0AcZB0o-wgxHA2xQy4bXyTUc4N6j-O1bqz5aGBbPmVwYOu8yHtXC1YbJyszi9HIFP-MJi3uKRa1KRhTGJhBvUAVL05Fryw6hzj-rfX9XzcZdLAqXY4dHn1m5YadmqPiTnVbrGwyinTWQLO7AUAjISUlLf69V-obvsnDCra4Pz9HfAeTmUaj6GQrU9b3P?purpose=fullsize",
+         "markdown": "![Deloitte Jobs - 24 offerte di lavoro - talendo](https://images.openai.com/static-rsc-4/hG4n0AcZB0o-wgxHA2xQy4bXyTUc4N6j-O1bqz5aGBbPmVwYOu8yHtXC1YbJyszi9HIFP-MJi3uKRa1KRhTGJhBvUAVL05Fryw6hzj-rfX9XzcZdLAqXY4dHn1m5YadmqPiTnVbrGwyinTWQLO7AUAjISUlLf69V-obvsnDCra4Pz9HfAeTmUaj6GQrU9b3P?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 4,
+       "rank_absolute": 7,
+       "markdown": "\n\n**3\\. Deloitte**\n\n(Best for regulated or high-stakes workflows)\n\nConsider Deloitte for agents used in financial operations, risk management, compliance, insurance, or other workflows where controls and auditability matter as much as automation.\n\n**Why shortlist it\\:** Can combine business-process expertise, risk and control design, and technical implementation.\n\nTrade-off: make sure the engagement includes hands-on engineering and production ownership, not just strategy.\n\n[Official website](https://www.deloitte.com/)\n\n---\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "Official website",
+         "snippet": null,
+         "domain": "www.deloitte.com",
+         "url": "https://www.deloitte.com/",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[Official website](https://www.deloitte.com/)"
+        }
+       ],
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "professional services, consulting, risk and technology",
+         "category": "company",
+         "markdown": "Deloitte",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 4,
+       "rank_absolute": 8,
+       "markdown": "![EPAM System - The MarTech Summit Sponsor](https://images.openai.com/static-rsc-4/O309nAzfYbK5sdB1mxsWwMne8-HulHaP2lQkNquSOsjM5Sl062p87v1fXobBDHTradd8SSPO9tiXJYay96n9RgxM357ue3DRx4XU9mvHJWLIIanTd_nfIdQJz7tfPjd-arMQk0XeshKT4NMgDqg8-tXzZ_2pBAmyK7bqePx0XtmqSNhzA-tzlyp2qUEtjyHK?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://themartechsummit.com/sponsors/epam-system/",
+         "alt": "EPAM System - The MarTech Summit Sponsor",
+         "image_url": "https://images.openai.com/static-rsc-4/O309nAzfYbK5sdB1mxsWwMne8-HulHaP2lQkNquSOsjM5Sl062p87v1fXobBDHTradd8SSPO9tiXJYay96n9RgxM357ue3DRx4XU9mvHJWLIIanTd_nfIdQJz7tfPjd-arMQk0XeshKT4NMgDqg8-tXzZ_2pBAmyK7bqePx0XtmqSNhzA-tzlyp2qUEtjyHK?purpose=fullsize",
+         "markdown": "![EPAM System - The MarTech Summit Sponsor](https://images.openai.com/static-rsc-4/O309nAzfYbK5sdB1mxsWwMne8-HulHaP2lQkNquSOsjM5Sl062p87v1fXobBDHTradd8SSPO9tiXJYay96n9RgxM357ue3DRx4XU9mvHJWLIIanTd_nfIdQJz7tfPjd-arMQk0XeshKT4NMgDqg8-tXzZ_2pBAmyK7bqePx0XtmqSNhzA-tzlyp2qUEtjyHK?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 5,
+       "rank_absolute": 9,
+       "markdown": "\n\n**4\\. EPAM Systems**\n\n(Best for deeply customized agents)\n\nA good candidate when the agent is effectively a new software product: it must use proprietary APIs, orchestrate several systems, follow complex business logic, or be embedded in an existing application.\n\n**Why shortlist it\\:** Engineering-led product development is particularly relevant when customization, reliability, and integration are more important than deploying a standard packaged assistant.\n\nTrade-off: define ownership of source code, evaluation infrastructure, and ongoing maintenance in the contract.\n\n[Official website](https://www.epam.com/)\n\n---\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "Official website",
+         "snippet": null,
+         "domain": "www.epam.com",
+         "url": "https://www.epam.com/",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[Official website](https://www.epam.com/)"
+        }
+       ],
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "software engineering and digital product development",
+         "category": "company",
+         "markdown": "EPAM Systems",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 5,
+       "rank_absolute": 10,
+       "markdown": "![Slalom Logo PNG Vector (SVG) Free Download](https://images.openai.com/static-rsc-4/V_NXxKbmtHJakWO1na9QZR_bpXYcMVWMcE1WItH-4jsa213WwPHfye2_bC1FRII7Am4x9NQLpBQcofoWrbmw-thhJG66SJu8KD-5Eh1wRzW4lxDjM5DRD3eLqT0QsZHqwt97guSZNM_c2JQOEXVNQOHlhiBWUaBL2-Q8fgGnCSgBCa-9ooGRKoHbt_TvoMDz?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://seeklogo.com/vector-logo/540542/slalom",
+         "alt": "Slalom Logo PNG Vector (SVG) Free Download",
+         "image_url": "https://images.openai.com/static-rsc-4/V_NXxKbmtHJakWO1na9QZR_bpXYcMVWMcE1WItH-4jsa213WwPHfye2_bC1FRII7Am4x9NQLpBQcofoWrbmw-thhJG66SJu8KD-5Eh1wRzW4lxDjM5DRD3eLqT0QsZHqwt97guSZNM_c2JQOEXVNQOHlhiBWUaBL2-Q8fgGnCSgBCa-9ooGRKoHbt_TvoMDz?purpose=fullsize",
+         "markdown": "![Slalom Logo PNG Vector (SVG) Free Download](https://images.openai.com/static-rsc-4/V_NXxKbmtHJakWO1na9QZR_bpXYcMVWMcE1WItH-4jsa213WwPHfye2_bC1FRII7Am4x9NQLpBQcofoWrbmw-thhJG66SJu8KD-5Eh1wRzW4lxDjM5DRD3eLqT0QsZHqwt97guSZNM_c2JQOEXVNQOHlhiBWUaBL2-Q8fgGnCSgBCa-9ooGRKoHbt_TvoMDz?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 6,
+       "rank_absolute": 11,
+       "markdown": "\n\n**5\\. Slalom**\n\n(Best for hands-on delivery)\n\nWorth considering if you want a consulting partner to work closely with your internal team on a bounded agent use case, integrate with your cloud environment, and help get it adopted by employees.\n\n**Why shortlist it\\:** A useful middle ground between a large global transformation consultancy and a smaller specialist engineering shop.\n\nTrade-off: verify the specific team's production-agent experience and availability before selecting it.\n\n[Official website](https://www.slalom.com/)\n\n---\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "Official website",
+         "snippet": null,
+         "domain": "www.slalom.com",
+         "url": "https://www.slalom.com/",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[Official website](https://www.slalom.com/)"
+        }
+       ],
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "business and technology consulting",
+         "category": "company",
+         "markdown": "Slalom",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 6,
+       "rank_absolute": 12,
+       "markdown": "![Chutes | Breakthrough Serverless AI Compute](https://images.openai.com/static-rsc-4/a6ThlGATatKymTTqG99iXjnJDx5xU0jorTI_3GIpb-2Q3FR1XJXtcosG3VbFoT5vvqSv8rDT3bkKRmrWbVRCPKwGWqBHUlYNXb6TMqkeqxYqIn1iXMABJ2PhRL-txKfyyqX5RX3UMbmWO5zU38wHm-koyqslRauUFoR6LTNzWHpqQIAZgUoq2F39VjE7VKi1?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://chutes.ai/",
+         "alt": "Chutes | Breakthrough Serverless AI Compute",
+         "image_url": "https://images.openai.com/static-rsc-4/a6ThlGATatKymTTqG99iXjnJDx5xU0jorTI_3GIpb-2Q3FR1XJXtcosG3VbFoT5vvqSv8rDT3bkKRmrWbVRCPKwGWqBHUlYNXb6TMqkeqxYqIn1iXMABJ2PhRL-txKfyyqX5RX3UMbmWO5zU38wHm-koyqslRauUFoR6LTNzWHpqQIAZgUoq2F39VjE7VKi1?purpose=fullsize",
+         "markdown": "![Chutes | Breakthrough Serverless AI Compute](https://images.openai.com/static-rsc-4/a6ThlGATatKymTTqG99iXjnJDx5xU0jorTI_3GIpb-2Q3FR1XJXtcosG3VbFoT5vvqSv8rDT3bkKRmrWbVRCPKwGWqBHUlYNXb6TMqkeqxYqIn1iXMABJ2PhRL-txKfyyqX5RX3UMbmWO5zU38wHm-koyqslRauUFoR6LTNzWHpqQIAZgUoq2F39VjE7VKi1?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 7,
+       "rank_absolute": 13,
+       "markdown": "\n\n**6\\. Microsoft**\n\n(Best for Microsoft-centric enterprises)\n\nConsider Microsoft when employees work primarily in Microsoft 365, Teams, Dynamics, and Azure. Copilot Studio supports custom agents that use enterprise knowledge, connectors, APIs, workflows, and other agents. [learn.microsoft.com](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-overview?utm_source=chatgpt.com)\n\n**Why shortlist it\\:** Existing identity, collaboration, and business-system integration can simplify deployment and administration.\n\nTrade-off: assess licensing, consumption costs, connector limitations, and how much custom code your use case needs.\n\n[Agent platform documentation](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-overview)\n\n---\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "Agents overview - Microsoft Copilot Studio",
+         "snippet": null,
+         "domain": "learn.microsoft.com",
+         "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-overview?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Microsoft Learn",
+         "publication_date": null,
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Agent platform documentation",
+         "snippet": null,
+         "domain": "learn.microsoft.com",
+         "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-overview",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[Agent platform documentation](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-overview)"
+        }
+       ],
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "enterprise cloud software and AI platform provider",
+         "category": "company",
+         "markdown": "Microsoft",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 7,
+       "rank_absolute": 14,
+       "markdown": "![AI Identity Summit Paris](https://images.openai.com/static-rsc-4/kbmmvLFTdYm1pdo1rsMw8YgDzbu3VNpgjSKlqw67dBP9rjNGVE90my8yB9xSNwlCKZzMQeEgBw5-PMY971eB5zlM-m_hJYcFCcMUOXxfy8wYGdutB9k9HtSMGl2k-BV_Ie6wkFRZH4_PkXXb156iuAK_8i6ez6IZCaloq3HwcYROhpvl-9Hl-ZG8iaOin3rX?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://hi.okta.com/ai-idsummit-paris",
+         "alt": "AI Identity Summit Paris",
+         "image_url": "https://images.openai.com/static-rsc-4/kbmmvLFTdYm1pdo1rsMw8YgDzbu3VNpgjSKlqw67dBP9rjNGVE90my8yB9xSNwlCKZzMQeEgBw5-PMY971eB5zlM-m_hJYcFCcMUOXxfy8wYGdutB9k9HtSMGl2k-BV_Ie6wkFRZH4_PkXXb156iuAK_8i6ez6IZCaloq3HwcYROhpvl-9Hl-ZG8iaOin3rX?purpose=fullsize",
+         "markdown": "![AI Identity Summit Paris](https://images.openai.com/static-rsc-4/kbmmvLFTdYm1pdo1rsMw8YgDzbu3VNpgjSKlqw67dBP9rjNGVE90my8yB9xSNwlCKZzMQeEgBw5-PMY971eB5zlM-m_hJYcFCcMUOXxfy8wYGdutB9k9HtSMGl2k-BV_Ie6wkFRZH4_PkXXb156iuAK_8i6ez6IZCaloq3HwcYROhpvl-9Hl-ZG8iaOin3rX?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 8,
+       "rank_absolute": 15,
+       "markdown": "\n\n**7\\. Amazon Web Services (AWS)**\n\n(Best for cloud-native custom agents)\n\nA strong option if your workloads and data already live on AWS, or you want engineering teams to build agents directly into your applications and operational systems.\n\n**Why shortlist it\\:** Amazon Bedrock provides model access and agent capabilities, while Bedrock AgentCore supports deploying and operating agents using different models and frameworks. [aws.amazon.com](https://aws.amazon.com/bedrock/agents/?utm_source=chatgpt.com)\n\nTrade-off: you'll need engineering expertise to design the agent architecture, integrations, evaluation, and operational controls.\n\n[AWS agent services](https://aws.amazon.com/bedrock/agents/)\n\n---\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "AI Agents \u2013 Amazon Bedrock Agents",
+         "snippet": null,
+         "domain": "aws.amazon.com",
+         "url": "https://aws.amazon.com/bedrock/agents/?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "AWS",
+         "publication_date": null,
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "AWS agent services",
+         "snippet": null,
+         "domain": "aws.amazon.com",
+         "url": "https://aws.amazon.com/bedrock/agents/",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[AWS agent services](https://aws.amazon.com/bedrock/agents/)"
+        }
+       ],
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "cloud computing and enterprise AI services",
+         "category": "company",
+         "markdown": "Amazon Web Services (AWS)",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 8,
+       "rank_absolute": 16,
+       "markdown": "![Parceiros de Cloud | Contacta](https://images.openai.com/static-rsc-4/ZqdiJfY4xiSmn1XmnoaQhJff5dG-Jq4Wy0Y6JUpNAaWwN3YY1bVyrcXCCYPQck27-W1fDKs4zU8T5iXZIt5L6wfRBd4Z4FQJqHgtEYIOfrV7OAJaTofLf-Yu-0WxEEVL3FQH44e_4nuZmeWlAqQIoQL2devV-58q1b6g6H_drGTTJ4pj0p5RWbpI9F24BgXp?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://www.contacta.com.br/parceiros/c%C3%B3pia-de-parceiros---parceiros-de-cloud",
+         "alt": "Parceiros de Cloud | Contacta",
+         "image_url": "https://images.openai.com/static-rsc-4/ZqdiJfY4xiSmn1XmnoaQhJff5dG-Jq4Wy0Y6JUpNAaWwN3YY1bVyrcXCCYPQck27-W1fDKs4zU8T5iXZIt5L6wfRBd4Z4FQJqHgtEYIOfrV7OAJaTofLf-Yu-0WxEEVL3FQH44e_4nuZmeWlAqQIoQL2devV-58q1b6g6H_drGTTJ4pj0p5RWbpI9F24BgXp?purpose=fullsize",
+         "markdown": "![Parceiros de Cloud | Contacta](https://images.openai.com/static-rsc-4/ZqdiJfY4xiSmn1XmnoaQhJff5dG-Jq4Wy0Y6JUpNAaWwN3YY1bVyrcXCCYPQck27-W1fDKs4zU8T5iXZIt5L6wfRBd4Z4FQJqHgtEYIOfrV7OAJaTofLf-Yu-0WxEEVL3FQH44e_4nuZmeWlAqQIoQL2devV-58q1b6g6H_drGTTJ4pj0p5RWbpI9F24BgXp?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 9,
+       "rank_absolute": 17,
+       "markdown": "\n\n**8\\. Google Cloud**\n\nBest if you need a flexible agent platform connected to enterprise data, analytics, and multiple model families.\n\n**Why shortlist it\\:** Gemini Enterprise Agent Platform provides low-code and code-based development, model choice, agent deployment, evaluation, identity, and governance features. [docs.cloud.google.com](https://docs.cloud.google.com/gemini-enterprise-agent-platform/overview?trk=article-ssr-frontend-pulse_little-text-block&utm_source=chatgpt.com)\n\nTrade-off: compare operational maturity and integration requirements against your existing cloud estate.\n\n[Agent platform documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/overview)\n\n---\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "Agent Platform overview \u00a0|\u00a0 Gemini Enterprise Agent Platform \u00a0|\u00a0 Google Cloud Documentation",
+         "snippet": null,
+         "domain": "docs.cloud.google.com",
+         "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/overview?trk=article-ssr-frontend-pulse_little-text-block&utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Google Cloud Documentation",
+         "publication_date": null,
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Agent platform documentation",
+         "snippet": null,
+         "domain": "docs.cloud.google.com",
+         "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/overview",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[Agent platform documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/overview)"
+        }
+       ],
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "cloud computing, data and AI platform provider",
+         "category": "company",
+         "markdown": "Google Cloud",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 9,
+       "rank_absolute": 18,
+       "markdown": "![Salesforce - AI Tool Review | LinkGo](https://images.openai.com/static-rsc-4/I_Jsun259NxXgspjAS9ba6hv5D2HjnKRV8zmWfkaJs1inE2ektYtWv6Q1ehQn0NvyXjoW_r9mV3pUW-CZ7xQqGIJlnMb5KGJeVEgigEBon4VrfOMELAjPuQfOtponMZn7MJHD0ImybVqQXdOwFGfkIqNccyeKfo8ofqUJ61Jup2JtwRfreZl5APCQGHFj0ny?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://linkgo.dev/tools/salesforce-mcps-2025-10-06",
+         "alt": "Salesforce - AI Tool Review | LinkGo",
+         "image_url": "https://images.openai.com/static-rsc-4/I_Jsun259NxXgspjAS9ba6hv5D2HjnKRV8zmWfkaJs1inE2ektYtWv6Q1ehQn0NvyXjoW_r9mV3pUW-CZ7xQqGIJlnMb5KGJeVEgigEBon4VrfOMELAjPuQfOtponMZn7MJHD0ImybVqQXdOwFGfkIqNccyeKfo8ofqUJ61Jup2JtwRfreZl5APCQGHFj0ny?purpose=fullsize",
+         "markdown": "![Salesforce - AI Tool Review | LinkGo](https://images.openai.com/static-rsc-4/I_Jsun259NxXgspjAS9ba6hv5D2HjnKRV8zmWfkaJs1inE2ektYtWv6Q1ehQn0NvyXjoW_r9mV3pUW-CZ7xQqGIJlnMb5KGJeVEgigEBon4VrfOMELAjPuQfOtponMZn7MJHD0ImybVqQXdOwFGfkIqNccyeKfo8ofqUJ61Jup2JtwRfreZl5APCQGHFj0ny?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 10,
+       "rank_absolute": 19,
+       "markdown": "\n\n**9\\. Salesforce**\n\nBest for customer-facing agents and sales, service, and CRM workflows.\n\n**Why shortlist it\\:** Agentforce combines agent building, Salesforce business context, workflow automation, integrations through MuleSoft, and monitoring. [www.salesforce.com](https://www.salesforce.com/platform/agentforce-platform/?bc=OTH&utm_source=chatgpt.com)\n\nTrade-off: strongest when the workflows are close to Salesforce; assess costs and flexibility for broader cross-enterprise use cases.\n\n[Agentforce platform](https://www.salesforce.com/platform/agentforce-platform/)\n\n## 2\\. Which three would I start with?\n\nFor a typical large US enterprise seeking genuinely custom agents, rather than just chatbots, I'd start with these three partner conversations\\:\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "Agentforce 360 Platform \u2013 Agentic Capabilities",
+         "snippet": null,
+         "domain": "www.salesforce.com",
+         "url": "https://www.salesforce.com/platform/agentforce-platform/?bc=OTH&utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Salesforce",
+         "publication_date": null,
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Agentforce platform",
+         "snippet": null,
+         "domain": "www.salesforce.com",
+         "url": "https://www.salesforce.com/platform/agentforce-platform/",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[Agentforce platform](https://www.salesforce.com/platform/agentforce-platform/)"
+        }
+       ],
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "customer relationship management software and enterprise AI",
+         "category": "company",
+         "markdown": "Salesforce",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_table",
+       "rank_group": 1,
+       "rank_absolute": 20,
+       "text": null,
+       "markdown": "| Priority | Company | Initial use case |\n|--------|--------|--------|\n| 1 | EPAM Systems | A bespoke agent requiring complex integrations and custom engineering |\n| 2 | Accenture | A multi-department rollout involving major enterprise systems and process change |\n| 3 | Slalom | A focused pilot that needs close collaboration with internal engineering and business teams |\n\n",
+       "table": {
+        "table_header": [
+         "Priority",
+         "Company",
+         "Initial use case"
+        ],
+        "table_content": [
+         [
+          "1",
+          "EPAM Systems",
+          "A bespoke agent requiring complex integrations and custom engineering"
+         ],
+         [
+          "2",
+          "Accenture",
+          "A multi-department rollout involving major enterprise systems and process change"
+         ],
+         [
+          "3",
+          "Slalom",
+          "A focused pilot that needs close collaboration with internal engineering and business teams"
+         ]
+        ]
+       },
+       "brand_entities": null
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 11,
+       "rank_absolute": 21,
+       "markdown": "\nThen add the platform provider that best matches your existing stack: Microsoft, AWS, Google Cloud, or Salesforce. IBM Consulting and Deloitte deserve early consideration if governance, regulation, or legacy infrastructure are dominant concerns.\n\nThis is a **fit-based shortlist, not a ranking of objectively superior vendors**\\. The implementation partners should be evaluated on named delivery teams and references, not brand reputation alone.\n\n## 3\\. What to ask during vendor selection\n\nUse the same questions with every finalist\\:\n\n- **Production proof\\:** Can you demonstrate an agent running in production with measurable business results?\n- **Integration\\:** Can it securely read and write to our ERP, CRM, document repositories, and internal APIs?\n- **Reliability\\:** How do you test multi-step decisions, tool failures, hallucinations, and edge cases?\n- **Control\\:** Can we enforce least-privilege access, approval gates, audit logs, and human escalation?\n- **Ownership\\:** Do we own the code, prompts, evaluation tests, and deployment configuration?\n- **Economics\\:** What are the total build and run costs at our expected transaction volume?\n- **Exit strategy\\:** Can we switch models or providers without rebuilding the entire solution?\n\nI would ask each finalist to propose a paid pilot with a baseline, a defined business outcome, security requirements, and explicit production acceptance criteria.\n\n## 4\\. One question that would narrow this down considerably\n\nWhat kind of custom AI agents are you looking to build?\n\nPrimary use case\n\nCustomer service, sales, or contact center\n\nInternal knowledge and employee productivity\n\nCross-functional workflows across ERP, CRM, finance, or operations\n\nSoftware engineering, IT, or cybersecurity\n\nIndustry-specific or regulated workflows\n\n---\n\nPreferred delivery model\n\nHire a company to design and build the agents\n\nBuild internally using an AI platform or framework\n\nPartner builds the first version; our team operates and extends it\n\n---\n\nOrganization size\n\nMid-market\n\nLarge enterprise / Fortune 500\n\nRegulated enterprise or government contractor\n\n[Refine shortlist]",
+       "sources": null,
+       "brand_entities": null
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

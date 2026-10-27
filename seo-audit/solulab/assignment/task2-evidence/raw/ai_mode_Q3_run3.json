@@ -1,0 +1,270 @@
+{
+ "version": "0.1.20261022",
+ "status_code": 20000,
+ "status_message": "Ok.",
+ "time": "8.2909 sec.",
+ "cost": 0.004,
+ "tasks_count": 1,
+ "tasks_error": 0,
+ "tasks": [
+  {
+   "id": "10270244-2577-0139-0000-c96fb45e5cff",
+   "status_code": 20000,
+   "status_message": "Ok.",
+   "time": "8.2178 sec.",
+   "cost": 0.004,
+   "result_count": 1,
+   "path": [
+    "v3",
+    "serp",
+    "google",
+    "ai_mode",
+    "live",
+    "advanced"
+   ],
+   "data": {
+    "api": "serp",
+    "function": "live",
+    "se": "google",
+    "se_type": "ai_mode",
+    "keyword": "What are the top AI development companies in Dubai for enterprise projects?",
+    "location_code": 2784,
+    "language_code": "en",
+    "device": "desktop",
+    "tag": "Q3-ai_mode-3",
+    "os": "windows"
+   },
+   "result": [
+    {
+     "keyword": "What are the top AI development companies in Dubai for enterprise projects?",
+     "type": "ai_mode",
+     "se_domain": "google.com",
+     "location_code": 2784,
+     "language_code": "en",
+     "check_url": "https://www.google.com/search?q=What%20are%20the%20top%20AI%20development%20companies%20in%20Dubai%20for%20enterprise%20projects%3F&hl=en&gl=AE&udm=50&uule=w+CAIQIFISCb0Sq7HfSF4-EacKCMBWL9Mz",
+     "datetime": "2026-10-27 02:44:19 +00:00",
+     "spell": null,
+     "refinement_chips": null,
+     "item_types": [
+      "ai_overview"
+     ],
+     "se_results_count": 0,
+     "items_count": 1,
+     "items": [
+      {
+       "type": "ai_overview",
+       "rank_group": 1,
+       "rank_absolute": 1,
+       "page": 1,
+       "position": "left",
+       "xpath": "/html[1]/body[1]/div[2]/div[1]/div[9]/div[1]/section[1]/div[1]/div[1]/div[3]/div[4]/div[1]/div[2]/div[1]/div[3]",
+       "markdown": "**Dubai hosts several leading AI development companies specializing in enterprise-grade machine learning, generative AI, natural language processing (NLP), and intelligent automation aligned with the** **Dubai AI Strategy 2031.** [[1]](https://appinventiv.com/ae/artificial-intelligence-development-company-in-dubai/)[[2]](https://masterofcode.com/blog/ai-companies-in-dubai)\n\n### Top Enterprise AI Development Companies in Dubai\n\n| Company Name | Core Enterprise Focus | Key Technologies & Frameworks | Compliance & Standards |\n|---|---|---|---|\n| Appinventiv[Appinventiv](https://appinventiv.com/) | Generative AI, AIOps, predictive modeling, and enterprise automation | GPT-4, LLaMA 3, Claude 3, Gemini, TensorFlow, PyTorch | UAE PDPL, ISO/IEC 27001, PCI-DSS, DESC rules |\n| Code Brew Labs[Code Brew Labs](https://www.code-brew.com/) | Full-cycle AI product development, RPA, smart assistants | GPT-4, LLaMA, LangChain, LlamaIndex, OpenCV | Enterprise-grade security and custom NDA compliance |\n| Apptunix[Apptunix](https://www.apptunix.com/) | Custom enterprise AI software, LLM customization, MLOps | Foundation models, deep learning, computer vision, NLP | GDPR, DESC, UAE National Cybersecurity, ISO/IEC 42001 |\n| TechGropse AE[TechGropse AE](https://sites.gallery/sites/techgropse/) | Predictive intelligence, multilingual document intelligence, visual AI | GPT-5, Claude, Gemini, Llama, AWS, Azure, TensorFlow | UAE PDPL, TDRA, ISO 27001, SOC 2, HIPAA |\n| Master of Code Global[Master of Code Global](https://masterofcode.com/team) | Conversational AI and generative enterprise solutions | LOFT framework, custom LLM integrations | Enterprise security standards |\n\n### Key Enterprise AI Specialists & Offerings\n\n- **Appinventiv[Appinventiv](https://appinventiv.com/ae/artificial-intelligence-development-company-in-dubai/):** Known for delivering over 300+ digital and AI solutions, they partner with global enterprise brands and regional entities on predictive modeling, smart assistants, and automated workflows while adhering to **UAE PDPL** and **ISO/IEC 27001** standards.[[1]](https://appinventiv.com/ae/artificial-intelligence-development-company-in-dubai/)\n- **Code Brew Labs[Code Brew Labs](https://www.code-brew.ae/artificial-intelligence-development-company-in-dubai/):** Operates with a large bench of specialized AI engineers focusing on custom generative AI, facial recognition software, and robotic process automation (RPA) across more than 35 industries.[[1]](https://www.code-brew.ae/artificial-intelligence-development-company-in-dubai/)\n- **Apptunix UAE:** Offers a structured **4-week AI PoC (Proof of Concept) validation** process, moving enterprises rapidly from initial data discovery to full-scale deployment and MLOps under **ISO/IEC 42001** and **DESC** guidelines.[[1]](https://www.apptunix.ae/)\n- **TechGropse AE[TechGropse AE](https://www.techgropse.ae/):** Focuses on vertical-specific AI transformations\u2014ranging from FinTech and real estate to logistics and education\u2014utilizing multilingual document intelligence and visual recognition models.[[1]](https://www.techgropse.ae/)\n- Master of Code Global[Master of Code Global](https://masterofcode.com/) **:** Recognized for enterprise conversational AI implementations utilizing their proprietary **LOFT framework** to build intelligent, context-aware virtual agents for customer and internal operations.[[1]](https://masterofcode.com/blog/ai-companies-in-dubai)\n\nIf you'd like to narrow this down, tell me:\n\n- What **industry or sector** is your enterprise project in?\n- Are you looking for **generative AI/chatbots**, **predictive analytics** , or **custom computer vision**?\n\nI can help identify the best fit or evaluation criteria for your RFP.",
+       "items": [
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "Dubai hosts several leading AI development companies specializing in enterprise-grade machine learning, generative AI, natural language processing (NLP), and intelligent automation aligned with the Dubai AI Strategy 2031.",
+         "markdown": "**Dubai hosts several leading AI development companies specializing in enterprise-grade machine learning, generative AI, natural language processing (NLP), and intelligent automation aligned with the** **Dubai AI Strategy 2031.** [[1]](https://appinventiv.com/ae/artificial-intelligence-development-company-in-dubai/)[[2]](https://masterofcode.com/blog/ai-companies-in-dubai)",
+         "links": null,
+         "images": null,
+         "references": [
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Appinventiv",
+           "domain": "appinventiv.com",
+           "url": "https://appinventiv.com/ae/artificial-intelligence-development-company-in-dubai/",
+           "title": "AI Development Company in Dubai, UAE",
+           "text": "10+ years experience; Services: AI consulting, Generative AI, smart assistants, app/software development, AIOps, predictive modeli..."
+          },
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Master of Code Global",
+           "domain": "masterofcode.com",
+           "url": "https://masterofcode.com/blog/ai-companies-in-dubai",
+           "title": "Top 10 AI Companies in Dubai [2026]",
+           "text": "Dubai AI Innovators: Master of Code Global. Code Brew Labs (AI app dev, machine learning, intelligent automation); Krazimo Private..."
+          }
+         ]
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": "Top Enterprise AI Development Companies in Dubai",
+         "text": null,
+         "markdown": "### Top Enterprise AI Development Companies in Dubai",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_table_element",
+         "position": "left",
+         "markdown": "| Company Name | Core Enterprise Focus | Key Technologies & Frameworks | Compliance & Standards |\n|---|---|---|---|\n| Appinventiv[Appinventiv](https://appinventiv.com/) | Generative AI, AIOps, predictive modeling, and enterprise automation | GPT-4, LLaMA 3, Claude 3, Gemini, TensorFlow, PyTorch | UAE PDPL, ISO/IEC 27001, PCI-DSS, DESC rules |\n| Code Brew Labs[Code Brew Labs](https://www.code-brew.com/) | Full-cycle AI product development, RPA, smart assistants | GPT-4, LLaMA, LangChain, LlamaIndex, OpenCV | Enterprise-grade security and custom NDA compliance |\n| Apptunix[Apptunix](https://www.apptunix.com/) | Custom enterprise AI software, LLM customization, MLOps | Foundation models, deep learning, computer vision, NLP | GDPR, DESC, UAE National Cybersecurity, ISO/IEC 42001 |\n| TechGropse AE[TechGropse AE](https://sites.gallery/sites/techgropse/) | Predictive intelligence, multilingual document intelligence, visual AI | GPT-5, Claude, Gemini, Llama, AWS, Azure, TensorFlow | UAE PDPL, TDRA, ISO 27001, SOC 2, HIPAA |\n| Master of Code Global[Master of Code Global](https://masterofcode.com/team) | Conversational AI and generative enterprise solutions | LOFT framework, custom LLM integrations | Enterprise security standards |",
+         "table": {
+          "table_header": [
+           "Company Name",
+           "Core Enterprise Focus",
+           "Key Technologies & Frameworks",
+           "Compliance & Standards"
+          ],
+          "table_content": [
+           [
+            "AppinventivAppinventiv",
+            "Generative AI, AIOps, predictive modeling, and enterprise automation",
+            "GPT-4, LLaMA 3, Claude 3, Gemini, TensorFlow, PyTorch",
+            "UAE PDPL, ISO/IEC 27001, PCI-DSS, DESC rules"
+           ],
+           [
+            "Code Brew LabsCode Brew Labs",
+            "Full-cycle AI product development, RPA, smart assistants",
+            "GPT-4, LLaMA, LangChain, LlamaIndex, OpenCV",
+            "Enterprise-grade security and custom NDA compliance"
+           ],
+           [
+            "ApptunixApptunix",
+            "Custom enterprise AI software, LLM customization, MLOps",
+            "Foundation models, deep learning, computer vision, NLP",
+            "GDPR, DESC, UAE National Cybersecurity, ISO/IEC 42001"
+           ],
+           [
+            "TechGropse AETechGropse AE",
+            "Predictive intelligence, multilingual document intelligence, visual AI",
+            "GPT-5, Claude, Gemini, Llama, AWS, Azure, TensorFlow",
+            "UAE PDPL, TDRA, ISO 27001, SOC 2, HIPAA"
+           ],
+           [
+            "Master of Code GlobalMaster of Code Global",
+            "Conversational AI and generative enterprise solutions",
+            "LOFT framework, custom LLM integrations",
+            "Enterprise security standards"
+           ]
+          ]
+         }
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": "Key Enterprise AI Specialists & Offerings",
+         "text": "Appinventiv Appinventiv : Known for delivering over 300+ digital and AI solutions, they partner with global enterprise brands and regional entities on predictive modeling, smart assistants, and automated workflows while adhering to UAE PDPL and ISO/IEC 27001 standards. Code Brew Labs Code Brew Labs : Operates with a large bench of specialized AI engineers focusing on custom generative AI, facial recognition software, and robotic process automation (RPA) across more than 35 industries. Apptunix UAE : Offers a structured 4-week AI PoC (Proof of Concept) validation process, moving enterprises rapidly from initial data discovery to full-scale deployment and MLOps under ISO/IEC 42001 and DESC guidelines. TechGropse AE TechGropse AE : Focuses on vertical-specific AI transformations\u2014ranging from FinTech and real estate to logistics and education\u2014utilizing multilingual document intelligence and visual recognition models. : Recognized for enterprise conversational AI implementations utilizing their proprietary LOFT framework to build intelligent, context-aware virtual agents for customer and internal operations.",
+         "markdown": "- **Appinventiv[Appinventiv](https://appinventiv.com/ae/artificial-intelligence-development-company-in-dubai/):** Known for delivering over 300+ digital and AI solutions, they partner with global enterprise brands and regional entities on predictive modeling, smart assistants, and automated workflows while adhering to **UAE PDPL** and **ISO/IEC 27001** standards.[[1]](https://appinventiv.com/ae/artificial-intelligence-development-company-in-dubai/)\n- **Code Brew Labs[Code Brew Labs](https://www.code-brew.ae/artificial-intelligence-development-company-in-dubai/):** Operates with a large bench of specialized AI engineers focusing on custom generative AI, facial recognition software, and robotic process automation (RPA) across more than 35 industries.[[1]](https://www.code-brew.ae/artificial-intelligence-development-company-in-dubai/)\n- **Apptunix UAE:** Offers a structured **4-week AI PoC (Proof of Concept) validation** process, moving enterprises rapidly from initial data discovery to full-scale deployment and MLOps under **ISO/IEC 42001** and **DESC** guidelines.[[1]](https://www.apptunix.ae/)\n- **TechGropse AE[TechGropse AE](https://www.techgropse.ae/):** Focuses on vertical-specific AI transformations\u2014ranging from FinTech and real estate to logistics and education\u2014utilizing multilingual document intelligence and visual recognition models.[[1]](https://www.techgropse.ae/)\n- Master of Code Global[Master of Code Global](https://masterofcode.com/) **:** Recognized for enterprise conversational AI implementations utilizing their proprietary **LOFT framework** to build intelligent, context-aware virtual agents for customer and internal operations.[[1]](https://masterofcode.com/blog/ai-companies-in-dubai)",
+         "links": null,
+         "images": null,
+         "references": [
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Appinventiv",
+           "domain": "appinventiv.com",
+           "url": "https://appinventiv.com/ae/artificial-intelligence-development-company-in-dubai/",
+           "title": "AI Development Company in Dubai, UAE",
+           "text": "Services: AI consulting, Generative AI, smart assistants, app/software development, AIOps, predictive modeling, security, automation across 35+ sectors. 300+ solut..."
+          },
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "www.code-brew.ae",
+           "domain": "www.code-brew.ae",
+           "url": "https://www.code-brew.ae/artificial-intelligence-development-company-in-dubai/",
+           "title": "Top AI Development Company in Dubai | Code Brew Labs",
+           "text": "35+ industries served). Services: Generative AI development, smart AI assistants and chatbots, custom AI development, automation s..."
+          },
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Apptunix UAE",
+           "domain": "www.apptunix.ae",
+           "url": "https://www.apptunix.ae/",
+           "title": "Apptunix UAE - AI Development Company in Dubai",
+           "text": "Apptunix is an AI development company based in Dubai, UAE, Process: 4-week AI PoC validation, agile development from discovery to ..."
+          },
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "TechGropse AE",
+           "domain": "www.techgropse.ae",
+           "url": "https://www.techgropse.ae/",
+           "title": "AI Development Company in Dubai | TechGropse AE",
+           "text": "AI Development Company in Dubai offering strategy, custom solutions, predictive intelligence, generative AI, multilingual document..."
+          },
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Master of Code Global",
+           "domain": "masterofcode.com",
+           "url": "https://masterofcode.com/blog/ai-companies-in-dubai",
+           "title": "Top 10 AI Companies in Dubai [2026]",
+           "text": "Dubai AI Innovators: Master of Code Global (Conversational/Generative AI, LOFT framework); Code Brew Labs (AI app dev, machine learning, intelligent automation); f..."
+          }
+         ]
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "If you'd like to narrow this down, tell me:",
+         "markdown": "If you'd like to narrow this down, tell me:",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "What industry or sector is your enterprise project in? Are you looking for generative AI/chatbots, predictive analytics, or custom computer vision ?",
+         "markdown": "- What **industry or sector** is your enterprise project in?\n- Are you looking for **generative AI/chatbots**, **predictive analytics** , or **custom computer vision**?",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "I can help identify the best fit or evaluation criteria for your RFP.",
+         "markdown": "I can help identify the best fit or evaluation criteria for your RFP.",
+         "links": null,
+         "images": null,
+         "references": null
+        }
+       ],
+       "references": [
+        {
+         "type": "ai_overview_reference",
+         "position": "right",
+         "source": "Apptunix UAE",
+         "domain": "www.apptunix.ae",
+         "url": "https://www.apptunix.ae/",
+         "title": "Apptunix UAE - AI Development Company in Dubai",
+         "text": "Apptunix is an AI development company based in Dubai, UAE, Process: 4-week AI PoC validation, agile development from discovery to deployment and MLOps."
+        },
+        {
+         "type": "ai_overview_reference",
+         "position": "right",
+         "source": "Appinventiv",
+         "domain": "appinventiv.com",
+         "url": "https://appinventiv.com/ae/artificial-intelligence-development-company-in-dubai/",
+         "title": "AI Development Company in Dubai, UAE",
+         "text": "Services: AI consulting, Generative AI, smart assistants, app/software development, AIOps, predictive modeling, security, automation across 35+ sectors. 300+ solut..."
+        },
+        {
+         "type": "ai_overview_reference",
+         "position": "right",
+         "source": "Master of Code Global",
+         "domain": "masterofcode.com",
+         "url": "https://masterofcode.com/blog/ai-companies-in-dubai",
+         "title": "Top 10 AI Companies in Dubai [2026]",
+         "text": "Dubai AI Innovators: Master of Code Global (Conversational/Generative AI, LOFT framework); Code Brew Labs (AI app dev, machine learning, intelligent automation); f..."
+        }
+       ],
+       "rectangle": null
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

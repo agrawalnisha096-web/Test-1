@@ -1,0 +1,1161 @@
+{
+ "version": "0.1.20261022",
+ "status_code": 20000,
+ "status_message": "Ok.",
+ "time": "64.0593 sec.",
+ "cost": 0.004,
+ "tasks_count": 1,
+ "tasks_error": 0,
+ "tasks": [
+  {
+   "id": "10270243-2577-0629-0000-80a4caa7044c",
+   "status_code": 20000,
+   "status_message": "Ok.",
+   "time": "63.9596 sec.",
+   "cost": 0.004,
+   "result_count": 1,
+   "path": [
+    "v3",
+    "ai_optimization",
+    "chat_gpt",
+    "llm_scraper",
+    "live",
+    "advanced"
+   ],
+   "data": {
+    "api": "ai_optimization",
+    "function": "live",
+    "se": "chat_gpt",
+    "keyword": "What are the best generative AI development companies in the USA for building an enterprise LLM application?",
+    "location_code": 2840,
+    "language_code": "en",
+    "force_web_search": true,
+    "tag": "Q2-chatgpt-3",
+    "device": "desktop",
+    "os": "windows"
+   },
+   "result": [
+    {
+     "keyword": "What are the best generative AI development companies in the USA for building an enterprise LLM application?",
+     "location_code": 2840,
+     "language_code": "en",
+     "model": "gpt-6",
+     "check_url": "https://chatgpt.com/?prompt=What%20are%20the%20best%20generative%20AI%20development%20companies%20in%20the%20USA%20for%20building%20an%20enterprise%20LLM%20application%3F&hints=search",
+     "datetime": "2026-10-27 02:44:08 +00:00",
+     "markdown": "# Best generative AI development companies in the USA for enterprise LLM applications\n\nFor building an enterprise-grade LLM application, I would shortlist companies based on their ability to take a solution from architecture and prototype through production deployment, security, integration, and ongoing support\u2014not simply their ability to build a chatbot.\n\nAs of October 2026, the strongest candidates span two groups: **enterprise technology consultancies** that can handle complex data and governance requirements, and **specialist AI engineering firms** that focus on custom LLM applications, retrieval-augmented generation (RAG), AI agents, and product development. Current industry roundups identify several credible candidates across both categories. [tech.us](https://tech.us/blog/top-generative-ai-development-companies-usa?utm_source=chatgpt.com)[clutch.co](https://clutch.co/us/developers/artificial-intelligence/generative?utm_source=chatgpt.com)[www.ryzlabs.com](https://www.ryzlabs.com/best/generative-ai-development-companies?utm_source=chatgpt.com)\n\n## My recommended shortlist\n\n![Top-10 Agent AI Companies USA 2026 | DATAFOREST Ranked](https://images.openai.com/static-rsc-4/GjMi5Op8HRd9dFyySEvZQ5tLErhRtC9SJjVWlsJGAVIHwMBY9l7dAr6aGaWOIl3YS4fjNc8v1qDa1GAgnnShFUKjCozec-FJoHRyal816j1hFDechPxWDueFXKvIet7HjM0KrHOa1gL4Ul9EvaZ1iGXcexbmfs0YppPj3J6HOECWJLqHwnBhQnF7gd9fvcSC?purpose=fullsize)\n\n## 1\\. HatchWorks AI\n\n(Best for custom enterprise LLM engineering)\n\nHatchWorks is worth evaluating for companies building custom AI applications around proprietary enterprise data, RAG, agentic workflows, and data modernization. It is a good candidate when the engagement requires both AI development and broader engineering work.\n\n**Best fit\\:** Enterprise knowledge assistants, internal copilots, and workflow automation.\n\nSource: [tech.us](https://tech.us/blog/top-generative-ai-development-companies-usa?utm_source=chatgpt.com)[clutch.co](https://clutch.co/us/developers/artificial-intelligence/generative?utm_source=chatgpt.com)[www.ryzlabs.com](https://www.ryzlabs.com/best/generative-ai-development-companies?utm_source=chatgpt.com)[www.agencycluster.com](https://www.agencycluster.com/top-50/generative-ai-development-agencies?utm_source=chatgpt.com)[www.cloudgeometry.com](https://www.cloudgeometry.com/roundups/best-ai-development-company-in-usa?utm_source=chatgpt.com)[www.sophylabs.com](https://www.sophylabs.com/top-ai-development-companies-usa?utm_source=chatgpt.com)\n\n[Official website](https://hatchworks.com/)\n\n---\n\n![LeewayHertz Profile & Reviews - Techreviewer](https://images.openai.com/static-rsc-4/LtKQtE-pt-0pdWZ7azHXyBxo0FayDuOPQuoEPp1t8SAOUHAVtRIoxOphqKACQNGnge2oG09bNXwaWX-6nUAJ8HjsYOrJijA2Fk-1KObqQ3dS08Rq_GzcK4_SfduVP6oVkMC1VRB-Dgthdli8eoWFgaOQhBXolAP0lUEVG1LTFR-Em5tEDBKBpqnH4V4JiWun?purpose=fullsize)\n\n## 2\\. LeewayHertz\n\nA specialist worth considering for end-to-end custom generative AI applications, enterprise AI agents, LLM integrations, and solutions that need to connect with existing business systems.\n\n**Best fit\\:** Custom LLM products, enterprise assistants, and multi-agent applications.\n\nSource: [tech.us](https://tech.us/blog/top-generative-ai-development-companies-usa?utm_source=chatgpt.com)[www.cloudgeometry.com](https://www.cloudgeometry.com/roundups/best-ai-development-company-in-usa?utm_source=chatgpt.com)\n\n[Official website](https://www.leewayhertz.com/)\n\n---\n\n![IBM Consulting \ub85c\uace0 | brandB \ube0c\ub79c\ub4dc\ube44](https://images.openai.com/static-rsc-4/gppsH6VUrgRQKR42tYE1DZsvru0p0FTM9BowyT1VWx-ykhfwtRfF1QFIZbXU8G1zybmILkag0W2BDAiMTbSHpIV4Wjrk8XaeO6t7ese1fJZyQO-Wbm9-esdBqMJN88pNWQXNr9MjBLpnxX1Q5dYMCOq0re4coaY4QhP9rloxHn6Cgx0SE9V-iXRJ6DQcz_-O?purpose=fullsize)\n\n## 3\\. IBM Consulting\n\nA strong candidate for large enterprises that need AI implementation alongside enterprise architecture, hybrid-cloud integration, governance, and established IT operations. Its watsonx ecosystem is relevant for organizations seeking a managed enterprise AI platform approach.\n\n**Best fit\\:** Large-scale deployments, regulated environments, and complex enterprise IT estates.\n\nSource: [tech.us](https://tech.us/blog/top-generative-ai-development-companies-usa?utm_source=chatgpt.com)[www.sophylabs.com](https://www.sophylabs.com/top-ai-development-companies-usa?utm_source=chatgpt.com)[www.agencycluster.com](https://www.agencycluster.com/top-50/generative-ai-development-agencies?utm_source=chatgpt.com)[www.ryzlabs.com](https://www.ryzlabs.com/best/generative-ai-development-companies?utm_source=chatgpt.com)\n\n[Official website](https://www.ibm.com/consulting)\n\n---\n\n![Privacy-Enhancing Machine Learning \u2013 AWS Clean Rooms ML \u2013 AWS](https://images.openai.com/static-rsc-4/4e0hsiIjAR800FO2WMGH8GXb-eVc_W_GngdTPGJAq-zsW9N9bGr4K2EXL6Q68IRPqEAjO6F0ghFNahgiiAoTZEGOqgsze_aUICjUgESdEgfP03RI2sbekD22kPfjG_76L1HJ2GIW2vRxb3jd50jMtGmGKWgWP_lRZN2DlDaM7MaUz-A994CKJxp0EmnO-zNF?purpose=fullsize)\n\n## 4\\. Slalom\n\nA good option when an LLM application must be designed around a company's existing cloud ecosystem, data platform, and business processes. Consider it for a combination of architecture, implementation, and organizational adoption.\n\n**Best fit\\:** Cloud-native enterprise copilots, knowledge search, and AI-enabled business applications.\n\nSource: [tech.us](https://tech.us/blog/top-generative-ai-development-companies-usa?utm_source=chatgpt.com)[www.sophylabs.com](https://www.sophylabs.com/top-ai-development-companies-usa?utm_source=chatgpt.com)[www.agencycluster.com](https://www.agencycluster.com/top-50/generative-ai-development-agencies?utm_source=chatgpt.com)[www.ryzlabs.com](https://www.ryzlabs.com/best/generative-ai-development-companies?utm_source=chatgpt.com)\n\n[Official website](https://www.slalom.com/)\n\n---\n\n![EPAM: Channel Profile & Services | Channel Insider](https://images.openai.com/static-rsc-4/699duAjB1oBicBxG8doRjKNGyLwYtRuBePrOcTifzIVuPcCHZZjHQbKbud_zUadhGmaiUuDcfl66YBCzzuP-Aq14wai1WhiH0mkbqIy1Thk6BhaAZr1jnmlECSrbMbitl-eyorGBemUI0vBgRoPwzQQV-VFstt5hLCjoruMUUu-kq1HR5Ul6NIsUQ6OzxUNJ?purpose=fullsize)\n\n## 5\\. EPAM Systems\n\nA candidate for complex applications requiring strong software engineering, integration with legacy platforms, scalable architecture, and sustained development across multiple teams.\n\n**Best fit\\:** Enterprise LLM platforms, customer-facing AI products, and large application modernization programs.\n\nSource: [tech.us](https://tech.us/blog/top-generative-ai-development-companies-usa?utm_source=chatgpt.com)[clutch.co](https://clutch.co/us/developers/artificial-intelligence/generative?utm_source=chatgpt.com)[www.ryzlabs.com](https://www.ryzlabs.com/best/generative-ai-development-companies?utm_source=chatgpt.com)[www.sophylabs.com](https://www.sophylabs.com/top-ai-development-companies-usa?utm_source=chatgpt.com)\n\n[Official website](https://www.epam.com/)\n\n---\n\n![10Pearls Company Profile | Reviews | Portfolio - TopDevelopers.co](https://images.openai.com/static-rsc-4/jfVqq2gPxCZ3N1QRkOhvq9DH-dLI1vDJEMXZusNOI7xS9vLvaFikREayjaiNwXMw3--SmNLjlCwnKi-jaZWitFbEFaqYo49iJUUKYik78B_wIUsrxm5Q3e6txORLPULZP2YzblWERGA7UvFS9AznL99KXk_ae7YF3qfONi5NVPKiUHe6AsivOBv5Z-1ur1_H?purpose=fullsize)\n\n## 6\\. 10Pearls\n\nAn option for organizations that want product design, custom software engineering, data capabilities, and AI development coordinated through one partner. Particularly relevant when the LLM application is part of a larger digital product.\n\n**Best fit\\:** Healthcare, financial services, and other enterprise product-development programs.\n\nSource: [softaims.com](https://softaims.com/blog/generative-ai-development-companies-usa?utm_source=chatgpt.com)[www.agencycluster.com](https://www.agencycluster.com/top-50/generative-ai-development-agencies?utm_source=chatgpt.com)\n\n[Official website](https://10pearls.com/)\n\n---\n\n![Blue Label Labs - Digital Product Specialists | BlueLabel](https://images.openai.com/static-rsc-4/_jFRd7LOcSnLOtErDWlPbuygyL8wNOphBl0dkwMiiJHCv91x1BEz013PTy2KKoiJqdIAzCP7YUEPt8ymQoUbgHi-mfETC9vChsm_2eH4OXUpzdCD-HpjiwnV2FdHY2cu5BqVKnsQJrXi-vC6su1LYbqlLnpRD0dCG3HSb1l3Dq-bAc9FfU3jsUE4Kg7qVGct?purpose=fullsize)\n\n## 7\\. BlueLabel\n\nWorth considering when user experience and product design matter as much as the underlying LLM architecture. Its profile is particularly relevant for building polished, AI-powered digital products rather than just internal infrastructure.\n\n**Best fit\\:** Customer-facing AI applications and new AI product development.\n\nSource: [softaims.com](https://softaims.com/blog/generative-ai-development-companies-usa?utm_source=chatgpt.com)[www.agencycluster.com](https://www.agencycluster.com/top-50/generative-ai-development-agencies?utm_source=chatgpt.com)\n\n[Official website](https://www.bluelabellabs.com/)\n\n---\n\n![Booz Allen Hamilton Selected as Innovation Partner of the Year by Rancher Government Solutions for its Groundbreaking Work with the US Air Force\u2019s Platform One](https://images.openai.com/static-rsc-4/zeUJfo8h1JKls-znuqk2Ja3Ks_A-aIvE8gz69L6ugvs91YGsBk3ubSQbRONoLKb4qPL_j147k5w3FsvQxIN7FnD2wlKV-YPDOsr8Vm54OBlrNh7ih_THY-JWvN4ZvfACANOL0Fq77qwPj5jci1OsQ0Y_1e714wJ8ID9ydaGuBT3PZ7kecHXZMH8kRCGyk0mt?purpose=fullsize)\n\n## 8\\. Booz Allen Hamilton\n\nEspecially relevant for government, defense, and security-sensitive enterprise environments where access controls, compliance, and deployment constraints are major considerations.\n\n**Best fit\\:** Public-sector LLM applications and sensitive, highly governed deployments.\n\nSource: [tech.us](https://tech.us/blog/top-generative-ai-development-companies-usa?utm_source=chatgpt.com)[www.sophylabs.com](https://www.sophylabs.com/top-ai-development-companies-usa?utm_source=chatgpt.com)[www.agencycluster.com](https://www.agencycluster.com/top-50/generative-ai-development-agencies?utm_source=chatgpt.com)[www.ryzlabs.com](https://www.ryzlabs.com/best/generative-ai-development-companies?utm_source=chatgpt.com)\n\n[Official website](https://www.boozallen.com/)\n\nThese are **use-case-based recommendations, not a definitive performance ranking**\\. The public rankings are useful for discovery, but you should validate each vendor's actual delivery experience, named engineering team, and production references before selecting one.\n\n## How I would compare the finalists\n\n| Company | Primary reason to shortlist | Engagement to explore |\n|--------|--------|--------|\n| HatchWorks AI | Custom LLM and RAG engineering | Build a production pilot |\n| LeewayHertz | Custom LLM apps and AI agents | End-to-end application development |\n| IBM Consulting | Enterprise governance and complex IT | Enterprise implementation program |\n| Slalom | Cloud and data ecosystem integration | Architecture plus delivery |\n| EPAM Systems | Complex software engineering | Dedicated product engineering team |\n| 10Pearls | AI plus digital product development | Full-cycle product team |\n| BlueLabel | AI product design and user experience | Product discovery and build |\n| Booz Allen Hamilton | Security-sensitive deployments | Governed enterprise or public-sector program |\n\n\n## What matters most when building an enterprise LLM application\n\nBefore choosing a vendor, verify that its proposed solution addresses these seven areas.\n\n**1\\. RAG and enterprise data integration**\n\nCan the team ingest documents and structured data, preserve metadata, retrieve relevant information, and enforce document-level permissions?\n\n**2\\. Security and governance**\n\nLook for SSO, role-based access, encryption, audit logs, prompt-injection defenses, data-retention controls, and clear contractual rules on data use.\n\n**3\\. Evaluation and reliability**\n\nAsk for an automated evaluation framework covering answer correctness, retrieval quality, hallucinations, regressions, latency, and cost.\n\n**4\\. Enterprise integrations**\n\nVerify experience with your actual systems, such as Microsoft 365, SharePoint, Salesforce, ServiceNow, SAP, internal APIs, and databases.\n\n**5\\. Deployment flexibility**\n\nDetermine whether the application can run in your AWS, Azure, or Google Cloud environment, or in a private/on-premises environment if required.\n\n**6\\. Team quality and ownership**\n\nRequest named senior AI engineers, examples of production deployments, code ownership terms, documentation, and a handover plan.\n\n**7\\. Production operations**\n\nLook for monitoring, tracing, incident response, model-version management, fallback behavior, and ongoing support after launch.\n\n## My recommendation\n\nI would start with **HatchWorks AI, LeewayHertz, and IBM Consulting** as three contrasting candidates: a custom AI engineering partner, a specialist AI application developer, and a large enterprise consultancy. Add Slalom or EPAM if integration with a complex existing technology estate is central to the project.\n\nThe best choice depends on your application scope, security requirements, and whether you need a complete outsourced build or an extension of your internal engineering team.\n\nFor a more targeted shortlist, I can [rank vendors by your project requirements](f) or [compare estimated project costs](f)\\.",
+     "search_results": [
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://www.agencycluster.com/top-50/generative-ai-development-agencies",
+       "domain": "www.agencycluster.com",
+       "title": "Top 50 Generative AI Development Agencies in the USA (2026) | AgencyCluster",
+       "description": null,
+       "breadcrumb": "www.agencycluster.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://www.agencycluster.com/top-25/generative-ai-development-agencies",
+       "domain": "www.agencycluster.com",
+       "title": "Top 25 Generative AI Development Agencies in the USA (2026) | AgencyCluster",
+       "description": null,
+       "breadcrumb": "www.agencycluster.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://www.agencycluster.com/top-25/ai-ml-development-agencies",
+       "domain": "www.agencycluster.com",
+       "title": "Top 25 AI/ML Development Agencies in the USA (2026) | AgencyCluster",
+       "description": null,
+       "breadcrumb": "www.agencycluster.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://tech.us/blog/top-generative-ai-development-companies-usa",
+       "domain": "tech.us",
+       "title": "Top Generative AI Providers in the USA for Enterprises",
+       "description": null,
+       "breadcrumb": "tech.us"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://tech.us/blog/top-enterprise-ai-vendors-usa",
+       "domain": "tech.us",
+       "title": "Enterprise AI Partners: 10 Companies to Know in 2026",
+       "description": null,
+       "breadcrumb": "tech.us"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://www.sophylabs.com/top-ai-development-companies-usa",
+       "domain": "www.sophylabs.com",
+       "title": "Top AI Development Companies (2026): Ranked & Compared | Sophylabs",
+       "description": null,
+       "breadcrumb": "www.sophylabs.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://softaims.com/blog/generative-ai-development-companies-usa",
+       "domain": "softaims.com",
+       "title": "Top 10 Generative AI Development Companies in the USA (2026)",
+       "description": null,
+       "breadcrumb": "softaims.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://clutch.co/us/developers/artificial-intelligence/generative",
+       "domain": "clutch.co",
+       "title": "Top Generative AI Companies in the United States - Oct 2026 Rankings | Clutch.co",
+       "description": null,
+       "breadcrumb": "clutch.co"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://www.ryzlabs.com/best/generative-ai-development-companies",
+       "domain": "www.ryzlabs.com",
+       "title": "Best Generative AI Development Companies (2026) | Ryz Labs",
+       "description": null,
+       "breadcrumb": "www.ryzlabs.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://reverbico.com/blog/top-ai-agent-development-companies-in-the-usa/",
+       "domain": "reverbico.com",
+       "title": "Top AI Agent Development Companies In The USA For 2026",
+       "description": null,
+       "breadcrumb": "reverbico.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://www.cloudgeometry.com/roundups/best-ai-development-company-in-usa",
+       "domain": "www.cloudgeometry.com",
+       "title": "Best AI Development Company in USA for 2026 (Top 10)",
+       "description": null,
+       "breadcrumb": "www.cloudgeometry.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://gaincafe.com/blog/top-llm-development-companies-usa",
+       "domain": "gaincafe.com",
+       "title": "Top 10 LLM Development Companies in USA (2026) | Gaincafe Blog",
+       "description": null,
+       "breadcrumb": "gaincafe.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://www.rapiddata.com/services/ai/generative-ai-consulting-usa",
+       "domain": "www.rapiddata.com",
+       "title": "Generative AI Consulting in the USA | New York, SF, Boston | RapidData",
+       "description": null,
+       "breadcrumb": "www.rapiddata.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://buraq.dev/us/services/ai-and-automation",
+       "domain": "buraq.dev",
+       "title": "AI & Automation Consulting for U.S. Enterprises | Buraq | Buraq",
+       "description": null,
+       "breadcrumb": "buraq.dev"
+      }
+     ],
+     "sources": [
+      {
+       "type": "chat_gpt_source",
+       "title": "Top Generative AI Providers in the USA for Enterprises",
+       "snippet": null,
+       "domain": "tech.us",
+       "url": "https://tech.us/blog/top-generative-ai-development-companies-usa?utm_source=chatgpt.com",
+       "thumbnail": null,
+       "source_name": "tech.us",
+       "publication_date": "2026-09-30 00:00:00 +00:00",
+       "markdown": null
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Top Generative AI Companies in the United States - Oct 2026 Rankings",
+       "snippet": null,
+       "domain": "clutch.co",
+       "url": "https://clutch.co/us/developers/artificial-intelligence/generative?utm_source=chatgpt.com",
+       "thumbnail": null,
+       "source_name": "Clutch",
+       "publication_date": "2026-10-23 00:00:00 +00:00",
+       "markdown": null
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Best Generative AI Development Companies (2026)",
+       "snippet": null,
+       "domain": "www.ryzlabs.com",
+       "url": "https://www.ryzlabs.com/best/generative-ai-development-companies?utm_source=chatgpt.com",
+       "thumbnail": null,
+       "source_name": "Ryz Labs",
+       "publication_date": null,
+       "markdown": null
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Top 50 Generative AI Development Agencies in the USA (2026)",
+       "snippet": null,
+       "domain": "www.agencycluster.com",
+       "url": "https://www.agencycluster.com/top-50/generative-ai-development-agencies?utm_source=chatgpt.com",
+       "thumbnail": null,
+       "source_name": "AgencyCluster",
+       "publication_date": "2026-03-17 00:00:00 +00:00",
+       "markdown": null
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Best AI Development Company in USA for 2026 (Top 10)",
+       "snippet": null,
+       "domain": "www.cloudgeometry.com",
+       "url": "https://www.cloudgeometry.com/roundups/best-ai-development-company-in-usa?utm_source=chatgpt.com",
+       "thumbnail": null,
+       "source_name": "cloudgeometry.com",
+       "publication_date": "2026-09-12 00:00:00 +00:00",
+       "markdown": null
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Top AI Development Companies (2026): Ranked & Compared",
+       "snippet": null,
+       "domain": "www.sophylabs.com",
+       "url": "https://www.sophylabs.com/top-ai-development-companies-usa?utm_source=chatgpt.com",
+       "thumbnail": null,
+       "source_name": "Sophylabs",
+       "publication_date": "2026-10-07 00:00:00 +00:00",
+       "markdown": null
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Official website",
+       "snippet": null,
+       "domain": "hatchworks.com",
+       "url": "https://hatchworks.com/",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[Official website](https://hatchworks.com/)"
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Official website",
+       "snippet": null,
+       "domain": "www.leewayhertz.com",
+       "url": "https://www.leewayhertz.com/",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[Official website](https://www.leewayhertz.com/)"
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Official website",
+       "snippet": null,
+       "domain": "www.ibm.com",
+       "url": "https://www.ibm.com/consulting",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[Official website](https://www.ibm.com/consulting)"
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Official website",
+       "snippet": null,
+       "domain": "www.slalom.com",
+       "url": "https://www.slalom.com/",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[Official website](https://www.slalom.com/)"
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Official website",
+       "snippet": null,
+       "domain": "www.epam.com",
+       "url": "https://www.epam.com/",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[Official website](https://www.epam.com/)"
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Top 10 Generative AI Development Companies in the USA (2026)",
+       "snippet": null,
+       "domain": "softaims.com",
+       "url": "https://softaims.com/blog/generative-ai-development-companies-usa?utm_source=chatgpt.com",
+       "thumbnail": null,
+       "source_name": "softaims.com",
+       "publication_date": "2026-08-24 00:00:00 +00:00",
+       "markdown": null
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Official website",
+       "snippet": null,
+       "domain": "10pearls.com",
+       "url": "https://10pearls.com/",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[Official website](https://10pearls.com/)"
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Official website",
+       "snippet": null,
+       "domain": "www.bluelabellabs.com",
+       "url": "https://www.bluelabellabs.com/",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[Official website](https://www.bluelabellabs.com/)"
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Official website",
+       "snippet": null,
+       "domain": "www.boozallen.com",
+       "url": "https://www.boozallen.com/",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[Official website](https://www.boozallen.com/)"
+      }
+     ],
+     "fan_out_queries": [
+      "best generative AI development companies USA enterprise LLM application development 2026",
+      "enterprise generative AI consulting firms USA LLM applications case studies security"
+     ],
+     "brand_entities": [
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "Enterprise AI and software engineering services",
+       "category": "company",
+       "markdown": "HatchWorks AI",
+       "urls": null
+      },
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "Custom AI and generative AI software development",
+       "category": "company",
+       "markdown": "LeewayHertz",
+       "urls": null
+      },
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "Enterprise technology consulting and AI implementation",
+       "category": "company",
+       "markdown": "IBM Consulting",
+       "urls": null
+      },
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "Business and technology consulting",
+       "category": "company",
+       "markdown": "Slalom",
+       "urls": null
+      },
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "Digital engineering and technology consulting",
+       "category": "company",
+       "markdown": "EPAM Systems",
+       "urls": null
+      },
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "Digital product development and AI engineering",
+       "category": "company",
+       "markdown": "10Pearls",
+       "urls": null
+      },
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "Digital product and AI development agency",
+       "category": "company",
+       "markdown": "BlueLabel",
+       "urls": null
+      },
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "Technology consulting, analytics, and government AI",
+       "category": "company",
+       "markdown": "Booz Allen Hamilton",
+       "urls": null
+      }
+     ],
+     "se_results_count": 0,
+     "item_types": [
+      "chat_gpt_text",
+      "chat_gpt_images",
+      "chat_gpt_table"
+     ],
+     "items_count": 19,
+     "items": [
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 1,
+       "rank_absolute": 1,
+       "markdown": "# Best generative AI development companies in the USA for enterprise LLM applications\n\nFor building an enterprise-grade LLM application, I would shortlist companies based on their ability to take a solution from architecture and prototype through production deployment, security, integration, and ongoing support\u2014not simply their ability to build a chatbot.\n\nAs of October 2026, the strongest candidates span two groups: **enterprise technology consultancies** that can handle complex data and governance requirements, and **specialist AI engineering firms** that focus on custom LLM applications, retrieval-augmented generation (RAG), AI agents, and product development. Current industry roundups identify several credible candidates across both categories. [tech.us](https://tech.us/blog/top-generative-ai-development-companies-usa?utm_source=chatgpt.com)[clutch.co](https://clutch.co/us/developers/artificial-intelligence/generative?utm_source=chatgpt.com)[www.ryzlabs.com](https://www.ryzlabs.com/best/generative-ai-development-companies?utm_source=chatgpt.com)\n\n## My recommended shortlist\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "Top Generative AI Providers in the USA for Enterprises",
+         "snippet": null,
+         "domain": "tech.us",
+         "url": "https://tech.us/blog/top-generative-ai-development-companies-usa?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "tech.us",
+         "publication_date": "2026-09-30 00:00:00 +00:00",
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Top Generative AI Companies in the United States - Oct 2026 Rankings",
+         "snippet": null,
+         "domain": "clutch.co",
+         "url": "https://clutch.co/us/developers/artificial-intelligence/generative?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Clutch",
+         "publication_date": "2026-10-23 00:00:00 +00:00",
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Best Generative AI Development Companies (2026)",
+         "snippet": null,
+         "domain": "www.ryzlabs.com",
+         "url": "https://www.ryzlabs.com/best/generative-ai-development-companies?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Ryz Labs",
+         "publication_date": null,
+         "markdown": null
+        }
+       ],
+       "brand_entities": null
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 1,
+       "rank_absolute": 2,
+       "markdown": "![Top-10 Agent AI Companies USA 2026 | DATAFOREST Ranked](https://images.openai.com/static-rsc-4/GjMi5Op8HRd9dFyySEvZQ5tLErhRtC9SJjVWlsJGAVIHwMBY9l7dAr6aGaWOIl3YS4fjNc8v1qDa1GAgnnShFUKjCozec-FJoHRyal816j1hFDechPxWDueFXKvIet7HjM0KrHOa1gL4Ul9EvaZ1iGXcexbmfs0YppPj3J6HOECWJLqHwnBhQnF7gd9fvcSC?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://dataforest.ai/blog/top-ai-agent-development-companies-in-the-usa",
+         "alt": "Top-10 Agent AI Companies USA 2026 | DATAFOREST Ranked",
+         "image_url": "https://images.openai.com/static-rsc-4/GjMi5Op8HRd9dFyySEvZQ5tLErhRtC9SJjVWlsJGAVIHwMBY9l7dAr6aGaWOIl3YS4fjNc8v1qDa1GAgnnShFUKjCozec-FJoHRyal816j1hFDechPxWDueFXKvIet7HjM0KrHOa1gL4Ul9EvaZ1iGXcexbmfs0YppPj3J6HOECWJLqHwnBhQnF7gd9fvcSC?purpose=fullsize",
+         "markdown": "![Top-10 Agent AI Companies USA 2026 | DATAFOREST Ranked](https://images.openai.com/static-rsc-4/GjMi5Op8HRd9dFyySEvZQ5tLErhRtC9SJjVWlsJGAVIHwMBY9l7dAr6aGaWOIl3YS4fjNc8v1qDa1GAgnnShFUKjCozec-FJoHRyal816j1hFDechPxWDueFXKvIet7HjM0KrHOa1gL4Ul9EvaZ1iGXcexbmfs0YppPj3J6HOECWJLqHwnBhQnF7gd9fvcSC?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 2,
+       "rank_absolute": 3,
+       "markdown": "\n\n## 1\\. HatchWorks AI\n\n(Best for custom enterprise LLM engineering)\n\nHatchWorks is worth evaluating for companies building custom AI applications around proprietary enterprise data, RAG, agentic workflows, and data modernization. It is a good candidate when the engagement requires both AI development and broader engineering work.\n\n**Best fit\\:** Enterprise knowledge assistants, internal copilots, and workflow automation.\n\nSource: [tech.us](https://tech.us/blog/top-generative-ai-development-companies-usa?utm_source=chatgpt.com)[clutch.co](https://clutch.co/us/developers/artificial-intelligence/generative?utm_source=chatgpt.com)[www.ryzlabs.com](https://www.ryzlabs.com/best/generative-ai-development-companies?utm_source=chatgpt.com)[www.agencycluster.com](https://www.agencycluster.com/top-50/generative-ai-development-agencies?utm_source=chatgpt.com)[www.cloudgeometry.com](https://www.cloudgeometry.com/roundups/best-ai-development-company-in-usa?utm_source=chatgpt.com)[www.sophylabs.com](https://www.sophylabs.com/top-ai-development-companies-usa?utm_source=chatgpt.com)\n\n[Official website](https://hatchworks.com/)\n\n---\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "Top Generative AI Providers in the USA for Enterprises",
+         "snippet": null,
+         "domain": "tech.us",
+         "url": "https://tech.us/blog/top-generative-ai-development-companies-usa?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "tech.us",
+         "publication_date": "2026-09-30 00:00:00 +00:00",
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Top Generative AI Companies in the United States - Oct 2026 Rankings",
+         "snippet": null,
+         "domain": "clutch.co",
+         "url": "https://clutch.co/us/developers/artificial-intelligence/generative?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Clutch",
+         "publication_date": "2026-10-23 00:00:00 +00:00",
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Best Generative AI Development Companies (2026)",
+         "snippet": null,
+         "domain": "www.ryzlabs.com",
+         "url": "https://www.ryzlabs.com/best/generative-ai-development-companies?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Ryz Labs",
+         "publication_date": null,
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Top 50 Generative AI Development Agencies in the USA (2026)",
+         "snippet": null,
+         "domain": "www.agencycluster.com",
+         "url": "https://www.agencycluster.com/top-50/generative-ai-development-agencies?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "AgencyCluster",
+         "publication_date": "2026-03-17 00:00:00 +00:00",
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Best AI Development Company in USA for 2026 (Top 10)",
+         "snippet": null,
+         "domain": "www.cloudgeometry.com",
+         "url": "https://www.cloudgeometry.com/roundups/best-ai-development-company-in-usa?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "cloudgeometry.com",
+         "publication_date": "2026-09-12 00:00:00 +00:00",
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Top AI Development Companies (2026): Ranked & Compared",
+         "snippet": null,
+         "domain": "www.sophylabs.com",
+         "url": "https://www.sophylabs.com/top-ai-development-companies-usa?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Sophylabs",
+         "publication_date": "2026-10-07 00:00:00 +00:00",
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Official website",
+         "snippet": null,
+         "domain": "hatchworks.com",
+         "url": "https://hatchworks.com/",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[Official website](https://hatchworks.com/)"
+        }
+       ],
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "Enterprise AI and software engineering services",
+         "category": "company",
+         "markdown": "HatchWorks AI",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 2,
+       "rank_absolute": 4,
+       "markdown": "![LeewayHertz Profile & Reviews - Techreviewer](https://images.openai.com/static-rsc-4/LtKQtE-pt-0pdWZ7azHXyBxo0FayDuOPQuoEPp1t8SAOUHAVtRIoxOphqKACQNGnge2oG09bNXwaWX-6nUAJ8HjsYOrJijA2Fk-1KObqQ3dS08Rq_GzcK4_SfduVP6oVkMC1VRB-Dgthdli8eoWFgaOQhBXolAP0lUEVG1LTFR-Em5tEDBKBpqnH4V4JiWun?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://techreviewer.co/companies/leewayhertz",
+         "alt": "LeewayHertz Profile & Reviews - Techreviewer",
+         "image_url": "https://images.openai.com/static-rsc-4/LtKQtE-pt-0pdWZ7azHXyBxo0FayDuOPQuoEPp1t8SAOUHAVtRIoxOphqKACQNGnge2oG09bNXwaWX-6nUAJ8HjsYOrJijA2Fk-1KObqQ3dS08Rq_GzcK4_SfduVP6oVkMC1VRB-Dgthdli8eoWFgaOQhBXolAP0lUEVG1LTFR-Em5tEDBKBpqnH4V4JiWun?purpose=fullsize",
+         "markdown": "![LeewayHertz Profile & Reviews - Techreviewer](https://images.openai.com/static-rsc-4/LtKQtE-pt-0pdWZ7azHXyBxo0FayDuOPQuoEPp1t8SAOUHAVtRIoxOphqKACQNGnge2oG09bNXwaWX-6nUAJ8HjsYOrJijA2Fk-1KObqQ3dS08Rq_GzcK4_SfduVP6oVkMC1VRB-Dgthdli8eoWFgaOQhBXolAP0lUEVG1LTFR-Em5tEDBKBpqnH4V4JiWun?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 3,
+       "rank_absolute": 5,
+       "markdown": "\n\n## 2\\. LeewayHertz\n\nA specialist worth considering for end-to-end custom generative AI applications, enterprise AI agents, LLM integrations, and solutions that need to connect with existing business systems.\n\n**Best fit\\:** Custom LLM products, enterprise assistants, and multi-agent applications.\n\nSource: [tech.us](https://tech.us/blog/top-generative-ai-development-companies-usa?utm_source=chatgpt.com)[www.cloudgeometry.com](https://www.cloudgeometry.com/roundups/best-ai-development-company-in-usa?utm_source=chatgpt.com)\n\n[Official website](https://www.leewayhertz.com/)\n\n---\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "Top Generative AI Providers in the USA for Enterprises",
+         "snippet": null,
+         "domain": "tech.us",
+         "url": "https://tech.us/blog/top-generative-ai-development-companies-usa?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "tech.us",
+         "publication_date": "2026-09-30 00:00:00 +00:00",
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Best AI Development Company in USA for 2026 (Top 10)",
+         "snippet": null,
+         "domain": "www.cloudgeometry.com",
+         "url": "https://www.cloudgeometry.com/roundups/best-ai-development-company-in-usa?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "cloudgeometry.com",
+         "publication_date": "2026-09-12 00:00:00 +00:00",
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Official website",
+         "snippet": null,
+         "domain": "www.leewayhertz.com",
+         "url": "https://www.leewayhertz.com/",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[Official website](https://www.leewayhertz.com/)"
+        }
+       ],
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "Custom AI and generative AI software development",
+         "category": "company",
+         "markdown": "LeewayHertz",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 3,
+       "rank_absolute": 6,
+       "markdown": "![IBM Consulting \ub85c\uace0 | brandB \ube0c\ub79c\ub4dc\ube44](https://images.openai.com/static-rsc-4/gppsH6VUrgRQKR42tYE1DZsvru0p0FTM9BowyT1VWx-ykhfwtRfF1QFIZbXU8G1zybmILkag0W2BDAiMTbSHpIV4Wjrk8XaeO6t7ese1fJZyQO-Wbm9-esdBqMJN88pNWQXNr9MjBLpnxX1Q5dYMCOq0re4coaY4QhP9rloxHn6Cgx0SE9V-iXRJ6DQcz_-O?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://www.brandb.net/archive/ibm-consulting-2022-05",
+         "alt": "IBM Consulting \ub85c\uace0 | brandB \ube0c\ub79c\ub4dc\ube44",
+         "image_url": "https://images.openai.com/static-rsc-4/gppsH6VUrgRQKR42tYE1DZsvru0p0FTM9BowyT1VWx-ykhfwtRfF1QFIZbXU8G1zybmILkag0W2BDAiMTbSHpIV4Wjrk8XaeO6t7ese1fJZyQO-Wbm9-esdBqMJN88pNWQXNr9MjBLpnxX1Q5dYMCOq0re4coaY4QhP9rloxHn6Cgx0SE9V-iXRJ6DQcz_-O?purpose=fullsize",
+         "markdown": "![IBM Consulting \ub85c\uace0 | brandB \ube0c\ub79c\ub4dc\ube44](https://images.openai.com/static-rsc-4/gppsH6VUrgRQKR42tYE1DZsvru0p0FTM9BowyT1VWx-ykhfwtRfF1QFIZbXU8G1zybmILkag0W2BDAiMTbSHpIV4Wjrk8XaeO6t7ese1fJZyQO-Wbm9-esdBqMJN88pNWQXNr9MjBLpnxX1Q5dYMCOq0re4coaY4QhP9rloxHn6Cgx0SE9V-iXRJ6DQcz_-O?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 4,
+       "rank_absolute": 7,
+       "markdown": "\n\n## 3\\. IBM Consulting\n\nA strong candidate for large enterprises that need AI implementation alongside enterprise architecture, hybrid-cloud integration, governance, and established IT operations. Its watsonx ecosystem is relevant for organizations seeking a managed enterprise AI platform approach.\n\n**Best fit\\:** Large-scale deployments, regulated environments, and complex enterprise IT estates.\n\nSource: [tech.us](https://tech.us/blog/top-generative-ai-development-companies-usa?utm_source=chatgpt.com)[www.sophylabs.com](https://www.sophylabs.com/top-ai-development-companies-usa?utm_source=chatgpt.com)[www.agencycluster.com](https://www.agencycluster.com/top-50/generative-ai-development-agencies?utm_source=chatgpt.com)[www.ryzlabs.com](https://www.ryzlabs.com/best/generative-ai-development-companies?utm_source=chatgpt.com)\n\n[Official website](https://www.ibm.com/consulting)\n\n---\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "Top Generative AI Providers in the USA for Enterprises",
+         "snippet": null,
+         "domain": "tech.us",
+         "url": "https://tech.us/blog/top-generative-ai-development-companies-usa?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "tech.us",
+         "publication_date": "2026-09-30 00:00:00 +00:00",
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Top AI Development Companies (2026): Ranked & Compared",
+         "snippet": null,
+         "domain": "www.sophylabs.com",
+         "url": "https://www.sophylabs.com/top-ai-development-companies-usa?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Sophylabs",
+         "publication_date": "2026-10-07 00:00:00 +00:00",
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Top 50 Generative AI Development Agencies in the USA (2026)",
+         "snippet": null,
+         "domain": "www.agencycluster.com",
+         "url": "https://www.agencycluster.com/top-50/generative-ai-development-agencies?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "AgencyCluster",
+         "publication_date": "2026-03-17 00:00:00 +00:00",
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Best Generative AI Development Companies (2026)",
+         "snippet": null,
+         "domain": "www.ryzlabs.com",
+         "url": "https://www.ryzlabs.com/best/generative-ai-development-companies?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Ryz Labs",
+         "publication_date": null,
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Official website",
+         "snippet": null,
+         "domain": "www.ibm.com",
+         "url": "https://www.ibm.com/consulting",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[Official website](https://www.ibm.com/consulting)"
+        }
+       ],
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "Enterprise technology consulting and AI implementation",
+         "category": "company",
+         "markdown": "IBM Consulting",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 4,
+       "rank_absolute": 8,
+       "markdown": "![Privacy-Enhancing Machine Learning \u2013 AWS Clean Rooms ML \u2013 AWS](https://images.openai.com/static-rsc-4/4e0hsiIjAR800FO2WMGH8GXb-eVc_W_GngdTPGJAq-zsW9N9bGr4K2EXL6Q68IRPqEAjO6F0ghFNahgiiAoTZEGOqgsze_aUICjUgESdEgfP03RI2sbekD22kPfjG_76L1HJ2GIW2vRxb3jd50jMtGmGKWgWP_lRZN2DlDaM7MaUz-A994CKJxp0EmnO-zNF?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://aws.amazon.com/clean-rooms/ml/",
+         "alt": "Privacy-Enhancing Machine Learning \u2013 AWS Clean Rooms ML \u2013 AWS",
+         "image_url": "https://images.openai.com/static-rsc-4/4e0hsiIjAR800FO2WMGH8GXb-eVc_W_GngdTPGJAq-zsW9N9bGr4K2EXL6Q68IRPqEAjO6F0ghFNahgiiAoTZEGOqgsze_aUICjUgESdEgfP03RI2sbekD22kPfjG_76L1HJ2GIW2vRxb3jd50jMtGmGKWgWP_lRZN2DlDaM7MaUz-A994CKJxp0EmnO-zNF?purpose=fullsize",
+         "markdown": "![Privacy-Enhancing Machine Learning \u2013 AWS Clean Rooms ML \u2013 AWS](https://images.openai.com/static-rsc-4/4e0hsiIjAR800FO2WMGH8GXb-eVc_W_GngdTPGJAq-zsW9N9bGr4K2EXL6Q68IRPqEAjO6F0ghFNahgiiAoTZEGOqgsze_aUICjUgESdEgfP03RI2sbekD22kPfjG_76L1HJ2GIW2vRxb3jd50jMtGmGKWgWP_lRZN2DlDaM7MaUz-A994CKJxp0EmnO-zNF?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 5,
+       "rank_absolute": 9,
+       "markdown": "\n\n## 4\\. Slalom\n\nA good option when an LLM application must be designed around a company's existing cloud ecosystem, data platform, and business processes. Consider it for a combination of architecture, implementation, and organizational adoption.\n\n**Best fit\\:** Cloud-native enterprise copilots, knowledge search, and AI-enabled business applications.\n\nSource: [tech.us](https://tech.us/blog/top-generative-ai-development-companies-usa?utm_source=chatgpt.com)[www.sophylabs.com](https://www.sophylabs.com/top-ai-development-companies-usa?utm_source=chatgpt.com)[www.agencycluster.com](https://www.agencycluster.com/top-50/generative-ai-development-agencies?utm_source=chatgpt.com)[www.ryzlabs.com](https://www.ryzlabs.com/best/generative-ai-development-companies?utm_source=chatgpt.com)\n\n[Official website](https://www.slalom.com/)\n\n---\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "Top Generative AI Providers in the USA for Enterprises",
+         "snippet": null,
+         "domain": "tech.us",
+         "url": "https://tech.us/blog/top-generative-ai-development-companies-usa?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "tech.us",
+         "publication_date": "2026-09-30 00:00:00 +00:00",
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Top AI Development Companies (2026): Ranked & Compared",
+         "snippet": null,
+         "domain": "www.sophylabs.com",
+         "url": "https://www.sophylabs.com/top-ai-development-companies-usa?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Sophylabs",
+         "publication_date": "2026-10-07 00:00:00 +00:00",
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Top 50 Generative AI Development Agencies in the USA (2026)",
+         "snippet": null,
+         "domain": "www.agencycluster.com",
+         "url": "https://www.agencycluster.com/top-50/generative-ai-development-agencies?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "AgencyCluster",
+         "publication_date": "2026-03-17 00:00:00 +00:00",
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Best Generative AI Development Companies (2026)",
+         "snippet": null,
+         "domain": "www.ryzlabs.com",
+         "url": "https://www.ryzlabs.com/best/generative-ai-development-companies?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Ryz Labs",
+         "publication_date": null,
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Official website",
+         "snippet": null,
+         "domain": "www.slalom.com",
+         "url": "https://www.slalom.com/",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[Official website](https://www.slalom.com/)"
+        }
+       ],
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "Business and technology consulting",
+         "category": "company",
+         "markdown": "Slalom",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 5,
+       "rank_absolute": 10,
+       "markdown": "![EPAM: Channel Profile & Services | Channel Insider](https://images.openai.com/static-rsc-4/699duAjB1oBicBxG8doRjKNGyLwYtRuBePrOcTifzIVuPcCHZZjHQbKbud_zUadhGmaiUuDcfl66YBCzzuP-Aq14wai1WhiH0mkbqIy1Thk6BhaAZr1jnmlECSrbMbitl-eyorGBemUI0vBgRoPwzQQV-VFstt5hLCjoruMUUu-kq1HR5Ul6NIsUQ6OzxUNJ?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://www.channelinsider.com/partners/epam/",
+         "alt": "EPAM: Channel Profile & Services | Channel Insider",
+         "image_url": "https://images.openai.com/static-rsc-4/699duAjB1oBicBxG8doRjKNGyLwYtRuBePrOcTifzIVuPcCHZZjHQbKbud_zUadhGmaiUuDcfl66YBCzzuP-Aq14wai1WhiH0mkbqIy1Thk6BhaAZr1jnmlECSrbMbitl-eyorGBemUI0vBgRoPwzQQV-VFstt5hLCjoruMUUu-kq1HR5Ul6NIsUQ6OzxUNJ?purpose=fullsize",
+         "markdown": "![EPAM: Channel Profile & Services | Channel Insider](https://images.openai.com/static-rsc-4/699duAjB1oBicBxG8doRjKNGyLwYtRuBePrOcTifzIVuPcCHZZjHQbKbud_zUadhGmaiUuDcfl66YBCzzuP-Aq14wai1WhiH0mkbqIy1Thk6BhaAZr1jnmlECSrbMbitl-eyorGBemUI0vBgRoPwzQQV-VFstt5hLCjoruMUUu-kq1HR5Ul6NIsUQ6OzxUNJ?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 6,
+       "rank_absolute": 11,
+       "markdown": "\n\n## 5\\. EPAM Systems\n\nA candidate for complex applications requiring strong software engineering, integration with legacy platforms, scalable architecture, and sustained development across multiple teams.\n\n**Best fit\\:** Enterprise LLM platforms, customer-facing AI products, and large application modernization programs.\n\nSource: [tech.us](https://tech.us/blog/top-generative-ai-development-companies-usa?utm_source=chatgpt.com)[clutch.co](https://clutch.co/us/developers/artificial-intelligence/generative?utm_source=chatgpt.com)[www.ryzlabs.com](https://www.ryzlabs.com/best/generative-ai-development-companies?utm_source=chatgpt.com)[www.sophylabs.com](https://www.sophylabs.com/top-ai-development-companies-usa?utm_source=chatgpt.com)\n\n[Official website](https://www.epam.com/)\n\n---\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "Top Generative AI Providers in the USA for Enterprises",
+         "snippet": null,
+         "domain": "tech.us",
+         "url": "https://tech.us/blog/top-generative-ai-development-companies-usa?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "tech.us",
+         "publication_date": "2026-09-30 00:00:00 +00:00",
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Top Generative AI Companies in the United States - Oct 2026 Rankings",
+         "snippet": null,
+         "domain": "clutch.co",
+         "url": "https://clutch.co/us/developers/artificial-intelligence/generative?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Clutch",
+         "publication_date": "2026-10-23 00:00:00 +00:00",
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Best Generative AI Development Companies (2026)",
+         "snippet": null,
+         "domain": "www.ryzlabs.com",
+         "url": "https://www.ryzlabs.com/best/generative-ai-development-companies?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Ryz Labs",
+         "publication_date": null,
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Top AI Development Companies (2026): Ranked & Compared",
+         "snippet": null,
+         "domain": "www.sophylabs.com",
+         "url": "https://www.sophylabs.com/top-ai-development-companies-usa?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Sophylabs",
+         "publication_date": "2026-10-07 00:00:00 +00:00",
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Official website",
+         "snippet": null,
+         "domain": "www.epam.com",
+         "url": "https://www.epam.com/",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[Official website](https://www.epam.com/)"
+        }
+       ],
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "Digital engineering and technology consulting",
+         "category": "company",
+         "markdown": "EPAM Systems",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 6,
+       "rank_absolute": 12,
+       "markdown": "![10Pearls Company Profile | Reviews | Portfolio - TopDevelopers.co](https://images.openai.com/static-rsc-4/jfVqq2gPxCZ3N1QRkOhvq9DH-dLI1vDJEMXZusNOI7xS9vLvaFikREayjaiNwXMw3--SmNLjlCwnKi-jaZWitFbEFaqYo49iJUUKYik78B_wIUsrxm5Q3e6txORLPULZP2YzblWERGA7UvFS9AznL99KXk_ae7YF3qfONi5NVPKiUHe6AsivOBv5Z-1ur1_H?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://www.topdevelopers.co/profile/tenpearls",
+         "alt": "10Pearls Company Profile | Reviews | Portfolio - TopDevelopers.co",
+         "image_url": "https://images.openai.com/static-rsc-4/jfVqq2gPxCZ3N1QRkOhvq9DH-dLI1vDJEMXZusNOI7xS9vLvaFikREayjaiNwXMw3--SmNLjlCwnKi-jaZWitFbEFaqYo49iJUUKYik78B_wIUsrxm5Q3e6txORLPULZP2YzblWERGA7UvFS9AznL99KXk_ae7YF3qfONi5NVPKiUHe6AsivOBv5Z-1ur1_H?purpose=fullsize",
+         "markdown": "![10Pearls Company Profile | Reviews | Portfolio - TopDevelopers.co](https://images.openai.com/static-rsc-4/jfVqq2gPxCZ3N1QRkOhvq9DH-dLI1vDJEMXZusNOI7xS9vLvaFikREayjaiNwXMw3--SmNLjlCwnKi-jaZWitFbEFaqYo49iJUUKYik78B_wIUsrxm5Q3e6txORLPULZP2YzblWERGA7UvFS9AznL99KXk_ae7YF3qfONi5NVPKiUHe6AsivOBv5Z-1ur1_H?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 7,
+       "rank_absolute": 13,
+       "markdown": "\n\n## 6\\. 10Pearls\n\nAn option for organizations that want product design, custom software engineering, data capabilities, and AI development coordinated through one partner. Particularly relevant when the LLM application is part of a larger digital product.\n\n**Best fit\\:** Healthcare, financial services, and other enterprise product-development programs.\n\nSource: [softaims.com](https://softaims.com/blog/generative-ai-development-companies-usa?utm_source=chatgpt.com)[www.agencycluster.com](https://www.agencycluster.com/top-50/generative-ai-development-agencies?utm_source=chatgpt.com)\n\n[Official website](https://10pearls.com/)\n\n---\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "Top 10 Generative AI Development Companies in the USA (2026)",
+         "snippet": null,
+         "domain": "softaims.com",
+         "url": "https://softaims.com/blog/generative-ai-development-companies-usa?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "softaims.com",
+         "publication_date": "2026-08-24 00:00:00 +00:00",
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Top 50 Generative AI Development Agencies in the USA (2026)",
+         "snippet": null,
+         "domain": "www.agencycluster.com",
+         "url": "https://www.agencycluster.com/top-50/generative-ai-development-agencies?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "AgencyCluster",
+         "publication_date": "2026-03-17 00:00:00 +00:00",
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Official website",
+         "snippet": null,
+         "domain": "10pearls.com",
+         "url": "https://10pearls.com/",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[Official website](https://10pearls.com/)"
+        }
+       ],
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "Digital product development and AI engineering",
+         "category": "company",
+         "markdown": "10Pearls",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 7,
+       "rank_absolute": 14,
+       "markdown": "![Blue Label Labs - Digital Product Specialists | BlueLabel](https://images.openai.com/static-rsc-4/_jFRd7LOcSnLOtErDWlPbuygyL8wNOphBl0dkwMiiJHCv91x1BEz013PTy2KKoiJqdIAzCP7YUEPt8ymQoUbgHi-mfETC9vChsm_2eH4OXUpzdCD-HpjiwnV2FdHY2cu5BqVKnsQJrXi-vC6su1LYbqlLnpRD0dCG3HSb1l3Dq-bAc9FfU3jsUE4Kg7qVGct?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://www.linkedin.com/posts/blue-label-labs_blue-label-labs-digital-product-specialists-activity-6958888244948205568-OpGe",
+         "alt": "Blue Label Labs - Digital Product Specialists | BlueLabel",
+         "image_url": "https://images.openai.com/static-rsc-4/_jFRd7LOcSnLOtErDWlPbuygyL8wNOphBl0dkwMiiJHCv91x1BEz013PTy2KKoiJqdIAzCP7YUEPt8ymQoUbgHi-mfETC9vChsm_2eH4OXUpzdCD-HpjiwnV2FdHY2cu5BqVKnsQJrXi-vC6su1LYbqlLnpRD0dCG3HSb1l3Dq-bAc9FfU3jsUE4Kg7qVGct?purpose=fullsize",
+         "markdown": "![Blue Label Labs - Digital Product Specialists | BlueLabel](https://images.openai.com/static-rsc-4/_jFRd7LOcSnLOtErDWlPbuygyL8wNOphBl0dkwMiiJHCv91x1BEz013PTy2KKoiJqdIAzCP7YUEPt8ymQoUbgHi-mfETC9vChsm_2eH4OXUpzdCD-HpjiwnV2FdHY2cu5BqVKnsQJrXi-vC6su1LYbqlLnpRD0dCG3HSb1l3Dq-bAc9FfU3jsUE4Kg7qVGct?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 8,
+       "rank_absolute": 15,
+       "markdown": "\n\n## 7\\. BlueLabel\n\nWorth considering when user experience and product design matter as much as the underlying LLM architecture. Its profile is particularly relevant for building polished, AI-powered digital products rather than just internal infrastructure.\n\n**Best fit\\:** Customer-facing AI applications and new AI product development.\n\nSource: [softaims.com](https://softaims.com/blog/generative-ai-development-companies-usa?utm_source=chatgpt.com)[www.agencycluster.com](https://www.agencycluster.com/top-50/generative-ai-development-agencies?utm_source=chatgpt.com)\n\n[Official website](https://www.bluelabellabs.com/)\n\n---\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "Top 10 Generative AI Development Companies in the USA (2026)",
+         "snippet": null,
+         "domain": "softaims.com",
+         "url": "https://softaims.com/blog/generative-ai-development-companies-usa?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "softaims.com",
+         "publication_date": "2026-08-24 00:00:00 +00:00",
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Top 50 Generative AI Development Agencies in the USA (2026)",
+         "snippet": null,
+         "domain": "www.agencycluster.com",
+         "url": "https://www.agencycluster.com/top-50/generative-ai-development-agencies?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "AgencyCluster",
+         "publication_date": "2026-03-17 00:00:00 +00:00",
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Official website",
+         "snippet": null,
+         "domain": "www.bluelabellabs.com",
+         "url": "https://www.bluelabellabs.com/",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[Official website](https://www.bluelabellabs.com/)"
+        }
+       ],
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "Digital product and AI development agency",
+         "category": "company",
+         "markdown": "BlueLabel",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 8,
+       "rank_absolute": 16,
+       "markdown": "![Booz Allen Hamilton Selected as Innovation Partner of the Year by Rancher Government Solutions for its Groundbreaking Work with the US Air Force\u2019s Platform One](https://images.openai.com/static-rsc-4/zeUJfo8h1JKls-znuqk2Ja3Ks_A-aIvE8gz69L6ugvs91YGsBk3ubSQbRONoLKb4qPL_j147k5w3FsvQxIN7FnD2wlKV-YPDOsr8Vm54OBlrNh7ih_THY-JWvN4ZvfACANOL0Fq77qwPj5jci1OsQ0Y_1e714wJ8ID9ydaGuBT3PZ7kecHXZMH8kRCGyk0mt?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://www.businesswire.com/news/home/20230207005067/en/Booz-Allen-Hamilton-Selected-as-Innovation-Partner-of-the-Year-by-Rancher-Government-Solutions-for-its-Groundbreaking-Work-with-the-US-Air-Forces-Platform-One",
+         "alt": "Booz Allen Hamilton Selected as Innovation Partner of the Year by Rancher Government Solutions for its Groundbreaking Work with the US Air Force\u2019s Platform One",
+         "image_url": "https://images.openai.com/static-rsc-4/zeUJfo8h1JKls-znuqk2Ja3Ks_A-aIvE8gz69L6ugvs91YGsBk3ubSQbRONoLKb4qPL_j147k5w3FsvQxIN7FnD2wlKV-YPDOsr8Vm54OBlrNh7ih_THY-JWvN4ZvfACANOL0Fq77qwPj5jci1OsQ0Y_1e714wJ8ID9ydaGuBT3PZ7kecHXZMH8kRCGyk0mt?purpose=fullsize",
+         "markdown": "![Booz Allen Hamilton Selected as Innovation Partner of the Year by Rancher Government Solutions for its Groundbreaking Work with the US Air Force\u2019s Platform One](https://images.openai.com/static-rsc-4/zeUJfo8h1JKls-znuqk2Ja3Ks_A-aIvE8gz69L6ugvs91YGsBk3ubSQbRONoLKb4qPL_j147k5w3FsvQxIN7FnD2wlKV-YPDOsr8Vm54OBlrNh7ih_THY-JWvN4ZvfACANOL0Fq77qwPj5jci1OsQ0Y_1e714wJ8ID9ydaGuBT3PZ7kecHXZMH8kRCGyk0mt?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 9,
+       "rank_absolute": 17,
+       "markdown": "\n\n## 8\\. Booz Allen Hamilton\n\nEspecially relevant for government, defense, and security-sensitive enterprise environments where access controls, compliance, and deployment constraints are major considerations.\n\n**Best fit\\:** Public-sector LLM applications and sensitive, highly governed deployments.\n\nSource: [tech.us](https://tech.us/blog/top-generative-ai-development-companies-usa?utm_source=chatgpt.com)[www.sophylabs.com](https://www.sophylabs.com/top-ai-development-companies-usa?utm_source=chatgpt.com)[www.agencycluster.com](https://www.agencycluster.com/top-50/generative-ai-development-agencies?utm_source=chatgpt.com)[www.ryzlabs.com](https://www.ryzlabs.com/best/generative-ai-development-companies?utm_source=chatgpt.com)\n\n[Official website](https://www.boozallen.com/)\n\nThese are **use-case-based recommendations, not a definitive performance ranking**\\. The public rankings are useful for discovery, but you should validate each vendor's actual delivery experience, named engineering team, and production references before selecting one.\n\n## How I would compare the finalists\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "Top Generative AI Providers in the USA for Enterprises",
+         "snippet": null,
+         "domain": "tech.us",
+         "url": "https://tech.us/blog/top-generative-ai-development-companies-usa?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "tech.us",
+         "publication_date": "2026-09-30 00:00:00 +00:00",
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Top AI Development Companies (2026): Ranked & Compared",
+         "snippet": null,
+         "domain": "www.sophylabs.com",
+         "url": "https://www.sophylabs.com/top-ai-development-companies-usa?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Sophylabs",
+         "publication_date": "2026-10-07 00:00:00 +00:00",
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Top 50 Generative AI Development Agencies in the USA (2026)",
+         "snippet": null,
+         "domain": "www.agencycluster.com",
+         "url": "https://www.agencycluster.com/top-50/generative-ai-development-agencies?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "AgencyCluster",
+         "publication_date": "2026-03-17 00:00:00 +00:00",
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Best Generative AI Development Companies (2026)",
+         "snippet": null,
+         "domain": "www.ryzlabs.com",
+         "url": "https://www.ryzlabs.com/best/generative-ai-development-companies?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Ryz Labs",
+         "publication_date": null,
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Official website",
+         "snippet": null,
+         "domain": "www.boozallen.com",
+         "url": "https://www.boozallen.com/",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[Official website](https://www.boozallen.com/)"
+        }
+       ],
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "Technology consulting, analytics, and government AI",
+         "category": "company",
+         "markdown": "Booz Allen Hamilton",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_table",
+       "rank_group": 1,
+       "rank_absolute": 18,
+       "text": null,
+       "markdown": "| Company | Primary reason to shortlist | Engagement to explore |\n|--------|--------|--------|\n| HatchWorks AI | Custom LLM and RAG engineering | Build a production pilot |\n| LeewayHertz | Custom LLM apps and AI agents | End-to-end application development |\n| IBM Consulting | Enterprise governance and complex IT | Enterprise implementation program |\n| Slalom | Cloud and data ecosystem integration | Architecture plus delivery |\n| EPAM Systems | Complex software engineering | Dedicated product engineering team |\n| 10Pearls | AI plus digital product development | Full-cycle product team |\n| BlueLabel | AI product design and user experience | Product discovery and build |\n| Booz Allen Hamilton | Security-sensitive deployments | Governed enterprise or public-sector program |\n\n",
+       "table": {
+        "table_header": [
+         "Company",
+         "Primary reason to shortlist",
+         "Engagement to explore"
+        ],
+        "table_content": [
+         [
+          "HatchWorks AI",
+          "Custom LLM and RAG engineering",
+          "Build a production pilot"
+         ],
+         [
+          "LeewayHertz",
+          "Custom LLM apps and AI agents",
+          "End-to-end application development"
+         ],
+         [
+          "IBM Consulting",
+          "Enterprise governance and complex IT",
+          "Enterprise implementation program"
+         ],
+         [
+          "Slalom",
+          "Cloud and data ecosystem integration",
+          "Architecture plus delivery"
+         ],
+         [
+          "EPAM Systems",
+          "Complex software engineering",
+          "Dedicated product engineering team"
+         ],
+         [
+          "10Pearls",
+          "AI plus digital product development",
+          "Full-cycle product team"
+         ],
+         [
+          "BlueLabel",
+          "AI product design and user experience",
+          "Product discovery and build"
+         ],
+         [
+          "Booz Allen Hamilton",
+          "Security-sensitive deployments",
+          "Governed enterprise or public-sector program"
+         ]
+        ]
+       },
+       "brand_entities": null
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 10,
+       "rank_absolute": 19,
+       "markdown": "\n## What matters most when building an enterprise LLM application\n\nBefore choosing a vendor, verify that its proposed solution addresses these seven areas.\n\n**1\\. RAG and enterprise data integration**\n\nCan the team ingest documents and structured data, preserve metadata, retrieve relevant information, and enforce document-level permissions?\n\n**2\\. Security and governance**\n\nLook for SSO, role-based access, encryption, audit logs, prompt-injection defenses, data-retention controls, and clear contractual rules on data use.\n\n**3\\. Evaluation and reliability**\n\nAsk for an automated evaluation framework covering answer correctness, retrieval quality, hallucinations, regressions, latency, and cost.\n\n**4\\. Enterprise integrations**\n\nVerify experience with your actual systems, such as Microsoft 365, SharePoint, Salesforce, ServiceNow, SAP, internal APIs, and databases.\n\n**5\\. Deployment flexibility**\n\nDetermine whether the application can run in your AWS, Azure, or Google Cloud environment, or in a private/on-premises environment if required.\n\n**6\\. Team quality and ownership**\n\nRequest named senior AI engineers, examples of production deployments, code ownership terms, documentation, and a handover plan.\n\n**7\\. Production operations**\n\nLook for monitoring, tracing, incident response, model-version management, fallback behavior, and ongoing support after launch.\n\n## My recommendation\n\nI would start with **HatchWorks AI, LeewayHertz, and IBM Consulting** as three contrasting candidates: a custom AI engineering partner, a specialist AI application developer, and a large enterprise consultancy. Add Slalom or EPAM if integration with a complex existing technology estate is central to the project.\n\nThe best choice depends on your application scope, security requirements, and whether you need a complete outsourced build or an extension of your internal engineering team.\n\nFor a more targeted shortlist, I can [rank vendors by your project requirements](f) or [compare estimated project costs](f)\\.",
+       "sources": null,
+       "brand_entities": null
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

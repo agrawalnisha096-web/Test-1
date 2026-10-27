@@ -1,0 +1,180 @@
+{
+ "version": "0.1.20261022",
+ "status_code": 20000,
+ "status_message": "Ok.",
+ "time": "10.7587 sec.",
+ "cost": 0.004,
+ "tasks_count": 1,
+ "tasks_error": 0,
+ "tasks": [
+  {
+   "id": "10270243-2577-0139-0000-5c5e2b537f5c",
+   "status_code": 20000,
+   "status_message": "Ok.",
+   "time": "10.6873 sec.",
+   "cost": 0.004,
+   "result_count": 1,
+   "path": [
+    "v3",
+    "serp",
+    "google",
+    "ai_mode",
+    "live",
+    "advanced"
+   ],
+   "data": {
+    "api": "serp",
+    "function": "live",
+    "se": "google",
+    "se_type": "ai_mode",
+    "keyword": "What are the best generative AI development companies in the USA for building an enterprise LLM application?",
+    "location_code": 2840,
+    "language_code": "en",
+    "device": "desktop",
+    "tag": "Q2-ai_mode-1",
+    "os": "windows"
+   },
+   "result": [
+    {
+     "keyword": "What are the best generative AI development companies in the USA for building an enterprise LLM application?",
+     "type": "ai_mode",
+     "se_domain": "google.com",
+     "location_code": 2840,
+     "language_code": "en",
+     "check_url": "https://www.google.com/search?q=What%20are%20the%20best%20generative%20AI%20development%20companies%20in%20the%20USA%20for%20building%20an%20enterprise%20LLM%20application%3F&hl=en&gl=US&udm=50&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+     "datetime": "2026-10-27 02:43:22 +00:00",
+     "spell": null,
+     "refinement_chips": null,
+     "item_types": [
+      "ai_overview"
+     ],
+     "se_results_count": 0,
+     "items_count": 1,
+     "items": [
+      {
+       "type": "ai_overview",
+       "rank_group": 1,
+       "rank_absolute": 1,
+       "page": 1,
+       "position": "left",
+       "xpath": "/html[1]/body[1]/div[2]/div[1]/div[9]/div[1]/section[1]/div[1]/div[1]/div[3]/div[4]/div[1]/div[1]/div[1]/div[3]",
+       "markdown": "When building an enterprise Large Language Model (LLM) application, the choice of a development or consulting partner typically depends on your organization's scale, existing cloud infrastructure, and regulatory requirements.\n\nTop-tier generative AI development and consulting companies operating in the USA are categorized below by their core strengths:\n\n### 1. Global Enterprise & Transformation Leaders\n\n- **Accenture:** Best for **Fortune 500 companies** folding AI into massive, multi-year organizational changes. They possess deep partnerships with all major hyperscalers (AWS, Azure, Google Cloud) and manage multi-million dollar transformation programs.[[1]](https://www.reddit.com/r/AI_Agents/comments/1x441em/we_compared_9_enterprise_ai_consulting_firms_for/)\n- **IBM Consulting:** Best for **highly regulated sectors** (finance, healthcare, government) requiring robust AI governance. Using their **watsonx** framework, they excel at deploying secure, hybrid-cloud, and compliance-driven LLM applications.[[1]](https://tech.us/blog/top-generative-ai-development-companies-usa)[[2]](https://www.reddit.com/r/AI_Agents/comments/1x441em/we_compared_9_enterprise_ai_consulting_firms_for/)\n- **Deloitte:** Best for organizations where **Responsible AI and risk mitigation** are just as critical as the application logic itself, particularly in banking, life sciences, and the public sector.[[1]](https://www.reddit.com/r/AI_Agents/comments/1x441em/we_compared_9_enterprise_ai_consulting_firms_for/)\n\n### 2. Dedicated Enterprise AI & Custom Engineering Firms\n\n- **LeewayHertz:** Best for enterprises looking for **tailor-made, production-ready LLM platforms** and agentic AI workflows. They specialize in fast prototyping through full-scale implementation, connecting custom LLMs directly into legacy enterprise systems.\n- **Cognizant:** Best for scalable, enterprise-grade IT modernization, blending deep technical hackathon-level engineering culture with broad corporate system integration.\n\n### 3. Specialized Model & Retrieval Providers (With Enterprise Deployment)\n\n- **Cohere:** Best if your application relies heavily on **Retrieval-Augmented Generation (RAG)** , precision search, and reranking. They offer data-private and virtual private cloud (VPC) deployment options tailored for enterprise security.\n\nTo help narrow down which partner aligns best with your goals, could you share:\n\n- What is your **industry or regulatory environment** (e.g., HIPAA, FINRA, or general enterprise)?\n- Are you aiming to build on a specific cloud ecosystem like **AWS Bedrock, Azure OpenAI, or Google Cloud Vertex AI**?",
+       "items": [
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "When building an enterprise Large Language Model (LLM) application, the choice of a development or consulting partner typically depends on your organization's scale, existing cloud infrastructure, and regulatory requirements.",
+         "markdown": "When building an enterprise Large Language Model (LLM) application, the choice of a development or consulting partner typically depends on your organization's scale, existing cloud infrastructure, and regulatory requirements.",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "Top-tier generative AI development and consulting companies operating in the USA are categorized below by their core strengths:",
+         "markdown": "Top-tier generative AI development and consulting companies operating in the USA are categorized below by their core strengths:",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": "1. Global Enterprise & Transformation Leaders",
+         "text": "Accenture : Best for Fortune 500 companies folding AI into massive, multi-year organizational changes. They possess deep partnerships with all major hyperscalers (AWS, Azure, Google Cloud) and manage multi-million dollar transformation programs. Accenture IBM Consulting : Best for highly regulated sectors (finance, healthcare, government) requiring robust AI governance. Using their watsonx framework, they excel at deploying secure, hybrid-cloud, and compliance-driven LLM applications. IBM Consulting Deloitte : Best for organizations where Responsible AI and risk mitigation are just as critical as the application logic itself, particularly in banking, life sciences, and the public sector. Deloitte",
+         "markdown": "- **Accenture:** Best for **Fortune 500 companies** folding AI into massive, multi-year organizational changes. They possess deep partnerships with all major hyperscalers (AWS, Azure, Google Cloud) and manage multi-million dollar transformation programs.[[1]](https://www.reddit.com/r/AI_Agents/comments/1x441em/we_compared_9_enterprise_ai_consulting_firms_for/)\n- **IBM Consulting:** Best for **highly regulated sectors** (finance, healthcare, government) requiring robust AI governance. Using their **watsonx** framework, they excel at deploying secure, hybrid-cloud, and compliance-driven LLM applications.[[1]](https://tech.us/blog/top-generative-ai-development-companies-usa)[[2]](https://www.reddit.com/r/AI_Agents/comments/1x441em/we_compared_9_enterprise_ai_consulting_firms_for/)\n- **Deloitte:** Best for organizations where **Responsible AI and risk mitigation** are just as critical as the application logic itself, particularly in banking, life sciences, and the public sector.[[1]](https://www.reddit.com/r/AI_Agents/comments/1x441em/we_compared_9_enterprise_ai_consulting_firms_for/)",
+         "links": null,
+         "images": null,
+         "references": [
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Reddit",
+           "domain": "www.reddit.com",
+           "url": "https://www.reddit.com/r/AI_Agents/comments/1x441em/we_compared_9_enterprise_ai_consulting_firms_for/",
+           "title": "We compared 9 enterprise AI consulting firms for 2026, from ...",
+           "text": "Best for: Fortune 500s folding AI into a multi-year program. Trade-off: cost, timelines, and a lot of layers between strategy and ..."
+          },
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Tech.us",
+           "domain": "tech.us",
+           "url": "https://tech.us/blog/top-generative-ai-development-companies-usa",
+           "title": "Top Generative AI Development Companies in USA - Tech.us",
+           "text": "Deployment orientation: Enterprise and hybrid-cloud environments. Roughly $155\u2013$221 per consultant hour. Best suited for Global en..."
+          }
+         ]
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": "2. Dedicated Enterprise AI & Custom Engineering Firms",
+         "text": "LeewayHertz : Best for enterprises looking for tailor-made, production-ready LLM platforms and agentic AI workflows. They specialize in fast prototyping through full-scale implementation, connecting custom LLMs directly into legacy enterprise systems. LeewayHertz Cognizant : Best for scalable, enterprise-grade IT modernization, blending deep technical hackathon-level engineering culture with broad corporate system integration. Cognizant",
+         "markdown": "- **LeewayHertz:** Best for enterprises looking for **tailor-made, production-ready LLM platforms** and agentic AI workflows. They specialize in fast prototyping through full-scale implementation, connecting custom LLMs directly into legacy enterprise systems.\n- **Cognizant:** Best for scalable, enterprise-grade IT modernization, blending deep technical hackathon-level engineering culture with broad corporate system integration.",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": "3. Specialized Model & Retrieval Providers (With Enterprise Deployment)",
+         "text": "Cohere : Best if your application relies heavily on Retrieval-Augmented Generation (RAG), precision search, and reranking. They offer data-private and virtual private cloud (VPC) deployment options tailored for enterprise security. Cohere",
+         "markdown": "- **Cohere:** Best if your application relies heavily on **Retrieval-Augmented Generation (RAG)** , precision search, and reranking. They offer data-private and virtual private cloud (VPC) deployment options tailored for enterprise security.",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "To help narrow down which partner aligns best with your goals, could you share:",
+         "markdown": "To help narrow down which partner aligns best with your goals, could you share:",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "What is your industry or regulatory environment (e.g., HIPAA, FINRA, or general enterprise)? Are you aiming to build on a specific cloud ecosystem like AWS Bedrock, Azure OpenAI, or Google Cloud Vertex AI ?",
+         "markdown": "- What is your **industry or regulatory environment** (e.g., HIPAA, FINRA, or general enterprise)?\n- Are you aiming to build on a specific cloud ecosystem like **AWS Bedrock, Azure OpenAI, or Google Cloud Vertex AI**?",
+         "links": null,
+         "images": null,
+         "references": null
+        }
+       ],
+       "references": [
+        {
+         "type": "ai_overview_reference",
+         "position": "right",
+         "source": "Tech.us",
+         "domain": "tech.us",
+         "url": "https://tech.us/blog/top-generative-ai-development-companies-usa",
+         "title": "Top Generative AI Development Companies in USA - Tech.us",
+         "text": "Deployment orientation: Enterprise and hybrid-cloud environments. Roughly $155\u2013$221 per consultant hour. Best suited for Global enterprises deploying AI across mul..."
+        },
+        {
+         "type": "ai_overview_reference",
+         "position": "right",
+         "source": "Reddit",
+         "domain": "www.reddit.com",
+         "url": "https://www.reddit.com/r/AI_Agents/comments/1x441em/we_compared_9_enterprise_ai_consulting_firms_for/",
+         "title": "We compared 9 enterprise AI consulting firms for 2026, from ...",
+         "text": "their own governed AI platform, Deloitte Size ~483,000 | HQ New York Leans hard into responsible AI and governance, especially in financial services, healthcare, a..."
+        }
+       ],
+       "rectangle": null
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

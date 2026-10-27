@@ -1,0 +1,229 @@
+{
+ "version": "0.1.20261022",
+ "status_code": 20000,
+ "status_message": "Ok.",
+ "time": "8.3511 sec.",
+ "cost": 0.004,
+ "tasks_count": 1,
+ "tasks_error": 0,
+ "tasks": [
+  {
+   "id": "10270242-2577-0139-0000-6d6019464681",
+   "status_code": 20000,
+   "status_message": "Ok.",
+   "time": "8.2633 sec.",
+   "cost": 0.004,
+   "result_count": 1,
+   "path": [
+    "v3",
+    "serp",
+    "google",
+    "ai_mode",
+    "live",
+    "advanced"
+   ],
+   "data": {
+    "api": "serp",
+    "function": "live",
+    "se": "google",
+    "se_type": "ai_mode",
+    "keyword": "Which companies should a US enterprise consider to build custom AI agents? Give me a shortlist with a reason for each.",
+    "location_code": 2840,
+    "language_code": "en",
+    "device": "desktop",
+    "tag": "Q1-ai_mode-1",
+    "os": "windows"
+   },
+   "result": [
+    {
+     "keyword": "Which companies should a US enterprise consider to build custom AI agents? Give me a shortlist with a reason for each.",
+     "type": "ai_mode",
+     "se_domain": "google.com",
+     "location_code": 2840,
+     "language_code": "en",
+     "check_url": "https://www.google.com/search?q=Which%20companies%20should%20a%20US%20enterprise%20consider%20to%20build%20custom%20AI%20agents%3F%20Give%20me%20a%20shortlist%20with%20a%20reason%20for%20each.&hl=en&gl=US&udm=50&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+     "datetime": "2026-10-27 02:42:56 +00:00",
+     "spell": null,
+     "refinement_chips": null,
+     "item_types": [
+      "ai_overview"
+     ],
+     "se_results_count": 0,
+     "items_count": 1,
+     "items": [
+      {
+       "type": "ai_overview",
+       "rank_group": 1,
+       "rank_absolute": 1,
+       "page": 1,
+       "position": "left",
+       "xpath": "/html[1]/body[1]/div[2]/div[1]/div[9]/div[1]/section[1]/div[1]/div[1]/div[3]/div[4]/div[1]/div[1]/div[1]/div[3]",
+       "markdown": "When evaluating partners or platforms to build custom AI agents, a US enterprise should look at providers spanning native cloud ecosystems, dedicated enterprise app platforms, and premier systems integrators.\n\nA strategic shortlist categorized by provider type, along with the core reason to consider each, includes:\n\n### 1. Cloud & Ecosystem Giants (Best for Native Infrastructure & Scale)\n\n- **Microsoft Azure AI / Copilot Studio** \n\t- **The Reason:** Ideal for enterprises deeply embedded in the Microsoft 365, Teams, and Azure ecosystem. It provides managed agent infrastructure via Azure AI Foundry and Microsoft Copilot Studio , allowing agents to safely leverage existing enterprise controls, identity management (Entra ID), and data stored in SharePoint or Dynamics 365.[[1]](https://www.outsystems.com/ai/ai-agent-development-platforms)\n- **Amazon Web Services (AWS)** \n\t- **The Reason:** Great for technical teams wanting architectural flexibility using Amazon Bedrock Agents. AWS heavily supports custom builds via enterprise programs, offering robust integration with secure internal data stores, custom tooling, and granular model choice (from Anthropic, Meta, and Amazon's own models).[[1]](https://www.airtable.com/articles/enterprise-ai-agent-builder-platforms)\n\n### 2. Enterprise SaaS Platforms (Best for Workflow & CRM Integration)\n\n- **Salesforce Agentforce** \n\t- **The Reason:** The go-to choice if your agent needs deep, secure grounding in customer relationship data, service histories, and sales operations. Agentforce allows autonomous actions tied directly to CRM triggers without messy custom middleware.[[1]](https://www.outsystems.com/ai/ai-agent-development-platforms)\n- **Moveworks (Agent Studio)** \n\t- **The Reason:** Exceptional for employee-facing and IT/HR operational automation. Their Agent Studio provides low-code tooling specifically designed to map business APIs to natural language actions quickly, backed by proven massive-scale enterprise deployments.\n\n### 3. Frontier AI Labs (Best for Direct Engineering & Cutting-Edge Capabilities)\n\n- **OpenAI (Enterprise Deployment Services)** \n\t- **The Reason:** Best for organizations heavily committed to bleeding-edge reasoning models. OpenAI's enterprise deployment arms work directly with major corporations to co-develop, tailor, and optimize agent workflows around custom data pipelines.[[1]](https://www.pixelmatters.com/insights/top-ai-agent-development-companies)\n\n### 4. Global System Integrators (Best for End-to-End Transformation)\n\n- **Accenture (AI Refinery)** \n\t- **The Reason:** Best when an enterprise lacks internal pro-code engineering bandwidth and needs a bespoke, multi-year program. Accenture builds custom agent architectures atop platforms like Nvidia's AI Enterprise and major clouds using hundreds of pre-built domain templates.[[1]](https://www.pixelmatters.com/insights/top-ai-agent-development-companies)\n\nTo help narrow down this list, could you share:\n\n- What is the **primary use case** for the AI agent (e.g., customer service, internal IT support, automated data analysis)?\n- Which **cloud or productivity ecosystem** (Microsoft, Salesforce, AWS, Google Cloud) does your organization primarily rely on?",
+       "items": [
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "When evaluating partners or platforms to build custom AI agents, a US enterprise should look at providers spanning native cloud ecosystems, dedicated enterprise app platforms, and premier systems integrators.",
+         "markdown": "When evaluating partners or platforms to build custom AI agents, a US enterprise should look at providers spanning native cloud ecosystems, dedicated enterprise app platforms, and premier systems integrators.",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "A strategic shortlist categorized by provider type, along with the core reason to consider each, includes:",
+         "markdown": "A strategic shortlist categorized by provider type, along with the core reason to consider each, includes:",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": "1. Cloud & Ecosystem Giants (Best for Native Infrastructure & Scale)",
+         "text": "Microsoft Azure AI / Copilot Studio Microsoft Azure AI / Copilot Studio The Reason: Ideal for enterprises deeply embedded in the Microsoft 365, Teams, and Azure ecosystem. It provides managed agent infrastructure via Azure AI Foundry and Microsoft Copilot Studio, allowing agents to safely leverage existing enterprise controls, identity management (Entra ID), and data stored in SharePoint or Dynamics 365. Microsoft Copilot Studio Amazon Web Services (AWS) Amazon Web Services (AWS) The Reason: Great for technical teams wanting architectural flexibility using Amazon Bedrock Agents. AWS heavily supports custom builds via enterprise programs, offering robust integration with secure internal data stores, custom tooling, and granular model choice (from Anthropic, Meta, and Amazon's own models).",
+         "markdown": "- **Microsoft Azure AI / Copilot Studio** \n\t- **The Reason:** Ideal for enterprises deeply embedded in the Microsoft 365, Teams, and Azure ecosystem. It provides managed agent infrastructure via Azure AI Foundry and Microsoft Copilot Studio , allowing agents to safely leverage existing enterprise controls, identity management (Entra ID), and data stored in SharePoint or Dynamics 365.[[1]](https://www.outsystems.com/ai/ai-agent-development-platforms)\n- **Amazon Web Services (AWS)** \n\t- **The Reason:** Great for technical teams wanting architectural flexibility using Amazon Bedrock Agents. AWS heavily supports custom builds via enterprise programs, offering robust integration with secure internal data stores, custom tooling, and granular model choice (from Anthropic, Meta, and Amazon's own models).[[1]](https://www.airtable.com/articles/enterprise-ai-agent-builder-platforms)",
+         "links": null,
+         "images": null,
+         "references": [
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "OutSystems",
+           "domain": "www.outsystems.com",
+           "url": "https://www.outsystems.com/ai/ai-agent-development-platforms",
+           "title": "8 AI Agent Development Platforms for Enterprise Use Cases",
+           "text": "Best for: Microsoft-centric enterprises that want to build and govern AI agents across Microsoft 365, Power Platform, and connecte..."
+          },
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Airtable",
+           "domain": "www.airtable.com",
+           "url": "https://www.airtable.com/articles/enterprise-ai-agent-builder-platforms",
+           "title": "Enterprise AI Agent Builder Platforms - Airtable",
+           "text": "Open-source libraries like LangChain, LangGraph, CrewAI, and AutoGen \u2014 handle the logic of an agent: how it reasons, calls tools, ..."
+          }
+         ]
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": "2. Enterprise SaaS Platforms (Best for Workflow & CRM Integration)",
+         "text": "Salesforce Agentforce Salesforce Agentforce The Reason: The go-to choice if your agent needs deep, secure grounding in customer relationship data, service histories, and sales operations. Agentforce allows autonomous actions tied directly to CRM triggers without messy custom middleware. Moveworks (Agent Studio) Moveworks (Agent Studio) The Reason: Exceptional for employee-facing and IT/HR operational automation. Their Agent Studio provides low-code tooling specifically designed to map business APIs to natural language actions quickly, backed by proven massive-scale enterprise deployments.",
+         "markdown": "- **Salesforce Agentforce** \n\t- **The Reason:** The go-to choice if your agent needs deep, secure grounding in customer relationship data, service histories, and sales operations. Agentforce allows autonomous actions tied directly to CRM triggers without messy custom middleware.[[1]](https://www.outsystems.com/ai/ai-agent-development-platforms)\n- **Moveworks (Agent Studio)** \n\t- **The Reason:** Exceptional for employee-facing and IT/HR operational automation. Their Agent Studio provides low-code tooling specifically designed to map business APIs to natural language actions quickly, backed by proven massive-scale enterprise deployments.",
+         "links": null,
+         "images": null,
+         "references": [
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "OutSystems",
+           "domain": "www.outsystems.com",
+           "url": "https://www.outsystems.com/ai/ai-agent-development-platforms",
+           "title": "8 AI Agent Development Platforms for Enterprise Use Cases",
+           "text": "Enterprises already invested in Salesforce that want AI agents grounded in CRM data and embedded directly into customer, employee, sales, and service workflows."
+          }
+         ]
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": "3. Frontier AI Labs (Best for Direct Engineering & Cutting-Edge Capabilities)",
+         "text": "OpenAI (Enterprise Deployment Services) OpenAI (Enterprise Deployment Services) The Reason: Best for organizations heavily committed to bleeding-edge reasoning models. OpenAI's enterprise deployment arms work directly with major corporations to co-develop, tailor, and optimize agent workflows around custom data pipelines.",
+         "markdown": "- **OpenAI (Enterprise Deployment Services)** \n\t- **The Reason:** Best for organizations heavily committed to bleeding-edge reasoning models. OpenAI's enterprise deployment arms work directly with major corporations to co-develop, tailor, and optimize agent workflows around custom data pipelines.[[1]](https://www.pixelmatters.com/insights/top-ai-agent-development-companies)",
+         "links": null,
+         "images": null,
+         "references": [
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Pixelmatters",
+           "domain": "www.pixelmatters.com",
+           "url": "https://www.pixelmatters.com/insights/top-ai-agent-development-companies",
+           "title": "Top AI agent development companies in 2026: who builds what",
+           "text": "Large organizations committed to OpenAI models that want engineers on site Diagnostic first, then custom quote $4 billion of initi..."
+          }
+         ]
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": "4. Global System Integrators (Best for End-to-End Transformation)",
+         "text": "Accenture (AI Refinery) Accenture (AI Refinery) The Reason: Best when an enterprise lacks internal pro-code engineering bandwidth and needs a bespoke, multi-year program. Accenture builds custom agent architectures atop platforms like Nvidia's AI Enterprise and major clouds using hundreds of pre-built domain templates.",
+         "markdown": "- **Accenture (AI Refinery)** \n\t- **The Reason:** Best when an enterprise lacks internal pro-code engineering bandwidth and needs a bespoke, multi-year program. Accenture builds custom agent architectures atop platforms like Nvidia's AI Enterprise and major clouds using hundreds of pre-built domain templates.[[1]](https://www.pixelmatters.com/insights/top-ai-agent-development-companies)",
+         "links": null,
+         "images": null,
+         "references": [
+          {
+           "type": "ai_overview_reference",
+           "position": "left",
+           "source": "Pixelmatters",
+           "domain": "www.pixelmatters.com",
+           "url": "https://www.pixelmatters.com/insights/top-ai-agent-development-companies",
+           "title": "Top AI agent development companies in 2026: who builds what",
+           "text": "Multi-year, multi-function agent programs 300+ pre-built agent skills and workflows \u2026 inside Salesforce, SAP, Oracle or similar platforms"
+          }
+         ]
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "To help narrow down this list, could you share:",
+         "markdown": "To help narrow down this list, could you share:",
+         "links": null,
+         "images": null,
+         "references": null
+        },
+        {
+         "type": "ai_overview_element",
+         "position": "left",
+         "title": null,
+         "text": "What is the primary use case for the AI agent (e.g., customer service, internal IT support, automated data analysis)? Which cloud or productivity ecosystem (Microsoft, Salesforce, AWS, Google Cloud) does your organization primarily rely on?",
+         "markdown": "- What is the **primary use case** for the AI agent (e.g., customer service, internal IT support, automated data analysis)?\n- Which **cloud or productivity ecosystem** (Microsoft, Salesforce, AWS, Google Cloud) does your organization primarily rely on?",
+         "links": null,
+         "images": null,
+         "references": null
+        }
+       ],
+       "references": [
+        {
+         "type": "ai_overview_reference",
+         "position": "right",
+         "source": "OutSystems",
+         "domain": "www.outsystems.com",
+         "url": "https://www.outsystems.com/ai/ai-agent-development-platforms",
+         "title": "8 AI Agent Development Platforms for Enterprise Use Cases",
+         "text": "Enterprises already invested in Salesforce that want AI agents grounded in CRM data and embedded directly into customer, employee, sales, and service workflows."
+        },
+        {
+         "type": "ai_overview_reference",
+         "position": "right",
+         "source": "Pixelmatters",
+         "domain": "www.pixelmatters.com",
+         "url": "https://www.pixelmatters.com/insights/top-ai-agent-development-companies",
+         "title": "Top AI agent development companies in 2026: who builds what",
+         "text": "Multi-year, multi-function agent programs 300+ pre-built agent skills and workflows \u2026 inside Salesforce, SAP, Oracle or similar platforms"
+        },
+        {
+         "type": "ai_overview_reference",
+         "position": "right",
+         "source": "Airtable",
+         "domain": "www.airtable.com",
+         "url": "https://www.airtable.com/articles/enterprise-ai-agent-builder-platforms",
+         "title": "Enterprise AI Agent Builder Platforms - Airtable",
+         "text": "Open-source libraries like LangChain, LangGraph, CrewAI, and AutoGen \u2014 handle the logic of an agent: how it reasons, calls tools, and hands work off to other agent..."
+        }
+       ],
+       "rectangle": null
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

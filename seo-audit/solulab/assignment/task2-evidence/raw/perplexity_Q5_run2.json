@@ -1,0 +1,131 @@
+{
+ "version": "0.1.20261022",
+ "status_code": 20000,
+ "status_message": "Ok.",
+ "time": "5.7792 sec.",
+ "cost": 0.006533,
+ "tasks_count": 1,
+ "tasks_error": 0,
+ "tasks": [
+  {
+   "id": "10270245-2577-0612-0000-456578e26986",
+   "status_code": 20000,
+   "status_message": "Ok.",
+   "time": "5.7674 sec.",
+   "cost": 0.006533,
+   "result_count": 1,
+   "path": [
+    "v3",
+    "ai_optimization",
+    "perplexity",
+    "llm_responses",
+    "live"
+   ],
+   "data": {
+    "api": "ai_optimization",
+    "function": "llm_responses",
+    "se": "perplexity",
+    "user_prompt": "How much does it cost to hire a company to build an AI agent, and which firms offer this service?",
+    "model_name": "sonar",
+    "max_output_tokens": 2048,
+    "web_search_country_iso_code": "US",
+    "tag": "Q5-perplexity-2"
+   },
+   "result": [
+    {
+     "model_name": "sonar",
+     "input_tokens": 29,
+     "output_tokens": 904,
+     "reasoning_tokens": 0,
+     "web_search": true,
+     "money_spent": 0.005933,
+     "datetime": "2026-10-27 02:45:11 +00:00",
+     "items": [
+      {
+       "type": "message",
+       "sections": [
+        {
+         "type": "text",
+         "text": "Hiring a company to build an AI agent typically costs **$10,000\u2013$100,000**, while production-grade or enterprise systems can cost **$150,000\u2013$500,000+**. A simple agent may cost less, but integrations, data access, security, testing, and ongoing support usually determine the final price.[1][3][6]\n\n## Typical cost ranges\n\n| Project type | Typical one-time cost | Ongoing costs |\n|---|---:|---:|\n| Simple FAQ or single-task agent | $5,000\u2013$15,000 | Model, hosting, and monitoring |\n| Agent using company documents and a few tools | $20,000\u2013$50,000 | Often $500\u2013$5,000+/month |\n| Workflow agent with multiple integrations | $40,000\u2013$120,000 | Maintenance and usage-based infrastructure |\n| Multi-agent or regulated system | $150,000\u2013$500,000+ | Security, evaluation, support, and infrastructure |\n| Enterprise-wide agent platform | $300,000\u2013$800,000+ | Often substantial annual operating costs |\n\nThese are market estimates rather than fixed rate cards. One published estimate puts production-ready agents at $40,000\u2013$180,000, with mid-complexity annual operating costs around $40,000\u2013$120,000.[6]\n\n## Firms that offer AI-agent development\n\n**Custom development and systems integrators**\n\n- **Accenture** \u2014 large enterprise transformations; projects commonly start in the hundreds of thousands.[8]\n- **Deloitte Digital** \u2014 regulated industries and enterprise implementations.[8]\n- **Infosys** \u2014 large-scale IT automation and enterprise deployments.[8]\n- **Booz Allen Hamilton** \u2014 government and defense applications.[8]\n- **LeewayHertz** \u2014 enterprise agents, integrations, and AgentOps.[2]\n- **DEVCOM** \u2014 custom development for larger organizations.[2]\n- **JADA Squad** \u2014 enterprise agent development and handoff.[2]\n- **Neurons Lab** \u2014 finance and mid-market-to-enterprise projects.[2]\n\n**Mid-market and boutique firms**\n\n- **AI Makers** \u2014 custom agents for small and mid-sized businesses.[2]\n- **VantaSoft** \u2014 advertises builds starting at $1,000, plus hosting and maintenance from $200/month.[1]\n- **LOW/CODE Agency** \u2014 custom production agents starting around $10,000.[8]\n- **10Pearls** \u2014 custom AI development, with listed projects beginning around $50,000.[8]\n- **Wizeline** \u2014 product-focused AI projects, with listed projects beginning around $75,000.[8]\n- **EnactOn Technologies, Spiral Scout, Qubika, Markovate, Azumo, Softermii, Simform, and Trigma** \u2014 listed as AI-agent development providers, with reported minimum projects ranging from $5,000 to $100,000.[3]\n\n**Managed or packaged agent providers**\n\n- **Moveworks** \u2014 enterprise internal-support agents, generally priced as tailored enterprise packages.[2]\n- **LuMay** \u2014 packaged voice, insight, workflow, legal, and compliance agents; published plans range from $249/month to $10,000/month, with custom pilots starting around $25,000.[2]\n- **SlashDev** \u2014 offers starter deployments from about $500 and larger implementations up to enterprise scale.[9]\n\n## What drives the quote\n\nThe largest cost factors are:\n\n- Number of systems and APIs the agent must connect to\n- Whether it needs document retrieval, memory, or multiple specialized agents\n- Data privacy, compliance, audit logs, and human approval steps\n- Voice, telephony, or real-time capabilities\n- Testing, monitoring, reliability, and security requirements\n- Expected usage and model-inference volume\n\nFor a business testing one useful workflow, a sensible initial budget is **$15,000\u2013$50,000** for a narrowly scoped production pilot, plus **$500\u2013$5,000 per month** for hosting, model usage, and monitoring.[3] For a system that can take consequential actions across several business systems, budget **$50,000\u2013$180,000+** and require a detailed statement of work.",
+         "annotations": [
+          {
+           "title": "AI Agent Development Cost: How Much to Build One | VantaSoft",
+           "url": "https://www.vantasoft.com/insights/how-much-does-an-ai-agent-cost",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "9 AI Agent Development Companies and What They Charge",
+           "url": "https://www.vantasoft.com/insights/ai-agent-development-companies",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "10 Best AI Agent Development Companies (2026)",
+           "url": "https://www.enacton.com/blog/ai-agent-development-companies/",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "10 AI Agent Development Companies Compared",
+           "url": "https://factoryjet.com/blog/best-ai-agent-development-companies-2026",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "The 12 Best AI Agent Development Companies in 2026",
+           "url": "https://inveritasoft.com/blog-top-ai-agent-development-companies",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "11 Best AI Agent Development Companies in 2026",
+           "url": "https://www.spaceotechnologies.com/blog/ai-agent-development-companies/",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "10 Best AI Voice Agent Development Companies (2027)",
+           "url": "https://www.enacton.com/blog/ai-voice-agent-development-companies/",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "14 Best AI Agent Development Companies 2026 | LOW/CODE",
+           "url": "https://www.lowcode.agency/blog/best-ai-agent-development-companies",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "Frequently Asked Questions \u2014 AI Agents, Development & GEO",
+           "url": "https://slashdev.io/faq",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "Top 15 AI Agent Development Companies 2026: How To Choose",
+           "url": "https://www.scalacode.com/blog/top-ai-agent-development-companies/",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "fan_out_queries": null
+    }
+   ]
+  }
+ ]
+}

@@ -51,6 +51,8 @@ COMPETITORS = [
     "Globant", "Thoughtworks", "Slalom", "Kanerika", "Vention", "Code Brew", "Hyperlink InfoSystem",
     "Intuz", "Biz4Group", "Matellio", "Rapid Innovation", "Signity", "Webisoft",
 ]
+STOPWORDS = {"and", "the", "for", "with", "to", "before", "how", "what", "of", "a", "an", "on",
+             "in", "would", "I", "your", "you", "if", "vs", "is", "are", "by", "from", "when", "why"}
 # DataForSEO location codes / ISO codes per market
 MARKETS = {
     "US": {"location_code": 2840, "iso": "US"},
@@ -121,12 +123,43 @@ def parse(platform, resp):
             for sec in it.get("sections") or []:
                 answer += sec.get("text") or ""
                 urls += [a.get("url") for a in (sec.get("annotations") or [])]
-    urls = list(dict.fromkeys(u for u in urls if u))
+    # Inline markdown links: AI Mode puts its citations here, ChatGPT repeats them here.
+    urls += re.findall(r"(?<!!)\[[^\]]*\]\((https?://[^)\s]+)\)", answer)  # skip ![image](...) links
+    urls = list(dict.fromkeys(clean_url(u) for u in urls if u and "images.openai.com" not in u))
+    retrieved = [clean_url(s.get("url")) for s in (result.get("search_results") or []) if s.get("url")]
     return {
         "status": task.get("status_code"), "status_message": task.get("status_message"),
         "cost": task.get("cost"), "datetime": result.get("datetime"),
-        "answer": answer, "urls": urls,
+        "answer": answer, "urls": urls, "retrieved": retrieved, "entities": named_entities(answer),
     }
+
+
+def clean_url(u):
+    """Drop tracking params such as utm_source=chatgpt.com so URLs dedupe."""
+    s = urllib.parse.urlsplit(u)
+    q = [(k, v) for k, v in urllib.parse.parse_qsl(s.query) if not k.startswith("utm_")]
+    return urllib.parse.urlunsplit((s.scheme, s.netloc, s.path, urllib.parse.urlencode(q), ""))
+
+
+def named_entities(answer):
+    """Names an answer recommends: the bold or heading text that opens a numbered or bulleted
+    entry ("- **Accenture** - ...", "**1. Accenture**", "### 2. IBM"), plus first cells of tables."""
+    names, lines = [], answer.replace("\\", "").splitlines()
+    for i, line in enumerate(lines):
+        m = (re.match(r"^\s*(?:[-*\u2022]|\d+[.)])\s+\*\*([^*]{2,80}?)\*\*", line)
+             or re.match(r"^\s*\*\*\d+[.)]\s*([^*]{2,80}?)\*\*\s*$", line)
+             or re.match(r"^\s*#{2,4}\s+\d+[.)]\s*(.{2,80})$", line))
+        if not m and line.startswith("|") and i >= 2 and re.match(r"^\|[\s:|-]+\|$", lines[i - 1].strip()) is None \
+                and any(re.match(r"^\|[\s:|-]+\|$", lines[j].strip()) for j in range(max(0, i - 40), i)):
+            m = re.match(r"^\|\s*\**([^|*]{2,60}?)\**\s*\|", line)
+        if m:
+            name = re.split(r"\s+[\u2014\u2013(-]\s*|:\s*", m.group(1).strip(" *:"))[0].strip(" *:")
+            words = name.split()
+            if len(words) > 5 or any(w in STOPWORDS for w in words):
+                continue  # section headings, not company names
+            if name and name.lower() not in {n.lower() for n in names}:
+                names.append(name)
+    return names
 
 
 def brand_positions(answer):
@@ -155,6 +188,7 @@ def main():
     ap.add_argument("--out", default="dfs-runs")
     ap.add_argument("--workers", type=int, default=6)
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--reparse", action="store_true", help="rebuild runs.csv/summary.md from saved raw files, no API calls")
     args = ap.parse_args()
 
     prompts = list(csv.DictReader(open(args.prompts, newline="")))
@@ -169,13 +203,27 @@ def main():
         return
 
     login, pw = os.environ.get("DATAFORSEO_LOGIN"), os.environ.get("DATAFORSEO_PASSWORD")
-    if not (login and pw):
+    if not (login and pw) and not args.reparse:
         sys.exit("Set DATAFORSEO_LOGIN and DATAFORSEO_PASSWORD in the environment.")
     session = requests.Session()
     session.auth = (login, pw)
 
     out = pathlib.Path(args.out)
     (out / "raw").mkdir(parents=True, exist_ok=True)
+
+    def from_raw(j):
+        platform, q, n = j
+        f = out / "raw" / f"{platform}_{q['query_id']}_run{n}.json"
+        if not f.exists():
+            return {"job": j, "error": "no raw file"}
+        resp = json.loads(f.read_text())
+        parsed = parse(platform, resp)
+        stamp = parsed["datetime"] or ""
+        try:
+            started = dt.datetime.strptime(stamp[:19], "%Y-%m-%d %H:%M:%S")
+        except ValueError:
+            started = dt.datetime.fromtimestamp(f.stat().st_mtime, dt.timezone.utc)
+        return {"job": j, "parsed": parsed, "started": started}
 
     def job(j):
         platform, q, n = j
@@ -189,8 +237,11 @@ def main():
         (out / "raw" / f"{platform}_{q['query_id']}_run{n}.json").write_text(json.dumps(resp, indent=1))
         return {"job": j, "parsed": parse(platform, resp), "started": started}
 
-    with ThreadPoolExecutor(args.workers) as ex:
-        results = list(ex.map(job, jobs))
+    if args.reparse:
+        results = [from_raw(j) for j in jobs]
+    else:
+        with ThreadPoolExecutor(args.workers) as ex:
+            results = list(ex.map(job, jobs))
 
     rows, total_cost = [], 0.0
     for r in results:
@@ -203,6 +254,7 @@ def main():
         if p["status"] != 20000:
             print(f"TASK ERROR {platform} {q['query_id']} run {n}: {p['status']} {p['status_message']}")
         sl_urls = [u for u in p["urls"] if "solulab.com" in domain(u)]
+        sl_retrieved = [u for u in p["retrieved"] if "solulab.com" in domain(u)]
         pos, comps = brand_positions(p["answer"])
         rows.append({
             "query_id": q["query_id"], "platform": platform, "mode": "DataForSEO API",
@@ -215,6 +267,8 @@ def main():
             "position_in_list": pos, "competitor_brands": "; ".join(comps),
             "cited_urls": " | ".join(p["urls"]), "facts_about_solulab_correct": "",
             "screenshot_file": f"raw/{platform}_{q['query_id']}_run{n}.json",
+            "named_entities": "; ".join(p["entities"]),
+            "solulab_retrieved_not_cited": " | ".join(u for u in sl_retrieved if u not in sl_urls),
             "notes": f"status {p['status']}; answer_chars {len(p['answer'])}; api_datetime {p['datetime']}",
         })
 
@@ -231,6 +285,7 @@ def main():
              "| ID | Platform | Mentioned | Cited | SoluLab URL(s) cited | Top competitors (runs) | Top cited domains (runs) |",
              "|---|---|---|---|---|---|---|"]
     by = collections.defaultdict(list)
+    named = {}
     for row in rows:
         by[(row["query_id"], row["platform"])].append(row)
     for (qid, plat), g in sorted(by.items()):
@@ -240,9 +295,14 @@ def main():
         sl = sorted({u for r in g for u in r["solulab_cited_urls"].split(" | ") if u})
         comp = collections.Counter(c for r in g for c in set(filter(None, r["competitor_brands"].split("; "))))
         doms = collections.Counter(d for r in g for d in {domain(u) for u in r["cited_urls"].split(" | ") if u})
+        ents = collections.Counter(e for r in g for e in set(filter(None, r["named_entities"].split("; "))))
+        named[(qid, plat)] = ents
         lines.append(f"| {qid} | {plat} | {ment}/{k} | {cit}/{k} | {'<br>'.join(sl) or '-'} | "
                      f"{', '.join(f'{c} ({v})' for c, v in comp.most_common(6)) or '-'} | "
                      f"{', '.join(f'{d} ({v})' for d, v in doms.most_common(6)) or '-'} |")
+    lines += ["", "## Names recommended in the answers (runs naming each)", ""]
+    for (qid, plat), ents in sorted(named.items()):
+        lines.append(f"- **{qid} / {plat}:** " + (", ".join(f"{e} ({v})" for e, v in ents.most_common(12)) or "-"))
     third = collections.Counter(d for r in rows for d in {domain(u) for u in r["cited_urls"].split(" | ") if u}
                                 if "solulab.com" not in d)
     lines += ["", "## Third-party domains cited most (all queries, all platforms) - E1 source list", "",

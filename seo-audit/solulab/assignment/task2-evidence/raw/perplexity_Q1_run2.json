@@ -1,0 +1,131 @@
+{
+ "version": "0.1.20261022",
+ "status_code": 20000,
+ "status_message": "Ok.",
+ "time": "4.2442 sec.",
+ "cost": 0.006173,
+ "tasks_count": 1,
+ "tasks_error": 0,
+ "tasks": [
+  {
+   "id": "10270242-2577-0612-0000-d578034c7385",
+   "status_code": 20000,
+   "status_message": "Ok.",
+   "time": "4.2139 sec.",
+   "cost": 0.006173,
+   "result_count": 1,
+   "path": [
+    "v3",
+    "ai_optimization",
+    "perplexity",
+    "llm_responses",
+    "live"
+   ],
+   "data": {
+    "api": "ai_optimization",
+    "function": "llm_responses",
+    "se": "perplexity",
+    "user_prompt": "Which companies should a US enterprise consider to build custom AI agents? Give me a shortlist with a reason for each.",
+    "model_name": "sonar",
+    "max_output_tokens": 2048,
+    "web_search_country_iso_code": "US",
+    "tag": "Q1-perplexity-2"
+   },
+   "result": [
+    {
+     "model_name": "sonar",
+     "input_tokens": 31,
+     "output_tokens": 542,
+     "reasoning_tokens": 0,
+     "web_search": true,
+     "money_spent": 0.005573,
+     "datetime": "2026-10-27 02:43:02 +00:00",
+     "items": [
+      {
+       "type": "message",
+       "sections": [
+        {
+         "type": "text",
+         "text": "A US enterprise should shortlist vendors by **deployment scale, governance needs, integration complexity, and internal engineering capacity**. A practical shortlist is:\n\n- **Accenture** \u2014 Best for large, multi-business deployments requiring integration across CRM, ERP, cloud, data, and operating processes. It is a strong fit for Fortune 500-scale transformation programs.[1]\n- **IBM Consulting** \u2014 Best for governance-heavy or regulated environments. IBM combines AI consulting with hybrid cloud, security, data management, and enterprise infrastructure.[1]\n- **Microsoft** \u2014 Best for enterprises already standardized on Azure, Microsoft 365, Dynamics, or the broader Microsoft data stack. Its platform approach can simplify identity, security, and deployment.\n- **Cognizant** \u2014 Best for organizations seeking a large systems integrator to combine agent development with modernization, managed services, and industry-specific implementation.[2]\n- **Avenga** \u2014 Best for governed agents embedded into existing business processes, particularly when the project needs discovery, architecture, tool connections, human approval controls, and production rollout.[1]\n- **LeewayHertz** \u2014 Best for complex application-layer builds involving multi-agent orchestration, RAG, intelligent document processing, or regulated workflows.[1][2]\n- **Intellectyx** \u2014 Best for data-heavy agents that must connect to multiple internal systems. Its positioning combines data engineering, enterprise applications, custom agents, and AgentOps.[1]\n- **Qubika** \u2014 Best when the agent is part of a broader digital product rather than a standalone automation, such as a customer-facing application or new software product.[1]\n- **Spiral Scout** \u2014 Best for focused workflow automation and custom software integration, especially when the enterprise wants a defined process automated without commissioning a massive transformation program.[1]\n- **Relevance AI** \u2014 Best for operations, sales, and marketing teams that want low-code agent building with the option of professional-services support.[2]\n- **Botpress** \u2014 Best for technical teams that value platform control, open-source foundations, and self-hosted or cloud deployment options.[2]\n\n**Suggested starting point:** invite Accenture, IBM, or Microsoft for an enterprise-wide program; Avenga, LeewayHertz, or Intellectyx for a custom engineering engagement; and Botpress or Relevance AI if internal teams want to build and operate agents themselves.\n\nBefore selecting a vendor, require a paid discovery phase that demonstrates identity and access controls, audit logs, evaluation benchmarks, human escalation, data isolation, monitoring, model portability, and a clear plan for post-launch operations.",
+         "annotations": [
+          {
+           "title": "Top AI Agent Development Companies in the USA (2026)",
+           "url": "https://www.nerdheadz.com/blog/top-ai-agent-development-companies-usa",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "Top 10 AI Agent Development Companies 2026",
+           "url": "https://www.classicinformatics.com/blog/top-ai-agent-development-companies",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "15 Best Companies Building Custom AI Agents in USA - Inoxoft",
+           "url": "https://inoxoft.com/blog/best-companies-for-custom-ai-agents-in-the-usa/",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "Top 15 AI Agent Development Companies in the USA",
+           "url": "https://www.christianandtimbers.com/insights/ai-agent-development-companies-usa-2026",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "Frequently Asked Questions",
+           "url": "https://www.hudasoft.com/blogs/ai-agent-development-companies/",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "Best AI Agent Development Companies 2026",
+           "url": "https://anadea.info/blog/best-ai-agent-development-companies-2026-custom-ai-agents-services-list/",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "Top AI Agent Development Companies in 2026",
+           "url": "https://www.avenga.com/magazine/top-ai-agent-development-companies/",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "11 Best AI Agent Development Companies for Enterprise AI Projects",
+           "url": "https://www.signitysolutions.com/blog/enterprise-ai-agent-development-companies",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "Top AI Agent Development Companies 2026",
+           "url": "https://www.esparkinfo.com/generative-ai/ai-agent/top-companies",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "Top 15 Agentic AI Development Companies in the USA (2026)",
+           "url": "https://dbbsoftware.com/insights/agentic-ai-development-companies-usa",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "fan_out_queries": null
+    }
+   ]
+  }
+ ]
+}

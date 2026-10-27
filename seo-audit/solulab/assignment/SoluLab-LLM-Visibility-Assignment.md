@@ -2,8 +2,8 @@
 
 > **Before submitting, delete this box.**
 > - **Task 1** must be your own case study with your own evidence. Every `[[ … ]]` field is yours to fill. Nothing in it has been invented.
-> - **Task 2** needs real, dated runs. Run the 5 prompts in `task2-prompts.csv` on ChatGPT and Perplexity, 3 fresh runs each, using the protocol below. Or run it automatically through DataForSEO: `python run_dataforseo_task2.py --runs 3` tests ChatGPT, Google AI Mode and Perplexity and writes `runs.csv` plus `summary.md`. Optionally also run `run_claude_prompts.py` for Claude. Log everything in `task2-results-log.csv` and paste the summary into the Task 2 tables. The "opportunity" column is pre-drafted from my site audit of solulab.com. Revise it once you see which URLs the engines actually cite.
-> - **Tasks 3 and 4** are complete drafts built on the solulab.com crawl evidence (`../solulab-seo-audit.md`, `../solulab-ai-visibility-audit.md`). Plug in your Task 2 baselines where marked.
+> - **Task 2** is filled in from 45 dated DataForSEO runs on Oct 27, 2026 (evidence in `task2-evidence/`). Add 2–3 browser screenshots of the same prompts for visual evidence.
+> - **Tasks 3 and 4** now use the Task 2 baselines.
 
 ---
 
@@ -42,60 +42,86 @@
 
 ### Method
 
-- **Platforms:**
-  - ChatGPT with search on (logged out, or a clean profile with memory off)
-  - Perplexity (default model, logged out)
-  - Optional third: Claude via API with web search, using the script `run_claude_prompts.py`, which logs cited URLs automatically
-- **Runs:** each prompt is run **3 times in fresh sessions** on each platform. Results are reported as rates (e.g. "mentioned in 2 of 3 runs"). A single answer is not a ranking.
-- **Location:** US prompts from a US connection. GCC prompts from a UAE or KSA VPN exit, or with the location stated in the prompt. The location used is recorded.
-- **Logged per run:** date and time (UTC), whether SoluLab is mentioned, recommended or cited, the SoluLab URL cited, list position, competitor brands, all cited URLs, whether the facts about SoluLab are correct, and the screenshot file name. Template: `task2-results-log.csv`.
-- **Test date(s):** [[YYYY-MM-DD]]
+| | |
+|---|---|
+| **Test date** | **October 27, 2026, 02:42–02:45 UTC.** 45 runs, all timestamped by the API. |
+| **Platforms (3)** | **ChatGPT**: the consumer ChatGPT answer with web search, collected through DataForSEO's LLM Scraper. **Google AI Mode**: DataForSEO SERP API. **Perplexity**: the Sonar model with web search, through DataForSEO's LLM Responses API. |
+| **Location** | US prompts with a US location (2840). Q3 with a UAE location (2784). Q4 with a Saudi Arabia location (2682). English throughout. |
+| **Runs** | **3 independent runs per prompt per platform.** All results are reported as rates ("2/3"), not as one answer treated as a ranking. |
+| **What's logged** | Exact prompt, full answer, every cited URL, SoluLab mentioned / recommended / cited, the companies named, and any solulab.com URL that was retrieved but not cited. |
+| **Evidence** | `task2-evidence/raw/*.json` (45 full API responses), `task2-evidence/runs.csv` (one row per run), `task2-evidence/summary.md`, and `task2-evidence/cited-sources-check.tsv` (whether the top 45 cited pages name SoluLab or LeewayHertz). Script: `run_dataforseo_task2.py`, rerunnable with `--runs 3`. |
+| **Cost** | $0.215 in total. |
 
-### Queries
-
-| ID | Market | Cluster | Exact prompt | SoluLab page that should win |
-|---|---|---|---|---|
-| Q1 | US | AI agent development | "Which companies should a US enterprise consider to build custom AI agents? Give me a shortlist with a reason for each." | `/ai-agent-development-company/` |
-| Q2 | US | Generative AI | "What are the best generative AI development companies in the USA for building an enterprise LLM application?" | `/generative-ai-development-company/` |
-| Q3 | UAE | AI development | "What are the top AI development companies in Dubai for enterprise projects?" | `/ai-development-company-in-dubai/` |
-| Q4 | KSA | AI consulting | "Recommend AI consulting firms in Saudi Arabia that can help a company with AI strategy and implementation." | `/ai-development-company-in-saudi-arabia/` |
-| Q5 | US | AI agent cost / vendor | "How much does it cost to hire a company to build an AI agent, and which firms offer this service?" | `/how-much-does-it-cost-to-build-an-ai-agent/` |
+**Definitions:**
+- **Mentioned:** "SoluLab" appears in the answer.
+- **Recommended:** SoluLab is one of the shortlisted companies, with a reason.
+- **Cited:** a solulab.com URL appears among the answer's sources.
 
 ### Results
 
-Fill in from the log. Show rates across the 3 runs.
+| ID (market) | Platform | Mentioned | Recommended | Cited | Companies named (runs out of 3) | Third-party URLs cited most (runs out of 3) |
+|---|---|---|---|---|---|---|
+| **Q1** AI agents (US) | ChatGPT | 0/3 | 0/3 | 0/3 | Accenture, IBM Consulting, EPAM (3); Cognizant, Deloitte, Slalom, AWS, Microsoft (2) | ibm.com, epam.com, accenture.com (3); powergatesoftware.com list, ayautomate.com list (2) |
+| | Perplexity | 0/3 | 0/3 | 0/3 | Accenture, IBM Consulting, Microsoft, Cognizant, **LeewayHertz**, Avenga, Intellectyx, Qubika, Spiral Scout (3) | christianandtimbers.com, anadea.info, hudasoft.com, nerdheadz.com, esparkinfo.com lists (3) |
+| | AI Mode | 0/3 | 0/3 | 0/3 | Accenture, AWS (3); Deloitte, Google Cloud, Salesforce (2) | pixelmatters.com list (3); outsystems.com, airtable.com (2) |
+| **Q2** Gen AI (US) | ChatGPT | 0/3 | 0/3 | 0/3 | **LeewayHertz**, EPAM, Booz Allen Hamilton, Slalom, IBM Consulting, HatchWorks AI (3) | tech.us list, agencycluster.com Top-50 (3); epam.com, slalom.com, boozallen.com (3) |
+| | Perplexity | 0/3 | 0/3 | 0/3 | **LeewayHertz**, Thoughtworks, Databricks, HatchWorks AI, Accenture (3); 10Pearls, Xavor, BCG X (2) | classicinformatics.com, tech.us, pixelbrainy.com, sapidblue.com, azilen.com lists (3) |
+| | AI Mode | 0/3 | 0/3 | 0/3 | **LeewayHertz**, Cohere (3); IBM, Accenture, Databricks (2) | reddit.com r/AI_Agents thread, pixelmatters.com list (2); tech.us (1) |
+| **Q3** AI dev (Dubai) | ChatGPT | 0/3 | 0/3 | 0/3 | Presight, Gulf Business Machines (3); Core42, e& enterprise, Alpha Data, Hidden Brains (2) | presight.ai, gbmme.com, emtech.ae list (3); quytech.com list (2) |
+| | Perplexity | **3/3** | **3/3** | 0/3 | **SoluLab** (listed 7th–10th of 10–12), Presight, Derq, Microsoft Gulf, IBM Middle East, Simform, Injazat, Code Brew Labs (3) | **lumitech.co MENA list (SoluLab #8)**, **apptunix.com Dubai list (SoluLab #5)**, designrush.com Dubai, clutch.co UAE Gen-AI, datatobiz.com (3) |
+| | AI Mode | 0/3 | 0/3 | 0/3 | G42/Core42, Code Brew Labs, Apptunix, TechGropse (1 each: volatile) | masterofcode.com Dubai list (3) |
+| **Q4** AI consulting (KSA) | ChatGPT | 0/3 | 0/3 | 0/3 | Accenture, Bilytica, Pulse Innovation (3); Capgemini, SCAI, Crux (2) | picsaudi.com, bilytica.com (3); apexaiarabia.com, scai.sa (2) |
+| | Perplexity | 0/3 | 0/3 | 0/3 | McKinsey/QuantumBlack, BCG X, Opinosis Analytics, MHK Services, Saudi Digital Consulting, Digital Transformation KSA (3) | saudidigitalconsulting.com, aisuperior.com (EN and **Arabic** pages), labarna.ai list, crux.sa, clutch.co Saudi Gen-AI (3) |
+| | AI Mode | 0/3 | 0/3 | 0/3 | Tharwah (2); BCG, Oliver Wyman, Strategy&, Mozn, Elm, Lucidya (1) | ozonetech.com.sa, LinkedIn "Top 20 AI consulting firms in Saudi Arabia", tharwah.net (2) |
+| **Q5** AI agent cost (US) | ChatGPT | 0/3 | 0/3 | 0/3 | Accenture, Expedey, QueryNow (2–3); **LeewayHertz**, EPAM (1) | ryzlabs.com list, expedey.com (3); fusionhit.com cost guide (2) |
+| | Perplexity | 0/3 | 0/3 | 0/3 | Moveworks (3); **LeewayHertz**, Infosys, Accenture, Deloitte Digital, Booz Allen, Wizeline (2) | vantasoft.com cost guide and list, scalacode.com list (SoluLab #6), factoryjet.com list (3) |
+| | AI Mode | 0/3 | 0/3 | 0/3 | LeewayHertz, C3 AI (1); mostly vendor categories, not firms | productcrafters.io cost guide, pixelmatters.com list (3); reddit.com cost thread (2) |
 
-| ID | Platform | Date | Mentioned | Recommended | Cited (URL) | Competitors observed | Third-party URLs cited |
-|---|---|---|---|---|---|---|---|
-| Q1 | ChatGPT | [[ ]] | [[x/3]] | [[x/3]] | [[x/3 · URL]] | [[ ]] | [[ ]] |
-| Q1 | Perplexity | [[ ]] | | | | | |
-| Q2 | ChatGPT | | | | | | |
-| Q2 | Perplexity | | | | | | |
-| Q3 | ChatGPT | | | | | | |
-| Q3 | Perplexity | | | | | | |
-| Q4 | ChatGPT | | | | | | |
-| Q4 | Perplexity | | | | | | |
-| Q5 | ChatGPT | | | | | | |
-| Q5 | Perplexity | | | | | | |
+**Headline:**
+- SoluLab was **mentioned in 3 of 45 runs (7%)**, all on Perplexity for Dubai, where it was recommended every time.
+- **solulab.com was cited in 0 of 45 runs.**
+- One solulab.com page was retrieved but not cited: ChatGPT's search results for Q2 included `/generative-ai-consulting-company/`. That's the *consulting* page, not the development page that matches the query.
+
+### What the evidence shows
+
+1. **Recommendations follow third-party sources, not SoluLab's own site.** [Verified]
+   - The only time SoluLab is recommended, Perplexity's footnotes point to two third-party lists that include SoluLab: Lumitech's MENA list (#8, "GenAI, agents, blockchain & IoT") and Apptunix's Dubai list (#5, dated Oct 23, 2026).
+   - Perplexity's description of SoluLab ("generative AI, AI agents, automation, blockchain… IoT") closely mirrors Lumitech's wording.
+   - No solulab.com page was cited anywhere.
+2. **Being on a list isn't enough. Consensus and position matter.** [Verified sources; Inferred mechanism]
+   - In the US AI-agent cluster, SoluLab *is* on 4 of the cited lists (Hudasoft #7, ScalaCode #6, Classic Informatics #7, DBB Software #15). It still wasn't named.
+   - LeewayHertz, its closest peer, sits higher on 3 of those 4 lists (#4, #4 and #4; Classic Informatics has SoluLab #7 ahead of LeewayHertz #8). It's also on about 9 more cited lists where SoluLab is absent: pixelmatters, tech.us, agencycluster, christianandtimbers, nerdheadz, inoxoft, signity, sapidblue, and a Space-O LinkedIn list.
+   - LeewayHertz was named on **all three platforms** for Q2.
+   - In Dubai it's reversed: SoluLab is on 2 of Perplexity's 10 sources, LeewayHertz on none, and only SoluLab gets named.
+3. **Each platform draws on different sources, and two of them vary a lot from run to run.** [Verified]
+   - The average overlap of cited domains between runs was **1.00 on Perplexity** (identical sources every run) but **0.34 on ChatGPT and 0.31 on AI Mode**.
+   - So a win on Perplexity's Dubai sources doesn't carry over to ChatGPT, which cites presight.ai, gbmme.com, emtech.ae and quytech, or to AI Mode, which cites masterofcode.com.
+   - ChatGPT and AI Mode need more runs and repeat days before any change can be called real.
+4. **GCC answers favour local sources.** [Verified]
+   - KSA answers cite Saudi consultancies, Clutch's Saudi category, and an Arabic-language page (aisuperior.com/ar/…).
+   - SoluLab has no KSA third-party footprint in any cited source, and the Big Four and MBB firms dominate.
 
 ### One opportunity per query
 
-These come from my crawl of solulab.com on Oct 26, 2026. Confirm each against the cited URLs observed.
-
-| ID | Opportunity | Evidence on the site today |
+| ID | Opportunity | Evidence |
 |---|---|---|
-| Q1 | **Get onto the third-party shortlists the engines cite, and give `/ai-agent-development-company/` quotable proof.** List queries get built from third-party lists, so a vendor page alone rarely gets SoluLab named. | The page has 0 citations of authoritative sources and few quantified outcomes. In the third-party search results I sampled for "best AI agent development companies", SoluLab didn't appear. Those results were dominated by listicles from other vendors and analysts. |
-| Q2 | **Fix and consolidate the Gen-AI page before promoting it.** It's 3.3 MB of HTML (embedded base64 images), has no cost or timeline section, and competes with an orphaned duplicate. | `/generative-ai-development-company/` is 3,207 KB. `/generative-ai-software-development-company/` overlaps it and has 0 internal links. |
-| Q3 | **Give the Dubai page real local substance: local proof plus GCC third-party presence.** At the moment it reads as a location page with no local footprint. | The page is filed in the *post* sitemap, has 9 internal links, ~1 MB of HTML, 0 authoritative sources and 1 statistic. The site lists no UAE office (offices: US, India, Canada, Australia). A SoluLab "Top AI development companies in Dubai" post ranks SoluLab itself. |
-| Q4 | **Build KSA relevance with sourced, Vision 2030 / SDAIA-aligned content, a KSA case study, and inclusion in KSA directories.** | `/ai-development-company-in-saudi-arabia/` has 6 internal links, 0 statistics and 0 authoritative sources. A "Why choose SoluLab… Saudi Arabia" post is self-promotional. |
-| Q5 | **Consolidate the AI-agent cost content into one answer-first hub with SoluLab's real price bands.** Cost questions are where engines most readily cite vendor pages, because they need numbers. | 3 overlapping cost posts: `/how-much-does-it-cost-to-build-an-ai-agent/`, `/autonomous-ai-agent-cost-per-month/` and `/ai-agent-mvp-cost-for-small-businesses/`. Openings are hooks ("it depends"). Median post has 0–1 sourced statistics. No visible "updated" date. |
+| Q1 | **Get onto the US AI-agent lists that cite LeewayHertz but not SoluLab, and move up on the ones it's already on.** Targets: pixelmatters.com (cited in 3/3 AI Mode and 2/3 ChatGPT runs for Q1, and in 3/3 AI Mode runs for Q5), christianandtimbers.com, nerdheadz.com, inoxoft.com and signitysolutions.com. Pitch Hudasoft, ScalaCode and DBB for an update with a fresh agent case study. | `cited-sources-check.tsv`. SoluLab sits #6–#15 on 4 cited lists and is absent from the most-cited one. |
+| Q2 | **Get into tech.us and agencycluster.com.** tech.us was cited on all three platforms (7 of 9 runs). Make `/generative-ai-development-company/` the page engines retrieve. | LeewayHertz is named 9/9 for Q2. ChatGPT retrieved SoluLab's *consulting* page instead. The development page is 3.3 MB of HTML. |
+| Q3 | **Copy the Perplexity win onto ChatGPT and AI Mode sources.** Pitch masterofcode.com's Dubai list (3/3 AI Mode), emtech.ae and quytech.com (ChatGPT), and complete the Clutch UAE and DesignRush Dubai profiles (both cited 3/3 on Perplexity). | Recommended 3/3 on Perplexity via Lumitech and Apptunix. 0/6 on the other two platforms, which use different sources. |
+| Q4 | **Build a KSA footprint before expecting mentions:** a Clutch Saudi Gen-AI listing (cited 3/3), labarna.ai list outreach, and an Arabic version of the KSA page, since an Arabic page was cited for an English prompt. | 0/9 runs. No cited KSA source names SoluLab. |
+| Q5 | **Run E2:** one answer-first AI-agent cost hub with SoluLab's real price bands, plus inclusion on ryzlabs.com and factoryjet.com. | Cost answers cite vendor cost guides (vantasoft, productcrafters, fusionhit). SoluLab's cost page was neither retrieved nor cited. ScalaCode already lists SoluLab #6. |
 
-**Cross-cutting issue that affects every query: entity consistency.**
+**Cross-cutting issue: entity consistency.**
 - The site gives conflicting company facts: 1,500+ vs 500+ vs 150+ projects delivered, and 11+ vs 10+ years.
 - It says "US-based" while the Organization schema gives Ahmedabad as the main address.
 - Directories list headcount anywhere from 50 to 250+.
 
 Engines blend these sources, so the conflict weakens every recommendation.
+
+**Limitations:**
+- These are API runs from one day.
+- The ChatGPT answers come from DataForSEO's logged-out consumer scraper. Perplexity was tested through its Sonar API, not the consumer app.
+- Screenshots of the same prompts from a normal browser session, plus a second test day, are the next step before treating any rate as stable.
 
 ---
 
@@ -110,9 +136,9 @@ The order is by expected effect on **commercial** prompts per hour of effort. E1
 | **Hypothesis** | For "best / top X companies" prompts, ChatGPT and Perplexity build the answer from a small set of retrieved third-party pages: directories, editorial listicles, analyst roundups. If SoluLab is present and well described on the sources already cited for its cluster, its mention rate on those prompts goes up. |
 | **Target cluster** | Vendor selection, US and GCC: Q1, Q3 and Q4, plus 6 variants (e.g. "AI agent development company USA", "best AI development company UAE", "AI consulting firm Riyadh"). 9 prompts in total. |
 | **Exact action** | 1. Take every third-party URL cited in the Task 2 baseline for these prompts. Rank them by how many runs cited them. 2. Sort each into a type: **Directory** (Clutch, GoodFirms, DesignRush, TechBehemoths), **Editorial list**, **Analyst or media**, **Forum / Q&A**, or **Competitor self-list** (skip these). 3. For the top 15 by frequency: **Directories**: complete SoluLab's AI and Gen-AI service focus, add UAE and KSA service areas and portfolio items, and get 5 new verified reviews from AI and agent clients (Clutch first; it's already in SoluLab's `sameAs`). **Editorial lists**: pitch the author for inclusion or an update, using an evidence pack (2 AI case studies with metrics, Clutch rating, one named expert, and a two-line differentiator). **Media**: one bylined expert article in a US publication and one in a GCC publication. **Forums**: genuine, disclosed answers from named engineers. No link drops. |
-| **Why I expect it to work** | (a) In my sampled third-party searches for "best AI agent development companies" and "RWA tokenization companies", the results were almost entirely third-party lists, and SoluLab was absent or present only on its own pages. (b) Engines discount a vendor's own "Top 10" lists. SoluLab has 92 of them, and they don't fill this gap. (c) This changes the sources the engines actually retrieve, rather than hoping a new page gets picked up. |
-| **Baseline** | From Task 2, mention rate on the 9 prompts × 2 platforms × 3 runs (54 runs) = [[x%]]. Presence on the top-15 cited sources = [[n/15]]. |
-| **Success metric** | **Leading:** SoluLab present on ≥6 of the top-15 sources by week 6. **Primary:** mention rate up ≥15 percentage points over baseline at both week 6 and week 8 (two re-measures, to rule out noise). **Commercial:** ≥2 inquiries that self-report an AI assistant or arrive from an AI-referrer, by week 10. |
+| **Why I expect it to work** | **Task 2 shows the mechanism directly.** (a) SoluLab's only recommendation (Perplexity, Dubai, 3/3) traces to two third-party lists that include it, Lumitech (#8) and Apptunix (#5). Perplexity even reuses Lumitech's description of SoluLab. (b) LeewayHertz is on 10 of the 15 most-cited US lists and is named on all three platforms for Gen AI. SoluLab is on 3 of 15, low down, and is never named. (c) solulab.com was cited in 0 of 45 runs, so the site alone isn't what gets SoluLab into answers. (d) SoluLab's 92 self-ranking "Top 10" posts were never cited. |
+| **Baseline** (Task 2, Oct 27, 2026) | **Mention rate: 3/36 runs (8%)** on Q1–Q4 × 3 platforms × 3 runs, all on Perplexity Dubai. **Presence on the 15 most-cited lists and directories: SoluLab 3/15** (Hudasoft, DBB Software, Classic Informatics; DesignRush unverified) **vs LeewayHertz 10/15.** The 6 cluster variants get baselined in the same run before launch. |
+| **Success metric** | **Leading:** SoluLab present on ≥8 of the top-15 sources by week 6, up from 3. **Primary:** mention rate up ≥15 percentage points over baseline at both week 6 and week 8 (two re-measures, to rule out noise). **Commercial:** ≥2 inquiries that self-report an AI assistant or arrive from an AI-referrer, by week 10. |
 | **Evaluation period** | 8 weeks (6 for execution, plus 2 re-measures). |
 | **Effort / owner** | About 30 hours over 6 weeks. Owner: marketing executive, following the SOP in Task 4. I review weekly. Delivery or sales supplies the client reference requests for reviews. |
 | **If it fails** | If inclusions land but mention rate doesn't move, re-check which sources are now cited (the engines may have switched sets), weight effort toward directories with review velocity, and run E3 first. If inclusions don't land, change the offer from "please add us" to something the author wants (original data, an expert quote, a correction to their list) and re-pitch. |
@@ -125,7 +151,7 @@ The order is by expected effect on **commercial** prompts per hour of effort. E1
 | **Target cluster** | Q5 plus: "AI agent development cost", "cost to build an AI customer service agent", "monthly cost of running an AI agent", "AI agent MVP cost". 5 prompts. |
 | **Exact action** | 1. Make `/how-much-does-it-cost-to-build-an-ai-agent/` the hub. Keep `/autonomous-ai-agent-cost-per-month/` (run cost) and `/ai-agent-mvp-cost-for-small-businesses/` (MVP) as spokes with distinct intent. Merge any true duplicate and 301 it. 2. Open with a 50-word answer that states SoluLab's actual range. 3. Add a scope × cost × timeline table built from **real SoluLab quotes from the last 12 months** (sales provides these). 4. Add a "From our projects" box with 3 anonymized engagements. 5. Add 3–5 statistics, each linked to its primary source. 6. Show the "Updated" date. 7. Add the same table to `/ai-agent-development-company/`. 8. Submit through IndexNow and Bing Webmaster Tools, and request indexing in GSC. **Control:** leave the LLM-development-cost post untouched. |
 | **Why I expect it to work** | (a) Research on generative-engine optimization (Aggarwal et al., *GEO: Generative Engine Optimization*, KDD 2024, arXiv:2311.09735) found that adding statistics, citations and quotations raised a source's visibility in generative answers, by up to roughly 40% in their benchmark. (b) The audit shows SoluLab's openings are hooks ("the honest answer is: it depends"). Posts have a median of 0–1 sourced statistics and no visible updated date, so there's a clear gap to close. (c) Cost answers need numbers, and vendor pages are a natural source for them. |
-| **Baseline** | solulab.com citation rate on 5 prompts × 3 platforms × 3 runs = [[x%]]. GSC impressions and CTR for the hub over the last 28 days = [[ ]]. Same metrics for the control. |
+| **Baseline** | **Q5: solulab.com cited 0/9 runs and mentioned 0/9** (Task 2). SoluLab's cost page wasn't even retrieved. Cost answers cite vantasoft.com, productcrafters.io and fusionhit.com cost guides. The 4 other cost prompts and the control get baselined before publishing. GSC impressions and CTR for the hub and the control over the last 28 days come from SoluLab's GSC. |
 | **Success metric** | solulab.com cited in ≥25% of runs, or +15 points over baseline, in weeks 4–6, while the control doesn't move. GSC CTR on the hub is not down. |
 | **Evaluation period** | 6 weeks after publishing (re-measure at weeks 2, 4 and 6). |
 | **Effort / owner** | About 14 hours: writer 10 h, sales input 2 h, dev 1 h, my review 1 h. Owner: content lead. |
@@ -139,7 +165,7 @@ The order is by expected effect on **commercial** prompts per hour of effort. E1
 | **Target cluster** | Brand and vetting prompts: "What is SoluLab?", "Is SoluLab a good company to work with?", "SoluLab reviews", "Where is SoluLab based and how big is it?", "SoluLab vs LeewayHertz". |
 | **Exact action** | 1. Write a one-page fact sheet: legal entities, HQ and offices, founding year, headcount band, projects delivered (one defined number), certifications with IDs, and core services. 2. Fix the conflicting numbers on the site: replace the per-template stats strips with one shared component, and resolve "US-based" vs the schema address. 3. Update the About page, the Organization schema (address, `location`, `numberOfEmployees`, a complete `sameAs`) and `llms.txt`. 4. Update the external profiles to match, and ask Clutch, IoT ONE and Celent to merge duplicate listings: Clutch, GoodFirms, DesignRush, Built In, IoT ONE, Celent, Crunchbase, LinkedIn. 5. Publish a Reviews page that links out to Clutch. |
 | **Why I expect it to work** | The facts are verifiably inconsistent today (Task 2, cross-cutting issue). Search-enabled answers retrieve these pages directly, and every fix here is fully under SoluLab's control. |
-| **Baseline** | Fact-accuracy score: 5 prompts × 2 platforms × 3 runs, each answer scored on 5 facts (HQ, size, founding year, core services, rating) = [[x%]]. Contradictions observed = [[n]]. |
+| **Baseline** | Fact-accuracy score: 5 prompts × 2 platforms × 3 runs, each answer scored on 5 facts (HQ, size, founding year, core services, rating). Not yet measured: run the 5 brand prompts through `run_dataforseo_task2.py` (about $0.20) before launch. |
 | **Success metric** | Fact accuracy ≥80% and 0 contradictions in search-on answers by week 8. Model-memory answers lag, so they're tracked separately. |
 | **Evaluation period** | 8 weeks. |
 | **Effort / owner** | About 12 hours of marketing time plus 2 hours of dev. Owner: marketing executive. |

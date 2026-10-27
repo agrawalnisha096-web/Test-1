@@ -1,0 +1,819 @@
+{
+ "version": "0.1.20261022",
+ "status_code": 20000,
+ "status_message": "Ok.",
+ "time": "36.0343 sec.",
+ "cost": 0.004,
+ "tasks_count": 1,
+ "tasks_error": 0,
+ "tasks": [
+  {
+   "id": "10270244-2577-0629-0000-70ba55e8fe08",
+   "status_code": 20000,
+   "status_message": "Ok.",
+   "time": "35.9835 sec.",
+   "cost": 0.004,
+   "result_count": 1,
+   "path": [
+    "v3",
+    "ai_optimization",
+    "chat_gpt",
+    "llm_scraper",
+    "live",
+    "advanced"
+   ],
+   "data": {
+    "api": "ai_optimization",
+    "function": "live",
+    "se": "chat_gpt",
+    "keyword": "Recommend AI consulting firms in Saudi Arabia that can help a company with AI strategy and implementation.",
+    "location_code": 2682,
+    "language_code": "en",
+    "force_web_search": true,
+    "tag": "Q4-chatgpt-3",
+    "device": "desktop",
+    "os": "windows"
+   },
+   "result": [
+    {
+     "keyword": "Recommend AI consulting firms in Saudi Arabia that can help a company with AI strategy and implementation.",
+     "location_code": 2682,
+     "language_code": "en",
+     "model": "gpt-6",
+     "check_url": "https://chatgpt.com/?prompt=Recommend%20AI%20consulting%20firms%20in%20Saudi%20Arabia%20that%20can%20help%20a%20company%20with%20AI%20strategy%20and%20implementation.&hints=search",
+     "datetime": "2026-10-27 02:44:56 +00:00",
+     "markdown": "# Recommended AI consulting firms in Saudi Arabia\n\nFor a company looking to develop an AI strategy and implement it\u2014not just produce a strategy deck\u2014I would shortlist a mix of specialist Saudi AI firms and global consulting companies with local delivery capabilities.\n\nThe key is to find a partner that can connect AI opportunities to measurable business outcomes, build production-ready solutions, integrate them with existing systems, and establish appropriate data governance under Saudi regulations.\n\n## My recommended shortlist\n\n![Bilytica partner program for channel partners and resellers](https://images.openai.com/static-rsc-4/Wrn26y3xuBweZzL9NY9Gy3mqFE1fGv1rNEVwTMNDSNJFIrLI2dzQpr5vV5AyFY73waYHPOFjDEAgTzXZ3p3dWKp_Iw6dqlTBZt6NVbbqWgA3aGOJR_YfusVb1dj5So4RPsidq_0HBzKdFovEEtMUZvqHsTAm1KpQfyOFAIRrc6pYd2aMkHsCFGMSuM_oF8Fz?purpose=fullsize)\n\n## 1\\. Bilytica\n\n(Strong end-to-end option)\n\nSaudi Arabia \u00b7 [Official website](https://bilytica.com/consulting-solutions/)\n\nBilytica presents itself as an AI-focused consulting firm covering business strategy, use-case prioritization, AI architecture, implementation, and enterprise transformation. Its published approach also references Saudi requirements such as PDPL and NDMO.\n\n**Best for\\:** Organizations seeking one partner to move from AI strategy through implementation and scaling. [bilytica.com](https://bilytica.com/consulting-solutions/?utm_source=chatgpt.com)\n\n---\n\n![Accenture's Manisha Bhattacharya on building careers, changing lives, and empowering the underprivileged  | YourStory](https://images.openai.com/static-rsc-4/Wv8zdx16GU2_6NLbG7a5tDeanor9otRNUwxjiv-ddmuxJ_5QngkQqCPiFjKd89uhvXhnltBU2j4LEyWHTBsokjaGk8auBFmSemNxt7jsGnLfXy4_A700_c--BoFz_6kBMbAoqvorDyqMg98yiz7hTtHGJFfHMBEsBYbh_GE_dTBmgDgyHlh7AUOlWKvPoLDM?purpose=fullsize)\n\n## 2\\. Accenture\n\nRiyadh \u00b7 [Official website](https://www.accenture.com/sa-en)\n\nA strong candidate for large, complex transformation programs that combine business strategy, data platforms, cloud, AI engineering, systems integration, and organizational change.\n\n**Best for\\:** Large enterprises, multi-business groups, and organizations that need AI embedded into core operations at scale. [www.google.com](https://www.google.com/maps/place/?q=place_id%3AChIJ73YLJwDjLj4RfEEEBzA7l6M&hl=en&utm_source=chatgpt.com)[revenuebase.ai](https://revenuebase.ai/companies/ai-strategy-consulting-firms/saudi-arabia?utm_source=chatgpt.com)\n\n---\n\n![About Us | Crux Technology \u2014 AI & Data Governance Advisory](https://images.openai.com/static-rsc-4/_E1IQUzbmsRqDhfV0zOK2sBUmS76VSFLnyDUzVhFYRZ3J5n4hGdMp83aWRx4BaWynXs99aYoUzBCTZpxfDk7gawd2BHOa9BQq8QFdCF8-2xJg4zQvGxi6Hlu_cRLmZgyo-1PAnMgn61CoOESF_CC7PECAoSSqK7K9o18CZI2vR1OIovozvZ_qtDoi9AkscX3?purpose=fullsize)\n\n## 3\\. Crux Technology\n\nSaudi Arabia \u00b7 [AI strategy services](https://crux.sa/services/ai-strategy-consulting)\n\nFocuses specifically on turning AI strategy into execution, including readiness assessments, high-value use-case selection, investment roadmaps, AI governance, architecture, and production deployment.\n\n**Best for\\:** Companies that need a defined AI roadmap with a clear path from initial assessment to working solutions. [crux.sa](https://crux.sa/services/ai-strategy-consulting?utm_source=chatgpt.com)\n\n---\n\n![Praca w firmie Capgemini Polska \u2013 profil pracodawcy](https://images.openai.com/static-rsc-4/BIQJrWsljqvE-LY1lBKjg5rvpLrnyWPUl30mTa609eDdumPjYYM1MSYmQqKZAcLXV-c8_aoILIO3o9yGoyGGuhQUhnKf-YrnseZh7_n-KkpCsyx-wIZGN6NM1G8g6H6iyaahwgk81t-t5iaDTZXzWNHRtjaLtU2VGP6eKhqCGd2npHAtQwNKHpg95YU0pQAK?purpose=fullsize)\n\n## 4\\. Capgemini\n\nRiyadh \u00b7 [Official website](https://www.capgemini.com/)\n\nCombines technology advisory with digital transformation and technology delivery. Worth evaluating for organizations that need AI integrated into enterprise applications, cloud infrastructure, data systems, and established business processes.\n\n**Best for\\:** Mid-to-large enterprises with complex technology environments. [www.google.com](https://www.google.com/maps/place/?q=place_id%3AChIJAyW2JaADLz4RFzhZfFHVv7Q&hl=en&utm_source=chatgpt.com)\n\n---\n\n![agx | NextGen Systems](https://images.openai.com/static-rsc-4/aLnHurcRTbypI7Kjvolcwu_fcdKNTTykP7E2iuE4uywgh5eugFgTAewbT-03-AcEBKB9bjaJpoEp2rMeIlj9Rv3iyLn5Bu31BcQsRqRcNTEfSjAMtQBNv5rZvxK58GP8mtj3Jmoueg9q3e2fkUHU0am9EThFLm11_QvjD_GBrrTgGPVwV8h-m0HFm3cyqjo1?purpose=fullsize)\n\n## 5\\. NextGenSol\n\nSaudi Arabia \u00b7 [AI consulting services](https://nextgensol.com.sa/ai-consulting/)\n\nOffers a practical combination of AI strategy, readiness assessment, pilot development, implementation, data governance, and training. Its published model emphasizes moving from business opportunities to pilots and wider deployment.\n\n**Best for\\:** Companies seeking a potentially more focused engagement, starting with one or two business use cases before scaling. [nextgensol.com.sa](https://nextgensol.com.sa/ai-consulting/?utm_source=chatgpt.com)\n\n---\n\n![SCAI - Alef](https://images.openai.com/static-rsc-4/p-phrAshk4CHtFS7_kl4lWgyFjYeg6-yX3rDFvkSfWFrHitBKN325D2A5-3nozMBiaXhzYlIYWjbZkyqjBHt91G2HhB2Cc7kD5FB37cOFoGcez5v_3-hBoMVcdG8jPE_-y68n4cUk952hbaF_X4nR2OkLWJxcl-XqC9egqQ46ggUBLXCZcmIlBj32v8TZOtU?purpose=fullsize)\n\n## 6\\. SCAI\n\nRiyadh \u00b7 [Company website](https://scai.sa/)\n\nThe Saudi Company for Artificial Intelligence is an applied-AI organization associated with Saudi Arabia's broader national AI ambitions. It is worth exploring for AI solution development and partnerships where local market knowledge and applied AI capabilities are priorities.\n\n**Best for\\:** Organizations exploring strategic AI partnerships and locally relevant AI solutions. Confirm the exact consulting scope and commercial engagement model directly. [www.google.com](https://www.google.com/maps/place/SCAI%20COMPANY/data=!4m7!3m6!1s0x3e2ee3bc6e06219d:0x3987dcea47cbe507!8m2!3d24.7598983!4d46.6033290!16s%2Fg%2F11tjd5ggfz!19sChIJnSEGbrzjLj4RB-XLR-rchzk?authuser=0&hl=en&rclk=1&utm_source=chatgpt.com)\n\n---\n\n![\u0412\u044b \u043d\u0435 \u0440\u043e\u0431\u043e\u0442?](https://images.openai.com/static-rsc-4/n-5IqIgnn2smq93nZAjg7NzZd5epUfjoQsakX_276OLoVyk61k0-oQqWT2fJKaDWyjKHAGKxn79USV2hNLKIML0M2n-dUNl_sfCpYUuwvvyY2FSnmzuAC1ikxcqAGD7x9SkVoLUuU0Vfd_muO9kRr5TA8FBXkPf9At5ENfEIZTpTmiDcjpQahBbv41FPHypX?purpose=fullsize)\n\n## 7\\. Pulse Innovation Consulting (PIC)\n\nRiyadh \u00b7 [Official website](https://picsaudi.com/)\n\nEmphasizes AI and data initiatives tied to measurable business value, leadership engagement, and internal capability development. Its AI practice describes work spanning use-case assessment through implementation.\n\n**Best for\\:** Leadership teams that want to prioritize AI investments, evaluate existing pilots, and demonstrate business returns. [picsaudi.com](https://picsaudi.com/?utm_source=chatgpt.com)\n\n## Which firms would I approach first?\n\n| Your main requirement | My first choices |\n|--------|--------|\n| Enterprise-wide AI strategy and implementation | Accenture, Capgemini |\n| Specialist AI strategy plus hands-on engineering | Bilytica, Crux Technology |\n| Focused pilot and phased rollout | NextGenSol |\n| Saudi-focused AI partnerships | SCAI |\n| AI investment prioritization and business value | Pulse Innovation Consulting |\n\n\nThese are fit-based recommendations, not independently verified rankings of delivery quality. The firms differ in scale, specialization, and engagement model.\n\n## What to evaluate before selecting a firm\n\nI recommend asking each shortlisted firm for the following\\:\n\n- **Strategy\\:** An AI opportunity assessment, prioritized use cases, business cases, and a 12\u201324-month roadmap.\n- **Implementation\\:** Examples of AI systems deployed in production, not just proofs of concept.\n- **Commercial value\\:** Expected ROI, measurable KPIs, implementation costs, and ongoing operating costs.\n- **Saudi compliance\\:** How the proposed architecture addresses PDPL, relevant NDMO requirements, and sector-specific regulations where applicable.\n- **Knowledge transfer\\:** How your employees will operate, maintain, and improve the solutions after implementation.\n- **Delivery team\\:** The actual Saudi-based project leads and engineers who will deliver the engagement.\n\nMy recommendation is to invite three firms to a structured discovery process and ask each to propose an initial use case with measurable business value. Compare the proposed outcomes, delivery approach, timeline, and total cost before committing to a larger transformation.\n\nWould you like me to narrow this to the most relevant providers for your company size or compare their capabilities in more detail?\n\n[Compare the top 3 firms in detail](f)\n\n[Find firms suited to my industry](f)",
+     "search_results": [
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://revenuebase.ai/companies/ai-strategy-consulting-firms/saudi-arabia",
+       "domain": "revenuebase.ai",
+       "title": "Top 15 AI strategy consulting firms based in Saudi Arabia",
+       "description": null,
+       "breadcrumb": "revenuebase.ai"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://revenuebase.ai/companies/ai-strategy-consulting-firms/saudi-arabia/riyadh",
+       "domain": "revenuebase.ai",
+       "title": "Top 10 AI strategy consulting firms based in Riyadh, Saudi Arabia",
+       "description": null,
+       "breadcrumb": "revenuebase.ai"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://revenuebase.ai/companies/ai-strategy-consulting-companies/saudi-arabia/riyadh",
+       "domain": "revenuebase.ai",
+       "title": "Top 13 AI strategy consulting companies based in Riyadh, Saudi Arabia",
+       "description": null,
+       "breadcrumb": "revenuebase.ai"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://picsaudi.com/",
+       "domain": "picsaudi.com",
+       "title": "Strategy & AI Consulting in Riyadh, Saudi Arabia | PIC",
+       "description": null,
+       "breadcrumb": "picsaudi.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://bilytica.com/consulting-solutions/",
+       "domain": "bilytica.com",
+       "title": "Consulting & Solutions | Bilytica: Saudi Arabia's AI Consulting Firm",
+       "description": null,
+       "breadcrumb": "bilytica.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://octopusmena.com/",
+       "domain": "octopusmena.com",
+       "title": "Octopus | AI Operations Partner in Riyadh",
+       "description": null,
+       "breadcrumb": "octopusmena.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://spatialai.sa/",
+       "domain": "spatialai.sa",
+       "title": "SpatialAI - Applied AI for Saudi SMBs",
+       "description": null,
+       "breadcrumb": "spatialai.sa"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://crux.sa/services/ai-strategy-consulting",
+       "domain": "crux.sa",
+       "title": "AI Strategy Consulting Saudi Arabia | Enterprise AI Advisory & Transformation Services | Crux",
+       "description": null,
+       "breadcrumb": "crux.sa"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://openforai.com/",
+       "domain": "openforai.com",
+       "title": "AI Agents & Agentic AI Company in Saudi Arabia | Open for AI",
+       "description": null,
+       "breadcrumb": "openforai.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://f-bcg.com/",
+       "domain": "f-bcg.com",
+       "title": "AI and Technology Advisory in Riyadh | FANUUN BCG",
+       "description": null,
+       "breadcrumb": "f-bcg.com"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://www.tagai.sa/",
+       "domain": "www.tagai.sa",
+       "title": "HOME | TAG AI & Consultancy",
+       "description": null,
+       "breadcrumb": "www.tagai.sa"
+      },
+      {
+       "type": "chatgpt_search_result",
+       "url": "https://nextgensol.com.sa/ai-consulting/",
+       "domain": "nextgensol.com.sa",
+       "title": "AI Consulting Services in Saudi Arabia | NextGenSol",
+       "description": null,
+       "breadcrumb": "nextgensol.com.sa"
+      }
+     ],
+     "sources": [
+      {
+       "type": "chat_gpt_source",
+       "title": "Official website",
+       "snippet": null,
+       "domain": "bilytica.com",
+       "url": "https://bilytica.com/consulting-solutions/",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[Official website](https://bilytica.com/consulting-solutions/)"
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Consulting & Solutions",
+       "snippet": null,
+       "domain": "bilytica.com",
+       "url": "https://bilytica.com/consulting-solutions/?utm_source=chatgpt.com",
+       "thumbnail": null,
+       "source_name": "Bilytica: Saudi Arabia's AI Consulting Firm",
+       "publication_date": "2023-12-31 21:00:00 +00:00",
+       "markdown": null
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Official website",
+       "snippet": null,
+       "domain": "www.accenture.com",
+       "url": "https://www.accenture.com/sa-en",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[Official website](https://www.accenture.com/sa-en)"
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Accenture",
+       "snippet": "King Abdullah Financial District (Zone 3) Parcel 3.09,, Level 9, King Fahd Rd, Al Aqiq, Riyadh 13519, Saudi Arabia",
+       "domain": "www.google.com",
+       "url": "https://www.google.com/maps/place/?q=place_id%3AChIJ73YLJwDjLj4RfEEEBzA7l6M&hl=en&utm_source=chatgpt.com",
+       "thumbnail": null,
+       "source_name": "google.com",
+       "publication_date": null,
+       "markdown": null
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Top 15 AI strategy consulting firms based in Saudi Arabia",
+       "snippet": null,
+       "domain": "revenuebase.ai",
+       "url": "https://revenuebase.ai/companies/ai-strategy-consulting-firms/saudi-arabia?utm_source=chatgpt.com",
+       "thumbnail": null,
+       "source_name": "RevenueBase",
+       "publication_date": null,
+       "markdown": null
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "AI strategy services",
+       "snippet": null,
+       "domain": "crux.sa",
+       "url": "https://crux.sa/services/ai-strategy-consulting",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[AI strategy services](https://crux.sa/services/ai-strategy-consulting)"
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "AI Strategy Consulting Saudi Arabia | Enterprise AI Advisory & Transformation Services",
+       "snippet": null,
+       "domain": "crux.sa",
+       "url": "https://crux.sa/services/ai-strategy-consulting?utm_source=chatgpt.com",
+       "thumbnail": null,
+       "source_name": "Crux",
+       "publication_date": null,
+       "markdown": null
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Official website",
+       "snippet": null,
+       "domain": "www.capgemini.com",
+       "url": "https://www.capgemini.com/",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[Official website](https://www.capgemini.com/)"
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Capgemini Saudi",
+       "snippet": "King Khalid Rd, Building 23, Laysen Valley, Riyadh Saudi Arabia",
+       "domain": "www.google.com",
+       "url": "https://www.google.com/maps/place/?q=place_id%3AChIJAyW2JaADLz4RFzhZfFHVv7Q&hl=en&utm_source=chatgpt.com",
+       "thumbnail": null,
+       "source_name": "google.com",
+       "publication_date": null,
+       "markdown": null
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "AI consulting services",
+       "snippet": null,
+       "domain": "nextgensol.com.sa",
+       "url": "https://nextgensol.com.sa/ai-consulting/",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[AI consulting services](https://nextgensol.com.sa/ai-consulting/)"
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "AI Consulting Services in Saudi Arabia",
+       "snippet": null,
+       "domain": "nextgensol.com.sa",
+       "url": "https://nextgensol.com.sa/ai-consulting/?utm_source=chatgpt.com",
+       "thumbnail": null,
+       "source_name": "NextGenSol",
+       "publication_date": "2026-10-13 20:44:33 +00:00",
+       "markdown": null
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Company website",
+       "snippet": null,
+       "domain": "scai.sa",
+       "url": "https://scai.sa/",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[Company website](https://scai.sa/)"
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "SCAI COMPANY",
+       "snippet": "QJ63+29P\u060c \u0627\u0644\u0645\u0634\u0627\u0631\u0642, Hittin, Riyadh 13513, Saudi Arabia",
+       "domain": "www.google.com",
+       "url": "https://www.google.com/maps/place/SCAI%20COMPANY/data=!4m7!3m6!1s0x3e2ee3bc6e06219d:0x3987dcea47cbe507!8m2!3d24.7598983!4d46.6033290!16s%2Fg%2F11tjd5ggfz!19sChIJnSEGbrzjLj4RB-XLR-rchzk?authuser=0&hl=en&rclk=1&utm_source=chatgpt.com",
+       "thumbnail": null,
+       "source_name": "google.com",
+       "publication_date": null,
+       "markdown": null
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Official website",
+       "snippet": null,
+       "domain": "picsaudi.com",
+       "url": "https://picsaudi.com/",
+       "thumbnail": null,
+       "source_name": null,
+       "publication_date": null,
+       "markdown": "[Official website](https://picsaudi.com/)"
+      },
+      {
+       "type": "chat_gpt_source",
+       "title": "Strategy & AI Consulting in Riyadh, Saudi Arabia",
+       "snippet": null,
+       "domain": "picsaudi.com",
+       "url": "https://picsaudi.com/?utm_source=chatgpt.com",
+       "thumbnail": null,
+       "source_name": "PIC",
+       "publication_date": null,
+       "markdown": null
+      }
+     ],
+     "fan_out_queries": [
+      "AI strategy implementation consulting firms Saudi Arabia Riyadh artificial intelligence consulting 2026"
+     ],
+     "brand_entities": [
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "AI and data consulting firm in Saudi Arabia",
+       "category": "company",
+       "markdown": "Bilytica",
+       "urls": null
+      },
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "Accenture",
+       "category": "local_business",
+       "markdown": "Accenture",
+       "urls": null
+      },
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "Saudi AI strategy and technology implementation consultancy",
+       "category": "company",
+       "markdown": "Crux Technology",
+       "urls": null
+      },
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "Capgemini",
+       "category": "local_business",
+       "markdown": "Capgemini",
+       "urls": null
+      },
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "Saudi AI consulting and implementation provider",
+       "category": "company",
+       "markdown": "NextGenSol",
+       "urls": null
+      },
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "SCAI",
+       "category": "local_business",
+       "markdown": "SCAI",
+       "urls": null
+      },
+      {
+       "type": "chat_gpt_brand_entity",
+       "title": "Riyadh strategy and AI value realization consultancy",
+       "category": "company",
+       "markdown": "Pulse Innovation Consulting (PIC)",
+       "urls": null
+      }
+     ],
+     "se_results_count": 0,
+     "item_types": [
+      "chat_gpt_text",
+      "chat_gpt_images",
+      "chat_gpt_table"
+     ],
+     "items_count": 17,
+     "items": [
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 1,
+       "rank_absolute": 1,
+       "markdown": "# Recommended AI consulting firms in Saudi Arabia\n\nFor a company looking to develop an AI strategy and implement it\u2014not just produce a strategy deck\u2014I would shortlist a mix of specialist Saudi AI firms and global consulting companies with local delivery capabilities.\n\nThe key is to find a partner that can connect AI opportunities to measurable business outcomes, build production-ready solutions, integrate them with existing systems, and establish appropriate data governance under Saudi regulations.\n\n## My recommended shortlist\n\n",
+       "sources": null,
+       "brand_entities": null
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 1,
+       "rank_absolute": 2,
+       "markdown": "![Bilytica partner program for channel partners and resellers](https://images.openai.com/static-rsc-4/Wrn26y3xuBweZzL9NY9Gy3mqFE1fGv1rNEVwTMNDSNJFIrLI2dzQpr5vV5AyFY73waYHPOFjDEAgTzXZ3p3dWKp_Iw6dqlTBZt6NVbbqWgA3aGOJR_YfusVb1dj5So4RPsidq_0HBzKdFovEEtMUZvqHsTAm1KpQfyOFAIRrc6pYd2aMkHsCFGMSuM_oF8Fz?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://elioplus.com/profiles/vendors/807/bilytica",
+         "alt": "Bilytica partner program for channel partners and resellers",
+         "image_url": "https://images.openai.com/static-rsc-4/Wrn26y3xuBweZzL9NY9Gy3mqFE1fGv1rNEVwTMNDSNJFIrLI2dzQpr5vV5AyFY73waYHPOFjDEAgTzXZ3p3dWKp_Iw6dqlTBZt6NVbbqWgA3aGOJR_YfusVb1dj5So4RPsidq_0HBzKdFovEEtMUZvqHsTAm1KpQfyOFAIRrc6pYd2aMkHsCFGMSuM_oF8Fz?purpose=fullsize",
+         "markdown": "![Bilytica partner program for channel partners and resellers](https://images.openai.com/static-rsc-4/Wrn26y3xuBweZzL9NY9Gy3mqFE1fGv1rNEVwTMNDSNJFIrLI2dzQpr5vV5AyFY73waYHPOFjDEAgTzXZ3p3dWKp_Iw6dqlTBZt6NVbbqWgA3aGOJR_YfusVb1dj5So4RPsidq_0HBzKdFovEEtMUZvqHsTAm1KpQfyOFAIRrc6pYd2aMkHsCFGMSuM_oF8Fz?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 2,
+       "rank_absolute": 3,
+       "markdown": "\n\n## 1\\. Bilytica\n\n(Strong end-to-end option)\n\nSaudi Arabia \u00b7 [Official website](https://bilytica.com/consulting-solutions/)\n\nBilytica presents itself as an AI-focused consulting firm covering business strategy, use-case prioritization, AI architecture, implementation, and enterprise transformation. Its published approach also references Saudi requirements such as PDPL and NDMO.\n\n**Best for\\:** Organizations seeking one partner to move from AI strategy through implementation and scaling. [bilytica.com](https://bilytica.com/consulting-solutions/?utm_source=chatgpt.com)\n\n---\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "Official website",
+         "snippet": null,
+         "domain": "bilytica.com",
+         "url": "https://bilytica.com/consulting-solutions/",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[Official website](https://bilytica.com/consulting-solutions/)"
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Consulting & Solutions",
+         "snippet": null,
+         "domain": "bilytica.com",
+         "url": "https://bilytica.com/consulting-solutions/?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Bilytica: Saudi Arabia's AI Consulting Firm",
+         "publication_date": "2023-12-31 21:00:00 +00:00",
+         "markdown": null
+        }
+       ],
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "AI and data consulting firm in Saudi Arabia",
+         "category": "company",
+         "markdown": "Bilytica",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 2,
+       "rank_absolute": 4,
+       "markdown": "![Accenture's Manisha Bhattacharya on building careers, changing lives, and empowering the underprivileged  | YourStory](https://images.openai.com/static-rsc-4/Wv8zdx16GU2_6NLbG7a5tDeanor9otRNUwxjiv-ddmuxJ_5QngkQqCPiFjKd89uhvXhnltBU2j4LEyWHTBsokjaGk8auBFmSemNxt7jsGnLfXy4_A700_c--BoFz_6kBMbAoqvorDyqMg98yiz7hTtHGJFfHMBEsBYbh_GE_dTBmgDgyHlh7AUOlWKvPoLDM?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://yourstory.com/2024/04/accentures-manisha-bhattacharya-empowering-underprivileged-women",
+         "alt": "Accenture's Manisha Bhattacharya on building careers, changing lives, and empowering the underprivileged  | YourStory",
+         "image_url": "https://images.openai.com/static-rsc-4/Wv8zdx16GU2_6NLbG7a5tDeanor9otRNUwxjiv-ddmuxJ_5QngkQqCPiFjKd89uhvXhnltBU2j4LEyWHTBsokjaGk8auBFmSemNxt7jsGnLfXy4_A700_c--BoFz_6kBMbAoqvorDyqMg98yiz7hTtHGJFfHMBEsBYbh_GE_dTBmgDgyHlh7AUOlWKvPoLDM?purpose=fullsize",
+         "markdown": "![Accenture's Manisha Bhattacharya on building careers, changing lives, and empowering the underprivileged  | YourStory](https://images.openai.com/static-rsc-4/Wv8zdx16GU2_6NLbG7a5tDeanor9otRNUwxjiv-ddmuxJ_5QngkQqCPiFjKd89uhvXhnltBU2j4LEyWHTBsokjaGk8auBFmSemNxt7jsGnLfXy4_A700_c--BoFz_6kBMbAoqvorDyqMg98yiz7hTtHGJFfHMBEsBYbh_GE_dTBmgDgyHlh7AUOlWKvPoLDM?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 3,
+       "rank_absolute": 5,
+       "markdown": "\n\n## 2\\. Accenture\n\nRiyadh \u00b7 [Official website](https://www.accenture.com/sa-en)\n\nA strong candidate for large, complex transformation programs that combine business strategy, data platforms, cloud, AI engineering, systems integration, and organizational change.\n\n**Best for\\:** Large enterprises, multi-business groups, and organizations that need AI embedded into core operations at scale. [www.google.com](https://www.google.com/maps/place/?q=place_id%3AChIJ73YLJwDjLj4RfEEEBzA7l6M&hl=en&utm_source=chatgpt.com)[revenuebase.ai](https://revenuebase.ai/companies/ai-strategy-consulting-firms/saudi-arabia?utm_source=chatgpt.com)\n\n---\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "Official website",
+         "snippet": null,
+         "domain": "www.accenture.com",
+         "url": "https://www.accenture.com/sa-en",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[Official website](https://www.accenture.com/sa-en)"
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Accenture",
+         "snippet": "King Abdullah Financial District (Zone 3) Parcel 3.09,, Level 9, King Fahd Rd, Al Aqiq, Riyadh 13519, Saudi Arabia",
+         "domain": "www.google.com",
+         "url": "https://www.google.com/maps/place/?q=place_id%3AChIJ73YLJwDjLj4RfEEEBzA7l6M&hl=en&utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "google.com",
+         "publication_date": null,
+         "markdown": null
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Top 15 AI strategy consulting firms based in Saudi Arabia",
+         "snippet": null,
+         "domain": "revenuebase.ai",
+         "url": "https://revenuebase.ai/companies/ai-strategy-consulting-firms/saudi-arabia?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "RevenueBase",
+         "publication_date": null,
+         "markdown": null
+        }
+       ],
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "Accenture",
+         "category": "local_business",
+         "markdown": "Accenture",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 3,
+       "rank_absolute": 6,
+       "markdown": "![About Us | Crux Technology \u2014 AI & Data Governance Advisory](https://images.openai.com/static-rsc-4/_E1IQUzbmsRqDhfV0zOK2sBUmS76VSFLnyDUzVhFYRZ3J5n4hGdMp83aWRx4BaWynXs99aYoUzBCTZpxfDk7gawd2BHOa9BQq8QFdCF8-2xJg4zQvGxi6Hlu_cRLmZgyo-1PAnMgn61CoOESF_CC7PECAoSSqK7K9o18CZI2vR1OIovozvZ_qtDoi9AkscX3?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://crux.sa/about-us",
+         "alt": "About Us | Crux Technology \u2014 AI & Data Governance Advisory",
+         "image_url": "https://images.openai.com/static-rsc-4/_E1IQUzbmsRqDhfV0zOK2sBUmS76VSFLnyDUzVhFYRZ3J5n4hGdMp83aWRx4BaWynXs99aYoUzBCTZpxfDk7gawd2BHOa9BQq8QFdCF8-2xJg4zQvGxi6Hlu_cRLmZgyo-1PAnMgn61CoOESF_CC7PECAoSSqK7K9o18CZI2vR1OIovozvZ_qtDoi9AkscX3?purpose=fullsize",
+         "markdown": "![About Us | Crux Technology \u2014 AI & Data Governance Advisory](https://images.openai.com/static-rsc-4/_E1IQUzbmsRqDhfV0zOK2sBUmS76VSFLnyDUzVhFYRZ3J5n4hGdMp83aWRx4BaWynXs99aYoUzBCTZpxfDk7gawd2BHOa9BQq8QFdCF8-2xJg4zQvGxi6Hlu_cRLmZgyo-1PAnMgn61CoOESF_CC7PECAoSSqK7K9o18CZI2vR1OIovozvZ_qtDoi9AkscX3?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 4,
+       "rank_absolute": 7,
+       "markdown": "\n\n## 3\\. Crux Technology\n\nSaudi Arabia \u00b7 [AI strategy services](https://crux.sa/services/ai-strategy-consulting)\n\nFocuses specifically on turning AI strategy into execution, including readiness assessments, high-value use-case selection, investment roadmaps, AI governance, architecture, and production deployment.\n\n**Best for\\:** Companies that need a defined AI roadmap with a clear path from initial assessment to working solutions. [crux.sa](https://crux.sa/services/ai-strategy-consulting?utm_source=chatgpt.com)\n\n---\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "AI strategy services",
+         "snippet": null,
+         "domain": "crux.sa",
+         "url": "https://crux.sa/services/ai-strategy-consulting",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[AI strategy services](https://crux.sa/services/ai-strategy-consulting)"
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "AI Strategy Consulting Saudi Arabia | Enterprise AI Advisory & Transformation Services",
+         "snippet": null,
+         "domain": "crux.sa",
+         "url": "https://crux.sa/services/ai-strategy-consulting?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "Crux",
+         "publication_date": null,
+         "markdown": null
+        }
+       ],
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "Saudi AI strategy and technology implementation consultancy",
+         "category": "company",
+         "markdown": "Crux Technology",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 4,
+       "rank_absolute": 8,
+       "markdown": "![Praca w firmie Capgemini Polska \u2013 profil pracodawcy](https://images.openai.com/static-rsc-4/BIQJrWsljqvE-LY1lBKjg5rvpLrnyWPUl30mTa609eDdumPjYYM1MSYmQqKZAcLXV-c8_aoILIO3o9yGoyGGuhQUhnKf-YrnseZh7_n-KkpCsyx-wIZGN6NM1G8g6H6iyaahwgk81t-t5iaDTZXzWNHRtjaLtU2VGP6eKhqCGd2npHAtQwNKHpg95YU0pQAK?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://pracodawcy.pracuj.pl/profile/capgemini%2Cy2bsot1%2Cpl",
+         "alt": "Praca w firmie Capgemini Polska \u2013 profil pracodawcy",
+         "image_url": "https://images.openai.com/static-rsc-4/BIQJrWsljqvE-LY1lBKjg5rvpLrnyWPUl30mTa609eDdumPjYYM1MSYmQqKZAcLXV-c8_aoILIO3o9yGoyGGuhQUhnKf-YrnseZh7_n-KkpCsyx-wIZGN6NM1G8g6H6iyaahwgk81t-t5iaDTZXzWNHRtjaLtU2VGP6eKhqCGd2npHAtQwNKHpg95YU0pQAK?purpose=fullsize",
+         "markdown": "![Praca w firmie Capgemini Polska \u2013 profil pracodawcy](https://images.openai.com/static-rsc-4/BIQJrWsljqvE-LY1lBKjg5rvpLrnyWPUl30mTa609eDdumPjYYM1MSYmQqKZAcLXV-c8_aoILIO3o9yGoyGGuhQUhnKf-YrnseZh7_n-KkpCsyx-wIZGN6NM1G8g6H6iyaahwgk81t-t5iaDTZXzWNHRtjaLtU2VGP6eKhqCGd2npHAtQwNKHpg95YU0pQAK?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 5,
+       "rank_absolute": 9,
+       "markdown": "\n\n## 4\\. Capgemini\n\nRiyadh \u00b7 [Official website](https://www.capgemini.com/)\n\nCombines technology advisory with digital transformation and technology delivery. Worth evaluating for organizations that need AI integrated into enterprise applications, cloud infrastructure, data systems, and established business processes.\n\n**Best for\\:** Mid-to-large enterprises with complex technology environments. [www.google.com](https://www.google.com/maps/place/?q=place_id%3AChIJAyW2JaADLz4RFzhZfFHVv7Q&hl=en&utm_source=chatgpt.com)\n\n---\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "Official website",
+         "snippet": null,
+         "domain": "www.capgemini.com",
+         "url": "https://www.capgemini.com/",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[Official website](https://www.capgemini.com/)"
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Capgemini Saudi",
+         "snippet": "King Khalid Rd, Building 23, Laysen Valley, Riyadh Saudi Arabia",
+         "domain": "www.google.com",
+         "url": "https://www.google.com/maps/place/?q=place_id%3AChIJAyW2JaADLz4RFzhZfFHVv7Q&hl=en&utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "google.com",
+         "publication_date": null,
+         "markdown": null
+        }
+       ],
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "Capgemini",
+         "category": "local_business",
+         "markdown": "Capgemini",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 5,
+       "rank_absolute": 10,
+       "markdown": "![agx | NextGen Systems](https://images.openai.com/static-rsc-4/aLnHurcRTbypI7Kjvolcwu_fcdKNTTykP7E2iuE4uywgh5eugFgTAewbT-03-AcEBKB9bjaJpoEp2rMeIlj9Rv3iyLn5Bu31BcQsRqRcNTEfSjAMtQBNv5rZvxK58GP8mtj3Jmoueg9q3e2fkUHU0am9EThFLm11_QvjD_GBrrTgGPVwV8h-m0HFm3cyqjo1?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://www.nextgensystems.net/agx",
+         "alt": "agx | NextGen Systems",
+         "image_url": "https://images.openai.com/static-rsc-4/aLnHurcRTbypI7Kjvolcwu_fcdKNTTykP7E2iuE4uywgh5eugFgTAewbT-03-AcEBKB9bjaJpoEp2rMeIlj9Rv3iyLn5Bu31BcQsRqRcNTEfSjAMtQBNv5rZvxK58GP8mtj3Jmoueg9q3e2fkUHU0am9EThFLm11_QvjD_GBrrTgGPVwV8h-m0HFm3cyqjo1?purpose=fullsize",
+         "markdown": "![agx | NextGen Systems](https://images.openai.com/static-rsc-4/aLnHurcRTbypI7Kjvolcwu_fcdKNTTykP7E2iuE4uywgh5eugFgTAewbT-03-AcEBKB9bjaJpoEp2rMeIlj9Rv3iyLn5Bu31BcQsRqRcNTEfSjAMtQBNv5rZvxK58GP8mtj3Jmoueg9q3e2fkUHU0am9EThFLm11_QvjD_GBrrTgGPVwV8h-m0HFm3cyqjo1?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 6,
+       "rank_absolute": 11,
+       "markdown": "\n\n## 5\\. NextGenSol\n\nSaudi Arabia \u00b7 [AI consulting services](https://nextgensol.com.sa/ai-consulting/)\n\nOffers a practical combination of AI strategy, readiness assessment, pilot development, implementation, data governance, and training. Its published model emphasizes moving from business opportunities to pilots and wider deployment.\n\n**Best for\\:** Companies seeking a potentially more focused engagement, starting with one or two business use cases before scaling. [nextgensol.com.sa](https://nextgensol.com.sa/ai-consulting/?utm_source=chatgpt.com)\n\n---\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "AI consulting services",
+         "snippet": null,
+         "domain": "nextgensol.com.sa",
+         "url": "https://nextgensol.com.sa/ai-consulting/",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[AI consulting services](https://nextgensol.com.sa/ai-consulting/)"
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "AI Consulting Services in Saudi Arabia",
+         "snippet": null,
+         "domain": "nextgensol.com.sa",
+         "url": "https://nextgensol.com.sa/ai-consulting/?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "NextGenSol",
+         "publication_date": "2026-10-13 20:44:33 +00:00",
+         "markdown": null
+        }
+       ],
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "Saudi AI consulting and implementation provider",
+         "category": "company",
+         "markdown": "NextGenSol",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 6,
+       "rank_absolute": 12,
+       "markdown": "![SCAI - Alef](https://images.openai.com/static-rsc-4/p-phrAshk4CHtFS7_kl4lWgyFjYeg6-yX3rDFvkSfWFrHitBKN325D2A5-3nozMBiaXhzYlIYWjbZkyqjBHt91G2HhB2Cc7kD5FB37cOFoGcez5v_3-hBoMVcdG8jPE_-y68n4cUk952hbaF_X4nR2OkLWJxcl-XqC9egqQ46ggUBLXCZcmIlBj32v8TZOtU?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://alefinternational.com/our_clients/scai/",
+         "alt": "SCAI - Alef",
+         "image_url": "https://images.openai.com/static-rsc-4/p-phrAshk4CHtFS7_kl4lWgyFjYeg6-yX3rDFvkSfWFrHitBKN325D2A5-3nozMBiaXhzYlIYWjbZkyqjBHt91G2HhB2Cc7kD5FB37cOFoGcez5v_3-hBoMVcdG8jPE_-y68n4cUk952hbaF_X4nR2OkLWJxcl-XqC9egqQ46ggUBLXCZcmIlBj32v8TZOtU?purpose=fullsize",
+         "markdown": "![SCAI - Alef](https://images.openai.com/static-rsc-4/p-phrAshk4CHtFS7_kl4lWgyFjYeg6-yX3rDFvkSfWFrHitBKN325D2A5-3nozMBiaXhzYlIYWjbZkyqjBHt91G2HhB2Cc7kD5FB37cOFoGcez5v_3-hBoMVcdG8jPE_-y68n4cUk952hbaF_X4nR2OkLWJxcl-XqC9egqQ46ggUBLXCZcmIlBj32v8TZOtU?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 7,
+       "rank_absolute": 13,
+       "markdown": "\n\n## 6\\. SCAI\n\nRiyadh \u00b7 [Company website](https://scai.sa/)\n\nThe Saudi Company for Artificial Intelligence is an applied-AI organization associated with Saudi Arabia's broader national AI ambitions. It is worth exploring for AI solution development and partnerships where local market knowledge and applied AI capabilities are priorities.\n\n**Best for\\:** Organizations exploring strategic AI partnerships and locally relevant AI solutions. Confirm the exact consulting scope and commercial engagement model directly. [www.google.com](https://www.google.com/maps/place/SCAI%20COMPANY/data=!4m7!3m6!1s0x3e2ee3bc6e06219d:0x3987dcea47cbe507!8m2!3d24.7598983!4d46.6033290!16s%2Fg%2F11tjd5ggfz!19sChIJnSEGbrzjLj4RB-XLR-rchzk?authuser=0&hl=en&rclk=1&utm_source=chatgpt.com)\n\n---\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "Company website",
+         "snippet": null,
+         "domain": "scai.sa",
+         "url": "https://scai.sa/",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[Company website](https://scai.sa/)"
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "SCAI COMPANY",
+         "snippet": "QJ63+29P\u060c \u0627\u0644\u0645\u0634\u0627\u0631\u0642, Hittin, Riyadh 13513, Saudi Arabia",
+         "domain": "www.google.com",
+         "url": "https://www.google.com/maps/place/SCAI%20COMPANY/data=!4m7!3m6!1s0x3e2ee3bc6e06219d:0x3987dcea47cbe507!8m2!3d24.7598983!4d46.6033290!16s%2Fg%2F11tjd5ggfz!19sChIJnSEGbrzjLj4RB-XLR-rchzk?authuser=0&hl=en&rclk=1&utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "google.com",
+         "publication_date": null,
+         "markdown": null
+        }
+       ],
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "SCAI",
+         "category": "local_business",
+         "markdown": "SCAI",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_images",
+       "rank_group": 7,
+       "rank_absolute": 14,
+       "markdown": "![\u0412\u044b \u043d\u0435 \u0440\u043e\u0431\u043e\u0442?](https://images.openai.com/static-rsc-4/n-5IqIgnn2smq93nZAjg7NzZd5epUfjoQsakX_276OLoVyk61k0-oQqWT2fJKaDWyjKHAGKxn79USV2hNLKIML0M2n-dUNl_sfCpYUuwvvyY2FSnmzuAC1ikxcqAGD7x9SkVoLUuU0Vfd_muO9kRr5TA8FBXkPf9At5ENfEIZTpTmiDcjpQahBbv41FPHypX?purpose=fullsize)",
+       "items": [
+        {
+         "type": "chat_gpt_images_element",
+         "url": "https://www.forbes.ru/profile/549271-prokop-evskij-gorno-proektnyj-institut",
+         "alt": "\u0412\u044b \u043d\u0435 \u0440\u043e\u0431\u043e\u0442?",
+         "image_url": "https://images.openai.com/static-rsc-4/n-5IqIgnn2smq93nZAjg7NzZd5epUfjoQsakX_276OLoVyk61k0-oQqWT2fJKaDWyjKHAGKxn79USV2hNLKIML0M2n-dUNl_sfCpYUuwvvyY2FSnmzuAC1ikxcqAGD7x9SkVoLUuU0Vfd_muO9kRr5TA8FBXkPf9At5ENfEIZTpTmiDcjpQahBbv41FPHypX?purpose=fullsize",
+         "markdown": "![\u0412\u044b \u043d\u0435 \u0440\u043e\u0431\u043e\u0442?](https://images.openai.com/static-rsc-4/n-5IqIgnn2smq93nZAjg7NzZd5epUfjoQsakX_276OLoVyk61k0-oQqWT2fJKaDWyjKHAGKxn79USV2hNLKIML0M2n-dUNl_sfCpYUuwvvyY2FSnmzuAC1ikxcqAGD7x9SkVoLUuU0Vfd_muO9kRr5TA8FBXkPf9At5ENfEIZTpTmiDcjpQahBbv41FPHypX?purpose=fullsize)"
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 8,
+       "rank_absolute": 15,
+       "markdown": "\n\n## 7\\. Pulse Innovation Consulting (PIC)\n\nRiyadh \u00b7 [Official website](https://picsaudi.com/)\n\nEmphasizes AI and data initiatives tied to measurable business value, leadership engagement, and internal capability development. Its AI practice describes work spanning use-case assessment through implementation.\n\n**Best for\\:** Leadership teams that want to prioritize AI investments, evaluate existing pilots, and demonstrate business returns. [picsaudi.com](https://picsaudi.com/?utm_source=chatgpt.com)\n\n## Which firms would I approach first?\n\n",
+       "sources": [
+        {
+         "type": "chat_gpt_source",
+         "title": "Official website",
+         "snippet": null,
+         "domain": "picsaudi.com",
+         "url": "https://picsaudi.com/",
+         "thumbnail": null,
+         "source_name": null,
+         "publication_date": null,
+         "markdown": "[Official website](https://picsaudi.com/)"
+        },
+        {
+         "type": "chat_gpt_source",
+         "title": "Strategy & AI Consulting in Riyadh, Saudi Arabia",
+         "snippet": null,
+         "domain": "picsaudi.com",
+         "url": "https://picsaudi.com/?utm_source=chatgpt.com",
+         "thumbnail": null,
+         "source_name": "PIC",
+         "publication_date": null,
+         "markdown": null
+        }
+       ],
+       "brand_entities": [
+        {
+         "type": "chat_gpt_brand_entity",
+         "title": "Riyadh strategy and AI value realization consultancy",
+         "category": "company",
+         "markdown": "Pulse Innovation Consulting (PIC)",
+         "urls": null
+        }
+       ]
+      },
+      {
+       "type": "chat_gpt_table",
+       "rank_group": 1,
+       "rank_absolute": 16,
+       "text": null,
+       "markdown": "| Your main requirement | My first choices |\n|--------|--------|\n| Enterprise-wide AI strategy and implementation | Accenture, Capgemini |\n| Specialist AI strategy plus hands-on engineering | Bilytica, Crux Technology |\n| Focused pilot and phased rollout | NextGenSol |\n| Saudi-focused AI partnerships | SCAI |\n| AI investment prioritization and business value | Pulse Innovation Consulting |\n\n",
+       "table": {
+        "table_header": [
+         "Your main requirement",
+         "My first choices"
+        ],
+        "table_content": [
+         [
+          "Enterprise-wide AI strategy and implementation",
+          "Accenture, Capgemini"
+         ],
+         [
+          "Specialist AI strategy plus hands-on engineering",
+          "Bilytica, Crux Technology"
+         ],
+         [
+          "Focused pilot and phased rollout",
+          "NextGenSol"
+         ],
+         [
+          "Saudi-focused AI partnerships",
+          "SCAI"
+         ],
+         [
+          "AI investment prioritization and business value",
+          "Pulse Innovation Consulting"
+         ]
+        ]
+       },
+       "brand_entities": null
+      },
+      {
+       "type": "chat_gpt_text",
+       "rank_group": 9,
+       "rank_absolute": 17,
+       "markdown": "\nThese are fit-based recommendations, not independently verified rankings of delivery quality. The firms differ in scale, specialization, and engagement model.\n\n## What to evaluate before selecting a firm\n\nI recommend asking each shortlisted firm for the following\\:\n\n- **Strategy\\:** An AI opportunity assessment, prioritized use cases, business cases, and a 12\u201324-month roadmap.\n- **Implementation\\:** Examples of AI systems deployed in production, not just proofs of concept.\n- **Commercial value\\:** Expected ROI, measurable KPIs, implementation costs, and ongoing operating costs.\n- **Saudi compliance\\:** How the proposed architecture addresses PDPL, relevant NDMO requirements, and sector-specific regulations where applicable.\n- **Knowledge transfer\\:** How your employees will operate, maintain, and improve the solutions after implementation.\n- **Delivery team\\:** The actual Saudi-based project leads and engineers who will deliver the engagement.\n\nMy recommendation is to invite three firms to a structured discovery process and ask each to propose an initial use case with measurable business value. Compare the proposed outcomes, delivery approach, timeline, and total cost before committing to a larger transformation.\n\nWould you like me to narrow this to the most relevant providers for your company size or compare their capabilities in more detail?\n\n[Compare the top 3 firms in detail](f)\n\n[Find firms suited to my industry](f)",
+       "sources": null,
+       "brand_entities": null
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

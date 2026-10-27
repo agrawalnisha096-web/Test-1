@@ -1,0 +1,131 @@
+{
+ "version": "0.1.20261022",
+ "status_code": 20000,
+ "status_message": "Ok.",
+ "time": "5.2789 sec.",
+ "cost": 0.006418,
+ "tasks_count": 1,
+ "tasks_error": 0,
+ "tasks": [
+  {
+   "id": "10270243-2577-0612-0000-2e566060471a",
+   "status_code": 20000,
+   "status_message": "Ok.",
+   "time": "5.2712 sec.",
+   "cost": 0.006418,
+   "result_count": 1,
+   "path": [
+    "v3",
+    "ai_optimization",
+    "perplexity",
+    "llm_responses",
+    "live"
+   ],
+   "data": {
+    "api": "ai_optimization",
+    "function": "llm_responses",
+    "se": "perplexity",
+    "user_prompt": "What are the best generative AI development companies in the USA for building an enterprise LLM application?",
+    "model_name": "sonar",
+    "max_output_tokens": 2048,
+    "web_search_country_iso_code": "US",
+    "tag": "Q2-perplexity-1"
+   },
+   "result": [
+    {
+     "model_name": "sonar",
+     "input_tokens": 27,
+     "output_tokens": 791,
+     "reasoning_tokens": 0,
+     "web_search": true,
+     "money_spent": 0.005818,
+     "datetime": "2026-10-27 02:43:44 +00:00",
+     "items": [
+      {
+       "type": "message",
+       "sections": [
+        {
+         "type": "text",
+         "text": "For an enterprise LLM application in the USA, the strongest shortlist is **IBM Consulting, Accenture, Thoughtworks, HatchWorks AI, LeewayHertz, 10Pearls, BairesDev, and Databricks**. The right choice depends on whether you need a large transformation partner, a product-engineering team, or a data-and-LLMOps platform specialist.\n\n## Recommended companies\n\n| Company | Best fit | Relevant strengths |\n|---|---|---|\n| **IBM Consulting** | Regulated enterprises and complex IT environments | watsonx, RAG, AI agents, governance, security, and enterprise transformation[1] |\n| **Accenture** | Large, multi-business AI programs | Enterprise strategy, implementation, change management, and managed services at global scale[2] |\n| **Thoughtworks** | Modern, cloud-native LLM applications | Custom LLM applications, RAG, AI agents, integration, and product engineering[3] |\n| **HatchWorks AI** | AI transformation linked to data modernization | Agentic automation, RAG, AI-native products, and data-platform modernization[1] |\n| **LeewayHertz** | Custom enterprise agents and LLM integrations | Generative AI, multi-agent systems, enterprise integrations, and its ZBrain platform[1] |\n| **10Pearls** | Product development and enterprise AI delivery | Custom software, generative AI, AI agents, and end-to-end product engineering[4] |\n| **BairesDev** | Large engineering capacity and legacy modernization | Enterprise software delivery, AI engineering, machine learning, and modernization[3] |\n| **Databricks** | Data-intensive organizations building on governed data | LLM training, RAG, data platforms, and AI lifecycle management[5] |\n\n## Best choice by situation\n\n- **Most comprehensive enterprise transformation:** Accenture or IBM Consulting.\n- **Best for a production-grade custom application:** Thoughtworks or 10Pearls.\n- **Best for RAG over proprietary enterprise data:** Databricks, HatchWorks AI, or LeewayHertz.\n- **Best for agentic workflows and copilots:** LeewayHertz, HatchWorks AI, or Thoughtworks.\n- **Best for regulated industries:** IBM Consulting, Accenture, or Databricks.\n- **Best for supplementing an internal engineering team:** BairesDev or Turing.\n- **Best for a mid-market enterprise seeking a smaller specialist:** LeewayHertz, Azumo, or Markovate; these firms emphasize LLM applications, RAG, agents, and enterprise integrations.[1][3]\n\n## What to evaluate before selecting one\n\nRequire each vendor to demonstrate:\n\n- A production LLM application comparable to your use case.\n- Experience with your cloud, data estate, identity system, and compliance requirements.\n- A concrete RAG evaluation plan covering retrieval quality, hallucination rate, latency, and cost.\n- Security controls for tenant isolation, prompt injection, data leakage, and model access.\n- LLMOps capabilities: tracing, monitoring, evaluation, versioning, rollback, and cost controls.\n- A clear approach to model selection across OpenAI, Anthropic, Google, open-source, and private models.\n- Ownership of source code, prompts, evaluation datasets, infrastructure-as-code, and deployment pipelines.\n- Post-launch support and measurable success criteria.\n\nA practical initial RFP would include **IBM or Accenture** for a large transformation, **Thoughtworks or 10Pearls** for application engineering, and **HatchWorks AI, LeewayHertz, or Databricks** for a focused LLM/RAG implementation. These categories reflect publicly described capabilities; vendor claims should be validated through references, architecture reviews, and a paid proof of concept.[1][2][3]",
+         "annotations": [
+          {
+           "title": "Top 20 AI Development Companies in the USA for 2026 and 2027",
+           "url": "https://www.linkedin.com/pulse/top-20-ai-development-companies-usa-2026-2027-techanic-infotech-jhzbf",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "Best Generative AI Development Companies in USA 2026",
+           "url": "https://sapidblue.com/insights/best-generative-ai-development-companies-usa/",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "Best Practices in AI...",
+           "url": "https://www.classicinformatics.com/blog/top-10-ai-development-companies-in-usa",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "Top 10 AI Development Companies in USA [2026 Guide]",
+           "url": "https://www.azilen.com/learning/top-ai-development-companies-in-usa/",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "Top 10 generative AI development companies in the USA",
+           "url": "https://www.xavor.com/blog/top-generative-ai-development-companies-in-the-usa/",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "Top Generative AI Development Companies in USA",
+           "url": "https://tech.us/blog/top-generative-ai-development-companies-usa",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "Top 12+ Generative AI Development Companies in USA",
+           "url": "https://www.pixelbrainy.com/blog/top-generative-ai-development-companies-in-usa",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "4. Coherent Solutions",
+           "url": "https://www.linkedin.com/pulse/15-leading-ai-development-companies-usa-2026-space-o-technologies-w029f",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "www.q3tech.com \u203a blogs \u203a generative-ai-developmentBest Generative AI Development Companies in the USA (2026)",
+           "url": "https://www.q3tech.com/blogs/generative-ai-development-companies/",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          },
+          {
+           "title": "Top 16 Generative AI Development Companies in 2026",
+           "url": "https://kanerika.com/blogs/generative-ai-companies/",
+           "start_index": null,
+           "end_index": null,
+           "text": null
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "fan_out_queries": null
+    }
+   ]
+  }
+ ]
+}
