@@ -2,7 +2,7 @@
 
 Oct 27, 2026
 
-**Commitment:** 6–7 hours a week (about 10–12 in week 1 for setup), mostly weekdays, with quick checks on other days after any change. Actual vs. planned hours go in every weekly report. Scope for month 1 is Google Ads only, no creatives. We review hours and scope at the end of the month, or sooner if Meta or creatives are added.
+**Commitment:** 6–7 hours a week (about 10–12 in week 1 for setup), mostly weekdays, with quick checks on other days after any change. Actual vs. planned hours go in every weekly report. Scope for month 1 is Google Ads only, with no image or video creatives (ad text only). We review hours and scope at the end of the month, or sooner if Meta or creatives are added.
 
 ## How I'll follow the SOP
 
@@ -30,7 +30,7 @@ Everything non-negotiable stays as written: no optimising for installs alone, no
 | Cost per activated user | Baseline | 10% lower |
 | Spend | ~₹3,600/day | Within the approved ceiling |
 
-**Planned experiments.** Target CPA ₹2.60 → ₹2.08; pause the two weakest ad groups; cap the budget at ₹4,000/day; clean up conversion goals once tracking is fixed. Each with hypothesis, guardrails, maximum spend and a written decision.
+**Planned experiments.** Target CPA ₹2.60 → ₹2.08; add a few ad groups with Bahasa Indonesia headlines and descriptions (all current ad text is English, though the campaign only targets Indonesia), within the existing budget; pause the two weakest ad groups; cap the budget at ₹4,000/day; clean up conversion goals once tracking is fixed. Each with hypothesis, guardrails, maximum spend and a written decision.
 
 **Revenue.** Purchases checked against Play Console, and cost per purchase reported on installs at least 14 days old, as the baseline for month 2.
 
