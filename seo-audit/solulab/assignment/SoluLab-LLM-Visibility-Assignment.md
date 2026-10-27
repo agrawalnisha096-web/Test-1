@@ -19,7 +19,11 @@
 - 50+ placements in Google AI Overviews.
 - Consistent citations in ChatGPT, Perplexity and Gemini, alongside Accenture, TCS and Deloitte.
 
-**One failed experiment and the lesson:** [[add one]]
+**One failed experiment and the lesson:**
+- **What I tried:** scaling Algoscale's pages programmatically, with templated location pages ("[service] in [location]") and tool pages ("[service] for [tool]").
+- **What happened:** it didn't prove effective.
+- **What I learned:** templated pages add URLs, not reasons to be chosen. I moved the effort to what did work: substantive service pages, case studies, PR placements and community distribution.
+- **Why it matters for SoluLab:** SoluLab's location pages for Dubai and Saudi Arabia show the same pattern. My Task 2 tests found its only AI recommendation came through third-party lists, not those pages.
 
 **Commercial outcome:**
 
