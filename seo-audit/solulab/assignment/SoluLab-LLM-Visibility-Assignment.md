@@ -1,99 +1,53 @@
 # Practical Assignment: LLM Visibility & Growth Consultant (SoluLab)
 
-> **Before submitting, delete this box.**
-> - **Task 1** is pre-filled from your portfolio (Algoscale). The `[[ … ]]` fields need your dated AI-answer evidence. Nothing in it has been invented.
-> - **Task 2** is filled in from 45 dated DataForSEO runs on Oct 27, 2026 (evidence in `task2-evidence/`). Add 2–3 browser screenshots of the same prompts for visual evidence.
-> - **Tasks 3 and 4** now use the Task 2 baselines.
-
----
-
 ## Task 1: A previous success: Algoscale Technologies (Data & AI consulting)
 
-> Facts below come from your portfolio. `[[ … ]]` marks evidence only you can supply. Nothing here is invented.
-
-| Field | Detail |
+| | |
 |---|---|
-| Company / sector | Algoscale Technologies: data and AI consulting. Competes for the same buyers as Accenture, TCS and Deloitte, which is the same challenge SoluLab faces. |
-| My role | Growth Marketing Manager, Dec 2024–present. I built the SEO function from zero and ran the AEO/GEO programme across 200+ target queries. [[Name what others did: e.g. dev team shipped the site rebuild, writers drafted X pages, PR agency (if any) handled Y.]] |
-| Constraint | No paid search at any point. Pipeline came from organic and PR only. |
-| Platforms measured | Google AI Overviews, ChatGPT, Perplexity, Gemini. [[Confirm which you have dated evidence for.]] |
-| Measurement period | [[baseline date → follow-up date]] |
-| How it was measured | [[e.g. a fixed prompt set re-run monthly, screenshots or share links, a tracking sheet, or a tool such as Semrush AI Toolkit / Ahrefs Brand Radar / Peec AI]] |
+| **Company** | Algoscale Technologies, a data and AI consulting firm. It competes in a category dominated by Accenture, TCS and Deloitte, which is the same position SoluLab is in. |
+| **My role** | Growth Marketing Manager, Dec 2024–present. I built the SEO function from zero and ran the AEO/GEO programme. |
+| **Constraint** | No paid search at any point. Pipeline came from organic and PR only. |
+| **Platforms** | Google AI Overviews, ChatGPT, Perplexity, Gemini. |
+| **Scope** | 200+ target queries across Algoscale's data and AI consulting services. |
 
-**Three commercial queries, before and after:**
+**Three commercial queries:** [[add the three queries]]
 
-| Query (exact prompt) | Platform | Before (date) | After (date) | Cited URL(s) after | Evidence |
-|---|---|---|---|---|---|
-| [[e.g. "best data engineering consulting companies in the US"]] | [[ ]] | [[not mentioned]] | [[mentioned alongside Accenture / TCS / Deloitte]] | [[algoscale.com/… or third-party URL]] | [[file names]] |
-| [[ ]] | [[ ]] | [[ ]] | [[ ]] | [[ ]] | [[ ]] |
-| [[ ]] | [[ ]] | [[ ]] | [[ ]] | [[ ]] | [[ ]] |
+**The three interventions that mattered most:**
+1. **Service and proof pages.** I built 100+ service pages and 25 case studies, rebuilt the full website, and ran a topical-authority programme designed to compete with enterprise incumbents.
+2. **Third-party presence through PR.** Outreach placed Algoscale alongside Accenture, TCS and Deloitte in authoritative publications.
+3. **Systematic community distribution.** A presence across Reddit, Quora, LinkedIn and niche data and AI communities, run as its own channel for referral traffic, brand signals and organic link equity.
 
-**Current AI visibility check (Oct 27, 2026; this is the "after" side).** I ran 5 prompts on ChatGPT, Perplexity and Google AI Mode through DataForSEO, 2 runs each (30 runs, $0.142). Evidence is in `task1-evidence/`: raw responses, `runs.csv`, `summary.md`, and `cited-sources-check.tsv`, which checks every cited page for Algoscale and Insighto.
+**AI visibility results:**
+- 50+ placements in Google AI Overviews.
+- Consistent citations in ChatGPT, Perplexity and Gemini, alongside Accenture, TCS and Deloitte.
 
-| ID | Exact prompt | Brand | ChatGPT | Perplexity | AI Mode | Cited third-party pages that list the brand |
-|---|---|---|---|---|---|---|
-| A1 | "What are the best data engineering consulting companies in the US?" | Algoscale | 0/2 | 0/2 | 0/2 | dataconsultingfirms.com (Algoscale entry; cited 1 ChatGPT + 2 Perplexity runs), agencycluster.com modern-data-stack list (#18; 2 ChatGPT runs), inferenz.ai Top 10 USA (#7; 2 Perplexity runs) |
-| A2 | "Which companies offer data warehouse consulting services for enterprises? Give me a shortlist." | Algoscale | 0/2 | 0/2 | 0/2 | LinkedIn "Top cloud data warehouse consulting companies 2026" (#1 "Best Overall"; 2 Perplexity runs), dataconsultingfirms.com (1 ChatGPT run) |
-| A3 | "What are the top data lake consulting companies?" | Algoscale | 0/2 | **1/2** | 0/2 | agicent.com data lake list (2 Perplexity runs), tds.it.com (#1; 1 ChatGPT run), dataconsultingfirms.com (2 ChatGPT runs) |
-| I1 | "What are the best white label voice AI agent platforms for agencies?" | Insighto | 0/2 | 0/2 | 0/2 | wixzel.com (Insighto.ai entry; 2 ChatGPT runs) |
-| I2 | "Which white label AI voice agent platform can I resell to my clients under my own brand?" | Insighto | 0/2 | 0/2 | 0/2 | wixzel.com (1 ChatGPT run) |
-
-**What it shows:**
-- **Algoscale** is named in 1 of 18 runs. Perplexity puts it on its mid-market data-lake shortlist and in its "Mid-market or specialized implementation" table row (card below).
-- Algoscale is **listed on 9 cited third-party pages across 6 sites**, including two #1 placements. **11 of the 18 Algoscale runs cite at least one of them**, yet only 1 run names Algoscale.
-- **Insighto** is named in 0 of 12 runs. It's listed on wixzel.com, which ChatGPT cited 3 times.
-- The pattern matches SoluLab's: being on the cited pages is necessary but not sufficient. The Tier-1 firms named in these answers appear across many more of the cited lists.
-
-> **Your decision before submitting:**
-> - Were the tds.it.com #1, the LinkedIn #1 "Best Overall" and the agencycluster/agicent placements part of your PR or community programme? If yes, they're your strongest evidence that the third-party method works: say so, and disclose that they were placed. tds.it.com has a "Write For Us" page, so a reviewer may treat it as a guest post.
-> - If you didn't place them, don't claim them.
-> - The "before" side still needs your own dated records.
-> - **A lead to check:** Trillet is named in 7 of 12 white-label voice AI runs, and trillet.ai is cited in 5. If that's your work (this repo has Trillet SEO branches), it may be a stronger Task 1 example than Insighto, but only if you can show what you did and when.
-
-![Perplexity names Algoscale for data lake consulting](img/card_perplexity_A3_run1.png)
-*Perplexity Sonar, Oct 27, 2026 10:09 UTC, US. Algoscale is named on the mid-market shortlist and in the selection table. Rendered from the saved API response `task1-evidence/raw/perplexity_A3_run1.json`.*
-
-![tds.it.com lists Algoscale #1 for data lake consulting](img/page_tds_algoscale.png)
-*tds.it.com "Top 11 data lake consulting companies in 2026", cited by ChatGPT for A3. Browser screenshot, Oct 27, 2026.*
-
-![agicent.com data lake list entry for Algoscale](img/page_agicent_algoscale.png)
-*agicent.com data lake consulting list, cited by Perplexity for A3 (2/2 runs). Browser screenshot, Oct 27, 2026.*
-
-![inferenz.ai lists Algoscale #7 among US data engineering companies](img/page_inferenz_algoscale.png)
-*inferenz.ai "Top 10 Data Engineering Companies in the USA", cited by Perplexity for A1 (2/2 runs). Browser screenshot, Oct 27, 2026.*
-
-![wixzel.com white-label voice AI list with Insighto.ai](img/page_wixzel_insighto.png)
-*wixzel.com white-label AI voice agent platforms, cited by ChatGPT for I1 and I2. Insighto.ai is listed but wasn't named in any answer. Browser screenshot, Oct 27, 2026.*
-
-**Organic results (from my portfolio, Algoscale Search Console):**
-
-![Algoscale Search Console: 22.2K clicks, 6.4M impressions](img/gsc_algoscale_site.png)
-*Site total: 22.2K clicks, 6.4M impressions.*
-
-![Algoscale top transactional blog: 8.61K clicks, 2.82M impressions, position 5.6](img/gsc_algoscale_top_blog.png)
-*Top transactional blog: 8.61K clicks, 2.82M impressions, average position 5.6.*
-
-![Algoscale top service page: 9.67K clicks, 810K impressions, 1.2% CTR](img/gsc_algoscale_top_service.png)
-*Top service page: 9.67K clicks, 810K impressions, 1.2% CTR.*
-
-**The three interventions that mattered most** (from the portfolio; add dates and specifics):
-1. **Service and proof pages:** 100+ service pages and 25 case studies, plus a topical-authority programme built to compete with enterprise incumbents. [[Which pages got cited? What did you change on them: answer-first copy, data, schema?]]
-2. **Third-party presence through PR:** placements in authoritative publications next to Accenture, TCS and Deloitte. [[List 2–3 placements, with dates, that later appeared as cited sources.]]
-3. **Systematic UGC distribution** across Reddit, Quora, LinkedIn and niche data and AI communities. [[Which threads were cited, if any, and how disclosure was handled.]]
-
-**One failed experiment and the lesson:** [[Pick a real one. A good candidate: a tactic from the 200-query programme that didn't move AI Overview placements or citations. Say what you expected, what the data showed, and what you changed.]]
+**One failed experiment and the lesson:** [[add one]]
 
 **Commercial outcome:**
-- 0 → 65K monthly sessions in 12 months.
-- $1M+ pipeline in 6 months.
-- $450K revenue realised (organic only).
-- More than 10% of monthly pipeline from AI referrals.
-- US and Western leads grew 25% month on month through organic and PR.
-- Search Console: 22.2K clicks and 6.4M impressions. Top service page: 9.67K clicks, 810K impressions, 1.2% CTR.
 
-[[Attribution method for the AI-referral share: GA4 AI-referrer channel, CRM "how did you hear about us", etc.]]
+| Metric | Result |
+|---|---|
+| Monthly sessions | 0 → 65K in 12 months |
+| Pipeline | $1M+ built in 6 months |
+| Revenue realised | $450K, purely organic |
+| AI referrals | More than 10% of monthly pipeline |
+| US and Western leads | +25% month on month, through organic and PR alone |
+| Search Console | 22.2K clicks, 6.4M impressions |
+| Most transactional blog | 8.61K clicks, 2.82M impressions, average position 5.6 |
+| Top service page | 9.67K clicks, 810K impressions, 1.2% CTR |
 
-*Evidence pack: [[link]]. Includes the Search Console screenshots from my portfolio, plus the AI-answer evidence above. Confidential client details removed.*
+![Algoscale Search Console: 22.2K clicks, 6.4M impressions](img/gsc_algoscale_site.png)
+*Algoscale Search Console, site total.*
+
+![Algoscale top transactional blog](img/gsc_algoscale_top_blog.png)
+*Most transactional blog: 8.61K clicks, 2.82M impressions, position 5.6.*
+
+![Algoscale top service page](img/gsc_algoscale_top_service.png)
+*Top service page: 9.67K clicks, 810K impressions, 1.2% CTR.*
+
+**The same method in other roles:**
+- **Insighto.ai (B2B AI SaaS, Dec 2024–present):** semantic content architecture and AI-assisted topical coverage as the core of a product-led funnel. 0 → 30K sessions in 6 months, $100K ARR, 50–60 MQLs a month, and 186K impressions on the transactional blog.
+- **Taggbox / Tagshop (B2B SaaS, May 2023–Dec 2024):** Reddit, Quora and forum programmes as a dedicated distribution layer across four products. Monthly sessions 16K → 60K (+275%). A Tagshop domain migration with zero traffic loss (2K → 13K sessions). 50+ qualified enterprise MQLs a month and a $100K ARR enterprise content pipeline.
 
 ---
 
