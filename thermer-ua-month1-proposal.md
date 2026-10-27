@@ -23,14 +23,14 @@ Everything non-negotiable stays as written: no optimising for installs alone, no
 
 | Metric | Today | Month 1 target |
 |---|---|---|
-| Cost per install | ₹1.89 | ≤ ₹1.60 |
-| Installs per day | ~1,900 | ≥ 1,700 |
+| Cost per install | ₹1.89 | ≤ ₹1.70 |
+| Installs per day | ~1,900 | ≥ 1,900 (no drop) |
 | First-print activation (unique users) | Baseline | No worse than baseline (within 2 pts) |
 | D7 retention | Baseline | No worse than baseline |
 | Cost per activated user | Baseline | 10% lower |
 | Spend | ~₹3,600/day | Within the approved ceiling |
 
-**Planned experiments.** Target CPA ₹2.60 → ₹2.08; add a few ad groups with Bahasa Indonesia headlines and descriptions (all current ad text is English, though the campaign only targets Indonesia), within the existing budget; pause the two weakest ad groups; cap the budget at ₹4,000/day; clean up conversion goals once tracking is fixed. Each with hypothesis, guardrails, maximum spend and a written decision.
+**Planned experiments.** Target CPA ₹2.60 → ₹2.35 (−10%), with a further step only if install volume holds; add a few ad groups with Bahasa Indonesia headlines and descriptions (all current ad text is English, though the campaign only targets Indonesia), within the existing budget; pause the two weakest ad groups (₹3.1+ per install vs ₹2.31 for the best) and shift their spend to stronger ones; cap the budget at ₹4,000/day; clean up conversion goals once tracking is fixed. Each with hypothesis, guardrails, maximum spend and a written decision.
 
 **Revenue.** Purchases checked against Play Console, and cost per purchase reported on installs at least 14 days old, as the baseline for month 2.
 
