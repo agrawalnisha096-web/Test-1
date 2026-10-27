@@ -1,0 +1,373 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@page { size: A4; margin: 16mm 15mm 16mm 15mm; }
+body { font: 9.6pt/1.42 -apple-system, "Segoe UI", Roboto, Arial, sans-serif; color:#1d2330; }
+h1 { font-size: 19pt; margin: 0 0 4mm; color:#111827; border-bottom: 2px solid #1d4ed8; padding-bottom: 2mm; }
+h2 { font-size: 14pt; margin: 6mm 0 2mm; color:#1d4ed8; break-after: avoid; }
+h2:not(:first-of-type) { margin-top: 8mm; padding-top: 3mm; border-top: 1px solid #d5d9e0; }
+h3 { font-size: 11.5pt; margin: 4mm 0 1.5mm; break-after: avoid; }
+p, li { margin: 1.2mm 0; }
+ul, ol { padding-left: 5mm; margin: 1mm 0; }
+table { border-collapse: collapse; width: 100%; margin: 2mm 0 3mm; font-size: 8.8pt; break-inside: auto; }
+th, td { border: 1px solid #d5d9e0; padding: 1.4mm 2mm; vertical-align: top; text-align: left; }
+th { background: #f1f4f9; }
+tr { break-inside: avoid; }
+td:first-child { white-space: normal; }
+img { max-width: 100%; display:block; margin: 2mm auto 1mm; border:1px solid #e3e6eb; }
+img.card { width: 44%; } img.shot { width: 72%; } table.results td:nth-child(2) { width: 30%; } table.results td:nth-child(3), table.results td:nth-child(4), table.results td:nth-child(5) { width: 7%; text-align:center; }
+p em { display:block; text-align:center; font-size:8.3pt; color:#5b6476; }
+code { font-size: 8.5pt; background:#f3f4f6; padding:0 1mm; }
+hr { border:0; }
+</style></head><body><h1>Practical Assignment: LLM Visibility &amp; Growth Consultant (SoluLab)</h1>
+<h2>Task 1: Previous success: Algoscale Technologies</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Company</strong></td>
+<td>Data and AI consulting, competing with Accenture, TCS and Deloitte. This is the same position SoluLab is in.</td>
+</tr>
+<tr>
+<td><strong>My role</strong></td>
+<td>Growth Marketing Manager, Dec 2024–present. I built the SEO function from zero and ran the AEO/GEO programme across 200+ target queries.</td>
+</tr>
+<tr>
+<td><strong>Constraint</strong></td>
+<td>No paid search. Organic and PR only.</td>
+</tr>
+<tr>
+<td><strong>Platforms</strong></td>
+<td>Google AI Overviews, ChatGPT, Perplexity, Gemini.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Three interventions that mattered most:</strong></p>
+<ol>
+<li><strong>Service and proof pages:</strong> 100+ service pages, 25 case studies, a full site rebuild, and a topical-authority programme.</li>
+<li><strong>PR:</strong> placements in authoritative publications alongside Accenture, TCS and Deloitte.</li>
+<li><strong>Community distribution:</strong> Reddit, Quora, LinkedIn and niche data and AI communities, run as its own channel.</li>
+</ol>
+<p><strong>Results:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AI visibility</td>
+<td>50+ Google AI Overview placements, plus citations in ChatGPT, Perplexity and Gemini alongside Accenture, TCS and Deloitte</td>
+</tr>
+<tr>
+<td>Pipeline</td>
+<td>$1M+ in 6 months. More than 10% of monthly pipeline came from AI referrals.</td>
+</tr>
+<tr>
+<td>Revenue</td>
+<td>$450K realised, organic only</td>
+</tr>
+<tr>
+<td>Traffic</td>
+<td>0 → 65K monthly sessions in 12 months. US and Western leads +25% month on month.</td>
+</tr>
+<tr>
+<td>Search Console</td>
+<td>22.2K clicks, 6.4M impressions. Top service page: 9.67K clicks, 1.2% CTR. Top blog: 8.61K clicks, position 5.6.</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="Algoscale Search Console" style="width:78%" src="img/gsc_algoscale_site.png" /></p>
+<p><strong>Failed experiment:</strong> I scaled pages programmatically with templated location pages ("[service] in [location]") and tool pages ("[service] for [tool]"). It didn't prove effective. <strong>Lesson:</strong> templated pages add URLs, not reasons to be chosen, so I moved the effort to substantive service pages, case studies, PR and community distribution. SoluLab's Dubai and Saudi location pages show the same pattern (see Task 2).</p>
+<p><strong>The same method elsewhere:</strong></p>
+<ul>
+<li><strong>Insighto.ai:</strong> 0 → 30K sessions in 6 months, $100K ARR, 50–60 MQLs a month.</li>
+<li><strong>Taggbox / Tagshop:</strong> Reddit, Quora and forum programmes across four products. Sessions 16K → 60K. A domain migration with zero traffic loss. 50+ enterprise MQLs a month.</li>
+</ul>
+<hr />
+<h2>Task 2: SoluLab's current AI visibility</h2>
+<p><strong>Method:</strong></p>
+<ul>
+<li><strong>Platforms:</strong> ChatGPT (consumer answer with search), Perplexity (Sonar) and Google AI Mode, all through the DataForSEO API.</li>
+<li><strong>When and where:</strong> October 27, 2026. US location for Q1, Q2 and Q5; UAE for Q3; Saudi Arabia for Q4.</li>
+<li><strong>Runs:</strong> 3 per prompt per platform, so 45 in total, reported as rates.</li>
+<li><strong>Evidence:</strong> every response and cited URL is saved (<code>task2-evidence/</code>).</li>
+</ul>
+<table class="results">
+<thead>
+<tr>
+<th>ID</th>
+<th>Exact prompt</th>
+<th>ChatGPT</th>
+<th>Perplexity</th>
+<th>AI Mode</th>
+<th>Competitors named most</th>
+<th>Most-cited third-party sources</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Q1 (US)</td>
+<td>"Which companies should a US enterprise consider to build custom AI agents? Give me a shortlist with a reason for each."</td>
+<td>0/3</td>
+<td>0/3</td>
+<td>0/3</td>
+<td>Accenture, IBM, EPAM, Cognizant, LeewayHertz</td>
+<td>pixelmatters.com, christianandtimbers.com, hudasoft.com lists</td>
+</tr>
+<tr>
+<td>Q2 (US)</td>
+<td>"What are the best generative AI development companies in the USA for building an enterprise LLM application?"</td>
+<td>0/3</td>
+<td>0/3</td>
+<td>0/3</td>
+<td><strong>LeewayHertz (9/9)</strong>, EPAM, Slalom, HatchWorks AI</td>
+<td>tech.us (7/9 runs), agencycluster.com</td>
+</tr>
+<tr>
+<td>Q3 (UAE)</td>
+<td>"What are the top AI development companies in Dubai for enterprise projects?"</td>
+<td>0/3</td>
+<td><strong>3/3 recommended</strong></td>
+<td>0/3</td>
+<td>Presight, G42/Core42, Microsoft, IBM, Simform</td>
+<td>lumitech.co, apptunix.com, designrush.com, masterofcode.com</td>
+</tr>
+<tr>
+<td>Q4 (KSA)</td>
+<td>"Recommend AI consulting firms in Saudi Arabia that can help a company with AI strategy and implementation."</td>
+<td>0/3</td>
+<td>0/3</td>
+<td>0/3</td>
+<td>McKinsey, BCG, Accenture, local Saudi consultancies</td>
+<td>clutch.co (Saudi), labarna.ai, local firm sites</td>
+</tr>
+<tr>
+<td>Q5 (US)</td>
+<td>"How much does it cost to hire a company to build an AI agent, and which firms offer this service?"</td>
+<td>0/3</td>
+<td>0/3</td>
+<td>0/3</td>
+<td>Accenture, LeewayHertz, Moveworks</td>
+<td>vantasoft.com, productcrafters.io cost guides</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Headline:</strong> SoluLab was mentioned in <strong>3 of 45</strong> runs and <strong>solulab.com was cited in 0</strong>.</p>
+<p><strong>What the evidence shows:</strong></p>
+<ol>
+<li><strong>Recommendations come from third-party lists.</strong> The Dubai mention traces to two lists that rank SoluLab: Apptunix (#5) and Lumitech (#8). Perplexity even reuses Lumitech's description of SoluLab.</li>
+<li><strong>Position and consensus matter.</strong> On the 15 most-cited US lists, LeewayHertz appears on 10 and SoluLab on 3, lower down (#6–#15). LeewayHertz gets named and SoluLab doesn't.</li>
+<li><strong>Each platform uses different sources.</strong> Perplexity cited the same sources in every run. ChatGPT and AI Mode overlapped by only about a third between runs, so a win on one platform doesn't carry over to another.</li>
+<li><strong>The Gulf markets reward local presence.</strong> Saudi answers cite Saudi firms, Clutch's Saudi category and even an Arabic-language page.</li>
+</ol>
+<p><img class="card" alt="Perplexity recommends SoluLab for Dubai" src="img/card_perplexity_Q3_run1.png" />
+<em>Perplexity, Oct 27, 2026, UAE. SoluLab's citations [1] and [8] are third-party lists. Rendered from the saved API response.</em></p>
+<p><img class="shot" alt="Apptunix list: SoluLab #5" src="img/page_apptunix_solulab.png" />
+<em>Source [1]: Apptunix "Top 11 AI development companies in Dubai". Browser screenshot, Oct 27, 2026.</em></p>
+<p><strong>One opportunity per query:</strong></p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Opportunity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Q1</td>
+<td>Get onto the cited US AI-agent lists that include LeewayHertz but not SoluLab (pixelmatters, christianandtimbers, nerdheadz, inoxoft, signity). Ask Hudasoft, ScalaCode and DBB to update SoluLab's entry with a fresh case study.</td>
+</tr>
+<tr>
+<td>Q2</td>
+<td>Get into tech.us and agencycluster.com. Fix <code>/generative-ai-development-company/</code>, which is 3.3 MB of HTML; ChatGPT retrieved SoluLab's consulting page instead.</td>
+</tr>
+<tr>
+<td>Q3</td>
+<td>Repeat the Perplexity win on ChatGPT and AI Mode sources: masterofcode.com, emtech.ae, quytech.com, and the Clutch UAE and DesignRush profiles.</td>
+</tr>
+<tr>
+<td>Q4</td>
+<td>Build a Saudi footprint first: a Clutch Saudi listing, outreach to labarna.ai, and an Arabic version of the KSA page.</td>
+</tr>
+<tr>
+<td>Q5</td>
+<td>Rebuild the AI-agent cost content as one hub that opens with SoluLab's real price bands (E2).</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Also:</strong> SoluLab's own facts conflict. The site says 1,500+, 500+ and 150+ projects in different places, and both "US-based" and Ahmedabad. That weakens every recommendation (E3).</p>
+<p><strong>Limitations:</strong> these are API runs from a single day. A second test day is needed before any rate counts as stable.</p>
+<hr />
+<h2>Task 3: Three experiments to run first</h2>
+<h3>E1. Get onto the third-party sources engines already cite (distribution)</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Hypothesis / cluster</strong></td>
+<td>List-type prompts are built from a small set of cited third-party pages, so more and better placements there raise SoluLab's mention rate. Cluster: vendor-selection prompts Q1–Q4 plus 6 variants.</td>
+</tr>
+<tr>
+<td><strong>Action</strong></td>
+<td>Rank the cited URLs from Task 2 by frequency, then work the top 15. <strong>Directories:</strong> complete the AI services, UAE and KSA service areas, and get 5 new verified reviews. <strong>Editorial lists:</strong> pitch inclusion with an evidence pack (2 case studies with metrics, Clutch rating, a named expert). <strong>Media:</strong> 2 bylined articles, one US and one Gulf. <strong>Forums:</strong> disclosed answers from named engineers.</td>
+</tr>
+<tr>
+<td><strong>Why</strong></td>
+<td>Task 2 shows the mechanism directly: SoluLab's only recommendation came through two lists, and the competitor present on 10 of 15 lists gets named.</td>
+</tr>
+<tr>
+<td><strong>Baseline</strong></td>
+<td>Mentioned in 3 of 36 runs (8%). On 3 of the 15 most-cited lists, against LeewayHertz on 10.</td>
+</tr>
+<tr>
+<td><strong>Success / period</strong></td>
+<td>On at least 8 of 15 lists by week 6. Mention rate up at least 15 points at weeks 6 and 8. At least 2 AI-attributed inquiries by week 10.</td>
+</tr>
+<tr>
+<td><strong>Effort / owner</strong></td>
+<td>About 30 hours over 6 weeks. Owner: marketing executive, following the SOP in Task 4.</td>
+</tr>
+<tr>
+<td><strong>If it fails</strong></td>
+<td>If placements land but mentions don't move, re-check which sources are cited and shift to directories, then run E3. If placements don't land, offer authors data or an expert quote instead of "add us".</td>
+</tr>
+</tbody>
+</table>
+<h3>E2. Answer-first AI-agent cost hub (content)</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Hypothesis / cluster</strong></td>
+<td>Cost prompts cite pages that give concrete price ranges. Cluster: Q5 plus 4 cost variants.</td>
+</tr>
+<tr>
+<td><strong>Action</strong></td>
+<td>Make <code>/how-much-does-it-cost-to-build-an-ai-agent/</code> the hub, with the run-cost and MVP posts as spokes. Open with a 50-word answer giving SoluLab's real range. Add a scope × cost × timeline table from the last 12 months of quotes, 3 anonymized project examples, sourced statistics, and a visible "Updated" date. Push through IndexNow and Search Console. <strong>Control:</strong> leave the LLM-cost post unchanged.</td>
+</tr>
+<tr>
+<td><strong>Why</strong></td>
+<td>GEO research (Aggarwal et al., KDD 2024) found that adding statistics and citations raised visibility by up to about 40%. SoluLab's cost posts currently open with "it depends".</td>
+</tr>
+<tr>
+<td><strong>Baseline</strong></td>
+<td>Q5: cited 0/9, and the cost page wasn't even retrieved.</td>
+</tr>
+<tr>
+<td><strong>Success / period</strong></td>
+<td>Cited in at least 25% of runs in weeks 4–6, with the control flat.</td>
+</tr>
+<tr>
+<td><strong>Effort / owner</strong></td>
+<td>About 14 hours. Owner: content lead, with sales input on prices.</td>
+</tr>
+<tr>
+<td><strong>If it fails</strong></td>
+<td>Confirm the new version is indexed in Bing and Google. Then distribute the same table through a named expert's LinkedIn article and a cited third-party cost guide.</td>
+</tr>
+</tbody>
+</table>
+<h3>E3. One set of company facts everywhere (entity)</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Hypothesis / cluster</strong></td>
+<td>Buyers vet vendors through AI, so consistent facts make those answers more accurate. Cluster: "What is SoluLab", "Is SoluLab legit", "SoluLab reviews", "SoluLab vs LeewayHertz".</td>
+</tr>
+<tr>
+<td><strong>Action</strong></td>
+<td>Write a one-page fact sheet. Fix the conflicting stats strips and the schema address. Update the About page, schema and <code>llms.txt</code>. Align and merge external profiles (Clutch, GoodFirms, DesignRush, Built In, Crunchbase, LinkedIn). Publish a Reviews page.</td>
+</tr>
+<tr>
+<td><strong>Why</strong></td>
+<td>The facts are verifiably inconsistent today, and every fix is under SoluLab's control. It also protects deals already in the pipeline.</td>
+</tr>
+<tr>
+<td><strong>Baseline / success</strong></td>
+<td>Measure fact accuracy on 5 brand prompts before launch. Target at least 80% accuracy and zero contradictions by week 8.</td>
+</tr>
+<tr>
+<td><strong>Effort / owner</strong></td>
+<td>About 14 hours. Owner: marketing executive.</td>
+</tr>
+<tr>
+<td><strong>If it fails</strong></td>
+<td>Fix the specific sources cited in wrong answers. Model-memory errors lag, so re-measure quarterly.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Task 4: SOP for E1, third-party source inclusion</h2>
+<p><strong>Owner:</strong> marketing executive. <strong>Reviewer:</strong> LLM visibility lead. <strong>Cycle:</strong> 2 weeks.
+<strong>Inputs:</strong> the prompt panel, the evidence pack (2 case studies, Clutch link, expert bio, a two-line differentiator), and the fact sheet.
+<strong>Tools:</strong> DataForSEO (or manual runs with screenshots), Google Sheets, directory dashboards, an email finder, HubSpot.
+<strong>Deliverables:</strong> a source tracker, an outreach log, updated profiles, and a fortnightly one-page report.</p>
+<p><strong>Steps:</strong></p>
+<ol>
+<li><strong>Measure:</strong> run each prompt 3 times per platform. Save the responses and every cited URL.</li>
+<li><strong>Build the source list:</strong> for each cited URL, record the domain, its type (directory, editorial, media, forum or competitor self-list), the runs citing it, and whether SoluLab is listed and described accurately. Drop competitor self-lists.</li>
+<li><strong>Prioritize:</strong> score each source as times cited × feasibility (directory 3, editorial 2, media 1). Work the top 15.</li>
+<li><strong>Directories (week 1):</strong> align each profile with the fact sheet, add AI, UAE and KSA focus, and request 5 verified reviews from recent clients.</li>
+<li><strong>Editorial and media (weeks 1–2):</strong> a personalized pitch with one data point and the evidence pack. One follow-up after 5 working days.</li>
+<li><strong>Forums (ongoing):</strong> named engineers give useful, disclosed answers.</li>
+<li><strong>Log</strong> every contact, ask, response and live URL.</li>
+<li><strong>Re-measure</strong> in weeks 6 and 8 with the same prompts and run count.</li>
+</ol>
+<p><strong>Quality-control checklist:</strong></p>
+<ul>
+<li>&#9744; Every fact matches the fact sheet. No unapproved client names.</li>
+<li>&#9744; No paid placement presented as editorial. No self-ranking posts on third-party platforms.</li>
+<li>&#9744; Review requests follow platform rules: no incentives.</li>
+<li>&#9744; Responses and logs saved for every measurement round.</li>
+</ul>
+<p><strong>Report (fortnightly):</strong> sources listed (n/15), mention rate by platform and prompt, new or lost cited sources, AI-referral sessions, and AI-attributed inquiries.</p>
+<p><strong>Repeat, improve or stop:</strong></p>
+<ul>
+<li><strong>Repeat</strong> on the next cluster (Gen AI, RWA, stablecoin) if SoluLab is on at least 6 of 15 lists and mentions are up 15 points at two re-measures.</li>
+<li><strong>Improve</strong> if listings rise but mentions stay flat: move effort to the most-cited sources and run E3.</li>
+<li><strong>Stop</strong> if fewer than 3 placements land after 2 cycles.</li>
+</ul>
+<h3>From visibility to the $30K Q1 and $250K annual targets</h3>
+<p><strong>Attribution:</strong></p>
+<ul>
+<li>A GA4 channel for AI referrers.</li>
+<li>First-touch source passed into HubSpot. SoluLab already runs HubSpot and a UTM grabber.</li>
+<li>A required "How did you hear about us?" field with an AI-assistant option, because many AI-influenced buyers never click.</li>
+<li>Deals tagged "AI-influenced" at discovery.</li>
+</ul>
+<p><strong>Commercial math:</strong> these assumptions are to be replaced with SoluLab's CRM rates.</p>
+<ul>
+<li>SoluLab's typical Clutch project size is $50K–$199K, so $250K is about 3–5 deals and $30K is one first-phase deal.</li>
+<li>At a 20–25% close rate, that needs about 15–20 AI-influenced SQLs a year.</li>
+</ul>
+<p><strong>Q1 order:</strong></p>
+<ol>
+<li><strong>E3,</strong> which helps deals already in the pipeline.</li>
+<li><strong>E1 on vendor-selection prompts,</strong> for buyers who are shortlisting now.</li>
+<li><strong>E2 on cost prompts,</strong> for buyers who are budgeting.</li>
+</ol>
+<p><strong>Reported weekly:</strong> mention rates, AI referrals, AI-influenced SQLs, pipeline value and closed revenue against target.</p>
+<hr />
+<p><em>Prepared with AI assistance for data collection and analysis. AI-platform results come from the dated runs described in Task 2.</em></p></body></html>
