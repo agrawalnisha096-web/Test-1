@@ -40,7 +40,7 @@
 
 **What it shows:**
 - **Algoscale** is named in 1 of 18 runs. Perplexity puts it on its mid-market data-lake shortlist and in its "Mid-market or specialized implementation" table row (card below).
-- Algoscale is **listed on 7 distinct cited third-party pages** across the three clusters, including two #1 placements. Those pages are cited 19 times across the 18 runs.
+- Algoscale is **listed on 9 cited third-party pages across 6 sites**, including two #1 placements. **11 of the 18 Algoscale runs cite at least one of them**, yet only 1 run names Algoscale.
 - **Insighto** is named in 0 of 12 runs. It's listed on wixzel.com, which ChatGPT cited 3 times.
 - The pattern matches SoluLab's: being on the cited pages is necessary but not sufficient. The Tier-1 firms named in these answers appear across many more of the cited lists.
 
