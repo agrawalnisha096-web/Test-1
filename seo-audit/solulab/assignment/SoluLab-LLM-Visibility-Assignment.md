@@ -1,40 +1,51 @@
 # Practical Assignment: LLM Visibility & Growth Consultant (SoluLab)
 
 > **Before submitting, delete this box.**
-> - **Task 1** must be your own case study with your own evidence. Every `[[ … ]]` field is yours to fill. Nothing in it has been invented.
+> - **Task 1** is pre-filled from your portfolio (Algoscale). The `[[ … ]]` fields need your dated AI-answer evidence. Nothing in it has been invented.
 > - **Task 2** is filled in from 45 dated DataForSEO runs on Oct 27, 2026 (evidence in `task2-evidence/`). Add 2–3 browser screenshots of the same prompts for visual evidence.
 > - **Tasks 3 and 4** now use the Task 2 baselines.
 
 ---
 
-## Task 1: A previous success
+## Task 1: A previous success: Algoscale Technologies (Data & AI consulting)
+
+> Facts below come from your portfolio. `[[ … ]]` marks evidence only you can supply. Nothing here is invented.
 
 | Field | Detail |
 |---|---|
-| Company / sector (anonymize if needed) | [[e.g. B2B SaaS, AI voice agents]] |
-| My role, and what others did | [[e.g. I designed and executed the content and distribution work. The client's dev team shipped the template changes. A freelance writer drafted 2 of the 6 pages.]] |
-| Platforms measured | [[e.g. ChatGPT (search on), Perplexity, Google AI Overviews]] |
-| Measurement period | [[baseline dates → follow-up dates]] |
-| How it was measured | [[e.g. a fixed prompt set, N runs per platform per round, screenshots plus saved share links, logged in a sheet]] |
+| Company / sector | Algoscale Technologies: data and AI consulting. Competes for the same buyers as Accenture, TCS and Deloitte, which is the same challenge SoluLab faces. |
+| My role | Growth Marketing Manager, Dec 2024–present. I built the SEO function from zero and ran the AEO/GEO programme across 200+ target queries. [[Name what others did: e.g. dev team shipped the site rebuild, writers drafted X pages, PR agency (if any) handled Y.]] |
+| Constraint | No paid search at any point. Pipeline came from organic and PR only. |
+| Platforms measured | Google AI Overviews, ChatGPT, Perplexity, Gemini. [[Confirm which you have dated evidence for.]] |
+| Measurement period | [[baseline date → follow-up date]] |
+| How it was measured | [[e.g. a fixed prompt set re-run monthly, screenshots or share links, a tracking sheet, or a tool such as Semrush AI Toolkit / Ahrefs Brand Radar / Peec AI]] |
 
 **Three commercial queries, before and after:**
 
 | Query (exact prompt) | Platform | Before (date) | After (date) | Cited URL(s) after | Evidence |
 |---|---|---|---|---|---|
-| [[ ]] | [[ ]] | [[not mentioned / mentioned #x / cited]] | [[ ]] | [[ ]] | [[screenshot or share-link file names]] |
+| [[e.g. "best data engineering consulting companies in the US"]] | [[ ]] | [[not mentioned]] | [[mentioned alongside Accenture / TCS / Deloitte]] | [[algoscale.com/… or third-party URL]] | [[file names]] |
 | [[ ]] | [[ ]] | [[ ]] | [[ ]] | [[ ]] | [[ ]] |
 | [[ ]] | [[ ]] | [[ ]] | [[ ]] | [[ ]] | [[ ]] |
 
-**The three interventions that mattered most** (what I personally did):
-1. [[e.g. Rewrote the comparison page answer-first, with a sourced pricing table. Shipped on <date>.]]
-2. [[e.g. Got the brand added to 4 of the third-party lists the engines were citing. List the URLs.]]
-3. [[ ]]
+**The three interventions that mattered most** (from the portfolio; add dates and specifics):
+1. **Service and proof pages:** 100+ service pages and 25 case studies, plus a topical-authority programme built to compete with enterprise incumbents. [[Which pages got cited? What did you change on them: answer-first copy, data, schema?]]
+2. **Third-party presence through PR:** placements in authoritative publications next to Accenture, TCS and Deloitte. [[List 2–3 placements, with dates, that later appeared as cited sources.]]
+3. **Systematic UGC distribution** across Reddit, Quora, LinkedIn and niche data and AI communities. [[Which threads were cited, if any, and how disclosure was handled.]]
 
-**One failed experiment and the lesson:** [[What I tried, what I expected, what happened (with data), and what I changed as a result.]]
+**One failed experiment and the lesson:** [[Pick a real one. A good candidate: a tactic from the 200-query programme that didn't move AI Overview placements or citations. Say what you expected, what the data showed, and what you changed.]]
 
-**Commercial outcome, if any:** [[e.g. AI-referral sessions, self-reported "found you on ChatGPT" leads, or opportunities, with how they were attributed]]
+**Commercial outcome:**
+- 0 → 65K monthly sessions in 12 months.
+- $1M+ pipeline in 6 months.
+- $450K revenue realised (organic only).
+- More than 10% of monthly pipeline from AI referrals.
+- US and Western leads grew 25% month on month through organic and PR.
+- Search Console: 22.2K clicks and 6.4M impressions. Top service page: 9.67K clicks, 810K impressions, 1.2% CTR.
 
-*Evidence pack: [[link to a folder of redacted screenshots and the results log]]. Confidential client details removed.*
+[[Attribution method for the AI-referral share: GA4 AI-referrer channel, CRM "how did you hear about us", etc.]]
+
+*Evidence pack: [[link]]. Includes the Search Console screenshots from my portfolio, plus the AI-answer evidence above. Confidential client details removed.*
 
 ---
 
