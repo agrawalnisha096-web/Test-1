@@ -10,8 +10,6 @@
 | **Platforms** | Google AI Overviews, ChatGPT, Perplexity, Gemini. |
 | **Scope** | 200+ target queries across Algoscale's data and AI consulting services. |
 
-**Three commercial queries:** [[add the three queries]]
-
 **The three interventions that mattered most:**
 1. **Service and proof pages.** I built 100+ service pages and 25 case studies, rebuilt the full website, and ran a topical-authority programme designed to compete with enterprise incumbents.
 2. **Third-party presence through PR.** Outreach placed Algoscale alongside Accenture, TCS and Deloitte in authoritative publications.
