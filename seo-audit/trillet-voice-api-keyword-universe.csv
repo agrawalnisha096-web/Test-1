@@ -1,0 +1,314 @@
+keyword,cluster,us_monthly_volume,keyword_difficulty,cpc_usd,ads_competition,main_intent,trend_last12_newest_first,trillet_position,trillet_url,source
+cpaas,Calling / telephony API,1000,28,136.56,LOW,informational,1000;1300;1300;1000;1000;1000;1300;1000;1000;1000;1300;1600,,,overview_adjacent
+telephony api,Calling / telephony API,140,8,4.34,LOW,informational,40;50;30;30;50;50;70;90;70;590;260;480,,,overview_seeds
+cpaas providers,Calling / telephony API,110,3,9.85,MEDIUM,navigational,40;70;70;260;140;140;140;70;20;70;90;170,,,overview_adjacent
+voip api,Calling / telephony API,90,5,34.13,LOW,informational,70;140;170;90;30;70;210;50;50;50;30;70,,,overview_adjacent
+voice calling api,Calling / telephony API,70,18,59.88,LOW,informational,70;110;170;70;50;50;210;40;40;50;20;30,,,sugg_voice_api
+voice call api,Calling / telephony API,70,12,59.88,LOW,informational,70;110;170;70;50;50;210;40;40;50;20;30,,,sugg_voice_api
+api voice call,Calling / telephony API,70,27,59.88,LOW,informational,70;110;170;70;50;50;210;40;40;50;20;30,,,sugg_voice_api
+sip api,Calling / telephony API,70,10,18.22,LOW,informational,50;40;30;40;50;50;50;70;110;90;70;50,,,overview_adjacent
+programmable voice api,Calling / telephony API,50,38,39.31,MEDIUM,informational,20;10;70;20;40;210;70;20;30;30;20;50,,,overview_seeds|sugg_voice_api
+phone number api,Calling / telephony API,50,0,37.43,MEDIUM,informational,20;50;30;70;50;50;90;40;50;50;40;40,,,overview_adjacent
+programmable voice,Calling / telephony API,50,0,21.13,LOW,transactional,140;170;70;20;40;70;30;40;20;30;20;30,,,overview_adjacent
+phone call api,Calling / telephony API,40,15,60.45,MEDIUM,transactional,40;30;30;40;40;30;70;50;50;40;40;50,,,related_voice_api
+communications platform as a service,Calling / telephony API,40,25,35.97,LOW,commercial,30;30;30;70;40;70;70;40;40;30;30;50,,,overview_adjacent
+voice broadcasting api,Calling / telephony API,10,45,,HIGH,informational,10;10;0;0;10;10;20;10;10;10;0;10,,,sugg_voice_api
+voice broadcast api,Calling / telephony API,10,,,HIGH,informational,10;10;0;0;10;10;20;10;10;10;0;10,,,sugg_voice_api
+best voice call api,Calling / telephony API,10,,,,commercial,0;0;0;0;0;0;0;10;10;0;0;0,,,sugg_voice_api
+voice call api free,Calling / telephony API,10,53,45.75,MEDIUM,informational,10;0;10;10;10;10;10;10;10;10;10;10,,,related_voice_api
+ai phone call api,Calling / telephony API,10,,,,informational,0;0;10;10;10;10;10;10;10;10;10;10,,,overview_adjacent
+outbound call api,Calling / telephony API,10,,,LOW,informational,10;10;10;10;10;10;10;10;10;0;10;10,,,overview_adjacent
+twilio alternative,Competitor alternatives,880,0,47.67,MEDIUM,informational,1000;1000;1000;1000;1000;1000;1300;720;720;720;590;880,,,overview_adjacent
+vapi alternative,Competitor alternatives,480,0,48.82,LOW,informational,1600;2400;590;90;110;90;90;90;70;70;90;70,,,overview_adjacent
+retell ai alternative,Competitor alternatives,50,0,41.29,LOW,commercial,140;70;30;50;50;40;30;30;40;40;20;30,,,overview_adjacent
+twilio voice alternative,Competitor alternatives,10,,29.82,HIGH,commercial,10;10;0;10;10;10;10;10;10;10;10;10,,,overview_adjacent
+retell ai,Competitor brand (navigational),22200,33,11.56,MEDIUM,informational,22200;22200;22200;22200;22200;27100;27100;18100;22200;18100;18100;18100,,,overview_adjacent
+telnyx,Competitor brand (navigational),18100,37,26.57,MEDIUM,informational,22200;18100;18100;18100;18100;18100;22200;14800;14800;12100;12100;12100,,,overview_adjacent
+vapi,Competitor brand (navigational),14800,34,4.25,MEDIUM,informational,12100;12100;14800;14800;18100;18100;18100;14800;14800;14800;18100;18100,,,overview_adjacent
+livekit,Competitor brand (navigational),9900,47,4.18,LOW,transactional,12100;12100;9900;9900;9900;9900;12100;9900;12100;8100;8100;9900,,,overview_adjacent
+bland ai,Competitor brand (navigational),6600,6,32.86,MEDIUM,informational,8100;5400;5400;6600;5400;6600;8100;6600;6600;4400;4400;5400,,,overview_adjacent
+plivo,Competitor brand (navigational),3600,18,20.17,MEDIUM,informational,2400;2900;2900;3600;3600;4400;4400;3600;3600;2900;3600;3600,,,overview_adjacent
+vapi support,Competitor brand (navigational),40,0,1.10,MEDIUM,informational,,10,https://trillet.ai/blogs/vapi-vs-retell-hipaa-soc2-compliance,trillet_ranked
+vapi hipaa,Competitor brand (navigational),30,5,1.43,MEDIUM,informational,,8,https://trillet.ai/blogs/vapi-vs-retell-hipaa-soc2-compliance,trillet_ranked
+vapi hipaa compliance,Competitor brand (navigational),20,5,1.27,MEDIUM,informational,,9,https://trillet.ai/blogs/vapi-vs-retell-hipaa-soc2-compliance,trillet_ranked
+white label ai platform,OEM / white-label,1600,0,10.10,LOW,commercial,,41,https://trillet.ai/blogs/what-is-white-label-ai-chatbot,trillet_ranked
+white label ai,OEM / white-label,140,4,9.55,HIGH,commercial,,24,https://trillet.ai/blogs/what-is-white-label-ai-chatbot,trillet_ranked
+white label ai receptionist,OEM / white-label,110,0,21.48,MEDIUM,navigational,110;70;110;210;170;90;140;110;110;70;70;70,5,https://trillet.ai/blogs/best-white-label-ai-receptionist-for-agencies-2026,overview_adjacent
+white label ai voice agent,OEM / white-label,110,9,36.46,LOW,commercial,480;480;70;70;50;40;90;40;50;50;50;40,,,overview_adjacent
+white label chatbots,OEM / white-label,110,3,4.28,LOW,commercial,,13,https://trillet.ai/blogs/what-is-white-label-ai-chatbot,trillet_ranked
+white label chatbot,OEM / white-label,110,9,4.28,LOW,commercial,,18,https://trillet.ai/blogs/what-is-white-label-ai-chatbot,trillet_ranked
+white label ai chatbot,OEM / white-label,70,8,31.32,LOW,commercial,,18,https://trillet.ai/blogs/what-is-white-label-ai-chatbot,trillet_ranked
+ai white label,OEM / white-label,50,0,10.77,MEDIUM,commercial,,5,https://trillet.ai/blogs/white-label-ai-chatbot-pricing-comparison,trillet_ranked
+white label chatbot reseller,OEM / white-label,50,0,,LOW,commercial,,16,https://trillet.ai/blogs/what-is-white-label-ai-chatbot,trillet_ranked
+white label saas reseller,OEM / white-label,40,0,8.07,LOW,commercial,,44,https://trillet.ai/blogs/best-white-label-saas-platforms-to-resell,trillet_ranked
+white label crm for agencies,OEM / white-label,30,0,10.75,LOW,commercial,,31,https://trillet.ai/blogs/white-label-tools-for-agencies,trillet_ranked
+retell ai white label,OEM / white-label,20,0,17.92,HIGH,commercial,,5,https://trillet.ai/blogs/retell-ai-white-label-alternative,trillet_ranked
+white label ai solutions,OEM / white-label,20,1,,LOW,commercial,,47,https://trillet.ai/blogs/what-is-white-label-ai-chatbot,trillet_ranked
+white label ai services,OEM / white-label,20,8,8.02,HIGH,commercial,,52,https://trillet.ai/blogs/what-is-white-label-ai-chatbot,trillet_ranked
+white label call center,OEM / white-label,20,0,99.98,LOW,commercial,,68,https://trillet.ai/whitelabel,trillet_ranked
+white label voice ai,OEM / white-label,10,0,,MEDIUM,commercial,10;20;10;10;10;10;30;10;20;10;10;30,13,https://trillet.ai/blogs/top-10-white-label-voice-ai-platforms-for-agencies-2026,overview_adjacent
+white label chatgpt,OEM / white-label,10,0,13.06,MEDIUM,commercial,,4,https://trillet.ai/blogs/white-label-chatgpt-alternative-for-agencies,trillet_ranked
+white label ai marketing,OEM / white-label,10,0,15.23,MEDIUM,commercial,,70,https://trillet.ai/blogs/what-is-white-label-ai-chatbot,trillet_ranked
+google text to speech,Speech (STT/TTS) API - adjacent,12100,68,4.53,LOW,informational,9900;9900;8100;9900;12100;12100;12100;12100;22200;14800;14800;14800,,,ideas_oem_infra|related_voice_api
+google speech to text,Speech (STT/TTS) API - adjacent,2400,75,8.60,MEDIUM,informational,1600;1300;1600;1600;1900;1900;2400;2400;2400;2900;2900;3600,,,related_voice_api
+voice to speech api,Speech (STT/TTS) API - adjacent,1000,41,34.70,LOW,informational,480;1600;1600;1000;880;1600;1900;480;480;1000;1300;720,,,sugg_voice_api
+api for voice to text,Speech (STT/TTS) API - adjacent,1000,48,34.70,LOW,informational,480;1600;1600;1000;880;1600;1900;480;480;1000;1300;720,,,sugg_voice_api
+api voice recognition,Speech (STT/TTS) API - adjacent,1000,76,74.81,LOW,informational,1600;1600;1000;880;1600;1900;480;480;1000;1300;720;880,,,sugg_voice_api
+voice recognition api,Speech (STT/TTS) API - adjacent,1000,41,34.70,LOW,informational,480;1600;1600;1000;880;1600;1900;480;480;1000;1300;720,,,sugg_voice_api
+api for voice recognition,Speech (STT/TTS) API - adjacent,1000,44,34.70,LOW,informational,480;1600;1600;1000;880;1600;1900;480;480;1000;1300;720,,,sugg_voice_api
+voice to-speech api,Speech (STT/TTS) API - adjacent,1000,48,34.70,LOW,informational,480;1600;1600;1000;880;1600;1900;480;480;1000;1300;720,,,sugg_voice_api
+voice recognition software api,Speech (STT/TTS) API - adjacent,1000,41,34.70,LOW,commercial,480;1600;1600;1000;880;1600;1900;480;480;1000;1300;720,,,sugg_voice_api
+api voice to text,Speech (STT/TTS) API - adjacent,1000,41,34.70,LOW,informational,480;1600;1600;1000;880;1600;1900;480;480;1000;1300;720,,,sugg_voice_api
+speech to text api,Speech (STT/TTS) API - adjacent,1000,41,34.70,LOW,informational,480;1600;1600;1000;880;1600;1900;480;480;1000;1300;720,,,related_voice_api
+text to speech api,Speech (STT/TTS) API - adjacent,720,47,14.98,LOW,informational,480;1300;1900;1000;590;720;480;390;320;720;720;390,,,overview_adjacent
+web speech api,Speech (STT/TTS) API - adjacent,590,40,15.07,LOW,informational,390;390;480;480;590;880;880;720;720;590;590;720,,,related_voice_api
+voice recognition api python,Speech (STT/TTS) API - adjacent,390,6,12.69,LOW,informational,260;210;210;210;320;320;590;390;390;390;390;480,,,sugg_voice_api
+speech recognition python,Speech (STT/TTS) API - adjacent,390,6,12.69,LOW,informational,260;210;210;210;320;320;590;390;390;390;390;480,,,related_voice_api
+openai text to speech,Speech (STT/TTS) API - adjacent,390,31,15.03,MEDIUM,informational,210;260;390;320;390;260;480;480;480;590;590;590,,,related_voice_api
+voice recognition google api,Speech (STT/TTS) API - adjacent,260,24,11.16,MEDIUM,informational,90;140;170;260;260;320;320;320;260;260;320;320,,,sugg_voice_api
+voice to text google api,Speech (STT/TTS) API - adjacent,260,25,11.16,MEDIUM,informational,90;140;170;260;260;320;320;320;260;260;320;320,,,sugg_voice_api
+voice to text api google,Speech (STT/TTS) API - adjacent,260,24,17.30,LOW,informational,140;170;260;260;320;320;320;260;260;320;320;390,,,sugg_voice_api
+google api voice to text,Speech (STT/TTS) API - adjacent,260,24,17.30,LOW,informational,140;170;260;260;320;320;320;260;260;320;320;390,,,sugg_voice_api
+best voice recognition api,Speech (STT/TTS) API - adjacent,140,13,47.82,LOW,informational,260;210;70;70;70;90;390;90;90;70;50;70,,,sugg_voice_api
+openai text to speech api,Speech (STT/TTS) API - adjacent,140,51,11.44,LOW,informational,70;260;390;210;90;50;70;110;50;50;70;110,,,related_voice_api
+free voice to text api,Speech (STT/TTS) API - adjacent,90,9,16.70,MEDIUM,informational,50;50;90;50;90;90;140;90;70;50;110;90,,,sugg_voice_api
+voice recognition api free,Speech (STT/TTS) API - adjacent,90,9,16.70,MEDIUM,informational,50;50;90;50;90;90;140;90;70;50;110;90,,,sugg_voice_api
+voice to text api free,Speech (STT/TTS) API - adjacent,90,26,16.70,MEDIUM,informational,50;50;90;50;90;90;140;90;70;50;110;90,,,sugg_voice_api
+free voice recognition api,Speech (STT/TTS) API - adjacent,90,30,16.70,MEDIUM,informational,50;50;90;50;90;90;140;90;70;50;110;90,,,sugg_voice_api
+voice to-text api free,Speech (STT/TTS) API - adjacent,90,9,16.70,MEDIUM,informational,50;50;90;50;90;90;140;90;70;50;110;90,,,sugg_voice_api|related_voice_api
+voice recognition api javascript,Speech (STT/TTS) API - adjacent,90,34,,LOW,informational,40;50;70;50;90;90;110;110;110;90;110;110,,,sugg_voice_api
+text-to voice api,Speech (STT/TTS) API - adjacent,50,82,15.32,LOW,informational,90;20;20;30;50;110;70;40;30;10;30;30,,,sugg_voice_api
+voice text api,Speech (STT/TTS) API - adjacent,50,51,134.79,MEDIUM,informational,40;70;50;70;40;110;50;40;30;50;50;70,,,sugg_voice_api
+google voice text message api,Speech (STT/TTS) API - adjacent,50,3,57.65,MEDIUM,informational,40;30;40;40;40;40;50;50;50;50;70;40,,,sugg_voice_api
+voice to text api,Speech (STT/TTS) API - adjacent,50,18,42.39,MEDIUM,informational,40;40;70;50;70;40;110;50;40;30;50;50,,,sugg_voice_api
+text to voice api,Speech (STT/TTS) API - adjacent,50,82,15.32,LOW,informational,90;20;20;30;50;110;70;40;30;10;30;30,,,sugg_voice_api
+google speech api,Speech (STT/TTS) API - adjacent,50,40,28.60,MEDIUM,informational,30;20;30;20;70;50;50;70;50;40;70;50,,,related_voice_api
+voice synthesis api,Speech (STT/TTS) API - adjacent,30,29,,LOW,informational,110;10;10;20;40;90;20;20;30;0;10;30,,,sugg_voice_api
+elevenlabs voice cloning api,Speech (STT/TTS) API - adjacent,30,22,,LOW,informational,10;10;10;30;40;50;50;50;30;30;10;20,,,sugg_voice_api
+voice cloning api,Speech (STT/TTS) API - adjacent,20,0,14.58,MEDIUM,informational,20;20;20;20;20;30;30;20;10;30;30;30,,,sugg_voice_api
+google text to voice api,Speech (STT/TTS) API - adjacent,20,30,15.02,MEDIUM,informational,10;10;20;10;20;10;20;20;20;20;30;30,,,sugg_voice_api
+microsoft voice to text api,Speech (STT/TTS) API - adjacent,20,49,,LOW,informational,10;10;10;10;10;10;30;10;20;20;20;30,,,sugg_voice_api
+voice changer api,Speech (STT/TTS) API - adjacent,20,15,,LOW,informational,10;10;10;10;10;10;20;20;20;20;10;110,,,sugg_voice_api
+voice to text api python,Speech (STT/TTS) API - adjacent,10,48,,,informational,0;0;10;0;0;0;0;0;0;10;0;10,,,sugg_voice_api
+google voice text api,Speech (STT/TTS) API - adjacent,10,51,,LOW,informational,10;10;10;10;10;10;10;10;10;10;10;10,,,sugg_voice_api
+voice biometric api,Speech (STT/TTS) API - adjacent,10,,12.46,MEDIUM,informational,10;0;10;0;10;10;20;10;10;10;10;10,,,sugg_voice_api
+text to voice api free,Speech (STT/TTS) API - adjacent,10,26,,HIGH,informational,10;10;0;10;10;10;10;10;10;10;10;10,,,sugg_voice_api
+voice cloning api free,Speech (STT/TTS) API - adjacent,10,,,MEDIUM,informational,10;10;10;0;10;10;0;10;10;10;10;10,,,sugg_voice_api
+ai voice clone api,Speech (STT/TTS) API - adjacent,10,,14.32,MEDIUM,transactional,10;10;10;10;0;10;10;0;10;10;0;0,,,sugg_voice_api
+python google voice recognition api,Speech (STT/TTS) API - adjacent,10,,,,informational,0;10;0;0;0;10;10;0;0;0;0;0,,,sugg_voice_api
+text to voice google api,Speech (STT/TTS) API - adjacent,10,51,,,informational,0;0;0;0;0;10;0;0;0;10;0;0,,,sugg_voice_api
+chatgpt voice recognition api,Speech (STT/TTS) API - adjacent,10,,,LOW,informational,10;0;0;10;10;10;0;0;10;10;0;10,,,sugg_voice_api
+google voice to text api,Speech (STT/TTS) API - adjacent,10,51,13.15,HIGH,informational,10;10;10;10;10;10;10;10;10;10;20;10,,,sugg_voice_api
+elevenlabs voice clone api,Speech (STT/TTS) API - adjacent,10,22,38.89,MEDIUM,informational,10;10;10;10;10;10;10;10;10;10;10;10,,,sugg_voice_api
+voice cloning ai api,Speech (STT/TTS) API - adjacent,10,,,,informational,0;10;0;10;10;0;10;0;10;10;0;10,,,sugg_voice_api
+google translate text to voice api,Speech (STT/TTS) API - adjacent,10,,,,informational,0;0;0;0;0;0;10;10;0;0;0;0,,,sugg_voice_api
+hoya voice text web api,Speech (STT/TTS) API - adjacent,10,,,LOW,informational,10;0;0;10;0;0;0;0;0;0;0;0,,,sugg_voice_api
+text-to voice call api,Speech (STT/TTS) API - adjacent,10,,,,informational,0;0;0;0;0;10;0;0;0;0;0;0,,,sugg_voice_api
+chatgpt api voice to text,Speech (STT/TTS) API - adjacent,10,,,,informational,0;0;0;0;10;0;10;0;10;0;10;0,,,sugg_voice_api
+gemini voice to-text api,Speech (STT/TTS) API - adjacent,10,,,LOW,transactional,10;0;10;10;10;10;10;10;10;10;10;10,,,sugg_voice_api
+voice emotion recognition api,Speech (STT/TTS) API - adjacent,10,57,,,informational,0;0;0;0;0;0;0;0;0;0;0;10,,,sugg_voice_api
+voice clone api,Speech (STT/TTS) API - adjacent,10,0,5.81,MEDIUM,informational,10;10;10;10;10;10;10;10;20;10;10;10,,,sugg_voice_api
+best text to voice api,Speech (STT/TTS) API - adjacent,10,,7.69,HIGH,informational,10;0;10;10;10;10;10;0;10;10;10;10,,,sugg_voice_api
+google voice api text-to-speech,Speech (STT/TTS) API - adjacent,10,,,,informational,0;0;0;0;0;0;0;0;10;0;0;0,,,sugg_voice_api
+google voice speech api,Speech (STT/TTS) API - adjacent,10,,,,informational,0;0;0;0;0;0;0;10;10;0;0;0,,,sugg_voice_api
+text to voice call api,Speech (STT/TTS) API - adjacent,10,,,,informational,0;0;0;0;0;10;0;0;0;0;0;0,,,sugg_voice_api
+c# voice recognition api,Speech (STT/TTS) API - adjacent,10,,,LOW,informational,10;0;0;0;10;10;10;10;10;10;0;0,,,sugg_voice_api
+text to voice api google,Speech (STT/TTS) API - adjacent,10,51,,,informational,0;0;0;0;10;0;0;0;0;0;0;10,,,sugg_voice_api
+chatgpt voice to text api,Speech (STT/TTS) API - adjacent,10,,,LOW,informational,10;0;10;10;10;10;10;10;10;10;10;10,,,sugg_voice_api
+api text to voice,Speech (STT/TTS) API - adjacent,10,72,,MEDIUM,informational,10;0;0;0;10;10;10;0;10;0;0;70,,,sugg_voice_api
+voice transcription api,Speech (STT/TTS) API - adjacent,10,59,27.12,MEDIUM,informational,10;10;10;10;10;20;10;10;10;10;10;10,,,sugg_voice_api
+java voice recognition api,Speech (STT/TTS) API - adjacent,10,11,,LOW,informational,10;0;10;10;10;10;10;10;10;10;0;10,,,sugg_voice_api
+api ai voice recognition,Speech (STT/TTS) API - adjacent,10,,,,commercial,0;0;0;0;10;10;10;10;10;10;0;10,,,sugg_voice_api
+speech-to-text api open source,Speech (STT/TTS) API - adjacent,10,,,HIGH,informational,10;10;10;10;10;10;10;10;10;10;10;0,,,related_voice_api
+free speech to text api python,Speech (STT/TTS) API - adjacent,10,,,,informational,0;0;0;10;10;10;10;10;10;0;0;10,,,related_voice_api
+openai api,Vendor-branded (navigational),49500,26,7.57,LOW,informational,49500;49500;49500;49500;49500;60500;60500;60500;40500;40500;40500;49500,,,related_voice_api
+openai realtime api,Vendor-branded (navigational),1300,49,20.97,LOW,informational,590;1300;1900;1300;1600;1000;1000;1000;1300;1300;1300;1900,,,related_voice_api
+voice api google,Vendor-branded (navigational),590,14,22.49,LOW,informational,480;480;480;480;590;590;720;590;480;480;480;480,,,sugg_voice_api
+google voice api,Vendor-branded (navigational),590,14,22.49,LOW,informational,480;480;480;480;590;590;720;590;480;480;480;480,,,sugg_voice_api|related_voice_api
+api for google voice,Vendor-branded (navigational),590,14,22.49,LOW,informational,480;480;480;480;590;590;720;590;480;480;480;480,,,sugg_voice_api
+voice google api,Vendor-branded (navigational),590,14,22.49,LOW,informational,480;480;480;480;590;590;720;590;480;480;480;480,,,sugg_voice_api
+google voice developer api,Vendor-branded (navigational),590,14,22.49,LOW,navigational,480;480;480;480;590;590;720;590;480;480;480;480,,,sugg_voice_api
+google voice ai,Vendor-branded (navigational),390,29,6.53,LOW,informational,390;390;390;390;390;480;390;390;390;390;320;390,,,related_voice_api
+twilio api voice,Vendor-branded (navigational),260,34,18.59,LOW,transactional,170;260;260;260;260;320;390;320;260;260;210;260,,,sugg_voice_api
+twilio voice api,Vendor-branded (navigational),260,34,18.59,LOW,navigational,170;260;260;260;260;320;390;320;260;260;210;260,,,sugg_voice_api|related_voice_api
+grok voice api,Vendor-branded (navigational),210,8,11.15,LOW,informational,170;260;210;140;390;480;170;170;210;320;70;50,,,sugg_voice_api
+openai voice api,Vendor-branded (navigational),170,58,21.47,MEDIUM,informational,210;170;210;90;170;140;170;170;140;110;170;260,,,sugg_voice_api
+openai realtime api pricing,Vendor-branded (navigational),140,21,18.95,LOW,informational,70;70;70;90;140;140;110;140;140;140;140;210,,,related_voice_api
+grok voice agent api,Vendor-branded (navigational),110,11,18.26,LOW,navigational,20;40;50;20;70;140;110;140;320;320;0;0,,,sugg_voice_api
+chatgpt voice api,Vendor-branded (navigational),90,54,26.99,MEDIUM,informational,170;170;140;40;70;50;40;50;90;50;50;90,,,sugg_voice_api
+deepgram voice agent api,Vendor-branded (navigational),90,28,23.77,LOW,informational,210;110;40;70;70;90;90;70;90;70;50;70,,,sugg_voice_api
+twilio programmable voice api,Vendor-branded (navigational),90,29,,LOW,informational,50;70;140;170;140;110;90;70;90;50;40;50,,,sugg_voice_api|related_voice_api
+twilio voice ai,Vendor-branded (navigational),90,21,25.08,MEDIUM,informational,50;110;70;70;170;110;70;70;70;90;90;70,,,related_voice_api
+gemini voice api,Vendor-branded (navigational),70,74,6.26,LOW,navigational,50;40;40;40;70;70;70;70;90;90;70;70,,,sugg_voice_api
+openai realtime voice api,Vendor-branded (navigational),70,53,26.10,MEDIUM,informational,40;40;50;70;140;70;50;70;70;50;70;110,,,sugg_voice_api
+azure voice live api,Vendor-branded (navigational),50,0,28.24,LOW,navigational,30;20;30;50;50;50;70;70;50;70;70;90,,,sugg_voice_api
+google voice api sms,Vendor-branded (navigational),50,0,57.65,MEDIUM,informational,40;30;40;40;40;40;50;50;50;50;70;40,,,sugg_voice_api|related_voice_api
+twilio voice api pricing,Vendor-branded (navigational),50,16,9.53,LOW,commercial,10;10;70;50;30;50;70;90;40;20;20;40,,,sugg_voice_api|related_voice_api
+google voice sms api,Vendor-branded (navigational),50,0,57.65,MEDIUM,informational,40;30;40;40;40;40;50;50;50;50;70;40,,,sugg_voice_api
+xai voice api,Vendor-branded (navigational),50,30,8.43,LOW,informational,40;30;70;50;70;140;30;40;70;70;10;0,,,sugg_voice_api
+does google voice have an api,Vendor-branded (navigational),50,10,,LOW,informational,70;50;50;40;50;50;70;50;30;30;30;20,,,sugg_voice_api
+vonage voice api,Vendor-branded (navigational),50,0,20.14,MEDIUM,navigational,50;30;50;50;40;50;40;50;50;50;70;50,,,sugg_voice_api
+telnyx voice api,Vendor-branded (navigational),40,11,17.66,MEDIUM,navigational,20;20;40;50;30;50;50;50;30;30;40;70,,,sugg_voice_api
+claude voice api,Vendor-branded (navigational),40,5,,LOW,navigational,20;50;50;40;40;70;90;40;40;20;20;30,,,sugg_voice_api
+elevenlabs voice api,Vendor-branded (navigational),40,23,18.43,MEDIUM,informational,40;30;40;30;50;50;50;40;50;30;40;30,,,sugg_voice_api
+gpt voice api,Vendor-branded (navigational),30,53,23.84,MEDIUM,informational,110;50;110;10;30;20;20;10;10;10;20;20,,,sugg_voice_api
+anthropic voice api,Vendor-branded (navigational),20,,,LOW,informational,20;10;20;10;20;20;30;30;20;20;10;10,,,sugg_voice_api
+google voice python api,Vendor-branded (navigational),20,6,,LOW,informational,10;20;10;10;20;20;20;30;30;30;30;40,,,sugg_voice_api
+twilio voice call api,Vendor-branded (navigational),20,32,28.06,LOW,navigational,10;10;10;10;10;20;40;70;40;20;30;10,,,sugg_voice_api
+google voice api key,Vendor-branded (navigational),20,,23.39,MEDIUM,informational,10;20;20;10;10;20;30;10;10;20;10;20,,,sugg_voice_api
+microsoft voice api,Vendor-branded (navigational),20,49,,LOW,informational,10;10;10;10;10;10;30;10;20;20;20;30,,,sugg_voice_api
+python google voice api,Vendor-branded (navigational),20,7,,LOW,informational,20;10;10;20;20;20;30;30;30;30;40;40,,,sugg_voice_api
+grok voice api pricing,Vendor-branded (navigational),20,,25.02,LOW,commercial,30;20;20;10;40;20;20;20;20;10;0;0,,,sugg_voice_api
+google cloud voice api,Vendor-branded (navigational),20,13,12.82,MEDIUM,informational,10;10;10;10;20;10;20;30;20;20;40;20,,,sugg_voice_api
+google voice api python,Vendor-branded (navigational),20,6,,LOW,informational,10;20;10;10;20;20;20;30;30;30;30;40,,,sugg_voice_api|related_voice_api
+ai voice api from eleven labs,Vendor-branded (navigational),10,,,,informational,0;0;0;0;0;0;0;0;0;10;10;10,,,sugg_voice_api
+google voice api pricing,Vendor-branded (navigational),10,,,LOW,commercial,10;10;0;0;10;10;10;10;10;10;10;10,,,sugg_voice_api|related_voice_api
+vonage voice api documentation,Vendor-branded (navigational),10,,,LOW,informational,10;10;10;10;10;10;10;10;10;10;10;10,,,sugg_voice_api
+elevenlabs voice agent api,Vendor-branded (navigational),10,,13.24,MEDIUM,transactional,10;10;10;10;10;10;10;10;10;10;10;10,,,sugg_voice_api
+infobip voice api,Vendor-branded (navigational),10,0,,,informational,0;10;10;10;10;10;10;10;10;10;10;10,,,sugg_voice_api
+openai voice to voice api,Vendor-branded (navigational),10,58,,MEDIUM,informational,10;10;10;0;10;10;10;10;10;10;10;10,,,sugg_voice_api
+azure voice api,Vendor-branded (navigational),10,,15.89,MEDIUM,informational,10;10;10;10;10;10;10;10;10;10;10;10,,,sugg_voice_api
+chat gpt advanced voice mode api,Vendor-branded (navigational),10,,,,informational,0;0;0;0;0;0;0;0;0;0;10;0,,,sugg_voice_api
+chatgpt voice chat api,Vendor-branded (navigational),10,,,LOW,informational,10;10;0;0;10;0;10;10;10;10;10;0,,,sugg_voice_api
+google voice translation api,Vendor-branded (navigational),10,54,,,navigational,0;10;0;0;10;10;10;10;10;10;10;0,,,sugg_voice_api
+grok voice mode api,Vendor-branded (navigational),10,,,LOW,informational,10;0;10;10;10;10;10;10;10;10;10;10,,,sugg_voice_api
+gpt-4 voice api,Vendor-branded (navigational),10,,,LOW,informational,10;0;0;0;10;10;0;0;0;0;0;0,,,sugg_voice_api
+chatgpt advanced voice mode api,Vendor-branded (navigational),10,11,,LOW,informational,10;0;0;10;10;10;0;10;10;10;10;10,,,sugg_voice_api
+gemini voice api pricing,Vendor-branded (navigational),10,,4.11,LOW,commercial,10;10;10;10;10;10;10;10;10;10;10;10,,,sugg_voice_api
+gemini realtime voice api,Vendor-branded (navigational),10,,,LOW,navigational,10;10;10;20;10;20;20;20;10;10;10;10,,,sugg_voice_api
+google voice chat api,Vendor-branded (navigational),10,,,LOW,navigational,10;10;0;10;0;10;10;0;10;0;0;10,,,sugg_voice_api
+openai voice assistant api,Vendor-branded (navigational),10,,,,informational,0;0;0;0;0;0;10;0;10;10;10;10,,,sugg_voice_api
+google gemini voice api,Vendor-branded (navigational),10,,,LOW,navigational,10;10;10;10;10;10;10;10;10;10;10;20,,,sugg_voice_api
+elevenlabs api voice speed,Vendor-branded (navigational),10,,,,transactional,0;0;10;10;0;0;10;10;10;10;10;10,,,sugg_voice_api
+google voice api free,Vendor-branded (navigational),10,,,HIGH,informational,10;10;0;10;10;0;10;10;10;0;0;10,,,sugg_voice_api|related_voice_api
+elevenlabs voice isolator api,Vendor-branded (navigational),10,,27.34,LOW,navigational,10;10;10;10;10;10;10;10;10;10;10;10,,,sugg_voice_api
+azure voice api key,Vendor-branded (navigational),10,,,HIGH,informational,10;0;10;10;10;10;10;10;0;10;10;0,,,sugg_voice_api
+google voice call api,Vendor-branded (navigational),10,,,,informational,0;10;10;10;10;10;0;10;10;10;10;10,,,sugg_voice_api
+voice google com api,Vendor-branded (navigational),10,78,,,informational,0;0;10;0;10;0;0;0;10;0;0;0,,,sugg_voice_api
+google voice recorder api,Vendor-branded (navigational),10,,,,informational,0;0;10;0;0;10;10;0;10;0;0;0,,,sugg_voice_api
+google voice api raspberry pi,Vendor-branded (navigational),10,,,,informational,0;0;10;0;0;0;0;0;0;0;0;0,,,sugg_voice_api
+elevenlabs api voice id,Vendor-branded (navigational),10,,,LOW,navigational,10;10;0;10;0;0;10;10;10;10;10;10,,,sugg_voice_api
+chatgpt voice api pricing,Vendor-branded (navigational),10,,,LOW,commercial,10;10;10;10;10;10;10;10;10;10;10;10,,,sugg_voice_api
+gpt 4o voice api,Vendor-branded (navigational),10,15,,,informational,0;10;10;10;10;10;10;10;10;10;10;10,,,sugg_voice_api
+chatgpt voice mode api,Vendor-branded (navigational),10,,,LOW,informational,10;10;10;10;10;10;10;10;10;10;20;20,,,sugg_voice_api
+openai advanced voice api,Vendor-branded (navigational),10,30,,LOW,informational,10;0;10;0;0;10;10;10;10;10;10;10,,,sugg_voice_api
+google voice java api,Vendor-branded (navigational),10,,,LOW,informational,10;0;0;0;10;10;10;10;0;0;10;10,,,sugg_voice_api
+openai voice agent api,Vendor-branded (navigational),10,,15.15,MEDIUM,transactional,10;10;10;10;10;10;10;10;10;10;10;10,,,sugg_voice_api
+gpt api voice,Vendor-branded (navigational),10,53,,MEDIUM,informational,10;10;0;0;0;0;10;0;10;10;10;10,,,sugg_voice_api
+c# google voice api,Vendor-branded (navigational),10,,,,informational,0;0;0;0;0;0;0;10;10;10;10;0,,,sugg_voice_api
+voice agent api grok,Vendor-branded (navigational),10,11,,,navigational,0;10;10;10;10;10;0;0;0;0;0;0,,,sugg_voice_api
+voice agent api deepgram,Vendor-branded (navigational),10,28,54.69,MEDIUM,transactional,10;10;10;10;10;10;10;10;10;10;10;10,,,sugg_voice_api
+openai api voice mode,Vendor-branded (navigational),10,,,,informational,0;10;10;10;0;0;10;10;10;10;10;10,,,sugg_voice_api
+openai api voice,Vendor-branded (navigational),10,58,29.17,MEDIUM,informational,20;20;10;10;10;10;10;20;10;10;10;30,,,sugg_voice_api
+openai voice api pricing,Vendor-branded (navigational),10,32,19.72,LOW,commercial,20;10;10;10;20;10;10;20;10;10;10;10,,,sugg_voice_api
+openai realtime api voice ai model,Vendor-branded (navigational),10,37,,LOW,informational,10;0;0;10;0;0;0;0;10;10;0;50,,,sugg_voice_api
+voice api twilio,Vendor-branded (navigational),10,34,22.78,MEDIUM,informational,10;10;10;10;10;10;10;10;10;10;10;10,,,sugg_voice_api
+openai realtime api voice,Vendor-branded (navigational),10,53,,MEDIUM,transactional,20;10;20;10;10;20;10;20;10;10;10;30,,,sugg_voice_api
+chat gpt api voice,Vendor-branded (navigational),10,48,12.12,MEDIUM,informational,10;0;0;0;10;10;0;0;0;10;10;10,,,sugg_voice_api
+google voice api c#,Vendor-branded (navigational),10,,,,informational,0;0;0;0;0;0;0;10;10;10;10;0,,,sugg_voice_api
+twilio api for voice call,Vendor-branded (navigational),10,32,20.94,HIGH,navigational,10;0;0;10;0;0;0;0;0;10;0;10,,,sugg_voice_api
+gemini voice to voice api,Vendor-branded (navigational),10,,5.62,MEDIUM,navigational,10;10;0;10;10;10;10;10;10;10;10;10,,,sugg_voice_api
+api google translate voice,Vendor-branded (navigational),10,54,,,informational,0;0;0;0;0;0;10;0;0;0;0;0,,,sugg_voice_api
+google voice rest api,Vendor-branded (navigational),10,,,,informational,0;0;0;0;10;10;10;0;10;10;10;10,,,sugg_voice_api
+google voice api javascript,Vendor-branded (navigational),10,,,,informational,0;10;0;0;0;10;0;0;10;0;0;0,,,sugg_voice_api
+google voice api send sms,Vendor-branded (navigational),10,29,10.82,MEDIUM,informational,10;10;10;10;10;10;10;10;10;10;10;10,,,sugg_voice_api
+openai advanced voice mode api,Vendor-branded (navigational),10,9,,,informational,0;10;10;0;10;10;10;10;10;10;10;10,,,sugg_voice_api
+google voice assistant api,Vendor-branded (navigational),10,,,,informational,0;0;0;10;10;0;10;10;10;10;0;10,,,sugg_voice_api
+openai realtime api voice assistant,Vendor-branded (navigational),10,,,LOW,transactional,10;0;0;0;0;10;10;10;10;10;0;10,,,sugg_voice_api
+openai api voice chat,Vendor-branded (navigational),10,,,,informational,0;10;10;0;0;10;10;10;0;0;10;10,,,sugg_voice_api
+google translate api voice,Vendor-branded (navigational),10,54,,HIGH,informational,10;10;10;0;10;10;10;10;10;10;10;10,,,sugg_voice_api
+google voice commands api,Vendor-branded (navigational),10,77,,,informational,0;0;0;10;10;0;0;0;10;0;0;10,,,sugg_voice_api
+openai api advanced voice,Vendor-branded (navigational),10,30,,,transactional,0;0;0;0;0;0;0;0;10;10;0;10,,,sugg_voice_api
+google voice translator api,Vendor-branded (navigational),10,54,,,informational,0;10;0;0;10;10;10;10;10;10;10;0,,,sugg_voice_api
+google voice api to send text messages,Vendor-branded (navigational),10,,,,transactional,0;0;0;0;0;0;10;0;10;0;10;10,,,sugg_voice_api
+xai voice api pricing,Vendor-branded (navigational),10,,,LOW,commercial,10;20;10;10;10;0;0;0;0;0;0;0,,,sugg_voice_api
+gpt 4o voice mode api,Vendor-branded (navigational),10,,,,informational,0;0;0;0;0;0;0;0;0;0;10;0,,,sugg_voice_api
+chat gpt voice mode api,Vendor-branded (navigational),10,,,LOW,informational,10;0;10;10;10;10;10;10;10;10;10;10,,,sugg_voice_api
+twilio voice api documentation,Vendor-branded (navigational),10,,,LOW,informational,10;10;10;10;10;10;10;10;20;10;10;10,,,sugg_voice_api|related_voice_api
+gemini live api voice options,Vendor-branded (navigational),10,,,LOW,navigational,10;10;10;10;10;10;10;10;10;0;0;0,,,sugg_voice_api
+openai voice api key,Vendor-branded (navigational),10,,8.28,MEDIUM,transactional,10;10;10;10;10;10;10;10;10;10;10;10,,,sugg_voice_api
+telnyx voice api pricing,Vendor-branded (navigational),10,,17.32,MEDIUM,transactional,10;10;10;10;10;10;20;0;0;0;0;0,,,sugg_voice_api
+gpt 5 voice api,Vendor-branded (navigational),10,,,,informational,0;0;10;0;10;0;10;0;0;0;10;10,,,sugg_voice_api
+grok voice agent api pricing,Vendor-branded (navigational),10,,,LOW,commercial,10;10;10;20;10;20;30;50;20;0;0;0,,,sugg_voice_api
+eleven labs voice api,Vendor-branded (navigational),10,0,14.16,MEDIUM,navigational,10;20;10;10;20;10;30;20;10;10;10;10,,,sugg_voice_api
+openai gpt 4o voice api,Vendor-branded (navigational),10,,,,informational,0;0;0;0;0;0;0;0;10;0;0;0,,,sugg_voice_api
+gemini api voice,Vendor-branded (navigational),10,,,LOW,navigational,10;10;10;10;10;10;10;10;10;10;10;10,,,sugg_voice_api
+openai voice mode api,Vendor-branded (navigational),10,36,,LOW,informational,10;10;10;10;10;10;10;10;10;10;10;10,,,sugg_voice_api
+vonage voice api pricing,Vendor-branded (navigational),10,,,LOW,commercial,10;10;10;10;10;10;10;10;10;10;10;10,,,sugg_voice_api
+voice api openai,Vendor-branded (navigational),10,58,51.17,MEDIUM,informational,20;10;20;10;10;10;10;10;10;10;10;10,,,related_voice_api
+openai realtime voice api pricing,Vendor-branded (navigational),10,,,LOW,commercial,10;10;50;10;20;10;10;10;10;10;10;10,,,related_voice_api
+google voice api github,Vendor-branded (navigational),0,,,,informational,0;0;0;0;0;0;0;0;0;0;0;0,,,related_voice_api
+voice agent api,Voice AI / agent API,50,0,40.67,MEDIUM,informational,30;40;90;90;90;70;40;30;40;50;30;40,,,overview_seeds|sugg_voice_api
+voice ai api,Voice AI / agent API,50,39,21.52,LOW,informational,110;40;50;40;20;40;30;50;50;40;40;50,,,overview_seeds|sugg_voice_api
+voice agents api,Voice AI / agent API,50,40,40.67,MEDIUM,informational,30;40;90;90;90;70;40;30;40;50;30;40,,,sugg_voice_api
+conversational ai api,Voice AI / agent API,50,0,33.56,MEDIUM,commercial,10;10;20;20;20;20;40;10;20;320;20;30,,,overview_adjacent
+ai voice api,Voice AI / agent API,40,49,32.49,MEDIUM,informational,40;40;50;30;40;30;50;50;40;30;30;40,63,https://trillet.ai/blogs/voice-ai-platform-api-comparison-for-developers,sugg_voice_api
+build voice agent,Voice AI / agent API,30,,10.73,HIGH,transactional,30;10;30;30;30;40;30;30;20;20;30;20,,,overview_adjacent
+free ai voice api,Voice AI / agent API,20,,16.01,MEDIUM,informational,10;20;10;10;10;10;10;10;10;10;10;90,,,sugg_voice_api
+how to build a voice agent,Voice AI / agent API,20,,15.95,MEDIUM,informational,30;20;20;10;20;20;20;10;20;10;10;20,,,overview_adjacent
+ai voice api key,Voice AI / agent API,10,,,MEDIUM,transactional,10;0;0;10;10;0;10;10;0;0;0;70,,,sugg_voice_api
+voice ai agent api,Voice AI / agent API,10,,,MEDIUM,transactional,10;0;10;10;0;0;10;10;10;10;10;0,,,sugg_voice_api
+api voice ai,Voice AI / agent API,10,49,,,informational,0;0;10;0;10;0;10;10;10;10;10;0,,,sugg_voice_api
+ai voice api free,Voice AI / agent API,10,,,LOW,informational,10;10;10;0;10;10;0;10;10;10;10;10,,,sugg_voice_api
+best ai voice api,Voice AI / agent API,10,,,HIGH,commercial,10;10;10;10;10;10;10;10;10;10;10;10,,,sugg_voice_api
+best voice ai api,Voice AI / agent API,10,,,HIGH,commercial,10;10;10;10;10;10;10;10;10;10;10;10,,,sugg_voice_api
+ai voice generator api,Voice AI / agent API,10,,,MEDIUM,informational,10;10;10;10;10;10;10;10;10;10;10;10,,,sugg_voice_api
+open ai voice assistant api,Voice AI / agent API,10,,,MEDIUM,navigational,10;0;0;10;10;0;0;10;10;10;10;10,,,sugg_voice_api
+ai voice assistant api,Voice AI / agent API,10,,,,informational,0;0;0;0;10;10;0;10;10;0;10;10,,,sugg_voice_api
+voice ai api key,Voice AI / agent API,10,,18.73,HIGH,transactional,10;10;0;10;0;0;0;0;0;0;0;0,,,sugg_voice_api
+voice ai api free,Voice AI / agent API,10,,,,transactional,0;10;10;10;0;10;10;0;10;0;10;0,,,sugg_voice_api
+open ai voice mode api,Voice AI / agent API,10,,,,transactional,0;10;10;0;0;0;10;10;10;10;10;10,,,sugg_voice_api
+voice agent framework,Voice AI / agent API,10,,14.80,MEDIUM,transactional,10;10;10;10;10;10;10;10;20;10;10;10,,,overview_adjacent
+voice ai for developers,Voice AI / agent API,10,,,MEDIUM,commercial,10;10;10;10;10;10;10;0;10;10;10;10,,,overview_adjacent
+voice ai sdk,Voice AI / agent API,10,,,LOW,commercial,10;10;10;10;10;10;10;10;0;10;10;10,,,overview_adjacent
+voice ai platform,Voice AI platform / build,880,51,85.68,LOW,commercial,390;2400;2400;880;590;880;1600;1300;260;260;140;480,,,overview_adjacent
+voice agent platform,Voice AI platform / build,40,41,39.31,MEDIUM,commercial,30;20;30;30;40;40;70;40;40;50;30;40,,,overview_adjacent
+voice sdk,Voice AI platform / build,10,19,13.82,MEDIUM,informational,20;10;10;10;10;20;20;20;20;20;10;10,,,overview_adjacent
+voice api,Voice API (core),260,39,56.82,MEDIUM,informational,320;320;390;260;210;260;390;210;260;210;210;260,70,https://trillet.ai/blogs/voice-ai-platform-api-comparison-for-developers,overview_seeds|sugg_voice_api|sugg_voice_api|related_voice_api
+api voice,Voice API (core),260,39,56.82,MEDIUM,informational,320;320;390;260;210;260;390;210;260;210;210;260,,,sugg_voice_api
+voice over ip api,Voice API (core),90,5,34.13,LOW,informational,70;140;170;90;30;70;210;50;50;50;30;70,,,sugg_voice_api
+voice chat api,Voice API (core),50,0,34.59,LOW,informational,30;30;50;50;50;50;50;70;70;40;40;40,,,sugg_voice_api
+voice live api,Voice API (core),40,12,11.42,MEDIUM,navigational,20;10;30;20;30;30;40;50;50;40;90;110,,,sugg_voice_api
+voice api free,Voice API (core),30,59,11.03,MEDIUM,informational,40;40;40;30;30;30;30;20;20;10;20;10,,,sugg_voice_api|related_voice_api
+free voice api,Voice API (core),30,59,11.03,MEDIUM,informational,40;40;40;30;30;30;30;20;20;10;20;10,,,sugg_voice_api
+simple voice chat api,Voice API (core),30,0,12.07,LOW,informational,20;30;20;20;40;20;30;30;20;20;20;30,,,sugg_voice_api
+what is voice api,Voice API (core),20,24,,LOW,informational,10;10;10;20;20;20;10;20;10;10;10;50,,,sugg_voice_api
+voice api pricing,Voice API (core),10,52,,,commercial,0;10;10;10;10;10;10;10;10;10;10;10,,,sugg_voice_api|related_voice_api
+voice analysis api,Voice API (core),10,74,,MEDIUM,informational,10;10;0;0;10;10;10;10;0;10;10;10,,,sugg_voice_api
+voice message api,Voice API (core),10,53,,,informational,0;0;10;10;10;10;10;10;0;0;10;10,,,sugg_voice_api
+advanced voice mode api,Voice API (core),10,18,,,informational,0;10;10;0;0;10;0;10;0;10;10;10,,,sugg_voice_api
+voice to voice api,Voice API (core),10,39,16.65,MEDIUM,informational,10;10;10;10;10;10;10;10;10;10;10;10,,,sugg_voice_api
+plivo voice api,Voice API (core),10,,59.98,MEDIUM,transactional,10;10;10;10;10;10;10;40;10;10;10;30,,,sugg_voice_api
+voice id api,Voice API (core),10,,,MEDIUM,informational,10;0;10;0;0;0;10;0;10;0;10;0,,,sugg_voice_api
+voice translator api,Voice API (core),10,,,LOW,informational,10;10;10;10;10;10;10;10;0;10;10;0,,,sugg_voice_api
+voice emotion api,Voice API (core),10,,,,informational,0;0;0;0;10;0;0;0;10;0;0;10,,,sugg_voice_api
+bandwidth voice api,Voice API (core),10,,9.11,MEDIUM,informational,10;10;10;10;10;10;10;10;10;10;20;20,,,sugg_voice_api
+voice api definition,Voice API (core),10,49,,,informational,0;0;0;0;0;10;0;10;0;0;0;0,,,sugg_voice_api
+voice translation api,Voice API (core),10,,,LOW,informational,10;10;10;10;10;10;10;10;0;10;10;0,,,sugg_voice_api
+voice synthesizer api,Voice API (core),10,,,MEDIUM,informational,10;0;0;0;10;0;0;10;10;10;10;0,,,sugg_voice_api
+voice api javascript,Voice API (core),10,62,,MEDIUM,informational,10;10;0;0;0;10;0;10;0;0;0;0,,,sugg_voice_api
+voice api for developers,Voice API (core),10,,,MEDIUM,commercial,10;10;10;10;10;10;10;10;10;10;0;0,,,sugg_voice_api
+best voice api,Voice API (core),10,,,MEDIUM,commercial,10;10;20;10;10;10;30;10;10;10;10;10,,,sugg_voice_api
+voice fingerprint api,Voice API (core),10,,,,informational,0;10;10;0;0;0;0;10;10;0;10;0,,,sugg_voice_api
+voice otp api,Voice API (core),10,42,,LOW,informational,10;10;0;0;0;10;0;0;0;0;0;0,,,sugg_voice_api
+voice processing api,Voice API (core),10,,,,informational,0;0;0;0;0;10;0;0;0;0;0;0,,,sugg_voice_api
+web voice api,Voice API (core),10,84,,HIGH,informational,10;10;10;10;10;10;10;10;10;10;10;10,,,sugg_voice_api
+ringcentral voice api,Voice API (core),10,,,LOW,navigational,10;10;10;10;10;10;10;10;0;10;10;30,,,sugg_voice_api
+voice over api,Voice API (core),10,49,,MEDIUM,informational,10;10;10;10;10;10;10;10;10;10;0;10,,,sugg_voice_api
+voice sentiment analysis api,Voice API (core),10,58,,LOW,informational,10;10;10;0;0;0;10;0;0;0;0;10,,,sugg_voice_api
+voice to-voice api,Voice API (core),10,36,16.65,MEDIUM,informational,10;10;10;10;10;10;10;10;10;10;10;10,,,sugg_voice_api
+voice control api,Voice API (core),10,,,MEDIUM,informational,10;0;0;0;0;10;10;10;10;10;10;10,,,sugg_voice_api
+open ai api voice,Voice API (core),10,6,29.56,MEDIUM,informational,10;10;10;10;10;10;10;10;10;10;10;10,,,sugg_voice_api
+voice api ai,Voice API (core),10,49,29.15,HIGH,informational,10;10;10;10;10;10;10;10;10;10;10;10,,,sugg_voice_api
+voice detection api,Voice API (core),10,,,MEDIUM,informational,10;10;0;10;0;10;10;0;0;10;10;10,,,sugg_voice_api
+voice assistant api,Voice API (core),10,49,,LOW,informational,10;10;10;10;10;10;10;10;10;10;10;10,,,sugg_voice_api
+voice activity detection api,Voice API (core),10,,,,informational,0;0;0;0;0;0;10;10;0;10;10;10,,,sugg_voice_api
+voice api integration,Voice API (core),10,,,,informational,0;0;10;10;10;10;10;10;20;10;0;0,,,sugg_voice_api
+voice verification api,Voice API (core),10,63,,,informational,0;10;0;0;10;0;0;0;0;0;0;10,,,sugg_voice_api
+free voice chat api,Voice API (core),10,,,,informational,0;0;0;10;10;0;10;10;0;0;10;10,,,sugg_voice_api
+exotel voice api,Voice API (core),10,,,,transactional,0;10;0;0;0;10;0;0;0;10;0;10,,,sugg_voice_api
+voice api python,Voice API (core),0,,,,informational,0;0;0;0;0;0;0;0;0;0;0;0,,,related_voice_api
+voice infrastructure,Voice infrastructure,20,21,,LOW,informational,10;10;10;20;20;10;30;10;20;10;10;10,,,overview_seeds|sugg_voice_infra|sugg_voice_infra
+which type of infrastructure services provides voice,Voice infrastructure,10,,,,informational,0;0;0;0;0;0;10;0;0;0;0;0,,,sugg_voice_infra
+telephony infrastructure,Voice infrastructure,10,7,,LOW,informational,20;20;10;10;20;20;20;20;20;10;10;10,,,overview_adjacent
+voice ai stack,Voice infrastructure,10,,,MEDIUM,informational,10;10;10;10;10;10;10;10;10;10;10;10,,,overview_adjacent
