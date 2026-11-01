@@ -20,7 +20,7 @@ The first 30 days build the assets and accounts that every campaign after them d
 **Owners:**
 - **Me:** marketing strategy, copy, creative direction, campaigns, reporting.
 - **Dominic:** sign-off and on-camera.
-- **Qubik web/IT:** WordPress and access.
+- **Qubik web/IT:** WordPress access and backups (I build the landing pages).
 - **Automation specialist:** CRM and integrations, sample report and dashboard.
 - **Sales:** calls and lead feedback.
 
@@ -43,8 +43,8 @@ The first 30 days build the assets and accounts that every campaign after them d
 
 | Deliverable | Owner | Depends on |
 |---|---|---|
-| Landing pages built in Divi: Blank Page template, hidden from the menu, noindex; a thank-you page with a booking calendar | Me (build or brief), Qubik web | Copy signed off |
-| Landing page form (Fluent Forms) with hidden fields for ad click IDs and UTMs; existing site forms untouched | Me, Qubik web | Plugin approval |
+| Landing pages built in Divi: Blank Page template, hidden from the menu, noindex; a thank-you page with a booking calendar | Me | Copy signed off |
+| Landing page form (Fluent Forms) with hidden fields for ad click IDs and UTMs; existing site forms untouched | Me | Plugin approval from Qubik |
 | Creative produced: three hook videos (15–30 seconds, in 9:16 and 4:5), two statics, one carousel, captions | Me (edit), Dominic (30-minute shoot) | Scripts |
 | Meta Instant Form (higher-intent type, five questions, privacy link) | Me | Privacy policy live |
 | Meta campaigns built to the structure in section 1; prospecting test live with A$900 over 14 days | Me | All of the above |
@@ -168,20 +168,25 @@ Each lead keeps the channel it first came from. The report shows this week, last
 
 ## 5. Notes on the Google and LinkedIn tests
 
-**Google Search (a test from about day 15):**
-- **Keywords:** 26 service-intent keywords across business process automation, automation consultants, AI implementation and AI readiness assessment. That's about 990 searches a month in Australia (Keyword Planner, November 2026). Phrase and exact match only.
-- **Negatives:** 138 keywords, so software shoppers, job seekers and course seekers never see the ads.
-- **Forecast:** Keyword Planner forecasts about 181 clicks a month at about A$48 a day, roughly A$8 per click. That forecast was for December and in INR, so re-run it for a normal month.
-- **Test plan:** A$30–48 a day for four weeks, sending people to the matching landing page.
-- **Stop if:** cost per qualified lead stays above A$1,000 after four weeks of negative-keyword clean-up.
-- **Before launch:**
-  - conversion tracking verified (the site has none today);
-  - a Google Ads account in AUD on Brisbane time; the account used for research was in INR, and currency can't be changed later.
+**Google Search (a test from about day 15).** This is a dedicated test for Qubik's mid-market offer. It is separate from any earlier keyword research, and none of those keywords or forecasts carry over.
+- **Keyword themes:**
+  - back-office automation for Xero users ("xero automation", "automate supplier invoices", "invoice processing automation", "accounts payable automation");
+  - dashboards ("xero dashboard", "management reporting dashboard", "business dashboard for xero");
+  - importers ("landed cost calculation", "landed cost xero");
+  - Qubik's brand name, to protect it.
+- **First step:** run these themes through Keyword Planner in Qubik's own AUD account to get volumes and bids. Volumes are likely to be small, so the test is about lead quality, not scale.
+- **Setup:**
+  - Search only, Australia, phrase and exact match;
+  - negatives for software shoppers, jobs, courses and DIY;
+  - ads send people to my matching landing page (automation or dashboard).
+- **Budget:** A$600–1,200 over about four weeks (A$20–40 a day).
+- **Stop if:** cost per qualified lead stays above A$1,000 after two rounds of search-term clean-up, or the themes show too little volume to learn from.
+- **Before launch:** conversion tracking verified (the site has none today), and a Google Ads account owned by Qubik, in AUD on Brisbane time.
 
 **LinkedIn (a test from about day 21):**
 - **Audience:** owners, managing directors, finance managers and operations managers at Australian companies with 11–200 staff. LinkedIn can target by job title and company size, which Meta can't.
 - **Format:** a Lead Gen Form with a document ad (the sample diagnostic report or the demo dashboard).
-- **Budget:** small and fixed. LinkedIn clicks usually cost several times more than Meta's (estimate), so judge it on cost per qualified lead, not cost per lead.
+- **Budget:** A$1,000–2,000, fixed, over three to four weeks. LinkedIn clicks usually cost several times more than Meta's (estimate), so judge it on cost per qualified lead, not cost per lead.
 - **Kill rule:** no qualified lead after the fixed budget is spent.
 
 ## 6. Optional: AEO and outbound
@@ -199,26 +204,46 @@ It costs time rather than ad spend, and it compounds.
 - **Compliance:** cold email must meet the Spam Act. Use business addresses that are published and relevant to the person's role, identify Qubik, and include an unsubscribe.
 - **Success:** a 5%+ reply rate and 3–5 meetings from the 100.
 
-## 7. Costs, tools, specialists and hours needed
+
+## 7. Test budgets
+
+These are ad spend only, ex GST. Each step after the first happens only if the previous threshold is met.
+
+| Test | When | Budget range | Moves on if |
+|---|---|---|---|
+| Meta prospecting, mid-market | Days 8–21 | A$900 (fixed, per the brief) | Cost per qualified lead A$750 or less, with 1+ qualified lead |
+| Meta prospecting, scaled | Days 22–30 and month 2 | A$1,500–3,000 a month | Cost per qualified lead holds as spend rises |
+| Meta retargeting | From day 15 | A$150–300 a month | Second-touch leads qualify at a similar rate |
+| Google Search (Qubik mid-market) | Days 15–45 | A$600–1,200 | Qualified leads at A$1,000 or less each |
+| LinkedIn Lead Gen | Days 21–45 | A$1,000–2,000 | At least one qualified lead per A$1,000 |
+| Meta, trades | Month 2 | A$900–1,500 | The same thresholds as mid-market |
+
+**Total ad spend in month 1:**
+- **Minimum** (the Meta test only): **A$900**.
+- **Full range** (all of the above, if every threshold is met): **about A$4,000–7,500**.
+
+The minimum case on its own still answers the main question: will Meta bring qualified mid-market leads?
+
+## 8. Costs, tools, specialists and hours needed
 
 *Tool prices are estimates to confirm when signing up.*
 
 | Item | What for | Estimate |
 |---|---|---|
-| Meta ad spend | Mid-market test, then scaling; trades from month 2 | A$900 test; ongoing budget set at day 30 |
-| Google test | Search campaign for four weeks | A$30–48/day (~A$900–1,450) |
-| LinkedIn test | Lead Gen Form test | Fixed test budget, agreed before launch |
+| Meta ad spend | Mid-market test, then scaling; trades from month 2 | A$900 test, then A$1,500–3,000 (see test budgets) |
+| Google test | Search campaign for about four weeks | A$600–1,200 (see test budgets) |
+| LinkedIn test | Lead Gen Form test | A$1,000–2,000 (see test budgets) |
 | CRM | Pipeline, sequences, reporting | Free to about A$50–100 per user/month |
 | SMS, booking calendar | Speed to lead, reminders | Cents per SMS; free to ~A$20/month for booking |
 | LinkedIn Sales Navigator | Outbound test, if run | ~A$150/month |
 | Fluent Forms | Landing page form | Free |
-| Qubik web/IT | Access, backups, publishing the pages | ~4–6 hours in weeks 1–2 |
+| Qubik web/IT | WordPress access, a backup, plugin approval | ~2–3 hours in week 1 |
 | Automation specialist | CRM build, sample report, demo dashboard | ~15–20 hours in weeks 1–3 |
 | Dominic | Messaging sign-off, 30–60 minute video shoot, weekly 30-minute review | ~3 hours in month 1 |
 | Sales | Calls within 15 minutes, discovery calls, lead feedback | Capacity for ~5–15 calls in weeks 2–4 |
-| My hours | Setup and assets in weeks 1–2, then campaigns and reporting | ~35–45 hours in weeks 1–2, then ~15–20 hours a week |
+| My hours | Setup, assets and landing page build in weeks 1–2, then campaigns and reporting | ~45–55 hours in weeks 1–2, then ~15–20 hours a week |
 
-## 8. Metrics I'd be measured on
+## 9. Metrics I'd be measured on
 
 **Leading indicators (weekly):**
 - cost per qualified lead by channel;
@@ -242,6 +267,5 @@ How these link to my commercial terms is for a separate discussion.
 
 - **ABS:** *Counts of Australian Businesses* (8165.0), June 2025.
 - **Meta Marketing API:** audience estimates, October 2026.
-- **Google Keyword Planner:** Australian volumes and forecast, November 2026.
 - **Qubik site review:** WordPress, Divi, LiteSpeed; no analytics or ad tags found (November 2026).
 - **ACMA:** Spam Act guidance.
