@@ -31,10 +31,10 @@ function cell(children, width, o = {}) {
 
 // KPI band
 const kpis = [
-  ['~A$1,400', 'monthly ad spend (~A$46/day)'],
-  ['150–180', 'clicks a month'],
-  ['5–14', 'leads a month'],
-  ['A$100–280', 'per lead'],
+  ['A$600', 'test budget'],
+  ['10–15 days', 'A$40–60 a day'],
+  ['~75', 'clicks'],
+  ['2–6', 'leads'],
 ];
 const kw = Math.floor(W / 4);
 const kpiTable = new Table({
@@ -47,38 +47,39 @@ const kpiTable = new Table({
 });
 
 // Expected numbers table
-const eW = [Math.floor(W * 0.34), Math.floor(W * 0.22), Math.floor(W * 0.22)];
+const eW = [Math.floor(W * 0.44), Math.floor(W * 0.28)];
 eW.push(W - eW.reduce((a, b) => a + b, 0));
 const eRows = [
-  ['', 'Lower case', 'Expected (Google forecast)', 'Basis'],
-  ['Clicks a month', '40–70', '150–180', 'Planner forecast: 181 clicks at ~A$48/day'],
-  ['Average cost per click', 'A$14–18', '~A$8', 'Forecast and Planner bid ranges'],
-  ['Leads a month (3–8% of clicks)', '1–6', '5–14', 'Landing page conversion, my estimate'],
-  ['Qualified leads (40–60% of leads)', '1–3', '2–8', 'Right size, decision-maker, real need'],
-  ['Cost per qualified lead', 'A$300–1,400', 'A$175–700', 'Firmed up from real data after week 2'],
+  ['For A$600', 'Lower case', 'Expected (Google forecast)'],
+  ['Clicks', '33–43', '~75'],
+  ['Average cost per click', 'A$14–18', '~A$8'],
+  ['Leads (3–8% of clicks)', '1–3', '2–6'],
+  ['Cost per lead', 'A$175–600', 'A$100–270'],
+  ['Qualified leads (40–60% of leads)', '0–2', '1–4'],
+  ['Cost per qualified lead', 'A$300+', 'A$150–670'],
 ];
 const eTable = new Table({
   width: { size: W, type: WidthType.DXA }, columnWidths: eW,
-  rows: eRows.map((r, i) => new TableRow({ children: r.map((c, j) => cell([p([run(c, { pt: 8.8, bold: i === 0 || j === 0, color: i === 0 ? NAVY : undefined })], { after: 0 })], eW[j], { fill: i === 0 ? LIGHT : undefined, pad: 30 })) })),
+  rows: eRows.map((r, i) => new TableRow({ children: r.map((c, j) => cell([p([run(c, { pt: 9, bold: i === 0 || j === 0, color: i === 0 ? NAVY : undefined })], { after: 0 })], eW[j], { fill: i === 0 ? LIGHT : undefined, pad: 35 })) })),
 });
 
 // Do / Need two-column table
 const half = Math.floor(W / 2);
 const col = (title, items, ref) => [p([run(title, { pt: 10.5, bold: true, color: TEAL })], { after: 40 }), ...items.map(x => bullet(x, ref))];
 const doItems = [
-  ['Set up tracking on qubik.com.au (it has none today): Tag Manager, GA4, Google Ads conversions, enhanced conversions.'],
-  ['Build two landing pages (process automation; AI implementation) on the existing site, hidden from the menu, with a lead form that records which ad and keyword brought each lead.'],
-  ['Build the campaign: 26 high-intent keywords in 4 ad groups, 138 negative keywords to block software shoppers, job seekers and students, ads and extensions.'],
-  ['Optimise twice a week: search terms, negatives, bids, ad copy.'],
-  ['Send a weekly report (spend, leads, qualified leads, cost per qualified lead, meetings) and a day-30 recommendation: scale, adjust or stop.'],
+  ['Set up tracking on qubik.com.au: Tag Manager, GA4, Google Ads conversions.'],
+  ['Build two landing pages (process automation; AI implementation) with a lead form that records the ad and keyword behind each lead.'],
+  ['Build the campaign: 26 high-intent keywords, 4 ad groups, 138 negative keywords, ads and extensions.'],
+  ['Clean up search terms on days 3 and 7; adjust bids and ads.'],
+  ['Report results within 2 business days of the test ending, with a recommendation.'],
 ];
 const needItems = [
-  ['A Google Ads account owned by Qubik, in AUD and Brisbane time, with Qubik\'s billing. I work in it as a manager.'],
-  ['Ad budget approved: about A$1,400 a month, paid directly to Google.'],
-  ['WordPress admin access, a current backup, and approval to add Tag Manager and one form plugin (Fluent Forms).'],
-  ['Sign-off on the offer and what the page may say: free 30-minute call, assessment price, Xero partner wording, Dominic\'s photo and testimonial.'],
-  ['A named person who calls new leads within 15 minutes in business hours, and tells me weekly which leads were qualified.'],
-  ['Privacy policy updated to cover analytics and ad tracking.'],
+  ['A Google Ads account owned by Qubik, in AUD on Brisbane time, with Qubik\'s billing and manager access for me.'],
+  ['A$600 test budget approved, paid directly to Google.'],
+  ['WordPress admin access, a current backup, and approval for Tag Manager and Fluent Forms.'],
+  ['Sign-off on the offer and page wording: free 30-minute call, assessment price, Xero partner wording, Dominic\'s photo and testimonial.'],
+  ['Someone to call new leads within 15 minutes in business hours and mark which ones qualify.'],
+  ['Privacy policy updated for analytics and ad tracking.'],
 ];
 const twoCol = new Table({
   width: { size: half * 2, type: WidthType.DXA }, columnWidths: [half, half],
@@ -89,16 +90,28 @@ const twoCol = new Table({
 });
 
 // Timeline
-const tW = [Math.floor(W * 0.18)]; tW.push(W - tW[0]);
+const tW = [Math.floor(W * 0.2)]; tW.push(W - tW[0]);
 const tRows = [
-  ['Week 1', 'Access, tracking, landing pages built and tested'],
-  ['Week 2', 'Campaign live; first search-term clean-up after 3–4 days'],
-  ['Weeks 3–4', 'Optimise; first qualified leads and meetings'],
-  ['Day 30', 'Review with Qubik. Scale if a qualified lead costs A$750 or less; stop if it is above A$1,000 after clean-up'],
+  ['Before launch', 'About 5 working days: access, tracking, landing pages built and tested'],
+  ['Days 1–3', 'Campaign live; first search-term clean-up'],
+  ['Days 4–10', 'Optimise; mid-test check on day 7'],
+  ['Days 10–15', 'Test ends; report and recommendation within 2 business days'],
 ];
 const tTable = new Table({
   width: { size: W, type: WidthType.DXA }, columnWidths: tW,
-  rows: tRows.map(r => new TableRow({ children: r.map((c, j) => cell([p([run(c, { pt: 8.8, bold: j === 0 })], { after: 0 })], tW[j], { pad: 30 })) })),
+  rows: tRows.map(r => new TableRow({ children: r.map((c, j) => cell([p([run(c, { pt: 9, bold: j === 0 })], { after: 0 })], tW[j], { pad: 35 })) })),
+});
+
+// Decision rules
+const dW = [Math.floor(W * 0.2)]; dW.push(W - dW[0]);
+const dRows = [
+  ['Scale', '1+ qualified lead, average cost per click A$15 or less, search terms relevant'],
+  ['Fix', 'Clicks arrive but no leads: change the landing page or offer, then re-test'],
+  ['Stop', 'Cost per click above A$20, or mostly irrelevant search terms after clean-up'],
+];
+const dTable = new Table({
+  width: { size: W, type: WidthType.DXA }, columnWidths: dW,
+  rows: dRows.map(r => new TableRow({ children: r.map((c, j) => cell([p([run(c, { pt: 9, bold: j === 0, color: j === 0 ? NAVY : undefined })], { after: 0 })], dW[j], { pad: 35 })) })),
 });
 
 const doc = new Document({
@@ -107,20 +120,20 @@ const doc = new Document({
   sections: [{
     properties: { page: { size: { width: 11906, height: 16838 }, margin: { top: M, bottom: M, left: M, right: M } } },
     children: [
-      p([run('Qubik AI & Automation · Google Search Ads', { pt: 18, bold: true, color: NAVY })], { after: 30 }),
-      p([run('A 30-day test to win business process automation and AI implementation leads across Australia', { pt: 10.5, color: GREY })], { after: 120 }),
+      p([run('Qubik AI & Automation · Google Search Ads Test', { pt: 18, bold: true, color: NAVY })], { after: 30 }),
+      p([run('Business process automation and AI implementation leads, Australia-wide', { pt: 10.5, color: GREY })], { after: 120 }),
       kpiTable,
-      p([run('Expected figures for the first month, from Google\'s own forecast. Estimates until real data replaces them in week 2.', { pt: 8, italics: true, color: GREY })], { before: 50, after: 40 }),
-      h('Who we reach'),
-      p('Australian businesses actively searching for help, not browsing: "business process automation", "automation consultant", "workflow automation services", "AI implementation consultants", "AI agent development", "AI readiness assessment". About 990 searches a month (Google Keyword Planner, November 2026). Each ad leads to a page that matches the search, with a free 30-minute call as the next step.'),
+      h('Keywords'),
+      p('26 high-intent searches, such as "business process automation", "automation consultant", "workflow automation services", "AI implementation consultants", "AI agent development" and "AI readiness assessment". About 990 searches a month in Australia (Google Keyword Planner).'),
       h('Expected numbers'),
       eTable,
-      p([run('The lower case applies if Google shows the ads only on the exact phrases; the forecast includes close variants of each phrase. The forecast was pulled for December, so it will be re-run for a normal month before launch.', { pt: 8, italics: true, color: GREY })], { before: 40, after: 20 }),
+      p([run('A$600 is a signal test. It shows whether the searches, clicks and landing page convert before a larger budget is committed.', { pt: 9 })], { before: 50, after: 20 }),
       new Paragraph({ spacing: { before: 60, after: 0 }, children: [] }),
       twoCol,
-      h('Timeline and decision'),
+      h('Timeline'),
       tTable,
-      p([run('Prepared by Vinaygopal Mawandia · ⟦DATE⟧', { pt: 8, color: GREY })], { before: 80, after: 0 }),
+      h('Decision after the test'),
+      dTable,
     ],
   }],
 });
