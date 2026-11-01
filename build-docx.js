@@ -51,7 +51,15 @@ function table(rows) {
   const n = header.length;
   // column weights by table shape
   let weights;
-  if (n === 4) weights = [4, 18, 60, 18];
+  const h0 = header[0].trim();
+  const byHead = {
+    'Deliverable': [50, 25, 25], 'Signal': [22, 26, 26, 26], 'Measure': [34, 22, 22, 22],
+    'Where they stopped': [22, 33, 45], 'Metric': [20, 55, 25], 'Item': [24, 46, 30],
+    'Component': [20, 42, 38], 'Step': [30, 17, 17, 36], 'When': [16, 84],
+  };
+  if (byHead[h0] && byHead[h0].length === n) weights = byHead[h0];
+  else if (n === 4 && h0 === '#') weights = [4, 18, 60, 18];
+  else if (n === 4) weights = [25, 25, 25, 25];
   else if (n === 3 && /CPL/.test(header.join(''))) weights = [44, 28, 28];
   else if (n === 3 && /^By$/.test(header[0].trim())) weights = [16, 50, 34];
   else if (n === 3) weights = [17, 40, 43];
@@ -86,6 +94,13 @@ function blocks(text) {
   while (i < lines.length) {
     const l = lines[i];
     if (!l.trim() || /^---\s*$/.test(l) || l.startsWith('<!--')) { i++; continue; }
+    if (l.startsWith('### ')) {
+      out.push(new Paragraph({
+        children: [new TextRun({ text: l.slice(4), font: FONT, size: BODY + 2, bold: true, color: ACCENT })],
+        spacing: { before: 100, after: 40 }, keepNext: true,
+      }));
+      i++; continue;
+    }
     if (l.startsWith('## ')) {
       out.push(new Paragraph({
         heading: HeadingLevel.HEADING_2,
