@@ -160,17 +160,17 @@ const [bodyMd, sourcesMd] = rest.split('## Sources');
 const coverLines = coverMd.split('\n').filter(s => s.trim());
 const title = coverLines[0].replace(/^# /, '');
 const cover = [
-  new Paragraph({ children: [], spacing: { before: 2600 } }),
+  ...(process.env.COMPACT ? [] : [new Paragraph({ children: [], spacing: { before: 2600 } })]),
   new Paragraph({ children: [new TextRun({ text: title, font: FONT, size: 44, bold: true, color: ACCENT })], spacing: { after: 200 } }),
   new Paragraph({ children: [], border: { bottom: { style: BorderStyle.SINGLE, size: 8, color: ACCENT, space: 1 } }, spacing: { after: 240 } }),
   ...coverLines.slice(1).map(l => para(l.replace(/^\*(.*)\*$/, '_$1_').replace(/^_(.*)_$/, '*$1*'), { run: { size: 22 }, after: 140 })),
-  new Paragraph({ children: [new PageBreak()] }),
+  ...(process.env.COMPACT ? [] : [new Paragraph({ children: [new PageBreak()] })]),
 ];
 
 const body = blocks(bodyMd);
 const sources = [
   new Paragraph({ pageBreakBefore: true, children: [new TextRun({ text: 'Sources', font: FONT, size: BODY + 5, bold: true, color: ACCENT })], spacing: { after: 100 } }),
-  ...blocks(sourcesMd),
+  ...(sourcesMd ? blocks(sourcesMd) : []),
 ];
 
 // count numbered-list groups used
@@ -192,7 +192,7 @@ const doc = new Document({
   numbering: { config: numberingConfigs },
   sections: [{
     properties: { page: { size: { width: PAGE_W, height: 16838 }, margin: { top: MARGIN, bottom: MARGIN, left: MARGIN, right: MARGIN } } },
-    children: [...cover, ...body, ...sources],
+    children: [...cover, ...body, ...(sourcesMd ? sources : [])],
   }],
 });
 
