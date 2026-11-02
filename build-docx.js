@@ -56,11 +56,14 @@ function table(rows) {
     'Deliverable': [50, 25, 25], 'Signal': [22, 26, 26, 26], 'Measure': [34, 22, 22, 22],
     'Where they stopped': [22, 33, 45], 'Metric': [20, 55, 25], 'Item': [24, 46, 30],
     'Component': [20, 42, 38], 'Step': [30, 17, 17, 36], 'When': [16, 84],
-    'Hook': [14, 52, 34], 'Test': [26, 18, 20, 36], 'Campaign': [18, 16, 34, 14, 18], 'By': [16, 50, 34],
+    'Hook': [14, 52, 34], 'Test': [26, 18, 20, 36],
+    'Stage': [20, 50, 30], 'Field': [24, 76], 'Segment': [17, 23, 8, 22, 30], 'Window': [22, 50, 28],
+    'Dates (2026–27)': [15, 40, 26, 19], 'Signal (per send)': [22, 20, 30, 28], 'Campaign': [18, 16, 34, 14, 18], 'By': [16, 50, 34],
   };
   if (byHead[h0] && byHead[h0].length === n) weights = byHead[h0];
   else if (n === 4 && h0 === '#') weights = [4, 18, 60, 18];
   else if (n === 4) weights = [25, 25, 25, 25];
+  else if (n === 2) weights = [62, 38];
   else if (n === 3 && /CPL/.test(header.join(''))) weights = [44, 28, 28];
   else if (n === 3 && /^By$/.test(header[0].trim())) weights = [16, 50, 34];
   else if (n === 3) weights = [17, 40, 43];
