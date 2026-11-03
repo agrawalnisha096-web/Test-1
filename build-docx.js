@@ -58,9 +58,14 @@ function table(rows) {
     'Component': [20, 42, 38], 'Step': [30, 17, 17, 36], 'When': [16, 84],
     'Hook': [14, 52, 34], 'Test': [26, 18, 20, 36],
     'Stage': [20, 50, 30], 'Field': [24, 76], 'Segment': [17, 23, 8, 22, 30], 'Window': [22, 50, 28],
-    'Dates (2026–27)': [15, 40, 26, 19], 'Signal (per send)': [22, 20, 30, 28], 'Campaign': [18, 16, 34, 14, 18], 'By': [16, 50, 34],
+    'Dates (2026–27)': [15, 40, 26, 19], 'Signal (per send)': [22, 20, 30, 28],
+    'Measure|Result': [40, 60], 'Segment|Who': [20, 30, 9, 10, 10, 21], 'Segment|Day 0': [14, 19, 17, 17, 17, 16],
+    'Segment|Leads': [20, 8, 14, 38, 20], 'Dates|What runs': [16, 84], 'Basis|Range for 10–22 clients': [55, 45],
+    'Signal|Keep going': [24, 16, 34, 26], 'Campaign': [18, 16, 34, 14, 18], 'By': [16, 50, 34],
   };
-  if (byHead[h0] && byHead[h0].length === n) weights = byHead[h0];
+  const k2 = h0 + '|' + (header[1] || '').trim();
+  if (byHead[k2] && byHead[k2].length === n) weights = byHead[k2];
+  else if (byHead[h0] && byHead[h0].length === n) weights = byHead[h0];
   else if (n === 4 && h0 === '#') weights = [4, 18, 60, 18];
   else if (n === 4) weights = [25, 25, 25, 25];
   else if (n === 2) weights = [62, 38];
