@@ -6,19 +6,21 @@ Reporting period: Oct 27 – Nov 2, 2026 · Sent Nov 3, 2026
 
 ## 1. Performance
 
-Campaign "New || Indonesia || In-app action || Targeting", Google Ads data, excluding GST.
+Campaign "New || Indonesia || In-app action || Targeting", Google Ads data, excluding GST. Nov 1–2 are still marked projected/pending by Google and may move slightly.
 
-| Metric | Oct 25–31 (7 days) | Daily average | Month-1 goal |
+| Metric | Oct 27 – Nov 2 (7 days) | Daily average | Month-1 goal |
 |---|---|---|---|
-| Spend | ₹25,220 | ₹3,603 | Within approved ceiling |
-| Installs | 13,968 | 1,995 | ≥ 1,900/day |
-| Cost per install | ₹1.81 | | ≤ ₹1.70 |
-| First_Print (events) | 8,763 | 1,252 | |
-| Purchases | 37 | 5.3 | |
-| Cost per in-app action | ₹2.87 | | |
+| Spend | ₹26,030 | ₹3,719 | Within approved ceiling |
+| Installs | 13,918 | 1,988 | ≥ 1,900/day |
+| Cost per install | ₹1.87 | | ≤ ₹1.70 |
+| CPC | ₹1.38 | | |
+| First_Print (events) | 8,674 | 1,239 | |
+| Purchases | 48 | 6.9 | |
+| Cost per in-app action | ₹2.98 | | |
 
-- **Trend:** volume softened through the week. Installs fell from about 2,100–2,250/day (Oct 26–29) to 1,799 on Oct 31, and cost per install rose from ₹1.65–1.80 to ₹1.96. Click-through rate started slipping on Oct 26, before any changes were made.
-- **Oct 26–28 vs Oct 29–31:** installs −11%, cost per install ₹1.75 → ₹1.88, purchases flat (18 vs 17). The Oct 31 changes only have a few hours in this window.
+- **Trend:** installs averaged about 2,165/day on Oct 26–28, dipped to 1,728 on Sunday Nov 1 (weekends are usually our weakest days) and recovered to 2,154 on Monday Nov 2. Cost per install drifted up from ₹1.65–1.80 to ₹1.92–1.96, and CPC from ₹1.24–1.33 to ₹1.41–1.45. Click-through rate started slipping on Oct 26, before any changes were made.
+- **Since the target CPA step (Nov 1–2):** spend picked up (₹4,217 on Nov 2, the highest day of the week) and installs recovered, at ₹1.94 per install vs ₹1.75 on Oct 26–28. Two days isn't enough to judge.
+- **Week-on-week:** the previous 7-day comparison isn't included this week; it starts from next week's report.
 - **Immature data:** D7/D30 retention and unique-user first-print rate need Firebase access (pending). First_Print in Google Ads counts every print, not users.
 
 ## 2. Changes made
@@ -37,8 +39,8 @@ No budget, conversion-goal or ad group status changes. All changes are in the ac
 
 | Experiment | Hypothesis | Spend so far | Result | Next |
 |---|---|---|---|---|
-| English copy refresh (New, OCR) | Replacing Low-rated, high-spend assets lowers cost per install without hurting First_Print | Under ₹110 on new assets (all "Learning") | Too early | Read Nov 7–9; keep, revert or iterate |
-| Target CPA ₹2.60 → ₹2.70 | A small step restores install volume at an acceptable cost | ~6 hours of data | Too early | Rollback to ₹2.60 if cost per install stays above ₹2.10 for 2 days |
+| English copy refresh (New, OCR) | Replacing Low-rated, high-spend assets lowers cost per install without hurting First_Print | About ₹690 across new assets (all "Learning") | Too early; early read: "Print Fast From Your Phone" at ₹1.60 per install (135 installs) vs ₹1.79 for the New ad group | Read Nov 7–9; keep, revert or iterate |
+| Target CPA ₹2.60 → ₹2.70 | A small step restores install volume at an acceptable cost | 2 days of data | Too early; spend and installs recovered on Nov 2, cost per install ₹1.94 | Rollback to ₹2.60 if cost per install stays above ₹2.10, or installs fall more than 15%, for 2 days running (not triggered so far) |
 
 ## 4. Research and insights
 
@@ -51,15 +53,15 @@ No budget, conversion-goal or ad group status changes. All changes are in the ac
 
 ## 5. Risks and issues
 
-- **Purchase value tracking (needs action).** Purchases are recorded with a value of 1 each (17 purchases = value 17 on Oct 29–31). Earlier in October they came through with real values (about ₹430 on average). Please ask the developer to check the Firebase purchase event (value and IDR currency). Until fixed, revenue and ROAS can't be read in Google Ads, and I'd ignore Google's Target ROAS recommendation.
-- **Delivery softening.** Campaign is "Limited by bid strategy" and volume dipped this week; I'm watching daily with the rollback condition above.
+- **Purchase value tracking (needs action).** Most purchases are recorded with a value of 1: 48 purchases on Oct 27 – Nov 2 were worth 371 in total, with only the odd purchase carrying a real value (about ₹330). Earlier in October most came through with real values (about ₹430 on average). This pattern fits some app versions sending the value and others not. Please ask the developer to check the Firebase purchase event (value and IDR currency). Until fixed, revenue and ROAS can't be read in Google Ads, and I'd ignore Google's Target ROAS recommendation.
+- **Delivery softening.** Campaign is "Limited by bid strategy" and volume dipped mid-week before recovering on Nov 2; Google is also showing a "Diagnose drop" prompt for conversions. I'm watching daily with the rollback condition above.
 - None identified on policy: no disapproved assets or policy warnings.
 
 ## 6. Plan for next week (Nov 3–9)
 
 1. Monitor daily; read the Oct 29–31 changes on Nov 7–9 and decide keep, revert or iterate.
 2. Prepare two Bahasa ad groups, built paused so they don't affect the read: "OCR – ID" (reusing the proven OCRIndonesian copy) and "New – ID" (general message).
-3. After the read: switch on the Bahasa ad groups, pause the two weakest ad groups (Bluetooth Printers app, Problem-Solution), and refresh AI-Oriented copy (4 of 5 headlines rated Low).
+3. After the read: switch on the Bahasa ad groups, pause the two weakest ad groups (Bluetooth Printers app and Problem-Solution, ₹2.33–2.34 per install on Nov 1–2 vs ₹1.79 for New), and refresh AI-Oriented copy (4 of 5 headlines rated Low).
 4. Document this week's experiments and insights in Confluence.
 
 ## 7. Approvals and access needed
