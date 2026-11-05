@@ -1,0 +1,662 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Qubik Automation Page v2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&family=Lato:wght@400;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* v2: teach before asking. Navy/teal brand; hero = promise + step 1 of a 3-step form; then explainer, before/after, readiness, myths, approach, steps, pricing models, proof, FAQ. */
+:root {
+  --navy: #2e4455; --navy-deep: #22333f; --teal: #7ebec5; --teal-ink: #2f7f88; --teal-soft: #e6f2f3;
+  --paper: #f4f8f8; --surface: #ffffff; --ink: #1d2c37; --muted: #566873; --line: #d5e1e3;
+  --on-navy: #f2f7f8; --on-navy-muted: #b8cbd1; --ok: #2f8a5b; --flag: #b7791f;
+  --note-bg: #fff6d9; --note-ink: #5e4a00;
+  --font-display: 'Rubik', 'Helvetica Neue', Arial, sans-serif;
+  --font-body: 'Lato', 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --navy: #1b2a35; --navy-deep: #13202a; --teal: #8fd0d6; --teal-ink: #8fd0d6; --teal-soft: #1d3138;
+    --paper: #111a20; --surface: #18242d; --ink: #e6eff1; --muted: #9db0b8; --line: #2a3a45;
+    --on-navy: #eef5f6; --on-navy-muted: #a9bec5; --ok: #6fcf9c; --flag: #f2c46d; --note-bg: #3a3214; --note-ink: #f3e3a6;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --navy: #1b2a35; --navy-deep: #13202a; --teal: #8fd0d6; --teal-ink: #8fd0d6; --teal-soft: #1d3138;
+  --paper: #111a20; --surface: #18242d; --ink: #e6eff1; --muted: #9db0b8; --line: #2a3a45;
+  --on-navy: #eef5f6; --on-navy-muted: #a9bec5; --ok: #6fcf9c; --flag: #f2c46d; --note-bg: #3a3214; --note-ink: #f3e3a6;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--font-body); font-size: 17px; line-height: 1.6; }
+h1, h2, h3 { font-family: var(--font-display); line-height: 1.15; text-wrap: balance; margin: 0; }
+p { margin: 0; }
+a { color: var(--teal-ink); }
+:focus-visible { outline: 3px solid var(--teal); outline-offset: 2px; }
+.wrap { max-width: 1120px; margin: 0 auto; padding-left: 16px; padding-right: 16px; }
+
+/* Prototype bar and notes (not part of the live page) */
+.proto { background: var(--note-bg); color: var(--note-ink); font-size: 14px; }
+.proto .wrap { padding-block: 8px; }
+.proto strong { font-family: var(--font-display); font-weight: 600; }
+.draft { border: 2px dashed var(--flag); border-radius: 10px; position: relative; }
+.draft::after { content: attr(data-draft); position: absolute; top: -11px; left: 12px; background: var(--note-bg); color: var(--note-ink); font-size: 11px; font-family: var(--font-display); font-weight: 600; letter-spacing: .06em; text-transform: uppercase; padding: 1px 8px; border-radius: 4px; }
+
+/* Header */
+.top { background: var(--navy-deep); color: var(--on-navy); }
+.top .wrap { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding-block: 14px; }
+.logo { font-family: var(--font-display); font-weight: 700; font-size: 26px; letter-spacing: -0.02em; display: flex; align-items: baseline; gap: 10px; color: var(--on-navy); text-decoration: none; }
+.logo small { font-weight: 400; font-size: 13px; color: var(--on-navy-muted); letter-spacing: 0.04em; }
+.phone { font-family: var(--font-display); font-weight: 500; font-size: 15px; color: var(--on-navy); text-decoration: none; }
+.phone span { color: var(--on-navy-muted); font-weight: 400; margin-right: 6px; }
+
+/* Hero */
+.hero { background: var(--navy); color: var(--on-navy); }
+.hero .wrap { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); gap: 48px; padding-block: 56px 64px; align-items: start; }
+.eyebrow { font-family: var(--font-display); font-size: 13px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--teal); }
+.hero h1 { font-size: clamp(32px, 4.4vw, 50px); font-weight: 600; margin-top: 14px; letter-spacing: -0.015em; }
+.hero .sub { font-size: 19px; color: var(--on-navy-muted); margin-top: 18px; max-width: 32em; }
+.trust { display: flex; flex-wrap: wrap; gap: 8px 22px; margin: 26px 0 0; padding: 0; list-style: none; font-size: 15px; }
+.trust li { display: flex; gap: 8px; align-items: center; }
+.trust li::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--teal); flex: none; }
+.hero-points { margin-top: 30px; display: grid; gap: 10px; padding: 0; list-style: none; max-width: 34em; }
+.hero-points li { display: grid; grid-template-columns: 24px minmax(0, 1fr); gap: 10px; color: var(--on-navy); }
+.hero-points svg { color: var(--teal); margin-top: 3px; }
+
+/* Form card (3 steps) */
+.formcard { background: var(--surface); color: var(--ink); border-radius: 12px; padding: 28px; box-shadow: 0 18px 40px rgba(10, 25, 35, 0.28); scroll-margin-top: 16px; }
+.progress { display: flex; align-items: center; gap: 10px; font-size: 13px; color: var(--muted); font-family: var(--font-display); font-weight: 500; }
+.bar { flex: 1; height: 6px; background: var(--line); border-radius: 3px; overflow: hidden; }
+.bar i { display: block; height: 100%; width: 33.3%; background: var(--teal-ink); border-radius: 3px; transition: width .3s ease; }
+.formcard h2 { font-size: 23px; font-weight: 600; margin-top: 14px; }
+.formcard .lead { color: var(--muted); font-size: 15px; margin-top: 6px; }
+.step { display: grid; gap: 14px; margin-top: 18px; }
+.chips { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.chip { position: relative; }
+.chip input { position: absolute; opacity: 0; inset: 0; width: 100%; height: 100%; margin: 0; cursor: pointer; }
+.chip span { display: flex; align-items: center; min-height: 52px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--paper); font-size: 15px; line-height: 1.3; font-weight: 700; transition: border-color .15s, background .15s; }
+.chip span::before { content: ""; width: 18px; height: 18px; border: 2px solid var(--line); border-radius: 5px; margin-right: 10px; flex: none; background: var(--surface); }
+.chip input:checked + span { border-color: var(--teal-ink); background: var(--teal-soft); }
+.chip input:checked + span::before { background: var(--teal-ink); border-color: var(--teal-ink); box-shadow: inset 0 0 0 3px var(--surface); }
+.chip input:focus-visible + span { outline: 3px solid var(--teal); outline-offset: 2px; }
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+label.f { display: grid; gap: 5px; font-size: 14px; font-weight: 700; }
+input:not([type=checkbox]), select { font: inherit; font-size: 16px; font-weight: 400; color: var(--ink); background: var(--paper); border: 1px solid var(--line); border-radius: 7px; padding: 10px 12px; width: 100%; min-width: 0; }
+input:focus, select:focus { border-color: var(--teal-ink); outline: none; box-shadow: 0 0 0 3px rgba(126,190,197,0.35); }
+.consent { display: flex; gap: 10px; align-items: flex-start; font-size: 13px; color: var(--muted); line-height: 1.45; }
+.consent input { width: 18px; height: 18px; margin-top: 2px; flex: none; }
+.actions { display: flex; gap: 10px; align-items: center; }
+.btn { font-family: var(--font-display); font-weight: 600; font-size: 17px; border: 0; border-radius: 8px; padding: 14px 20px; cursor: pointer; background: var(--teal); color: #13232d; text-decoration: none; display: inline-block; text-align: center; }
+.btn:hover { filter: brightness(1.05); }
+.btn.full { flex: 1; }
+.btn.ghost { background: transparent; color: var(--muted); padding-inline: 8px; font-weight: 500; font-size: 15px; }
+.btn.line { background: transparent; color: var(--on-navy); border: 1px solid var(--on-navy-muted); }
+.fine { font-size: 13px; color: var(--muted); text-align: center; }
+.err { font-size: 13px; color: #b3261e; }
+.reassure { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 14px; margin-top: 14px; font-size: 13px; color: var(--muted); }
+.thanks { text-align: center; padding: 18px 4px; display: grid; gap: 10px; }
+.thanks h2 { font-size: 22px; color: var(--ok); }
+
+/* Sections */
+section.block .wrap { padding-block: 72px; }
+section.alt { background: var(--surface); border-block: 1px solid var(--line); }
+.kicker { font-family: var(--font-display); font-size: 13px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--teal-ink); }
+.block h2 { font-size: clamp(26px, 3vw, 36px); font-weight: 600; max-width: 22em; margin-top: 8px; }
+.intro { color: var(--muted); margin-top: 14px; max-width: 40em; font-size: 18px; }
+
+/* Explainer */
+.explain { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 48px; align-items: start; }
+.explain .plain { font-size: 19px; margin-top: 18px; max-width: 30em; }
+.explain .plain + .plain { margin-top: 14px; color: var(--muted); font-size: 17px; }
+.flow { display: grid; gap: 12px; }
+.flow .stage { display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 16px; align-items: start; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; }
+.flow .n { width: 48px; height: 48px; border-radius: 50%; background: var(--teal-soft); color: var(--teal-ink); display: grid; place-items: center; }
+.flow h3 { font-size: 19px; font-weight: 600; }
+.flow p { color: var(--muted); font-size: 15px; margin-top: 2px; }
+.flow .stage.person { background: var(--navy); border-color: var(--navy); color: var(--on-navy); }
+.flow .stage.person p { color: var(--on-navy-muted); }
+.flow .stage.person .n { background: rgba(126,190,197,.18); color: var(--teal); }
+
+/* Before / after */
+.ba { margin-top: 34px; display: grid; gap: 14px; }
+.ba-row { display: grid; grid-template-columns: 200px minmax(0, 1fr) minmax(0, 1fr); gap: 0; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: var(--surface); }
+.ba-row > div { padding: 18px 20px; }
+.ba-row .what { background: var(--navy); color: var(--on-navy); font-family: var(--font-display); font-weight: 600; font-size: 18px; display: flex; align-items: center; }
+.ba-row .lbl { display: block; font-family: var(--font-display); font-size: 12px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 4px; }
+.ba-row .before .lbl { color: var(--muted); }
+.ba-row .after { background: var(--teal-soft); }
+.ba-row .after .lbl { color: var(--teal-ink); }
+.ba-row .before p { color: var(--muted); }
+.ba-head { display: grid; grid-template-columns: 200px minmax(0, 1fr) minmax(0, 1fr); padding: 0 20px; font-family: var(--font-display); font-size: 13px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.ba-head span:first-child { visibility: hidden; }
+
+/* Invoice log */
+.log { margin-top: 28px; background: var(--navy-deep); color: var(--on-navy); border: 1px solid rgba(126,190,197,0.35); border-radius: 10px; padding: 16px 18px; font-family: var(--font-mono); font-size: 13.5px; line-height: 1.75; font-variant-numeric: tabular-nums; overflow-x: auto; }
+.log .hd { display: flex; justify-content: space-between; gap: 12px; color: var(--on-navy-muted); font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 6px; }
+.log .row { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 10px; white-space: nowrap; }
+.log .t { color: var(--on-navy-muted); }
+.log .done { color: var(--teal); }
+.log .flag { color: #f2c46d; }
+.log .cap { margin-top: 8px; font-family: var(--font-body); font-size: 13px; color: var(--on-navy-muted); white-space: normal; }
+
+/* Readiness */
+.ready { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 48px; align-items: start; }
+.checks { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+.checks li { display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 12px; background: var(--paper); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; }
+.checks svg { color: var(--teal-ink); margin-top: 2px; }
+.notsure { margin-top: 22px; padding: 18px 20px; border-left: 3px solid var(--teal); background: var(--teal-soft); border-radius: 0 10px 10px 0; }
+.notsure strong { font-family: var(--font-display); }
+
+/* Myths */
+.myths { margin-top: 32px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.myth { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 22px; }
+.myth h3 { font-size: 19px; font-weight: 600; }
+.myth h3 s { text-decoration-color: var(--teal-ink); text-decoration-thickness: 2px; color: var(--muted); font-weight: 500; }
+.myth p { color: var(--muted); margin-top: 8px; font-size: 16px; }
+
+/* Why accountants */
+.why { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr); gap: 48px; align-items: start; }
+.why .big { font-family: var(--font-display); font-size: clamp(22px, 2.4vw, 28px); font-weight: 500; line-height: 1.35; margin-top: 18px; max-width: 26em; }
+.facts { margin: 0; border-top: 2px solid var(--navy); }
+.facts div { display: flex; justify-content: space-between; gap: 16px; padding-block: 12px; border-bottom: 1px solid var(--line); font-size: 16px; }
+.facts dt { color: var(--muted); }
+.facts dd { margin: 0; font-weight: 700; text-align: right; }
+
+/* Steps */
+.steps { list-style: none; padding: 0; margin: 34px 0 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0; counter-reset: s; border-top: 2px solid var(--navy); }
+.steps li { counter-increment: s; padding: 18px 20px 0 0; display: grid; gap: 8px; align-content: start; }
+.steps li::before { content: "Step " counter(s); font-family: var(--font-display); font-size: 13px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--teal-ink); }
+.steps h3 { font-size: 20px; font-weight: 600; }
+.steps p { color: var(--muted); font-size: 16px; }
+.callbox { margin-top: 40px; display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: 32px; align-items: center; background: var(--navy); color: var(--on-navy); border-radius: 14px; padding: 32px; }
+.callbox h3 { font-size: 24px; font-weight: 600; }
+.callbox > div > p { color: var(--on-navy-muted); margin-top: 8px; }
+.callbox ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+.callbox li { display: grid; grid-template-columns: 24px minmax(0, 1fr); gap: 10px; }
+.callbox li svg { color: var(--teal); margin-top: 3px; }
+.callbox .btn { margin-top: 18px; }
+
+/* Pricing */
+.pricing { margin-top: 32px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.pcard { background: var(--paper); border: 1px solid var(--line); border-radius: 12px; padding: 24px; display: grid; gap: 10px; align-content: start; }
+.pcard .label { font-family: var(--font-display); font-size: 13px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--teal-ink); }
+.pcard h3 { font-size: 22px; font-weight: 600; }
+.pcard p { color: var(--muted); font-size: 16px; }
+.pcard ul { margin: 0; padding-left: 18px; color: var(--muted); font-size: 16px; display: grid; gap: 4px; }
+.drivers { margin-top: 24px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 18px; }
+.drivers > div { border-top: 1px solid var(--line); padding-top: 16px; }
+.drivers h3 { font-size: 18px; font-weight: 600; }
+.drivers ul { margin: 8px 0 0; padding-left: 18px; color: var(--muted); display: grid; gap: 4px; font-size: 16px; }
+.promise { margin-top: 24px; font-family: var(--font-display); font-size: 20px; font-weight: 500; display: flex; gap: 12px; align-items: center; }
+.promise svg { color: var(--ok); flex: none; }
+
+/* Proof */
+.proof-grid { margin-top: 32px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px; align-items: stretch; }
+.quote { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 26px; display: grid; gap: 14px; align-content: start; }
+.quote blockquote { margin: 0; font-family: var(--font-display); font-size: 22px; font-weight: 500; line-height: 1.35; }
+.quote cite { font-style: normal; color: var(--muted); font-size: 15px; }
+.founder { display: grid; grid-template-columns: 88px minmax(0, 1fr); gap: 18px; align-items: start; }
+.avatar { width: 88px; height: 88px; border-radius: 50%; background: var(--navy); color: var(--on-navy); display: grid; place-items: center; font-family: var(--font-display); font-weight: 600; font-size: 28px; }
+.founder p { color: var(--muted); }
+.founder .name { color: var(--ink); font-family: var(--font-display); font-weight: 600; margin-top: 10px; }
+.badges { margin-top: 24px; display: flex; flex-wrap: wrap; gap: 12px; }
+.badge { display: flex; gap: 10px; align-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: 999px; padding: 8px 16px 8px 10px; font-size: 15px; font-weight: 700; }
+.badge i { width: 28px; height: 28px; border-radius: 50%; background: var(--teal-soft); color: var(--teal-ink); display: grid; place-items: center; font-style: normal; }
+.case { margin-top: 24px; padding: 22px; color: var(--muted); }
+
+/* FAQ */
+.faq { margin-top: 26px; max-width: 800px; border-top: 1px solid var(--line); }
+.faq details { border-bottom: 1px solid var(--line); padding-block: 16px; }
+.faq summary { cursor: pointer; font-family: var(--font-display); font-weight: 500; font-size: 18px; list-style: none; display: flex; justify-content: space-between; gap: 16px; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; color: var(--teal-ink); font-size: 22px; line-height: 1; }
+.faq details[open] summary::after { content: "–"; }
+.faq details p { color: var(--muted); margin-top: 10px; max-width: 42em; }
+
+/* Final + footer */
+.final { background: var(--navy); color: var(--on-navy); }
+.final .wrap { padding-block: 60px; display: flex; flex-wrap: wrap; gap: 20px 40px; align-items: center; justify-content: space-between; }
+.final h2 { font-size: clamp(24px, 3vw, 34px); font-weight: 600; max-width: 20em; }
+.final p { color: var(--on-navy-muted); margin-top: 8px; }
+.final .ctas { display: flex; flex-wrap: wrap; gap: 12px; }
+footer { background: var(--navy-deep); color: var(--on-navy-muted); font-size: 14px; }
+footer .wrap { padding-block: 24px; display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; }
+footer a { color: var(--on-navy-muted); }
+
+/* Sticky mobile bar */
+.sticky { display: none; }
+
+.notes { background: var(--note-bg); color: var(--note-ink); font-size: 14px; }
+.notes .wrap { padding-block: 24px 96px; }
+.notes h2 { font-size: 16px; font-weight: 600; }
+.notes ul { margin: 8px 0 0; padding-left: 18px; display: grid; gap: 4px; }
+
+@media (max-width: 960px) {
+  .hero .wrap, .why, .explain, .ready, .callbox, .proof-grid { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+  .steps { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 24px; }
+  .pricing { grid-template-columns: minmax(0, 1fr); }
+  .ba-head { display: none; }
+  .ba-row { grid-template-columns: minmax(0, 1fr); }
+  .ba-row .what { padding-block: 12px; }
+}
+@media (max-width: 640px) {
+  body { font-size: 16px; }
+  .hero .wrap { padding-block: 36px 44px; }
+  section.block .wrap { padding-block: 48px; }
+  .two, .myths, .drivers, .chips { grid-template-columns: minmax(0, 1fr); }
+  .steps { grid-template-columns: minmax(0, 1fr); }
+  .phone span { display: none; }
+  .formcard, .callbox { padding: 22px; }
+  .log .row { white-space: normal; }
+  .founder { grid-template-columns: minmax(0, 1fr); }
+  .sticky { display: grid; grid-template-columns: 1fr 1.6fr; gap: 10px; position: fixed; left: 0; right: 0; bottom: 0; z-index: 20; padding: 10px 16px calc(10px + env(safe-area-inset-bottom, 0px)); background: var(--surface); border-top: 1px solid var(--line); box-shadow: 0 -6px 18px rgba(10,25,35,.12); transform: translateY(110%); transition: transform .25s ease; }
+  .sticky.show { transform: none; }
+  .sticky .btn { padding: 12px 10px; font-size: 16px; }
+  .sticky .call { background: var(--navy); color: var(--on-navy); }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .bar i, .sticky { transition: none; } }
+</style>
+</head>
+<body>
+
+<div class="proto" role="region" aria-label="Prototype notice">
+  <div class="wrap"><strong>Prototype v2, not live.</strong> Dashed boxes mark content Qubik needs to supply or approve. Nothing you enter is sent.</div>
+</div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#">qubik <small>AI &amp; Automation</small></a>
+    <a class="phone" href="tel:+61732058938"><span>Talk to us</span>(07) 3205 8938</a>
+  </div>
+</header>
+
+<!-- 1. HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">Business process automation · Australia-wide</div>
+      <h1>Business process automation for growing Australian businesses</h1>
+      <p class="sub">Hand the repetitive copying, checking and chasing to software that works inside the systems you already use, so your team can get on with the work that needs them.</p>
+      <ul class="trust">
+        <li>Accountants since 2007</li>
+        <li>Xero partner since 2013</li>
+        <li>Your data stays in your systems</li>
+      </ul>
+      <ul class="hero-points">
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>No new software for your team to learn</span></li>
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Start with one process and see it pay back before doing more</span></li>
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>A person always approves anything the system isn't sure about</span></li>
+      </ul>
+    </div>
+
+    <div class="formcard" id="book">
+      <form id="lead" novalidate>
+        <div class="progress" aria-live="polite"><span id="step-label">Step 1 of 3</span><div class="bar" aria-hidden="true"><i id="bar"></i></div></div>
+
+        <!-- Step 1 -->
+        <fieldset class="step" data-step="1" style="border:0;padding:0;margin:18px 0 0">
+          <legend style="padding:0"><h2 style="margin:0">What's taking up your team's time?</h2></legend>
+          <p class="lead" style="margin-top:-6px">Pick any that apply. It helps us prepare for your free 30&#8209;minute call.</p>
+          <div class="chips">
+            <label class="chip"><input type="checkbox" name="automate" value="Supplier invoices and bills"><span>Supplier invoices and bills</span></label>
+            <label class="chip"><input type="checkbox" name="automate" value="Customer orders"><span>Customer orders</span></label>
+            <label class="chip"><input type="checkbox" name="automate" value="Reporting and month-end"><span>Reporting and month&#8209;end</span></label>
+            <label class="chip"><input type="checkbox" name="automate" value="Customer enquiries"><span>Customer enquiries</span></label>
+            <label class="chip"><input type="checkbox" name="automate" value="Typing data between systems"><span>Typing data between systems</span></label>
+            <label class="chip"><input type="checkbox" name="automate" value="Not sure yet"><span>Not sure yet</span></label>
+          </div>
+          <p class="err" data-err hidden>Pick at least one, or "Not sure yet".</p>
+          <button class="btn" type="button" data-next>Next</button>
+        </fieldset>
+
+        <!-- Step 2 -->
+        <fieldset class="step" data-step="2" hidden style="border:0;padding:0;margin:18px 0 0">
+          <legend style="padding:0"><h2 style="margin:0">Tell us about your business</h2></legend>
+          <p class="lead" style="margin-top:-6px">So we can bring relevant examples to the call.</p>
+          <div class="two">
+            <label class="f" for="f-staff">Staff
+              <select id="f-staff" name="staff" required>
+                <option value="">Select</option><option>Under 10</option><option>10–25</option><option>26–50</option><option>50+</option>
+              </select></label>
+            <label class="f" for="f-rev">Annual revenue
+              <select id="f-rev" name="revenue" required>
+                <option value="">Select</option><option>Under A$2M</option><option>A$2–5M</option><option>A$5–10M</option><option>Over A$10M</option>
+              </select></label>
+          </div>
+          <label class="f" for="f-when">When would you like this sorted?
+            <select id="f-when" name="timing" required>
+              <option value="">Select</option><option>This quarter</option><option>Within 6 months</option><option>Just exploring for now</option>
+            </select></label>
+          <p class="err" data-err hidden>Please answer all three.</p>
+          <div class="actions"><button class="btn ghost" type="button" data-back>Back</button><button class="btn full" type="button" data-next>Next</button></div>
+        </fieldset>
+
+        <!-- Step 3 -->
+        <fieldset class="step" data-step="3" hidden style="border:0;padding:0;margin:18px 0 0">
+          <legend style="padding:0"><h2 style="margin:0">Where should we call you?</h2></legend>
+          <p class="lead" style="margin-top:-6px">We'll call to set up a time that suits you.</p>
+          <div class="two">
+            <label class="f" for="f-name">Name<input id="f-name" name="name" autocomplete="name" required></label>
+            <label class="f" for="f-company">Company<input id="f-company" name="company" autocomplete="organization" required></label>
+          </div>
+          <div class="two">
+            <label class="f" for="f-email">Work email<input id="f-email" name="email" type="email" autocomplete="email" required></label>
+            <label class="f" for="f-phone">Mobile<input id="f-phone" name="phone" type="tel" autocomplete="tel" required></label>
+          </div>
+          <label class="consent" for="f-consent"><input id="f-consent" name="consent" type="checkbox" required> I agree to Qubik contacting me by phone, email or SMS about this enquiry. I can opt out at any time.</label>
+          <p class="err" data-err hidden>Please fill in every field and tick the box.</p>
+          <div class="actions"><button class="btn ghost" type="button" data-back>Back</button><button class="btn full" type="submit">Book my free call</button></div>
+        </fieldset>
+
+        <input type="hidden" name="gclid"><input type="hidden" name="gbraid"><input type="hidden" name="wbraid">
+        <input type="hidden" name="utm_source"><input type="hidden" name="utm_medium"><input type="hidden" name="utm_campaign"><input type="hidden" name="utm_term"><input type="hidden" name="landing_page">
+      </form>
+
+      <div class="thanks" id="thanks" hidden>
+        <h2>Thanks, we've got your details</h2>
+        <p>On the live page this goes to the thank-you page. In this prototype nothing was sent.</p>
+      </div>
+
+      <div class="reassure" id="reassure"><span>Free 30&#8209;minute call</span><span>No obligation</span><span>We'll tell you honestly if it's not worth it</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. PLAIN ENGLISH -->
+<section class="block">
+  <div class="wrap explain">
+    <div>
+      <div class="kicker">In plain English</div>
+      <h2>What is business process automation?</h2>
+      <p class="plain">Most businesses have jobs that follow the same steps every time: open the email, type the invoice into Xero, check it against the order, chase someone if it doesn't match.</p>
+      <p class="plain">Automation is software that does those steps for you, inside the systems you already use. It works around the clock, doesn't get bored, and doesn't make typing mistakes. Your team stays in charge.</p>
+    </div>
+    <div class="flow" aria-label="How automation handles a task">
+      <div class="stage"><div class="n"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg></div><div><h3>It reads</h3><p>Emails, PDFs, forms and spreadsheets, the way a person would.</p></div></div>
+      <div class="stage"><div class="n"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 11l3 3 8-8"/><path d="M20 12v7H4V5h11"/></svg></div><div><h3>It checks</h3><p>Against your orders, price lists and rules.</p></div></div>
+      <div class="stage"><div class="n"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div><div><h3>It acts</h3><p>Posts to Xero, updates your systems, sends the email or the report.</p></div></div>
+      <div class="stage person"><div class="n"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></div><div><h3>And asks a person when it isn't sure</h3><p>Anything unusual goes to your team to decide, with the details attached.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. BEFORE / AFTER -->
+<section class="block alt">
+  <div class="wrap">
+    <div class="kicker">What changes day to day</div>
+    <h2>The same jobs, without the manual work</h2>
+    <p class="intro">A few of the processes we see most often in growing businesses. Yours might look different, and that's what the call is for.</p>
+    <div class="ba">
+      <div class="ba-head" aria-hidden="true"><span>Process</span><span>Today</span><span>With automation</span></div>
+      <div class="ba-row"><div class="what">Supplier invoices</div><div class="before"><span class="lbl">Today</span><p>Someone opens each email, types the invoice into Xero and checks it against the order.</p></div><div class="after"><span class="lbl">With automation</span><p>Invoices are read as they arrive, matched to the order and posted. Only mismatches reach a person.</p></div></div>
+      <div class="ba-row"><div class="what">Customer orders</div><div class="before"><span class="lbl">Today</span><p>Orders arrive by email or PDF and are re-keyed into your system, line by line.</p></div><div class="after"><span class="lbl">With automation</span><p>Orders are drafted into your system automatically, ready for a quick check and approval.</p></div></div>
+      <div class="ba-row"><div class="what">Month-end reporting</div><div class="before"><span class="lbl">Today</span><p>Someone spends days exporting, copying and formatting spreadsheets.</p></div><div class="after"><span class="lbl">With automation</span><p>Margin, cash and stock numbers update themselves every week, so problems show up early.</p></div></div>
+      <div class="ba-row"><div class="what">Customer enquiries</div><div class="before"><span class="lbl">Today</span><p>The same questions answered by hand, every day, often by your busiest people.</p></div><div class="after"><span class="lbl">With automation</span><p>Routine questions are answered straight away. Anything unusual goes to your team.</p></div></div>
+    </div>
+    <div class="log" aria-label="Example of an automated supplier invoice">
+      <div class="hd"><span>Example: one supplier invoice, start to finish</span><span>Mon 09:14</span></div>
+      <div class="row"><span class="t">09:14:02</span><span>Invoice INV-20817 arrives by email (PDF)</span></div>
+      <div class="row"><span class="t">09:14:09</span><span>Read: supplier, 14 lines, A$18,442.60 inc GST</span></div>
+      <div class="row"><span class="t">09:14:12</span><span>Matched to purchase order PO-4471</span></div>
+      <div class="row"><span class="t">09:14:15</span><span class="flag">2 line prices differ from PO: sent for approval</span></div>
+      <div class="row"><span class="t">09:31:40</span><span class="done">Approved by Sam · posted to Xero</span></div>
+      <p class="cap">Illustrative example. Your team approves anything the system isn't sure about.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 4. READINESS -->
+<section class="block">
+  <div class="wrap ready">
+    <div>
+      <div class="kicker">Is it right for you?</div>
+      <h2>Signs your business is ready for automation</h2>
+      <p class="intro">You don't need a tech team or a big budget to start. Most of our conversations begin with one of these.</p>
+      <div class="notsure"><strong>Not sure if any of this applies?</strong> That's exactly what the free call is for. We'll tell you honestly whether automation is worth it for you.</div>
+    </div>
+    <ul class="checks">
+      <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Someone spends hours a week typing the same information into different systems.</span></li>
+      <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Invoices, orders or reports pile up when one person is away.</span></li>
+      <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>You're hiring admin staff just to keep up with growth.</span></li>
+      <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>You only find out about margin, cash or stock problems at month-end.</span></li>
+      <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Your systems don't talk to each other, so spreadsheets fill the gaps.</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 5. MYTHS -->
+<section class="block alt">
+  <div class="wrap">
+    <div class="kicker">Common worries</div>
+    <h2>What automation isn't</h2>
+    <div class="myths">
+      <div class="myth"><h3><s>New software to learn</s></h3><p>We build inside Xero and the tools you already use. Your team keeps working the way they do now, with less typing.</p></div>
+      <div class="myth"><h3><s>Replacing your team</s></h3><p>It takes the repetitive work off their plate so they can spend time on customers, suppliers and decisions.</p></div>
+      <div class="myth"><h3><s>A chatbot guessing answers</s></h3><p>It follows your rules. Anything uncertain is sent to a person, with the details attached.</p></div>
+      <div class="myth"><h3><s>A big-bang IT project</s></h3><p>Most businesses start with one process, see the payback, and add more when they're ready.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. WHY ACCOUNTANTS -->
+<section class="block">
+  <div class="wrap why">
+    <div>
+      <div class="kicker">Why Qubik</div>
+      <h2>Automation, scoped by accountants</h2>
+      <p class="big">Most automation firms start with the technology. We start with your numbers: what each process costs you today, and what you'd save. We only recommend building what pays back.</p>
+    </div>
+    <dl class="facts">
+      <div><dt>Helping Australian businesses since</dt><dd>2007</dd></div>
+      <div><dt>Xero partner since</dt><dd>2013</dd></div>
+      <div><dt>Works best for</dt><dd>10–50 staff</dd></div>
+      <div><dt>Based in</dt><dd>Strathpine, QLD</dd></div>
+      <div><dt>Working with</dt><dd>Businesses Australia-wide</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- 7. HOW IT WORKS -->
+<section class="block alt">
+  <div class="wrap">
+    <div class="kicker">How it works</div>
+    <h2>Start small, prove it pays, then grow</h2>
+    <ol class="steps">
+      <li><h3>Free 30-minute call</h3><p>We listen to how your business runs and where the time goes.</p></li>
+      <li><h3>Assessment</h3><p>We map the processes worth automating, measure what they cost you today, and give you a plan with the payback in dollars.</p></li>
+      <li><h3>Build</h3><p>We automate the first process inside your existing systems and test it on your real data, with your team.</p></li>
+      <li><h3>Support and grow</h3><p>We keep it running as your business changes, and add the next process when you're ready.</p></li>
+    </ol>
+    <div class="callbox">
+      <div>
+        <h3>What you'll get from the free call</h3>
+        <p>Thirty minutes with someone who understands both the numbers and the technology.</p>
+        <a class="btn" href="#book">Book my free call</a>
+      </div>
+      <ul>
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>An honest view of whether automation is worth it for your business</span></li>
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>The two or three processes most likely to pay back first</span></li>
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>A rough idea of what it would involve, and what it depends on</span></li>
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>No obligation, and no hard sell</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 8. PRICING -->
+<section class="block">
+  <div class="wrap">
+    <div class="kicker">Pricing</div>
+    <h2>How pricing works</h2>
+    <p class="intro">Every business runs differently, so we don't sell packages. We work out the right approach with you, and agree the price before any work starts.</p>
+    <div class="pricing">
+      <div class="pcard"><span class="label">Assessment</span><h3>Fixed fee, agreed upfront</h3><p>We map your processes and show you the payback in dollars. If you go ahead with a build, the fee is credited towards it.</p></div>
+      <div class="pcard"><span class="label">Build</span><h3>Priced the way that suits you</h3><ul><li>a fixed project price</li><li>staged in phases</li><li>or spread as a monthly fee</li></ul></div>
+      <div class="pcard"><span class="label">Ongoing support</span><h3>Optional, monthly</h3><p>Keeps your automations running and up to date as your business, suppliers and systems change.</p></div>
+    </div>
+    <div class="drivers">
+      <div><h3>What affects the cost</h3><ul><li>How many processes and systems are involved</li><li>How much volume runs through them</li><li>How many exceptions need a person to decide</li></ul></div>
+      <div><h3>How we keep it low-risk</h3><ul><li>Start with the process that pays back fastest</li><li>You see the expected payback before you commit</li><li>No lock-in: the automations run in your systems</li></ul></div>
+    </div>
+    <p class="promise"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M7.5 12.5l3 3 6-6.5"/></svg>You'll always know the price before any work starts.</p>
+  </div>
+</section>
+
+<!-- 9. PROOF -->
+<section class="block alt">
+  <div class="wrap">
+    <div class="kicker">Who you'll work with</div>
+    <h2>A Brisbane firm that's been looking after businesses since 2007</h2>
+    <div class="proof-grid">
+      <div class="quote">
+        <blockquote>"Dom has saved us more money than we've spent!"</blockquote>
+        <cite>Mike Wikes, Man Group</cite>
+      </div>
+      <div class="quote draft" data-draft="Draft: Dominic to rewrite + photo">
+        <div class="founder">
+          <div class="avatar" aria-hidden="true">DG</div>
+          <div>
+            <p>"After years of watching good people spend their week re-typing invoices, we started building the automations ourselves. Now we help other businesses do the same, starting with the numbers."</p>
+            <p class="name">Dominic Guinea, founder and CEO</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="badges">
+      <span class="badge"><i>✓</i>Xero partner since 2013</span>
+      <span class="badge"><i>✓</i>Accountants since 2007</span>
+      <span class="badge"><i>✓</i>Australian-owned, Queensland-based</span>
+    </div>
+    <div class="case draft" data-draft="Placeholder: first case study">Reserved for the first automation case study: client, process, before and after, in their words.</div>
+  </div>
+</section>
+
+<!-- 10. FAQ -->
+<section class="block">
+  <div class="wrap">
+    <div class="kicker">Questions</div>
+    <h2>Questions we get asked</h2>
+    <div class="faq">
+      <details><summary>We're not a tech business. Is this for us?</summary><p>Yes. Automation is built for businesses whose team spends time on repetitive admin, not for tech companies. You don't need technical staff: we handle the build and explain everything in plain English.</p></details>
+      <details><summary>How do we know what's worth automating?</summary><p>That's what the free call and the assessment are for. We look at where your team's time goes and what each process costs, then recommend the ones that pay back fastest.</p></details>
+      <details><summary>Will it work with our software?</summary><p>Usually. We work with Xero, MYOB and most tools that have email, an online login or an export. We'll check your setup on the call.</p></details>
+      <details><summary>Do we need IT staff to run it?</summary><p>No. Your team sees the results in the systems they already use, and approves anything the automation isn't sure about.</p></details>
+      <details><summary>What happens if something goes wrong?</summary><p>Anything uncertain goes to a person rather than being guessed. With ongoing support, we monitor the automations and fix issues as your systems change.</p></details>
+      <details><summary>Is our data safe? Is AI involved?</summary><p>Your data stays in your own systems; we only access what the automation needs. Where AI is used, it's for reading documents and drafting replies, with a person in control.</p></details>
+      <details><summary>What does it cost?</summary><p>It depends on the processes involved, so we don't publish packages. See <a href="#pricing-anchor">how pricing works</a> above; you'll always know the price before any work starts.</p></details>
+      <details><summary>How long does it take?</summary><p>It depends on the process and your systems. The assessment gives you a timeline before you commit to anything.</p></details>
+      <details><summary>What happens on the call?</summary><p>A relaxed 30-minute conversation by phone or video. We ask how your business runs, you ask us anything, and we tell you honestly whether automation is worth it for you.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- 11. FINAL CTA -->
+<section class="final">
+  <div class="wrap">
+    <div>
+      <h2>See what's worth automating in your business</h2>
+      <p>A free 30-minute call, with no obligation.</p>
+    </div>
+    <div class="ctas"><a class="btn" href="#book">Book my free call</a><a class="btn line" href="tel:+61732058938">Call (07) 3205 8938</a></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>Qubik Accounting · 18–22 Dixon Street, Strathpine QLD 4500</span>
+    <span><a href="tel:+61732058938">(07) 3205 8938</a> · <a href="#">Privacy policy</a></span>
+  </div>
+</footer>
+
+<aside class="notes" aria-label="Prototype notes">
+  <div class="wrap">
+    <h2>Prototype notes: decisions for Qubik before going live</h2>
+    <ul>
+      <li>Pricing shows the models only, no figures. Decide whether to show the assessment fee, and confirm which build models (fixed, phased, monthly) sales will quote.</li>
+      <li>Dominic's note is a draft in his voice: he should rewrite it, and add a photo.</li>
+      <li>Add more client quotes and the first automation case study as soon as clients allow.</li>
+      <li>Swap the text badges for the official Xero partner badge artwork.</li>
+      <li>The invoice log is an illustrative example, labelled as such.</li>
+    </ul>
+  </div>
+</aside>
+
+<div class="sticky" id="sticky" aria-label="Quick actions">
+  <a class="btn call" href="tel:+61732058938">Call</a>
+  <a class="btn" href="#book">Book a free call</a>
+</div>
+
+<script>
+(function () {
+  var form = document.getElementById('lead');
+  var steps = form.querySelectorAll('[data-step]');
+  var label = document.getElementById('step-label');
+  var bar = document.getElementById('bar');
+  var current = 1;
+
+  // Pricing anchor for the FAQ link
+  var pricing = document.querySelector('.pricing');
+  if (pricing) pricing.parentNode.id = 'pricing-anchor';
+
+  function show(n) {
+    current = n;
+    steps.forEach(function (s) { s.hidden = Number(s.getAttribute('data-step')) !== n; });
+    label.textContent = 'Step ' + n + ' of 3';
+    bar.style.width = (n / 3 * 100) + '%';
+    var first = steps[n - 1].querySelector('input:not([type=hidden]), select');
+    if (n > 1 && first) first.focus({ preventScroll: true });
+  }
+
+  function valid(n) {
+    var s = steps[n - 1];
+    var ok;
+    if (n === 1) {
+      ok = s.querySelectorAll('input[name=automate]:checked').length > 0;
+    } else {
+      ok = Array.prototype.every.call(s.querySelectorAll('[required]'), function (el) { return el.checkValidity(); });
+    }
+    s.querySelector('[data-err]').hidden = ok;
+    return ok;
+  }
+
+  form.addEventListener('click', function (e) {
+    if (e.target.matches('[data-next]')) { if (valid(current)) show(current + 1); }
+    if (e.target.matches('[data-back]')) { show(current - 1); }
+  });
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (!valid(3)) return;
+    form.hidden = true;
+    document.getElementById('reassure').hidden = true;
+    document.getElementById('thanks').hidden = false;
+  });
+
+  // Ad click IDs and UTM tags into hidden fields
+  var p = new URLSearchParams(location.search);
+  ['gclid', 'gbraid', 'wbraid', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_term'].forEach(function (k) {
+    if (p.get(k)) form.elements[k].value = p.get(k);
+  });
+  form.elements.landing_page.value = location.href.split('#')[0];
+
+  // Sticky mobile bar: show after the hero, hide while the form is on screen
+  var sticky = document.getElementById('sticky');
+  var hero = document.querySelector('.hero');
+  var card = document.getElementById('book');
+  var heroGone = false, cardVisible = false;
+  function update() { sticky.classList.toggle('show', heroGone && !cardVisible); }
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function (en) { heroGone = !en[0].isIntersecting; update(); }).observe(hero);
+    new IntersectionObserver(function (en) { cardVisible = en[0].isIntersecting; update(); }).observe(card);
+  }
+})();
+</script>
+</body>
+</html>
