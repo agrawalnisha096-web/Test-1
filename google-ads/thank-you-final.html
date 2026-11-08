@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Thank You | Qubik</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root { --navy: #2e4455; --navy-deep: #22333f; --teal: #2e96a0; --teal-ink: #1f7a83; --lime: #c6da2c; --lime-soft: #eef3cf; --page: #f6f7f4; --surface: #fff; --ink: #1f2a33; --muted: #5b6b78; --line: #dde3e2; --on-navy: #f3f6f7; --on-navy-muted: #b6c6cd; --ok: #2f8a5b; --note-bg: #fff6d9; --note-ink: #5e4a00; --font: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--page); color: var(--ink); font-family: var(--font); font-size: 17px; line-height: 1.6; }
+h1, h2, h3 { margin: 0; line-height: 1.2; text-wrap: balance; }
+p { margin: 0; }
+a { color: var(--teal-ink); }
+img { display: block; max-width: 100%; }
+.wrap { max-width: 960px; margin: 0 auto; padding-left: 16px; padding-right: 16px; }
+.proto { background: var(--note-bg); color: var(--note-ink); font-size: 14px; }
+.proto .wrap { padding-block: 8px; }
+.top { background: var(--surface); border-bottom: 1px solid var(--line); }
+.top .wrap { display: flex; justify-content: space-between; align-items: center; padding-block: 10px; }
+.top img { height: 42px; width: auto; }
+.top a { font-weight: 600; color: var(--navy); text-decoration: none; font-size: 15px; }
+.hero { background: var(--navy); color: var(--on-navy); text-align: center; }
+.hero .wrap { padding-block: 56px 64px; display: grid; justify-items: center; gap: 14px; }
+.check { width: 64px; height: 64px; border-radius: 50%; background: var(--lime); color: var(--navy-deep); display: grid; place-items: center; }
+.hero h1 { font-size: clamp(28px, 4vw, 42px); font-weight: 600; }
+.hero p { color: var(--on-navy-muted); font-size: 19px; max-width: 34em; }
+.btn { font-family: var(--font); font-weight: 600; font-size: 17px; border-radius: 8px; padding: 14px 22px; background: var(--lime); color: var(--navy-deep); text-decoration: none; display: inline-block; margin-top: 8px; }
+section .wrap { padding-block: 56px; }
+h2 { font-size: 26px; font-weight: 600; }
+.next { list-style: none; padding: 0; margin: 24px 0 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; counter-reset: n; }
+.next li { counter-increment: n; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 20px; display: grid; gap: 6px; align-content: start; }
+.next li::before { content: counter(n); width: 32px; height: 32px; border-radius: 50%; background: var(--lime-soft); color: var(--navy); display: grid; place-items: center; font-weight: 600; }
+.next h3 { font-size: 18px; font-weight: 600; }
+.next p { color: var(--muted); font-size: 15px; }
+.prep { margin-top: 40px; display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: 32px; align-items: center; }
+.prep ul { margin: 14px 0 0; padding-left: 20px; color: var(--muted); display: grid; gap: 6px; }
+.video { position: relative; border-radius: 12px; overflow: hidden; background: #000; aspect-ratio: 16 / 9; }
+.video button { all: unset; cursor: pointer; position: absolute; inset: 0; display: grid; place-items: center; }
+.video button:focus-visible { outline: 3px solid var(--lime); outline-offset: -3px; }
+.video img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .82; }
+.video .play { position: relative; width: 68px; height: 68px; border-radius: 50%; background: var(--lime); display: grid; place-items: center; }
+.video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.vcap { margin-top: 8px; font-size: 14px; color: var(--muted); }
+footer { background: var(--navy-deep); color: var(--on-navy-muted); font-size: 14px; }
+footer .wrap { padding-block: 24px; display: flex; flex-wrap: wrap; gap: 12px 24px; justify-content: space-between; align-items: center; }
+footer img { height: 32px; width: auto; }
+footer a { color: var(--on-navy-muted); }
+@media (max-width: 760px) { .next, .prep { grid-template-columns: minmax(0, 1fr); } }
+</style>
+</head>
+<body>
+<div class="proto"><div class="wrap"><strong>Prototype thank-you page.</strong> Replace [CALENDAR LINK] with Qubik's booking link, or remove that button.</div></div>
+
+<header class="top"><div class="wrap">
+  <img src="landing-assets/qubik-logo.png" alt="Qubik" width="109" height="42">
+  <a href="tel:+61732058938">(07) 3205 8938</a>
+</div></header>
+
+<section class="hero"><div class="wrap">
+  <div class="check" aria-hidden="true"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M5 12l5 5 9-10"/></svg></div>
+  <h1>Thanks, we've got your details</h1>
+  <p>We'll call you within one business day to set up your free discovery call.</p>
+  <a class="btn" href="[CALENDAR LINK]">Or pick a time now</a>
+</div></section>
+
+<section><div class="wrap">
+  <h2>What happens next</h2>
+  <ol class="next">
+    <li><h3>We call you</h3><p>Within one business day, to find a time that suits you.</p></li>
+    <li><h3>Your free discovery call</h3><p>Thirty minutes by phone or video. We learn how your business runs and where the time goes.</p></li>
+    <li><h3>An honest view</h3><p>The opportunities most likely to pay back first, and whether it's worth doing at all.</p></li>
+  </ol>
+  <div class="prep">
+    <div>
+      <h2>To get the most from the call</h2>
+      <ul>
+        <li>The main systems you use: accounting, payroll, CRM, spreadsheets</li>
+        <li>The report you rely on most, or the one you wish you had</li>
+        <li>A rough idea of where your team's time goes each week</li>
+      </ul>
+    </div>
+    <div>
+      <div class="video" id="video">
+        <button type="button" aria-label="Play video: Adiel Ben Karmona, Pilpel, on working with Qubik">
+          <img src="https://i.ytimg.com/vi/T25_tW_BumY/hqdefault.jpg" alt="" width="480" height="360">
+          <span class="play" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="#22333f"><path d="M8 5v14l11-7z"/></svg></span>
+        </button>
+      </div>
+      <p class="vcap">While you wait: Adiel from Pilpel on working with Qubik.</p>
+    </div>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <img src="landing-assets/qubik-logo-white.png" alt="Qubik" width="83" height="32">
+  <span>Qubik Accounting · 18–22 Dixon Street, Strathpine QLD 4500</span>
+  <span><a href="tel:+61732058938">(07) 3205 8938</a> · <a href="https://qubik.com.au/privacy-policy/">Privacy policy</a></span>
+</div></footer>
+
+<script>
+(function () {
+  var video = document.getElementById('video');
+  video.querySelector('button').addEventListener('click', function () {
+    var frame = document.createElement('iframe');
+    frame.src = 'https://www.youtube-nocookie.com/embed/T25_tW_BumY?autoplay=1';
+    frame.title = 'Adiel Ben Karmona, Pilpel, on working with Qubik';
+    frame.allow = 'autoplay; encrypted-media; picture-in-picture';
+    frame.allowFullscreen = true;
+    video.textContent = '';
+    video.appendChild(frame);
+  });
+})();
+</script>
+</body>
+</html>
