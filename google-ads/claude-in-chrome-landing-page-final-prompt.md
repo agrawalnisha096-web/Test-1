@@ -414,7 +414,7 @@ body.page{background:#f6f7f4}
 <div class="qlp">
 <header class="top">
   <div class="wrap">
-    <img class="logo" src="https://cdn.jsdelivr.net/gh/agrawalnisha096-web/Test-1@3f96f8a9be8a86e8f8277b1b38c7a664380359f1/google-ads/landing-assets/qubik-logo.png" alt="Qubik" width="109" height="42">
+    <img class="logo" src="https://cdn.jsdelivr.net/gh/agrawalnisha096-web/Test-1@0125c626da472733ad87d223b64a2b9f9846f0eb/google-ads/landing-assets/qubik-logo.png" alt="Qubik" width="109" height="42">
     <div class="top-right">
       <a class="phone" href="tel:+61732058938"><span>Talk to us</span>(07) 3205 8938</a>
       <a class="btn sm" href="#book">Book a free call</a>
@@ -511,7 +511,7 @@ body.page{background:#f6f7f4}
   <div class="wrap">
     <figure class="screen">
       <div class="chrome" aria-hidden="true"><i></i><i></i><i></i><span>Profitability dashboard · overview</span></div>
-      <img src="https://cdn.jsdelivr.net/gh/agrawalnisha096-web/Test-1@3f96f8a9be8a86e8f8277b1b38c7a664380359f1/google-ads/landing-assets/screen-overview.webp" width="1400" height="875" alt="Qubik profitability dashboard overview showing profit, margin, revenue against cost and profit by site">
+      <img src="https://cdn.jsdelivr.net/gh/agrawalnisha096-web/Test-1@0125c626da472733ad87d223b64a2b9f9846f0eb/google-ads/landing-assets/screen-overview.webp" width="1400" height="875" alt="Qubik profitability dashboard overview showing profit, margin, revenue against cost and profit by site">
     </figure>
     <p class="caption">A Qubik profitability dashboard · sample data · fictional names</p>
     <ul class="strip" aria-label="What you get">
@@ -579,38 +579,39 @@ body.page{background:#f6f7f4}
     <h2>One clear view of your whole business</h2>
     <p class="intro">Automation keeps your data clean and current. Dashboards turn it into answers: your financial, sales, operational and staffing numbers in one place, updated automatically.</p>
     <div class="tabs" role="tablist" aria-label="Dashboard views" data-tabs="screens">
-      <button class="tab" role="tab" aria-selected="true" aria-controls="p-overview" id="t-overview">Overview</button>
-      <button class="tab" role="tab" aria-selected="false" aria-controls="p-site" id="t-site">Profit by site</button>
+      <button class="tab" role="tab" aria-selected="true" aria-controls="p-site" id="t-site">Profit by site</button>
       <button class="tab" role="tab" aria-selected="false" aria-controls="p-heatmap" id="t-heatmap">Margin heatmap</button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="p-metrics" id="t-metrics">Business metrics</button>
       <button class="tab" role="tab" aria-selected="false" aria-controls="p-forecast" id="t-forecast">Forecast</button>
       <button class="tab" role="tab" aria-selected="false" aria-controls="p-alerts" id="t-alerts">Alerts</button>
       <button class="tab" role="tab" aria-selected="false" aria-controls="p-reconcile" id="t-reconcile">Reconciliation</button>
     </div>
-    <div class="panel" role="tabpanel" id="p-overview" aria-labelledby="t-overview">
-      <div><h3>The whole business at a glance</h3><p>Profit and margin for the latest period and the last 12 months, revenue against cost, and profit by site, on the page leaders open first.</p><ul class="tick pts"><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Your key KPIs in one place</span></li><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Draft or signed-off status, so you know which figures are final</span></li></ul></div>
-      <figure class="screen"><img src="https://cdn.jsdelivr.net/gh/agrawalnisha096-web/Test-1@3f96f8a9be8a86e8f8277b1b38c7a664380359f1/google-ads/landing-assets/screen-overview.webp" loading="lazy" width="1400" height="875" alt="Dashboard overview page"></figure>
-    </div>
-    <div class="panel" role="tabpanel" id="p-site" aria-labelledby="t-site" hidden>
-      <div><h3>Drill down to any site, customer or project</h3><p>One click from the big picture to a single site: its KPIs, cost stack, profit by period and a full P&amp;L for every period.</p></div>
-      <figure class="screen"><img src="https://cdn.jsdelivr.net/gh/agrawalnisha096-web/Test-1@3f96f8a9be8a86e8f8277b1b38c7a664380359f1/google-ads/landing-assets/screen-site.webp" loading="lazy" width="1400" height="875" alt="Site profitability page with KPIs, cost stack and period P&amp;L"></figure>
+    <div class="panel" role="tabpanel" id="p-site" aria-labelledby="t-site">
+      <div><span class="lbl" style="color:var(--teal-ink);margin-bottom:6px">Shown for a healthcare group (clinics)</span><h3>Drill down to any site, customer or project</h3><p>One click from the big picture to a single site: its KPIs, cost stack, profit by period and a full P&amp;L for every period.</p></div>
+      <figure class="screen"><img src="https://cdn.jsdelivr.net/gh/agrawalnisha096-web/Test-1@0125c626da472733ad87d223b64a2b9f9846f0eb/google-ads/landing-assets/tab-healthcare-site.webp" loading="lazy" width="1400" height="875" alt="Clinic profitability page with KPIs, cost stack and period P&amp;L"></figure>
     </div>
     <div class="panel" role="tabpanel" id="p-heatmap" aria-labelledby="t-heatmap" hidden>
-      <div><h3>See where margin is leaking</h3><p>Every site across every period, coloured by margin. Problems that hide inside a total stand out at a glance.</p></div>
-      <figure class="screen"><img src="https://cdn.jsdelivr.net/gh/agrawalnisha096-web/Test-1@3f96f8a9be8a86e8f8277b1b38c7a664380359f1/google-ads/landing-assets/screen-heatmap.webp" loading="lazy" width="1400" height="701" alt="Margin heatmap of every site across 26 periods"></figure>
+      <div><span class="lbl" style="color:var(--teal-ink);margin-bottom:6px">Shown for a hospitality group (venues)</span><h3>See where margin is leaking</h3><p>Every site across every period, coloured by margin. Problems that hide inside a total stand out at a glance.</p></div>
+      <figure class="screen"><img src="https://cdn.jsdelivr.net/gh/agrawalnisha096-web/Test-1@0125c626da472733ad87d223b64a2b9f9846f0eb/google-ads/landing-assets/tab-hospitality-heatmap.webp" loading="lazy" width="1400" height="702" alt="Margin heatmap of every venue across 26 periods"></figure>
+    </div>
+    <div class="panel" role="tabpanel" id="p-metrics" aria-labelledby="t-metrics" hidden>
+      <div><span class="lbl" style="color:var(--teal-ink);margin-bottom:6px">Shown for a logistics business (depots)</span><h3>The numbers behind the numbers</h3><p>Revenue and labour cost per job, contribution margin, break-even headroom and productivity, in your industry's own units.</p></div>
+      <figure class="screen"><img src="https://cdn.jsdelivr.net/gh/agrawalnisha096-web/Test-1@0125c626da472733ad87d223b64a2b9f9846f0eb/google-ads/landing-assets/tab-logistics-metrics.webp" loading="lazy" width="1400" height="875" alt="Business metrics page with unit economics per consignment"></figure>
     </div>
     <div class="panel" role="tabpanel" id="p-forecast" aria-labelledby="t-forecast" hidden>
-      <div><h3>Look ahead, not just back</h3><p>A rolling forecast built from work that's already booked, so you can see the next six weeks of revenue, labour and profit, not just last month's.</p></div>
-      <figure class="screen"><img src="https://cdn.jsdelivr.net/gh/agrawalnisha096-web/Test-1@3f96f8a9be8a86e8f8277b1b38c7a664380359f1/google-ads/landing-assets/screen-forecast.webp" loading="lazy" width="1400" height="875" alt="Six-week forecast page"></figure>
+      <div><span class="lbl" style="color:var(--teal-ink);margin-bottom:6px">Shown for a retail group (stores)</span><h3>Look ahead, not just back</h3><p>A rolling forecast built from work that's already booked, so you can see the next six weeks of revenue, labour and profit, not just last month's.</p></div>
+      <figure class="screen"><img src="https://cdn.jsdelivr.net/gh/agrawalnisha096-web/Test-1@0125c626da472733ad87d223b64a2b9f9846f0eb/google-ads/landing-assets/tab-retail-forecast.webp" loading="lazy" width="1400" height="875" alt="Six-week forecast page by store"></figure>
     </div>
     <div class="panel" role="tabpanel" id="p-alerts" aria-labelledby="t-alerts" hidden>
-      <div><h3>Problems come to you</h3><p>Margin breaches, staffing variances and out-of-date data are flagged automatically, against thresholds you set and can change.</p></div>
-      <figure class="screen"><img src="https://cdn.jsdelivr.net/gh/agrawalnisha096-web/Test-1@3f96f8a9be8a86e8f8277b1b38c7a664380359f1/google-ads/landing-assets/screen-alerts.webp" loading="lazy" width="1400" height="875" alt="Alerts page listing margin, roster and data feed alerts"></figure>
+      <div><span class="lbl" style="color:var(--teal-ink);margin-bottom:6px">Shown for a facilities services business (contracts)</span><h3>Problems come to you</h3><p>Margin breaches, staffing variances and out-of-date data are flagged automatically, against thresholds you set and can change.</p></div>
+      <figure class="screen"><img src="https://cdn.jsdelivr.net/gh/agrawalnisha096-web/Test-1@0125c626da472733ad87d223b64a2b9f9846f0eb/google-ads/landing-assets/tab-facilities-alerts.webp" loading="lazy" width="1400" height="875" alt="Alerts page listing margin, staffing and data feed alerts by contract"></figure>
     </div>
     <div class="panel" role="tabpanel" id="p-reconcile" aria-labelledby="t-reconcile" hidden>
-      <div><h3>Numbers you can trust</h3><p>Dashboard figures are tied back to the closed results in your accounting system every month, with any difference explained. Built by accountants, checked like accountants.</p></div>
-      <figure class="screen"><img src="https://cdn.jsdelivr.net/gh/agrawalnisha096-web/Test-1@3f96f8a9be8a86e8f8277b1b38c7a664380359f1/google-ads/landing-assets/screen-reconcile.webp" loading="lazy" width="1400" height="875" alt="Reconciliation page tying dashboard results to the accounting system"></figure>
+      <div><span class="lbl" style="color:var(--teal-ink);margin-bottom:6px">Shown for a mining and civil services business (sites)</span><h3>Numbers you can trust</h3><p>Dashboard figures are tied back to the closed results in your accounting system every month, with any difference explained. Built by accountants, checked like accountants.</p></div>
+      <figure class="screen"><img src="https://cdn.jsdelivr.net/gh/agrawalnisha096-web/Test-1@0125c626da472733ad87d223b64a2b9f9846f0eb/google-ads/landing-assets/tab-mining-reconcile.webp" loading="lazy" width="1400" height="875" alt="Reconciliation page tying dashboard results to the accounting system"></figure>
     </div>
-    <p class="caption">Real screens from a working Qubik dashboard · sample data · fictional names</p>
+    <p class="caption">Real screens from Qubik's dashboard, each shown in a different industry · sample data · fictional names</p>
+    <p class="caption">The same dashboards speak your industry's language: transport and logistics, hospitality, healthcare, mining and civil, retail, facilities services, early learning and aviation services.</p>
     <div class="prompt"><p>Want to see what a dashboard for your business could show?<span>Book a free call and we'll talk through your numbers and your systems.</span></p><a class="btn" href="#book">Book a free discovery call</a></div>
   </div>
 </section>
@@ -629,7 +630,7 @@ body.page{background:#f6f7f4}
         <p class="control"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M7.5 12.5l3 3 6-6.5"/></svg>Your people stay in control: anything the system isn't sure about goes to a person to decide.</p>
       </div>
       <figure class="phone-wrap" style="margin:0" aria-label="Illustration: Monday morning on a phone, with a margin alert and the weekly report already sent">
-        <div class="device"><div class="scr"><img src="https://cdn.jsdelivr.net/gh/agrawalnisha096-web/Test-1@3f96f8a9be8a86e8f8277b1b38c7a664380359f1/google-ads/landing-assets/phone-overview.webp" loading="lazy" width="600" height="1298" alt=""></div></div>
+        <div class="device"><div class="scr"><img src="https://cdn.jsdelivr.net/gh/agrawalnisha096-web/Test-1@0125c626da472733ad87d223b64a2b9f9846f0eb/google-ads/landing-assets/phone-overview.webp" loading="lazy" width="600" height="1298" alt=""></div></div>
         <div class="toast alert" aria-hidden="true"><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 9v4M12 17h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg></span><span><b>Margin alert · Townsville</b>4.1% this fortnight, below your 5% threshold.<br><small>Monday 6:58am</small></span></div>
         <div class="toast mail" aria-hidden="true"><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg></span><span><b>Weekly profit report</b>Sent automatically to the leadership team.<br><small>Monday 7:00am</small></span></div>
         <figcaption class="caption">Illustration · sample data · fictional names</figcaption>
@@ -748,56 +749,6 @@ body.page{background:#f6f7f4}
     </div>
   </div>
 </section>
-<section class="block">
-  <div class="wrap">
-    <div class="kicker">Your industry</div>
-    <h2>Built for how your industry measures success</h2>
-    <p class="intro">The same approach speaks your language: depots and loads, venues and covers, clinics and appointments. Pick your industry to see a dashboard.</p>
-    <div class="tabs" role="tablist" aria-label="Industries" data-tabs="sectors">
-      <button class="tab" role="tab" aria-selected="true" aria-controls="s-logistics" id="ts-logistics">Transport &amp; logistics</button>
-      <button class="tab" role="tab" aria-selected="false" aria-controls="s-hospitality" id="ts-hospitality">Hospitality</button>
-      <button class="tab" role="tab" aria-selected="false" aria-controls="s-healthcare" id="ts-healthcare">Healthcare</button>
-      <button class="tab" role="tab" aria-selected="false" aria-controls="s-mining" id="ts-mining">Mining &amp; civil</button>
-      <button class="tab" role="tab" aria-selected="false" aria-controls="s-retail" id="ts-retail">Retail</button>
-      <button class="tab" role="tab" aria-selected="false" aria-controls="s-facilities" id="ts-facilities">Facilities services</button>
-      <button class="tab" role="tab" aria-selected="false" aria-controls="s-earlylearning" id="ts-earlylearning">Early learning</button>
-      <button class="tab" role="tab" aria-selected="false" aria-controls="s-aviation" id="ts-aviation">Aviation services</button>
-    </div>
-    <div class="sector-panel" role="tabpanel" id="s-logistics" aria-labelledby="ts-logistics">
-      <p class="sector-meta"><span><b>Sites:</b> depots</span><span><b>Work:</b> consignments and loads</span><span><b>See:</b> revenue by depot and contract customer, labour, fleet costs</span></p>
-      <figure class="screen"><img src="https://cdn.jsdelivr.net/gh/agrawalnisha096-web/Test-1@3f96f8a9be8a86e8f8277b1b38c7a664380359f1/google-ads/landing-assets/sector-logistics.webp" loading="lazy" width="1400" height="875" alt="Logistics dashboard by depot"></figure>
-    </div>
-    <div class="sector-panel" role="tabpanel" id="s-hospitality" aria-labelledby="ts-hospitality" hidden>
-      <p class="sector-meta"><span><b>Sites:</b> venues</span><span><b>Work:</b> covers</span><span><b>See:</b> dine-in, takeaway and functions by venue, with labour as the lever</span></p>
-      <figure class="screen"><img src="https://cdn.jsdelivr.net/gh/agrawalnisha096-web/Test-1@3f96f8a9be8a86e8f8277b1b38c7a664380359f1/google-ads/landing-assets/sector-hospitality.webp" loading="lazy" width="1400" height="875" alt="Hospitality dashboard by venue"></figure>
-    </div>
-    <div class="sector-panel" role="tabpanel" id="s-healthcare" aria-labelledby="ts-healthcare" hidden>
-      <p class="sector-meta"><span><b>Sites:</b> clinics</span><span><b>Work:</b> appointments and consults</span><span><b>See:</b> bulk-billed, private and NDIS revenue by clinic, practitioner costs</span></p>
-      <figure class="screen"><img src="https://cdn.jsdelivr.net/gh/agrawalnisha096-web/Test-1@3f96f8a9be8a86e8f8277b1b38c7a664380359f1/google-ads/landing-assets/sector-healthcare.webp" loading="lazy" width="1400" height="875" alt="Healthcare dashboard by clinic"></figure>
-    </div>
-    <div class="sector-panel" role="tabpanel" id="s-mining" aria-labelledby="ts-mining" hidden>
-      <p class="sector-meta"><span><b>Sites:</b> project sites</span><span><b>Work:</b> crew shifts</span><span><b>See:</b> revenue by client contract, labour and plant costs by site</span></p>
-      <figure class="screen"><img src="https://cdn.jsdelivr.net/gh/agrawalnisha096-web/Test-1@3f96f8a9be8a86e8f8277b1b38c7a664380359f1/google-ads/landing-assets/sector-mining.webp" loading="lazy" width="1400" height="875" alt="Mining and civil services dashboard by site"></figure>
-    </div>
-    <div class="sector-panel" role="tabpanel" id="s-retail" aria-labelledby="ts-retail" hidden>
-      <p class="sector-meta"><span><b>Sites:</b> stores</span><span><b>Work:</b> orders and baskets</span><span><b>See:</b> in-store, online and click &amp; collect by store, staffing against trade</span></p>
-      <figure class="screen"><img src="https://cdn.jsdelivr.net/gh/agrawalnisha096-web/Test-1@3f96f8a9be8a86e8f8277b1b38c7a664380359f1/google-ads/landing-assets/sector-retail.webp" loading="lazy" width="1400" height="875" alt="Retail dashboard by store"></figure>
-    </div>
-    <div class="sector-panel" role="tabpanel" id="s-facilities" aria-labelledby="ts-facilities" hidden>
-      <p class="sector-meta"><span><b>Sites:</b> contracts</span><span><b>Work:</b> service visits</span><span><b>See:</b> commercial, government and education contracts, labour by contract</span></p>
-      <figure class="screen"><img src="https://cdn.jsdelivr.net/gh/agrawalnisha096-web/Test-1@3f96f8a9be8a86e8f8277b1b38c7a664380359f1/google-ads/landing-assets/sector-facilities.webp" loading="lazy" width="1400" height="875" alt="Facilities services dashboard by contract"></figure>
-    </div>
-    <div class="sector-panel" role="tabpanel" id="s-earlylearning" aria-labelledby="ts-earlylearning" hidden>
-      <p class="sector-meta"><span><b>Sites:</b> centres</span><span><b>Work:</b> bookings and sessions</span><span><b>See:</b> subsidised, full-fee and kindergarten places by centre, educator costs</span></p>
-      <figure class="screen"><img src="https://cdn.jsdelivr.net/gh/agrawalnisha096-web/Test-1@3f96f8a9be8a86e8f8277b1b38c7a664380359f1/google-ads/landing-assets/sector-earlylearning.webp" loading="lazy" width="1400" height="875" alt="Early learning dashboard by centre"></figure>
-    </div>
-    <div class="sector-panel" role="tabpanel" id="s-aviation" aria-labelledby="ts-aviation" hidden>
-      <p class="sector-meta"><span><b>Sites:</b> ports</span><span><b>Work:</b> turnarounds</span><span><b>See:</b> revenue by airline customer, rostered labour, equipment costs by port</span></p>
-      <figure class="screen"><img src="https://cdn.jsdelivr.net/gh/agrawalnisha096-web/Test-1@3f96f8a9be8a86e8f8277b1b38c7a664380359f1/google-ads/landing-assets/sector-aviation.webp" loading="lazy" width="1400" height="875" alt="Aviation ground services dashboard by port"></figure>
-    </div>
-    <p class="caption">Sample data · fictional names. Don't see your industry? The same approach works for any business with sites, teams, customers or projects.</p>
-  </div>
-</section>
 <section class="block alt">
   <div class="wrap" id="pricing-anchor">
     <div class="kicker">Pricing</div>
@@ -843,7 +794,7 @@ body.page{background:#f6f7f4}
 </section>
 <footer>
   <div class="wrap">
-    <img src="https://cdn.jsdelivr.net/gh/agrawalnisha096-web/Test-1@3f96f8a9be8a86e8f8277b1b38c7a664380359f1/google-ads/landing-assets/qubik-logo-white.png" alt="Qubik" width="88" height="34">
+    <img src="https://cdn.jsdelivr.net/gh/agrawalnisha096-web/Test-1@0125c626da472733ad87d223b64a2b9f9846f0eb/google-ads/landing-assets/qubik-logo-white.png" alt="Qubik" width="88" height="34">
     <span>Qubik Accounting · 18–22 Dixon Street, Strathpine QLD 4500</span>
     <span><a href="tel:+61732058938">(07) 3205 8938</a> · <a href="https://qubik.com.au/privacy-policy/">Privacy policy</a></span>
   </div>
@@ -1077,7 +1028,7 @@ body.page{background:#f6f7f4}
 </style>
 <div class="qlp">
 <header class="top"><div class="wrap">
-  <img src="https://cdn.jsdelivr.net/gh/agrawalnisha096-web/Test-1@3f96f8a9be8a86e8f8277b1b38c7a664380359f1/google-ads/landing-assets/qubik-logo.png" alt="Qubik" width="109" height="42">
+  <img src="https://cdn.jsdelivr.net/gh/agrawalnisha096-web/Test-1@0125c626da472733ad87d223b64a2b9f9846f0eb/google-ads/landing-assets/qubik-logo.png" alt="Qubik" width="109" height="42">
   <a href="tel:+61732058938">(07) 3205 8938</a>
 </div></header>
 <section class="hero"><div class="wrap">
@@ -1114,7 +1065,7 @@ body.page{background:#f6f7f4}
   </div>
 </div></section>
 <footer><div class="wrap">
-  <img src="https://cdn.jsdelivr.net/gh/agrawalnisha096-web/Test-1@3f96f8a9be8a86e8f8277b1b38c7a664380359f1/google-ads/landing-assets/qubik-logo-white.png" alt="Qubik" width="83" height="32">
+  <img src="https://cdn.jsdelivr.net/gh/agrawalnisha096-web/Test-1@0125c626da472733ad87d223b64a2b9f9846f0eb/google-ads/landing-assets/qubik-logo-white.png" alt="Qubik" width="83" height="32">
   <span>Qubik Accounting · 18–22 Dixon Street, Strathpine QLD 4500</span>
   <span><a href="tel:+61732058938">(07) 3205 8938</a> · <a href="https://qubik.com.au/privacy-policy/">Privacy policy</a></span>
 </div></footer>
