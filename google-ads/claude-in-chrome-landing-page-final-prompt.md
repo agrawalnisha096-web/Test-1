@@ -14,14 +14,14 @@
 
 **How it works on the live site:** the page shows the custom three-step form and passes the answers to a hidden Divi Contact Form. Divi still sends the email, uses the spam protection, and redirects to the thank-you page, just as now. The new page and thank-you page are built as drafts next to the live ones and only swapped in when you say "go live".
 
-**Google Ads links once live:** automation ad groups use `https://qubik.com.au/automation/`. AI ad groups add `?v=ai` to it. LinkedIn or email traffic adds `?v=dashboards`.
+**Google Ads links once live:** automation ad groups use `https://qubik.com.au/marketing/automation/`. AI ad groups add `?v=ai` to it. LinkedIn or email traffic adds `?v=dashboards`.
 
 ---
 
 You are going to replace the Google Ads landing page and its thank-you page on the Qubik WordPress site (qubik.com.au, Divi theme). I'm logged in to the WordPress admin in this browser, and I've already uploaded 17 images to the Media Library.
 
 ## Ground rules
-- The current page at `https://qubik.com.au/automation/` and its thank-you page at `https://qubik.com.au/automation/thank-you/` are live and receiving ad traffic. Don't edit them until Step 7, and only after I say "go live".
+- The current page at `https://qubik.com.au/marketing/automation/` (page **Automation**, under the parent page **marketing**) and its thank-you page at `https://qubik.com.au/marketing/automation/thank-you/` are live and receiving ad traffic. Don't edit them until Step 7, and only after I say "go live".
 - Work only on the pages, Theme Builder template and cache setting named below. Don't touch other pages, menus, widgets or Theme Options.
 - Don't install, update or deactivate any plugin or theme.
 - If something on screen doesn't match these instructions, stop and tell me what you see instead of guessing.
@@ -33,7 +33,7 @@ You are going to replace the Google Ads landing page and its thank-you page on t
 
 ## Step 0: Check before you start, and report back
 Tell me:
-1. Which pages exist with "automation" or "thank" in their title or slug: title, slug, parent and status (published or draft).
+1. Confirm the live structure: page **marketing** (`/marketing/`), its child **Automation** (`/marketing/automation/`), and its child **Thank you** (`/marketing/automation/thank-you/`). List any other pages with "automation" in their title or slug (title, slug, parent, status).
 2. On the live **Automation** page's Contact Form module: the email address(es) in Content → Email, the redirect URL, and the spam protection settings. Don't change anything.
 3. Whether the live **Thank you** page contains any Google Ads or Google tag code (look in its Divi modules for `gtag`, `AW-` or `googletagmanager`, and in its page settings). If it does, copy that code into your report exactly. It must move to the new thank-you page.
 4. Whether a Divi Theme Builder template is assigned to the Automation and Thank you pages (to hide the site header and footer), and its name.
@@ -52,7 +52,7 @@ In **Media → Library**, find these 17 files (uploaded today):
 4. If a file has a different name or folder, also fix that one reference by hand. If any file is missing, stop and tell me which.
 
 ## Step 2: Create the new landing page (draft)
-1. Pages → Add New. Title: **Automation (new)**. Slug: **automation-new**. Page Attributes → Template: **Blank Page**. Open it in the Divi Builder and choose **Start Building** (blank).
+1. Pages → Add New. Title: **Automation (new)**. Slug: **automation-new**. Page Attributes → Parent: **marketing**, Template: **Blank Page**. Its address will be `/marketing/automation-new/`. Open it in the Divi Builder and choose **Start Building** (blank).
 2. Build three sections, top to bottom:
 
 **Section A: Fullwidth section** (top and bottom padding 0)
@@ -105,7 +105,7 @@ Then set the module up exactly like this:
 
 **Other settings:**
 - **Content → Email:** the same address(es) as the live form. Message Pattern: empty, so the email lists every field.
-- **Content → Redirect:** Enable Redirect URL **Yes**, URL `https://qubik.com.au/automation/thank-you/`.
+- **Content → Redirect:** Enable Redirect URL **Yes**, URL `https://qubik.com.au/marketing/automation/thank-you/` (the same as the live form).
 - **Content → Spam Protection:** Basic Captcha **No**. The spam protection service the same as the live form.
 - **Advanced → CSS Class:** `qlp-divi-form` (remove any other CSS class the pasted module has, such as `qlp-form`).
 
@@ -137,15 +137,15 @@ Send me:
 **Wait for me to say "test it".**
 
 ## Step 7: Test the new page before it replaces the live one
-1. Publish **Automation (new)** only. It's at `/automation-new/`, which no ad points to. Leave Thank you (new) as a draft.
-2. LiteSpeed Cache → Cache → Excludes → Do Not Cache URIs: add `/automation-new/` on its own line. Save, then Purge All.
+1. Publish **Automation (new)** only. It's at `/marketing/automation-new/`, which no ad points to. Leave Thank you (new) as a draft.
+2. LiteSpeed Cache → Cache → Excludes → Do Not Cache URIs: make sure there's a line `/marketing/automation` (no slash at the end; it covers the live page, the new page and both thank-you pages). Add it on its own line if it's missing. Save, then Purge All.
    Divi's form uses a security token that expires; a cached copy of the page would make the form fail silently.
-3. Open `https://qubik.com.au/automation-new/?v=ai&gclid=TEST-FINAL&utm_source=google&utm_campaign=test` in a new tab and:
+3. Open `https://qubik.com.au/marketing/automation-new/?v=ai&gclid=TEST-FINAL&utm_source=google&utm_campaign=test` in a new tab and:
    1. In the calculator, change "People" to 4.
    2. Form step 1: pick "Too much manual admin" and "Cash flow and forecasting", then Next.
    3. Step 2: any answers; type `Test – please ignore` in the challenge box, then Next.
    4. Step 3: Name `Test Lead final`, Company `Test – please ignore`, Email `test@example.com`, Mobile `0400 000 000`; tick consent; click "Book my free call".
-4. Confirm the browser lands on `/automation/thank-you/` (still the old thank-you page at this stage; that's expected).
+4. Confirm the browser lands on `/marketing/automation/thank-you/` (still the old thank-you page at this stage; that's expected).
 5. Ask me to confirm the test email arrived with all 20 fields, including `gclid: TEST-FINAL`, `variant: ai` and an `estimate` starting "A$101,200 a year".
 
 If the browser doesn't reach the thank-you page within 15 seconds, the form shows "Sorry, something went wrong…". In that case stop, and report what the browser console shows and what this returns: `document.querySelector('.qlp-divi-form .et-pb-contact-message').textContent`.
@@ -153,16 +153,16 @@ If the browser doesn't reach the thank-you page within 15 seconds, the form show
 **Wait for me to say "go live".**
 
 ## Step 8: Go live (swap the pages)
-Ads point at `/automation/`, so do steps 1 to 4 straight after each other, with no pauses.
-1. **Old landing page:** edit the live **Automation** page → slug `automation-previous` (if that's taken, `automation-previous-2`). Update. Leave it published for now.
-2. **New landing page:** edit **Automation (new)** → title **Automation**, slug `automation`. Update. `/automation/` is now the new page.
+Ads point at `/marketing/automation/`, so do steps 1 to 4 straight after each other, with no pauses.
+1. **Old landing page:** edit the live **Automation** page → slug `automation-previous` (if that's taken, `automation-previous-2`). Keep its parent as **marketing**. Update. Leave it published for now.
+2. **New landing page:** edit **Automation (new)** → title **Automation**, slug `automation` (parent stays **marketing**). Update. `/marketing/automation/` is now the new page.
 3. **Old thank-you page:** edit the old **Thank you** page (now under Automation-previous) → slug `thank-you-previous`, status **Draft**. Update.
-4. **New thank-you page:** edit **Thank you (new)** → title **Thank you**, slug `thank-you`, then **Publish**. It's now at `/automation/thank-you/`.
+4. **New thank-you page:** edit **Thank you (new)** → title **Thank you**, slug `thank-you`, then **Publish**. It's now at `/marketing/automation/thank-you/`.
 5. **Old landing page:** set **Automation-previous** to **Draft**. Update.
-6. Open `https://qubik.com.au/automation/` and `https://qubik.com.au/automation/thank-you/` and confirm both show the new design (not a 404, not the old page).
-7. **Cache:** in Do Not Cache URIs, make sure `/automation/` is listed, and remove the `/automation-new/` line. Save, then Purge All.
+6. Open `https://qubik.com.au/marketing/automation/` and `https://qubik.com.au/marketing/automation/thank-you/` and confirm both show the new design (not a 404, not the old page). Also open `https://qubik.com.au/automation/` and confirm it still redirects to `/marketing/automation/`.
+7. **Cache:** in Do Not Cache URIs, confirm `/marketing/automation` is still listed. Save, then Purge All.
 8. **Theme Builder:** confirm the header/footer template applies to the new Automation and Thank you pages; untick the two old pages. Save.
-9. **Final test:** repeat the Step 7 form test on `https://qubik.com.au/automation/?gclid=TEST-LIVE&utm_source=google`, with Name `Test Lead live`. Confirm you land on the new thank-you page, and ask me to confirm the email.
+9. **Final test:** repeat the Step 7 form test on `https://qubik.com.au/marketing/automation/?gclid=TEST-LIVE&utm_source=google`, with Name `Test Lead live`. Confirm you land on the new thank-you page, and ask me to confirm the email.
 
 If anything in Step 8 fails, put it back: old page slug back to `automation` and Published, old thank-you slug back to `thank-you` and Published. Then tell me.
 
