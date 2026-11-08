@@ -5,8 +5,10 @@
 1. **Back up the site** (or check that last night's backup exists).
 2. **Upload the 17 images yourself.** Claude in Chrome can't reach files on your computer.
    1. Download `google-ads/landing-images-upload.zip` from the repo and unzip it.
-   2. In WordPress, go to **Media → Add New** and drag in all 17 files at once.
-   3. If WordPress refuses the `.webp` files, tell me and I'll send PNG versions.
+   2. Your account doesn't show a Media menu, so open `https://qubik.com.au/wp-admin/media-new.php` directly and drag in all 17 files at once.
+   3. If that page says you're not allowed: open any draft page in the Divi Builder, add an **Image** module, click **Upload an image**, then use the **Upload files** tab to drag in all 17. Delete the Image module afterwards without saving.
+   4. If both are blocked, your account can't upload files. Ask the site administrator to upload the 17 images, or to give your account permission to upload.
+   5. If WordPress refuses the `.webp` files, tell me and I'll send PNG versions.
 3. **Fill in the two blanks** in the prompt below:
    - `[SALES EMAIL]`: where new leads should go (only used if the live form's email can't be copied).
    - `[CALENDAR LINK]`: the booking link for the thank-you page's "Or pick a time now" button, or `none` to remove the button.
@@ -22,7 +24,7 @@ You are going to replace the Google Ads landing page and its thank-you page on t
 
 ## Ground rules
 - The current page at `https://qubik.com.au/marketing/automation/` (page **Automation**, under the parent page **marketing**) and its thank-you page at `https://qubik.com.au/marketing/automation/thank-you/` are live and receiving ad traffic. Don't edit them until Step 7, and only after I say "go live".
-- Work only on the pages, Theme Builder template and cache setting named below. Don't touch other pages, menus, widgets or Theme Options.
+- Work only on the pages named below. Don't touch other pages, menus, widgets, Theme Builder, cache settings or Theme Options.
 - Don't install, update or deactivate any plugin or theme.
 - If something on screen doesn't match these instructions, stop and tell me what you see instead of guessing.
 - Paste the three code blocks in the Appendix exactly as written, apart from the replacements these steps tell you to make. Don't reformat them, add blank lines or "improve" them. After pasting, check each saved in full (first and last lines match).
@@ -36,17 +38,15 @@ Tell me:
 1. Confirm the live structure: page **marketing** (`/marketing/`), its child **Automation** (`/marketing/automation/`), and its child **Thank you** (`/marketing/automation/thank-you/`). List any other pages with "automation" in their title or slug (title, slug, parent, status).
 2. On the live **Automation** page's Contact Form module: the email address(es) in Content → Email, the redirect URL, and the spam protection settings. Don't change anything.
 3. Whether the live **Thank you** page contains any Google Ads or Google tag code (look in its Divi modules for `gtag`, `AW-` or `googletagmanager`, and in its page settings). If it does, copy that code into your report exactly. It must move to the new thank-you page.
-4. Whether a Divi Theme Builder template is assigned to the Automation and Thank you pages (to hide the site header and footer), and its name.
-5. What LiteSpeed Cache → Cache → Excludes → Do Not Cache URIs contains.
 
 Then continue unless something blocks you.
 
 ## Step 1: Find the uploaded images
-In **Media → Library**, find these 17 files (uploaded today):
+Open the Media Library at `https://qubik.com.au/wp-admin/upload.php` (the Media menu is hidden for this account, but the page may still open) and find these 17 files (uploaded today):
 
 `qubik-logo.png`, `qubik-logo-white.png`, `phone-overview.webp`, `screen-overview.webp`, `screen-site.webp`, `screen-heatmap.webp`, `screen-forecast.webp`, `screen-alerts.webp`, `screen-reconcile.webp`, `sector-logistics.webp`, `sector-hospitality.webp`, `sector-healthcare.webp`, `sector-mining.webp`, `sector-retail.webp`, `sector-facilities.webp`, `sector-earlylearning.webp`, `sector-aviation.webp`
 
-1. Open one and copy its **File URL**, for example `https://qubik.com.au/wp-content/uploads/2026/11/screen-overview.webp`. The part before the file name is the **uploads folder**, for example `https://qubik.com.au/wp-content/uploads/2026/11`.
+1. Open one and copy its **File URL**. If the Media Library won't open, open `https://qubik.com.au/wp-content/uploads/2026/11/qubik-logo.png` in a new tab instead. If the logo shows, that's the folder; if not, ask me which month the files were uploaded in. File URL example: `https://qubik.com.au/wp-content/uploads/2026/11/screen-overview.webp`. The part before the file name is the **uploads folder**, for example `https://qubik.com.au/wp-content/uploads/2026/11`.
 2. Check that all 17 files are in that same folder, with exactly these names. WordPress sometimes adds `-1` or `-scaled` to a name.
 3. In every code block below, replace each `[UPLOADS]` with the uploads folder (no slash at the end). The code then reads `https://qubik.com.au/wp-content/uploads/2026/11/screen-overview.webp`.
 4. If a file has a different name or folder, also fix that one reference by hand. If any file is missing, stop and tell me which.
@@ -120,8 +120,8 @@ Save as draft.
 4. If an SEO plugin is active, set this page to **noindex**.
 5. Save as draft.
 
-## Step 5: Theme Builder
-Divi → Theme Builder. Open the template that hides the header and footer for the Automation pages (from Step 0). In its **Use On** settings, also tick **Automation (new)** and **Thank you (new)**. Save. Don't change anything else.
+## Step 5: Site header and footer
+Nothing to do: the page code hides the site's own header and footer on these two pages. In the Step 6 preview, check that only the page's own navy-and-white header and footer show.
 
 ## Step 6: Stop for my review
 Send me:
@@ -138,8 +138,7 @@ Send me:
 
 ## Step 7: Test the new page before it replaces the live one
 1. Publish **Automation (new)** only. It's at `/marketing/automation-new/`, which no ad points to. Leave Thank you (new) as a draft.
-2. LiteSpeed Cache → Cache → Excludes → Do Not Cache URIs: make sure there's a line `/marketing/automation` (no slash at the end; it covers the live page, the new page and both thank-you pages). Add it on its own line if it's missing. Save, then Purge All.
-   Divi's form uses a security token that expires; a cached copy of the page would make the form fail silently.
+2. Tell me it's published, and **wait for me to confirm the page isn't being cached** before testing. Divi's form uses a security token that expires; a cached copy of the page would make the form fail silently. The live pages are already excluded from the cache, but the new address may not be.
 3. Open `https://qubik.com.au/marketing/automation-new/?v=ai&gclid=TEST-FINAL&utm_source=google&utm_campaign=test` in a new tab and:
    1. In the calculator, change "People" to 4.
    2. Form step 1: pick "Too much manual admin" and "Cash flow and forecasting", then Next.
@@ -160,14 +159,13 @@ Ads point at `/marketing/automation/`, so do steps 1 to 4 straight after each ot
 4. **New thank-you page:** edit **Thank you (new)** → title **Thank you**, slug `thank-you`, then **Publish**. It's now at `/marketing/automation/thank-you/`.
 5. **Old landing page:** set **Automation-previous** to **Draft**. Update.
 6. Open `https://qubik.com.au/marketing/automation/` and `https://qubik.com.au/marketing/automation/thank-you/` and confirm both show the new design (not a 404, not the old page). Also open `https://qubik.com.au/automation/` and confirm it still redirects to `/marketing/automation/`.
-7. **Cache:** in Do Not Cache URIs, confirm `/marketing/automation` is still listed. Save, then Purge All.
-8. **Theme Builder:** confirm the header/footer template applies to the new Automation and Thank you pages; untick the two old pages. Save.
-9. **Final test:** repeat the Step 7 form test on `https://qubik.com.au/marketing/automation/?gclid=TEST-LIVE&utm_source=google`, with Name `Test Lead live`. Confirm you land on the new thank-you page, and ask me to confirm the email.
+7. Tell me the swap is done, and wait for me to confirm the new pages aren't being cached.
+8. **Final test:** repeat the Step 7 form test on `https://qubik.com.au/marketing/automation/?gclid=TEST-LIVE&utm_source=google`, with Name `Test Lead live`. Confirm you land on the new thank-you page, and ask me to confirm the email.
 
 If anything in Step 8 fails, put it back: old page slug back to `automation` and Published, old thank-you slug back to `thank-you` and Published. Then tell me.
 
 ## Report back
-List what you created and changed (pages, Theme Builder template, cache setting), the results of both tests, and anything you skipped or couldn't do. Keep the previous pages as drafts; don't delete them.
+List what you created and changed, the results of both tests, and anything you skipped or couldn't do. Keep the previous pages as drafts; don't delete them.
 
 ---
 
@@ -410,6 +408,8 @@ List what you created and changed (pages, Theme Builder template, cache setting)
 @media (max-width: 640px){.qlp{font-size: 16px;}.qlp .top .phone,.qlp .top .btn{display: none;}.qlp .logo{height: 36px;}.qlp .hero .wrap{padding-block: 36px 84px;}.qlp section.block .wrap,.qlp .vision .wrap{padding-block: 52px;}.qlp .two,.qlp .chips,.qlp .auto,.qlp .pricing,.qlp .drivers,.qlp .steps,.qlp .ai-grid{grid-template-columns: minmax(0, 1fr);}.qlp .strip{grid-template-columns: repeat(2, minmax(0, 1fr));}.qlp .formcard,.qlp .callbox,.qlp .calc{padding: 22px;}.qlp .calc label{grid-template-columns: minmax(0, 1fr) 100px;}.qlp .vquote{grid-template-columns: minmax(0, 1fr); gap: 16px; margin-top: 32px;}.qlp .vision .avatar{width: 80px; height: 80px; font-size: 26px;}.qlp .vstats dd{font-size: 20px;}.qlp .tabs{flex-wrap: nowrap; overflow-x: auto; margin-left: -16px; margin-right: -16px; padding: 0 16px 6px; scrollbar-width: thin;}.qlp .tab{flex: none;}.qlp .pains{gap: 8px;}.qlp .pains li{padding: 10px 12px;}.qlp .pains span{font-size: 14px;}.qlp .auto{gap: 12px;}.qlp .auto-card h3{padding: 14px 16px 0; font-size: 17px;}.qlp .auto-card h3 .ic{width: 30px; height: 30px;}.qlp .auto-card .today{padding: 6px 16px 10px; font-size: 14px;}.qlp .auto-card .after{padding: 10px 16px 12px; font-size: 14px;}.qlp .sua{gap: 10px;}.qlp .sua > div{padding: 14px 16px; grid-template-columns: 36px minmax(0, 1fr); gap: 12px;}.qlp .sua .n{width: 36px; height: 36px; font-size: 14px;}.qlp .device{width: 230px; border-radius: 32px; padding: 9px;}.qlp .device .scr{height: 400px; border-radius: 24px;}.qlp .toast{font-size: 13px; padding: 10px 12px;}.qlp .toast.alert{top: 56px;}.qlp .toast.mail{bottom: 44px;}.qlp .sys .col{grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);}.qlp .sys .head{grid-column: 1 / -1;}.qlp .sys .box{padding: 10px 12px; font-size: 14px;}.qlp .steps li{padding-top: 14px;}.qlp .prompt .btn{width: 100%;}.qlp .sticky{display: grid; grid-template-columns: 1fr 1.6fr; gap: 10px; position: fixed; left: 0; right: 0; bottom: 0; z-index: 40; padding: 10px 16px calc(10px + env(safe-area-inset-bottom, 0px)); background: var(--surface); border-top: 1px solid var(--line); box-shadow: 0 -6px 18px rgba(10,25,35,.12); transform: translateY(110%); transition: transform .25s ease;}.qlp .sticky.show{transform: none;}.qlp .sticky .btn{padding: 12px 10px; font-size: 16px;}}
 @media (prefers-reduced-motion: reduce){.qlp .bar i,.qlp .sticky{transition: none;}}
 html{scroll-behavior:smooth}
+.et-l--header,.et-l--footer,#main-header,#top-header,#main-footer{display:none!important}
+#page-container{padding-top:0!important}
 body.page{background:#f6f7f4}
 .qlp p,.qlp li{padding:0}
 .qlp ul,.qlp ol{list-style:none;padding:0}
@@ -1077,6 +1077,8 @@ body.page{background:#f6f7f4}
 .qlp footer a{color: var(--on-navy-muted);}
 @media (max-width: 760px){.qlp .next,.qlp .prep{grid-template-columns: minmax(0, 1fr);}}
 html{scroll-behavior:smooth}
+.et-l--header,.et-l--footer,#main-header,#top-header,#main-footer{display:none!important}
+#page-container{padding-top:0!important}
 body.page{background:#f6f7f4}
 .qlp p,.qlp li{padding:0}
 .qlp ul,.qlp ol{list-style:none;padding:0}
