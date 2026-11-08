@@ -3,12 +3,7 @@
 ## Before you paste it
 
 1. **Back up the site** (or check that last night's backup exists).
-2. **Upload the 17 images yourself.** Claude in Chrome can't reach files on your computer.
-   1. Download `google-ads/landing-images-upload.zip` from the repo and unzip it.
-   2. Your account doesn't show a Media menu, so open `https://qubik.com.au/wp-admin/media-new.php` directly and drag in all 17 files at once.
-   3. If that page says you're not allowed: open any draft page in the Divi Builder, add an **Image** module, click **Upload an image**, then use the **Upload files** tab to drag in all 17. Delete the Image module afterwards without saving.
-   4. If both are blocked, your account can't upload files. Ask the site administrator to upload the 17 images, or to give your account permission to upload.
-   5. If WordPress refuses the `.webp` files, tell me and I'll send PNG versions.
+2. **No image upload needed.** Your account isn't allowed to upload files, so the 17 images are served from this project's public GitHub repository through jsDelivr, a free public file host. The links are pinned to a fixed version, so they can't change. If you ever make the repository private or delete it, the images will break, so tell me first and we'll move them into the Media Library (one find-and-replace).
 3. **Fill in the two blanks** in the prompt below:
    - `[SALES EMAIL]`: where new leads should go (only used if the live form's email can't be copied).
    - `[CALENDAR LINK]`: the booking link for the thank-you page's "Or pick a time now" button, or `none` to remove the button.
@@ -20,7 +15,7 @@
 
 ---
 
-You are going to replace the Google Ads landing page and its thank-you page on the Qubik WordPress site (qubik.com.au, Divi theme). I'm logged in to the WordPress admin in this browser, and I've already uploaded 17 images to the Media Library.
+You are going to replace the Google Ads landing page and its thank-you page on the Qubik WordPress site (qubik.com.au, Divi theme). I'm logged in to the WordPress admin in this browser.
 
 ## Ground rules
 - The current page at `https://qubik.com.au/marketing/automation/` (page **Automation**, under the parent page **marketing**) and its thank-you page at `https://qubik.com.au/marketing/automation/thank-you/` are live and receiving ad traffic. Don't edit them until Step 7, and only after I say "go live".
@@ -41,29 +36,22 @@ Tell me:
 
 Then continue unless something blocks you.
 
-## Step 1: Find the uploaded images
-Open the Media Library at `https://qubik.com.au/wp-admin/upload.php` (the Media menu is hidden for this account, but the page may still open) and find these 17 files (uploaded today):
-
-`qubik-logo.png`, `qubik-logo-white.png`, `phone-overview.webp`, `screen-overview.webp`, `screen-site.webp`, `screen-heatmap.webp`, `screen-forecast.webp`, `screen-alerts.webp`, `screen-reconcile.webp`, `sector-logistics.webp`, `sector-hospitality.webp`, `sector-healthcare.webp`, `sector-mining.webp`, `sector-retail.webp`, `sector-facilities.webp`, `sector-earlylearning.webp`, `sector-aviation.webp`
-
-1. Open one and copy its **File URL**. If the Media Library won't open, open `https://qubik.com.au/wp-content/uploads/2026/11/qubik-logo.png` in a new tab instead. If the logo shows, that's the folder; if not, ask me which month the files were uploaded in. File URL example: `https://qubik.com.au/wp-content/uploads/2026/11/screen-overview.webp`. The part before the file name is the **uploads folder**, for example `https://qubik.com.au/wp-content/uploads/2026/11`.
-2. Check that all 17 files are in that same folder, with exactly these names. WordPress sometimes adds `-1` or `-scaled` to a name.
-3. In every code block below, replace each `[UPLOADS]` with the uploads folder (no slash at the end). The code then reads `https://qubik.com.au/wp-content/uploads/2026/11/screen-overview.webp`.
-4. If a file has a different name or folder, also fix that one reference by hand. If any file is missing, stop and tell me which.
+## Step 1: Images
+Nothing to do: the code already links to all 17 images, which are hosted outside WordPress. Don't upload or change any images. In Step 6, check that they all show.
 
 ## Step 2: Create the new landing page (draft)
 1. Pages → Add New. Title: **Automation (new)**. Slug: **automation-new**. Page Attributes → Parent: **marketing**, Template: **Blank Page**. Its address will be `/marketing/automation-new/`. Open it in the Divi Builder and choose **Start Building** (blank).
 2. Build three sections, top to bottom:
 
 **Section A: Fullwidth section** (top and bottom padding 0)
-- One **Fullwidth Code** module. Paste **Code 1: Styles, header and hero form**, with `[UPLOADS]` replaced.
+- One **Fullwidth Code** module. Paste **Code 1: Styles, header and hero form**.
 
 **Section B: Regular section** (top and bottom padding 0)
 - Section → Advanced → CSS Class: `qlp-form-section`
 - One row, one column, with one **Contact Form** module, set up as in Step 3. This section is invisible on the page; it's the form that actually sends the email.
 
 **Section C: Fullwidth section** (top and bottom padding 0)
-- One **Fullwidth Code** module. Paste **Code 2: Page body and scripts**, with `[UPLOADS]` replaced.
+- One **Fullwidth Code** module. Paste **Code 2: Page body and scripts**.
 
 3. Save as draft.
 
@@ -113,7 +101,7 @@ Save as draft.
 
 ## Step 4: Create the new thank-you page (draft)
 1. Pages → Add New. Title: **Thank you (new)**. Slug: **thank-you-new**. Page Attributes → Parent: **Automation (new)**, Template: **Blank Page**.
-2. Divi Builder → Start Building → one **Fullwidth section** (padding 0) with one **Fullwidth Code** module. Paste **Code 3: Thank-you page**, with `[UPLOADS]` replaced, and:
+2. Divi Builder → Start Building → one **Fullwidth section** (padding 0) with one **Fullwidth Code** module. Paste **Code 3: Thank-you page**, and:
    - If my calendar link is not `none`, replace `[CALENDAR LINK]` with it.
    - If it is `none`, delete this one line from Code 3: `<a class="btn" href="[CALENDAR LINK]">Or pick a time now</a>`
 3. If Step 0 found Google Ads or Google tag code on the old thank-you page, add a second **Fullwidth Code** module below and paste that code into it, exactly as found.
@@ -426,7 +414,7 @@ body.page{background:#f6f7f4}
 <div class="qlp">
 <header class="top">
   <div class="wrap">
-    <img class="logo" src="[UPLOADS]/qubik-logo.png" alt="Qubik" width="109" height="42">
+    <img class="logo" src="https://cdn.jsdelivr.net/gh/agrawalnisha096-web/Test-1@3f96f8a9be8a86e8f8277b1b38c7a664380359f1/google-ads/landing-assets/qubik-logo.png" alt="Qubik" width="109" height="42">
     <div class="top-right">
       <a class="phone" href="tel:+61732058938"><span>Talk to us</span>(07) 3205 8938</a>
       <a class="btn sm" href="#book">Book a free call</a>
@@ -523,7 +511,7 @@ body.page{background:#f6f7f4}
   <div class="wrap">
     <figure class="screen">
       <div class="chrome" aria-hidden="true"><i></i><i></i><i></i><span>Profitability dashboard · overview</span></div>
-      <img src="[UPLOADS]/screen-overview.webp" width="1400" height="875" alt="Qubik profitability dashboard overview showing profit, margin, revenue against cost and profit by site">
+      <img src="https://cdn.jsdelivr.net/gh/agrawalnisha096-web/Test-1@3f96f8a9be8a86e8f8277b1b38c7a664380359f1/google-ads/landing-assets/screen-overview.webp" width="1400" height="875" alt="Qubik profitability dashboard overview showing profit, margin, revenue against cost and profit by site">
     </figure>
     <p class="caption">A Qubik profitability dashboard · sample data · fictional names</p>
     <ul class="strip" aria-label="What you get">
@@ -600,27 +588,27 @@ body.page{background:#f6f7f4}
     </div>
     <div class="panel" role="tabpanel" id="p-overview" aria-labelledby="t-overview">
       <div><h3>The whole business at a glance</h3><p>Profit and margin for the latest period and the last 12 months, revenue against cost, and profit by site, on the page leaders open first.</p><ul class="tick pts"><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Your key KPIs in one place</span></li><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Draft or signed-off status, so you know which figures are final</span></li></ul></div>
-      <figure class="screen"><img src="[UPLOADS]/screen-overview.webp" loading="lazy" width="1400" height="875" alt="Dashboard overview page"></figure>
+      <figure class="screen"><img src="https://cdn.jsdelivr.net/gh/agrawalnisha096-web/Test-1@3f96f8a9be8a86e8f8277b1b38c7a664380359f1/google-ads/landing-assets/screen-overview.webp" loading="lazy" width="1400" height="875" alt="Dashboard overview page"></figure>
     </div>
     <div class="panel" role="tabpanel" id="p-site" aria-labelledby="t-site" hidden>
       <div><h3>Drill down to any site, customer or project</h3><p>One click from the big picture to a single site: its KPIs, cost stack, profit by period and a full P&amp;L for every period.</p></div>
-      <figure class="screen"><img src="[UPLOADS]/screen-site.webp" loading="lazy" width="1400" height="875" alt="Site profitability page with KPIs, cost stack and period P&amp;L"></figure>
+      <figure class="screen"><img src="https://cdn.jsdelivr.net/gh/agrawalnisha096-web/Test-1@3f96f8a9be8a86e8f8277b1b38c7a664380359f1/google-ads/landing-assets/screen-site.webp" loading="lazy" width="1400" height="875" alt="Site profitability page with KPIs, cost stack and period P&amp;L"></figure>
     </div>
     <div class="panel" role="tabpanel" id="p-heatmap" aria-labelledby="t-heatmap" hidden>
       <div><h3>See where margin is leaking</h3><p>Every site across every period, coloured by margin. Problems that hide inside a total stand out at a glance.</p></div>
-      <figure class="screen"><img src="[UPLOADS]/screen-heatmap.webp" loading="lazy" width="1400" height="701" alt="Margin heatmap of every site across 26 periods"></figure>
+      <figure class="screen"><img src="https://cdn.jsdelivr.net/gh/agrawalnisha096-web/Test-1@3f96f8a9be8a86e8f8277b1b38c7a664380359f1/google-ads/landing-assets/screen-heatmap.webp" loading="lazy" width="1400" height="701" alt="Margin heatmap of every site across 26 periods"></figure>
     </div>
     <div class="panel" role="tabpanel" id="p-forecast" aria-labelledby="t-forecast" hidden>
       <div><h3>Look ahead, not just back</h3><p>A rolling forecast built from work that's already booked, so you can see the next six weeks of revenue, labour and profit, not just last month's.</p></div>
-      <figure class="screen"><img src="[UPLOADS]/screen-forecast.webp" loading="lazy" width="1400" height="875" alt="Six-week forecast page"></figure>
+      <figure class="screen"><img src="https://cdn.jsdelivr.net/gh/agrawalnisha096-web/Test-1@3f96f8a9be8a86e8f8277b1b38c7a664380359f1/google-ads/landing-assets/screen-forecast.webp" loading="lazy" width="1400" height="875" alt="Six-week forecast page"></figure>
     </div>
     <div class="panel" role="tabpanel" id="p-alerts" aria-labelledby="t-alerts" hidden>
       <div><h3>Problems come to you</h3><p>Margin breaches, staffing variances and out-of-date data are flagged automatically, against thresholds you set and can change.</p></div>
-      <figure class="screen"><img src="[UPLOADS]/screen-alerts.webp" loading="lazy" width="1400" height="875" alt="Alerts page listing margin, roster and data feed alerts"></figure>
+      <figure class="screen"><img src="https://cdn.jsdelivr.net/gh/agrawalnisha096-web/Test-1@3f96f8a9be8a86e8f8277b1b38c7a664380359f1/google-ads/landing-assets/screen-alerts.webp" loading="lazy" width="1400" height="875" alt="Alerts page listing margin, roster and data feed alerts"></figure>
     </div>
     <div class="panel" role="tabpanel" id="p-reconcile" aria-labelledby="t-reconcile" hidden>
       <div><h3>Numbers you can trust</h3><p>Dashboard figures are tied back to the closed results in your accounting system every month, with any difference explained. Built by accountants, checked like accountants.</p></div>
-      <figure class="screen"><img src="[UPLOADS]/screen-reconcile.webp" loading="lazy" width="1400" height="875" alt="Reconciliation page tying dashboard results to the accounting system"></figure>
+      <figure class="screen"><img src="https://cdn.jsdelivr.net/gh/agrawalnisha096-web/Test-1@3f96f8a9be8a86e8f8277b1b38c7a664380359f1/google-ads/landing-assets/screen-reconcile.webp" loading="lazy" width="1400" height="875" alt="Reconciliation page tying dashboard results to the accounting system"></figure>
     </div>
     <p class="caption">Real screens from a working Qubik dashboard · sample data · fictional names</p>
     <div class="prompt"><p>Want to see what a dashboard for your business could show?<span>Book a free call and we'll talk through your numbers and your systems.</span></p><a class="btn" href="#book">Book a free discovery call</a></div>
@@ -641,7 +629,7 @@ body.page{background:#f6f7f4}
         <p class="control"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M7.5 12.5l3 3 6-6.5"/></svg>Your people stay in control: anything the system isn't sure about goes to a person to decide.</p>
       </div>
       <figure class="phone-wrap" style="margin:0" aria-label="Illustration: Monday morning on a phone, with a margin alert and the weekly report already sent">
-        <div class="device"><div class="scr"><img src="[UPLOADS]/phone-overview.webp" loading="lazy" width="600" height="1298" alt=""></div></div>
+        <div class="device"><div class="scr"><img src="https://cdn.jsdelivr.net/gh/agrawalnisha096-web/Test-1@3f96f8a9be8a86e8f8277b1b38c7a664380359f1/google-ads/landing-assets/phone-overview.webp" loading="lazy" width="600" height="1298" alt=""></div></div>
         <div class="toast alert" aria-hidden="true"><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 9v4M12 17h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg></span><span><b>Margin alert · Townsville</b>4.1% this fortnight, below your 5% threshold.<br><small>Monday 6:58am</small></span></div>
         <div class="toast mail" aria-hidden="true"><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg></span><span><b>Weekly profit report</b>Sent automatically to the leadership team.<br><small>Monday 7:00am</small></span></div>
         <figcaption class="caption">Illustration · sample data · fictional names</figcaption>
@@ -777,35 +765,35 @@ body.page{background:#f6f7f4}
     </div>
     <div class="sector-panel" role="tabpanel" id="s-logistics" aria-labelledby="ts-logistics">
       <p class="sector-meta"><span><b>Sites:</b> depots</span><span><b>Work:</b> consignments and loads</span><span><b>See:</b> revenue by depot and contract customer, labour, fleet costs</span></p>
-      <figure class="screen"><img src="[UPLOADS]/sector-logistics.webp" loading="lazy" width="1400" height="875" alt="Logistics dashboard by depot"></figure>
+      <figure class="screen"><img src="https://cdn.jsdelivr.net/gh/agrawalnisha096-web/Test-1@3f96f8a9be8a86e8f8277b1b38c7a664380359f1/google-ads/landing-assets/sector-logistics.webp" loading="lazy" width="1400" height="875" alt="Logistics dashboard by depot"></figure>
     </div>
     <div class="sector-panel" role="tabpanel" id="s-hospitality" aria-labelledby="ts-hospitality" hidden>
       <p class="sector-meta"><span><b>Sites:</b> venues</span><span><b>Work:</b> covers</span><span><b>See:</b> dine-in, takeaway and functions by venue, with labour as the lever</span></p>
-      <figure class="screen"><img src="[UPLOADS]/sector-hospitality.webp" loading="lazy" width="1400" height="875" alt="Hospitality dashboard by venue"></figure>
+      <figure class="screen"><img src="https://cdn.jsdelivr.net/gh/agrawalnisha096-web/Test-1@3f96f8a9be8a86e8f8277b1b38c7a664380359f1/google-ads/landing-assets/sector-hospitality.webp" loading="lazy" width="1400" height="875" alt="Hospitality dashboard by venue"></figure>
     </div>
     <div class="sector-panel" role="tabpanel" id="s-healthcare" aria-labelledby="ts-healthcare" hidden>
       <p class="sector-meta"><span><b>Sites:</b> clinics</span><span><b>Work:</b> appointments and consults</span><span><b>See:</b> bulk-billed, private and NDIS revenue by clinic, practitioner costs</span></p>
-      <figure class="screen"><img src="[UPLOADS]/sector-healthcare.webp" loading="lazy" width="1400" height="875" alt="Healthcare dashboard by clinic"></figure>
+      <figure class="screen"><img src="https://cdn.jsdelivr.net/gh/agrawalnisha096-web/Test-1@3f96f8a9be8a86e8f8277b1b38c7a664380359f1/google-ads/landing-assets/sector-healthcare.webp" loading="lazy" width="1400" height="875" alt="Healthcare dashboard by clinic"></figure>
     </div>
     <div class="sector-panel" role="tabpanel" id="s-mining" aria-labelledby="ts-mining" hidden>
       <p class="sector-meta"><span><b>Sites:</b> project sites</span><span><b>Work:</b> crew shifts</span><span><b>See:</b> revenue by client contract, labour and plant costs by site</span></p>
-      <figure class="screen"><img src="[UPLOADS]/sector-mining.webp" loading="lazy" width="1400" height="875" alt="Mining and civil services dashboard by site"></figure>
+      <figure class="screen"><img src="https://cdn.jsdelivr.net/gh/agrawalnisha096-web/Test-1@3f96f8a9be8a86e8f8277b1b38c7a664380359f1/google-ads/landing-assets/sector-mining.webp" loading="lazy" width="1400" height="875" alt="Mining and civil services dashboard by site"></figure>
     </div>
     <div class="sector-panel" role="tabpanel" id="s-retail" aria-labelledby="ts-retail" hidden>
       <p class="sector-meta"><span><b>Sites:</b> stores</span><span><b>Work:</b> orders and baskets</span><span><b>See:</b> in-store, online and click &amp; collect by store, staffing against trade</span></p>
-      <figure class="screen"><img src="[UPLOADS]/sector-retail.webp" loading="lazy" width="1400" height="875" alt="Retail dashboard by store"></figure>
+      <figure class="screen"><img src="https://cdn.jsdelivr.net/gh/agrawalnisha096-web/Test-1@3f96f8a9be8a86e8f8277b1b38c7a664380359f1/google-ads/landing-assets/sector-retail.webp" loading="lazy" width="1400" height="875" alt="Retail dashboard by store"></figure>
     </div>
     <div class="sector-panel" role="tabpanel" id="s-facilities" aria-labelledby="ts-facilities" hidden>
       <p class="sector-meta"><span><b>Sites:</b> contracts</span><span><b>Work:</b> service visits</span><span><b>See:</b> commercial, government and education contracts, labour by contract</span></p>
-      <figure class="screen"><img src="[UPLOADS]/sector-facilities.webp" loading="lazy" width="1400" height="875" alt="Facilities services dashboard by contract"></figure>
+      <figure class="screen"><img src="https://cdn.jsdelivr.net/gh/agrawalnisha096-web/Test-1@3f96f8a9be8a86e8f8277b1b38c7a664380359f1/google-ads/landing-assets/sector-facilities.webp" loading="lazy" width="1400" height="875" alt="Facilities services dashboard by contract"></figure>
     </div>
     <div class="sector-panel" role="tabpanel" id="s-earlylearning" aria-labelledby="ts-earlylearning" hidden>
       <p class="sector-meta"><span><b>Sites:</b> centres</span><span><b>Work:</b> bookings and sessions</span><span><b>See:</b> subsidised, full-fee and kindergarten places by centre, educator costs</span></p>
-      <figure class="screen"><img src="[UPLOADS]/sector-earlylearning.webp" loading="lazy" width="1400" height="875" alt="Early learning dashboard by centre"></figure>
+      <figure class="screen"><img src="https://cdn.jsdelivr.net/gh/agrawalnisha096-web/Test-1@3f96f8a9be8a86e8f8277b1b38c7a664380359f1/google-ads/landing-assets/sector-earlylearning.webp" loading="lazy" width="1400" height="875" alt="Early learning dashboard by centre"></figure>
     </div>
     <div class="sector-panel" role="tabpanel" id="s-aviation" aria-labelledby="ts-aviation" hidden>
       <p class="sector-meta"><span><b>Sites:</b> ports</span><span><b>Work:</b> turnarounds</span><span><b>See:</b> revenue by airline customer, rostered labour, equipment costs by port</span></p>
-      <figure class="screen"><img src="[UPLOADS]/sector-aviation.webp" loading="lazy" width="1400" height="875" alt="Aviation ground services dashboard by port"></figure>
+      <figure class="screen"><img src="https://cdn.jsdelivr.net/gh/agrawalnisha096-web/Test-1@3f96f8a9be8a86e8f8277b1b38c7a664380359f1/google-ads/landing-assets/sector-aviation.webp" loading="lazy" width="1400" height="875" alt="Aviation ground services dashboard by port"></figure>
     </div>
     <p class="caption">Sample data · fictional names. Don't see your industry? The same approach works for any business with sites, teams, customers or projects.</p>
   </div>
@@ -855,7 +843,7 @@ body.page{background:#f6f7f4}
 </section>
 <footer>
   <div class="wrap">
-    <img src="[UPLOADS]/qubik-logo-white.png" alt="Qubik" width="88" height="34">
+    <img src="https://cdn.jsdelivr.net/gh/agrawalnisha096-web/Test-1@3f96f8a9be8a86e8f8277b1b38c7a664380359f1/google-ads/landing-assets/qubik-logo-white.png" alt="Qubik" width="88" height="34">
     <span>Qubik Accounting · 18–22 Dixon Street, Strathpine QLD 4500</span>
     <span><a href="tel:+61732058938">(07) 3205 8938</a> · <a href="https://qubik.com.au/privacy-policy/">Privacy policy</a></span>
   </div>
@@ -1089,7 +1077,7 @@ body.page{background:#f6f7f4}
 </style>
 <div class="qlp">
 <header class="top"><div class="wrap">
-  <img src="[UPLOADS]/qubik-logo.png" alt="Qubik" width="109" height="42">
+  <img src="https://cdn.jsdelivr.net/gh/agrawalnisha096-web/Test-1@3f96f8a9be8a86e8f8277b1b38c7a664380359f1/google-ads/landing-assets/qubik-logo.png" alt="Qubik" width="109" height="42">
   <a href="tel:+61732058938">(07) 3205 8938</a>
 </div></header>
 <section class="hero"><div class="wrap">
@@ -1126,7 +1114,7 @@ body.page{background:#f6f7f4}
   </div>
 </div></section>
 <footer><div class="wrap">
-  <img src="[UPLOADS]/qubik-logo-white.png" alt="Qubik" width="83" height="32">
+  <img src="https://cdn.jsdelivr.net/gh/agrawalnisha096-web/Test-1@3f96f8a9be8a86e8f8277b1b38c7a664380359f1/google-ads/landing-assets/qubik-logo-white.png" alt="Qubik" width="83" height="32">
   <span>Qubik Accounting · 18–22 Dixon Street, Strathpine QLD 4500</span>
   <span><a href="tel:+61732058938">(07) 3205 8938</a> · <a href="https://qubik.com.au/privacy-policy/">Privacy policy</a></span>
 </div></footer>
