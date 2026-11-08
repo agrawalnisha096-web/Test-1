@@ -101,7 +101,7 @@ Then, in WordPress:
    `window.dataLayer.filter(function (x) { return x[0] === 'event' || x[0] === 'set'; })`
    It should show a `user_data` entry with `email: "test@example.com"` and `phone_number: "+61400000000"`, and a `conversion` event whose `send_to` ends with the Lead form label.
 4. Refresh the thank-you page and run the same line again. There should be **no** second conversion event.
-5. Ask me to confirm the test email arrived.
+5. This test also sends one lead email to the sales inbox. That's expected; don't wait for me to confirm it. I'll check the email later.
 6. In Google Ads, **Goals → Conversions**: the status of the two actions may say "Unverified" or "No recent conversions" for a few hours. That's normal. Tell me what it shows.
 
 If `typeof gtag` isn't `"function"` or the conversion event is missing, stop and tell me what you see.
