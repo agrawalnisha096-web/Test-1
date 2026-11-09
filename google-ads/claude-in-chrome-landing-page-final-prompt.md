@@ -63,7 +63,7 @@ Start from the live form, so the email and spam settings carry over:
 
 Then set the module up exactly like this:
 
-**Content → Fields:** exactly these 20 fields, in any order. **Every field is an Input Field, and none is required.** The custom form on the page does all the checking. A required, dropdown, email or checkbox field here could block a submission without the visitor seeing why.
+**Content → Fields:** exactly these 21 fields, in any order. **Every field is an Input Field, and none is required.** The custom form on the page does all the checking. A required, dropdown, email or checkbox field here could block a submission without the visitor seeing why.
 - **Keep** any existing field whose Field ID is in the table, changing its type to Input Field and Required to No.
 - **Delete** any field that's not in the table.
 - **Add** the missing ones.
@@ -74,6 +74,7 @@ Then set the module up exactly like this:
 | `company` | Company |
 | `email` | Email |
 | `phone` | Mobile |
+| `role` | Role |
 | `revenue` | Annual revenue |
 | `staff` | Staff |
 | `automate` | Wants to fix |
@@ -133,7 +134,7 @@ Send me:
    3. Step 2: any answers; type `Test – please ignore` in the challenge box, then Next.
    4. Step 3: Name `Test Lead final`, Company `Test – please ignore`, Email `test@example.com`, Mobile `0400 000 000`; tick consent; click "Book my free call".
 4. Confirm the browser lands on `/marketing/automation/thank-you/` (still the old thank-you page at this stage; that's expected).
-5. Ask me to confirm the test email arrived with all 20 fields, including `gclid: TEST-FINAL`, `variant: ai` and an `estimate` starting "A$101,200 a year".
+5. Ask me to confirm the test email arrived with all 21 fields, including `gclid: TEST-FINAL`, `variant: ai` and an `estimate` starting "A$101,200 a year".
 
 If the browser doesn't reach the thank-you page within 15 seconds, the form shows "Sorry, something went wrong…". In that case stop, and report what the browser console shows and what this returns: `document.querySelector('.qlp-divi-form .et-pb-contact-message').textContent`.
 
@@ -212,6 +213,8 @@ List what you created and changed, the results of both tests, and anything you s
 .qlp .chip input:checked + span{border-color: var(--teal); background: var(--teal-soft);}
 .qlp .chip input:checked + span::before{background: var(--teal); border-color: var(--teal); box-shadow: inset 0 0 0 3px var(--surface);}
 .qlp .chip input:focus-visible + span{outline: 3px solid var(--teal); outline-offset: 2px;}
+.qlp .chip input:disabled{cursor: not-allowed;}
+.qlp .chip input:disabled + span{opacity: .45;}
 .qlp .two{display: grid; grid-template-columns: 1fr 1fr; gap: 14px;}
 .qlp label.f{display: grid; gap: 5px; font-size: 14px; font-weight: 600;}
 .qlp label.f small{font-weight: 400; color: var(--muted);}
@@ -442,17 +445,17 @@ body.page{background:#f6f7f4}
       <form id="qlp-lead" novalidate>
         <div class="progress" aria-live="polite"><span id="step-label">Step 1 of 3</span><div class="bar" aria-hidden="true"><i id="bar"></i></div></div>
         <fieldset class="step" data-step="1">
-          <legend><h2>What would you most like to fix?</h2></legend>
-          <p class="lead">Pick any that apply. It helps us prepare for your free discovery call.</p>
+          <legend><h2>What's the biggest challenge holding your business back?</h2></legend>
+          <p class="lead">Select up to two.</p>
           <div class="chips">
-            <label class="chip"><input type="checkbox" name="automate" value="Too much manual admin"><span>Too much manual admin</span></label>
-            <label class="chip"><input type="checkbox" name="automate" value="Slow month-end reporting"><span>Slow month&#8209;end reporting</span></label>
-            <label class="chip"><input type="checkbox" name="automate" value="Profit by site, customer or project"><span>Profit by site, customer or project</span></label>
-            <label class="chip"><input type="checkbox" name="automate" value="Systems that don't talk to each other"><span>Systems that don't talk to each other</span></label>
-            <label class="chip"><input type="checkbox" name="automate" value="Cash flow and forecasting"><span>Cash flow and forecasting</span></label>
-            <label class="chip"><input type="checkbox" name="automate" value="Not sure yet"><span>Not sure yet</span></label>
+            <label class="chip"><input type="checkbox" name="automate" value="Not knowing how my business is really performing"><span>Not knowing how my business is really performing</span></label>
+            <label class="chip"><input type="checkbox" name="automate" value="Rising staff costs and too much manual work"><span>Rising staff costs and too much manual work</span></label>
+            <label class="chip"><input type="checkbox" name="automate" value="Profit margins being squeezed or opportunities being missed"><span>Profit margins being squeezed or opportunities being missed</span></label>
+            <label class="chip"><input type="checkbox" name="automate" value="Cash flow problems and slow customer payments"><span>Cash flow problems and slow customer payments</span></label>
+            <label class="chip"><input type="checkbox" name="automate" value="Disconnected software, spreadsheets and reporting"><span>Disconnected software, spreadsheets and reporting</span></label>
+            <label class="chip"><input type="checkbox" name="automate" value="Growing the business without adding more staff"><span>Growing the business without adding more staff</span></label>
           </div>
-          <p class="err" data-err hidden>Pick at least one, or "Not sure yet".</p>
+          <p class="err" data-err hidden>Pick at least one.</p>
           <button class="btn navy" type="button" data-next>Next</button>
         </fieldset>
         <fieldset class="step" data-step="2" hidden>
@@ -470,7 +473,7 @@ body.page{background:#f6f7f4}
           </div>
           <label class="f" for="f-when">When would you like this sorted?
             <select id="f-when" name="timing" required>
-              <option value="">Select</option><option>This quarter</option><option>Within 6 months</option><option>Just exploring for now</option>
+              <option value="">Select</option><option>Now, ASAP</option><option>This quarter</option><option>Within 6 months</option><option>Just exploring for now</option>
             </select></label>
           <label class="f" for="f-challenge">Your biggest reporting or automation challenge <small>(optional)</small>
             <textarea id="f-challenge" name="challenge" rows="2"></textarea></label>
@@ -488,6 +491,10 @@ body.page{background:#f6f7f4}
             <label class="f" for="f-email">Business email<input id="f-email" name="email" type="email" autocomplete="email" required></label>
             <label class="f" for="f-phone">Mobile<input id="f-phone" name="phone" type="tel" autocomplete="tel" required></label>
           </div>
+          <label class="f" for="f-role">Your role
+            <select id="f-role" name="role" required>
+              <option value="">Select</option><option>Owner / Founder</option><option>CEO / Managing Director</option><option>CFO / Finance</option><option>COO / Operations</option><option>General Manager</option><option>Other</option>
+            </select></label>
           <label class="consent" for="f-consent"><input id="f-consent" name="consent" type="checkbox" required> I agree to Qubik contacting me by phone, email or SMS about this enquiry. I can opt out at any time.</label>
           <p class="err" data-err hidden>Please fill in every field and tick the box.</p>
           <div class="actions"><button class="btn ghost" type="button" data-back>Back</button><button class="btn full" type="submit" id="qlp-submit">Book my free call</button></div>
@@ -690,7 +697,7 @@ body.page{background:#f6f7f4}
       <div><dt>Helping Australian businesses</dt><dd>Since 2007</dd></div>
       <div><dt>Xero partner</dt><dd>Since 2013</dd></div>
       <div><dt>Businesses we work with</dt><dd>10 to 1,000+ staff</dd></div>
-      <div><dt>Based in Strathpine, QLD</dt><dd>Australia-wide</dd></div>
+      <div><dt>Based in Brisbane, QLD</dt><dd>Australia-wide</dd></div>
     </dl>
     <div class="vquote">
       <div class="avatar" aria-hidden="true">DG</div>
@@ -730,7 +737,7 @@ body.page{background:#f6f7f4}
     <h2>Start with what pays back. See it working before you commit.</h2>
     <ol class="steps">
       <li><h3>Free discovery call</h3><p>We learn how your business runs, where the time goes and what you can't see today.</p></li>
-      <li><h3>Scoping and prototype</h3><p>We map your processes and systems, and show you a working prototype, so you can see it and shape it before deciding on the build.</p></li>
+      <li><h3>Scoping and prototype</h3><p>We map your processes and systems, and <strong style="background:var(--lime-soft);color:var(--ink);padding:1px 5px;border-radius:4px">show you a working prototype</strong>, so you can see it and shape it before deciding on the build.</p></li>
       <li><h3>Build</h3><p>We automate and connect your systems to the agreed design, checked against your current reports before go-live.</p></li>
       <li><h3>Support and grow</h3><p>We keep it running as your business changes, and add the next process or dashboard when you're ready.</p></li>
     </ol>
@@ -755,7 +762,7 @@ body.page{background:#f6f7f4}
     <h2>How pricing works</h2>
     <p class="intro">Every business is different, so we don't sell packages. We agree the design with you first, then price the build against it, so the price you sign reflects exactly what you approved.</p>
     <div class="pricing">
-      <div class="pcard"><span class="label">Scoping &amp; prototype</span><h3>Fixed fee, agreed upfront</h3><p>We map your processes, systems and requirements and show you a working prototype. No obligation to go further: you keep the requirements and findings.</p></div>
+      <div class="pcard"><span class="label">Scoping &amp; prototype</span><h3>Fixed fee, agreed upfront</h3><p>We map your processes, systems and requirements and <strong style="background:var(--lime-soft);color:var(--ink);padding:1px 5px;border-radius:4px">show you a working prototype</strong>. No obligation to go further: you keep the requirements and findings.</p></div>
       <div class="pcard"><span class="label">Build</span><h3>Fixed price, against the agreed design</h3><p>Priced once the design is agreed, as a fixed project price, staged in phases, or spread as a monthly fee.</p></div>
       <div class="pcard"><span class="label">Ongoing support</span><h3>Optional, monthly</h3><p>Keeps your automation, dashboards and data feeds running and up to date as your business changes.</p></div>
     </div>
@@ -777,7 +784,7 @@ body.page{background:#f6f7f4}
       <details><summary>How long does it take?</summary><p>We're fast, and we move as quickly as your team can handle. You'll see a working prototype early in scoping, which typically takes two to three weeks, and the build moves at the pace your people can test and adopt it. You'll have a timeline before you commit to anything.</p></details>
       <details><summary>What happens on the call?</summary><p>A relaxed 30-minute conversation by phone or video with business experts, not salespeople. We look for both business efficiencies and technology efficiencies; where the two meet is usually the richest source of opportunities. You'll leave with an honest view of what's worth doing.</p></details>
       <details><summary>Will automation replace our staff?</summary><p>It replaces the repetitive part of their work, not the people. Most businesses use the time it frees up to grow without hiring more admin, and to give good people more interesting work.</p></details>
-      <details><summary>Is our data safe?</summary><p>We only use the access the work needs, read-only wherever possible. Dashboards sit behind secure sign-in, and access can be limited so each person sees only what they should, for example a manager seeing only their own site.</p></details>
+      <details><summary>Is our data safe?</summary><p>Yes. We only use the access the work needs, read-only wherever possible. Dashboards sit behind secure sign-in, and access can be limited so each person sees only what they should, for example a manager seeing only their own site.</p></details>
       <details><summary>Where does AI come in?</summary><p>Where it genuinely helps: reading documents so nobody re-keys them, highlighting unusual trends, and answering questions about your data in everyday language where supported. Your people stay in control of decisions.</p></details>
       <details><summary>What does it cost?</summary><p>It depends on your processes and systems, so we don't publish packages. See <a href="#pricing-anchor">how pricing works</a> above; you'll always know the price before any work starts.</p></details>
     </div>
@@ -901,6 +908,13 @@ body.page{background:#f6f7f4}
     s.querySelector('[data-err]').hidden = ok;
     return ok;
   }
+  var CHIP_MAX = 2;
+  var chips = form.querySelectorAll('input[name=automate]');
+  function limitChips() {
+    var picked = form.querySelectorAll('input[name=automate]:checked').length;
+    chips.forEach(function (c) { c.disabled = c.checked ? false : picked >= CHIP_MAX; });
+  }
+  chips.forEach(function (c) { c.addEventListener('change', limitChips); });
   form.addEventListener('click', function (e) {
     if (e.target.matches('[data-next]')) { if (valid(current)) { show(current + 1); } }
     if (e.target.matches('[data-back]')) { show(current - 1); }
@@ -918,7 +932,7 @@ body.page{background:#f6f7f4}
     var submitBtn = document.getElementById('qlp-submit');
     var picked = Array.prototype.map.call(form.querySelectorAll('input[name=automate]:checked'), function (el) { return el.value; });
     setDivi('automate', picked.join(', '));
-    ['staff', 'revenue', 'timing', 'challenge', 'name', 'company', 'email', 'phone', 'estimate', 'variant'].forEach(function (k) {
+    ['staff', 'revenue', 'timing', 'challenge', 'name', 'company', 'email', 'phone', 'role', 'estimate', 'variant'].forEach(function (k) {
       setDivi(k, form.elements[k].value);
     });
     setDivi('consent', 'Yes: agreed to be contacted by phone, email or SMS');

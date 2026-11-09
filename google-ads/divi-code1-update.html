@@ -1,0 +1,345 @@
+<style>@font-face{font-family:'IBM Plex Sans';font-style:normal;font-weight:400;font-display:swap;src:url(https://cdn.jsdelivr.net/npm/@fontsource/ibm-plex-sans@5.1.1/files/ibm-plex-sans-latin-400-normal.woff2) format('woff2')}@font-face{font-family:'IBM Plex Sans';font-style:normal;font-weight:500;font-display:swap;src:url(https://cdn.jsdelivr.net/npm/@fontsource/ibm-plex-sans@5.1.1/files/ibm-plex-sans-latin-500-normal.woff2) format('woff2')}@font-face{font-family:'IBM Plex Sans';font-style:normal;font-weight:600;font-display:swap;src:url(https://cdn.jsdelivr.net/npm/@fontsource/ibm-plex-sans@5.1.1/files/ibm-plex-sans-latin-600-normal.woff2) format('woff2')}@font-face{font-family:'IBM Plex Sans';font-style:normal;font-weight:700;font-display:swap;src:url(https://cdn.jsdelivr.net/npm/@fontsource/ibm-plex-sans@5.1.1/files/ibm-plex-sans-latin-700-normal.woff2) format('woff2')}@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:400;font-display:swap;src:url(https://cdn.jsdelivr.net/npm/@fontsource/ibm-plex-mono@5.1.1/files/ibm-plex-mono-latin-400-normal.woff2) format('woff2')}@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:500;font-display:swap;src:url(https://cdn.jsdelivr.net/npm/@fontsource/ibm-plex-mono@5.1.1/files/ibm-plex-mono-latin-500-normal.woff2) format('woff2')}</style>
+<style>
+.qlp{--navy: #2e4455; --navy-deep: #22333f; --teal: #2e96a0; --teal-ink: #1f7a83; --teal-soft: #e3f1f2; --lime: #c6da2c; --lime-soft: #eef3cf; --page: #f6f7f4; --surface: #ffffff; --ink: #1f2a33; --muted: #5b6b78; --line: #dde3e2; --on-navy: #f3f6f7; --on-navy-muted: #b6c6cd; --ok: #2f8a5b; --bad: #c0392b; --note-bg: #fff6d9; --note-ink: #5e4a00; --font: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif; --mono: 'IBM Plex Mono', ui-monospace, Menlo, monospace;}
+.qlp *{box-sizing: border-box;}
+.qlp [hidden]{display: none !important;}
+.qlp{margin: 0; background: var(--page); color: var(--ink); font-family: var(--font); font-size: 17px; line-height: 1.6;}
+.qlp h1,.qlp h2,.qlp h3{line-height: 1.15; text-wrap: balance; margin: 0; letter-spacing: -0.01em;}
+.qlp p{margin: 0;}
+.qlp a{color: var(--teal-ink);}
+.qlp img{max-width: 100%; display: block;}
+.qlp :focus-visible{outline: 3px solid var(--teal); outline-offset: 2px;}
+.qlp .wrap{max-width: 1160px; margin: 0 auto; padding-left: 16px; padding-right: 16px;}
+.qlp .top{background: var(--surface); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 30;}
+.qlp .top .wrap{display: flex; justify-content: space-between; align-items: center; gap: 16px; padding-block: 10px;}
+.qlp .logo{height: 42px; width: auto;}
+.qlp .top-right{display: flex; align-items: center; gap: 18px;}
+.qlp .phone{font-weight: 600; font-size: 15px; color: var(--navy); text-decoration: none;}
+.qlp .phone span{color: var(--muted); font-weight: 400; margin-right: 6px;}
+.qlp .btn{font-family: var(--font); font-weight: 600; font-size: 17px; border: 0; border-radius: 8px; padding: 14px 22px; cursor: pointer; background: var(--lime); color: var(--navy-deep); text-decoration: none; display: inline-block; text-align: center; line-height: 1.2;}
+.qlp .btn:hover{filter: brightness(1.04);}
+.qlp .btn.sm{padding: 10px 16px; font-size: 15px;}
+.qlp .btn.navy{background: var(--navy); color: #fff;}
+.qlp .btn.line{background: transparent; color: var(--on-navy); box-shadow: inset 0 0 0 1px var(--on-navy-muted);}
+.qlp .btn.ghost{background: transparent; color: var(--muted); padding-inline: 8px; font-weight: 500; font-size: 15px;}
+.qlp .btn.full{flex: 1;}
+.qlp .hero{background: var(--navy); color: var(--on-navy);}
+.qlp .hero .wrap{display: grid; grid-template-columns: minmax(0, 1.12fr) minmax(0, 0.88fr); gap: 48px; padding-block: 56px 120px; align-items: start;}
+.qlp .eyebrow{font-size: 13px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--lime);}
+.qlp .hero h1{font-size: clamp(32px, 4.3vw, 52px); font-weight: 600; margin-top: 14px;}
+.qlp .hero .sub{font-size: 19px; color: var(--on-navy-muted); margin-top: 18px; max-width: 32em;}
+.qlp .hero-ctas{display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px;}
+.qlp .trust{display: flex; flex-wrap: wrap; gap: 8px 22px; margin: 28px 0 0; padding: 0; list-style: none; font-size: 15px;}
+.qlp .trust li{display: flex; gap: 8px; align-items: center;}
+.qlp .trust li::before{content: ""; width: 8px; height: 8px; border-radius: 2px; background: var(--lime); flex: none;}
+.qlp .formcard{background: var(--surface); color: var(--ink); border-radius: 12px; padding: 28px; box-shadow: 0 18px 40px rgba(10, 25, 35, 0.3); scroll-margin-top: 90px;}
+.qlp .progress{display: flex; align-items: center; gap: 10px; font-size: 13px; color: var(--muted); font-weight: 500;}
+.qlp .bar{flex: 1; height: 6px; background: var(--line); border-radius: 3px; overflow: hidden;}
+.qlp .bar i{display: block; height: 100%; width: 33.3%; background: var(--teal); border-radius: 3px; transition: width .3s ease;}
+.qlp fieldset.step{border: 0; padding: 0; margin: 16px 0 0; display: grid; gap: 14px;}
+.qlp .step legend{padding: 0; margin-bottom: 8px;}
+.qlp .step h2{font-size: 22px; font-weight: 600;}
+.qlp .step .lead{color: var(--muted); font-size: 15px;}
+.qlp .chips{display: grid; grid-template-columns: 1fr 1fr; gap: 10px;}
+.qlp .chip{position: relative;}
+.qlp .chip input{position: absolute; opacity: 0; inset: 0; width: 100%; height: 100%; margin: 0; cursor: pointer;}
+.qlp .chip span{display: flex; align-items: center; min-height: 54px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--page); font-size: 15px; line-height: 1.3; font-weight: 600; transition: border-color .15s, background .15s;}
+.qlp .chip span::before{content: ""; width: 18px; height: 18px; border: 2px solid #c3ccd0; border-radius: 5px; margin-right: 10px; flex: none; background: var(--surface);}
+.qlp .chip input:checked + span{border-color: var(--teal); background: var(--teal-soft);}
+.qlp .chip input:checked + span::before{background: var(--teal); border-color: var(--teal); box-shadow: inset 0 0 0 3px var(--surface);}
+.qlp .chip input:focus-visible + span{outline: 3px solid var(--teal); outline-offset: 2px;}
+.qlp .chip input:disabled{cursor: not-allowed;}
+.qlp .chip input:disabled + span{opacity: .45;}
+.qlp .two{display: grid; grid-template-columns: 1fr 1fr; gap: 14px;}
+.qlp label.f{display: grid; gap: 5px; font-size: 14px; font-weight: 600;}
+.qlp label.f small{font-weight: 400; color: var(--muted);}
+.qlp .formcard input:not([type=checkbox]),.qlp .formcard select,.qlp .formcard textarea{font: inherit; font-size: 16px; font-weight: 400; color: var(--ink); background: var(--page); border: 1px solid var(--line); border-radius: 7px; padding: 10px 12px; width: 100%; min-width: 0;}
+.qlp .formcard textarea{min-height: 70px; resize: vertical;}
+.qlp .formcard input:focus,.qlp .formcard select:focus,.qlp .formcard textarea:focus{border-color: var(--teal); outline: none; box-shadow: 0 0 0 3px rgba(46,150,160,0.25);}
+.qlp .consent{display: flex; gap: 10px; align-items: flex-start; font-size: 13px; color: var(--muted); line-height: 1.45;}
+.qlp .consent input{width: 18px; height: 18px; margin-top: 2px; flex: none;}
+.qlp .actions{display: flex; gap: 10px; align-items: center;}
+.qlp .err{font-size: 13px; color: var(--bad);}
+.qlp .reassure{display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 14px; margin-top: 14px; font-size: 13px; color: var(--muted);}
+.qlp .status{font-size: 14px; color: var(--muted); text-align: center;}
+.qlp .band{margin-top: -84px;}
+.qlp .screen{background: var(--surface); border-radius: 12px; box-shadow: 0 24px 60px rgba(20, 35, 45, 0.22); overflow: hidden; border: 1px solid var(--line); margin: 0;}
+.qlp .screen .chrome{display: flex; align-items: center; gap: 6px; padding: 10px 14px; background: #eef1f0; border-bottom: 1px solid var(--line);}
+.qlp .screen .chrome i{width: 10px; height: 10px; border-radius: 50%; background: #cfd6d6;}
+.qlp .screen .chrome span{margin-left: 10px; font-size: 12px; color: var(--muted); font-family: var(--mono);}
+.qlp .screen img{width: 100%; height: auto;}
+.qlp .caption{margin-top: 10px; font-size: 13px; color: var(--muted); text-align: center;}
+.qlp .strip{margin-top: 28px; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 10px; list-style: none; padding: 0;}
+.qlp .strip li{display: flex; gap: 10px; align-items: center; font-size: 14px; font-weight: 600; line-height: 1.25; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px;}
+.qlp .strip .ic{width: 32px; height: 32px; border-radius: 8px; background: var(--lime-soft); color: var(--navy); display: grid; place-items: center; flex: none;}
+.qlp section.block .wrap{padding-block: 80px;}
+.qlp section.alt{background: var(--surface); border-block: 1px solid var(--line);}
+.qlp .kicker{font-size: 13px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--teal-ink);}
+.qlp .block h2{font-size: clamp(27px, 3.2vw, 38px); font-weight: 600; max-width: 24em; margin-top: 8px;}
+.qlp .intro{color: var(--muted); margin-top: 14px; max-width: 42em; font-size: 18px;}
+.qlp .tick{list-style: none; padding: 0; margin: 0; display: grid; gap: 12px;}
+.qlp .tick li{display: grid; grid-template-columns: 26px minmax(0, 1fr); gap: 10px;}
+.qlp .tick svg{color: var(--teal); margin-top: 3px;}
+.qlp .prompt{margin-top: 40px; display: flex; flex-wrap: wrap; gap: 14px 28px; align-items: center; justify-content: space-between; background: var(--lime-soft); border: 1px solid #dfe8a6; border-radius: 12px; padding: 20px 24px;}
+.qlp .prompt p{font-size: 18px; font-weight: 500; max-width: 36em;}
+.qlp .prompt p span{display: block; color: var(--muted); font-size: 15px; font-weight: 400; margin-top: 2px;}
+.qlp .staff{display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 0.95fr); gap: 48px; align-items: start; margin-top: 34px;}
+.qlp .pains{list-style: none; padding: 0; margin: 0; display: grid; gap: 12px;}
+.qlp .pains li{display: grid; grid-template-columns: 34px minmax(0, 1fr); gap: 12px; align-items: start; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px;}
+.qlp .pains .ic{width: 34px; height: 34px; border-radius: 8px; background: #fbe9e6; color: var(--bad); display: grid; place-items: center;}
+.qlp .pains strong{display: block;}
+.qlp .pains span{color: var(--muted); font-size: 15px;}
+.qlp .calc{background: var(--navy); color: var(--on-navy); border-radius: 14px; padding: 28px; position: sticky; top: 90px;}
+.qlp .calc h3{font-size: 22px; font-weight: 600;}
+.qlp .calc > p{color: var(--on-navy-muted); font-size: 15px; margin-top: 6px;}
+.qlp .calc .inputs{display: grid; gap: 14px; margin-top: 20px;}
+.qlp .calc label{display: grid; grid-template-columns: minmax(0, 1fr) 120px; gap: 12px; align-items: center; font-size: 15px;}
+.qlp .calc label small{display: block; color: var(--on-navy-muted); font-size: 13px;}
+.qlp .calc input{font: inherit; font-family: var(--mono); font-size: 17px; text-align: right; color: var(--ink); background: #fff; border: 0; border-radius: 7px; padding: 9px 12px; width: 100%;}
+.qlp .calc .result{margin-top: 22px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,.18);}
+.qlp .calc .big{font-family: var(--mono); font-size: clamp(34px, 4vw, 44px); font-weight: 500; color: var(--lime); letter-spacing: -0.02em;}
+.qlp .calc .res-sub{color: var(--on-navy-muted); font-size: 15px; margin-top: 4px;}
+.qlp .calc .per10{margin-top: 16px; background: rgba(198,218,44,.12); border-radius: 8px; padding: 12px 14px; font-size: 15px;}
+.qlp .calc .per10 b{font-family: var(--mono); color: var(--lime); font-weight: 500;}
+.qlp .calc .fine{margin-top: 12px; font-size: 12px; color: var(--on-navy-muted);}
+.qlp .calc .btn{margin-top: 18px; width: 100%;}
+.qlp .auto{margin-top: 34px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px;}
+.qlp .auto-card{background: var(--surface); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; display: grid; grid-template-rows: auto 1fr auto;}
+.qlp .auto-card h3{font-size: 19px; font-weight: 600; padding: 18px 20px 0; display: flex; gap: 10px; align-items: center;}
+.qlp .auto-card h3 .ic{width: 36px; height: 36px; border-radius: 9px; background: var(--teal-soft); color: var(--teal-ink); display: grid; place-items: center; flex: none;}
+.qlp .auto-card .today{padding: 12px 20px 16px; color: var(--muted); font-size: 15px;}
+.qlp .auto-card .after{padding: 14px 20px 18px; background: var(--teal-soft); font-size: 15px; border-top: 1px solid #cfe6e8;}
+.qlp .lbl{display: block; font-size: 11px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 2px;}
+.qlp .today .lbl{color: var(--muted);}
+.qlp .after .lbl{color: var(--teal-ink);}
+.qlp .tabs{display: flex; flex-wrap: wrap; gap: 8px; margin-top: 30px;}
+.qlp .tab{font: inherit; font-size: 15px; font-weight: 600; border: 1px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 999px; padding: 8px 16px; cursor: pointer;}
+.qlp .tab[aria-selected="true"]{background: var(--navy); border-color: var(--navy); color: #fff;}
+.qlp .panel{margin-top: 22px; display: grid; grid-template-columns: minmax(0, 0.42fr) minmax(0, 1.58fr); gap: 32px; align-items: start;}
+.qlp .panel h3{font-size: 22px; font-weight: 600;}
+.qlp .panel p{color: var(--muted); margin-top: 10px;}
+.qlp .panel .pts{margin-top: 18px; font-size: 15px;}
+.qlp .act{margin-top: 34px; display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); gap: 48px; align-items: center;}
+.qlp .sua{display: grid; gap: 14px;}
+.qlp .sua > div{background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 20px 22px; display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: 14px;}
+.qlp .sua > div:last-child{background: var(--navy); border-color: var(--navy); color: var(--on-navy);}
+.qlp .sua .n{width: 44px; height: 44px; border-radius: 50%; background: var(--teal-soft); color: var(--teal-ink); display: grid; place-items: center; font-family: var(--mono); font-weight: 500;}
+.qlp .sua > div:last-child .n{background: rgba(198,218,44,.18); color: var(--lime);}
+.qlp .sua h3{font-size: 20px; font-weight: 600;}
+.qlp .sua ul{margin: 8px 0 0; padding-left: 18px; display: grid; gap: 4px; font-size: 15px; color: var(--muted);}
+.qlp .sua > div:last-child ul{color: var(--on-navy-muted);}
+.qlp .control{margin-top: 18px; font-size: 16px; color: var(--muted); display: flex; gap: 10px; align-items: center;}
+.qlp .control svg{color: var(--ok); flex: none;}
+.qlp .phone-wrap{position: relative; display: grid; justify-items: center;}
+.qlp .device{width: min(300px, 78%); border-radius: 40px; background: #12191f; padding: 12px; box-shadow: 0 30px 60px rgba(20,35,45,.28); position: relative;}
+.qlp .device::before{content: ""; position: absolute; top: 20px; left: 50%; width: 76px; height: 20px; margin-left: -38px; border-radius: 12px; background: #12191f; z-index: 2;}
+.qlp .device .scr{border-radius: 30px; overflow: hidden; height: 560px; background: #fff; padding-top: 30px;}
+.qlp .device .scr img{width: 100%; height: auto;}
+.qlp .toast{position: absolute; left: 0; right: 0; margin: 0 auto; width: min(340px, 92%); background: rgba(255,255,255,.97); border: 1px solid var(--line); border-radius: 14px; padding: 12px 14px; box-shadow: 0 14px 30px rgba(20,35,45,.22); display: grid; grid-template-columns: 34px minmax(0, 1fr); gap: 10px; font-size: 14px; line-height: 1.35;}
+.qlp .toast .ic{width: 34px; height: 34px; border-radius: 9px; display: grid; place-items: center;}
+.qlp .toast b{display: block; font-size: 13px;}
+.qlp .toast small{color: var(--muted); font-size: 12px;}
+.qlp .toast.alert{top: 90px;}
+.qlp .toast.alert .ic{background: #fbe9e6; color: var(--bad);}
+.qlp .toast.mail{bottom: 70px;}
+.qlp .toast.mail .ic{background: var(--lime-soft); color: var(--navy);}
+.qlp .ai-grid{margin-top: 34px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px;}
+.qlp .ai-card{background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 22px; display: grid; gap: 8px; align-content: start;}
+.qlp .ai-card .ic{width: 44px; height: 44px; border-radius: 10px; background: var(--lime-soft); color: var(--navy); display: grid; place-items: center;}
+.qlp .ai-card h3{font-size: 18px; font-weight: 600; margin-top: 6px;}
+.qlp .ai-card p{color: var(--muted); font-size: 15px;}
+.qlp .sys{margin-top: 34px; display: grid; grid-template-columns: minmax(0, 1fr) 40px minmax(0, 0.9fr) 40px minmax(0, 1fr); align-items: center;}
+.qlp .sys .col{display: grid; gap: 10px;}
+.qlp .sys .head{font-size: 12px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-bottom: 2px;}
+.qlp .sys .box{background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; font-size: 15px;}
+.qlp .sys .box b{display: block; font-weight: 600;}
+.qlp .sys .box span{color: var(--muted); font-size: 13px;}
+.qlp .sys .core{background: var(--navy); color: var(--on-navy); border: 0; padding: 22px; border-radius: 12px;}
+.qlp .sys .core b{font-size: 18px;}
+.qlp .sys .core span{color: var(--on-navy-muted); font-size: 14px; display: block; margin-top: 6px;}
+.qlp .sys .out{border-left: 4px solid var(--lime);}
+.qlp .sys .arrow{color: var(--teal); display: grid; place-items: center;}
+.qlp .sys-notes{margin-top: 22px; display: flex; flex-wrap: wrap; gap: 10px 26px; font-size: 15px; color: var(--muted);}
+.qlp .sys-notes span{display: flex; gap: 8px; align-items: center;}
+.qlp .sys-notes svg{color: var(--teal);}
+.qlp .vision{background: var(--navy-deep); color: var(--on-navy);}
+.qlp .vision .wrap{padding-block: 80px;}
+.qlp .vision .kicker{color: var(--lime);}
+.qlp .vision h2{font-size: clamp(27px, 3.2vw, 38px); font-weight: 600; margin-top: 8px; max-width: 22em;}
+.qlp .vbig{font-size: clamp(19px, 2.1vw, 24px); line-height: 1.45; color: var(--on-navy-muted); margin-top: 16px; max-width: 36em;}
+.qlp .vstats{margin: 30px 0 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0; border-top: 1px solid rgba(255,255,255,.16); border-bottom: 1px solid rgba(255,255,255,.16);}
+.qlp .vstats div{padding: 18px 18px 18px 0; display: flex; flex-direction: column-reverse; gap: 2px;}
+.qlp .vstats dt{color: var(--on-navy-muted); font-size: 14px;}
+.qlp .vstats dd{margin: 0; font-size: 24px; font-weight: 600; color: #fff;}
+.qlp .vquote{margin-top: 44px; display: grid; grid-template-columns: 120px minmax(0, 1fr); gap: 36px; align-items: start;}
+.qlp .vision .avatar{width: 120px; height: 120px; border-radius: 50%; background: var(--navy); color: var(--on-navy); display: grid; place-items: center; font-size: 36px; font-weight: 600; border: 3px solid var(--lime);}
+.qlp .vision blockquote{margin: 12px 0 0; font-size: clamp(19px, 2vw, 23px); line-height: 1.5; font-weight: 400;}
+.qlp .vision blockquote p + p{margin-top: 16px;}
+.qlp .vision cite{display: block; margin-top: 18px; font-style: normal; color: var(--on-navy-muted);}
+.qlp .vision cite b{color: var(--lime); font-weight: 600;}
+.qlp .testi{margin-top: 34px; display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr); gap: 24px; align-items: stretch;}
+.qlp .video{position: relative; border-radius: 12px; overflow: hidden; background: #000; aspect-ratio: 16 / 9;}
+.qlp .video button{all: unset; cursor: pointer; position: absolute; inset: 0; display: grid; place-items: center;}
+.qlp .video button:focus-visible{outline: 3px solid var(--lime); outline-offset: -3px;}
+.qlp .video img{position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .82;}
+.qlp .video .play{position: relative; width: 76px; height: 76px; border-radius: 50%; background: var(--lime); display: grid; place-items: center; box-shadow: 0 8px 24px rgba(0,0,0,.35);}
+.qlp .video iframe{position: absolute; inset: 0; width: 100%; height: 100%; border: 0;}
+.qlp .qcol{display: grid; gap: 18px; align-content: start;}
+.qlp .quote{background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 24px;}
+.qlp .quote blockquote{margin: 0; font-size: 20px; font-weight: 500; line-height: 1.4;}
+.qlp .quote cite{display: block; margin-top: 10px; font-style: normal; color: var(--muted); font-size: 15px;}
+.qlp .steps{list-style: none; padding: 0; margin: 34px 0 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); counter-reset: s; border-top: 2px solid var(--navy);}
+.qlp .steps li{counter-increment: s; padding: 18px 22px 0 0; display: grid; gap: 8px; align-content: start;}
+.qlp .steps li::before{content: "Step " counter(s); font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--teal-ink);}
+.qlp .steps h3{font-size: 20px; font-weight: 600;}
+.qlp .steps p{color: var(--muted); font-size: 16px;}
+.qlp .callbox{margin-top: 40px; display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: 32px; align-items: center; background: var(--navy); color: var(--on-navy); border-radius: 14px; padding: 32px;}
+.qlp .callbox h3{font-size: 24px; font-weight: 600;}
+.qlp .callbox > div > p{color: var(--on-navy-muted); margin-top: 8px;}
+.qlp .callbox .btn{margin-top: 18px;}
+.qlp .callbox .tick svg{color: var(--lime);}
+.qlp .sector-panel{margin-top: 22px;}
+.qlp .sector-meta{display: flex; flex-wrap: wrap; gap: 8px 24px; margin-bottom: 14px; font-size: 15px; color: var(--muted);}
+.qlp .sector-meta b{color: var(--ink); font-weight: 600;}
+.qlp .pricing{margin-top: 32px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px;}
+.qlp .pcard{background: var(--page); border: 1px solid var(--line); border-radius: 12px; padding: 24px; display: grid; gap: 10px; align-content: start;}
+.qlp .pcard .label{font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--teal-ink);}
+.qlp .pcard h3{font-size: 22px; font-weight: 600;}
+.qlp .pcard p{color: var(--muted); font-size: 16px;}
+.qlp .drivers{margin-top: 24px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 18px;}
+.qlp .drivers > div{border-top: 1px solid var(--line); padding-top: 16px;}
+.qlp .drivers h3{font-size: 18px; font-weight: 600;}
+.qlp .drivers ul{margin: 8px 0 0; padding-left: 18px; color: var(--muted); display: grid; gap: 4px; font-size: 16px;}
+.qlp .promise{margin-top: 24px; font-size: 20px; font-weight: 500; display: flex; gap: 12px; align-items: center;}
+.qlp .promise svg{color: var(--ok); flex: none;}
+.qlp .faq{margin-top: 26px; max-width: 820px; border-top: 1px solid var(--line);}
+.qlp .faq details{border-bottom: 1px solid var(--line); padding-block: 16px;}
+.qlp .faq summary{cursor: pointer; font-weight: 600; font-size: 18px; list-style: none; display: flex; justify-content: space-between; gap: 16px;}
+.qlp .faq summary::-webkit-details-marker{display: none;}
+.qlp .faq summary::after{content: "+"; color: var(--teal-ink); font-size: 22px; line-height: 1;}
+.qlp .faq details[open] summary::after{content: "–";}
+.qlp .faq details p{color: var(--muted); margin-top: 10px; max-width: 44em;}
+.qlp .final{background: var(--navy); color: var(--on-navy);}
+.qlp .final .wrap{padding-block: 64px; display: flex; flex-wrap: wrap; gap: 20px 40px; align-items: center; justify-content: space-between;}
+.qlp .final h2{font-size: clamp(26px, 3vw, 36px); font-weight: 600; max-width: 18em;}
+.qlp .final p{color: var(--on-navy-muted); margin-top: 10px; max-width: 34em;}
+.qlp .final .ctas{display: flex; flex-wrap: wrap; gap: 12px;}
+.qlp footer{background: var(--navy-deep); color: var(--on-navy-muted); font-size: 14px;}
+.qlp footer .wrap{padding-block: 28px; display: flex; flex-wrap: wrap; gap: 14px 24px; justify-content: space-between; align-items: center;}
+.qlp footer img{height: 34px; width: auto;}
+.qlp footer a{color: var(--on-navy-muted);}
+.qlp .sticky{display: none;}
+@media (max-width: 1080px){.qlp .strip{grid-template-columns: repeat(3, minmax(0, 1fr));}}
+@media (max-width: 960px){.qlp .hero .wrap,.qlp .callbox,.qlp .staff,.qlp .panel,.qlp .testi,.qlp .act{grid-template-columns: minmax(0, 1fr); gap: 32px;}.qlp .hero .wrap{padding-bottom: 100px;}.qlp .auto,.qlp .pricing,.qlp .ai-grid{grid-template-columns: repeat(2, minmax(0, 1fr));}.qlp .steps{grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 24px;}.qlp .sys{grid-template-columns: minmax(0, 1fr); gap: 10px;}.qlp .sys .arrow{transform: rotate(90deg); height: 34px;}.qlp .calc{position: static;}.qlp .vstats{grid-template-columns: repeat(2, minmax(0, 1fr));}}
+@media (max-width: 640px){.qlp{font-size: 16px;}.qlp .top .phone,.qlp .top .btn{display: none;}.qlp .logo{height: 36px;}.qlp .hero .wrap{padding-block: 36px 84px;}.qlp section.block .wrap,.qlp .vision .wrap{padding-block: 52px;}.qlp .two,.qlp .chips,.qlp .auto,.qlp .pricing,.qlp .drivers,.qlp .steps,.qlp .ai-grid{grid-template-columns: minmax(0, 1fr);}.qlp .strip{grid-template-columns: repeat(2, minmax(0, 1fr));}.qlp .formcard,.qlp .callbox,.qlp .calc{padding: 22px;}.qlp .calc label{grid-template-columns: minmax(0, 1fr) 100px;}.qlp .vquote{grid-template-columns: minmax(0, 1fr); gap: 16px; margin-top: 32px;}.qlp .vision .avatar{width: 80px; height: 80px; font-size: 26px;}.qlp .vstats dd{font-size: 20px;}.qlp .tabs{flex-wrap: nowrap; overflow-x: auto; margin-left: -16px; margin-right: -16px; padding: 0 16px 6px; scrollbar-width: thin;}.qlp .tab{flex: none;}.qlp .pains{gap: 8px;}.qlp .pains li{padding: 10px 12px;}.qlp .pains span{font-size: 14px;}.qlp .auto{gap: 12px;}.qlp .auto-card h3{padding: 14px 16px 0; font-size: 17px;}.qlp .auto-card h3 .ic{width: 30px; height: 30px;}.qlp .auto-card .today{padding: 6px 16px 10px; font-size: 14px;}.qlp .auto-card .after{padding: 10px 16px 12px; font-size: 14px;}.qlp .sua{gap: 10px;}.qlp .sua > div{padding: 14px 16px; grid-template-columns: 36px minmax(0, 1fr); gap: 12px;}.qlp .sua .n{width: 36px; height: 36px; font-size: 14px;}.qlp .device{width: 230px; border-radius: 32px; padding: 9px;}.qlp .device .scr{height: 400px; border-radius: 24px;}.qlp .toast{font-size: 13px; padding: 10px 12px;}.qlp .toast.alert{top: 56px;}.qlp .toast.mail{bottom: 44px;}.qlp .sys .col{grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);}.qlp .sys .head{grid-column: 1 / -1;}.qlp .sys .box{padding: 10px 12px; font-size: 14px;}.qlp .steps li{padding-top: 14px;}.qlp .prompt .btn{width: 100%;}.qlp .sticky{display: grid; grid-template-columns: 1fr 1.6fr; gap: 10px; position: fixed; left: 0; right: 0; bottom: 0; z-index: 40; padding: 10px 16px calc(10px + env(safe-area-inset-bottom, 0px)); background: var(--surface); border-top: 1px solid var(--line); box-shadow: 0 -6px 18px rgba(10,25,35,.12); transform: translateY(110%); transition: transform .25s ease;}.qlp .sticky.show{transform: none;}.qlp .sticky .btn{padding: 12px 10px; font-size: 16px;}}
+@media (prefers-reduced-motion: reduce){.qlp .bar i,.qlp .sticky{transition: none;}}
+html{scroll-behavior:smooth}
+.et-l--header,.et-l--footer,#main-header,#top-header,#main-footer{display:none!important}
+#page-container{padding-top:0!important}
+body.page{background:#f6f7f4}
+.qlp p,.qlp li{padding:0}
+.qlp ul,.qlp ol{list-style:none;padding:0}
+.qlp .sua ul,.qlp .drivers ul,.qlp .prep ul{list-style:disc;padding-left:18px}
+.qlp blockquote{margin:0;padding:0;border:0;font-style:normal}
+.qlp figure{margin:0}
+.qlp h1,.qlp h2,.qlp h3{font-family:var(--font);font-weight:600;padding-bottom:0;color:inherit}
+.qlp .top{position:fixed!important;top:0;left:0;right:0;z-index:99}
+.qlp .top-spacer{height:63px}
+@media (max-width:640px){.qlp .top-spacer{height:57px}}
+.qlp-form-section{padding:0!important;height:0;overflow:hidden}
+.qlp-divi-form{position:absolute!important;left:-10000px!important;width:600px}
+</style>
+<div class="qlp">
+<header class="top">
+  <div class="wrap">
+    <img class="logo" src="https://cdn.jsdelivr.net/gh/agrawalnisha096-web/Test-1@0125c626da472733ad87d223b64a2b9f9846f0eb/google-ads/landing-assets/qubik-logo.png" alt="Qubik" width="109" height="42">
+    <div class="top-right">
+      <a class="phone" href="tel:+61732058938"><span>Talk to us</span>(07) 3205 8938</a>
+      <a class="btn sm" href="#book">Book a free call</a>
+    </div>
+  </div>
+</header>
+<div class="top-spacer" aria-hidden="true"></div>
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow" data-v="eyebrow">Business process automation · AI dashboards · Australia-wide</div>
+      <h1 data-v="h1">Business process automation that does the work and shows you everything</h1>
+      <p class="sub" data-v="sub">We automate the manual work slowing your team down and connect it to live dashboards, built on the systems you already use. Less admin, faster reporting, clearer numbers.</p>
+      <div class="hero-ctas">
+        <a class="btn" href="#book">Book a free discovery call</a>
+        <a class="btn line" href="#automate">See what we automate</a>
+      </div>
+      <ul class="trust">
+        <li>Accountants since 2007</li>
+        <li>Xero partner since 2013</li>
+        <li>For businesses of 10 to 1,000+ staff</li>
+      </ul>
+    </div>
+    <div class="formcard" id="book">
+      <form id="qlp-lead" novalidate>
+        <div class="progress" aria-live="polite"><span id="step-label">Step 1 of 3</span><div class="bar" aria-hidden="true"><i id="bar"></i></div></div>
+        <fieldset class="step" data-step="1">
+          <legend><h2>What's the biggest challenge holding your business back?</h2></legend>
+          <p class="lead">Select up to two.</p>
+          <div class="chips">
+            <label class="chip"><input type="checkbox" name="automate" value="Not knowing how my business is really performing"><span>Not knowing how my business is really performing</span></label>
+            <label class="chip"><input type="checkbox" name="automate" value="Rising staff costs and too much manual work"><span>Rising staff costs and too much manual work</span></label>
+            <label class="chip"><input type="checkbox" name="automate" value="Profit margins being squeezed or opportunities being missed"><span>Profit margins being squeezed or opportunities being missed</span></label>
+            <label class="chip"><input type="checkbox" name="automate" value="Cash flow problems and slow customer payments"><span>Cash flow problems and slow customer payments</span></label>
+            <label class="chip"><input type="checkbox" name="automate" value="Disconnected software, spreadsheets and reporting"><span>Disconnected software, spreadsheets and reporting</span></label>
+            <label class="chip"><input type="checkbox" name="automate" value="Growing the business without adding more staff"><span>Growing the business without adding more staff</span></label>
+          </div>
+          <p class="err" data-err hidden>Pick at least one.</p>
+          <button class="btn navy" type="button" data-next>Next</button>
+        </fieldset>
+        <fieldset class="step" data-step="2" hidden>
+          <legend><h2>Tell us about your business</h2></legend>
+          <p class="lead">So we can bring relevant examples to the call.</p>
+          <div class="two">
+            <label class="f" for="f-staff">Staff
+              <select id="f-staff" name="staff" required>
+                <option value="">Select</option><option>Under 10</option><option>10–50</option><option>51–200</option><option>201–1,000</option><option>1,000+</option>
+              </select></label>
+            <label class="f" for="f-rev">Annual revenue
+              <select id="f-rev" name="revenue" required>
+                <option value="">Select</option><option>Under A$2M</option><option>A$2–10M</option><option>A$10–50M</option><option>A$50–200M</option><option>Over A$200M</option>
+              </select></label>
+          </div>
+          <label class="f" for="f-when">When would you like this sorted?
+            <select id="f-when" name="timing" required>
+              <option value="">Select</option><option>Now, ASAP</option><option>This quarter</option><option>Within 6 months</option><option>Just exploring for now</option>
+            </select></label>
+          <label class="f" for="f-challenge">Your biggest reporting or automation challenge <small>(optional)</small>
+            <textarea id="f-challenge" name="challenge" rows="2"></textarea></label>
+          <p class="err" data-err hidden>Please answer staff, revenue and timing.</p>
+          <div class="actions"><button class="btn ghost" type="button" data-back>Back</button><button class="btn navy full" type="button" data-next>Next</button></div>
+        </fieldset>
+        <fieldset class="step" data-step="3" hidden>
+          <legend><h2>Where should we call you?</h2></legend>
+          <p class="lead">We'll call to set up a time that suits you.</p>
+          <div class="two">
+            <label class="f" for="f-name">Name<input id="f-name" name="name" autocomplete="name" required></label>
+            <label class="f" for="f-company">Company<input id="f-company" name="company" autocomplete="organization" required></label>
+          </div>
+          <div class="two">
+            <label class="f" for="f-email">Business email<input id="f-email" name="email" type="email" autocomplete="email" required></label>
+            <label class="f" for="f-phone">Mobile<input id="f-phone" name="phone" type="tel" autocomplete="tel" required></label>
+          </div>
+          <label class="f" for="f-role">Your role
+            <select id="f-role" name="role" required>
+              <option value="">Select</option><option>Owner / Founder</option><option>CEO / Managing Director</option><option>CFO / Finance</option><option>COO / Operations</option><option>General Manager</option><option>Other</option>
+            </select></label>
+          <label class="consent" for="f-consent"><input id="f-consent" name="consent" type="checkbox" required> I agree to Qubik contacting me by phone, email or SMS about this enquiry. I can opt out at any time.</label>
+          <p class="err" data-err hidden>Please fill in every field and tick the box.</p>
+          <div class="actions"><button class="btn ghost" type="button" data-back>Back</button><button class="btn full" type="submit" id="qlp-submit">Book my free call</button></div>
+        </fieldset>
+        <input type="hidden" name="estimate" id="f-estimate">
+        <input type="hidden" name="variant" id="f-variant">
+      </form>
+      <p class="status" id="qlp-status" role="status" hidden></p>
+      <div class="reassure" id="reassure"><span>Free discovery call</span><span>No obligation</span><span>We'll tell you honestly if it's not worth it</span></div>
+    </div>
+  </div>
+</section>
+</div>
