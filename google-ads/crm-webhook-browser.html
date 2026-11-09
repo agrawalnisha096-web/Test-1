@@ -1,0 +1,34 @@
+<script data-no-optimize="1">
+(function () {
+  var CRM_URL = '[CRM-PUBLIC-URL]';
+  var button = document.querySelector('.qlp-divi-form .et_pb_contact_submit');
+  if (!button) { return; }
+  var FIELDS = {
+    name: 'name', email: 'email', phone: 'phone', company: 'business_name',
+    gclid: 'gclid', gbraid: 'gbraid', wbraid: 'wbraid',
+    utm_source: 'utm_source', utm_medium: 'utm_medium', utm_campaign: 'utm_campaign', utm_term: 'utm_term',
+    landing_page: 'landing_page', automate: 'wants_to_fix', staff: 'staff', revenue: 'annual_revenue',
+    timing: 'timing', challenge: 'challenge', estimate: 'cost_estimate', variant: 'page_version', consent: 'consent'
+  };
+  function value(id) {
+    var el = document.querySelector('.qlp-divi-form [data-original_id="' + id + '"]');
+    return el ? String(el.value || '').trim() : '';
+  }
+  button.addEventListener('click', function () {
+    var data = new URLSearchParams();
+    Object.keys(FIELDS).forEach(function (id) {
+      var v = value(id);
+      if (v) { data.append(FIELDS[id], v); }
+    });
+    var parts = [['Wants to fix', 'automate'], ['Staff', 'staff'], ['Revenue', 'revenue'], ['Timing', 'timing'], ['Challenge', 'challenge'], ['Their estimate', 'estimate']];
+    var message = parts.filter(function (p) { return value(p[1]); }).map(function (p) { return p[0] + ': ' + value(p[1]); }).join('\n');
+    if (message) { data.append('message', message); }
+    var id = '';
+    try { id = (JSON.parse(window.sessionStorage.getItem('qlp_lead') || '{}').id) || ''; } catch (err) { id = ''; }
+    data.append('submission_id', id || ('qlp-' + Date.now() + '-' + Math.floor(Math.random() * 100000)));
+    data.append('source', 'qubik.com.au landing page');
+    if (navigator.sendBeacon) { navigator.sendBeacon(CRM_URL, data); }
+    else { fetch(CRM_URL, { method: 'POST', body: data, keepalive: true, mode: 'no-cors' }); }
+  }, true);
+})();
+</script>
