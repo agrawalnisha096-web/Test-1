@@ -471,8 +471,8 @@ Report back:
 ### Tracking code 1: landing page (new Fullwidth Code module at the bottom)
 
 ```html
-<script async src="https://www.googletagmanager.com/gtag/js?id=[AW-ID]"></script>
-<script>
+<script data-no-optimize="1" async src="https://www.googletagmanager.com/gtag/js?id=[AW-ID]"></script>
+<script data-no-optimize="1">
 window.dataLayer = window.dataLayer || [];
 function gtag() { window.dataLayer.push(arguments); }
 gtag('js', new Date());
@@ -502,8 +502,8 @@ gtag('config', '[AW-ID]');
 ### Tracking code 2: thank-you page (new Fullwidth Code module at the bottom)
 
 ```html
-<script async src="https://www.googletagmanager.com/gtag/js?id=[AW-ID]"></script>
-<script>
+<script data-no-optimize="1" async src="https://www.googletagmanager.com/gtag/js?id=[AW-ID]"></script>
+<script data-no-optimize="1">
 window.dataLayer = window.dataLayer || [];
 function gtag() { window.dataLayer.push(arguments); }
 gtag('js', new Date());

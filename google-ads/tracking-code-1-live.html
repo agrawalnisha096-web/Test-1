@@ -1,0 +1,26 @@
+<script data-no-optimize="1" async src="https://www.googletagmanager.com/gtag/js?id=AW-18559003494"></script>
+<script data-no-optimize="1">
+window.dataLayer = window.dataLayer || [];
+function gtag() { window.dataLayer.push(arguments); }
+gtag('js', new Date());
+gtag('config', 'AW-18559003494');
+(function () {
+  var form = document.getElementById('qlp-lead');
+  if (form) {
+    form.addEventListener('submit', function () {
+      try {
+        window.sessionStorage.setItem('qlp_lead', JSON.stringify({
+          email: String(form.elements.email.value || '').trim().toLowerCase(),
+          phone: String(form.elements.phone.value || ''),
+          id: 'qlp-' + Date.now() + '-' + Math.floor(Math.random() * 100000)
+        }));
+      } catch (err) {}
+    }, true);
+  }
+  document.querySelectorAll('a[href^="tel:"]').forEach(function (link) {
+    link.addEventListener('click', function () {
+      gtag('event', 'conversion', { send_to: 'AW-18559003494/UfM9CMapx7QdEObWz5FF' });
+    });
+  });
+})();
+</script>

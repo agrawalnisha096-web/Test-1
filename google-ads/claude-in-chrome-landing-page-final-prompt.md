@@ -804,7 +804,7 @@ body.page{background:#f6f7f4}
   <a class="btn" href="#book">Book a free call</a>
 </div>
 </div>
-<script>(function () {
+<script data-no-optimize="1">(function () {
   /* Headline by ad group: ?v=ai or ?v=dashboards; default is automation */
   var VARIANTS = {
     ai: {

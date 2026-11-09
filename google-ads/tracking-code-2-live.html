@@ -1,0 +1,23 @@
+<script data-no-optimize="1" async src="https://www.googletagmanager.com/gtag/js?id=AW-18559003494"></script>
+<script data-no-optimize="1">
+window.dataLayer = window.dataLayer || [];
+function gtag() { window.dataLayer.push(arguments); }
+gtag('js', new Date());
+gtag('config', 'AW-18559003494');
+(function () {
+  var lead = null;
+  try { lead = JSON.parse(window.sessionStorage.getItem('qlp_lead') || 'null'); } catch (err) { lead = null; }
+  if (!lead) { return; }
+  var phone = String(lead.phone || '').replace(/[^0-9+]/g, '');
+  if (phone.indexOf('+') !== 0) {
+    if (phone.indexOf('61') === 0) { phone = '+' + phone; }
+    else if (phone.indexOf('0') === 0) { phone = '+61' + phone.slice(1); }
+  }
+  var userData = {};
+  if (lead.email) { userData.email = lead.email; }
+  if (phone.length !== 0) { userData.phone_number = phone; }
+  gtag('set', 'user_data', userData);
+  gtag('event', 'conversion', { send_to: 'AW-18559003494/VlbwCMOpx7QdEObWz5FF', transaction_id: lead.id });
+  try { window.sessionStorage.removeItem('qlp_lead'); } catch (err) {}
+})();
+</script>
