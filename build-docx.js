@@ -61,7 +61,9 @@ function table(rows) {
     'Dates (2026–27)': [15, 40, 26, 19], 'Signal (per send)': [22, 20, 30, 28],
     'Measure|Result': [40, 60], 'Segment|Who': [20, 30, 9, 10, 10, 21], 'Segment|Day 0': [14, 19, 17, 17, 17, 16],
     'Segment|Leads': [20, 8, 14, 38, 20], 'Dates|What runs': [16, 84], 'Basis|Range for 10–22 clients': [55, 45],
-    'Signal|Keep going': [24, 16, 34, 26], 'Campaign': [18, 16, 34, 14, 18], 'By': [16, 50, 34],
+    'Signal|Keep going': [24, 16, 34, 26],
+    'Part|Hours a week': [33, 11, 38, 18], 'Item|Terms': [24, 76], 'Item|Rate': [58, 42], 'Item|Rate|Applies': [34, 40, 26],
+    'Period|What I expect': [17, 51, 32], '|Option A: fixed': [24, 34, 42], 'Qubik AI & Automation|Qubik Accounting': [50, 50], 'Campaign': [18, 16, 34, 14, 18], 'By': [16, 50, 34],
   };
   const k2 = h0 + '|' + (header[1] || '').trim();
   if (byHead[k2] && byHead[k2].length === n) weights = byHead[k2];
