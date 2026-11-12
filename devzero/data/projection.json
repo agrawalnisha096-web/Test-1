@@ -1,0 +1,138 @@
+{
+ "devzero": {
+  "clusters": [
+   {
+    "cluster": "K8s cost optimisation & rightsizing",
+    "addressable_us": 460,
+    "share": 1.0,
+    "pos_low": 8,
+    "pos_target": 4,
+    "visits_low": 12,
+    "visits_target": 32
+   },
+   {
+    "cluster": "Autoscaling education (HPA, VPA, Karpenter)",
+    "addressable_us": 10510,
+    "share": 0.6,
+    "pos_low": 15,
+    "pos_target": 8,
+    "visits_low": 63,
+    "visits_target": 158
+   },
+   {
+    "cluster": "Cloud, instance and GPU pricing",
+    "addressable_us": 41510,
+    "share": 0.4,
+    "pos_low": 15,
+    "pos_target": 8,
+    "visits_low": 166,
+    "visits_target": 415
+   },
+   {
+    "cluster": "Competitor vs & alternatives",
+    "addressable_us": 100,
+    "share": 1.0,
+    "pos_low": 6,
+    "pos_target": 3,
+    "visits_low": 4,
+    "visits_target": 10
+   }
+  ],
+  "longtail": {
+   "name": "instance/spot pages long tail",
+   "current_etv": 636,
+   "mult_low": 1.5,
+   "mult_target": 2.5,
+   "visits_low": 954,
+   "visits_target": 1590
+  },
+  "brand_capture": {
+   "competitor_brand_us": 8010,
+   "low": 40,
+   "target": 80
+  },
+  "us_low": 1239,
+  "us_target": 2285,
+  "all_markets_low": 1858,
+  "all_markets_target": 4570,
+  "baseline_us_etv": 821,
+  "ctr_curve": {
+   "1": 0.28,
+   "2": 0.15,
+   "3": 0.1,
+   "4": 0.07,
+   "5": 0.05,
+   "6": 0.04,
+   "7": 0.03,
+   "8": 0.025,
+   "9": 0.02,
+   "10": 0.02,
+   "15": 0.01,
+   "20": 0.005
+  }
+ },
+ "nautili": {
+  "clusters": [
+   {
+    "cluster": "LLM gateway, AI gateway, LLM router",
+    "addressable_us": 10000,
+    "share": 0.7,
+    "pos_low": 20,
+    "pos_target": 9,
+    "visits_low": 35,
+    "visits_target": 140
+   },
+   {
+    "cluster": "OpenRouter, Portkey and LiteLLM alternatives",
+    "addressable_us": 3290,
+    "share": 1.0,
+    "pos_low": 9,
+    "pos_target": 4,
+    "visits_low": 66,
+    "visits_target": 230
+   },
+   {
+    "cluster": "AI coding cost (Claude Code, Cursor, Codex)",
+    "addressable_us": 101330,
+    "share": 0.5,
+    "pos_low": 15,
+    "pos_target": 7,
+    "visits_low": 507,
+    "visits_target": 1520
+   },
+   {
+    "cluster": "Model API pricing (Claude, GPT, Gemini)",
+    "addressable_us": 97580,
+    "share": 0.5,
+    "pos_low": 20,
+    "pos_target": 10,
+    "visits_low": 244,
+    "visits_target": 976
+   }
+  ],
+  "brand_capture": {
+   "competitor_brand_us": 173610,
+   "low": 174,
+   "target": 521
+  },
+  "us_low": 1025,
+  "us_target": 3387,
+  "all_markets_low": 1538,
+  "all_markets_target": 6774,
+  "baseline_us_etv": 0,
+  "ctr_curve": {
+   "1": 0.28,
+   "2": 0.15,
+   "3": 0.1,
+   "4": 0.07,
+   "5": 0.05,
+   "6": 0.04,
+   "7": 0.03,
+   "8": 0.025,
+   "9": 0.02,
+   "10": 0.02,
+   "15": 0.01,
+   "20": 0.005
+  }
+ }
+}

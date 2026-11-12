@@ -1,0 +1,34 @@
+{
+ "devzero|K8s cost optimisation & rightsizing": {
+  "sep_2026": 260,
+  "sep_2025": 540
+ },
+ "devzero|Autoscaling education (HPA, VPA, Karpenter)": {
+  "sep_2026": 11170,
+  "sep_2025": 13850
+ },
+ "devzero|Cloud, instance and GPU pricing": {
+  "sep_2026": 24580,
+  "sep_2025": 46420
+ },
+ "devzero|Competitor vs & alternatives": {
+  "sep_2026": 60,
+  "sep_2025": 130
+ },
+ "nautili|LLM gateway, AI gateway, LLM router": {
+  "sep_2026": 9160,
+  "sep_2025": 3470
+ },
+ "nautili|OpenRouter, Portkey and LiteLLM alternatives": {
+  "sep_2026": 5760,
+  "sep_2025": 2020
+ },
+ "nautili|AI coding cost (Claude Code, Cursor, Codex)": {
+  "sep_2026": 93700,
+  "sep_2025": 80960
+ },
+ "nautili|Model API pricing (Claude, GPT, Gemini)": {
+  "sep_2026": 86840,
+  "sep_2025": 52080
+ }
+}

@@ -1,0 +1,154 @@
+[
+ {
+  "site": "devzero",
+  "cluster": "K8s cost optimisation & rightsizing",
+  "keywords": 24,
+  "raw_us_monthly": 470,
+  "raw_worldwide_monthly": 1170,
+  "addressable_us_monthly": 460,
+  "addressable_worldwide_monthly": 1150,
+  "brand_navigational_us_monthly": 0,
+  "addressable_vol_weighted_kd": 8,
+  "top": [
+   "kubernetes cost optimization 90 (KD 0)",
+   "kubernetes cost 70 (KD 36)",
+   "kubernetes cost optimization tools 50 (KD 0)",
+   "kubernetes cost monitoring 50 (KD 8)",
+   "kubernetes cost management 30 (KD 0)",
+   "kubernetes bin packing 30 (KD 0)"
+  ]
+ },
+ {
+  "site": "devzero",
+  "cluster": "Autoscaling education (HPA, VPA, Karpenter)",
+  "keywords": 23,
+  "raw_us_monthly": 11470,
+  "raw_worldwide_monthly": 67260,
+  "addressable_us_monthly": 10510,
+  "addressable_worldwide_monthly": 62790,
+  "brand_navigational_us_monthly": 0,
+  "addressable_vol_weighted_kd": 23,
+  "top": [
+   "keda 3600 (KD 16)",
+   "karpenter 1900 (KD 44)",
+   "eks auto mode 880 (KD 4)",
+   "hpa kubernetes 720 (KD 10)",
+   "criu 590 (KD 18)",
+   "keda kubernetes 480 (KD 19)"
+  ]
+ },
+ {
+  "site": "devzero",
+  "cluster": "Cloud, instance and GPU pricing",
+  "keywords": 25,
+  "raw_us_monthly": 41720,
+  "raw_worldwide_monthly": 204350,
+  "addressable_us_monthly": 41510,
+  "addressable_worldwide_monthly": 203050,
+  "brand_navigational_us_monthly": 0,
+  "addressable_vol_weighted_kd": 25,
+  "top": [
+   "azure pricing calculator 14800 (KD 25)",
+   "aws pricing calculator 14800 (KD 30)",
+   "ec2 pricing 2400 (KD 27)",
+   "m5 large 1900 (KD 0)",
+   "h100 price 1900 (KD 21)",
+   "gcp pricing calculator 1300 (KD 25)"
+  ]
+ },
+ {
+  "site": "devzero",
+  "cluster": "Competitor vs & alternatives",
+  "keywords": 23,
+  "raw_us_monthly": 11930,
+  "raw_worldwide_monthly": 72890,
+  "addressable_us_monthly": 100,
+  "addressable_worldwide_monthly": 420,
+  "brand_navigational_us_monthly": 8010,
+  "addressable_vol_weighted_kd": 8,
+  "top": [
+   "kubecost pricing 40 (KD 7)",
+   "kubecost alternatives 20 (KD 0)",
+   "cast ai pricing 20 (KD 17)",
+   "scaleops vs cast ai 10 (KD None)",
+   "cast ai alternatives 10 (KD None)",
+   "spot by netapp ocean 0 (KD None)"
+  ]
+ },
+ {
+  "site": "nautili",
+  "cluster": "LLM gateway, AI gateway, LLM router",
+  "keywords": 24,
+  "raw_us_monthly": 16250,
+  "raw_worldwide_monthly": 66150,
+  "addressable_us_monthly": 10000,
+  "addressable_worldwide_monthly": 41960,
+  "brand_navigational_us_monthly": 6180,
+  "addressable_vol_weighted_kd": 31,
+  "top": [
+   "ai gateway 2900 (KD 53)",
+   "mcp gateway 2400 (KD 20)",
+   "llm gateway 1600 (KD 29)",
+   "llm router 720 (KD 18)",
+   "llm observability 590 (KD 19)",
+   "model router 390 (KD 45)"
+  ]
+ },
+ {
+  "site": "nautili",
+  "cluster": "OpenRouter, Portkey and LiteLLM alternatives",
+  "keywords": 23,
+  "raw_us_monthly": 268810,
+  "raw_worldwide_monthly": 2208790,
+  "addressable_us_monthly": 3290,
+  "addressable_worldwide_monthly": 18700,
+  "brand_navigational_us_monthly": 173610,
+  "addressable_vol_weighted_kd": 7,
+  "top": [
+   "openrouter pricing 1600 (KD 12)",
+   "openrouter alternative 880 (KD 1)",
+   "litellm alternatives 390 (KD 0)",
+   "litellm vs openrouter 260 (KD 0)",
+   "openrouter fees 70 (KD 24)",
+   "portkey vs litellm 50 (KD 0)"
+  ]
+ },
+ {
+  "site": "nautili",
+  "cluster": "AI coding cost (Claude Code, Cursor, Codex)",
+  "keywords": 23,
+  "raw_us_monthly": 153530,
+  "raw_worldwide_monthly": 925940,
+  "addressable_us_monthly": 101330,
+  "addressable_worldwide_monthly": 635940,
+  "brand_navigational_us_monthly": 0,
+  "addressable_vol_weighted_kd": 24,
+  "top": [
+   "claude code pricing 27100 (KD 30)",
+   "claude pro price 14800 (KD 24)",
+   "claude max 12100 (KD 0)",
+   "cursor pricing 9900 (KD 21)",
+   "github copilot pricing 8100 (KD 77)",
+   "cursor vs claude code 8100 (KD 2)"
+  ]
+ },
+ {
+  "site": "nautili",
+  "cluster": "Model API pricing (Claude, GPT, Gemini)",
+  "keywords": 23,
+  "raw_us_monthly": 97580,
+  "raw_worldwide_monthly": 604100,
+  "addressable_us_monthly": 97580,
+  "addressable_worldwide_monthly": 604100,
+  "brand_navigational_us_monthly": 0,
+  "addressable_vol_weighted_kd": 35,
+  "top": [
+   "claude pricing 40500 (KD 34)",
+   "openai api pricing 12100 (KD 51)",
+   "gemini pricing 8100 (KD 42)",
+   "claude api pricing 8100 (KD 15)",
+   "openai pricing 5400 (KD 52)",
+   "gemini api pricing 4400 (KD 21)"
+  ]
+ }
+]

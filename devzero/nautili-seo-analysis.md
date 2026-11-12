@@ -1,8 +1,19 @@
 # Nautili (nautili.ai): SEO, Competitor & Market Analysis
 
-*Prepared 12 Nov 2026. Based on a live crawl of nautili.ai (robots.txt, llms.txt, sitemaps, on-page tags on 15+ URLs), competitor sitemaps and homepages, and live search results. Companion to `devzero-seo-analysis.md`.*
+*Prepared 12 Nov 2026. Based on a live crawl of nautili.ai (robots.txt, llms.txt, sitemaps, on-page tags on 15+ URLs), competitor sitemaps and homepages, live search results, and **DataForSEO data pulled 12 Nov 2026** (Labs rankings and traffic estimates, Google Ads search volumes, Backlinks; US unless stated). Companion to `devzero-seo-analysis.md`; full data in `seo-data-findings.md` and `data/`.*
 
-> **Scope note:** This analysis did not use Ahrefs, Semrush or Search Console data, so there are no traffic, keyword volume or backlink figures. Pull those before making budget decisions.
+> **Data note:** Traffic, ranking, volume and backlink figures come from DataForSEO (12 Nov 2026). Traffic is DataForSEO's modelled US estimate (ETV). **Search Console is not connected yet:** the service account `gsc-reader@gsc-access-513417.iam.gserviceaccount.com` needs Restricted access to `sc-domain:nautili.ai`.
+
+### Search data at a glance (US, DataForSEO)
+| Metric | nautili.ai | OpenRouter | LiteLLM | TrueFoundry | Portkey | Helicone |
+|---|---:|---:|---:|---:|---:|---:|
+| Ranking keywords | **0** | 7,941 | 1,381 | 4,233 | 1,794 | 948 |
+| Est. organic visits/mo | **0** | 61,871 | 11,838 | 9,043 | 3,344 | 1,098 |
+| Referring domains | **6** | 23,362 | 7,616 | 3,115 | 3,027 | 2,879 |
+
+- **Nautili has no rankings yet** in DataForSEO's US or worldwide index and is outside the top ~70–100 for all 10 target keywords checked.
+- **Its 6 referring domains are low-value** (spam score 31). The crawler first saw the domain on **13 Oct 2026**, and **no link from devzero.io** (526 referring domains) was found.
+- **Demand is growing fast:** gateway terms +164% and alternatives terms +185% year on year (Sep 2026 vs Sep 2025); "openrouter alternative" went from 320 to 1,300 searches/month.
 
 ---
 
@@ -12,7 +23,7 @@
 
 | | |
 |---|---|
-| **Category** | LLM / AI gateway, also called an inference control plane |
+| **Category** | LLM / AI gateway, also called an inference control plane | | ~10k (KD 31), +164% YoY: ai gateway 2,900, mcp gateway 2,400, llm gateway 1,600, llm router 720
 | **Title / H1** | "Nautili — Inference, under control" / "Inference, under control." |
 | **Meta description** | "Nautili is one gateway for all your LLM traffic. Attribute spend, set budgets and access, and route every request to the right model, in your network or hosted." |
 | **Product** | One OpenAI/Anthropic/Gemini-compatible endpoint (change only the base URL and key). Spend attribution by team, developer, key or tool. Budgets and model access controls. Routing profiles and Auto Mode. Failover. Evals (datasets, trials, experiments). Guardrails (PII, secrets). Self-host via Helm or Docker Compose, a dedicated hosted gateway, or a shared gateway. "Nautili Harness" desktop and terminal app. |
@@ -55,8 +66,8 @@
 | # | Issue | Evidence | Fix |
 |---|---|---|---|
 | 1 | **About 39 DevZero Kubernetes posts are copied onto nautili.ai with self-referencing canonicals.** That is cross-domain duplicate content: the two sites compete with each other for the same queries, Google has to choose one, and Nautili's topical focus on LLM gateways is diluted. | `nautili.ai/blog/kubernetes-cost-optimization-tools-2026` is identical to the devzero.io post (same 115-cluster dataset, about 5.4k words) and canonicalises to nautili.ai. The same applies to `eks-cost-optimization` (including the stale "**2025**" title), `karpenter-guide`, `kubernetes-vpa`, `gke-pricing` and more. | **Remove them from nautili.ai** (301 each one to its devzero.io URL), or at minimum set `rel=canonical` to devzero.io and drop them from `blog.xml`. Keep only the inference and GPU-inference posts. |
-| 2 | **The brand is not discoverable.** A search for "nautili.ai" returned **no Nautili pages**; the results were Nautilus, Nautil.io, Nautilida and unrelated companies. Either the domain is new and barely indexed, or it has very little authority. | Live search on 12 Nov 2026 | Verify in Search Console and submit the sitemap. Add `sameAs` links (LinkedIn, GitHub, X, Crunchbase, G2) to the Organization schema. Link from devzero.io (see #3). Launch on Product Hunt, Hacker News and r/LocalLLaMA. Get listed on review sites. |
-| 3 | **Overlap with devzero.io's own inference pages.** The two sites split authority and confuse buyers. | `devzero.io/inference` (about 2.6k words), `devzero.io/pricing/inference` and `devzero.io/lp/inference` sell the same product and **never mention Nautili**. The devzero.io homepage still pitches "Optimize Inference (Beta)". | Decide on one home. Recommended: **301 `devzero.io/inference` and `/pricing/inference` to nautili.ai**, and add a "Nautili by DevZero" module with a link on the devzero.io homepage and navigation. That passes DevZero's authority to the new domain and fixes #2. |
+| 2 | **The brand is not discoverable.** A search for "nautili.ai" returned **no Nautili pages**; the results were Nautilus, Nautil.io, Nautilida and unrelated companies. DataForSEO confirms both causes: the domain is new (first crawled 13 Oct 2026) and has almost no authority (6 low-value referring domains, 0 ranking keywords). | Live search on 12 Nov 2026; DataForSEO Labs and Backlinks | Verify in Search Console and submit the sitemap. Add `sameAs` links (LinkedIn, GitHub, X, Crunchbase, G2) to the Organization schema. Link from devzero.io (see #3). Launch on Product Hunt, Hacker News and r/LocalLLaMA. Get listed on review sites. |
+| 3 | **Overlap with devzero.io's own inference pages.** The two sites split authority and confuse buyers. devzero.io has 526 referring domains; nautili.ai has 6. | `devzero.io/inference` (about 2.6k words), `devzero.io/pricing/inference` and `devzero.io/lp/inference` sell the same product and **never mention Nautili**. The devzero.io homepage still pitches "Optimize Inference (Beta)". | Decide on one home. Recommended: **301 `devzero.io/inference` and `/pricing/inference` to nautili.ai**, and add a "Nautili by DevZero" module with a link on the devzero.io homepage and navigation. That passes DevZero's authority to the new domain and fixes #2. |
 | 4 | **Only 2 compare pages and 1 integration page**, even though the homepage claims many more integrations. | `/compare/portkey`, `/compare/openrouter`, `/integrations/claude-code` | Add compare pages for LiteLLM, Helicone, Cloudflare AI Gateway, Vercel AI Gateway, Kong, TrueFoundry, Bifrost and Requesty. Add integration pages for Cursor, Codex, Continue, Gemini CLI, LangChain, Vercel AI SDK, OpenAI SDK, Anthropic SDK and LlamaIndex. These pages convert well and are cheap to produce. |
 | 5 | **Thin programmatic model pages** competing with OpenRouter's 35k URLs | `/models/anthropic/claude-opus-4.8` has about 521 words of mostly templated text | Make them unique: live cross-provider price comparison for the model, latency and uptime from gateway traffic, cheaper alternatives, a code snippet. Original data is the only way to compete with OpenRouter on these queries. |
 | 6 | **H1 spacing when the HTML is read without CSS** | "Inference,under control." and "Nautili.aivsPortkey" appear as glued text in the raw markup | Put a real space or `<br>` inside the H1 rather than relying on CSS layout. It is small, but it is what Google and LLMs read. |
@@ -83,14 +94,16 @@
 | **Martian, Not Diamond** | Funded routing specialists | Intelligent model routing | — |
 | **Nautili** | New; backed by DevZero ($26M raised in 2023) | "Inference, under control"; spend attribution, governance, self-host, 4% fee | **~717** |
 
+*Organic footprint (DataForSEO, US): OpenRouter ~61.9k est. visits/mo and 23.4k referring domains; LiteLLM 11.8k / 7.6k; TrueFoundry 9.0k / 3.1k; Portkey 3.3k / 3.0k; Helicone 1.1k / 2.9k; Nautili 0 / 6. Portkey's SERP neighbours (Labs competitors) are GitHub, dev.to, Hacker News, claude.com, openai.com, TrueFoundry, OpenRouter, getmaxim.ai (Bifrost) and llmgateway.io.*
+
 ### What the search results look like
 - **"Best LLM gateway 2026" and "OpenRouter / Portkey / LiteLLM alternatives"** are dominated by vendor-written listicles that rank themselves first: Requesty, LLMGateway.io, nexos.ai, Merge, Pinggy, Dupple, dev.to, and Portkey's own "OpenRouter alternatives" page. **Nautili appeared in none of them.**
 - The names that keep recurring are LiteLLM, Portkey, OpenRouter, Helicone, Bifrost, Cloudflare, Vercel, Kong and TrueFoundry. Being included in these lists matters for search and also for AI answers, since LLMs draw on the same lists.
 
 ### Where Nautili can win
-1. **Fallout from acquisitions.** Portkey now belongs to Palo Alto Networks and OpenRouter is joining Stripe. Searches for *"Portkey alternatives"* and *"OpenRouter alternatives"* are growing, and buyers who want an independent, self-hostable option are a natural fit. Write the "after the acquisition" pages now.
+1. **Fallout from acquisitions.** Portkey now belongs to Palo Alto Networks and OpenRouter is joining Stripe. Searches for *"Portkey alternatives"* and *"OpenRouter alternatives"* are growing (DataForSEO: *openrouter alternative* 320 → 1,300/month and *portkey alternatives* 10 → 90/month year on year; KD 0–1), and buyers who want an independent, self-hostable option are a natural fit. Write the "after the acquisition" pages now.
 2. **A cheaper fee than OpenRouter.** 4% versus about 5.5%, plus bring-your-own-keys. The OpenRouter compare page already has a fee calculator; make it a stand-alone tool at something like `/tools/llm-gateway-fee-calculator`.
-3. **AI coding-agent spend.** Claude Code, Cursor, Codex and Gemini CLI cost per developer is a new, fast-growing topic with few authoritative pages. Nautili already has 3 posts. Build a full cluster: a cost per developer for each tool, a "Cursor vs Claude Code cost" comparison, setup guides for budgets per developer, and an "AI coding spend report" built from anonymised gateway data.
+3. **AI coding-agent spend.** Claude Code, Cursor, Codex and Gemini CLI cost per developer is a new, fast-growing topic with few authoritative pages. It is also the **largest addressable cluster (~101k US searches/month)**: *claude code pricing* 27,100 (KD 30), *cursor pricing* 9,900 (KD 21), *codex pricing* 8,100 (KD 9), and *cursor vs claude code* 8,100 at **KD 2**, where the top results are Reddit and personal blogs. Nautili already has 3 posts. Build a full cluster: a cost per developer for each tool, a "Cursor vs Claude Code cost" comparison, setup guides for budgets per developer, and an "AI coding spend report" built from anonymised gateway data.
 4. **Self-hosting plus governance.** Covers the enterprise needs LiteLLM leaves open (attribution, budgets, evals) without running Python yourself. Target *"self-hosted LLM gateway"*, *"LiteLLM alternative"* and *"LLM gateway Helm"*.
 5. **The DevZero connection.** It lets Nautili offer GPU and Kubernetes inference cost (route to your own GPUs) as one story. No other gateway owns the "inference cost from GPU to token" angle.
 
@@ -107,15 +120,18 @@
 
 ## 6. Keyword & content map
 
-| Cluster | Target queries | Nautili asset | Action |
-|---|---|---|---|
-| **Category** | llm gateway, ai gateway, llm router, llm proxy | Homepage, open-source gateways post | A pillar page "What is an LLM gateway" and a "Best LLM gateways 2026" post that includes Nautili |
-| **Alternatives & vs** | openrouter alternative, portkey alternative, litellm alternative, helicone vs portkey | 2 compare pages | 8–10 more `/compare/*` pages and `/alternatives/*` pages with an "after the acquisition" angle |
-| **Coding-agent cost** | claude code cost, cursor cost per developer, claude code proxy, track ai coding spend | 3 strong posts, Claude Code integration | Add Codex, Gemini CLI, Copilot and Windsurf cost posts, one integration page per tool, and a data-driven benchmark report |
-| **Spend / FinOps for AI** | llm cost tracking, ai spend management, llm budget per team, token cost attribution | `/features/spend-attribution` | Feature pages for budgets, routing, failover and evals; a glossary |
-| **Model pricing (programmatic)** | `{model} pricing`, `{model} api cost`, `{model} vs {model}` | 573 catalogue pages | Add real cross-provider prices and latency; add vs-pages for popular model pairs; an LLM price-change tracker |
-| **Self-hosting** | self hosted llm gateway, llm gateway helm, on-prem ai gateway | Helm guide, self-hosting docs | A dedicated landing page and a comparison with the LiteLLM and Bifrost self-host setup |
-| **Governance / security** | llm governance, pii redaction llm, llm guardrails | Governance post, guardrails guide | Pages focused on compliance (SOC 2 carried over from DevZero; data retention policy) |
+| Cluster | Target queries | US searches/mo (KD)* | Nautili asset | Action |
+|---|---|---|---|---|
+| **Category** | llm gateway, ai gateway, llm router, llm proxy | ~10k (KD 31), +164% YoY: ai gateway 2,900, mcp gateway 2,400, llm gateway 1,600, llm router 720 | Homepage, open-source gateways post | A pillar page "What is an LLM gateway" and a "Best LLM gateways 2026" post that includes Nautili |
+| **Alternatives & vs** | openrouter alternative, portkey alternative, litellm alternative, helicone vs portkey | ~3.3k (KD 7), +185% YoY: openrouter pricing 1,600, openrouter alternative 880, litellm alternatives 390 | 2 compare pages | 8–10 more `/compare/*` pages and `/alternatives/*` pages with an "after the acquisition" angle |
+| **Coding-agent cost** | claude code cost, cursor cost per developer, claude code proxy, track ai coding spend | ~101k (KD 24): claude code pricing 27,100, cursor pricing 9,900, cursor vs claude code 8,100 (KD 2) | 3 strong posts, Claude Code integration | Add Codex, Gemini CLI, Copilot and Windsurf cost posts, one integration page per tool, and a data-driven benchmark report |
+| **Spend / FinOps for AI** | llm cost tracking, ai spend management, llm budget per team, token cost attribution | small: llm cost tracking, ai spend management under 100 each; llm observability 590 | `/features/spend-attribution` | Feature pages for budgets, routing, failover and evals; a glossary |
+| **Model pricing (programmatic)** | `{model} pricing`, `{model} api cost`, `{model} vs {model}` | ~98k (KD 35), +67% YoY: claude pricing 40,500, openai api pricing 12,100, claude api pricing 8,100 | 573 catalogue pages | Add real cross-provider prices and latency; add vs-pages for popular model pairs; an LLM price-change tracker |
+| **Self-hosting** | self hosted llm gateway, llm gateway helm, on-prem ai gateway | open source llm gateway 70, self hosted llm gateway 10 | Helm guide, self-hosting docs | A dedicated landing page and a comparison with the LiteLLM and Bifrost self-host setup |
+| **Governance / security** | llm governance, pii redaction llm, llm guardrails | llm guardrails 320 | Governance post, guardrails guide | Pages focused on compliance (SOC 2 carried over from DevZero; data retention policy) |
+
+
+*DataForSEO, US, 12 Nov 2026; variant-deduped, competitor brand names excluded (bare brand searches: openrouter 135k, litellm 27k, portkey 5.4k). Detail in `seo-data-findings.md` §3–4.*
 
 ---
 
@@ -141,6 +157,7 @@
 ---
 
 ## Sources
+- Search data: DataForSEO API v3 (Labs domain overview, ranked keywords, competitors, historical SERPs; Google Ads search volume; Backlinks summary and referring domains), pulled 12 Nov 2026. See `seo-data-findings.md`.
 - Nautili: [homepage](https://www.nautili.ai/), [pricing](https://www.nautili.ai/pricing/inference), [vs OpenRouter](https://www.nautili.ai/compare/openrouter), [vs Portkey](https://www.nautili.ai/compare/portkey), [Claude Code cost](https://www.nautili.ai/blog/claude-code-cost), [open-source LLM gateways](https://www.nautili.ai/blog/open-source-llm-gateways), plus robots.txt, llms.txt and sitemaps (crawled 12 Nov 2026)
 - Duplicate example: [nautili.ai copy](https://www.nautili.ai/blog/kubernetes-cost-optimization-tools-2026) vs [devzero.io original](https://www.devzero.io/blog/kubernetes-cost-optimization-tools-2026)
 - Market and funding (secondary sources, verify before quoting): [OpenRouter Series B analysis](https://newmarketpitch.com/blogs/news/openrouter-series-b-analysis), [AI Insiders on OpenRouter's $1.3B valuation](https://aiinsiders.net/article/openrouter-doubles-to-dollar13b-valuation-as-multi-model), [Nadir on AI routing funding](https://getnadir.com/blog/250m-ai-routing-funding-mandatory-infrastructure/), [Kosmoy Portkey vs OpenRouter](https://www.kosmoy.com/resources/blog/portkey-vs-openrouter/), [LLM gateway market report](https://growthmarketreports.com/report/llm-gateway-market)

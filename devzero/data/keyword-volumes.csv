@@ -1,0 +1,189 @@
+site,cluster,keyword,volume_us,volume_us_google_ads,volume_worldwide_google_ads,keyword_difficulty,cpc_usd,competition,intent,source,class,variant_group
+devzero,K8s cost optimisation & rightsizing,kubernetes cost optimization,90,90,210,0,19.11,LOW,commercial,labs,addressable,kubernetes optimization price
+devzero,K8s cost optimisation & rightsizing,kubernetes cost optimization tools,50,50,110,0,,LOW,commercial,labs,addressable,kubernetes optimization price tools
+devzero,K8s cost optimisation & rightsizing,kubernetes cost management,30,30,70,0,,LOW,commercial,labs,addressable,kubernetes management price
+devzero,K8s cost optimisation & rightsizing,k8s cost optimization,10,10,20,,,MEDIUM,commercial,labs,addressable,kubernetes optimization price
+devzero,K8s cost optimisation & rightsizing,kubernetes cost,70,70,170,36,13.38,MEDIUM,commercial,labs,addressable,kubernetes price
+devzero,K8s cost optimisation & rightsizing,kubernetes cost monitoring,50,30,140,8,,LOW,commercial,labs,addressable,kubernetes monitoring price
+devzero,K8s cost optimisation & rightsizing,kubernetes cost analysis,10,10,10,28,,,commercial,labs,addressable,analysis kubernetes price
+devzero,K8s cost optimisation & rightsizing,eks cost optimization,10,10,50,2,,LOW,commercial,labs,addressable,eks optimization price
+devzero,K8s cost optimisation & rightsizing,gke cost optimization,20,20,40,0,,LOW,commercial,labs,addressable,gke optimization price
+devzero,K8s cost optimisation & rightsizing,aks cost optimization,10,10,20,,,LOW,commercial,labs,addressable,aks optimization price
+devzero,K8s cost optimisation & rightsizing,pod rightsizing,0,,,,,,,google_ads,addressable,pod rightsizing
+devzero,K8s cost optimisation & rightsizing,kubernetes rightsizing,0,,,,,,,google_ads,addressable,kubernetes rightsizing
+devzero,K8s cost optimisation & rightsizing,rightsizing kubernetes,0,,,,,,,google_ads,addressable,kubernetes rightsizing
+devzero,K8s cost optimisation & rightsizing,in place pod resize,20,20,110,,,LOW,,google_ads,addressable,in place pod resize
+devzero,K8s cost optimisation & rightsizing,kubernetes in place pod resize,20,20,70,,,LOW,,google_ads,addressable,in kubernetes place pod resize
+devzero,K8s cost optimisation & rightsizing,kubernetes resource optimization,20,20,30,0,,LOW,commercial,labs,addressable,kubernetes optimization resource
+devzero,K8s cost optimisation & rightsizing,kubernetes cost reduction,20,10,20,,,,commercial,labs,addressable,kubernetes price reduction
+devzero,K8s cost optimisation & rightsizing,reduce kubernetes costs,0,,,,,,,google_ads,addressable,kubernetes price reduce
+devzero,K8s cost optimisation & rightsizing,kubernetes finops,10,10,30,,,HIGH,informational,labs,addressable,finops kubernetes
+devzero,K8s cost optimisation & rightsizing,kubernetes gpu optimization,0,,,,,,,google_ads,addressable,gpu kubernetes optimization
+devzero,K8s cost optimisation & rightsizing,gpu utilization kubernetes,0,,,,,,,google_ads,addressable,gpu kubernetes utilization
+devzero,K8s cost optimisation & rightsizing,kubernetes bin packing,30,30,70,0,,LOW,commercial,labs,addressable,bin kubernetes packing
+devzero,K8s cost optimisation & rightsizing,container rightsizing,0,,,,,,,google_ads,addressable,container rightsizing
+devzero,K8s cost optimisation & rightsizing,kubernetes workload optimization,0,,,,,,,google_ads,addressable,kubernetes optimization workload
+devzero,"Autoscaling education (HPA, VPA, Karpenter)",karpenter,1900,1900,14800,44,10.78,LOW,informational,labs,addressable,karpenter
+devzero,"Autoscaling education (HPA, VPA, Karpenter)",karpenter kubernetes,480,480,1600,45,13.31,MEDIUM,transactional,labs,addressable,karpenter kubernetes
+devzero,"Autoscaling education (HPA, VPA, Karpenter)",what is karpenter,170,170,390,45,13.83,LOW,informational,labs,addressable,karpenter
+devzero,"Autoscaling education (HPA, VPA, Karpenter)",karpenter vs cluster autoscaler,110,110,320,5,16.17,LOW,commercial,labs,addressable,autoscaler cluster karpenter
+devzero,"Autoscaling education (HPA, VPA, Karpenter)",hpa kubernetes,720,720,3600,10,28.75,LOW,informational,labs,addressable,hpa kubernetes
+devzero,"Autoscaling education (HPA, VPA, Karpenter)",kubernetes hpa,720,720,3600,9,18.62,LOW,informational,labs,addressable,hpa kubernetes
+devzero,"Autoscaling education (HPA, VPA, Karpenter)",horizontal pod autoscaler,320,320,1600,14,49.34,LOW,transactional,labs,addressable,autoscaler horizontal pod
+devzero,"Autoscaling education (HPA, VPA, Karpenter)",vertical pod autoscaler,260,260,1300,33,9.93,LOW,transactional,labs,addressable,autoscaler pod vertical
+devzero,"Autoscaling education (HPA, VPA, Karpenter)",vpa kubernetes,70,70,480,21,14.57,LOW,informational,labs,addressable,kubernetes vpa
+devzero,"Autoscaling education (HPA, VPA, Karpenter)",kubernetes vpa,90,90,480,21,12.34,LOW,informational,labs,addressable,kubernetes vpa
+devzero,"Autoscaling education (HPA, VPA, Karpenter)",vpa vs hpa,30,30,90,0,,LOW,informational,labs,addressable,hpa vpa
+devzero,"Autoscaling education (HPA, VPA, Karpenter)",keda,3600,3600,27100,16,23.89,LOW,informational,labs,addressable,keda
+devzero,"Autoscaling education (HPA, VPA, Karpenter)",keda kubernetes,480,480,2400,19,18.44,LOW,informational,labs,addressable,keda kubernetes
+devzero,"Autoscaling education (HPA, VPA, Karpenter)",cluster autoscaler,320,320,1600,39,11.38,LOW,transactional,labs,addressable,autoscaler cluster
+devzero,"Autoscaling education (HPA, VPA, Karpenter)",kubernetes cluster autoscaler,110,90,320,31,11.3,LOW,commercial,labs,addressable,autoscaler cluster kubernetes
+devzero,"Autoscaling education (HPA, VPA, Karpenter)",kubernetes autoscaling,260,260,1300,17,12.08,LOW,commercial,labs,addressable,autoscaling kubernetes
+devzero,"Autoscaling education (HPA, VPA, Karpenter)",kubernetes requests vs limits,140,140,320,20,7.13,LOW,informational,labs,addressable,kubernetes limits requests
+devzero,"Autoscaling education (HPA, VPA, Karpenter)",kubernetes resource requests and limits,10,10,50,,,LOW,informational,labs,addressable,and kubernetes limits requests resource
+devzero,"Autoscaling education (HPA, VPA, Karpenter)",eks auto mode,880,720,1900,4,36.81,LOW,transactional,labs,addressable,auto eks mode
+devzero,"Autoscaling education (HPA, VPA, Karpenter)",karpenter aws,140,140,720,46,36.88,LOW,transactional,labs,addressable,aws karpenter
+devzero,"Autoscaling education (HPA, VPA, Karpenter)",kubernetes vpa alternative,0,,,,,,,google_ads,addressable,alternative kubernetes vpa
+devzero,"Autoscaling education (HPA, VPA, Karpenter)",goldilocks kubernetes,70,50,390,0,19.74,MEDIUM,informational,labs,addressable,goldilocks kubernetes
+devzero,"Autoscaling education (HPA, VPA, Karpenter)",criu,590,590,2900,18,,LOW,informational,labs,addressable,criu
+devzero,"Cloud, instance and GPU pricing",eks pricing,210,210,880,5,4.54,MEDIUM,informational,labs,addressable,eks price
+devzero,"Cloud, instance and GPU pricing",aws eks pricing,170,170,590,9,3.32,LOW,commercial,labs,addressable,aws eks price
+devzero,"Cloud, instance and GPU pricing",gke pricing,110,90,480,8,10.21,LOW,commercial,labs,addressable,gke price
+devzero,"Cloud, instance and GPU pricing",gke autopilot,320,320,1300,13,1.89,LOW,transactional,labs,addressable,autopilot gke
+devzero,"Cloud, instance and GPU pricing",aks pricing,70,70,480,0,2.66,LOW,commercial,labs,addressable,aks price
+devzero,"Cloud, instance and GPU pricing",azure kubernetes service pricing,140,140,390,5,17.65,LOW,commercial,labs,addressable,azure kubernetes price service
+devzero,"Cloud, instance and GPU pricing",h100 price per hour,70,90,210,11,9.08,MEDIUM,informational,labs,addressable,h100 hour per price
+devzero,"Cloud, instance and GPU pricing",h100 price,1900,1900,8100,21,6.8,MEDIUM,informational,labs,addressable,h100 price
+devzero,"Cloud, instance and GPU pricing",a100 price per hour,20,20,50,,2.68,MEDIUM,informational,labs,addressable,a100 hour per price
+devzero,"Cloud, instance and GPU pricing",gpu cloud pricing,210,260,1300,41,12.05,MEDIUM,commercial,labs,addressable,cloud gpu price
+devzero,"Cloud, instance and GPU pricing",cloud gpu pricing,210,260,1300,41,12.05,MEDIUM,commercial,labs,addressable,cloud gpu price
+devzero,"Cloud, instance and GPU pricing",aws gpu pricing,390,390,1600,59,11.35,MEDIUM,commercial,labs,addressable,aws gpu price
+devzero,"Cloud, instance and GPU pricing",p5 instance pricing,10,10,20,,23.15,LOW,commercial,labs,addressable,instance p5 price
+devzero,"Cloud, instance and GPU pricing",ec2 instance pricing,720,720,2400,21,5.67,LOW,commercial,labs,addressable,ec2 instance price
+devzero,"Cloud, instance and GPU pricing",ec2 pricing,2400,2400,9900,27,3.98,LOW,commercial,labs,addressable,ec2 price
+devzero,"Cloud, instance and GPU pricing",aws pricing calculator,14800,18100,74000,30,4.37,LOW,commercial,labs,addressable,aws calculator price
+devzero,"Cloud, instance and GPU pricing",azure pricing calculator,14800,12100,74000,25,0.37,LOW,commercial,labs,addressable,azure calculator price
+devzero,"Cloud, instance and GPU pricing",gcp pricing calculator,1300,1300,9900,25,9.73,LOW,commercial,labs,addressable,calculator gcp price
+devzero,"Cloud, instance and GPU pricing",m5 large,1900,2400,8100,0,12.94,LOW,transactional,labs,addressable,large m5
+devzero,"Cloud, instance and GPU pricing",t3 medium,480,480,3600,7,12.05,LOW,informational,labs,addressable,medium t3
+devzero,"Cloud, instance and GPU pricing",g5 xlarge,320,320,1300,0,14.87,LOW,transactional,labs,addressable,g5 xlarge
+devzero,"Cloud, instance and GPU pricing",g4dn xlarge,480,480,2400,4,14.36,LOW,transactional,labs,addressable,g4dn xlarge
+devzero,"Cloud, instance and GPU pricing",c5 2xlarge,320,260,1000,7,11.48,LOW,transactional,labs,addressable,2xlarge c5
+devzero,"Cloud, instance and GPU pricing",spot instance pricing,50,50,170,17,3.53,LOW,commercial,labs,addressable,instance price spot
+devzero,"Cloud, instance and GPU pricing",aws spot pricing,320,320,880,25,2.02,LOW,commercial,labs,addressable,aws price spot
+devzero,Competitor vs & alternatives,cast ai,1900,1900,9900,45,35.07,MEDIUM,informational,labs,brand_navigational,ai cast
+devzero,Competitor vs & alternatives,cast ai alternatives,10,10,70,,,MEDIUM,commercial,labs,addressable,ai alternative cast
+devzero,Competitor vs & alternatives,cast ai alternative,0,,,,,,,google_ads,addressable,ai alternative cast
+devzero,Competitor vs & alternatives,cast ai pricing,20,20,90,17,25.98,MEDIUM,commercial,labs,addressable,ai cast price
+devzero,Competitor vs & alternatives,kubecost,880,880,4400,22,7.02,LOW,informational,labs,brand_navigational,kubecost
+devzero,Competitor vs & alternatives,kubecost alternatives,20,20,70,0,23.7,MEDIUM,commercial,labs,addressable,alternative kubecost
+devzero,Competitor vs & alternatives,kubecost alternative,20,20,70,0,23.7,HIGH,commercial,labs,addressable,alternative kubecost
+devzero,Competitor vs & alternatives,kubecost pricing,40,40,170,7,33.28,LOW,commercial,labs,addressable,kubecost price
+devzero,Competitor vs & alternatives,opencost,480,480,3600,8,27.28,MEDIUM,informational,labs,brand_navigational,opencost
+devzero,Competitor vs & alternatives,scaleops,1300,1300,4400,17,19.96,MEDIUM,informational,labs,brand_navigational,scaleops
+devzero,Competitor vs & alternatives,scaleops alternative,0,,,,,,,google_ads,addressable,alternative scaleops
+devzero,Competitor vs & alternatives,scaleops vs cast ai,10,10,20,,,LOW,,google_ads,addressable,ai cast scaleops
+devzero,Competitor vs & alternatives,perfectscale,210,210,1300,20,23.51,LOW,informational,labs,brand_navigational,perfectscale
+devzero,Competitor vs & alternatives,perfectscale alternative,0,,,,,,,google_ads,addressable,alternative perfectscale
+devzero,Competitor vs & alternatives,zesty kubernetes,10,10,30,,,MEDIUM,informational,labs,brand_navigational,kubernetes zesty
+devzero,Competitor vs & alternatives,sedai,720,720,3600,4,17.93,LOW,informational,labs,brand_navigational,sedai
+devzero,Competitor vs & alternatives,stormforge,1900,1900,18100,15,16.87,LOW,informational,labs,noise,stormforge
+devzero,Competitor vs & alternatives,spot ocean,50,50,170,12,,LOW,informational,labs,brand_navigational,ocean spot
+devzero,Competitor vs & alternatives,spot by netapp ocean,0,,,,,,,google_ads,addressable,by netapp ocean spot
+devzero,Competitor vs & alternatives,komodor,1900,1900,14800,14,7.05,LOW,informational,labs,brand_navigational,komodor
+devzero,Competitor vs & alternatives,densify,1900,1900,8100,0,2.64,LOW,informational,labs,noise,densify
+devzero,Competitor vs & alternatives,kubex,170,170,1600,10,17.25,LOW,informational,labs,brand_navigational,kubex
+devzero,Competitor vs & alternatives,devzero,390,390,2400,7,0.01,LOW,informational,labs,brand_navigational,devzero
+nautili,"LLM gateway, AI gateway, LLM router",llm gateway,1600,1900,8100,29,16.71,MEDIUM,navigational,labs,addressable,gateway llm
+nautili,"LLM gateway, AI gateway, LLM router",ai gateway,2900,2900,12100,53,25.44,MEDIUM,navigational,labs,addressable,ai gateway
+nautili,"LLM gateway, AI gateway, LLM router",llm router,720,720,3600,18,8.52,MEDIUM,transactional,labs,addressable,llm router
+nautili,"LLM gateway, AI gateway, LLM router",llm proxy,390,390,2400,0,10.8,LOW,informational,labs,addressable,llm proxy
+nautili,"LLM gateway, AI gateway, LLM router",ai api gateway,90,90,320,32,47.48,MEDIUM,navigational,labs,addressable,ai api gateway
+nautili,"LLM gateway, AI gateway, LLM router",llm api gateway,50,70,210,0,11.87,MEDIUM,navigational,labs,addressable,api gateway llm
+nautili,"LLM gateway, AI gateway, LLM router",open source llm gateway,70,70,210,32,5.91,LOW,navigational,labs,addressable,gateway llm open source
+nautili,"LLM gateway, AI gateway, LLM router",self hosted llm gateway,10,10,40,,3.41,LOW,navigational,labs,addressable,gateway hosted llm self
+nautili,"LLM gateway, AI gateway, LLM router",best llm gateway,140,170,260,0,29.86,LOW,informational,labs,addressable,best gateway llm
+nautili,"LLM gateway, AI gateway, LLM router",llm gateway open source,70,90,390,37,6.18,MEDIUM,navigational,labs,addressable,gateway llm open source
+nautili,"LLM gateway, AI gateway, LLM router",model router,390,390,1900,45,4.25,LOW,transactional,labs,addressable,model router
+nautili,"LLM gateway, AI gateway, LLM router",ai model router,90,110,320,25,6.37,MEDIUM,transactional,labs,addressable,ai model router
+nautili,"LLM gateway, AI gateway, LLM router",llm routing,140,140,590,22,5.69,LOW,navigational,labs,addressable,llm routing
+nautili,"LLM gateway, AI gateway, LLM router",llm load balancer,20,20,90,,,LOW,,google_ads,addressable,balancer llm load
+nautili,"LLM gateway, AI gateway, LLM router",llm observability,590,590,1900,19,27.85,MEDIUM,informational,labs,addressable,llm observability
+nautili,"LLM gateway, AI gateway, LLM router",llm cost tracking,10,20,50,,11.02,MEDIUM,commercial,labs,addressable,llm price tracking
+nautili,"LLM gateway, AI gateway, LLM router",ai spend management,70,90,170,0,73.05,LOW,commercial,labs,addressable,ai management spend
+nautili,"LLM gateway, AI gateway, LLM router",llm cost management,0,,,,,,,google_ads,addressable,llm management price
+nautili,"LLM gateway, AI gateway, LLM router",token cost tracking,0,,,,,,,google_ads,addressable,price token tracking
+nautili,"LLM gateway, AI gateway, LLM router",llm guardrails,320,260,1600,29,12.64,MEDIUM,transactional,labs,addressable,guardrails llm
+nautili,"LLM gateway, AI gateway, LLM router",cloudflare ai gateway,2400,2400,8100,33,13.52,LOW,navigational,labs,brand_navigational,ai cloudflare gateway
+nautili,"LLM gateway, AI gateway, LLM router",vercel ai gateway,2900,2900,12100,44,7.16,LOW,navigational,labs,brand_navigational,ai gateway vercel
+nautili,"LLM gateway, AI gateway, LLM router",kong ai gateway,880,1000,3600,16,9.21,MEDIUM,navigational,labs,brand_navigational,ai gateway kong
+nautili,"LLM gateway, AI gateway, LLM router",mcp gateway,2400,2400,8100,20,49.58,MEDIUM,navigational,labs,addressable,gateway mcp
+nautili,"OpenRouter, Portkey and LiteLLM alternatives",openrouter,135000,165000,1000000,44,0.98,LOW,informational,labs,brand_navigational,openrouter
+nautili,"OpenRouter, Portkey and LiteLLM alternatives",openrouter alternative,880,880,5400,1,19.69,MEDIUM,commercial,labs,addressable,alternative openrouter
+nautili,"OpenRouter, Portkey and LiteLLM alternatives",openrouter alternatives,880,880,5400,1,17.9,MEDIUM,commercial,labs,addressable,alternative openrouter
+nautili,"OpenRouter, Portkey and LiteLLM alternatives",openrouter pricing,1600,1600,9900,12,10.41,LOW,commercial,labs,addressable,openrouter price
+nautili,"OpenRouter, Portkey and LiteLLM alternatives",openrouter fees,70,70,320,24,10.74,LOW,commercial,labs,addressable,fees openrouter
+nautili,"OpenRouter, Portkey and LiteLLM alternatives",portkey,5400,5400,22200,25,9.76,LOW,informational,labs,brand_navigational,portkey
+nautili,"OpenRouter, Portkey and LiteLLM alternatives",portkey ai,720,720,2900,25,36.07,LOW,navigational,labs,brand_navigational,ai portkey
+nautili,"OpenRouter, Portkey and LiteLLM alternatives",portkey alternative,0,,,,,,,google_ads,addressable,alternative portkey
+nautili,"OpenRouter, Portkey and LiteLLM alternatives",portkey alternatives,30,30,90,,23.22,LOW,navigational,labs,addressable,alternative portkey
+nautili,"OpenRouter, Portkey and LiteLLM alternatives",litellm,27100,27100,135000,22,15.68,LOW,informational,labs,brand_navigational,litellm
+nautili,"OpenRouter, Portkey and LiteLLM alternatives",litellm alternative,320,390,1900,0,14.51,MEDIUM,informational,labs,addressable,alternative litellm
+nautili,"OpenRouter, Portkey and LiteLLM alternatives",litellm alternatives,390,390,1900,0,16.65,MEDIUM,informational,labs,addressable,alternative litellm
+nautili,"OpenRouter, Portkey and LiteLLM alternatives",litellm proxy,1000,1000,5400,38,13.79,LOW,navigational,labs,brand_navigational,litellm proxy
+nautili,"OpenRouter, Portkey and LiteLLM alternatives",helicone,1600,1600,6600,21,20.05,LOW,informational,labs,brand_navigational,helicone
+nautili,"OpenRouter, Portkey and LiteLLM alternatives",helicone alternative,10,10,40,,17.67,HIGH,transactional,labs,addressable,alternative helicone
+nautili,"OpenRouter, Portkey and LiteLLM alternatives",truefoundry,1600,1900,6600,20,9.36,LOW,commercial,labs,brand_navigational,truefoundry
+nautili,"OpenRouter, Portkey and LiteLLM alternatives",bifrost llm gateway,260,260,880,28,2.63,MEDIUM,navigational,labs,brand_navigational,bifrost gateway llm
+nautili,"OpenRouter, Portkey and LiteLLM alternatives",requesty,90500,90500,1000000,10,2.36,LOW,transactional,labs,noise,requesty
+nautili,"OpenRouter, Portkey and LiteLLM alternatives",portkey vs litellm,50,50,170,0,2.72,LOW,informational,labs,addressable,litellm portkey
+nautili,"OpenRouter, Portkey and LiteLLM alternatives",litellm vs openrouter,260,320,880,0,14.23,LOW,commercial,labs,addressable,litellm openrouter
+nautili,"OpenRouter, Portkey and LiteLLM alternatives",openrouter vs litellm,210,260,720,0,13.27,LOW,commercial,labs,addressable,litellm openrouter
+nautili,"OpenRouter, Portkey and LiteLLM alternatives",martian router,50,50,90,0,14.83,LOW,informational,labs,brand_navigational,martian router
+nautili,"OpenRouter, Portkey and LiteLLM alternatives",not diamond,880,880,2400,4,3.46,LOW,informational,labs,brand_navigational,diamond not
+nautili,"AI coding cost (Claude Code, Cursor, Codex)",claude code cost,5400,5400,9900,38,3.61,LOW,informational,labs,addressable,claude code price
+nautili,"AI coding cost (Claude Code, Cursor, Codex)",claude code pricing,27100,33100,165000,30,4.66,LOW,commercial,labs,addressable,claude code price
+nautili,"AI coding cost (Claude Code, Cursor, Codex)",claude code price,27100,33100,165000,37,4.66,LOW,commercial,labs,addressable,claude code price
+nautili,"AI coding cost (Claude Code, Cursor, Codex)",how much does claude code cost,1900,1900,3600,,3.57,LOW,commercial,labs,addressable,claude code price
+nautili,"AI coding cost (Claude Code, Cursor, Codex)",cursor pricing,9900,9900,90500,21,4.52,LOW,informational,labs,addressable,cursor price
+nautili,"AI coding cost (Claude Code, Cursor, Codex)",cursor cost,1300,1300,2900,,4.79,LOW,commercial,labs,addressable,cursor price
+nautili,"AI coding cost (Claude Code, Cursor, Codex)",cursor price,9900,9900,90500,16,4.52,LOW,informational,labs,addressable,cursor price
+nautili,"AI coding cost (Claude Code, Cursor, Codex)",github copilot pricing,8100,8100,74000,77,3.01,MEDIUM,commercial,labs,addressable,copilot github price
+nautili,"AI coding cost (Claude Code, Cursor, Codex)",copilot pricing,2900,2900,33100,55,6,LOW,commercial,labs,addressable,copilot price
+nautili,"AI coding cost (Claude Code, Cursor, Codex)",codex pricing,8100,8100,74000,9,4.73,LOW,commercial,labs,addressable,codex price
+nautili,"AI coding cost (Claude Code, Cursor, Codex)",openai codex pricing,1600,1600,6600,23,4.18,LOW,commercial,labs,addressable,codex openai price
+nautili,"AI coding cost (Claude Code, Cursor, Codex)",windsurf pricing,720,590,5400,9,4.65,LOW,commercial,labs,addressable,price windsurf
+nautili,"AI coding cost (Claude Code, Cursor, Codex)",claude max plan,4400,5400,18100,10,4.54,LOW,navigational,labs,addressable,claude max plan
+nautili,"AI coding cost (Claude Code, Cursor, Codex)",claude max,12100,12100,74000,0,4.11,LOW,informational,labs,addressable,claude max
+nautili,"AI coding cost (Claude Code, Cursor, Codex)",claude pro price,14800,14800,49500,24,5.33,LOW,commercial,labs,addressable,claude price pro
+nautili,"AI coding cost (Claude Code, Cursor, Codex)",gemini cli pricing,480,480,3600,75,4.11,LOW,commercial,labs,addressable,cli gemini price
+nautili,"AI coding cost (Claude Code, Cursor, Codex)",claude code usage limits,1000,1000,5400,37,5.54,LOW,informational,labs,addressable,claude code limits usage
+nautili,"AI coding cost (Claude Code, Cursor, Codex)",claude code proxy,590,590,2900,15,5.75,LOW,navigational,labs,addressable,claude code proxy
+nautili,"AI coding cost (Claude Code, Cursor, Codex)",claude code api key,1300,1300,6600,30,6.63,LOW,navigational,labs,addressable,api claude code key
+nautili,"AI coding cost (Claude Code, Cursor, Codex)",claude code vs cursor,6600,6600,18100,0,7.6,LOW,informational,labs,addressable,claude code cursor
+nautili,"AI coding cost (Claude Code, Cursor, Codex)",cursor vs claude code,8100,8100,27100,2,8.08,LOW,informational,labs,addressable,claude code cursor
+nautili,"AI coding cost (Claude Code, Cursor, Codex)",ai coding tools cost,0,,,,,,,google_ads,addressable,ai coding price tools
+nautili,"AI coding cost (Claude Code, Cursor, Codex)",ai coding assistant pricing,140,140,140,,,LOW,commercial,labs,addressable,ai assistant coding price
+nautili,"Model API pricing (Claude, GPT, Gemini)",claude api pricing,8100,8100,40500,15,5.57,LOW,commercial,labs,addressable,api claude price
+nautili,"Model API pricing (Claude, GPT, Gemini)",anthropic api pricing,2900,2900,9900,20,10.29,LOW,informational,labs,addressable,anthropic api price
+nautili,"Model API pricing (Claude, GPT, Gemini)",claude pricing,40500,49500,301000,34,3.11,LOW,commercial,labs,addressable,claude price
+nautili,"Model API pricing (Claude, GPT, Gemini)",claude opus pricing,880,1000,4400,6,5.53,LOW,commercial,labs,addressable,claude opus price
+nautili,"Model API pricing (Claude, GPT, Gemini)",claude sonnet pricing,720,720,2900,27,5.35,LOW,commercial,labs,addressable,claude price sonnet
+nautili,"Model API pricing (Claude, GPT, Gemini)",claude haiku pricing,260,320,1300,22,,LOW,commercial,labs,addressable,claude haiku price
+nautili,"Model API pricing (Claude, GPT, Gemini)",openai api pricing,12100,12100,40500,51,18.34,LOW,commercial,labs,addressable,api openai price
+nautili,"Model API pricing (Claude, GPT, Gemini)",gpt api pricing,1000,1000,6600,41,20.32,LOW,commercial,labs,addressable,api gpt price
+nautili,"Model API pricing (Claude, GPT, Gemini)",chatgpt api pricing,2400,2400,14800,48,12.5,LOW,informational,labs,addressable,api chatgpt price
+nautili,"Model API pricing (Claude, GPT, Gemini)",gpt 5 api pricing,170,110,480,32,8.13,LOW,commercial,labs,addressable,5 api gpt price
+nautili,"Model API pricing (Claude, GPT, Gemini)",gemini api pricing,4400,4400,33100,21,4.24,LOW,commercial,labs,addressable,api gemini price
+nautili,"Model API pricing (Claude, GPT, Gemini)",gemini 2.5 pro pricing,390,320,1600,44,15.4,LOW,commercial,labs,addressable,2 5 gemini price pro
+nautili,"Model API pricing (Claude, GPT, Gemini)",gemini pricing,8100,8100,60500,42,6.98,LOW,commercial,labs,addressable,gemini price
+nautili,"Model API pricing (Claude, GPT, Gemini)",deepseek api pricing,3600,3600,22200,15,6.21,LOW,commercial,labs,addressable,api deepseek price
+nautili,"Model API pricing (Claude, GPT, Gemini)",mistral api pricing,110,110,1600,9,8.84,LOW,commercial,labs,addressable,api mistral price
+nautili,"Model API pricing (Claude, GPT, Gemini)",grok api pricing,1000,1000,6600,19,6.04,LOW,commercial,labs,addressable,api grok price
+nautili,"Model API pricing (Claude, GPT, Gemini)",llama api pricing,40,40,210,0,9.15,LOW,informational,labs,addressable,api llama price
+nautili,"Model API pricing (Claude, GPT, Gemini)",llm pricing,210,210,1000,31,9.3,MEDIUM,informational,labs,addressable,llm price
+nautili,"Model API pricing (Claude, GPT, Gemini)",llm api pricing comparison,140,140,590,31,6.98,LOW,commercial,labs,addressable,api comparison llm price
+nautili,"Model API pricing (Claude, GPT, Gemini)",ai model pricing,170,170,720,32,10.29,LOW,commercial,labs,addressable,ai model price
+nautili,"Model API pricing (Claude, GPT, Gemini)",token pricing,590,590,2400,85,34.69,LOW,informational,labs,addressable,price token
+nautili,"Model API pricing (Claude, GPT, Gemini)",openai pricing,5400,5400,33100,52,14.65,LOW,commercial,labs,addressable,openai price
+nautili,"Model API pricing (Claude, GPT, Gemini)",anthropic pricing,4400,4400,18100,43,5.28,LOW,informational,labs,addressable,anthropic price

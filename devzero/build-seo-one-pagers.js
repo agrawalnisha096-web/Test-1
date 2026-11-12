@@ -76,7 +76,7 @@ function build(c) {
         h('SEO interventions needed'),
         grid([['Priority', 'Intervention', 'Why it matters'], ...c.interventions], [0.13, 0.42, 0.45], { boldFirst: true }),
         h('Traffic opportunity'),
-        grid([['Topic area', 'Est. monthly searches', 'Role'], ...c.traffic], [0.42, 0.2, 0.38]),
+        grid([['Topic area', 'US searches/mo (difficulty)', 'Role'], ...c.traffic], [0.38, 0.27, 0.35]),
         p(c.trafficNote, { pt: 8, color: GREY, before: 40, after: 0 }),
         h('Plan and what we need from you'),
         grid([['When', 'Focus'], ...c.timeline], [0.15, 0.85], { boldFirst: true }),
@@ -87,7 +87,7 @@ function build(c) {
   return Packer.toBuffer(doc);
 }
 
-const TRAFFIC_NOTE = 'Search volumes are directional estimates, to be confirmed with Ahrefs/Semrush and Search Console data in week 1.';
+const TRAFFIC_NOTE = 'Source: DataForSEO (Google Ads volumes, Labs rankings and backlinks), US, 12 Nov 2026. Volumes are addressable searches (close variants merged, competitor brand names excluded); difficulty is 0–100. Visits are DataForSEO estimates; Search Console is not yet connected.';
 
 const devzero = {
   file: 'DevZero-SEO-One-Pager.docx',
@@ -95,44 +95,44 @@ const devzero = {
   title: 'DevZero · SEO Priorities',
   subtitle: 'devzero.io: Kubernetes and GPU compute optimisation for platform and infrastructure teams',
   kpis: [
-    ['~5,500', 'indexable pages'],
-    ['67', 'blog posts (leaders: 250–550)'],
-    ['11', 'competitor comparison pages'],
-    ['20–50k', 'est. monthly visits in 12 months'],
+    ['~820', 'organic visits/mo (Cast AI: 1.7k)'],
+    ['1,013', 'ranking keywords, 455 in top 10'],
+    ['526', 'referring domains (Cast AI: 3,665)'],
+    ['2–5k', 'visits/mo in 12 months, all markets'],
   ],
   strengths: [
+    '**Already competitive:** more search traffic than ScaleOps, PerfectScale and Sedai; about half of Cast AI.',
+    '**Pricing pages are the engine:** 5,200+ instance pages bring 77% of traffic and 746 ranking keywords.',
+    '**Top 10 for cloud pricing guides:** GKE pricing #3, EKS pricing #7, AKS pricing #8.',
     '**Solid technical base:** fast server-rendered pages, clean canonicals, rich structured data, AI crawlers allowed.',
-    '**Unique pricing tools:** 5,200+ instance, spot and GPU pricing pages that no direct competitor matches.',
-    '**Clear money pages:** cost optimisation, pod rightsizing, VPA, Karpenter, GPU, plus 11 "vs" pages.',
-    '**Ranks well for:** "VPA alternative", "rightsizing without restarts" and "EKS cost optimization".',
   ],
   gaps: [
-    '**The pivot left traces:** old dev-environment URLs redirect to /blog, which wastes their backlink value.',
-    '**AI summary file (llms.txt) is out of date:** it still describes MicroVMs and dev environments.',
-    '**Off-topic pages indexed:** Python and JavaScript webinars dilute the site\'s focus on Kubernetes.',
-    '**Missing from "best Kubernetes cost tools" lists** and review sites, where buyers and AI assistants look.',
+    '**Money pages get no search traffic:** /kubernetes-cost-optimization ranks #59 for its own term.',
+    '**The pivot left traces:** 27 old URLs with links from 153 sites redirect to /blog or return errors.',
+    '**Out-of-date signals:** llms.txt and off-topic webinars still describe dev environments.',
+    '**Missing from "best Kubernetes cost tools" lists** (not in the top 80) and review sites.',
   ],
   interventions: [
-    ['Now', 'Clean up after the pivot: redirect old posts to relevant pages, refresh llms.txt, remove off-topic pages, fix "2025" titles and heading errors.', 'Recovers lost authority and tells Google and AI assistants clearly what DevZero does today.'],
+    ['Now', 'Clean up after the pivot: redirect the 27 linked old URLs to relevant pages, refresh llms.txt, remove off-topic pages, fix "2025" titles.', 'Recovers links from 153 sites (about 30% of the total) and tells Google and AI assistants what DevZero does today.'],
     ['Now', 'Take back the ~39 Kubernetes posts duplicated on nautili.ai.', 'Stops the two sites competing with each other for the same searches.'],
-    ['1–3 mo', 'Add "alternatives" pages (Cast AI, Kubecost, ScaleOps, PerfectScale, Zesty, Spot Ocean) and an AKS/OKE solution page.', 'The highest-converting searches in the category; competitor acquisitions are creating demand.'],
-    ['1–3 mo', 'Get listed: outreach to "best tools 2026" list authors, plus G2, Gartner and Capterra profiles.', 'These lists dominate page one and feed the answers AI assistants give.'],
-    ['1–3 mo', 'Launch a GPU price index and a "State of Kubernetes Waste" report from cluster-analyser data.', 'Original data earns links and press; GPU pricing is a fast-growing search.'],
-    ['3+ mo', 'Publish twice a week across rightsizing, GPU, autoscaling, cloud and pricing topics; make instance pages more unique.', 'Closes the content gap with Cast AI and PerfectScale and keeps programmatic pages indexed.'],
+    ['1–3 mo', 'Improve region and instance pages (us-east-1 alone: ~33k searches/mo at #16–18) and launch a GPU price index.', 'Where the volume is: 47 keywords with 200+ searches each sit just off page one.'],
+    ['1–3 mo', 'Add "alternatives" pages, get onto "best tools 2026" lists and G2, Gartner and Capterra.', 'Small volume (~100/mo) but the highest intent; these lists feed the answers AI assistants give.'],
+    ['1–3 mo', 'Publish a "State of Kubernetes Waste" report from cluster-analyser data.', 'Original data earns the links needed to close the gap with Cast AI (3,665 linking sites).'],
+    ['3+ mo', 'Publish twice a week, led by KEDA, Karpenter and EKS Auto Mode guides, then rightsizing and GPU topics.', 'Autoscaling education has ~10.5k searches/mo at low difficulty (23) and feeds the money pages.'],
   ],
   traffic: [
-    ['Kubernetes cost optimisation and rightsizing', '5–10k', 'Bottom of funnel: demos'],
-    ['Autoscaling education (HPA, VPA, Karpenter)', '30–60k', 'Awareness, internal links'],
-    ['Cloud, instance and GPU pricing', '100k+ (long tail)', 'Volume, links, tool usage'],
-    ['Competitor "vs" and "alternatives"', '1–3k', 'Highest conversion'],
+    ['Kubernetes cost optimisation and rightsizing', '~460 (8)', 'Bottom of funnel: demos'],
+    ['Autoscaling education (KEDA, Karpenter, HPA)', '~10.5k (23)', 'Awareness, internal links'],
+    ['Cloud, instance and GPU pricing', '~41k head + ~90k long tail (25)', 'Volume, links, tool usage'],
+    ['Competitor "vs" and "alternatives"', '~100 (8), plus 8k brand', 'Highest conversion'],
   ],
-  trafficNote: TRAFFIC_NOTE + ' A single DevZero customer is worth five to six figures a year, so a small number of extra demos justifies the investment.',
+  trafficNote: TRAFFIC_NOTE + ' Buying-intent searches are small, but a single DevZero customer is worth five to six figures a year.',
   timeline: [
-    ['Weeks 1–4', 'Technical clean-up, separate content from Nautili, baseline rankings and traffic'],
-    ['Months 2–3', 'Alternatives pages, list and review-site outreach, GPU price index'],
+    ['Weeks 1–4', 'Technical clean-up and redirects, separate content from Nautili, connect Search Console for a real baseline'],
+    ['Months 2–3', 'Region and instance pages, GPU price index, alternatives pages, list and review-site outreach'],
     ['Months 4–12', 'Publish twice a week, data report, improve programmatic pages, track AI assistant mentions'],
   ],
-  needs: 'Search Console and analytics access, CMS access (or a developer contact for redirects), an Ahrefs/Semrush seat, anonymised cluster-analyser data for the report, and sign-off on which pages move to Nautili.',
+  needs: 'Search Console access for our reporting account, analytics access, CMS access (or a developer contact for redirects), anonymised cluster-analyser data for the report, and sign-off on which pages move to Nautili.',
 };
 
 const nautili = {
@@ -141,10 +141,10 @@ const nautili = {
   title: 'Nautili · SEO Priorities',
   subtitle: 'nautili.ai: the LLM gateway for routing, spend attribution and governance of AI traffic',
   kpis: [
-    ['~717', 'indexable pages'],
-    ['~7', 'posts on LLM topics (of 46)'],
-    ['2', 'competitor comparison pages'],
-    ['10–30k', 'est. monthly visits in 12 months'],
+    ['0', 'ranking keywords (Portkey: 1,794)'],
+    ['6', 'referring domains (Portkey: 3,027)'],
+    ['+185%', 'yearly growth in "alternatives" searches'],
+    ['1.5–7k', 'visits/mo in 12 months, all markets'],
   ],
   strengths: [
     '**Solid technical base:** fast pages, clean canonicals, Dataset and FAQ structured data, an accurate llms.txt.',
@@ -153,32 +153,32 @@ const nautili = {
     '**Clear pricing advantage:** a 4% fee versus about 5.5% on OpenRouter, with your own keys or GPUs.',
   ],
   gaps: [
-    '**Brand not yet visible:** a search for "nautili.ai" returns unrelated "Nautilus" companies.',
+    '**Not visible in search yet:** no rankings, links from only 6 low-value sites, first crawled Oct 2026.',
     '**~39 DevZero Kubernetes posts duplicated** on the blog, off-topic for an LLM gateway.',
-    '**devzero.io sells the same product** on its own /inference pages without mentioning Nautili.',
+    '**devzero.io (526 linking sites) sells the same product** on its /inference pages, with no link to Nautili.',
     '**Thin coverage:** 2 comparison pages and 1 integration page; missing from "best LLM gateway" lists.',
   ],
   interventions: [
     ['Now', 'Remove the duplicated Kubernetes posts (redirect each to its devzero.io original).', 'Gives Nautili a clear AI-gateway focus and ends competition between the two sites.'],
-    ['Now', 'Redirect devzero.io/inference pages to nautili.ai and add a "Nautili by DevZero" link on devzero.io.', 'Transfers DevZero\'s authority to the new domain, the fastest way to make the brand visible.'],
+    ['Now', 'Redirect devzero.io/inference pages to nautili.ai and add a "Nautili by DevZero" link on devzero.io.', 'Transfers DevZero\'s authority (526 linking sites vs 6) to the new domain, the fastest way to rank.'],
     ['Now', 'Set up Search Console, brand schema (sameAs links), consistent "Nautili" naming, heading fixes.', 'Helps Google recognise Nautili as a distinct brand rather than a typo for "Nautilus".'],
-    ['1–3 mo', 'Add 8+ comparison and "alternatives" pages (OpenRouter, Portkey, LiteLLM, Helicone, Bifrost, Cloudflare, Vercel, Kong).', 'Portkey (Palo Alto Networks) and OpenRouter (Stripe) acquisitions are pushing buyers to look elsewhere.'],
+    ['1–3 mo', 'Add 8+ comparison and "alternatives" pages (OpenRouter, Portkey, LiteLLM, Helicone, Bifrost, Cloudflare, Vercel, Kong).', 'The easiest searches to win (difficulty 7) and growing fastest since the Portkey and OpenRouter deals.'],
     ['1–3 mo', 'Add integration pages (Cursor, Codex, Gemini CLI, LangChain, Vercel AI SDK) and a stand-alone fee calculator.', 'Captures searches from developers already using those tools, plus a shareable, link-earning tool.'],
-    ['3+ mo', 'Own "AI coding spend": cost-per-developer content and a data report from gateway traffic; add live price and latency data to model pages.', 'A fast-growing, lightly contested topic that engineering leaders with budgets are searching for.'],
+    ['3+ mo', 'Own "AI coding spend": cost-per-developer content and a data report from gateway traffic; add live price and latency data to model pages.', 'The largest topic (~101k searches/mo); "Cursor vs Claude Code" (8k/mo) is ranked by Reddit and blogs.'],
   ],
   traffic: [
-    ['LLM gateway, AI gateway, LLM router', '10–20k', 'Category intent'],
-    ['OpenRouter, Portkey and LiteLLM alternatives', '5–10k (rising)', 'Highest conversion'],
-    ['AI coding cost (Claude Code, Cursor, Codex)', '20–60k', 'Engineering leaders with budgets'],
-    ['Model API pricing (Claude, GPT, Gemini)', '100k+ (long tail)', 'Volume; highly competitive'],
+    ['LLM gateway, AI gateway, LLM router', '~10k (31), +164% a year', 'Category intent'],
+    ['OpenRouter, Portkey and LiteLLM alternatives', '~3.3k (7), +185% a year', 'Highest conversion'],
+    ['AI coding cost (Claude Code, Cursor, Codex)', '~101k (24)', 'Engineering leaders with budgets'],
+    ['Model API pricing (Claude, GPT, Gemini)', '~98k (35)', 'Volume; vendor pages dominate'],
   ],
   trafficNote: TRAFFIC_NOTE + ' Nautili is self-serve, so search volume turns directly into sign-ups on the free Demo tier.',
   timeline: [
-    ['Weeks 1–4', 'Remove duplicates, redirects from devzero.io, Search Console and brand set-up, alternatives pages'],
+    ['Weeks 1–4', 'Remove duplicates, redirects from devzero.io, connect Search Console, brand set-up, alternatives pages'],
     ['Months 2–3', 'Comparison and integration pages, fee calculator, Product Hunt and Hacker News launch, list outreach'],
     ['Months 4–12', 'AI coding spend cluster and report, richer model pages, case studies, track AI assistant mentions'],
   ],
-  needs: 'Search Console and analytics access, CMS access, an Ahrefs/Semrush seat, sign-off on moving inference pages from devzero.io, 3–5 customer stories, and anonymised gateway data for the spend report.',
+  needs: 'Search Console access for our reporting account, analytics and CMS access, sign-off on moving inference pages from devzero.io, 3–5 customer stories, and anonymised gateway data for the spend report.',
 };
 
 Promise.all([devzero, nautili].map(async c => {

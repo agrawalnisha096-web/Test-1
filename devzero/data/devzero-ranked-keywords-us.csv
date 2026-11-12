@@ -1,0 +1,1001 @@
+keyword,search_volume_us,keyword_difficulty,position,etv,url
+devzero,390,7,1,100.54,/
+east-1,14800,5,18,42.93,/instances/aws/regions/us-east-1
+east 1,14800,10,16,19.7,/instances/aws/regions/us-east-1
+m6i xlarge,260,9,4,15.06,/instances/aws/m6i.xlarge
+c6a xlarge,110,0,3,10.53,/instances/aws/c6a.xlarge
+g6 xlarge,260,4,5,10.17,/instances/aws/g6.xlarge
+c6a 4xlarge,170,0,4,9.24,/instances/aws/c6a.4xlarge
+m7a 8xlarge,50,0,2,9.05,/instances/aws/m7a.large
+cloud compute pricing,50,0,1,8.89,/instances/gcp/tpu-v5p-10880
+r6i large,90,10,3,8.61,/instances/aws/r6i.2xlarge
+m7a 2xlarge,90,1,3,8.27,/instances/aws/m7a.2xlarge
+m6i 2xlarge,260,10,6,7.8,/instances/aws/m6i.2xlarge
+azure kubernetes service aks pricing,480,2,6,7.05,/blog/aks-pricing
+m7a large,40,0,2,6.9,/instances/aws/m7a.xlarge
+m8a,170,0,4,6.82,/instances/aws/m8a.8xlarge
+dev0,260,24,5,6.32,/
+r5 2xlarge,210,10,6,6.3,/instances/aws/r5.2xlarge
+r6i 2xlarge,170,10,3,6.27,/instances/aws/r6i.2xlarge
+g5 2xlarge,260,0,5,5.98,/instances/aws/g5.2xlarge
+m5.large specs,70,0,2,5.75,/instances/aws/m5.24xlarge
+gke autopilot,320,13,6,5.71,/blog/gke-pricing
+aws flex instances,50,0,2,5.2,/instances/aws/m8i-flex.large
+m7a medium,30,0,2,5.18,/instances/aws/families/m7a
+m7i 4xlarge,170,9,6,5.1,/instances/aws/m7i.large
+p5 4xlarge,320,0,6,4.7,/instances/aws/p5.4xlarge
+m5 large,1900,0,31,4.6,/instances/aws/m5n.large
+g5.2xlarge pricing,40,0,1,4.48,/instances/aws/families/g5
+r6a 2xlarge,110,6,3,4.23,/instances/aws/r6a.2xlarge
+r6i 8xlarge,140,0,6,4.22,/instances/aws/r6i.2xlarge
+gke pricing,110,8,3,4.19,/blog/gke-pricing
+g4dn,210,3,3,4.19,/instances/aws/g4dn.12xlarge
+aws g6,140,15,4,4.13,/instances/aws/g6.xlarge
+c7a,260,0,6,4.06,/instances/aws/c7a.2xlarge
+c6g large,70,0,4,4.05,/instances/aws/c6g.large
+g4dn 4xlarge,170,9,5,3.91,/instances/aws/g4dn.4xlarge
+m7a,260,0,4,3.79,/instances/aws/m7a.2xlarge
+m5a 2xlarge,90,17,5,3.57,/instances/aws/m5a.2xlarge
+r8i,90,0,5,3.57,/instances/aws/r8i.xlarge
+g5 xlarge,320,0,8,3.54,/instances/aws/g5.xlarge
+g6 16xlarge,50,0,1,3.49,/instances/aws/families/g6
+u7i,50,0,1,3.49,/instances/aws/u7i-8tb.112xlarge
+google kubernetes engine pricing,90,9,3,3.46,/blog/gke-pricing
+m7i 24xlarge,40,0,3,3.43,/instances/aws/m7i.large
+gcp vm cost,40,0,1,3.43,/instances/gcp/a2-highgpu-1g
+t3a,320,3,5,3.39,/instances/aws/t3a.medium
+g4dn xlarge,480,4,20,3.34,/instances/aws/g4dn.2xlarge
+t4g 2xlarge,50,0,2,3.31,/instances/aws/families/t4g
+m7i large,110,0,4,3.24,/instances/aws/m7i.large
+g5 48xlarge,140,0,5,3.22,/instances/aws/g5.48xlarge
+aws eks pricing,170,9,5,3.19,/blog/eks-pricing
+r6i xlarge,170,0,5,3.19,/instances/aws/r6i.2xlarge
+c5 2xlarge,320,7,8,3.15,/instances/aws/c5.2xlarge
+r6i 4xlarge,170,0,6,3.03,/instances/aws/r6i.2xlarge
+m6i.xlarge specs,30,0,2,3.0,/instances/aws/m6i.2xlarge
+m6a 2xlarge,210,0,9,2.87,/instances/aws/m6a.2xlarge
+m6i 4xlarge,210,0,9,2.87,/instances/aws/m6i.4xlarge
+g4dn 2xlarge,210,8,7,2.83,/instances/aws/g4dn.2xlarge
+g6e instance,40,0,1,2.79,/instances/aws/g6e.xlarge
+cuda checkpoint,70,12,4,2.77,/blog/gpu-container-checkpoint-restore
+m6g 2xlarge,90,0,6,2.71,/instances/aws/m6g.2xlarge
+c7i,90,0,6,2.7,/instances/aws/c7i.large
+r6a 4xlarge,110,0,4,2.67,/instances/aws/r6a.4xlarge
+r5 12xlarge,50,0,4,2.65,/instances/aws/r5.12xlarge
+m5d,210,0,7,2.65,/instances/aws/m5d.xlarge
+r7i large,70,0,3,2.59,/instances/aws/r7i.large
+a2-highgpu-1g,70,0,3,2.58,/instances/gcp/a2-ultragpu-4g
+r6i.2xlarge specs,30,0,1,2.57,/instances/aws/r6i.large
+m7i,110,0,6,2.45,/instances/aws/m7i.large
+m7i 8xlarge,110,3,6,2.44,/instances/aws/m7i.8xlarge
+g6e 16xlarge,50,0,3,2.44,/instances/aws/families/g6e
+eu-west-1,480,18,20,2.42,/instances/aws/regions/eu-west-1
+p5 48xlarge,390,4,10,2.4,/instances/aws/p5.4xlarge
+m7i 2xlarge,170,0,9,2.32,/instances/aws/m7i.2xlarge
+ml g6 xlarge,70,0,5,2.26,/instances/aws/g6.xlarge
+r5 xlarge,210,0,11,2.22,/instances/aws/r5.2xlarge
+m6i large,140,10,9,2.21,/instances/aws/m6i.large
+e2-highmem-16,40,0,4,2.2,/instances/gcp/e2-standard-16
+c5a 2xlarge,40,0,4,2.17,/instances/aws/c5a.2xlarge
+aws p5 instances,140,19,6,2.17,/instances/aws/p5.4xlarge
+p3dn,30,0,3,2.14,/instances/aws/p3dn.24xlarge
+m7a xlarge,70,1,6,2.1,/instances/aws/m7a.2xlarge
+c7a 2xlarge,90,0,5,2.07,/instances/aws/c7a.2xlarge
+tpu v6e,90,15,5,2.07,/instances/gcp/tpu-v6e-4
+ultramem,50,0,4,2.0,/instances/gcp/m1-ultramem-40
+r7i xlarge,110,0,6,1.96,/instances/aws/r7i.large
+r8g large,50,0,5,1.95,/instances/aws/r8g.large
+criu,590,18,10,1.93,/blog/checkpoint-restore-with-criu
+gcp h100 pricing,50,0,3,1.92,/instances/gpu/nvidia-h200
+c6i 4xlarge,140,0,9,1.91,/instances/aws/c6i.4xlarge
+m6id 4xlarge,30,0,3,1.91,/instances/aws/m6id.xlarge
+m8g,110,0,6,1.9,/instances/aws/m8g.4xlarge
+g5 instances,170,1,7,1.88,/instances/aws/g5.xlarge
+p5en 48xlarge,210,0,11,1.86,/instances/aws/families/p5en
+r7a large,20,0,3,1.84,/instances/aws/r7a.2xlarge
+r7a,90,0,3,1.8,/instances/aws/r7a.2xlarge
+t3 cost,30,0,1,1.71,/instances/aws/t3.medium
+r5a 2xlarge,90,4,8,1.71,/instances/aws/r5a.2xlarge
+m8g 4xlarge,70,4,4,1.7,/instances/aws/m8g.4xlarge
+m5a 4xlarge,90,9,5,1.69,/instances/aws/m5a.4xlarge
+m5a xlarge,90,7,5,1.69,/instances/aws/m5a.xlarge
+g6 2xlarge,210,0,10,1.68,/instances/aws/g6.xlarge
+1.34 2,210,5,14,1.67,/blog/kubernetes-v1-34
+aws g6 instances,110,18,5,1.67,/instances/aws/g6.xlarge
+zero dev,110,65,5,1.67,/
+g6 12xlarge,210,0,14,1.67,/instances/aws/g6.xlarge
+m6a 8xlarge,70,0,4,1.65,/instances/aws/m6a.8xlarge
+r6i,70,0,4,1.65,/instances/aws/r6i.2xlarge
+aws eks cost,50,13,5,1.61,/blog/eks-pricing
+i4i xlarge,40,0,5,1.59,/instances/aws/families/i4i
+r8i xlarge,40,0,4,1.58,/instances/aws/r8i.xlarge
+eks pricing,210,5,7,1.58,/blog/eks-pricing
+n2-standard-32,50,10,5,1.58,/instances/gcp/n2-standard-32
+aws c8i,40,2,5,1.56,/instances/aws/c8i.xlarge
+amazon eks pricing,140,8,6,1.54,/blog/eks-pricing
+n1-highmem-8,30,7,4,1.54,/instances/gcp/n1-highmem-8
+m5 8xlarge,170,11,16,1.53,/instances/aws/m5.xlarge
+i3 2xlarge,90,0,8,1.52,/instances/aws/i3.2xlarge
+g6e 4xlarge,140,2,6,1.51,/instances/aws/g6e.4xlarge
+s3 egress cost,140,9,6,1.51,/blog/aws-s3-pricing
+g6 aws,70,18,6,1.5,/instances/aws/g6.xlarge
+tpu price,260,9,7,1.5,/instances/gpu/tpu-v5e
+autopilot pricing,140,6,7,1.5,/blog/gke-pricing
+t2 medium,140,0,5,1.48,/instances/aws/t2.medium
+g4dn.xlarge cost,40,0,3,1.48,/instances/gpu/t4
+r7i instances,40,0,3,1.48,/instances/aws/r7i.large
+aws m8i,40,0,3,1.47,/instances/aws/m8i-flex.xlarge
+c6i 2xlarge,140,0,10,1.43,/instances/aws/c6i.xlarge
+g4dn 12xlarge,140,0,10,1.43,/instances/aws/g4dn.12xlarge
+a1 medium,140,0,8,1.43,/instances/aws/a1.medium
+ec2 calculator,110,28,10,1.43,/tools/aws-pricing-calculator
+nvidia tesla models,30,0,2,1.42,/instances/gpu/nvidia-tesla-t4
+g4dn metal,70,0,3,1.4,/instances/aws/families/g4dn
+us-east-1 gcp,40,0,1,1.39,/instances/gcp/n1-standard-2
+g6 instances,90,1,5,1.37,/instances/aws/g6.xlarge
+g6e xlarge,260,0,13,1.36,/instances/aws/g6e.xlarge
+n2-standard-4,90,6,7,1.34,/instances/gcp/n2-standard-4
+karpenter,1900,45,29,1.33,/blog/karpenter-guide
+m7g 2xlarge,90,4,6,1.32,/instances/aws/m7g.2xlarge
+t3 2xlarge,260,0,14,1.32,/instances/aws/t3.2xlarge
+m6g 4xlarge,70,1,5,1.32,/instances/aws/m6g.4xlarge
+c7i 48xlarge,40,0,5,1.29,/instances/aws/c7i.large
+m8g 2xlarge,70,0,6,1.25,/instances/aws/m8g.2xlarge
+r6a xlarge,90,0,9,1.23,/instances/aws/r6a.xlarge
+ap-south-1,210,1,16,1.23,/instances/aws/regions/ap-south-1
+g5 12xlarge,260,0,10,1.22,/instances/aws/g5.12xlarge
+g6.xlarge pricing,50,8,4,1.21,/instances/aws/g6.xlarge
+r7a 4xlarge,50,0,4,1.21,/instances/aws/r7a.4xlarge
+r6id 4xlarge,40,0,4,1.19,/instances/aws/r6id.4xlarge
+aws r7i,30,6,4,1.19,/instances/aws/r7i.large
+c6g 2xlarge,40,0,4,1.18,/instances/aws/c6g.2xlarge
+ec2 g6,40,6,4,1.18,/instances/aws/g6.xlarge
+a2-ultragpu-1g,40,0,6,1.18,/instances/gcp/a2-ultragpu-1g
+g6e.xlarge pricing,40,0,6,1.18,/instances/aws/g6e.8xlarge
+2x large,170,10,6,1.18,/instances/aws/a1.2xlarge
+a4-highgpu-8g,30,3,5,1.17,/instances/gcp/a4-highgpu-8g
+azure container app pricing,320,2,10,1.17,/blog/azure-container-apps-pricing
+aws g5 xlarge,30,5,3,1.15,/instances/aws/g5.xlarge
+m8a xlarge,30,0,3,1.15,/instances/aws/families/m8a
+r7a 2xlarge,50,0,5,1.15,/instances/aws/r7a.xlarge
+c5.xlarge pricing,40,0,1,1.15,/instances/aws/c5a.xlarge
+m6i.large price,30,0,1,1.15,/instances/aws/m6i.metal
+i3 8xlarge,50,0,7,1.14,/instances/aws/i3.4xlarge
+nvidia tesla t4 price,30,0,3,1.14,/instances/gpu/nvidia-tesla-t4
+t3a.large specs,30,0,5,1.13,/instances/aws/t3a.medium
+gcp kubernetes pricing,20,12,3,1.12,/blog/gke-pricing
+aws m8a,50,26,6,1.11,/instances/aws/m8a.4xlarge
+e2-standard-32,30,4,3,1.11,/instances/gcp/e2-standard-32
+c7i 4xlarge,140,0,6,1.11,/instances/aws/c7i.4xlarge
+aws h100 pricing,140,28,8,1.11,/instances/aws/p5.4xlarge
+g6 pricing,110,8,6,1.05,/instances/aws/g6.xlarge
+m5 xlarge,480,0,25,1.03,/instances/aws/m5a.xlarge
+r7g 2xlarge,70,0,6,1.03,/instances/aws/r7g.2xlarge
+m7a 4xlarge,90,0,7,1.01,/instances/aws/m7a.4xlarge
+us-east1,3600,13,15,0.99,/instances/aws/regions/us-east-1
+c5 xlarge,210,3,23,0.99,/instances/aws/c5a.xlarge
+m7g large,90,6,13,0.98,/instances/aws/m7g.large
+aws g6e,110,24,11,0.97,/instances/aws/g6e.48xlarge
+c8g 2xlarge,40,0,4,0.97,/instances/aws/c8g.2xlarge
+c7g 2xlarge,70,0,9,0.96,/instances/aws/c7g.2xlarge
+r8g,170,2,7,0.95,/instances/aws/r8g.large
+i4i 2xlarge,50,1,5,0.94,/instances/aws/i4i.2xlarge
+karpenter vs cluster autoscaler,110,5,12,0.92,/blog/karpenter-vs-cluster-autoscaler
+ec2 g5,40,3,5,0.92,/instances/aws/g5.xlarge
+m6a 4xlarge,170,1,15,0.92,/instances/aws/m6a.large
+t4g small,170,0,7,0.91,/instances/aws/t4g.small
+r6i 2xlarge specs,30,0,2,0.9,/instances/aws/r6i.large
+m6id 2xlarge,30,0,4,0.89,/instances/aws/m6id.xlarge
+a3-highgpu-1g,40,0,7,0.89,/instances/gcp/a3-edgegpu-8g-nolssd
+c7a xlarge,40,0,6,0.89,/instances/aws/c7a.8xlarge
+m6i,90,10,8,0.89,/instances/aws/m6i.large
+tpu cost,170,11,8,0.88,/instances/gcp/tpu-v3-8
+t4g micro,110,0,6,0.87,/instances/aws/t4g.micro
+tesla t4 price,30,0,4,0.86,/instances/gpu/nvidia-tesla-t4
+aws p5 4xlarge,30,17,5,0.86,/instances/aws/p5.4xlarge
+g6e 24xlarge,50,0,6,0.86,/instances/aws/families/g6e
+t3.medium specs,110,0,6,0.85,/instances/aws/t3.medium
+g6f xlarge,30,0,5,0.83,/instances/aws/g6f.xlarge
+c6a large,90,0,8,0.83,/instances/aws/c6a.4xlarge
+m5.xlarge specs,70,9,8,0.82,/instances/aws/m5.xlarge
+h200 vram,480,15,31,0.82,/instances/gpu/nvidia-h200
+c5a xlarge,50,0,7,0.82,/instances/aws/c5a.2xlarge
+gpu utilization,480,4,25,0.82,/blog/how-to-measure-gpu-utilization
+p3dn 24xlarge,70,0,6,0.8,/instances/aws/p3dn.24xlarge
+r7i 4xlarge,140,0,11,0.8,/instances/aws/r7i.4xlarge
+g6e instances,140,0,8,0.79,/instances/aws/g6e.xlarge
+r5a xlarge,70,5,12,0.79,/instances/aws/r5a.2xlarge
+eks cost,110,8,6,0.79,/blog/eks-pricing
+nvidia l40s price,210,0,15,0.79,/instances/gpu/nvidia-l40s
+g6 4xlarge,170,0,9,0.78,/instances/aws/g6.xlarge
+p5en,140,0,7,0.78,/instances/aws/families/p5en
+t3a medium,140,1,7,0.78,/instances/aws/t3a.medium
+m5 24xlarge,70,1,7,0.78,/instances/aws/m5.24xlarge
+aws g4dn,70,31,7,0.78,/instances/aws/g4dn.2xlarge
+c8i,90,0,9,0.76,/instances/aws/c8i.12xlarge
+t2 2xlarge,70,9,13,0.76,/instances/aws/t2.2xlarge
+c7a 8xlarge,50,0,5,0.76,/instances/aws/c7a.8xlarge
+g7e 8xlarge,50,0,5,0.76,/instances/aws/g7e.8xlarge
+c6i,70,0,6,0.76,/instances/aws/c6i.xlarge
+c7a 4xlarge,70,0,6,0.76,/instances/aws/c7a.4xlarge
+m7g 4xlarge,70,0,6,0.76,/instances/aws/m7g.4xlarge
+gcp a100 pricing,40,0,5,0.75,/instances
+gke autopilot vs standard,40,0,5,0.75,/blog/gke-pricing
+p5 4xlarge pricing,40,7,5,0.75,/instances/aws/p5.4xlarge
+r7a xlarge,40,0,5,0.75,/instances/aws/r7a.2xlarge
+l40s price,140,0,10,0.75,/instances/gpu/nvidia-l40s
+tensor processing unit price,260,17,7,0.74,/instances/gcp/tpu-v5p-10880
+gke cost,40,11,3,0.74,/blog/gke-pricing
+gke costs,40,1,3,0.74,/blog/gke-pricing
+r8i aws,20,3,4,0.74,/instances/aws/r8i.xlarge
+r6i 16xlarge,50,0,6,0.73,/instances/aws/r6i.2xlarge
+x8aedz,70,0,7,0.73,/instances/aws/x8aedz.24xlarge
+karpenter helm chart,260,20,26,0.73,/blog/karpenter-guide
+m5 2xlarge,480,10,29,0.73,/instances/aws/m5a.2xlarge
+n2d,170,0,8,0.73,/instances/gcp/n2d-standard-2
+c6g,50,0,4,0.73,/instances/aws/c6g.large
+r6i 24xlarge,30,0,4,0.73,/instances/aws/r6i.2xlarge
+r7a 8xlarge,30,0,4,0.73,/instances/aws/r7a.8xlarge
+g5 24xlarge,90,0,8,0.72,/instances/aws/g5.24xlarge
+g6e 8xlarge,90,0,8,0.72,/instances/aws/g6e.8xlarge
+r5d,90,10,12,0.71,/instances/aws/r5d.4xlarge
+c8g xlarge,40,0,6,0.71,/instances/aws/c8g.12xlarge
+compute i 1024,40,0,6,0.71,/instances/gcp/tpu-v5p-1024
+r6a,90,0,6,0.71,/instances/aws/r6a.2xlarge
+r7i,90,0,6,0.71,/instances/aws/r7i.large
+aws glacier pricing,320,28,16,0.71,/blog/aws-s3-pricing
+aks pricing,70,0,8,0.71,/blog/aks-pricing
+c6in 4xlarge,30,0,4,0.71,/instances/aws/c6in.4xlarge
+g5g xlarge,30,0,4,0.71,/instances/aws/g5g.xlarge
+m7g 16xlarge,30,0,4,0.71,/instances/aws/m7g.16xlarge
+c6i 8xlarge,110,3,9,0.7,/instances/aws/c6i.8xlarge
+kubecon europe 2025,20,0,2,0.7,/blog/kubecon-cloudnativecon-eu-2025
+kubernetes resources types,40,0,2,0.7,/blog/kubernetes-workload-types
+g7e,260,0,17,0.69,/instances/aws/g7e.48xlarge
+m8azn,90,0,8,0.69,/instances/aws/m8azn.3xlarge
+g6e,260,0,16,0.69,/instances/aws/g6e.4xlarge
+g6e 2xlarge,210,0,9,0.69,/instances/aws/g6e.2xlarge
+azure kubernetes service price,140,0,6,0.69,/blog/aks-pricing
+azure kubernetes services pricing,140,12,6,0.69,/blog/aks-pricing
+aws g5,90,10,9,0.69,/instances/aws/g5.xlarge
+c5n 2xlarge,30,1,5,0.69,/instances/aws/c5n.2xlarge
+r5 8xlarge,140,0,15,0.69,/instances/aws/r5.2xlarge
+m5a large,70,6,8,0.69,/instances/aws/m5a.xlarge
+t3a.medium specs,30,0,4,0.68,/instances/aws/t3a.small
+g4dn instances,70,2,7,0.68,/instances/aws/g4dn.2xlarge
+c6i xlarge,110,0,10,0.68,/instances/aws/c6i.xlarge
+r5.2xlarge specs,30,7,6,0.67,/instances/aws/r5.2xlarge
+a3-ultragpu-8g,30,4,7,0.66,/instances/gcp/a3-ultragpu-8g
+glacier pricing,140,15,10,0.66,/blog/aws-s3-pricing
+c6a 2xlarge,210,2,13,0.64,/instances/aws/c6a.xlarge
+g5 pricing,110,5,7,0.63,/instances/aws/g5.xlarge
+ec2 on demand pricing,210,19,21,0.62,/blog/ec2-instance-pricing
+aws p5,110,14,7,0.62,/instances/aws/p5.4xlarge
+c8a,110,0,7,0.62,/instances/aws/c8a.large
+g4dn 8xlarge,70,5,7,0.61,/instances/aws/g4dn.8xlarge
+r7i 24xlarge,50,0,6,0.61,/instances/aws/r7i.large
+t3.micro pricing,70,8,8,0.6,/instances/aws/t3.micro
+r6i 32xlarge,40,0,6,0.59,/instances/aws/r6i.2xlarge
+r8i 4xlarge,40,0,6,0.59,/instances/aws/r8i.4xlarge
+eks auto mode pricing,70,8,10,0.57,/blog/eks-pricing
+a3 highgpu 8g,40,0,6,0.57,/instances/gcp/a3-highgpu-8g
+kubernetes cluster autoscaler,110,31,13,0.57,/blog/kubernetes-cluster-autoscaler
+google cloud tpu pricing,210,19,14,0.56,/instances/gcp/tpu-v5p-10880
+r8g 8xlarge,50,0,7,0.56,/instances/aws/r8g.8xlarge
+r7g 4xlarge,70,0,8,0.56,/instances/aws/r7g.4xlarge
+r8g xlarge,70,0,8,0.56,/instances/aws/r8g.8xlarge
+azure server pricing,110,11,16,0.56,/tools/azure-pricing-calculator
+p5 instances,70,6,6,0.55,/instances/aws/p5.4xlarge
+tpu v5p,90,41,10,0.55,/instances/gcp/tpu-v5p-10880
+google tpu price,170,30,12,0.55,/instances/gcp/tpu-v5p-10880
+m6i 8xlarge,140,2,12,0.54,/instances/aws/m6i.xlarge
+g6e 12xlarge,210,0,15,0.54,/instances/aws/g6e.xlarge
+c6g 4xlarge,40,0,7,0.54,/instances/aws/c6g.medium
+c6i large,70,0,9,0.54,/instances/aws/c6i.xlarge
+azure aks pricing,50,9,8,0.53,/blog/aks-pricing
+m4 2xlarge,70,14,11,0.53,/instances/aws/m4.2xlarge
+i4i 8xlarge,70,0,7,0.53,/instances/aws/i4i.xlarge
+e2-micro,170,8,8,0.52,/instances/gcp/e2-micro
+m6a large,110,1,10,0.52,/instances/aws/m6a.large
+r7i 8xlarge,110,0,10,0.52,/instances/aws/r7i.large
+tensor processing unit cost,170,55,13,0.51,/instances/gcp/tpu-v5p-10880
+g5.xlarge pricing,70,10,9,0.49,/instances/aws/g5.xlarge
+e2-standard-2,70,18,13,0.49,/instances/gcp/e2-standard-16
+dev io,140,75,23,0.48,/
+aws c7i,30,14,7,0.48,/instances/aws/c7i.large
+ec2 g6e,30,0,7,0.48,/instances/aws/g6e.xlarge
+1.34 4,90,22,18,0.46,/blog/kubernetes-v1-34
+hpc8a,50,0,9,0.46,/instances/aws/families/hpc8a
+m7i xlarge,170,2,14,0.46,/instances/aws/m7i.large
+c5 9xlarge,170,0,22,0.46,/instances/aws/c5.2xlarge
+gke free tier,30,21,5,0.46,/blog/gke-pricing
+m8i-flex,30,0,5,0.46,/instances/aws/m8i-flex.large
+c8g large,30,0,7,0.45,/instances/aws/c8g.large
+m7g,170,0,10,0.45,/instances/aws/m7g.large
+eks free tier,40,19,7,0.45,/blog/eks-pricing
+m6i 16xlarge,40,0,7,0.45,/instances/aws/m6i.16xlarge
+a3-megagpu-8g,50,5,11,0.44,/instances/gcp/a3-highgpu-8g
+dev 0,390,55,12,0.44,/
+g6 2xlarge pricing,30,8,6,0.44,/instances/aws/g6.xlarge
+m5a 8xlarge,30,0,6,0.44,/instances/aws/families/m5a
+m8a 2xlarge,30,0,6,0.44,/instances/aws/m8a.2xlarge
+i7ie,50,0,7,0.44,/instances/aws/i7ie.12xlarge
+r8i instances,40,0,6,0.43,/instances/aws/r8i.xlarge
+g7e 2xlarge,140,0,13,0.43,/instances/aws/g7e.48xlarge
+what is karpenter,170,45,19,0.42,/blog/karpenter-guide
+x8g,50,0,9,0.42,/instances/aws/x8g.2xlarge
+p6-b300 48xlarge,50,0,8,0.42,/instances/gpu/b300
+t3 2xlarge specs,50,0,8,0.42,/instances/aws/t3.2xlarge
+ml g5 xlarge,90,2,10,0.42,/instances/aws/g5.xlarge
+tensorzero,480,17,47,0.41,/inference
+g6e aws,50,24,10,0.41,/instances/aws/g6e.2xlarge
+c4 4xlarge,30,0,7,0.4,/instances/aws/c4.4xlarge
+m6i 12xlarge,30,0,7,0.4,/instances/aws/m6i.16xlarge
+amazon glacier pricing,260,28,19,0.4,/blog/aws-s3-pricing
+karpenter kubernetes,480,45,22,0.4,/blog/karpenter-guide
+ap-southeast-4,50,0,7,0.4,/instances/aws/m7i.8xlarge
+g6 24xlarge,70,0,8,0.4,/instances/aws/g6.24xlarge
+i4i 4xlarge,70,17,8,0.4,/instances/aws/i4i.xlarge
+t2 xlarge,110,0,20,0.39,/instances/aws/t2.medium
+c8i 4xlarge,40,0,9,0.39,/instances/aws/c8i.metal-96xl
+p5 cost,50,3,6,0.39,/instances/aws/p5.4xlarge
+n1-standard-8,50,0,13,0.39,/instances/gcp/n1-standard-2
+cluster-autoscaler helm chart,90,8,8,0.39,/blog/kubernetes-cluster-autoscaler
+t3 2xlarge pricing,40,11,3,0.38,/instances/aws/t3.2xlarge
+amazon ec2 p5 instances,70,20,11,0.38,/instances/aws/p5.4xlarge
+i8g,70,0,11,0.38,/instances/aws/i8g.large
+mi300x price,140,0,14,0.38,/instances/gpu/mi300x
+c7i 16xlarge,50,0,7,0.38,/instances/aws/c7i.16xlarge
+c8gn,50,0,7,0.38,/instances/aws/c8gn.2xlarge
+c7i 24xlarge,40,0,11,0.38,/instances/aws/c7i.4xlarge
+g6 48xlarge,140,0,14,0.38,/instances/aws/g6.xlarge
+u7in-32tb 224xlarge,40,0,10,0.38,/instances/aws/u7in-32tb.224xlarge
+t4g pricing,20,4,5,0.38,/instances/aws/t4g.2xlarge
+c7i xlarge,90,0,11,0.37,/instances/aws/c7i.large
+how to monitor gpu usage,260,10,27,0.37,/blog/how-to-measure-gpu-utilization
+aws m6i,30,28,8,0.36,/instances/aws/m6i.large
+i4i,110,17,9,0.36,/instances/aws/i4i.xlarge
+t2 large,110,0,9,0.36,/instances/aws/t2.medium
+x2iedn 32xlarge,30,0,7,0.36,/instances/aws/families/x2iedn
+c7g,70,0,20,0.35,/instances/aws/c7g.large
+t3 micro aws,90,24,13,0.35,/instances/aws/t3.micro
+t3 medium specs,110,23,7,0.35,/instances/aws/t3.medium
+t4g.nano pricing,30,0,5,0.34,/instances/aws/regions/us-east-1
+r6g large,70,0,15,0.34,/instances/aws/r6g.xlarge
+t2 small,70,6,15,0.34,/instances/aws/t2.medium
+z1d,20,0,6,0.34,/instances/aws/z1d.large
+g6 8xlarge,110,0,12,0.34,/instances/aws/g6.xlarge
+g6e 48xlarge,110,1,12,0.34,/instances/aws/g6e.48xlarge
+g4-standard-48,70,7,20,0.34,/instances/gcp/c4-standard-48
+h200 aws,40,37,12,0.34,/instances/gpu/nvidia-h200
+m5d xlarge,30,1,7,0.34,/instances/aws/m5d.xlarge
+ml g6 12xlarge,30,0,7,0.34,/instances/aws/g6.2xlarge
+ec2 p5,30,5,7,0.33,/instances/aws/p5.4xlarge
+g7e 24xlarge,50,0,13,0.33,/instances/aws/g7e.8xlarge
+aws s3 bucket pricing,140,12,15,0.33,/blog/aws-s3-pricing
+amazon ec2 g5 instances,110,8,13,0.33,/instances/aws/g5.xlarge
+standard 16,110,0,13,0.33,/instances/gcp/e2-standard-16
+aws cloudwatch pricing,170,12,18,0.33,/blog/aws-cloudwatch-pricing
+t2 micro,210,0,9,0.33,/instances/aws/t2.medium
+p6-b200 48xlarge,140,1,16,0.33,/instances/aws/families/p6-b200
+c5 large,140,0,26,0.32,/instances/aws/c5.2xlarge
+aws ec2 capacity blocks price hike,210,14,37,0.32,/blog/aws-quietly-raises-gpu-prices-15-over-the-weekend-what-engineering-leaders-need-to-know
+aws l40s,30,24,6,0.32,/instances/gpu/nvidia-l40s
+c6in,30,0,6,0.32,/instances/aws/c6in.4xlarge
+m6a xlarge,170,0,16,0.32,/instances/aws/m6a.large
+r6a large,50,0,9,0.32,/instances/aws/r6a.large
+r7i 12xlarge,50,0,9,0.32,/instances/aws/r7i.large
+aks cost,40,0,8,0.32,/blog/aks-pricing
+r8g 16xlarge,40,0,8,0.32,/instances/aws/r8g.8xlarge
+r8i 2xlarge,40,0,8,0.32,/instances/aws/r8i.2xlarge
+h200 gpu cost,170,13,24,0.32,/instances/gpu/nvidia-h200
+c5d 24 c5,40,0,16,0.32,/instances/aws/c5d.large
+uber developer,140,5,22,0.31,/videos/how-uber-increased-developer-productivity
+r6i.xlarge specs,30,0,6,0.31,/instances/aws/r6i.2xlarge
+n1-standard-4,70,24,9,0.31,/instances/gcp/n1-standard-4
+aws g5 instances,140,8,14,0.31,/instances/aws/g5.2xlarge
+c8i instances,30,0,7,0.31,/instances/aws/c8i.xlarge
+amazon cloudwatch cost,170,23,19,0.31,/blog/aws-cloudwatch-pricing
+c5 company,50,0,11,0.31,/instances/aws/c5.metal
+c5a 8xlarge,30,2,10,0.31,/instances/aws/c5a.xlarge
+aws p5 48xlarge,30,25,8,0.31,/instances/aws/p5.4xlarge
+azure kubernetes service pricing,140,5,14,0.31,/blog/azure-kubernetes-service-pricing
+m8g medium,20,0,5,0.3,/instances/aws/m8g.medium
+r6a 16xlarge,20,0,5,0.3,/instances/aws/r6a.16xlarge
+c5.2xlarge specs,40,0,7,0.3,/instances/aws/c5.2xlarge
+c6a,70,0,8,0.3,/instances/aws/c6a.xlarge
+c7g 4xlarge,70,0,8,0.3,/instances/aws/c7g.4xlarge
+p5 aws,70,9,8,0.3,/instances/aws/p5.4xlarge
+p6 instance,30,0,8,0.3,/instances/aws/families/p6-b200
+r5a 8xlarge,30,0,8,0.3,/instances/aws/r5a.4xlarge
+t3 medium aws,30,26,8,0.3,/instances/aws/t3.medium
+t3.2xlarge specs,50,0,8,0.29,/instances/aws/t3.2xlarge
+azure a100,30,13,9,0.29,/instances/azure/Standard_NC96ads_A100_v4
+r6g,110,0,10,0.29,/instances/aws/r6g.xlarge
+google cloud tpu v3,50,64,14,0.29,/instances/gcp/tpu-v3-8
+g5 aws,50,16,11,0.28,/instances/aws/g5.xlarge
+c6a 8xlarge,110,0,15,0.28,/instances/aws/c6a.xlarge
+aws/azure/gcp,170,23,29,0.28,/blog/aws-azure-google-price-comparison
+p5 instance,50,6,7,0.28,/instances/aws/p5.4xlarge
+g7e instance,40,3,12,0.28,/instances/aws/g7e.48xlarge
+g7e 48xlarge,90,0,11,0.28,/instances/aws/g7e.48xlarge
+azure gpu pricing,170,52,24,0.28,/tools/azure-pricing-calculator
+i8ge,50,0,7,0.27,/instances/aws/i8ge.large
+c5n xlarge,30,14,19,0.27,/instances/aws/c5a.xlarge
+aws r8i,50,0,12,0.27,/instances/aws/families/r8i
+m4 4xlarge,50,0,12,0.27,/instances/aws/m4.2xlarge
+r5a large,50,2,12,0.27,/instances/aws/r5a.2xlarge
+aws simple monthly calculator,110,16,19,0.27,/tools/aws-pricing-calculator
+nvidia h200 cost,170,15,25,0.27,/instances/gpu/nvidia-h200
+g5 16xlarge,70,0,12,0.27,/instances/aws/g5.xlarge
+docker gpu,140,13,26,0.27,/guides/complete-guide-to-measuring-and-fixing-gpu-utilization
+g4dn.xlarge pricing,110,5,15,0.27,/instances/aws/g4dn.2xlarge
+g6 cost,140,8,18,0.27,/instances/aws/g6.xlarge
+r8i 8xlarge,30,0,11,0.27,/instances/aws/families/r8i
+t3a small,50,0,22,0.26,/instances/aws/families/t3a
+r5 4xlarge,170,0,29,0.26,/instances/aws/p5.4xlarge
+aws c8a,30,11,9,0.25,/instances/aws/c8a.large
+m8g 8xlarge,40,0,9,0.25,/instances/aws/m8g.16xlarge
+aws vs azure vs google cloud,590,26,22,0.25,/blog/aws-azure-google-price-comparison
+x8g large,20,0,10,0.25,/instances/aws/x8g.2xlarge
+c7i-flex,40,6,7,0.25,/instances/aws/c7i-flex.large
+c7i instances,30,0,8,0.25,/instances/aws/c7i.large
+r8g 2xlarge,70,0,8,0.25,/instances/aws/r8g.8xlarge
+c7i 12xlarge,40,0,10,0.25,/instances/aws/c7i.large
+aws m7i,30,19,10,0.24,/instances/aws/m7i.large
+m6i.large pricing,30,11,4,0.24,/instances/aws/m6i.large
+ml g4dn 12xlarge,30,0,8,0.24,/instances/aws/g4dn.12xlarge
+i4i metal,30,0,14,0.24,/instances/aws/i4i.xlarge
+cluster autoscaler helm chart,90,8,8,0.24,/blog/kubernetes-cluster-autoscaler
+c8g,90,0,10,0.24,/instances/aws/c8g.medium
+x2iedn 2xlarge,30,0,6,0.24,/instances/aws/families/x2iedn
+hpc7a,30,0,15,0.24,/instances/aws/hpc7a.96xlarge
+hpa kubernetes,720,10,40,0.24,/blog/kubernetes-autoscaling
+x8g medium,20,0,9,0.23,/instances/aws/x8g.2xlarge
+aws g6e instances,50,27,9,0.23,/instances/aws/g6e.48xlarge
+g7e 4xlarge,50,0,9,0.23,/instances/aws/g7e.4xlarge
+p3 16xlarge,40,2,11,0.23,/instances/aws/p3.16xlarge
+c5.xlarge specs,30,5,11,0.23,/instances/aws/c5.2xlarge
+m8a aws,30,11,7,0.23,/instances/aws/m8a.4xlarge
+r6gd,40,0,8,0.23,/instances/aws/r6gd.medium
+r7iz,40,0,8,0.23,/instances/aws/r7iz.8xlarge
+c6g 8xlarge,30,0,12,0.23,/instances/aws/families/c6g
+c6i 32xlarge,30,0,12,0.23,/instances/aws/c6i.xlarge
+c4 specs,40,0,7,0.22,/instances/gcp/c4-standard-4
+m4 xlarge,90,10,15,0.22,/instances/aws/m4.2xlarge
+karpenter releases,70,13,33,0.22,/blog/karpenter-guide
+t4g instance,50,3,7,0.22,/instances/aws/t4g.small
+c5a 4xlarge,40,0,12,0.22,/instances/aws/c5a.2xlarge
+kubernetes workload,90,0,20,0.22,/blog/kubernetes-workload-types
+tensor zero,90,11,30,0.22,/
+amazon ec2 t3 instances,70,18,21,0.22,/instances/aws/t3.medium
+r6i instances,20,10,6,0.22,/instances/aws/r6i.2xlarge
+what is gke autopilot,20,21,6,0.22,/blog/gke-pricing
+m7i-flex,70,12,13,0.21,/instances/aws/families/m7i-flex
+m8g xlarge,70,5,13,0.21,/instances/aws/m8g.4xlarge
+r6g 2xlarge,70,0,13,0.21,/instances/aws/r6g.2xlarge
+t3.xlarge pricing,90,3,16,0.21,/instances/aws/t3.2xlarge
+aws h200,50,38,17,0.21,/instances/gpu/nvidia-h200
+aws t3 micro,50,15,17,0.21,/instances/aws/t3.micro
+r5a 4xlarge,50,0,17,0.21,/instances/aws/r5a.8xlarge
+c6id 8xlarge,30,0,10,0.21,/instances/aws/families/c6id
+r8g 48xlarge,30,0,10,0.21,/instances/aws/r8g.8xlarge
+m5.2xlarge specs,70,9,13,0.21,/instances/aws/m5.xlarge
+r5 24xlarge,70,0,13,0.21,/instances/aws/families/r5
+t4g medium,210,15,33,0.21,/instances/aws/families/t4g
+windows azure vs aws pricing,110,3,16,0.21,/blog/aws-azure-google-price-comparison
+aws b300,50,27,11,0.21,/instances/gpu/b300
+c7i large,50,0,11,0.21,/instances/aws/c7i.large
+r7g 16xlarge,50,0,11,0.21,/instances/aws/r7g.16xlarge
+x2gd,20,0,7,0.21,/instances/aws/x2gd.12xlarge
+n2-standard-16,70,6,12,0.21,/instances/gcp/n2-standard-32
+x2idn 32xlarge,30,0,21,0.2,/instances/aws/x2iedn.32xlarge
+a2-ultragpu-8g,30,0,12,0.2,/instances/gcp/a2-ultragpu-1g
+k8s resources,50,15,24,0.2,/blog/kubernetes-resource-requests-and-limits
+aws g4dn instances,30,35,14,0.2,/instances/aws/g4dn.2xlarge
+g5 ec2,20,4,8,0.2,/instances/aws/g5.xlarge
+cluster proportional autoscaler,40,0,9,0.2,/blog/kubernetes-cluster-autoscaler
+azure container apps pricing calculator,50,20,12,0.19,/blog/azure-container-apps-pricing
+i3 4xlarge,50,0,12,0.19,/instances/aws/i3.4xlarge
+ec2 i4i,20,3,9,0.19,/instances/aws/i4i.4xlarge
+azure gcp,70,23,19,0.19,/blog/aws-azure-google-price-comparison
+aws c5 instances,30,29,11,0.19,/instances/aws/c5.metal
+aws r8g,30,14,13,0.19,/instances/aws/r8g.large
+c8gd,30,0,13,0.19,/instances/aws/c8gd.xlarge
+g5 gpu,30,1,9,0.19,/instances/aws/g5.12xlarge
+spot availability,170,5,10,0.19,/spot-instances
+n2-highmem-4,30,7,14,0.19,/instances/gcp/n2-standard-4
+n2d-highmem-16,30,0,8,0.19,/instances/gcp/n2d-highmem-80
+kubernetes vpa,90,21,39,0.19,/blog/kubernetes-vpa
+c5.4xlarge specs,40,0,9,0.18,/instances/aws/c5.metal
+what is /dev/zero,50,6,6,0.18,/
+aws t3 medium,70,16,18,0.18,/instances/aws/t3.medium
+c5 aws,30,22,8,0.18,/instances/aws/c5.2xlarge
+t4g instances,50,1,12,0.18,/instances/aws/t4g.small
+aws eu-west-1,140,21,30,0.18,/instances/aws/regions/eu-west-1
+m8i aws,20,37,8,0.17,/instances/aws/m8i-flex.large
+aws instance types pricing,170,65,31,0.17,/blog/ec2-instance-pricing
+c5 24xlarge,30,0,11,0.17,/instances/aws/c5.metal
+c6gn,30,0,8,0.17,/instances/aws/c6gn.4xlarge
+g6f instances,30,5,8,0.17,/instances/aws/g6f.xlarge
+kubernetes 1.34,90,26,18,0.17,/blog/kubernetes-v1-34
+amazon ec2 c5 instances,30,27,10,0.17,/instances/aws/c5.metal
+k8s hpa,260,12,39,0.17,/blog/kubernetes-hpa
+codespace alternative,50,0,21,0.17,/kubernetes-cost-optimization
+why is eks so expensive,110,1,10,0.17,/blog/eks-pricing
+r6id 32xlarge,20,0,16,0.17,/instances/aws/families/r6id
+r8g 24xlarge,20,0,10,0.17,/instances/aws/r8g.8xlarge
+aws m5 xlarge,40,34,11,0.17,/instances/aws/m5.xlarge
+aws karpenter,210,34,38,0.17,/blog/karpenter-guide
+r5b,50,18,9,0.16,/instances/aws/r5b.large
+ml g5 12xlarge,90,2,17,0.16,/instances/aws/g5.12xlarge
+render zero,70,0,36,0.16,/inference
+m7i 16xlarge,50,0,10,0.16,/instances/aws/m7i-flex.16xlarge
+m8g large,50,4,10,0.16,/instances/aws/families/m8g
+c4 2xlarge,30,4,12,0.16,/instances/aws/c4.xlarge
+g7e aws,90,23,19,0.16,/instances/aws/g7e.8xlarge
+e2-medium,70,6,12,0.16,/instances/gcp/e2-medium
+google cloud vs azure,110,27,17,0.16,/blog/aws-azure-google-price-comparison
+t4g.micro pricing,30,10,8,0.16,/instances/aws/t4g.micro
+n1-highmem-32,30,0,9,0.16,/instances/gcp/n1-highmem-8
+n2d highmem-16,30,0,9,0.16,/instances/gcp/n2d-highmem-80
+how much does tpu cost,40,0,9,0.16,/instances/gcp/tpu-v3-8
+t3 large specs,90,1,13,0.16,/instances/aws/t3.large
+kubernetes hpa,720,9,38,0.16,/blog/kubernetes-autoscaling
+amd mi300x price,170,0,24,0.16,/instances/gpu/mi300x
+p6 b200 48xlarge,140,1,16,0.16,/instances/aws/families/p6-b200
+m8i 4xlarge,40,0,12,0.16,/instances/aws/m8i.xlarge
+p3 8xlarge,50,3,13,0.15,/instances/aws/p3.8xlarge
+aws storage cost,480,86,21,0.15,/blog/aws-s3-pricing
+c6i instances,20,0,5,0.15,/instances/aws/c6i.xlarge
+n2 highmem 64,30,0,7,0.15,/instances/gcp/n2-highcpu-64
+ml m5 xlarge,50,7,21,0.15,/instances/aws/m5.xlarge
+aws azure gcp,170,23,27,0.15,/blog/aws-azure-google-price-comparison
+aws cloud storage pricing,110,41,26,0.15,/blog/aws-s3-pricing
+eks extended support cost,50,6,31,0.15,/blog/eks-pricing
+c5.2xlarge pricing,30,1,5,0.15,/instances/aws/c5.2xlarge
+x2iedn xlarge,30,1,27,0.15,/instances/aws/x2iedn.32xlarge
+azure aws gcp,30,19,15,0.15,/blog/aws-azure-google-price-comparison
+m6i 2xlarge specs,30,0,9,0.15,/instances/aws/m6i.24xlarge
+g5.12xlarge pricing,20,6,6,0.15,/instances/aws/g5.12xlarge
+gcp tpu pricing,30,19,9,0.15,/instances/gcp/tpu-v5p-10880
+aws gpu pricing,390,59,30,0.15,/instances
+aws ec2 cost calculator,90,43,21,0.14,/tools/aws-pricing-calculator
+kubernetes autoscaling,260,17,48,0.14,/blog/kubernetes-autoscaling
+c6i instance,20,0,6,0.14,/instances/aws/c6i.xlarge
+dockerfile gpu,140,21,29,0.14,/guides/complete-guide-to-measuring-and-fixing-gpu-utilization
+m5d 8xlarge,30,5,16,0.14,/instances/aws/families/m5d
+g4dn aws,30,19,9,0.14,/instances/aws/g4dn.2xlarge
+ml g5 24xlarge,30,7,9,0.14,/instances/aws/g5.24xlarge
+aws vs azure costs,110,7,14,0.14,/blog/aws-azure-google-price-comparison
+p4 pricing,30,16,22,0.14,/instances/aws/p5.4xlarge
+aws b200,70,9,26,0.14,/instances/aws/families/p6-b200
+ec2 c5,20,2,13,0.13,/instances/aws/c5.metal
+aws h100 instances,50,21,16,0.13,/instances/aws/p5.4xlarge
+n2-standard-2,40,10,14,0.13,/instances/gcp/n2-standard-32
+x2iezn,20,0,14,0.13,/instances/aws/x2iezn.2xlarge
+c7i-flex large,40,0,9,0.13,/instances/aws/c7i.large
+m7i 48xlarge,40,0,9,0.13,/instances/aws/m7i.8xlarge
+t3 large aws,30,22,16,0.13,/instances/aws/t3.large
+aws r5 instances,20,19,10,0.13,/instances/aws/r5.2xlarge
+c7g xlarge,50,0,15,0.13,/instances/aws/c7g.large
+e2 standard 16,50,10,7,0.13,/instances/gcp/e2-standard-16
+e2 standard-16,50,10,7,0.13,/instances/gcp/e2-standard-16
+amazon aws cost calculator,140,28,34,0.13,/tools/aws-pricing-calculator
+c5a large,20,0,9,0.13,/instances/aws/c5a.xlarge
+r7a 24xlarge,20,0,9,0.13,/instances/aws/r7a.2xlarge
+db r8g large,70,4,17,0.13,/instances/aws/r8g.large
+n2d standard 4,30,0,9,0.13,/instances/gcp/n2d-standard-32
+db r8g 2xlarge,50,1,15,0.12,/instances/aws/r8g.2xlarge
+r7g 8xlarge,50,0,15,0.12,/instances/aws/r7g.2xlarge
+aws h200 pricing,50,0,15,0.12,/instances/gpu/h100-mega
+cluster autoscaler kubernetes,20,18,10,0.12,/blog/kubernetes-cluster-autoscaler
+c8g 4xlarge,40,0,12,0.12,/instances/aws/c8g.xlarge
+bin packing kubernetes,30,0,20,0.12,/blog/whats-wrong-with-kubernetes-today
+karpenter metrics,50,0,38,0.12,/blog/karpenter-guide
+kubernetes requests vs limits,140,20,34,0.12,/blog/kubernetes-resource-requests-and-limits
+google tpu cost,40,9,12,0.12,/instances/gcp/tpu-v5p-10880
+g6e 12xlarge pricing,30,7,8,0.12,/instances/aws/g6e.4xlarge
+g6e 2xlarge pricing,30,5,8,0.12,/instances/aws/g6e.2xlarge
+g6e.12xlarge pricing,30,7,8,0.12,/instances/aws/g6e.4xlarge
+g6e.2xlarge pricing,30,5,8,0.12,/instances/aws/g6e.2xlarge
+gcp tpu price,30,10,8,0.12,/instances/gcp/tpu-v5p-10880
+karpenter consolidation,40,12,40,0.12,/blog/karpenter-guide
+c5.2xlarge price,30,10,6,0.12,/instances/aws/c5.2xlarge
+devnull as a service,70,4,64,0.12,/
+m5.large pricing,50,10,16,0.12,/instances/aws/m5.xlarge
+m5.4xlarge pricing,30,4,11,0.12,/instances/aws/m5.4xlarge
+ap south 1,210,1,15,0.12,/instances/aws/regions/ap-south-1
+m5.4xlarge specs,50,0,9,0.12,/instances/aws/m5.4xlarge
+zerodesk,30,0,26,0.11,/
+tesla cloud,30,0,18,0.11,/instances/gpu/nvidia-tesla-t4
+cache r6g xlarge,30,4,25,0.11,/instances/aws/r6g.xlarge
+t3.medium pricing,110,25,24,0.11,/instances/aws/t3.medium
+m7i-flex 4xlarge,20,12,8,0.11,/instances/aws/m7i-flex.4xlarge
+aws p5en,30,4,23,0.11,/instances/aws/p5.4xlarge
+db r6i 2xlarge,30,0,20,0.11,/instances/aws/r6i.2xlarge
+c5.4xlarge pricing,30,9,12,0.11,/instances/aws/c5.2xlarge
+kubernetes karpenter,90,22,21,0.11,/blog/karpenter-guide
+aws g6f,20,10,11,0.11,/instances/aws/g6f.xlarge
+m6g medium,20,5,16,0.11,/instances/aws/families/m6g
+aws gpu instances pricing,170,67,23,0.11,/blog/ec2-instance-pricing
+n2d standard 32,30,7,6,0.11,/instances/gcp/n2d-standard-32
+n2d-standard-32,30,8,6,0.11,/instances/gcp/n2d-standard-32
+p6 b300 48xlarge,50,0,8,0.11,/instances/gpu/b300
+cloud gpu pricing,210,41,27,0.11,/instances
+amazon ec2 r8g instances,40,14,14,0.11,/instances/aws/r8g.large
+aws t3,40,17,11,0.11,/instances/aws/t3.2xlarge
+c7g 16xlarge,40,0,14,0.11,/instances/aws/c7g.medium
+aws c5,30,22,12,0.1,/instances/aws/c5.metal
+tensor processing unit buy,40,14,19,0.1,/instances/gcp/tpu-v5p-10880
+spot placement score,30,1,34,0.1,/spot-instances
+c7a large,20,14,14,0.1,/instances/aws/c7a.2xlarge
+l4 gpu cost,40,0,15,0.1,/instances/gpu/l4
+t4 gpu cost,40,0,14,0.1,/instances/gpu/nvidia-t4
+n1 highmem-32,30,0,8,0.1,/instances/gcp/n1-highmem-8
+cloudwatch logs pricing,170,10,20,0.1,/blog/aws-cloudwatch-pricing
+devmio,50,0,44,0.1,/
+docker gpus,140,19,27,0.1,/guides/complete-guide-to-measuring-and-fixing-gpu-utilization
+aws l4,30,18,9,0.1,/instances/aws/g6.xlarge
+operator pattern,30,0,9,0.1,/docs/operators/network-operator/overview
+eks anywhere pricing,30,25,10,0.1,/blog/eks-pricing
+aws t3 instances,40,0,20,0.1,/instances/aws/t3.2xlarge
+cluster-proportional-autoscaler,40,0,20,0.1,/blog/kubernetes-cluster-autoscaler
+ap-southeast-3,50,0,18,0.1,/instances/aws/m7g.large
+keda vs karpenter,50,0,26,0.1,/blog/karpenter-vs-cluster-autoscaler
+r5 xlarge specs,40,0,15,0.1,/instances/aws/r5.2xlarge
+hpa k8s,140,11,38,0.1,/blog/kubernetes-hpa
+docker run gpus,70,22,24,0.1,/guides/complete-guide-to-measuring-and-fixing-gpu-utilization
+c7g 8xlarge,50,0,18,0.09,/instances/aws/c7g.large
+g5 4xlarge,260,0,39,0.09,/instances/aws/g5g.4xlarge
+karpenter gke,20,8,10,0.09,/blog/karpenter-guide
+gcp azure,70,23,16,0.09,/blog/aws-azure-google-price-comparison
+ec2 gpu pricing,20,32,16,0.09,/instances
+n1 standard 16,40,14,13,0.09,/instances/gcp/n1-standard-4
+n1-standard-16,40,14,13,0.09,/instances/gcp/n1-standard-4
+g2-standard-24,20,0,20,0.09,/instances/gcp/g2-standard-24
+g5 instance types,30,6,11,0.09,/instances/aws/g5.xlarge
+i4i 16xlarge,30,0,11,0.09,/instances/aws/i4i.4xlarge
+m6g 8xlarge,30,10,13,0.09,/instances/aws/families/m6g
+p5 gpu,30,1,13,0.09,/instances/aws/p5.4xlarge
+instance pricing,40,13,15,0.09,/instances/compare
+karpenter aws,140,46,42,0.09,/blog/karpenter-guide
+m5 16xlarge,50,4,17,0.09,/instances/aws/m5.xlarge
+ml g5 4xlarge,50,8,17,0.09,/instances/aws/families/g5
+aws on demand ec2 pricing,210,29,24,0.09,/blog/ec2-instance-pricing
+c5 2xlarge price,30,24,7,0.09,/instances/aws/c5.2xlarge
+c5 2xlarge pricing,30,8,7,0.09,/instances/aws/c5.2xlarge
+s3 bucket cost,390,15,22,0.09,/blog/aws-s3-pricing
+azure vs aws costs,30,6,13,0.09,/blog/aws-azure-google-price-comparison
+n2 highmem 8,50,10,18,0.09,/instances/gcp/n2-highcpu-8
+m7i-flex 2xlarge,40,12,17,0.09,/instances/aws/m7i.large
+gpu cloud price comparison,50,19,29,0.09,/instances/gpu
+cloudwatch log pricing,170,3,21,0.09,/blog/aws-cloudwatch-pricing
+azure h100 pricing,70,26,20,0.09,/instances/gpu
+horizontal pod autoscaler,320,14,54,0.09,/blog/kubernetes-autoscaling
+t2 size,40,0,21,0.09,/instances/aws/t2.medium
+n2d highmem 16,30,0,9,0.08,/instances/gcp/n2d-highmem-80
+24 c5d,50,0,49,0.08,/instances/aws/c5d.large
+t2.medium specs,30,0,9,0.08,/instances/aws/t2.2xlarge
+how much do aks cost,30,18,13,0.08,/blog/aks-pricing
+m5.2xlarge pricing,50,11,15,0.08,/instances/aws/m5.xlarge
+m5 4xlarge specs,50,0,10,0.08,/instances/aws/m5.4xlarge
+m5d 2xlarge,30,10,14,0.08,/instances/aws/m5d.xlarge
+azure vs aws vs gcp,390,27,20,0.08,/blog/aws-azure-google-price-comparison
+deep zero,40,0,46,0.08,/
+criu linux,30,17,15,0.08,/blog/checkpoint-restore-with-criu
+virtual machine pricing,170,29,19,0.08,/tools/azure-pricing-calculator
+n2d-highmem-32,30,0,9,0.08,/instances/gcp/n2d-highmem-80
+aws f2,40,5,23,0.08,/instances/aws/families/f2
+n2 highmem-64,30,0,7,0.08,/instances/gcp/n2-highcpu-64
+gcp vs azure vs aws,40,27,17,0.07,/blog/aws-azure-google-price-comparison
+h200 nvidia price,70,7,31,0.07,/instances/gpu/nvidia-h200
+p6 aws,50,33,27,0.07,/instances/aws/families/p6-b200
+microsoft azure vs google cloud,50,28,20,0.07,/blog/aws-azure-google-price-comparison
+t4g nano pricing,30,5,10,0.07,/instances/aws/t4g.small
+karpenter helm,30,20,25,0.07,/blog/karpenter-guide
+db r5 2xlarge,50,0,31,0.07,/instances/aws/r5.2xlarge
+kubernetes resources requests,40,23,27,0.07,/blog/kubernetes-resource-requests-and-limits
+e2-micro vm,40,20,11,0.07,/instances/gcp/e2-micro
+google c2 a0,260,18,55,0.07,/instances/gcp/c2-standard-30
+azure container instances pricing,110,12,13,0.07,/blog/azure-container-apps-pricing
+n2-highmem-8,50,10,18,0.07,/instances/gcp/n2-highcpu-8
+db r7g 4xlarge,30,0,24,0.07,/instances/aws/r7g.4xlarge
+db t4g small,70,5,23,0.07,/instances/aws/t4g.small
+docker run gpu,70,22,30,0.07,/guides/complete-guide-to-measuring-and-fixing-gpu-utilization
+aws free tier eks,20,29,6,0.07,/blog/eks-pricing
+vpa k8s,50,13,43,0.06,/blog/kubernetes-vpa
+qualcomm aic100,40,12,21,0.06,/instances/gpu/qualcomm-ai100
+g5 12xlarge pricing,20,5,9,0.06,/instances/aws/g5.12xlarge
+nvidia l4 cost,40,0,25,0.06,/instances/gpu/l4
+dev3000,30,6,36,0.06,/
+aws p6 instances,70,39,31,0.06,/instances/aws/families/p6-b200
+n1-highmem-16,20,14,11,0.06,/instances/gcp/n1-highmem-64
+aws vs azure vs gcp comparison,40,26,19,0.06,/blog/aws-azure-google-price-comparison
+r6g 8xlarge,50,0,21,0.06,/instances/aws/r6g.xlarge
+x2idn,20,0,11,0.06,/instances/aws/x2idn.16xlarge
+karpenter-provider-aws,30,18,34,0.06,/blog/karpenter-guide
+aws p5 price,10,17,10,0.06,/instances/aws/p5.4xlarge
+t4g nano,140,0,39,0.06,/instances/aws/families/t4g
+m6i.xlarge pricing,20,7,13,0.06,/instances/aws/m6i.xlarge
+aws g5 instance,140,7,10,0.06,/instances/aws/g5.2xlarge
+b200 aws,30,26,33,0.06,/instances/aws/families/p6-b200
+ml p3 8xlarge,20,2,13,0.06,/instances/aws/p3.8xlarge
+n2-highmem 16,50,6,15,0.06,/instances/gcp/e2-highmem-16
+azure vs gcp,140,18,29,0.06,/blog/aws-azure-google-price-comparison
+i3en xlarge,30,17,25,0.06,/instances/aws/i4i.xlarge
+karpenter release notes,30,14,32,0.06,/blog/karpenter-guide
+aws eu west 1,140,21,31,0.06,/instances/aws/regions/eu-west-1
+ec2 gpu instances pricing,30,23,12,0.06,/instances
+karpenter azure,30,15,38,0.06,/blog/karpenter-guide
+t3a medium pricing,20,4,8,0.06,/instances/aws/t3a.medium
+kubernetes 1.34 release notes,40,26,32,0.06,/blog/kubernetes-v1-34
+kdocker,40,7,55,0.05,/kubernetes-cost-optimization
+google cloud tpu pricing calculator,50,22,22,0.05,/instances/gcp/tpu-v3-8
+aws estimates,70,17,33,0.05,/tools/aws-pricing-calculator
+zeronode,20,29,33,0.05,/
+engineering forum,110,18,33,0.05,/engineering-leaders-forum
+aws instance types cost,40,0,17,0.05,/instances/aws/regions/us-east-1
+cuda-checkpoint,70,12,4,0.05,/blog/gpu-container-checkpoint-restore
+spot instance availability,30,0,15,0.05,/spot-instances
+what is t4g,20,4,11,0.05,/instances/aws/t4g.small
+aws m5 4xlarge,20,34,15,0.05,/instances/aws/m5.xlarge
+aws t2.micro,30,19,15,0.05,/instances/aws/t2.medium
+google cloud workstation pricing,40,24,15,0.05,/blog/google-cloud-server-cost
+r7i 16xlarge,70,0,27,0.05,/instances/aws/families/r7i
+ml g4dn 2xlarge,40,6,21,0.05,/instances/aws/g4dn.2xlarge
+m6i.4xlarge specs,30,0,10,0.05,/instances/aws/m6i.16xlarge
+c4d gcp,30,21,21,0.05,/instances/gcp/families/c4d-standard
+c5 18xlarge,50,6,23,0.05,/instances/aws/c5.2xlarge
+ms azure vs google cloud,50,17,18,0.05,/blog/aws-azure-google-price-comparison
+i3en 2xlarge,30,17,18,0.05,/instances/aws/i3.2xlarge
+dev ojha,30,0,61,0.05,/about-us
+google cloud vs aws pricing,30,0,12,0.05,/blog/aws-azure-google-price-comparison
+price aws vs azure,110,3,12,0.05,/blog/aws-azure-google-price-comparison
+gcp e2 micro,50,6,14,0.05,/instances/gcp/e2-micro
+n1 standard-2,30,26,9,0.05,/instances/gcp/n1-standard-2
+karpenter ec2nodeclass,30,7,50,0.05,/blog/karpenter-guide
+m8i large,30,7,38,0.05,/instances/aws/m8i.48xlarge
+kubernetes cost optimization,90,0,59,0.05,/kubernetes-cost-optimization
+e2 medium,70,6,12,0.04,/instances/gcp/e2-medium
+google cloud platform vs microsoft azure,50,16,24,0.04,/blog/aws-azure-google-price-comparison
+aws t3 instance types,50,0,35,0.04,/instances/aws/t3.medium
+p3 pricing,30,2,11,0.04,/instances/aws/p3.16xlarge
+t3.2xlarge pricing,40,11,11,0.04,/instances/aws/t3.2xlarge
+x2iedn 4xlarge,40,14,29,0.04,/instances/aws/r6idn.4xlarge
+m5.large price,50,4,18,0.04,/instances/aws/m5.xlarge
+a2 ultragpu 1g,40,0,5,0.04,/instances/gcp/a2-ultragpu-1g
+k8s workload,30,0,18,0.04,/blog/kubernetes-workload-types
+t2.micro specs,30,11,15,0.04,/instances/aws/t2.medium
+aws ec2 on demand pricing,210,30,24,0.04,/blog/ec2-instance-pricing
+devscale,70,0,57,0.04,/
+db r7g 2xlarge,40,0,23,0.04,/instances/aws/r7g.2xlarge
+azure vs aws cost comparison,20,7,16,0.04,/blog/aws-azure-google-price-comparison
+gcp e2-micro,50,9,13,0.04,/instances/gcp/e2-micro
+spot instance pricing,50,17,31,0.04,/instances/compare
+dev01,70,0,43,0.04,/
+amazon glacier costs,260,20,19,0.04,/blog/aws-s3-pricing
+p5 48xlarge pricing,50,19,20,0.04,/instances/aws/p5.4xlarge
+p5.48xlarge pricing,50,18,20,0.04,/instances/aws/p5.4xlarge
+kubernetes cost monitoring,50,8,27,0.04,/kubernetes-cost-monitoring
+db t3 large,40,8,75,0.04,/instances/aws/t3.large
+aws p3,20,35,20,0.04,/instances/aws/p3dn.24xlarge
+n2d highmem 32,30,0,26,0.03,/instances/gcp/n2d-standard-32
+n2d standard-4,30,2,36,0.03,/instances/gcp/n4d-standard-4
+aws ec2 on-demand pricing,210,31,25,0.03,/blog/ec2-instance-pricing
+ml g4dn xlarge,90,7,29,0.03,/instances/aws/g4dn.4xlarge
+karpenter version,30,15,33,0.03,/blog/karpenter-guide
+hpa metrics,30,7,32,0.03,/blog/kubernetes-hpa
+kubectl get hpa,30,18,32,0.03,/blog/kubernetes-hpa
+n1 standard 2,30,26,9,0.03,/instances/gcp/n1-standard-2
+azure vs aws vs google,70,28,21,0.03,/blog/aws-azure-google-price-comparison
+p5.48xlarge cost,30,5,17,0.03,/instances/aws/p5.4xlarge
+ec2 p4,30,7,26,0.03,/instances/aws/p5.4xlarge
+cache r7g 2xlarge,30,4,22,0.03,/instances/aws/r7g.2xlarge
+r5d 2xlarge,30,0,22,0.03,/instances/aws/r5.2xlarge
+gcp c4d,30,20,27,0.03,/instances/gcp/families/c4d-standard
+r 8x 2,30,0,27,0.03,/instances/aws/r8g.2xlarge
+n2 standard-32,50,11,5,0.03,/instances/gcp/n2-standard-32
+amazon glacier cost,260,24,21,0.03,/blog/aws-s3-pricing
+google cloud postgres pricing,30,9,35,0.03,/blog/google-cloud-server-cost
+c7i-flex 2xlarge,20,14,18,0.03,/instances/aws/c7i.4xlarge
+i3 16xlarge,20,0,18,0.03,/instances/aws/i3.large
+aws azure and gcp,30,28,28,0.03,/blog/aws-azure-google-price-comparison
+n2 highmem-8,50,10,19,0.03,/instances/gcp/n2-highcpu-8
+aks karpenter,20,13,36,0.03,/blog/karpenter-guide
+t2.xlarge specs,20,0,12,0.03,/instances/aws/t2.2xlarge
+t3a xlarge pricing,20,3,13,0.03,/instances/aws/families/t3a
+t3a.xlarge pricing,20,3,13,0.03,/instances/aws/families/t3a
+m5.2xlarge price,50,10,16,0.03,/instances/aws/m5a.2xlarge
+k8s resource limits,40,28,36,0.03,/blog/kubernetes-resource-requests-and-limits
+amazon g5,30,7,28,0.03,/instances/aws/g5.xlarge
+pricing aws vs azure,110,8,15,0.03,/blog/aws-azure-google-price-comparison
+hpa vs vpa in kubernetes,50,0,41,0.03,/blog/kubernetes-autoscaling
+g2-standard-16,30,6,29,0.03,/instances/gcp/c2-standard-16
+db r8g 4xlarge,40,1,26,0.03,/instances/aws/r8g.4xlarge
+db r8g 8xlarge,30,0,23,0.03,/instances/aws/r8g.8xlarge
+uber dev,140,14,25,0.03,/videos/how-uber-increased-developer-productivity
+g4dn.xlarge gpu,20,0,13,0.03,/instances/aws/g4dn.4xlarge
+p5 48xlarge cost,30,5,17,0.03,/instances/aws/p5.4xlarge
+h200 chip cost,50,13,41,0.03,/instances/gpu/nvidia-h200
+engineering leadership conference,30,32,31,0.03,/engineering-leaders-forum
+kubernetes 1.34 release date,20,54,24,0.03,/blog/kubernetes-v1-34
+k8s requests vs limits,50,22,39,0.03,/blog/kubernetes-resource-requests-and-limits
+m6i xlarge specs,30,0,10,0.03,/instances/aws/m6i.metal
+t2 xlarge specs,20,9,11,0.03,/instances/aws/t2.2xlarge
+azure blob storage pricing calculator,210,29,50,0.03,/tools/azure-pricing-calculator
+aws pricing vs azure,110,8,10,0.03,/blog/aws-azure-google-price-comparison
+t3 instance type,50,12,28,0.03,/instances/aws/t3.micro
+cost of t3,30,2,15,0.03,/instances/aws/t3.2xlarge
+dev scope,40,26,51,0.03,/
+google cloud tpu price,210,10,9,0.03,/instances/gcp/tpu-v3-8
+gcp postgres pricing,40,0,29,0.03,/blog/google-cloud-server-cost
+aws cheapest region,40,0,3,0.03,/instances/aws/u-6tb1.56xlarge
+c5 xlarge pricing,40,5,15,0.02,/instances/aws/c5.24xlarge
+m5 4xlarge price,30,0,4,0.02,/instances/aws/m5n.4xlarge
+m5.4xlarge price,30,0,4,0.02,/instances/aws/m5n.4xlarge
+c6in 8xlarge,30,2,25,0.02,/instances/aws/c6i.xlarge
+ironwood tpu price,30,26,25,0.02,/instances/gcp/tpu-v5p-10880
+kubernetes 1.34 release,10,19,20,0.02,/blog/kubernetes-v1-34
+t3a medium specs,30,0,4,0.02,/instances/aws/t3a.small
+aws p4 instance,50,33,42,0.02,/instances/aws/p5.4xlarge
+aws vs azure price,110,14,16,0.02,/blog/aws-azure-google-price-comparison
+what is hpa in kubernetes,140,9,51,0.02,/blog/kubernetes-autoscaling
+t2 micro pricing,20,4,16,0.02,/instances/aws/t2.medium
+cloud gpu pricing comparison,20,17,55,0.02,/instances/gpu
+what is karpenter in eks,20,34,32,0.02,/blog/karpenter-guide
+azure pricing vs aws,110,3,11,0.02,/blog/aws-azure-google-price-comparison
+cloud computing pricing comparison,110,14,25,0.02,/blog/aws-azure-google-price-comparison
+aws vs azure vs google cloud comparison pdf,30,7,26,0.02,/blog/aws-azure-google-price-comparison
+cluster autoscaler kubernetes io safe to evict,30,4,26,0.02,/blog/kubernetes-cluster-autoscaler
+aws f2 instances,20,23,28,0.02,/instances/aws/families/f2
+docker desktop alternative windows,50,14,46,0.02,/kubernetes-cost-optimization
+t3 pricing,40,6,18,0.02,/instances/aws/t3.2xlarge
+kubecon eu 2025,20,51,43,0.02,/blog/kubecon-cloudnativecon-eu-2025
+kubernetes resources: limits,90,19,31,0.02,/blog/kubernetes-resource-requests-and-limits
+m6i 4xlarge specs,30,0,81,0.02,/instances/aws/families/m6i
+m6i.2xlarge specs,30,1,84,0.02,/instances/aws/m6in.2xlarge
+n1 highmem-16,20,14,14,0.02,/instances/gcp/n1-highmem-64
+p5en 48xlarge pricing,30,10,21,0.02,/instances/aws/p5.4xlarge
+p5en.48xlarge pricing,30,10,21,0.02,/instances/aws/p5.4xlarge
+aws vs azure pricing comparison,20,7,13,0.02,/blog/aws-azure-google-price-comparison
+kubernetes memory request vs limit,30,28,37,0.02,/blog/kubernetes-resource-requests-and-limits
+aws m5 2xlarge,30,27,31,0.02,/instances/aws/m5a.2xlarge
+docker alternative windows,30,5,31,0.02,/kubernetes-cost-optimization
+s3 eu-west,70,0,41,0.02,/instances/aws/regions/eu-west-3
+request vs limit kubernetes,50,22,38,0.02,/blog/kubernetes-resource-requests-and-limits
+data zero,70,0,58,0.02,/
+pricing azure vs aws,110,8,13,0.02,/blog/aws-azure-google-price-comparison
+mi300 price,20,0,33,0.02,/instances/gpu/mi300x
+crusoe pricing,70,5,55,0.02,/instances/gpu
+amazon t2,30,6,42,0.02,/instances/aws/t2.large
+azure vs aws price comparison,30,7,14,0.02,/blog/aws-azure-google-price-comparison
+azure vs aws pricing comparison,20,7,14,0.02,/blog/aws-azure-google-price-comparison
+requests vs limits kubernetes,50,22,39,0.02,/blog/kubernetes-resource-requests-and-limits
+storage gateway aws pricing,110,20,34,0.02,/blog/aws-s3-pricing
+c5 xlarge price,40,5,19,0.02,/instances/aws/c5.24xlarge
+e2 highmem 16,40,2,5,0.02,/instances/gcp/e2-highmem-16
+e2 highmem-16,40,2,5,0.02,/instances/gcp/e2-highmem-16
+r6i xlarge specs,30,0,5,0.02,/instances/aws/r6i.2xlarge
+a3 ultragpu-8g,30,4,7,0.02,/instances/gcp/a3-ultragpu-8g
+kubernetes cluster visualizer,20,0,49,0.02,/analyze-cluster
+what is kubernetes hpa,20,10,37,0.01,/blog/kubernetes-hpa
+google cloud aws azure,90,23,18,0.01,/blog/aws-azure-google-price-comparison
+nvidia dgx cloud pricing,30,16,33,0.01,/instances/gpu
+aws azure google cloud,70,23,26,0.01,/blog/aws-azure-google-price-comparison
+t2.micro pricing,30,0,31,0.01,/instances/aws/t2.large
+gpu metrics,30,6,48,0.01,/blog/how-to-measure-gpu-utilization
+i3 xlarge,40,0,41,0.01,/instances/aws/i3.2xlarge
+alternative to docker desktop,40,4,36,0.01,/kubernetes-cost-optimization
+amazon gpu pricing,30,68,34,0.01,/instances
+n1 highmem 16,20,15,19,0.01,/instances/gcp/n1-highmem-64
+kasm workspaces alternative,30,0,47,0.01,/kubernetes-cost-optimization
+g5 amazon,30,14,25,0.01,/instances/aws/g5.xlarge
+a3 highgpu 1g,40,0,8,0.01,/instances/gcp/a3-highgpu-8g
+qualcomm cloud ai 100,50,13,55,0.01,/instances/gpu/qualcomm-ai100
+lambda labs gpu pricing,20,16,44,0.01,/instances/gpu
+aws vs azure price comparison,20,9,16,0.01,/blog/aws-azure-google-price-comparison
+kubernetes resources limits,90,21,29,0.01,/blog/kubernetes-resource-requests-and-limits
+g6e xlarge pricing,40,7,7,0.01,/instances/aws/g6e.xlarge
+kubernetes limits,30,28,42,0.01,/blog/kubernetes-resource-requests-and-limits
+aws eks karpenter,20,34,42,0.01,/blog/karpenter-guide
+kaniko replacement,40,0,81,0.01,/kubernetes-cost-optimization
+aws ec2 gpu instances pricing,10,74,28,0.01,/instances
+karpenter upgrade,20,10,48,0.01,/blog/karpenter-guide
+kasm alternatives,50,0,54,0.01,/kubernetes-cost-optimization
+t2 unlimited,20,1,44,0.01,/instances/aws/t2.large
+devscope,40,0,71,0.01,/
+kubernetes horizontalpodautoscaler,110,14,57,0.01,/blog/kubernetes-autoscaling
+cloudzero pricing,30,22,46,0.01,/instances
+n2 highmem 4,30,0,10,0.01,/instances/gcp/n2-highmem-2
+e2 standard 2,70,17,14,0.01,/instances/gcp/e2-standard-32
+instance cost,40,0,6,0.01,/instances/gcp/families/ek-standard
+n2 standard-4,90,15,7,0.01,/instances/gcp/n2-standard-4
+devready,30,21,67,0.01,/
+docker alternatives windows,30,5,30,0.01,/kubernetes-cost-optimization
+aws vs google cloud vs microsoft azure,40,26,23,0.01,/blog/aws-azure-google-price-comparison
+e2 standard-2,70,18,14,0.01,/instances/gcp/e2-standard-16
+nvidia h200 power consumption,30,0,72,0.01,/instances/gpu/nvidia-h200
+kasm alternative,50,1,56,0.01,/kubernetes-cost-optimization
+logs pricing,260,9,18,0.01,/blog/aws-cloudwatch-pricing
+what is hpa kubernetes,20,9,38,0.01,/blog/kubernetes-hpa
+docker hub alternative,50,0,74,0.01,/kubernetes-cost-optimization
+aws p5 instance,140,19,7,0.01,/instances/aws/p5.4xlarge
+aws ec2 gpu instance pricing,10,68,38,0.01,/instances
+aws cloud9 pricing,20,18,47,0.01,/instances
+a2 ultragpu-8g,30,0,12,0.01,/instances/gcp/a2-ultragpu-1g
+n2d highmem-32,30,0,39,0.01,/instances/gcp/n2-standard-32
+microsoft azure vs aws vs google cloud,40,23,28,0.01,/blog/aws-azure-google-price-comparison
+gpu management,30,4,44,0.01,/blog/how-to-measure-gpu-utilization
+vpa-recommender,20,0,41,0.0,/blog/kubernetes-vpa
+g4 standard-48,70,7,20,0.0,/instances/gcp/c4-standard-48
+windows docker alternative,20,5,42,0.0,/kubernetes-cost-optimization
+n2-highmem-32,70,6,16,0.0,/instances/gcp/n2-standard-32
+n1 standard 4,70,16,9,0.0,/instances/gcp/n1-standard-4
+aws m5.large,40,0,92,0.0,/instances/aws/m5n.large
+t3 xlarge specs,90,0,17,0.0,/instances/aws/t3.2xlarge
+karpenter node pools,170,9,30,0.0,/blog/karpenter-guide
+g5 instance,170,3,8,0.0,/instances/aws/g5.xlarge
+m5 4xlarge pricing,30,4,11,0.0,/instances/aws/m5.4xlarge
+eks auto mode vs karpenter,30,0,59,0.0,/blog/karpenter-guide
+horizontal pod autoscaling kubernetes,30,10,50,0.0,/blog/kubernetes-autoscaling
+n1 standard-4,70,16,10,0.0,/instances/gcp/n1-standard-4
+n2 highmem-4,30,0,31,0.0,/instances/gcp/n4a-highmem-4
+g4dn xlarge specs,20,0,13,0.0,/instances/aws/g4dn.4xlarge
+google tensor processing unit price,170,21,13,0.0,/instances/gcp/tpu-v5p-10880
+n2 standard 16,70,6,13,0.0,/instances/gcp/n2-standard-32
+aws eu west-1,140,21,31,0.0,/instances/aws/regions/eu-west-1
+amazon cloudwatch price,170,22,20,0.0,/blog/aws-cloudwatch-pricing
+r5.xlarge specs,40,0,14,0.0,/instances/aws/r5.2xlarge
+azure cost vs aws,110,4,14,0.0,/blog/aws-azure-google-price-comparison
+aws t2 medium,30,12,10,0.0,/instances/aws/t2.medium
+n2 highmem-32,70,6,16,0.0,/instances/gcp/n2-standard-32
+azure pricing tiers,40,0,48,0.0,/instances/azure/Standard_D96ns_v6
+eu west 1,480,8,23,0.0,/instances/aws/regions/eu-west-1
+tpu price google,170,17,16,0.0,/instances/gcp/tpu-v3-8
+n2d standard-16,40,11,18,0.0,/instances/gcp/n2d-standard-32
+monitoring gpu usage,140,11,36,0.0,/blog/how-to-measure-gpu-utilization
+amazon cloud costs calculator,140,29,22,0.0,/tools/aws-pricing-calculator
+eu west-1,480,8,22,0.0,/instances/aws/regions/eu-west-1
+h100 costs,1000,14,26,0.0,/instances/gpu/h100
+amazon server pricing calculator,140,32,20,0.0,/tools/aws-pricing-calculator
+t2.medium price,30,3,20,0.0,/instances/aws/t2.large
+amazon web services pricing calculator,140,29,29,0.0,/tools/aws-pricing-calculator
+t2.medium pricing,30,6,13,0.0,/instances/aws/t2.medium
+amazon cloud cost calculator,140,29,25,0.0,/tools/aws-pricing-calculator
+eu west 1 aws,140,61,31,0.0,/instances/aws/regions/eu-west-1
+g2 standard 16,30,16,29,0.0,/instances/gcp/c4-standard-16
+g2 standard-16,30,16,29,0.0,/instances/gcp/c4-standard-16
+eu west-1 aws,140,61,30,0.0,/instances/aws/regions/eu-west-1
+g2-standard-4,50,6,31,0.0,/instances/gcp/n2-standard-4
+amazon cloud pricing calculator,140,29,25,0.0,/tools/aws-pricing-calculator
+kubernetes request vs limit,140,23,37,0.0,/blog/kubernetes-resource-requests-and-limits
+autoscale kubernetes,260,48,53,0.0,/blog/kubernetes-autoscaling
+azure server costs,110,11,28,0.0,/tools/azure-pricing-calculator
+a2 highgpu-1g,70,0,6,0,/instances/gcp/a2-highgpu-1g
+a4 highgpu 8g,30,3,5,0,/instances/gcp/a4-highgpu-8g
+a4 highgpu-8g,30,3,5,0,/instances/gcp/a4-highgpu-8g
+ap south-1,210,1,16,0,/instances/aws/regions/ap-south-1
+aws google cloud azure,70,26,10,0,/blog/aws-azure-google-price-comparison
+aws-spot instances availability,50,26,31,0,/spot-instances
+azure google cloud aws,90,23,17,0,/blog/aws-azure-google-price-comparison
+azure gpu price,170,52,19,0,/tools/azure-pricing-calculator
+buy tpu google,70,31,22,0,/instances/gcp/tpu-v5p-10880
+c5 2xlarge specs,40,0,7,0,/instances/aws/c5.2xlarge
+c5 4xlarge price,30,10,15,0,/instances/aws/c5.2xlarge
+c5 4xlarge pricing,30,9,12,0,/instances/aws/c5.2xlarge
+c5 4xlarge specs,40,0,9,0,/instances/aws/c5.metal
+c5 xlarge specs,30,5,11,0,/instances/aws/c5.2xlarge
+c5.4xlarge price,30,10,12,0,/instances/aws/c5.2xlarge
+ec2 pricing gpu,20,23,38,0,/instances
+g2 standard 24,20,0,12,0,/instances/gcp/g2-standard-24
+g2 standard-24,20,0,12,0,/instances/gcp/g2-standard-24
+g4dn instance,70,9,8,0,/instances/aws/g4dn.2xlarge
+g4dn price,30,9,12,0,/instances/aws/g4dn.2xlarge
+g4dn xlarge gpu,20,1,16,0,/instances/aws/g4dn.4xlarge
+google cloud azure aws,70,23,15,0,/blog/aws-azure-google-price-comparison
+google cloud platform pricing vs aws,30,13,16,0,/blog/aws-azure-google-price-comparison
+google cloud platform vs aws pricing,30,9,17,0,/blog/aws-azure-google-price-comparison
+google cloud pricing vs aws,30,8,16,0,/blog/aws-azure-google-price-comparison
+gpu cloud pricing comparison,50,26,29,0,/instances/gpu
+kindest node,50,16,55,0,/kubernetes-cost-optimization
