@@ -162,15 +162,7 @@ Written in the App Insights format for Confluence.
 | Nov 24 | Full read of the Bahasa ad groups and Nov 10 assets | Keep, expand or stop, against the criteria in Section 3 |
 | After Nov 17 | Refresh AI-Oriented copy (ad strength Poor; 8 of 10 assets rated Low) | Improve the weakest active ad group |
 
-## 7. Information and approvals needed
-
-- **Activation definition:** the SOP goal is >20%, but GA4 shows 71% of Google Ads users firing First_Print. Which measure should I report against?
-- **Ads policy:** your message said ads are shown aggressively to Google Ads users, but Confluence documents no difference between paid and organic users. Please confirm, since it affects how much a paid user is worth.
-- **Plan prices in IDR:** these aren't documented. They're needed to set a target cost per purchase.
-- **Developer:** fix or retire the custom "Purchase" event, and send First_Print once per user (spec shared earlier).
-- **Approval (month 2):** a controlled spend test to measure how many paid installs are truly extra (insight 5). A full plan with hypothesis, metrics, guardrails and maximum spend will follow.
-
-## 8. Hours
+## 7. Hours
 
 | Work | Hours (approx.) |
 |---|---|
