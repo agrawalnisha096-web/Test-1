@@ -1,6 +1,6 @@
 # Responsive search ads v2: one per ad group
 
-First headline matches the search; all lengths checked against Google limits (headline 30, description 90, path 15). `{KeyWord:…}` is keyword insertion: Google shows the matched keyword if it fits in 30 characters, otherwise the default text after the colon.
+First headline matches the search; the rest answer what that searcher cares about. Lengths checked against Google limits (headline 30, description 90, path 15). `{KeyWord:…}` is keyword insertion: Google shows the matched keyword if it fits in 30 characters, otherwise the default text after the colon.
 
 
 ## AG1 Automation consultant & services
@@ -13,26 +13,26 @@ First headline matches the search; all lengths checked against Google limits (he
 |---|---|---|
 | 1 | {KeyWord:Automation Consultants} (pin to position 1) | 22 |
 | 2 | Business Automation Services | 28 |
-| 3 | Automation Consultants AU | 25 |
-| 4 | Built by Accountants | 20 |
-| 5 | Accountants Since 2007 | 22 |
-| 6 | Xero Partner Since 2013 | 23 |
-| 7 | See It Working Before You Buy | 29 |
-| 8 | Price Agreed Upfront | 20 |
-| 9 | Automate the Manual Work | 24 |
-| 10 | Cut Admin Costs, Not People | 27 |
-| 11 | Book a Free Discovery Call | 26 |
-| 12 | Works With Your Systems | 23 |
-| 13 | For 10 to 1,000+ Staff | 22 |
-| 14 | Automation + Live Dashboards | 28 |
-| 15 | Invoices, Orders & Reporting | 28 |
+| 3 | Automation Experts, Australia | 29 |
+| 4 | Less Manual Work, Fewer Errors | 30 |
+| 5 | Cut Your Admin Staff Costs | 26 |
+| 6 | Works With Your Systems | 23 |
+| 7 | No Need to Change Software | 26 |
+| 8 | See It Working Before You Buy | 29 |
+| 9 | Price Agreed Upfront | 20 |
+| 10 | Start With What Pays Back | 25 |
+| 11 | Free 30-Min Discovery Call | 26 |
+| 12 | Automation + Live Dashboards | 28 |
+| 13 | Invoices, Orders & Reporting | 28 |
+| 14 | For 10 to 1,000+ Staff | 22 |
+| 15 | Xero Partner Since 2013 | 23 |
 
 | # | Description | Chars |
 |---|---|---|
-| 1 | Automation consultants who start with your numbers and show the payback before you commit. | 90 |
-| 2 | Supplier bills, orders, reporting and approvals, automated inside the systems you use. | 86 |
-| 3 | See a working prototype before the build. You will know the price before work starts. | 85 |
-| 4 | Free 30-minute discovery call with business experts. No obligation, no hard sell. | 81 |
+| 1 | We automate the manual work slowing your team down, inside the systems you already use. | 87 |
+| 2 | Supplier bills, orders, reporting and approvals handled automatically, with fewer errors. | 89 |
+| 3 | See a working prototype before you commit. The price is agreed before any work starts. | 86 |
+| 4 | Free 30-minute discovery call. Find the processes worth automating first, no obligation. | 88 |
 
 ## AG2 Business process automation
 
@@ -45,25 +45,25 @@ First headline matches the search; all lengths checked against Google limits (he
 | 1 | {KeyWord:Business Process Automation} (pin to position 1) | 27 |
 | 2 | Automate Business Processes | 27 |
 | 3 | Process Automation Experts | 26 |
-| 4 | Built by Accountants | 20 |
-| 5 | Accountants Since 2007 | 22 |
-| 6 | Xero Partner Since 2013 | 23 |
-| 7 | See It Working Before You Buy | 29 |
-| 8 | Price Agreed Upfront | 20 |
-| 9 | Automate the Manual Work | 24 |
-| 10 | Cut Admin Costs, Not People | 27 |
-| 11 | Book a Free Discovery Call | 26 |
-| 12 | Works With Your Systems | 23 |
-| 13 | For 10 to 1,000+ Staff | 22 |
-| 14 | Automation + Live Dashboards | 28 |
-| 15 | Invoices, Orders & Reporting | 28 |
+| 4 | Less Manual Work, Fewer Errors | 30 |
+| 5 | Cut Your Admin Staff Costs | 26 |
+| 6 | Works With Your Systems | 23 |
+| 7 | No Need to Change Software | 26 |
+| 8 | See It Working Before You Buy | 29 |
+| 9 | Price Agreed Upfront | 20 |
+| 10 | Start With What Pays Back | 25 |
+| 11 | Free 30-Min Discovery Call | 26 |
+| 12 | Automation + Live Dashboards | 28 |
+| 13 | Invoices, Orders & Reporting | 28 |
+| 14 | For 10 to 1,000+ Staff | 22 |
+| 15 | Xero Partner Since 2013 | 23 |
 
 | # | Description | Chars |
 |---|---|---|
-| 1 | Automation consultants who start with your numbers and show the payback before you commit. | 90 |
-| 2 | Supplier bills, orders, reporting and approvals, automated inside the systems you use. | 86 |
-| 3 | See a working prototype before the build. You will know the price before work starts. | 85 |
-| 4 | Free 30-minute discovery call with business experts. No obligation, no hard sell. | 81 |
+| 1 | We automate the manual work slowing your team down, inside the systems you already use. | 87 |
+| 2 | Supplier bills, orders, reporting and approvals handled automatically, with fewer errors. | 89 |
+| 3 | See a working prototype before you commit. The price is agreed before any work starts. | 86 |
+| 4 | Free 30-minute discovery call. Find the processes worth automating first, no obligation. | 88 |
 
 ## AG3 AI consulting
 
@@ -76,25 +76,25 @@ First headline matches the search; all lengths checked against Google limits (he
 | 1 | AI Consulting Services (pin to position 1) | 22 |
 | 2 | AI Strategy Consulting | 22 |
 | 3 | AI Consultants, Australia-Wide | 30 |
-| 4 | Practical AI for Business | 25 |
-| 5 | AI Built by Accountants | 23 |
-| 6 | Start With Your Numbers | 23 |
-| 7 | See It Working Before You Buy | 29 |
-| 8 | AI Dashboards & Automation | 26 |
-| 9 | Your People Stay in Control | 27 |
-| 10 | Xero Partner Since 2013 | 23 |
-| 11 | Accountants Since 2007 | 22 |
-| 12 | Book a Free Discovery Call | 26 |
-| 13 | Less Admin, Clearer Numbers | 27 |
-| 14 | Price Agreed Upfront | 20 |
-| 15 | AI That Does the Work | 21 |
+| 4 | Practical AI, Real Results | 26 |
+| 5 | AI Built Into Your Systems | 26 |
+| 6 | AI That Reads Your Paperwork | 28 |
+| 7 | Spot Problems Before They Hurt | 30 |
+| 8 | Your Team Stays in Control | 26 |
+| 9 | See It Working Before You Buy | 29 |
+| 10 | Price Agreed Upfront | 20 |
+| 11 | Free 30-Min Discovery Call | 26 |
+| 12 | AI Dashboards & Automation | 26 |
+| 13 | Find Where AI Pays Back First | 29 |
+| 14 | Australian-Based Team | 21 |
+| 15 | No Need to Change Software | 26 |
 
 | # | Description | Chars |
 |---|---|---|
-| 1 | Practical AI and automation, scoped by accountants and built on the systems you use. | 84 |
-| 2 | Documents read, problems flagged, reports built. Your people approve anything unsure. | 85 |
-| 3 | See a working prototype before the build. You will know the price before work starts. | 85 |
-| 4 | Free 30-minute discovery call with business experts. No obligation, no hard sell. | 81 |
+| 1 | Practical AI for Australian businesses, built into the systems you already use. | 79 |
+| 2 | Documents read, problems flagged, reports built for you. Your team stays in control. | 84 |
+| 3 | See a working prototype before you commit. The price is agreed before any work starts. | 86 |
+| 4 | Free 30-minute discovery call. Find out where AI would pay back first, no obligation. | 85 |
 
 ## AG4 AI consulting - cities/AU
 
@@ -110,22 +110,22 @@ First headline matches the search; all lengths checked against Google limits (he
 | 4 | AI Consultants in Perth | 23 |
 | 5 | AI Consulting in Adelaide | 25 |
 | 6 | AI Agency in Australia | 22 |
-| 7 | Practical AI for Business | 25 |
-| 8 | AI Built by Accountants | 23 |
-| 9 | Start With Your Numbers | 23 |
-| 10 | See It Working Before You Buy | 29 |
-| 11 | AI Dashboards & Automation | 26 |
-| 12 | Your People Stay in Control | 27 |
-| 13 | Xero Partner Since 2013 | 23 |
-| 14 | Accountants Since 2007 | 22 |
-| 15 | Book a Free Discovery Call | 26 |
+| 7 | Practical AI, Real Results | 26 |
+| 8 | AI Built Into Your Systems | 26 |
+| 9 | AI That Reads Your Paperwork | 28 |
+| 10 | Spot Problems Before They Hurt | 30 |
+| 11 | Your Team Stays in Control | 26 |
+| 12 | See It Working Before You Buy | 29 |
+| 13 | Price Agreed Upfront | 20 |
+| 14 | Free 30-Min Discovery Call | 26 |
+| 15 | AI Dashboards & Automation | 26 |
 
 | # | Description | Chars |
 |---|---|---|
-| 1 | Practical AI and automation, scoped by accountants and built on the systems you use. | 84 |
-| 2 | Documents read, problems flagged, reports built. Your people approve anything unsure. | 85 |
-| 3 | See a working prototype before the build. You will know the price before work starts. | 85 |
-| 4 | Free 30-minute discovery call with business experts. No obligation, no hard sell. | 81 |
+| 1 | Practical AI for Australian businesses, built into the systems you already use. | 79 |
+| 2 | Documents read, problems flagged, reports built for you. Your team stays in control. | 84 |
+| 3 | See a working prototype before you commit. The price is agreed before any work starts. | 86 |
+| 4 | Free 30-minute discovery call. Find out where AI would pay back first, no obligation. | 85 |
 
 ## AG5 AI implementation & agents
 
@@ -138,25 +138,25 @@ First headline matches the search; all lengths checked against Google limits (he
 | 1 | AI Implementation Consultants (pin to position 1) | 29 |
 | 2 | AI Implementation Company | 25 |
 | 3 | AI Implementation Services | 26 |
-| 4 | Practical AI for Business | 25 |
-| 5 | AI Built by Accountants | 23 |
-| 6 | Start With Your Numbers | 23 |
-| 7 | See It Working Before You Buy | 29 |
-| 8 | AI Dashboards & Automation | 26 |
-| 9 | Your People Stay in Control | 27 |
-| 10 | Xero Partner Since 2013 | 23 |
-| 11 | Accountants Since 2007 | 22 |
-| 12 | Book a Free Discovery Call | 26 |
-| 13 | Less Admin, Clearer Numbers | 27 |
-| 14 | Price Agreed Upfront | 20 |
-| 15 | AI That Does the Work | 21 |
+| 4 | Practical AI, Real Results | 26 |
+| 5 | AI Built Into Your Systems | 26 |
+| 6 | AI That Reads Your Paperwork | 28 |
+| 7 | Spot Problems Before They Hurt | 30 |
+| 8 | Your Team Stays in Control | 26 |
+| 9 | See It Working Before You Buy | 29 |
+| 10 | Price Agreed Upfront | 20 |
+| 11 | Free 30-Min Discovery Call | 26 |
+| 12 | AI Dashboards & Automation | 26 |
+| 13 | Find Where AI Pays Back First | 29 |
+| 14 | Australian-Based Team | 21 |
+| 15 | No Need to Change Software | 26 |
 
 | # | Description | Chars |
 |---|---|---|
-| 1 | Practical AI and automation, scoped by accountants and built on the systems you use. | 84 |
-| 2 | Documents read, problems flagged, reports built. Your people approve anything unsure. | 85 |
-| 3 | See a working prototype before the build. You will know the price before work starts. | 85 |
-| 4 | Free 30-minute discovery call with business experts. No obligation, no hard sell. | 81 |
+| 1 | Practical AI for Australian businesses, built into the systems you already use. | 79 |
+| 2 | Documents read, problems flagged, reports built for you. Your team stays in control. | 84 |
+| 3 | See a working prototype before you commit. The price is agreed before any work starts. | 86 |
+| 4 | Free 30-minute discovery call. Find out where AI would pay back first, no obligation. | 85 |
 
 ## AG6 Readiness assessment
 
@@ -169,22 +169,22 @@ First headline matches the search; all lengths checked against Google limits (he
 | 1 | Free AI Readiness Call (pin to position 1) | 22 |
 | 2 | Is Your Business AI-Ready? | 26 |
 | 3 | AI Consultants, Australia-Wide | 30 |
-| 4 | Practical AI for Business | 25 |
-| 5 | AI Built by Accountants | 23 |
-| 6 | Start With Your Numbers | 23 |
-| 7 | See It Working Before You Buy | 29 |
-| 8 | AI Dashboards & Automation | 26 |
-| 9 | Your People Stay in Control | 27 |
-| 10 | Xero Partner Since 2013 | 23 |
-| 11 | Accountants Since 2007 | 22 |
-| 12 | Book a Free Discovery Call | 26 |
-| 13 | Less Admin, Clearer Numbers | 27 |
-| 14 | Price Agreed Upfront | 20 |
-| 15 | AI That Does the Work | 21 |
+| 4 | Practical AI, Real Results | 26 |
+| 5 | AI Built Into Your Systems | 26 |
+| 6 | AI That Reads Your Paperwork | 28 |
+| 7 | Spot Problems Before They Hurt | 30 |
+| 8 | Your Team Stays in Control | 26 |
+| 9 | See It Working Before You Buy | 29 |
+| 10 | Price Agreed Upfront | 20 |
+| 11 | Free 30-Min Discovery Call | 26 |
+| 12 | AI Dashboards & Automation | 26 |
+| 13 | Find Where AI Pays Back First | 29 |
+| 14 | Australian-Based Team | 21 |
+| 15 | No Need to Change Software | 26 |
 
 | # | Description | Chars |
 |---|---|---|
-| 1 | Practical AI and automation, scoped by accountants and built on the systems you use. | 84 |
-| 2 | Documents read, problems flagged, reports built. Your people approve anything unsure. | 85 |
-| 3 | See a working prototype before the build. You will know the price before work starts. | 85 |
-| 4 | Free 30-minute discovery call with business experts. No obligation, no hard sell. | 81 |
+| 1 | Practical AI for Australian businesses, built into the systems you already use. | 79 |
+| 2 | Documents read, problems flagged, reports built for you. Your team stays in control. | 84 |
+| 3 | See a working prototype before you commit. The price is agreed before any work starts. | 86 |
+| 4 | Free 30-minute discovery call. Find out where AI would pay back first, no obligation. | 85 |
