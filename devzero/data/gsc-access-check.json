@@ -3,5 +3,5 @@
   "service_account": "gsc-reader@gsc-access-513417.iam.gserviceaccount.com",
   "devzero.io_accessible": false,
   "nautili.ai_accessible": false,
-  "note": "sites.list returned 4 properties, none for devzero.io or nautili.ai (other properties omitted: unrelated to this client). Grant the service account 'Restricted' or 'Full' user on sc-domain:devzero.io and sc-domain:nautili.ai in Search Console > Settings > Users and permissions."
+  "note": "No Search Console property for devzero.io or nautili.ai is shared with this service account. Grant it 'Restricted' or 'Full' user on sc-domain:devzero.io and sc-domain:nautili.ai in Search Console > Settings > Users and permissions."
 }

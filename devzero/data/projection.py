@@ -1,6 +1,6 @@
 # 12-month organic traffic projection (monthly visits at month 12).
 # Method: addressable US search volume per cluster (DataForSEO, variant-deduped, brand/noise removed)
-#   x blended CTR for the average position we think is reachable in 12 months (CTR curve below)
+#   x blended CTR for the average position judged reachable in 12 months (CTR curve below)
 #   + uplift on existing long-tail rankings (DevZero only, from ranked_keywords ETV)
 #   then x non-US multiplier (DataForSEO ETV is US-only; dev-tool audiences are global).
 import json

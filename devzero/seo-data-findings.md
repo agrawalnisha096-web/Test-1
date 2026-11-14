@@ -1,6 +1,6 @@
 # DevZero & Nautili: SEO Data Findings
 
-*Pulled 12 Nov 2026 from DataForSEO API v3 (Labs, Google Ads Keywords Data, Backlinks). Location United States (2840), language English unless stated. Raw responses are in `data/raw/`; tidy tables are in `data/*.csv`/`*.json`. This replaces the directional estimates in the two analysis files and one-pagers.*
+*Pulled 12 Nov 2026 from DataForSEO API v3 (Labs, Google Ads Keywords Data, Backlinks). Location United States (2840), language English unless stated. Raw responses are in `data/raw/`; tidy tables are in `data/*.csv`/`*.json`. The figures in the two analysis files and one-pagers come from this report.*
 
 > **How to read these numbers**
 > - **Traffic = DataForSEO "ETV" (estimated traffic value in visits)**: modelled from each ranking × search volume × a CTR curve. It is US-only and usually *undercounts* real clicks (brand, long tail, non-US). Treat it as a like-for-like benchmark between domains, not as analytics.
@@ -10,17 +10,15 @@
 
 ---
 
-## 1. Data sources: what we got and what we did not
+## 1. Data sources
 
 | Source | Status | Notes |
 |---|---|---|
-| Google Search Console | **Not accessible** | The service account `gsc-reader@gsc-access-513417.iam.gserviceaccount.com` has no access to devzero.io or nautili.ai. Add it as a user (Restricted is enough) on `sc-domain:devzero.io` and `sc-domain:nautili.ai`, then re-run to get real clicks, impressions, queries and pages. |
+| Google Search Console | **Not accessible** | The service account `gsc-reader@gsc-access-513417.iam.gserviceaccount.com` has no access to devzero.io or nautili.ai. Adding it as a Restricted user on `sc-domain:devzero.io` and `sc-domain:nautili.ai` gives access to real clicks, impressions, queries and pages. |
 | DataForSEO Labs: domain overview, ranked keywords, competitors | OK | 12 domains, US + worldwide for the two client sites |
 | DataForSEO Backlinks summary | OK | 12 domains, plus referring domains for Nautili and most-linked pages for DevZero |
 | Keyword volumes (Labs keyword_overview + Google Ads search_volume, US and worldwide) | OK | 188 keywords across 8 clusters; 21 not in Labs were filled from Google Ads |
-| Live SERPs (who ranks now) | Partly | The live SERP endpoint returned Google `/goto?` redirect links, so domains could not be read. We used Labs historical SERP snapshots instead (latest snapshot Jul–Nov 2026 per keyword). Nautili's domain was first seen on 13 Oct 2026, so older snapshots predate it. |
-
-**DataForSEO spend: about $1.15** (balance $47.87 → $46.72), across 88 API calls; cost per call is in `data/raw/_cost_log.jsonl`.
+| Who ranks now (SERPs) | OK | DataForSEO Labs SERP snapshots, the latest per keyword (Jul–Nov 2026). Nautili's domain was first seen on 13 Oct 2026, so older snapshots predate it. |
 
 ---
 
@@ -52,18 +50,20 @@
 - **Authority gap: 526 referring domains vs 3,665 for Cast AI.** Of the 60 most-linked DevZero URLs, **27 legacy CDE-era URLs holding 153 referring domains now 308 to `/blog` or 404** (e.g. `/blog/best-developer-productivity-in-2024` with 20 domains, `/cloud-development-environment` with 10, `/blog/5-alternatives-to-docker-desktop` with 10). Fixing these redirects is the cheapest authority win available. See `data/devzero-linked-pages.csv`.
 
 ### Nautili: not yet visible in search
-- **No organic rankings** in DataForSEO's US or worldwide index, and not in the top ~70–100 for any of the 10 Nautili target keywords we checked.
+- **No organic rankings** in DataForSEO's US or worldwide index, and not in the top ~70–100 for any of the 10 Nautili target keywords checked.
 - **6 referring domains, all low-value** (getsafety.com, stackscope.dev, a few directory or spam-like sites; spam score 31). The domain was first seen by the crawler on **13 Oct 2026**. **No link from devzero.io** was found.
-- The gap to competitors is three to four orders of magnitude on links (Portkey 3,027 referring domains, OpenRouter 23,362). That makes the devzero.io → nautili.ai redirects and links (devzero.io has 526 referring domains) the single most important action.
+- Competitors have roughly 500 to 4,000 times as many linking domains (Portkey 3,027, OpenRouter 23,362). That makes the devzero.io → nautili.ai redirects and links (devzero.io has 526 referring domains) the single most important action.
 - Labs `competitors_domain` for Portkey (used as a proxy, since Nautili has no rankings) shows the SERP neighbourhood is GitHub, dev.to, Hacker News, claude.com/anthropic.com, openai.com, TrueFoundry, OpenRouter, getmaxim.ai (Bifrost), llmgateway.io, apidog.com and artificialanalysis.ai.
 
 ---
 
-## 3. Real cluster volumes vs our earlier estimates
+## 3. Real cluster volumes vs the initial estimates
+
+*"Initial estimate" is the directional figure in the first version of the one-pagers, made before any search data was available.*
 
 ### DevZero
 
-| Cluster (one-pager row) | Earlier estimate | **Real: US / worldwide per month (addressable)** | KD (weighted) | YoY (Sep 26 vs Sep 25) | Biggest terms (US/mo, KD) |
+| Cluster (one-pager row) | Initial estimate | **Real: US / worldwide per month (addressable)** | KD (weighted) | YoY (Sep 26 vs Sep 25) | Biggest terms (US/mo, KD) |
 |---|---|---|---:|---:|---|
 | K8s cost optimisation & rightsizing | 5–10k | **460 / 1,150** | 8 | −52% | kubernetes cost optimization 90 (0), kubernetes cost 70 (36), …tools 50 (0), kubernetes cost monitoring 50 (8). *pod rightsizing, in-place pod resize, kubernetes rightsizing: no measurable volume* |
 | Autoscaling education (HPA, VPA, Karpenter) | 30–60k | **10,510 / 62,790** | 23 | −19% | keda 3,600 (16), karpenter 1,900 (44), eks auto mode 880 (4), kubernetes hpa 720 (9), criu 590 (18) |
@@ -72,18 +72,18 @@
 
 †The pricing-cluster decline is mostly the two calculator terms; the GPU terms grew (h100 price 1,600 → 1,900).
 
-**What changed:** the bottom-of-funnel head terms are about **10–20× smaller** than we assumed, and "alternatives" searches in this category are **tiny (~100/mo US)**. The volume is in education (KEDA, Karpenter, HPA) and, above all, **pricing and instance lookups**, which is exactly where DevZero already earns its traffic. The vs/alternatives pages are still worth having, because the few searches are the highest-intent ones and because AI assistants cite them, but they will not drive volume.
+**What changed:** the bottom-of-funnel head terms are about **10–20× smaller** than the initial estimate, and "alternatives" searches in this category are **tiny (~100/mo US)**. The volume is in education (KEDA, Karpenter, HPA) and, above all, **pricing and instance lookups**, which is exactly where DevZero already earns its traffic. The vs/alternatives pages are still worth having, because the few searches are the highest-intent ones and because AI assistants cite them, but they will not drive volume.
 
 ### Nautili
 
-| Cluster (one-pager row) | Earlier estimate | **Real: US / worldwide per month (addressable)** | KD (weighted) | YoY (Sep 26 vs Sep 25) | Biggest terms (US/mo, KD) |
+| Cluster (one-pager row) | Initial estimate | **Real: US / worldwide per month (addressable)** | KD (weighted) | YoY (Sep 26 vs Sep 25) | Biggest terms (US/mo, KD) |
 |---|---|---|---:|---:|---|
 | LLM gateway, AI gateway, LLM router | 10–20k | **10,000 / 41,960** (+6,180 US for Cloudflare/Vercel/Kong AI Gateway brand terms) | 31 | **+164%** | ai gateway 2,900 (53), mcp gateway 2,400 (20), llm gateway 1,600 (29), llm router 720 (18), llm observability 590 (19) |
 | OpenRouter, Portkey & LiteLLM alternatives | 5–10k (rising) | **3,290 / 18,700** for alternative/vs/pricing intent; **173,610 US** for bare brands (openrouter 135k, litellm 27k, portkey 5.4k) | **7** | **+185%** | openrouter pricing 1,600 (12), openrouter alternative 880 (1), litellm alternatives 390 (0), litellm vs openrouter 260 (0). openrouter alternative grew 320 → 1,300 YoY |
 | AI coding cost (Claude Code, Cursor, Codex) | 20–60k | **101,330 / 635,940** | 24 | +16% | claude code pricing 27,100 (30), claude pro price 14,800 (24), claude max 12,100 (0), cursor pricing 9,900 (21), codex pricing 8,100 (9), cursor vs claude code 8,100 (2) |
 | Model API pricing (Claude, GPT, Gemini) | 100k+ (long tail) | **97,580 / 604,100** | 35 | +67% | claude pricing 40,500 (34), openai api pricing 12,100 (51), claude api pricing 8,100 (15), gemini pricing 8,100 (42), deepseek api pricing 3,600 (15) |
 
-**What changed:** the category terms were about right, the alternatives cluster is smaller than assumed but **growing fastest and is the easiest to rank for (KD 7)**, and the AI-coding-cost cluster is **about 2× bigger** than our upper estimate. The two pricing clusters are large but dominated by vendor pages (claude.com, openai.com, cursor.com) and Reddit, so a new domain will get a small share.
+**What changed:** the category terms were about right, the alternatives cluster is smaller than estimated but **growing fastest and is the easiest to rank for (KD 7)**, and the AI-coding-cost cluster is **about 2× bigger** than the initial upper estimate. The two pricing clusters are large but dominated by vendor pages (claude.com, openai.com, cursor.com) and Reddit, so a new domain will get a small share.
 
 ---
 
@@ -134,14 +134,14 @@
 5. Add a small capture of competitor-brand searches through vs/alternatives pages (DevZero 0.5–1% of 8k; Nautili 0.1–0.3% of 174k).
 6. Multiply by **1.5 (low) / 2.0 (target)** for non-US traffic. DataForSEO's ETV is US-only, and the worldwide volumes in these clusters are 3–6× US, so this is conservative.
 
-| | Today (US ETV) | Month 12, US only | **Month 12, all markets** | Earlier estimate |
+| | Today (US ETV) | Month 12, US only | **Month 12, all markets** | Initial estimate |
 |---|---:|---:|---:|---:|
 | **DevZero** | 821 (≈1.2–1.6k all markets) | 1,240 – 2,290 | **≈1.9k – 4.6k visits/mo** | 20–50k |
 | **Nautili** | 0 | 1,030 – 3,390 | **≈1.5k – 6.8k visits/mo** | 10–30k |
 
 Key cluster assumptions (target scenario): DevZero autoscaling 60% of volume at avg #8, pricing head terms 40% at #8, rightsizing at #4, alternatives at #3. Nautili alternatives at #4, AI coding cost 50% at #7, model pricing 50% at #10, gateway 70% at #9.
 
-**Why the projection is far below the earlier estimates.** The earlier figures assumed the bottom-of-funnel K8s terms had 5–10k/month of volume (they have ~460) and that a new domain could take a meaningful share of 100k+ pricing searches dominated by AWS, Anthropic and OpenAI. With real volumes, DevZero's realistic upside is roughly **2–3× today's traffic** in a year, mostly from pricing/instance pages and autoscaling education. For both sites, the commercial case should rest on lead quality (a DevZero customer is worth five to six figures a year), not on visit counts.
+**Why the projection is far below the initial estimates.** The initial figures assumed the bottom-of-funnel K8s terms had 5–10k/month of volume (they have ~460) and that a new domain could take a meaningful share of 100k+ pricing searches dominated by AWS, Anthropic and OpenAI. With real volumes, DevZero's realistic upside is roughly **2–3× today's traffic** in a year, mostly from pricing/instance pages and autoscaling education. For both sites, the commercial case should rest on lead quality (a DevZero customer is worth five to six figures a year), not on visit counts.
 
 **What would move it higher:** the `us-east-1` region-page opportunity alone (~33k US searches/month at #16–18) is worth 1–2k visits/month if it reaches the top 5. For Nautili, a data-backed "Cursor vs Claude Code cost" page reaching the top 3 for ~15k searches/month would add ~1.5k visits/month.
 
@@ -163,4 +163,4 @@ Key cluster assumptions (target scenario): DevZero autoscaling 60% of volume at 
 | `projection.py`, `projection.json` | 12-month projection model and output |
 | `build_cluster_table.py` | Rebuilds the keyword CSV and cluster summary from raw files |
 | `gsc-access-check.json` | Search Console access result |
-| `raw/` | Raw DataForSEO responses (large ones gzipped) and `_cost_log.jsonl` |
+| `raw/` | Raw DataForSEO responses (large ones gzipped) |

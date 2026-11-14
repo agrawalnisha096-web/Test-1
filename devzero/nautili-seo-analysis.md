@@ -2,7 +2,7 @@
 
 *Prepared 12 Nov 2026. Based on a live crawl of nautili.ai (robots.txt, llms.txt, sitemaps, on-page tags on 15+ URLs), competitor sitemaps and homepages, live search results, and **DataForSEO data pulled 12 Nov 2026** (Labs rankings and traffic estimates, Google Ads search volumes, Backlinks; US unless stated). Companion to `devzero-seo-analysis.md`; full data in `seo-data-findings.md` and `data/`.*
 
-> **Data note:** Traffic, ranking, volume and backlink figures come from DataForSEO (12 Nov 2026). Traffic is DataForSEO's modelled US estimate (ETV). **Search Console is not connected yet:** the service account `gsc-reader@gsc-access-513417.iam.gserviceaccount.com` needs Restricted access to `sc-domain:nautili.ai`.
+> **Data note:** Traffic, ranking, volume and backlink figures come from DataForSEO (12 Nov 2026). Traffic is DataForSEO's modelled US estimate (ETV). **Search Console is not connected yet** (see `seo-data-findings.md` §1 for the access needed).
 
 ### Search data at a glance (US, DataForSEO)
 | Metric | nautili.ai | OpenRouter | LiteLLM | TrueFoundry | Portkey | Helicone |
