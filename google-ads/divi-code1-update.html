@@ -232,6 +232,12 @@
 @media (max-width: 1080px){.qlp .strip{grid-template-columns: repeat(3, minmax(0, 1fr));}}
 @media (max-width: 960px){.qlp .hero .wrap,.qlp .callbox,.qlp .staff,.qlp .panel,.qlp .testi,.qlp .act{grid-template-columns: minmax(0, 1fr); gap: 32px;}.qlp .hero .wrap{padding-bottom: 100px;}.qlp .auto,.qlp .pricing,.qlp .ai-grid{grid-template-columns: repeat(2, minmax(0, 1fr));}.qlp .steps{grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 24px;}.qlp .sys{grid-template-columns: minmax(0, 1fr); gap: 10px;}.qlp .sys .arrow{transform: rotate(90deg); height: 34px;}.qlp .calc{position: static;}.qlp .vstats{grid-template-columns: repeat(2, minmax(0, 1fr));}}
 @media (max-width: 640px){.qlp{font-size: 16px;}.qlp .top .phone,.qlp .top .btn{display: none;}.qlp .logo{height: 36px;}.qlp .hero .wrap{padding-block: 36px 84px;}.qlp section.block .wrap,.qlp .vision .wrap{padding-block: 52px;}.qlp .two,.qlp .chips,.qlp .auto,.qlp .pricing,.qlp .drivers,.qlp .steps,.qlp .ai-grid{grid-template-columns: minmax(0, 1fr);}.qlp .strip{grid-template-columns: repeat(2, minmax(0, 1fr));}.qlp .formcard,.qlp .callbox,.qlp .calc{padding: 22px;}.qlp .calc label{grid-template-columns: minmax(0, 1fr) 100px;}.qlp .vquote{grid-template-columns: minmax(0, 1fr); gap: 16px; margin-top: 32px;}.qlp .vision .avatar{width: 80px; height: 80px; font-size: 26px;}.qlp .vstats dd{font-size: 20px;}.qlp .tabs{flex-wrap: nowrap; overflow-x: auto; margin-left: -16px; margin-right: -16px; padding: 0 16px 6px; scrollbar-width: thin;}.qlp .tab{flex: none;}.qlp .pains{gap: 8px;}.qlp .pains li{padding: 10px 12px;}.qlp .pains span{font-size: 14px;}.qlp .auto{gap: 12px;}.qlp .auto-card h3{padding: 14px 16px 0; font-size: 17px;}.qlp .auto-card h3 .ic{width: 30px; height: 30px;}.qlp .auto-card .today{padding: 6px 16px 10px; font-size: 14px;}.qlp .auto-card .after{padding: 10px 16px 12px; font-size: 14px;}.qlp .sua{gap: 10px;}.qlp .sua > div{padding: 14px 16px; grid-template-columns: 36px minmax(0, 1fr); gap: 12px;}.qlp .sua .n{width: 36px; height: 36px; font-size: 14px;}.qlp .device{width: 230px; border-radius: 32px; padding: 9px;}.qlp .device .scr{height: 400px; border-radius: 24px;}.qlp .toast{font-size: 13px; padding: 10px 12px;}.qlp .toast.alert{top: 56px;}.qlp .toast.mail{bottom: 44px;}.qlp .sys .col{grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);}.qlp .sys .head{grid-column: 1 / -1;}.qlp .sys .box{padding: 10px 12px; font-size: 14px;}.qlp .steps li{padding-top: 14px;}.qlp .prompt .btn{width: 100%;}.qlp .sticky{display: grid; grid-template-columns: 1fr 1.6fr; gap: 10px; position: fixed; left: 0; right: 0; bottom: 0; z-index: 40; padding: 10px 16px calc(10px + env(safe-area-inset-bottom, 0px)); background: var(--surface); border-top: 1px solid var(--line); box-shadow: 0 -6px 18px rgba(10,25,35,.12); transform: translateY(110%); transition: transform .25s ease;}.qlp .sticky.show{transform: none;}.qlp .sticky .btn{padding: 12px 10px; font-size: 16px;}}
+.qlp .form-quote{margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--line); text-align: center;}
+.qlp .form-quote blockquote{margin: 0; font-size: 16px; font-weight: 600; line-height: 1.4;}
+.qlp .form-quote cite{display: block; margin-top: 4px; font-style: normal; font-size: 14px; color: var(--muted);}
+.qlp .formcard .invalid input,.qlp .formcard .invalid select{border-color: var(--bad); box-shadow: 0 0 0 2px rgba(192,57,43,.15);}
+.qlp .err{font-size: 14px;}
+@media (max-width: 640px){.qlp .top .phone{display: inline; font-size: 15px;}.qlp .top .phone span{display: none;}}
 @media (prefers-reduced-motion: reduce){.qlp .bar i,.qlp .sticky{transition: none;}}
 html{scroll-behavior:smooth}
 .et-l--header,.et-l--footer,#main-header,#top-header,#main-footer{display:none!important}
@@ -281,7 +287,7 @@ body.page{background:#f6f7f4}
         <div class="progress" aria-live="polite"><span id="step-label">Step 1 of 3</span><div class="bar" aria-hidden="true"><i id="bar"></i></div></div>
         <fieldset class="step" data-step="1">
           <legend><h2>What's the biggest challenge holding your business back?</h2></legend>
-          <p class="lead">Select up to two.</p>
+          <p class="lead">Select any that apply.</p>
           <div class="chips">
             <label class="chip"><input type="checkbox" name="automate" value="Lack of visibility over performance"><span>Lack of visibility over performance</span></label>
             <label class="chip"><input type="checkbox" name="automate" value="High staff costs &amp; manual work"><span>High staff costs &amp; manual work</span></label>
@@ -290,7 +296,7 @@ body.page{background:#f6f7f4}
             <label class="chip"><input type="checkbox" name="automate" value="Disconnected systems &amp; reporting"><span>Disconnected systems &amp; reporting</span></label>
             <label class="chip"><input type="checkbox" name="automate" value="Growing without hiring more staff"><span>Growing without hiring more staff</span></label>
           </div>
-          <p class="err" data-err hidden>Pick at least one.</p>
+          <p class="err" data-err hidden role="alert"></p>
           <button class="btn navy" type="button" data-next>Next</button>
         </fieldset>
         <fieldset class="step" data-step="2" hidden>
@@ -301,44 +307,45 @@ body.page{background:#f6f7f4}
               <select id="f-staff" name="staff" required>
                 <option value="">Select</option><option>Under 10</option><option>10–50</option><option>51–200</option><option>201–1,000</option><option>1,000+</option>
               </select></label>
-            <label class="f" for="f-rev">Annual revenue
-              <select id="f-rev" name="revenue" required>
+            <label class="f" for="f-rev">Annual revenue <small>(optional)</small>
+              <select id="f-rev" name="revenue">
                 <option value="">Select</option><option>Under A$2M</option><option>A$2–10M</option><option>A$10–50M</option><option>A$50–200M</option><option>Over A$200M</option>
               </select></label>
           </div>
-          <label class="f" for="f-when">When would you like this sorted?
+          <label class="f" for="f-when">When are you looking to start?
             <select id="f-when" name="timing" required>
               <option value="">Select</option><option>Now, ASAP</option><option>This quarter</option><option>Within 6 months</option><option>Just exploring for now</option>
             </select></label>
           <label class="f" for="f-challenge">Your biggest reporting or automation challenge <small>(optional)</small>
             <textarea id="f-challenge" name="challenge" rows="2"></textarea></label>
-          <p class="err" data-err hidden>Please answer staff, revenue and timing.</p>
+          <p class="err" data-err hidden role="alert"></p>
           <div class="actions"><button class="btn ghost" type="button" data-back>Back</button><button class="btn navy full" type="button" data-next>Next</button></div>
         </fieldset>
         <fieldset class="step" data-step="3" hidden>
           <legend><h2>Where should we call you?</h2></legend>
-          <p class="lead">We'll call to set up a time that suits you.</p>
+          <p class="lead">We'll call you within one business day to set up a time. No sales pitch.</p>
           <div class="two">
             <label class="f" for="f-name">Name<input id="f-name" name="name" autocomplete="name" required></label>
             <label class="f" for="f-company">Company<input id="f-company" name="company" autocomplete="organization" required></label>
           </div>
           <div class="two">
-            <label class="f" for="f-email">Business email<input id="f-email" name="email" type="email" autocomplete="email" required></label>
-            <label class="f" for="f-phone">Mobile<input id="f-phone" name="phone" type="tel" autocomplete="tel" required></label>
+            <label class="f" for="f-email">Business email<input id="f-email" name="email" type="email" inputmode="email" autocomplete="email" required></label>
+            <label class="f" for="f-phone">Phone<input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required></label>
           </div>
-          <label class="f" for="f-role">Your role
-            <select id="f-role" name="role" required>
+          <label class="f" for="f-role">Your role <small>(optional)</small>
+            <select id="f-role" name="role">
               <option value="">Select</option><option>Owner / Founder</option><option>CEO / Managing Director</option><option>CFO / Finance</option><option>COO / Operations</option><option>General Manager</option><option>Other</option>
             </select></label>
           <label class="consent" for="f-consent"><input id="f-consent" name="consent" type="checkbox" required> I agree to Qubik contacting me by phone, email or SMS about this enquiry. I can opt out at any time.</label>
-          <p class="err" data-err hidden>Please fill in every field and tick the box.</p>
-          <div class="actions"><button class="btn ghost" type="button" data-back>Back</button><button class="btn full" type="submit" id="qlp-submit">Book my free call</button></div>
+          <p class="err" data-err hidden role="alert"></p>
+          <div class="actions"><button class="btn ghost" type="button" data-back>Back</button><button class="btn full" type="submit" id="qlp-submit">Request my free call</button></div>
         </fieldset>
         <input type="hidden" name="estimate" id="f-estimate">
         <input type="hidden" name="variant" id="f-variant">
       </form>
       <p class="status" id="qlp-status" role="status" hidden></p>
-      <div class="reassure" id="reassure"><span>Free discovery call</span><span>No obligation</span><span>We'll tell you honestly if it's not worth it</span></div>
+      <div class="reassure" id="reassure"><span>Free 30-minute discovery call</span><span>No obligation</span><span>We'll tell you honestly if it's not worth it</span></div>
+      <div class="form-quote"><blockquote>"Dom has saved us more money than we've spent!"</blockquote><cite>Mike Wikes, Man Group</cite></div>
     </div>
   </div>
 </section>

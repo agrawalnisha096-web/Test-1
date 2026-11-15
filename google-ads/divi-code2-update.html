@@ -386,20 +386,39 @@
     document.getElementById('bar').style.width = (n / 3 * 100) + '%';
     if (n !== 1) { var first = steps[n - 1].querySelector('input, select'); if (first) { first.focus({ preventScroll: true }); } }
   }
+  var NAMES = { staff: 'staff', timing: 'timing', name: 'your name', company: 'company', email: 'email', phone: 'phone number', consent: 'the consent box' };
   function valid(n) {
-    var s = steps[n - 1], ok;
-    if (n === 1) { ok = s.querySelectorAll('input[name=automate]:checked').length !== 0; }
-    else { ok = Array.prototype.every.call(s.querySelectorAll('[required]'), function (el) { return el.checkValidity(); }); }
-    s.querySelector('[data-err]').hidden = ok;
+    var s = steps[n - 1], err = s.querySelector('[data-err]'), missing = [], bad = [];
+    if (n === 1) {
+      if (s.querySelectorAll('input[name=automate]:checked').length === 0) { missing.push('x'); }
+      err.textContent = 'Pick at least one.';
+    } else {
+      s.querySelectorAll('[required]').forEach(function (el) {
+        var ok = el.checkValidity();
+        var wrap = el.closest('label');
+        if (wrap) { wrap.classList.toggle('invalid', !ok); }
+        el.setAttribute('aria-invalid', ok ? 'false' : 'true');
+        if (!ok) { if (el.value) { bad.push(el.name); } else { missing.push(NAMES[el.name]); } }
+      });
+      var parts = [];
+      if (missing.length) { var m = missing.slice(), last = m.pop(); parts.push('Please add ' + (m.length ? m.join(', ') + ' and ' : '') + last + '.'); }
+      if (bad.indexOf('email') !== -1) { parts.push('Please check the email address.'); }
+      if (bad.indexOf('phone') !== -1) { parts.push('Please check the phone number.'); }
+      err.textContent = parts.join(' ');
+    }
+    var ok = missing.length === 0 ? bad.length === 0 : false;
+    err.hidden = ok;
+    if (!ok) { var first = s.querySelector('[aria-invalid=true]'); if (first) { first.focus(); } }
     return ok;
   }
-  var CHIP_MAX = 2;
-  var chips = form.querySelectorAll('input[name=automate]');
-  function limitChips() {
-    var picked = form.querySelectorAll('input[name=automate]:checked').length;
-    chips.forEach(function (c) { c.disabled = c.checked ? false : picked >= CHIP_MAX; });
-  }
-  chips.forEach(function (c) { c.addEventListener('change', limitChips); });
+  /* Clear an error as soon as the visitor fixes it */
+  form.addEventListener('change', function (e) {
+    var s = e.target.closest('[data-step]');
+    if (s.querySelector('[data-err]').hidden) { return; }
+    if (s.getAttribute('data-step') === '1') { if (s.querySelectorAll('input[name=automate]:checked').length) { s.querySelector('[data-err]').hidden = true; } return; }
+    var wrap = e.target.closest('label');
+    if (wrap) { if (e.target.checkValidity()) { wrap.classList.remove('invalid'); e.target.setAttribute('aria-invalid', 'false'); } }
+  });
   form.addEventListener('click', function (e) {
     if (e.target.matches('[data-next]')) { if (valid(current)) { show(current + 1); } }
     if (e.target.matches('[data-back]')) { show(current - 1); }
@@ -438,7 +457,7 @@
         clearInterval(timer);
         status.textContent = PHONE_MSG;
         submitBtn.disabled = false;
-        submitBtn.textContent = 'Book my free call';
+        submitBtn.textContent = 'Request my free call';
       }
     }, 500);
   });
@@ -458,12 +477,12 @@
   if (saved.ts) { if (Date.now() - saved.ts > MAX_AGE) { saved = {}; } }
   if (!saved.landing_page) { saved.landing_page = here; }
   KEYS.concat(['landing_page']).forEach(function (k) { if (saved[k]) { setDivi(k, saved[k]); } });
-  /* Sticky mobile bar: after the hero, hidden while the form is on screen */
+  /* Sticky mobile bar: from the first scroll, hidden while the form is on screen */
   var sticky = document.getElementById('sticky');
-  var heroGone = false, cardVisible = false;
-  function update() { sticky.classList.toggle('show', heroGone ? !cardVisible : false); }
+  var scrolled = false, cardVisible = false;
+  function update() { sticky.classList.toggle('show', scrolled ? !cardVisible : false); }
+  window.addEventListener('scroll', function () { var now = window.scrollY > 120; if (now !== scrolled) { scrolled = now; update(); } }, { passive: true });
   if ('IntersectionObserver' in window) {
-    new IntersectionObserver(function (en) { heroGone = !en[0].isIntersecting; update(); }).observe(document.querySelector('.hero'));
     new IntersectionObserver(function (en) { cardVisible = en[0].isIntersecting; update(); }).observe(document.getElementById('book'));
   }
 })();
