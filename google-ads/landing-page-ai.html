@@ -1,0 +1,877 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Consulting &amp; Implementation | Qubik</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Final: automation-led for the Google Ads campaign, dashboards as the proof. Headline follows the ad group (?v=ai, ?v=dashboards). Qubik brand tokens: slate #2e4455, teal #2e96a0, lime #c6da2c. */
+:root {
+  --navy: #2e4455; --navy-deep: #22333f; --teal: #2e96a0; --teal-ink: #1f7a83; --teal-soft: #e3f1f2;
+  --lime: #c6da2c; --lime-soft: #eef3cf; --page: #f6f7f4; --surface: #ffffff;
+  --ink: #1f2a33; --muted: #5b6b78; --line: #dde3e2; --on-navy: #f3f6f7; --on-navy-muted: #b6c6cd;
+  --ok: #2f8a5b; --bad: #c0392b; --note-bg: #fff6d9; --note-ink: #5e4a00;
+  --font: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+  --mono: 'IBM Plex Mono', ui-monospace, Menlo, monospace;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--page); color: var(--ink); font-family: var(--font); font-size: 17px; line-height: 1.6; }
+h1, h2, h3 { line-height: 1.15; text-wrap: balance; margin: 0; letter-spacing: -0.01em; }
+p { margin: 0; }
+a { color: var(--teal-ink); }
+img { max-width: 100%; display: block; }
+:focus-visible { outline: 3px solid var(--teal); outline-offset: 2px; }
+.wrap { max-width: 1160px; margin: 0 auto; padding-left: 16px; padding-right: 16px; }
+
+/* Prototype-only */
+.proto { background: var(--note-bg); color: var(--note-ink); font-size: 14px; }
+.proto .wrap { padding-block: 8px; display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; }
+.proto a { color: var(--note-ink); font-weight: 600; }
+.notes { background: var(--note-bg); color: var(--note-ink); font-size: 14px; }
+.notes .wrap { padding-block: 24px 96px; }
+.notes h2 { font-size: 16px; }
+.notes ul { margin: 8px 0 0; padding-left: 18px; display: grid; gap: 4px; }
+
+/* Header */
+.top { background: var(--surface); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 30; }
+.top .wrap { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding-block: 10px; }
+.logo { height: 42px; width: auto; }
+.top-right { display: flex; align-items: center; gap: 18px; }
+.phone { font-weight: 600; font-size: 15px; color: var(--navy); text-decoration: none; }
+.phone span { color: var(--muted); font-weight: 400; margin-right: 6px; }
+
+/* Buttons */
+.btn { font-family: var(--font); font-weight: 600; font-size: 17px; border: 0; border-radius: 8px; padding: 14px 22px; cursor: pointer; background: var(--lime); color: var(--navy-deep); text-decoration: none; display: inline-block; text-align: center; line-height: 1.2; }
+.btn:hover { filter: brightness(1.04); }
+.btn.sm { padding: 10px 16px; font-size: 15px; }
+.btn.navy { background: var(--navy); color: #fff; }
+.btn.line { background: transparent; color: var(--on-navy); box-shadow: inset 0 0 0 1px var(--on-navy-muted); }
+.btn.ghost { background: transparent; color: var(--muted); padding-inline: 8px; font-weight: 500; font-size: 15px; }
+.btn.full { flex: 1; }
+
+/* Hero */
+.hero { background: var(--navy); color: var(--on-navy); }
+.hero .wrap { display: grid; grid-template-columns: minmax(0, 1.12fr) minmax(0, 0.88fr); gap: 48px; padding-block: 56px 120px; align-items: start; }
+.eyebrow { font-size: 13px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--lime); }
+.hero h1 { font-size: clamp(32px, 4.3vw, 52px); font-weight: 600; margin-top: 14px; }
+.hero .sub { font-size: 19px; color: var(--on-navy-muted); margin-top: 18px; max-width: 32em; }
+.hero-ctas { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+.trust { display: flex; flex-wrap: wrap; gap: 8px 22px; margin: 28px 0 0; padding: 0; list-style: none; font-size: 15px; }
+.trust li { display: flex; gap: 8px; align-items: center; }
+.trust li::before { content: ""; width: 8px; height: 8px; border-radius: 2px; background: var(--lime); flex: none; }
+
+/* Form card */
+.formcard { background: var(--surface); color: var(--ink); border-radius: 12px; padding: 28px; box-shadow: 0 18px 40px rgba(10, 25, 35, 0.3); scroll-margin-top: 90px; }
+.progress { display: flex; align-items: center; gap: 10px; font-size: 13px; color: var(--muted); font-weight: 500; }
+.bar { flex: 1; height: 6px; background: var(--line); border-radius: 3px; overflow: hidden; }
+.bar i { display: block; height: 100%; width: 33.3%; background: var(--teal); border-radius: 3px; transition: width .3s ease; }
+fieldset.step { border: 0; padding: 0; margin: 16px 0 0; display: grid; gap: 14px; }
+.step legend { padding: 0; margin-bottom: 8px; }
+.step h2 { font-size: 22px; font-weight: 600; }
+.step .lead { color: var(--muted); font-size: 15px; }
+.chips { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.chip { position: relative; }
+.chip input { position: absolute; opacity: 0; inset: 0; width: 100%; height: 100%; margin: 0; cursor: pointer; }
+.chip span { display: flex; align-items: center; min-height: 54px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--page); font-size: 15px; line-height: 1.3; font-weight: 600; transition: border-color .15s, background .15s; }
+.chip span::before { content: ""; width: 18px; height: 18px; border: 2px solid #c3ccd0; border-radius: 5px; margin-right: 10px; flex: none; background: var(--surface); }
+.chip input:checked + span { border-color: var(--teal); background: var(--teal-soft); }
+.chip input:checked + span::before { background: var(--teal); border-color: var(--teal); box-shadow: inset 0 0 0 3px var(--surface); }
+.chip input:focus-visible + span { outline: 3px solid var(--teal); outline-offset: 2px; }
+.chip input:disabled { cursor: not-allowed; }
+.chip input:disabled + span { opacity: .45; }
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+label.f { display: grid; gap: 5px; font-size: 14px; font-weight: 600; }
+label.f small { font-weight: 400; color: var(--muted); }
+.formcard input:not([type=checkbox]), .formcard select, .formcard textarea { font: inherit; font-size: 16px; font-weight: 400; color: var(--ink); background: var(--page); border: 1px solid var(--line); border-radius: 7px; padding: 10px 12px; width: 100%; min-width: 0; }
+.formcard textarea { min-height: 70px; resize: vertical; }
+.formcard input:focus, .formcard select:focus, .formcard textarea:focus { border-color: var(--teal); outline: none; box-shadow: 0 0 0 3px rgba(46,150,160,0.25); }
+.consent { display: flex; gap: 10px; align-items: flex-start; font-size: 13px; color: var(--muted); line-height: 1.45; }
+.consent input { width: 18px; height: 18px; margin-top: 2px; flex: none; }
+.actions { display: flex; gap: 10px; align-items: center; }
+.err { font-size: 13px; color: var(--bad); }
+.reassure { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 14px; margin-top: 14px; font-size: 13px; color: var(--muted); }
+.status { font-size: 14px; color: var(--muted); text-align: center; }
+.thanks { text-align: center; padding: 18px 4px; display: grid; gap: 10px; }
+.thanks h2 { font-size: 22px; color: var(--ok); }
+
+/* Screen band + benefit strip */
+.band { margin-top: -84px; }
+.screen { background: var(--surface); border-radius: 12px; box-shadow: 0 24px 60px rgba(20, 35, 45, 0.22); overflow: hidden; border: 1px solid var(--line); margin: 0; }
+.screen .chrome { display: flex; align-items: center; gap: 6px; padding: 10px 14px; background: #eef1f0; border-bottom: 1px solid var(--line); }
+.screen .chrome i { width: 10px; height: 10px; border-radius: 50%; background: #cfd6d6; }
+.screen .chrome span { margin-left: 10px; font-size: 12px; color: var(--muted); font-family: var(--mono); }
+.screen img { width: 100%; height: auto; }
+.caption { margin-top: 10px; font-size: 13px; color: var(--muted); text-align: center; }
+.strip { margin-top: 28px; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 10px; list-style: none; padding: 0; }
+.strip li { display: flex; gap: 10px; align-items: center; font-size: 14px; font-weight: 600; line-height: 1.25; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; }
+.strip .ic { width: 32px; height: 32px; border-radius: 8px; background: var(--lime-soft); color: var(--navy); display: grid; place-items: center; flex: none; }
+
+/* Sections */
+section.block .wrap { padding-block: 80px; }
+section.alt { background: var(--surface); border-block: 1px solid var(--line); }
+.kicker { font-size: 13px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--teal-ink); }
+.block h2 { font-size: clamp(27px, 3.2vw, 38px); font-weight: 600; max-width: 24em; margin-top: 8px; }
+.intro { color: var(--muted); margin-top: 14px; max-width: 42em; font-size: 18px; }
+.tick { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+.tick li { display: grid; grid-template-columns: 26px minmax(0, 1fr); gap: 10px; }
+.tick svg { color: var(--teal); margin-top: 3px; }
+
+/* In-page booking prompts */
+.prompt { margin-top: 40px; display: flex; flex-wrap: wrap; gap: 14px 28px; align-items: center; justify-content: space-between; background: var(--lime-soft); border: 1px solid #dfe8a6; border-radius: 12px; padding: 20px 24px; }
+.prompt p { font-size: 18px; font-weight: 500; max-width: 36em; }
+.prompt p span { display: block; color: var(--muted); font-size: 15px; font-weight: 400; margin-top: 2px; }
+
+/* Staff cost */
+.staff { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 0.95fr); gap: 48px; align-items: start; margin-top: 34px; }
+.pains { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+.pains li { display: grid; grid-template-columns: 34px minmax(0, 1fr); gap: 12px; align-items: start; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; }
+.pains .ic { width: 34px; height: 34px; border-radius: 8px; background: #fbe9e6; color: var(--bad); display: grid; place-items: center; }
+.pains strong { display: block; }
+.pains span { color: var(--muted); font-size: 15px; }
+.calc { background: var(--navy); color: var(--on-navy); border-radius: 14px; padding: 28px; position: sticky; top: 90px; }
+.calc h3 { font-size: 22px; font-weight: 600; }
+.calc > p { color: var(--on-navy-muted); font-size: 15px; margin-top: 6px; }
+.calc .inputs { display: grid; gap: 14px; margin-top: 20px; }
+.calc label { display: grid; grid-template-columns: minmax(0, 1fr) 120px; gap: 12px; align-items: center; font-size: 15px; }
+.calc label small { display: block; color: var(--on-navy-muted); font-size: 13px; }
+.calc input { font: inherit; font-family: var(--mono); font-size: 17px; text-align: right; color: var(--ink); background: #fff; border: 0; border-radius: 7px; padding: 9px 12px; width: 100%; }
+.calc .result { margin-top: 22px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,.18); }
+.calc .big { font-family: var(--mono); font-size: clamp(34px, 4vw, 44px); font-weight: 500; color: var(--lime); letter-spacing: -0.02em; }
+.calc .res-sub { color: var(--on-navy-muted); font-size: 15px; margin-top: 4px; }
+.calc .per10 { margin-top: 16px; background: rgba(198,218,44,.12); border-radius: 8px; padding: 12px 14px; font-size: 15px; }
+.calc .per10 b { font-family: var(--mono); color: var(--lime); font-weight: 500; }
+.calc .fine { margin-top: 12px; font-size: 12px; color: var(--on-navy-muted); }
+.calc .btn { margin-top: 18px; width: 100%; }
+
+/* What we automate */
+.auto { margin-top: 34px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.auto-card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; display: grid; grid-template-rows: auto 1fr auto; }
+.auto-card h3 { font-size: 19px; font-weight: 600; padding: 18px 20px 0; display: flex; gap: 10px; align-items: center; }
+.auto-card h3 .ic { width: 36px; height: 36px; border-radius: 9px; background: var(--teal-soft); color: var(--teal-ink); display: grid; place-items: center; flex: none; }
+.auto-card .today { padding: 12px 20px 16px; color: var(--muted); font-size: 15px; }
+.auto-card .after { padding: 14px 20px 18px; background: var(--teal-soft); font-size: 15px; border-top: 1px solid #cfe6e8; }
+.lbl { display: block; font-size: 11px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 2px; }
+.today .lbl { color: var(--muted); }
+.after .lbl { color: var(--teal-ink); }
+
+/* Dashboard tabs */
+.tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 30px; }
+.tab { font: inherit; font-size: 15px; font-weight: 600; border: 1px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 999px; padding: 8px 16px; cursor: pointer; }
+.tab[aria-selected="true"] { background: var(--navy); border-color: var(--navy); color: #fff; }
+.panel { margin-top: 22px; display: grid; grid-template-columns: minmax(0, 0.42fr) minmax(0, 1.58fr); gap: 32px; align-items: start; }
+.panel h3 { font-size: 22px; font-weight: 600; }
+.panel p { color: var(--muted); margin-top: 10px; }
+.panel .pts { margin-top: 18px; font-size: 15px; }
+
+/* They act + phone */
+.act { margin-top: 34px; display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); gap: 48px; align-items: center; }
+.sua { display: grid; gap: 14px; }
+.sua > div { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 20px 22px; display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: 14px; }
+.sua > div:last-child { background: var(--navy); border-color: var(--navy); color: var(--on-navy); }
+.sua .n { width: 44px; height: 44px; border-radius: 50%; background: var(--teal-soft); color: var(--teal-ink); display: grid; place-items: center; font-family: var(--mono); font-weight: 500; }
+.sua > div:last-child .n { background: rgba(198,218,44,.18); color: var(--lime); }
+.sua h3 { font-size: 20px; font-weight: 600; }
+.sua ul { margin: 8px 0 0; padding-left: 18px; display: grid; gap: 4px; font-size: 15px; color: var(--muted); }
+.sua > div:last-child ul { color: var(--on-navy-muted); }
+.control { margin-top: 18px; font-size: 16px; color: var(--muted); display: flex; gap: 10px; align-items: center; }
+.control svg { color: var(--ok); flex: none; }
+.phone-wrap { position: relative; display: grid; justify-items: center; }
+.device { width: min(300px, 78%); border-radius: 40px; background: #12191f; padding: 12px; box-shadow: 0 30px 60px rgba(20,35,45,.28); position: relative; }
+.device::before { content: ""; position: absolute; top: 20px; left: 50%; width: 76px; height: 20px; margin-left: -38px; border-radius: 12px; background: #12191f; z-index: 2; }
+.device .scr { border-radius: 30px; overflow: hidden; height: 560px; background: #fff; padding-top: 30px; }
+.device .scr img { width: 100%; height: auto; }
+.toast { position: absolute; left: 0; right: 0; margin: 0 auto; width: min(340px, 92%); background: rgba(255,255,255,.97); border: 1px solid var(--line); border-radius: 14px; padding: 12px 14px; box-shadow: 0 14px 30px rgba(20,35,45,.22); display: grid; grid-template-columns: 34px minmax(0, 1fr); gap: 10px; font-size: 14px; line-height: 1.35; }
+.toast .ic { width: 34px; height: 34px; border-radius: 9px; display: grid; place-items: center; }
+.toast b { display: block; font-size: 13px; }
+.toast small { color: var(--muted); font-size: 12px; }
+.toast.alert { top: 90px; }
+.toast.alert .ic { background: #fbe9e6; color: var(--bad); }
+.toast.mail { bottom: 70px; }
+.toast.mail .ic { background: var(--lime-soft); color: var(--navy); }
+
+/* Practical AI (AI ad groups only) */
+.ai-grid { margin-top: 34px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
+.ai-card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 22px; display: grid; gap: 8px; align-content: start; }
+.ai-card .ic { width: 44px; height: 44px; border-radius: 10px; background: var(--lime-soft); color: var(--navy); display: grid; place-items: center; }
+.ai-card h3 { font-size: 18px; font-weight: 600; margin-top: 6px; }
+.ai-card p { color: var(--muted); font-size: 15px; }
+
+/* Systems diagram */
+.sys { margin-top: 34px; display: grid; grid-template-columns: minmax(0, 1fr) 40px minmax(0, 0.9fr) 40px minmax(0, 1fr); align-items: center; }
+.sys .col { display: grid; gap: 10px; }
+.sys .head { font-size: 12px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-bottom: 2px; }
+.sys .box { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; font-size: 15px; }
+.sys .box b { display: block; font-weight: 600; }
+.sys .box span { color: var(--muted); font-size: 13px; }
+.sys .core { background: var(--navy); color: var(--on-navy); border: 0; padding: 22px; border-radius: 12px; }
+.sys .core b { font-size: 18px; }
+.sys .core span { color: var(--on-navy-muted); font-size: 14px; display: block; margin-top: 6px; }
+.sys .out { border-left: 4px solid var(--lime); }
+.sys .arrow { color: var(--teal); display: grid; place-items: center; }
+.sys-notes { margin-top: 22px; display: flex; flex-wrap: wrap; gap: 10px 26px; font-size: 15px; color: var(--muted); }
+.sys-notes span { display: flex; gap: 8px; align-items: center; }
+.sys-notes svg { color: var(--teal); }
+
+/* Why Qubik + vision */
+.vision { background: var(--navy-deep); color: var(--on-navy); }
+.vision .wrap { padding-block: 80px; }
+.vision .kicker { color: var(--lime); }
+.vision h2 { font-size: clamp(27px, 3.2vw, 38px); font-weight: 600; margin-top: 8px; max-width: 22em; }
+.vbig { font-size: clamp(19px, 2.1vw, 24px); line-height: 1.45; color: var(--on-navy-muted); margin-top: 16px; max-width: 36em; }
+.vstats { margin: 30px 0 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0; border-top: 1px solid rgba(255,255,255,.16); border-bottom: 1px solid rgba(255,255,255,.16); }
+.vstats div { padding: 18px 18px 18px 0; display: flex; flex-direction: column-reverse; gap: 2px; }
+.vstats dt { color: var(--on-navy-muted); font-size: 14px; }
+.vstats dd { margin: 0; font-size: 24px; font-weight: 600; color: #fff; }
+.vquote { margin-top: 44px; display: grid; grid-template-columns: 120px minmax(0, 1fr); gap: 36px; align-items: start; }
+.vision .avatar { width: 120px; height: 120px; border-radius: 50%; background: var(--navy); color: var(--on-navy); display: grid; place-items: center; font-size: 36px; font-weight: 600; border: 3px solid var(--lime); }
+.vision blockquote { margin: 12px 0 0; font-size: clamp(19px, 2vw, 23px); line-height: 1.5; font-weight: 400; }
+.vision blockquote p + p { margin-top: 16px; }
+.vision cite { display: block; margin-top: 18px; font-style: normal; color: var(--on-navy-muted); }
+.vision cite b { color: var(--lime); font-weight: 600; }
+
+/* Testimonials */
+.testi { margin-top: 34px; display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr); gap: 24px; align-items: stretch; }
+.video { position: relative; border-radius: 12px; overflow: hidden; background: #000; aspect-ratio: 16 / 9; }
+.video button { all: unset; cursor: pointer; position: absolute; inset: 0; display: grid; place-items: center; }
+.video button:focus-visible { outline: 3px solid var(--lime); outline-offset: -3px; }
+.video img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .82; }
+.video .play { position: relative; width: 76px; height: 76px; border-radius: 50%; background: var(--lime); display: grid; place-items: center; box-shadow: 0 8px 24px rgba(0,0,0,.35); }
+.video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.qcol { display: grid; gap: 18px; align-content: start; }
+.quote { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 24px; }
+.quote blockquote { margin: 0; font-size: 20px; font-weight: 500; line-height: 1.4; }
+.quote cite { display: block; margin-top: 10px; font-style: normal; color: var(--muted); font-size: 15px; }
+
+/* Steps */
+.steps { list-style: none; padding: 0; margin: 34px 0 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); counter-reset: s; border-top: 2px solid var(--navy); }
+.steps li { counter-increment: s; padding: 18px 22px 0 0; display: grid; gap: 8px; align-content: start; }
+.steps li::before { content: "Step " counter(s); font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--teal-ink); }
+.steps h3 { font-size: 20px; font-weight: 600; }
+.steps p { color: var(--muted); font-size: 16px; }
+.callbox { margin-top: 40px; display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: 32px; align-items: center; background: var(--navy); color: var(--on-navy); border-radius: 14px; padding: 32px; }
+.callbox h3 { font-size: 24px; font-weight: 600; }
+.callbox > div > p { color: var(--on-navy-muted); margin-top: 8px; }
+.callbox .btn { margin-top: 18px; }
+.callbox .tick svg { color: var(--lime); }
+
+/* Sectors */
+.sector-panel { margin-top: 22px; }
+.sector-meta { display: flex; flex-wrap: wrap; gap: 8px 24px; margin-bottom: 14px; font-size: 15px; color: var(--muted); }
+.sector-meta b { color: var(--ink); font-weight: 600; }
+
+/* Pricing */
+.pricing { margin-top: 32px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.pcard { background: var(--page); border: 1px solid var(--line); border-radius: 12px; padding: 24px; display: grid; gap: 10px; align-content: start; }
+.pcard .label { font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--teal-ink); }
+.pcard h3 { font-size: 22px; font-weight: 600; }
+.pcard p { color: var(--muted); font-size: 16px; }
+.drivers { margin-top: 24px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 18px; }
+.drivers > div { border-top: 1px solid var(--line); padding-top: 16px; }
+.drivers h3 { font-size: 18px; font-weight: 600; }
+.drivers ul { margin: 8px 0 0; padding-left: 18px; color: var(--muted); display: grid; gap: 4px; font-size: 16px; }
+.promise { margin-top: 24px; font-size: 20px; font-weight: 500; display: flex; gap: 12px; align-items: center; }
+.promise svg { color: var(--ok); flex: none; }
+
+/* FAQ */
+.faq { margin-top: 26px; max-width: 820px; border-top: 1px solid var(--line); }
+.faq details { border-bottom: 1px solid var(--line); padding-block: 16px; }
+.faq summary { cursor: pointer; font-weight: 600; font-size: 18px; list-style: none; display: flex; justify-content: space-between; gap: 16px; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; color: var(--teal-ink); font-size: 22px; line-height: 1; }
+.faq details[open] summary::after { content: "–"; }
+.faq details p { color: var(--muted); margin-top: 10px; max-width: 44em; }
+
+/* Final + footer */
+.final { background: var(--navy); color: var(--on-navy); }
+.final .wrap { padding-block: 64px; display: flex; flex-wrap: wrap; gap: 20px 40px; align-items: center; justify-content: space-between; }
+.final h2 { font-size: clamp(26px, 3vw, 36px); font-weight: 600; max-width: 18em; }
+.final p { color: var(--on-navy-muted); margin-top: 10px; max-width: 34em; }
+.final .ctas { display: flex; flex-wrap: wrap; gap: 12px; }
+footer { background: var(--navy-deep); color: var(--on-navy-muted); font-size: 14px; }
+footer .wrap { padding-block: 28px; display: flex; flex-wrap: wrap; gap: 14px 24px; justify-content: space-between; align-items: center; }
+footer img { height: 34px; width: auto; }
+footer a { color: var(--on-navy-muted); }
+
+.sticky { display: none; }
+
+@media (max-width: 1080px) { .strip { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 960px) {
+  .hero .wrap, .callbox, .staff, .panel, .testi, .act { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+  .hero .wrap { padding-bottom: 100px; }
+  .auto, .pricing, .ai-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .steps { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 24px; }
+  .sys { grid-template-columns: minmax(0, 1fr); gap: 10px; }
+  .sys .arrow { transform: rotate(90deg); height: 34px; }
+  .calc { position: static; }
+  .vstats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 640px) {
+  body { font-size: 16px; }
+  .top .phone, .top .btn { display: none; }
+  .logo { height: 36px; }
+  .hero .wrap { padding-block: 36px 84px; }
+  section.block .wrap, .vision .wrap { padding-block: 52px; }
+  .two, .chips, .auto, .pricing, .drivers, .steps, .ai-grid { grid-template-columns: minmax(0, 1fr); }
+  .strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .formcard, .callbox, .calc { padding: 22px; }
+  .calc label { grid-template-columns: minmax(0, 1fr) 100px; }
+  .vquote { grid-template-columns: minmax(0, 1fr); gap: 16px; margin-top: 32px; }
+  .vision .avatar { width: 80px; height: 80px; font-size: 26px; }
+  .vstats dd { font-size: 20px; }
+  .tabs { flex-wrap: nowrap; overflow-x: auto; margin-left: -16px; margin-right: -16px; padding: 0 16px 6px; scrollbar-width: thin; }
+  .tab { flex: none; }
+  .pains { gap: 8px; }
+  .pains li { padding: 10px 12px; }
+  .pains span { font-size: 14px; }
+  .auto { gap: 12px; }
+  .auto-card h3 { padding: 14px 16px 0; font-size: 17px; }
+  .auto-card h3 .ic { width: 30px; height: 30px; }
+  .auto-card .today { padding: 6px 16px 10px; font-size: 14px; }
+  .auto-card .after { padding: 10px 16px 12px; font-size: 14px; }
+  .sua { gap: 10px; }
+  .sua > div { padding: 14px 16px; grid-template-columns: 36px minmax(0, 1fr); gap: 12px; }
+  .sua .n { width: 36px; height: 36px; font-size: 14px; }
+  .device { width: 230px; border-radius: 32px; padding: 9px; }
+  .device .scr { height: 400px; border-radius: 24px; }
+  .toast { font-size: 13px; padding: 10px 12px; }
+  .toast.alert { top: 56px; }
+  .toast.mail { bottom: 44px; }
+  .sys .col { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .sys .head { grid-column: 1 / -1; }
+  .sys .box { padding: 10px 12px; font-size: 14px; }
+  .steps li { padding-top: 14px; }
+  .prompt .btn { width: 100%; }
+  .sticky { display: grid; grid-template-columns: 1fr 1.6fr; gap: 10px; position: fixed; left: 0; right: 0; bottom: 0; z-index: 40; padding: 10px 16px calc(10px + env(safe-area-inset-bottom, 0px)); background: var(--surface); border-top: 1px solid var(--line); box-shadow: 0 -6px 18px rgba(10,25,35,.12); transform: translateY(110%); transition: transform .25s ease; }
+  .sticky.show { transform: none; }
+  .sticky .btn { padding: 12px 10px; font-size: 16px; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .bar i, .sticky { transition: none; } }
+</style>
+</head>
+<body>
+
+<div class="proto" role="region" aria-label="Prototype notice">
+  <div class="wrap"><strong>AI page prototype, not live.</strong> For the AI ad groups (AI consulting, cities, implementation, readiness). Nothing you enter is sent.</div>
+</div>
+
+<header class="top">
+  <div class="wrap">
+    <img class="logo" src="landing-assets/qubik-logo.png" alt="Qubik" width="109" height="42">
+    <div class="top-right">
+      <a class="phone" href="tel:+61732058938"><span>Talk to us</span>(07) 3205 8938</a>
+      <a class="btn sm" href="#book">Book a free call</a>
+    </div>
+  </div>
+</header>
+
+<!-- 1. HERO (headline follows the ad group) -->
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">AI consulting &amp; implementation · Brisbane-based, Australia-wide</div>
+      <h1>AI consulting and implementation that works inside your business</h1>
+      <p class="sub">We find where AI will pay back in your business, build it into the systems you already use, and show you it working before you commit. For businesses in Sydney, Melbourne, Brisbane, Perth, Adelaide and across Australia.</p>
+      <div class="hero-ctas">
+        <a class="btn" href="#book">Book a free AI readiness call</a>
+        <a class="btn line" href="#use-cases">See what we implement</a>
+      </div>
+      <ul class="trust">
+        <li>Practical AI, not hype</li>
+        <li>Your team stays in control</li>
+        <li>For businesses of 10 to 1,000+ staff</li>
+      </ul>
+    </div>
+
+    <div class="formcard" id="book">
+      <form id="qlp-lead" novalidate>
+        <div class="progress" aria-live="polite"><span id="step-label">Step 1 of 3</span><div class="bar" aria-hidden="true"><i id="bar"></i></div></div>
+        <fieldset class="step" data-step="1">
+          <legend><h2>Where could AI help your business most?</h2></legend>
+          <p class="lead">Select up to two.</p>
+          <div class="chips">
+            <label class="chip"><input type="checkbox" name="automate" value="Not sure where AI fits our business"><span>Not sure where AI fits our business</span></label>
+            <label class="chip"><input type="checkbox" name="automate" value="Too much manual admin &amp; paperwork"><span>Too much manual admin &amp; paperwork</span></label>
+            <label class="chip"><input type="checkbox" name="automate" value="Customer enquiries take too much time"><span>Customer enquiries take too much time</span></label>
+            <label class="chip"><input type="checkbox" name="automate" value="Slow or unclear reporting"><span>Slow or unclear reporting</span></label>
+            <label class="chip"><input type="checkbox" name="automate" value="Rising staff costs"><span>Rising staff costs</span></label>
+            <label class="chip"><input type="checkbox" name="automate" value="Disconnected systems &amp; data"><span>Disconnected systems &amp; data</span></label>
+          </div>
+          <p class="err" data-err hidden>Pick at least one.</p>
+          <button class="btn navy" type="button" data-next>Next</button>
+        </fieldset>
+        <fieldset class="step" data-step="2" hidden>
+          <legend><h2>Tell us about your business</h2></legend>
+          <p class="lead">So we can bring relevant examples to the call.</p>
+          <div class="two">
+            <label class="f" for="f-staff">Staff
+              <select id="f-staff" name="staff" required>
+                <option value="">Select</option><option>Under 10</option><option>10–50</option><option>51–200</option><option>201–1,000</option><option>1,000+</option>
+              </select></label>
+            <label class="f" for="f-rev">Annual revenue
+              <select id="f-rev" name="revenue" required>
+                <option value="">Select</option><option>Under A$2M</option><option>A$2–10M</option><option>A$10–50M</option><option>A$50–200M</option><option>Over A$200M</option>
+              </select></label>
+          </div>
+          <label class="f" for="f-when">When would you like this sorted?
+            <select id="f-when" name="timing" required>
+              <option value="">Select</option><option>Now, ASAP</option><option>This quarter</option><option>Within 6 months</option><option>Just exploring for now</option>
+            </select></label>
+          <label class="f" for="f-challenge">Your biggest reporting or automation challenge <small>(optional)</small>
+            <textarea id="f-challenge" name="challenge" rows="2"></textarea></label>
+          <p class="err" data-err hidden>Please answer staff, revenue and timing.</p>
+          <div class="actions"><button class="btn ghost" type="button" data-back>Back</button><button class="btn navy full" type="button" data-next>Next</button></div>
+        </fieldset>
+        <fieldset class="step" data-step="3" hidden>
+          <legend><h2>Where should we call you?</h2></legend>
+          <p class="lead">We'll call to set up a time that suits you.</p>
+          <div class="two">
+            <label class="f" for="f-name">Name<input id="f-name" name="name" autocomplete="name" required></label>
+            <label class="f" for="f-company">Company<input id="f-company" name="company" autocomplete="organization" required></label>
+          </div>
+          <div class="two">
+            <label class="f" for="f-email">Business email<input id="f-email" name="email" type="email" autocomplete="email" required></label>
+            <label class="f" for="f-phone">Mobile<input id="f-phone" name="phone" type="tel" autocomplete="tel" required></label>
+          </div>
+          <label class="f" for="f-role">Your role
+            <select id="f-role" name="role" required>
+              <option value="">Select</option><option>Owner / Founder</option><option>CEO / Managing Director</option><option>CFO / Finance</option><option>COO / Operations</option><option>General Manager</option><option>Other</option>
+            </select></label>
+          <label class="consent" for="f-consent"><input id="f-consent" name="consent" type="checkbox" required> I agree to Qubik contacting me by phone, email or SMS about this enquiry. I can opt out at any time.</label>
+          <p class="err" data-err hidden>Please fill in every field and tick the box.</p>
+          <div class="actions"><button class="btn ghost" type="button" data-back>Back</button><button class="btn full" type="submit" id="qlp-submit">Book my free call</button></div>
+        </fieldset>
+        <input type="hidden" name="estimate" id="f-estimate">
+        <input type="hidden" name="variant" id="f-variant">
+      </form>
+      <p class="status" id="qlp-status" role="status" hidden></p>
+      <div class="thanks" id="thanks" hidden>
+        <h2>Thanks, we've got your details</h2>
+        <p>On the live page this goes to the thank-you page. In this prototype nothing was sent.</p>
+      </div>
+      <div class="reassure" id="reassure"><span>Free AI readiness call</span><span>No obligation</span><span>We'll tell you honestly if it's not worth it</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. DASHBOARD SCREEN + BENEFIT STRIP -->
+<div class="band">
+  <div class="wrap">
+    <figure class="screen">
+      <div class="chrome" aria-hidden="true"><i></i><i></i><i></i><span>Profitability dashboard · overview</span></div>
+      <img src="landing-assets/screen-overview.webp" width="1400" height="875" alt="Qubik profitability dashboard overview showing profit, margin, revenue against cost and profit by site">
+    </figure>
+    <p class="caption">AI and dashboards working on your own numbers · a Qubik dashboard · sample data · fictional names</p>
+    <ul class="strip" aria-label="What we do">
+      <li><span class="ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg></span>AI strategy</li>
+      <li><span class="ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3 8-8"/><path d="M20 12v7H4V5h11"/></svg></span>Readiness review</li>
+      <li><span class="ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4"/></svg></span>AI implementation</li>
+      <li><span class="ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2h9l5 5v15H6z"/><path d="M15 2v5h5"/></svg></span>Document AI</li>
+      <li><span class="ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5h16v11H8l-4 4z"/></svg></span>AI assistants</li>
+      <li><span class="ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 9v4M12 17h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg></span>Smart alerts</li>
+    </ul>
+  </div>
+</div>
+
+<!-- A. WHAT AI CONSULTING COVERS -->
+<section class="block">
+  <div class="wrap">
+    <div class="kicker">AI consulting, end to end</div>
+    <h2>From "where does AI fit?" to AI working in your business</h2>
+    <p class="intro">Most businesses don't need an AI lab. They need someone to find the opportunities that pay back, build them properly and look after them.</p>
+    <div class="ai-grid">
+      <div class="ai-card"><div class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg></div><h3>AI strategy</h3><p>We look at how your business runs and find the two or three places AI will pay back first, with the numbers to back it up.</p></div>
+      <div class="ai-card"><div class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3 8-8"/><path d="M20 12v7H4V5h11"/></svg></div><h3>AI readiness review</h3><p>We check your systems, data and processes, so you know what is ready for AI now and what needs fixing first.</p></div>
+      <div class="ai-card"><div class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4"/></svg></div><h3>AI implementation</h3><p>We build it into the software you already run and show you a working prototype before the full build.</p></div>
+      <div class="ai-card"><div class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 3-6.7M3 4v5h5"/></svg></div><h3>Support and improvement</h3><p>We keep it running, tune it as your business changes, and add the next use case when you are ready.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- B. WHAT WE IMPLEMENT -->
+<section class="block alt" id="use-cases">
+  <div class="wrap">
+    <div class="kicker">AI implementation</div>
+    <h2>What AI can do in your business</h2>
+    <p class="intro">Practical AI use cases we build into existing systems. On the free call we'll tell you which would pay back first for you.</p>
+    <div class="auto">
+      <div class="auto-card"><h3><span class="ic" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2h9l5 5v15H6z"/><path d="M15 2v5h5M9 13h8M9 17h6"/></svg></span>Paperwork and documents</h3><p class="today"><span class="lbl">Today</span>Invoices, orders and forms typed in by hand.</p><p class="after"><span class="lbl">With AI</span>AI reads them, enters the details and checks them. Only exceptions reach a person.</p></div>
+      <div class="auto-card"><h3><span class="ic" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5h16v11H8l-4 4z"/></svg></span>Customer enquiries</h3><p class="today"><span class="lbl">Today</span>The same questions answered by hand, often by your busiest people.</p><p class="after"><span class="lbl">With AI</span>An AI assistant answers routine questions straight away and passes anything unusual to your team.</p></div>
+      <div class="auto-card"><h3><span class="ic" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span>Reports and summaries</h3><p class="today"><span class="lbl">Today</span>Days spent pulling numbers together and writing them up.</p><p class="after"><span class="lbl">With AI</span>AI drafts the report and the summary from live data. A person checks and sends it.</p></div>
+      <div class="auto-card"><h3><span class="ic" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5h16v11H8l-4 4z"/><path d="M8 10h8"/></svg></span>Questions about your numbers</h3><p class="today"><span class="lbl">Today</span>Waiting for someone to build a report to answer a simple question.</p><p class="after"><span class="lbl">With AI</span>Ask in plain English, such as "which sites lost margin this month?", where your setup supports it.</p></div>
+      <div class="auto-card"><h3><span class="ic" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 17l6-6 4 4 8-8"/><circle cx="21" cy="7" r="1.5"/></svg></span>Problems spotted early</h3><p class="today"><span class="lbl">Today</span>Margin leaks and late payments found at month-end.</p><p class="after"><span class="lbl">With AI</span>AI flags unusual trends and exceptions as they happen and alerts the right person.</p></div>
+      <div class="auto-card"><h3><span class="ic" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg></span>Forecasting</h3><p class="today"><span class="lbl">Today</span>Planning from last month's numbers.</p><p class="after"><span class="lbl">With AI</span>Rolling forecasts from work already booked, so you see the weeks ahead.</p></div>
+    </div>
+    <div class="prompt"><p>Not sure which of these fits your business?<span>That's what the free AI readiness call is for. We'll point out the two or three that would pay back first.</span></p><a class="btn" href="#book">Book a free AI readiness call</a></div>
+  </div>
+</section>
+
+<!-- C. COST OF MANUAL WORK -->
+<section class="block">
+  <div class="wrap">
+    <div class="kicker">The real cost</div>
+    <h2>Your people are your biggest cost. How much of their week could AI give back?</h2>
+    <p class="intro">In most growing businesses, skilled, well-paid people spend hours every week collecting, copying and checking numbers so someone else can make a decision. This is the work AI is best at taking off their plate.</p>
+    <div class="staff">
+      <ul class="pains">
+        <li><div class="ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></div><div><strong>Reports depend on one person</strong><span>When they're away, or leave, the numbers stop.</span></div></li>
+        <li><div class="ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><div><strong>Month-end means late nights</strong><span>Overtime and stress just to pull the figures together, weeks after the month ends.</span></div></li>
+        <li><div class="ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M16 21v-2a4 4 0 0 0-8 0v2M12 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8M20 8v6M23 11h-6"/></svg></div><div><strong>Hiring admin just to keep up</strong><span>Every new customer or site adds headcount, not just revenue.</span></div></li>
+        <li><div class="ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M17 7 7 17M7 7h10v10"/></svg></div><div><strong>Good people leave</strong><span>Copy-and-paste work wears people down, and replacing them is expensive.</span></div></li>
+        <li><div class="ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 9v4M12 17h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg></div><div><strong>Systems that don't talk to each other</strong><span>The same data typed into three places, and different answers to the same question.</span></div></li>
+        <li><div class="ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg></div><div><strong>No clear view of profit</strong><span>You can't easily see which sites, customers or projects make money until it's too late to act.</span></div></li>
+      </ul>
+
+      <div class="calc" aria-labelledby="calc-h">
+        <h3 id="calc-h">What does manual work cost you?</h3>
+        <p>Put in your own numbers. Nothing is sent unless you book a call.</p>
+        <div class="inputs">
+          <label for="c-people">People doing manual reporting or admin<input id="c-people" type="number" min="0" step="1" value="3" inputmode="numeric"></label>
+          <label for="c-hours">Hours a week each, on average<input id="c-hours" type="number" min="0" step="1" value="10" inputmode="numeric"></label>
+          <label for="c-rate"><span>Hourly cost per person (A$)<small>Include super and on-costs</small></span><input id="c-rate" type="number" min="0" step="1" value="55" inputmode="numeric"></label>
+        </div>
+        <div class="result" aria-live="polite">
+          <div class="big" id="c-total">A$75,900</div>
+          <p class="res-sub">a year on manual work, <span id="c-hrs">1,380</span> hours (about <span id="c-fte">0.8</span> of a full-time role)</p>
+          <p class="per10">Every 10% of that work handed to a system is worth <b id="c-10">A$7,590</b> a year, and gives your people that time back.</p>
+          <p class="fine">Based on 46 working weeks a year and a 38-hour week. An estimate to start the conversation, not a quote.</p>
+          <a class="btn" href="#book">Talk through my numbers on a free call</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- D. SAFE, CONTROLLED AI -->
+<section class="block">
+  <div class="wrap">
+    <div class="kicker">Safe, controlled AI</div>
+    <h2>AI you can trust with your business</h2>
+    <p class="intro">The biggest worry we hear about AI is losing control of decisions or data. Here's how we handle both.</p>
+    <div class="ai-grid">
+      <div class="ai-card"><div class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></div><h3>Your team stays in control</h3><p>AI drafts, flags and suggests. A person approves anything that matters or anything it isn't sure about.</p></div>
+      <div class="ai-card"><div class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></div><h3>Your data stays in your systems</h3><p>We use only the access the work needs, read-only wherever possible.</p></div>
+      <div class="ai-card"><div class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-8 0v2"/><circle cx="12" cy="7" r="4"/></svg></div><h3>Access by role</h3><p>Secure sign-in, and each person sees only what they should, for example a manager seeing only their own site.</p></div>
+      <div class="ai-card"><div class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5 9-10"/></svg></div><h3>No change to how you work</h3><p>AI is built into the software you already run. Your team keeps working the way they do now.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. THEY ACT + PHONE GRAPHIC -->
+<section class="block alt">
+  <div class="wrap">
+    <div class="kicker">AI that keeps watch</div>
+    <h2>AI that watches your numbers and acts on them</h2>
+    <p class="intro">Live dashboards give AI clean, current data to work with. It spots what matters and makes sure the follow-through happens.</p>
+    <div class="act">
+      <div>
+        <div class="sua">
+          <div><div class="n">01</div><div><h3>Know what's happening</h3><ul><li>Live figures, not month-end reports</li><li>Every site, customer and period in one place</li></ul></div></div>
+          <div><div class="n">02</div><div><h3>Understand why</h3><ul><li>Drill from the total to the transaction</li><li>Unusual trends and exceptions highlighted</li></ul></div></div>
+          <div><div class="n">03</div><div><h3>Act on it, automatically</h3><ul><li>Alerts to the right person when a number moves outside its range</li><li>Reports built and sent without anyone touching them</li><li>Approvals, follow-ups and data entry handled for you</li></ul></div></div>
+        </div>
+        <p class="control"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M7.5 12.5l3 3 6-6.5"/></svg>Your people stay in control: anything the system isn't sure about goes to a person to decide.</p>
+      </div>
+      <figure class="phone-wrap" style="margin:0" aria-label="Illustration: Monday morning on a phone, with a margin alert and the weekly report already sent">
+        <div class="device"><div class="scr"><img src="landing-assets/phone-overview.webp" loading="lazy" width="600" height="1298" alt=""></div></div>
+        <div class="toast alert" aria-hidden="true"><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 9v4M12 17h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg></span><span><b>Margin alert · Townsville</b>4.1% this fortnight, below your 5% threshold.<br><small>Monday 6:58am</small></span></div>
+        <div class="toast mail" aria-hidden="true"><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg></span><span><b>Weekly profit report</b>Sent automatically to the leadership team.<br><small>Monday 7:00am</small></span></div>
+        <figcaption class="caption">Illustration · sample data · fictional names</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- 7. SYSTEMS -->
+<section class="block">
+  <div class="wrap">
+    <div class="kicker">How it connects</div>
+    <h2>AI built into your systems, not bolted on</h2>
+    <p class="intro">We connect to the software you already run and bring it together around your business rules. Nothing about how your team works in those systems has to change.</p>
+    <div class="sys">
+      <div class="col">
+        <div class="head">Your systems today</div>
+        <div class="box"><b>Accounting &amp; ERP</b><span>Xero, MYOB, NetSuite and others</span></div>
+        <div class="box"><b>Payroll &amp; rostering</b><span>timesheets, rosters, labour costs</span></div>
+        <div class="box"><b>Sales, CRM &amp; operations</b><span>jobs, bookings, orders, inventory</span></div>
+        <div class="box"><b>Spreadsheets</b><span>schedules, budgets, the workbook only one person understands</span></div>
+      </div>
+      <div class="arrow" aria-hidden="true"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+      <div class="core"><b>One trusted model of your business</b><span>Secure, read-only connections. Your costing rules, periods and targets, set up by accountants. Checked back to your accounts every month.</span></div>
+      <div class="arrow" aria-hidden="true"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+      <div class="col">
+        <div class="head">What you get</div>
+        <div class="box out"><b>Automation</b><span>reports, follow-ups and data entry that run themselves</span></div>
+        <div class="box out"><b>Dashboards</b><span>for leaders, managers and each site</span></div>
+        <div class="box out"><b>Alerts</b><span>pushed to the right person when something needs attention</span></div>
+      </div>
+    </div>
+    <div class="sys-notes">
+      <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Read-only access to your systems</span>
+      <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Secure sign-in; each person sees only what they should</span>
+      <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Your existing systems keep working exactly as they do now</span>
+    </div>
+  </div>
+</section>
+
+<!-- 8. WHY QUBIK + VISION -->
+<section class="vision">
+  <div class="wrap">
+    <div class="kicker">Why Qubik</div>
+    <h2>AI consulting from business experts, not just technologists</h2>
+    <p class="vbig">Many AI firms start with the technology. We start with your business: where time and margin leak, and where AI will actually pay back. Then we build it and stay to support it.</p>
+    <dl class="vstats">
+      <div><dt>Helping Australian businesses</dt><dd>Since 2007</dd></div>
+      <div><dt>Xero partner</dt><dd>Since 2013</dd></div>
+      <div><dt>Businesses we work with</dt><dd>10 to 1,000+ staff</dd></div>
+      <div><dt>Brisbane-based, by video and on site</dt><dd>Australia-wide</dd></div>
+    </dl>
+    <div class="vquote">
+      <div class="avatar" aria-hidden="true">DG</div>
+      <div>
+        <div class="kicker">Our vision</div>
+        <blockquote>
+          <p>"Having spent years helping business owners navigate challenges and unlock opportunities, I believe we are entering an extraordinary new era where AI and automation will fundamentally redefine what businesses can achieve.</p>
+          <p>My vision is to empower ambitious, growing businesses with the intelligence, efficiency and capabilities to compete at the highest level — transforming information into insights, repetitive work into automation, and untapped human potential into extraordinary results."</p>
+        </blockquote>
+        <cite><b>Dominic Guinea</b>, founder and CEO, Qubik</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 9. TESTIMONIALS -->
+<section class="block">
+  <div class="wrap">
+    <div class="kicker">From our clients</div>
+    <h2>More like a partner in your business</h2>
+    <div class="testi">
+      <div class="video" id="video">
+        <button type="button" aria-label="Play video: Adiel Ben Karmona, Pilpel, on working with Qubik">
+          <img src="https://i.ytimg.com/vi/T25_tW_BumY/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+          <span class="play" aria-hidden="true"><svg width="30" height="30" viewBox="0 0 24 24" fill="#22333f"><path d="M8 5v14l11-7z"/></svg></span>
+        </button>
+      </div>
+      <div class="qcol">
+        <div class="quote"><blockquote>"Qubik isn't just an accounting firm, it's really more like a partner in your business. I think their added value is something that doesn't exist in other accounting firms."</blockquote><cite>Adiel Ben Karmona, owner and head chef, Pilpel</cite></div>
+        <div class="quote"><blockquote>"Dom has saved us more money than we've spent!"</blockquote><cite>Mike Wikes, Man Group</cite></div>
+      </div>
+    </div>
+    <div class="prompt"><p>Ready to see what's possible for your business?<span>A free discovery call with business experts, not salespeople.</span></p><a class="btn" href="#book">Book a free discovery call</a></div>
+  </div>
+</section>
+
+<!-- 10. HOW IT WORKS -->
+<section class="block alt">
+  <div class="wrap">
+    <div class="kicker">How it works</div>
+    <h2>Start with what pays back. See it working before you commit.</h2>
+    <ol class="steps">
+      <li><h3>Free AI readiness call</h3><p>We learn how your business runs, where the time goes and what you can't see today.</p></li>
+      <li><h3>Scoping and prototype</h3><p>We map your processes and systems, and <strong style="background:var(--lime-soft);color:var(--ink);padding:1px 5px;border-radius:4px">show you a working prototype</strong>, so you can see it and shape it before deciding on the build.</p></li>
+      <li><h3>Build</h3><p>We automate and connect your systems to the agreed design, checked against your current reports before go-live.</p></li>
+      <li><h3>Support and grow</h3><p>We keep it running as your business changes, and add the next process or dashboard when you're ready.</p></li>
+    </ol>
+    <div class="callbox">
+      <div>
+        <h3>What you'll get from the free AI readiness call</h3>
+        <p>Thirty minutes with business experts who understand both the numbers and the technology. The biggest opportunities usually sit where business efficiency and technology efficiency meet, and that's where we look.</p>
+        <a class="btn" href="#book">Book my free call</a>
+      </div>
+      <ul class="tick">
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>An honest view of whether AI is worth it for your business right now</span></li>
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>The two or three AI use cases most likely to pay back first</span></li>
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>A quick check of whether your systems and data are ready</span></li>
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>No obligation, and no hard sell</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 11. PRICING -->
+<section class="block alt">
+  <div class="wrap" id="pricing-anchor">
+    <div class="kicker">Pricing</div>
+    <h2>How pricing works</h2>
+    <p class="intro">Every business is different, so we don't sell packages. We agree the design with you first, then price the build against it, so the price you sign reflects exactly what you approved.</p>
+    <div class="pricing">
+      <div class="pcard"><span class="label">Scoping &amp; prototype</span><h3>Fixed fee, agreed upfront</h3><p>We map your processes, systems and requirements and <strong style="background:var(--lime-soft);color:var(--ink);padding:1px 5px;border-radius:4px">show you a working prototype</strong>. No obligation to go further: you keep the requirements and findings.</p></div>
+      <div class="pcard"><span class="label">Build</span><h3>Fixed price, against the agreed design</h3><p>Priced once the design is agreed, as a fixed project price, staged in phases, or spread as a monthly fee.</p></div>
+      <div class="pcard"><span class="label">Ongoing support</span><h3>Optional, monthly</h3><p>Keeps your automation, dashboards and data feeds running and up to date as your business changes.</p></div>
+    </div>
+    <div class="drivers">
+      <div><h3>What affects the cost</h3><ul><li>How many processes, systems and data sources are involved</li><li>How many sites, entities and dashboards</li><li>How much automation and alerting you want</li></ul></div>
+      <div><h3>How we keep it low-risk</h3><ul><li>You see a working prototype before the build</li><li>Start with what pays back fastest</li><li>Your existing systems stay exactly as they are</li></ul></div>
+    </div>
+    <p class="promise"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M7.5 12.5l3 3 6-6.5"/></svg>You'll always know the price before any work starts.</p>
+  </div>
+</section>
+
+<!-- 12. FAQ -->
+<section class="block">
+  <div class="wrap">
+    <div class="kicker">Questions</div>
+    <h2>Questions about AI we get asked</h2>
+    <div class="faq">
+      <details><summary>What does AI consulting with Qubik involve?</summary><p>A free AI readiness call, then a scoping stage where we map your processes and systems and show you a working prototype, then the build, then ongoing support. You'll know the price before any work starts.</p></details>
+      <details><summary>We're not sure we're ready for AI. Is that a problem?</summary><p>No. Most businesses we talk to aren't sure. The readiness call and scoping tell you what's ready now, what needs fixing first, and whether AI is worth it for you at all.</p></details>
+      <details><summary>What can AI actually do in our business?</summary><p>The most common uses are reading documents and entering the details, answering routine customer enquiries, drafting reports and summaries, flagging unusual trends and forecasting from booked work. We'll tell you which would pay back first.</p></details>
+      <details><summary>Is our data safe with AI?</summary><p>Yes. We only use the access the work needs, read-only wherever possible. Dashboards and tools sit behind secure sign-in, and access can be limited by role. Your people approve anything that matters.</p></details>
+      <details><summary>Will AI replace our staff?</summary><p>It takes the repetitive part of their work, not the people. Most businesses use the time it frees up to grow without hiring more admin, and to give good people more interesting work.</p></details>
+      <details><summary>Do you work with businesses in Sydney, Melbourne, Perth and Adelaide?</summary><p>Yes. We're based in Brisbane and work with businesses across Australia, by video and in person where it helps.</p></details>
+      <details><summary>Will it work with our software?</summary><p>We can normally work with any software you have: accounting, payroll, CRM, operational systems and spreadsheets. We'll check your setup on the call.</p></details>
+      <details><summary>How long does it take?</summary><p>We move as quickly as your team can handle. You'll see a working prototype early in scoping, which typically takes two to three weeks, and you'll have a timeline before you commit to anything.</p></details>
+      <details><summary>What does it cost?</summary><p>It depends on what you want AI to do and which systems are involved, so we don't publish packages. See <a href="#pricing-anchor">how pricing works</a> above; you'll always know the price before any work starts.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- 13. FINAL -->
+<section class="final">
+  <div class="wrap">
+    <div>
+      <h2>Find out where AI would pay back in your business</h2>
+      <p>A free 30-minute AI readiness call with business experts. No obligation, no hard sell.</p>
+    </div>
+    <div class="ctas"><a class="btn" href="#book">Book a free AI readiness call</a><a class="btn line" href="tel:+61732058938">Call (07) 3205 8938</a></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <img src="landing-assets/qubik-logo-white.png" alt="Qubik" width="88" height="34">
+    <span>Qubik Accounting · 18–22 Dixon Street, Strathpine QLD 4500</span>
+    <span><a href="tel:+61732058938">(07) 3205 8938</a> · <a href="https://qubik.com.au/privacy-policy/">Privacy policy</a></span>
+  </div>
+</footer>
+
+<aside class="notes" aria-label="Prototype notes">
+  <div class="wrap">
+    <h2>Prototype notes: to confirm with Qubik before going live</h2>
+    <ul>
+      <li>The six AI use cases (documents, enquiries, reports, plain-English questions, problem alerts, forecasting): confirm Qubik can deliver each one.</li>
+      <li>Location wording: "Brisbane-based, working with businesses across Australia, by video and in person where it helps". Confirm on-site visits outside Queensland are offered.</li>
+      <li>Planned address: <code>/marketing/ai-consulting/</code>, used by the AI ad groups (AG3–AG6) instead of <code>?v=ai</code>.</li>
+    </ul>
+  </div>
+</aside>
+
+<div class="sticky" id="sticky" aria-label="Quick actions">
+  <a class="btn navy" href="tel:+61732058938">Call</a>
+  <a class="btn" href="#book">Book a free call</a>
+</div>
+
+<script>
+(function () {
+  /* AI page: fixed copy, no headline swapping */
+  document.getElementById('f-variant').value = 'ai-page';
+
+  /* Tabs */
+  document.querySelectorAll('[data-tabs]').forEach(function (list) {
+    var tabs = list.querySelectorAll('[role=tab]');
+    function select(tab) {
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on ? 'true' : 'false');
+        t.tabIndex = on ? 0 : -1;
+        document.getElementById(t.getAttribute('aria-controls')).hidden = !on;
+      });
+    }
+    tabs.forEach(function (t, i) {
+      t.tabIndex = i === 0 ? 0 : -1;
+      t.addEventListener('click', function () { select(t); });
+      t.addEventListener('keydown', function (e) {
+        var n = null;
+        if (e.key === 'ArrowRight') { n = tabs[(i + 1) % tabs.length]; }
+        if (e.key === 'ArrowLeft') { n = tabs[(i - 1 + tabs.length) % tabs.length]; }
+        if (n) { e.preventDefault(); select(n); n.focus(); }
+      });
+    });
+  });
+
+  /* Staff-cost calculator; the estimate travels with the form */
+  var WEEKS = 46, FULL_TIME = 38 * 46, edited = false;
+  var money = new Intl.NumberFormat('en-AU', { style: 'currency', currency: 'AUD', maximumFractionDigits: 0 });
+  var num = new Intl.NumberFormat('en-AU', { maximumFractionDigits: 0 });
+  function aud(v) { return money.format(v).replace('$', 'A$'); }
+  function val(id) { var v = parseFloat(document.getElementById(id).value); return isFinite(v) ? Math.max(v, 0) : 0; }
+  function calc() {
+    var people = val('c-people'), hrsEach = val('c-hours'), rate = val('c-rate');
+    var hours = people * hrsEach * WEEKS;
+    var cost = hours * rate;
+    document.getElementById('c-total').textContent = aud(cost);
+    document.getElementById('c-hrs').textContent = num.format(hours);
+    document.getElementById('c-fte').textContent = (hours / FULL_TIME).toFixed(1);
+    document.getElementById('c-10').textContent = aud(cost / 10);
+    document.getElementById('f-estimate').value = edited ? aud(cost) + ' a year (' + people + ' people x ' + hrsEach + ' h/week x ' + aud(rate) + '/h)' : '';
+  }
+  ['c-people', 'c-hours', 'c-rate'].forEach(function (id) {
+    document.getElementById(id).addEventListener('input', function () { edited = true; calc(); });
+  });
+  calc();
+
+  /* Video loads only when clicked */
+  var video = document.getElementById('video');
+  video.querySelector('button').addEventListener('click', function () {
+    var frame = document.createElement('iframe');
+    frame.src = 'https://www.youtube-nocookie.com/embed/T25_tW_BumY?autoplay=1';
+    frame.title = 'Adiel Ben Karmona, Pilpel, on working with Qubik';
+    frame.allow = 'autoplay; encrypted-media; picture-in-picture';
+    frame.allowFullscreen = true;
+    video.textContent = '';
+    video.appendChild(frame);
+  });
+
+  /* Three-step form (prototype shows thanks; live page hands off to the hidden Divi form) */
+  var form = document.getElementById('qlp-lead');
+  var steps = form.querySelectorAll('[data-step]');
+  var current = 1;
+  function show(n) {
+    current = n;
+    steps.forEach(function (s) { s.hidden = Number(s.getAttribute('data-step')) !== n; });
+    document.getElementById('step-label').textContent = 'Step ' + n + ' of 3';
+    document.getElementById('bar').style.width = (n / 3 * 100) + '%';
+    if (n !== 1) { var first = steps[n - 1].querySelector('input, select'); if (first) { first.focus({ preventScroll: true }); } }
+  }
+  function valid(n) {
+    var s = steps[n - 1], ok;
+    if (n === 1) { ok = s.querySelectorAll('input[name=automate]:checked').length !== 0; }
+    else { ok = Array.prototype.every.call(s.querySelectorAll('[required]'), function (el) { return el.checkValidity(); }); }
+    s.querySelector('[data-err]').hidden = ok;
+    return ok;
+  }
+  var CHIP_MAX = 2;
+  var chips = form.querySelectorAll('input[name=automate]');
+  function limitChips() {
+    var picked = form.querySelectorAll('input[name=automate]:checked').length;
+    chips.forEach(function (c) { c.disabled = c.checked ? false : picked >= CHIP_MAX; });
+  }
+  chips.forEach(function (c) { c.addEventListener('change', limitChips); });
+  form.addEventListener('click', function (e) {
+    if (e.target.matches('[data-next]')) { if (valid(current)) { show(current + 1); } }
+    if (e.target.matches('[data-back]')) { show(current - 1); }
+  });
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (!valid(3)) { return; }
+    form.hidden = true;
+    document.getElementById('reassure').hidden = true;
+    document.getElementById('thanks').hidden = false;
+  });
+
+  /* Sticky mobile bar: after the hero, hidden while the form is on screen */
+  var sticky = document.getElementById('sticky');
+  var heroGone = false, cardVisible = false;
+  function update() { sticky.classList.toggle('show', heroGone ? !cardVisible : false); }
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function (en) { heroGone = !en[0].isIntersecting; update(); }).observe(document.querySelector('.hero'));
+    new IntersectionObserver(function (en) { cardVisible = en[0].isIntersecting; update(); }).observe(document.getElementById('book'));
+  }
+})();
+</script>
+</body>
+</html>
