@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AI Consulting &amp; Implementation | Qubik</title>
+<meta name="description" content="AI consulting and implementation for Australian businesses of 10 to 1,000+ staff. Find where AI pays back, see it working before you commit. Free 30-minute AI readiness call.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
@@ -350,6 +351,20 @@ footer a { color: var(--on-navy-muted); }
   .sticky.show { transform: none; }
   .sticky .btn { padding: 12px 10px; font-size: 16px; }
 }
+.form-quote { margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--line); text-align: center; }
+.form-quote blockquote { margin: 0; font-size: 16px; font-weight: 600; line-height: 1.4; }
+.form-quote cite { display: block; margin-top: 4px; font-style: normal; font-size: 14px; color: var(--muted); }
+.formcard .invalid input, .formcard .invalid select { border-color: var(--bad); box-shadow: 0 0 0 2px rgba(192,57,43,.15); }
+.err { font-size: 14px; }
+.callbox.first { margin-top: 0; }
+@media (max-width: 640px) {
+  .top .phone { display: inline; font-size: 15px; }
+  .top .phone span, .hide-sm { display: none; }
+  .hero h1 { margin-top: 10px; }
+  .hero .sub { font-size: 17px; margin-top: 12px; }
+  .trust { margin-top: 18px; gap: 6px 16px; font-size: 14px; }
+  .hero .wrap { padding-block: 28px 64px; gap: 24px; }
+}
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .bar i, .sticky { transition: none; } }
 </style>
 </head>
@@ -364,7 +379,7 @@ footer a { color: var(--on-navy-muted); }
     <img class="logo" src="landing-assets/qubik-logo.png" alt="Qubik" width="109" height="42">
     <div class="top-right">
       <a class="phone" href="tel:+61732058938"><span>Talk to us</span>(07) 3205 8938</a>
-      <a class="btn sm" href="#book">Book a free call</a>
+      <a class="btn sm" href="#book">Free AI readiness call</a>
     </div>
   </div>
 </header>
@@ -375,15 +390,15 @@ footer a { color: var(--on-navy-muted); }
     <div>
       <div class="eyebrow">AI consulting &amp; implementation · Brisbane-based, Australia-wide</div>
       <h1>AI consulting and implementation that works inside your business</h1>
-      <p class="sub">We find where AI will pay back in your business, build it into the systems you already use, and show you it working before you commit. For businesses in Sydney, Melbourne, Brisbane, Perth, Adelaide and across Australia.</p>
-      <div class="hero-ctas">
-        <a class="btn" href="#book">Book a free AI readiness call</a>
-        <a class="btn line" href="#use-cases">See what we implement</a>
+      <p class="sub">We find where AI will pay back in your business, build it into the systems you already use, and show you it working before you commit.<span class="hide-sm"> For businesses in Sydney, Melbourne, Brisbane, Perth, Adelaide and across Australia.</span></p>
+      <div class="hero-ctas hide-sm">
+        <a class="btn" href="#book">Book a free 30-minute AI readiness call</a>
+        <a class="btn line hide-sm" href="#use-cases">See what we implement</a>
       </div>
       <ul class="trust">
-        <li>Practical AI, not hype</li>
-        <li>Your team stays in control</li>
-        <li>For businesses of 10 to 1,000+ staff</li>
+        <li>Helping Australian businesses since 2007</li>
+        <li>Xero partner since 2013</li>
+        <li>Price agreed before any work starts</li>
       </ul>
     </div>
 
@@ -392,7 +407,7 @@ footer a { color: var(--on-navy-muted); }
         <div class="progress" aria-live="polite"><span id="step-label">Step 1 of 3</span><div class="bar" aria-hidden="true"><i id="bar"></i></div></div>
         <fieldset class="step" data-step="1">
           <legend><h2>Where could AI help your business most?</h2></legend>
-          <p class="lead">Select up to two.</p>
+          <p class="lead">Select any that apply.</p>
           <div class="chips">
             <label class="chip"><input type="checkbox" name="automate" value="Not sure where AI fits our business"><span>Not sure where AI fits our business</span></label>
             <label class="chip"><input type="checkbox" name="automate" value="Too much manual admin &amp; paperwork"><span>Too much manual admin &amp; paperwork</span></label>
@@ -401,7 +416,7 @@ footer a { color: var(--on-navy-muted); }
             <label class="chip"><input type="checkbox" name="automate" value="Rising staff costs"><span>Rising staff costs</span></label>
             <label class="chip"><input type="checkbox" name="automate" value="Disconnected systems &amp; data"><span>Disconnected systems &amp; data</span></label>
           </div>
-          <p class="err" data-err hidden>Pick at least one.</p>
+          <p class="err" data-err hidden role="alert"></p>
           <button class="btn navy" type="button" data-next>Next</button>
         </fieldset>
         <fieldset class="step" data-step="2" hidden>
@@ -412,38 +427,38 @@ footer a { color: var(--on-navy-muted); }
               <select id="f-staff" name="staff" required>
                 <option value="">Select</option><option>Under 10</option><option>10–50</option><option>51–200</option><option>201–1,000</option><option>1,000+</option>
               </select></label>
-            <label class="f" for="f-rev">Annual revenue
-              <select id="f-rev" name="revenue" required>
+            <label class="f" for="f-rev">Annual revenue <small>(optional)</small>
+              <select id="f-rev" name="revenue">
                 <option value="">Select</option><option>Under A$2M</option><option>A$2–10M</option><option>A$10–50M</option><option>A$50–200M</option><option>Over A$200M</option>
               </select></label>
           </div>
-          <label class="f" for="f-when">When would you like this sorted?
+          <label class="f" for="f-when">When are you looking to start?
             <select id="f-when" name="timing" required>
               <option value="">Select</option><option>Now, ASAP</option><option>This quarter</option><option>Within 6 months</option><option>Just exploring for now</option>
             </select></label>
-          <label class="f" for="f-challenge">Your biggest reporting or automation challenge <small>(optional)</small>
+          <label class="f" for="f-challenge">Anything you'd like us to know? <small>(optional)</small>
             <textarea id="f-challenge" name="challenge" rows="2"></textarea></label>
-          <p class="err" data-err hidden>Please answer staff, revenue and timing.</p>
+          <p class="err" data-err hidden role="alert"></p>
           <div class="actions"><button class="btn ghost" type="button" data-back>Back</button><button class="btn navy full" type="button" data-next>Next</button></div>
         </fieldset>
         <fieldset class="step" data-step="3" hidden>
           <legend><h2>Where should we call you?</h2></legend>
-          <p class="lead">We'll call to set up a time that suits you.</p>
+          <p class="lead">We'll call you within one business day to set up a time. No sales pitch.</p>
           <div class="two">
             <label class="f" for="f-name">Name<input id="f-name" name="name" autocomplete="name" required></label>
             <label class="f" for="f-company">Company<input id="f-company" name="company" autocomplete="organization" required></label>
           </div>
           <div class="two">
-            <label class="f" for="f-email">Business email<input id="f-email" name="email" type="email" autocomplete="email" required></label>
-            <label class="f" for="f-phone">Mobile<input id="f-phone" name="phone" type="tel" autocomplete="tel" required></label>
+            <label class="f" for="f-email">Business email<input id="f-email" name="email" type="email" inputmode="email" autocomplete="email" required></label>
+            <label class="f" for="f-phone">Phone<input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required></label>
           </div>
-          <label class="f" for="f-role">Your role
-            <select id="f-role" name="role" required>
+          <label class="f" for="f-role">Your role <small>(optional)</small>
+            <select id="f-role" name="role">
               <option value="">Select</option><option>Owner / Founder</option><option>CEO / Managing Director</option><option>CFO / Finance</option><option>COO / Operations</option><option>General Manager</option><option>Other</option>
             </select></label>
           <label class="consent" for="f-consent"><input id="f-consent" name="consent" type="checkbox" required> I agree to Qubik contacting me by phone, email or SMS about this enquiry. I can opt out at any time.</label>
-          <p class="err" data-err hidden>Please fill in every field and tick the box.</p>
-          <div class="actions"><button class="btn ghost" type="button" data-back>Back</button><button class="btn full" type="submit" id="qlp-submit">Book my free call</button></div>
+          <p class="err" data-err hidden role="alert"></p>
+          <div class="actions"><button class="btn ghost" type="button" data-back>Back</button><button class="btn full" type="submit" id="qlp-submit">Request my free call</button></div>
         </fieldset>
         <input type="hidden" name="estimate" id="f-estimate">
         <input type="hidden" name="variant" id="f-variant">
@@ -453,41 +468,27 @@ footer a { color: var(--on-navy-muted); }
         <h2>Thanks, we've got your details</h2>
         <p>On the live page this goes to the thank-you page. In this prototype nothing was sent.</p>
       </div>
-      <div class="reassure" id="reassure"><span>Free AI readiness call</span><span>No obligation</span><span>We'll tell you honestly if it's not worth it</span></div>
+      <div class="reassure" id="reassure"><span>Free 30-minute AI readiness call</span><span>No obligation</span><span>We'll tell you honestly if it's not worth it</span></div>
+      <div class="form-quote"><blockquote>"Dom has saved us more money than we've spent!"</blockquote><cite>Mike Wikes, Man Group</cite></div>
     </div>
   </div>
 </section>
 
-<!-- 2. DASHBOARD SCREEN + BENEFIT STRIP -->
-<div class="band">
-  <div class="wrap">
-    <figure class="screen">
-      <div class="chrome" aria-hidden="true"><i></i><i></i><i></i><span>Profitability dashboard · overview</span></div>
-      <img src="landing-assets/screen-overview.webp" width="1400" height="875" alt="Qubik profitability dashboard overview showing profit, margin, revenue against cost and profit by site">
-    </figure>
-    <p class="caption">AI and dashboards working on your own numbers · a Qubik dashboard · sample data · fictional names</p>
-    <ul class="strip" aria-label="What we do">
-      <li><span class="ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg></span>AI strategy</li>
-      <li><span class="ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3 8-8"/><path d="M20 12v7H4V5h11"/></svg></span>Readiness review</li>
-      <li><span class="ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4"/></svg></span>AI implementation</li>
-      <li><span class="ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2h9l5 5v15H6z"/><path d="M15 2v5h5"/></svg></span>Document AI</li>
-      <li><span class="ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5h16v11H8l-4 4z"/></svg></span>AI assistants</li>
-      <li><span class="ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 9v4M12 17h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg></span>Smart alerts</li>
-    </ul>
-  </div>
-</div>
-
-<!-- A. WHAT AI CONSULTING COVERS -->
+<!-- 2. WHAT YOU GET FROM THE CALL -->
 <section class="block">
   <div class="wrap">
-    <div class="kicker">AI consulting, end to end</div>
-    <h2>From "where does AI fit?" to AI working in your business</h2>
-    <p class="intro">Most businesses don't need an AI lab. They need someone to find the opportunities that pay back, build them properly and look after them.</p>
-    <div class="ai-grid">
-      <div class="ai-card"><div class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg></div><h3>AI strategy</h3><p>We look at how your business runs and find the two or three places AI will pay back first, with the numbers to back it up.</p></div>
-      <div class="ai-card"><div class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3 8-8"/><path d="M20 12v7H4V5h11"/></svg></div><h3>AI readiness review</h3><p>We check your systems, data and processes, so you know what is ready for AI now and what needs fixing first.</p></div>
-      <div class="ai-card"><div class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4"/></svg></div><h3>AI implementation</h3><p>We build it into the software you already run and show you a working prototype before the full build.</p></div>
-      <div class="ai-card"><div class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 3-6.7M3 4v5h5"/></svg></div><h3>Support and improvement</h3><p>We keep it running, tune it as your business changes, and add the next use case when you are ready.</p></div>
+    <div class="callbox first">
+      <div>
+        <h3>What you'll get from the free 30-minute AI readiness call</h3>
+        <p>Thirty minutes with business experts who understand both the numbers and the technology. The biggest opportunities usually sit where business efficiency and technology efficiency meet, and that's where we look.</p>
+        <a class="btn" href="#book">Book my free AI readiness call</a>
+      </div>
+      <ul class="tick">
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>An honest view of whether AI is worth it for your business right now</span></li>
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>The two or three AI use cases most likely to pay back first</span></li>
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>A quick check of whether your systems and data are ready</span></li>
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>No obligation, and no hard sell</span></li>
+      </ul>
     </div>
   </div>
 </section>
@@ -519,11 +520,8 @@ footer a { color: var(--on-navy-muted); }
     <div class="staff">
       <ul class="pains">
         <li><div class="ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></div><div><strong>Reports depend on one person</strong><span>When they're away, or leave, the numbers stop.</span></div></li>
-        <li><div class="ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><div><strong>Month-end means late nights</strong><span>Overtime and stress just to pull the figures together, weeks after the month ends.</span></div></li>
         <li><div class="ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M16 21v-2a4 4 0 0 0-8 0v2M12 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8M20 8v6M23 11h-6"/></svg></div><div><strong>Hiring admin just to keep up</strong><span>Every new customer or site adds headcount, not just revenue.</span></div></li>
         <li><div class="ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M17 7 7 17M7 7h10v10"/></svg></div><div><strong>Good people leave</strong><span>Copy-and-paste work wears people down, and replacing them is expensive.</span></div></li>
-        <li><div class="ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 9v4M12 17h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg></div><div><strong>Systems that don't talk to each other</strong><span>The same data typed into three places, and different answers to the same question.</span></div></li>
-        <li><div class="ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg></div><div><strong>No clear view of profit</strong><span>You can't easily see which sites, customers or projects make money until it's too late to act.</span></div></li>
       </ul>
 
       <div class="calc" aria-labelledby="calc-h">
@@ -542,78 +540,6 @@ footer a { color: var(--on-navy-muted); }
           <a class="btn" href="#book">Talk through my numbers on a free call</a>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- D. SAFE, CONTROLLED AI -->
-<section class="block">
-  <div class="wrap">
-    <div class="kicker">Safe, controlled AI</div>
-    <h2>AI you can trust with your business</h2>
-    <p class="intro">The biggest worry we hear about AI is losing control of decisions or data. Here's how we handle both.</p>
-    <div class="ai-grid">
-      <div class="ai-card"><div class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></div><h3>Your team stays in control</h3><p>AI drafts, flags and suggests. A person approves anything that matters or anything it isn't sure about.</p></div>
-      <div class="ai-card"><div class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></div><h3>Your data stays in your systems</h3><p>We use only the access the work needs, read-only wherever possible.</p></div>
-      <div class="ai-card"><div class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-8 0v2"/><circle cx="12" cy="7" r="4"/></svg></div><h3>Access by role</h3><p>Secure sign-in, and each person sees only what they should, for example a manager seeing only their own site.</p></div>
-      <div class="ai-card"><div class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5 9-10"/></svg></div><h3>No change to how you work</h3><p>AI is built into the software you already run. Your team keeps working the way they do now.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- 6. THEY ACT + PHONE GRAPHIC -->
-<section class="block alt">
-  <div class="wrap">
-    <div class="kicker">AI that keeps watch</div>
-    <h2>AI that watches your numbers and acts on them</h2>
-    <p class="intro">Live dashboards give AI clean, current data to work with. It spots what matters and makes sure the follow-through happens.</p>
-    <div class="act">
-      <div>
-        <div class="sua">
-          <div><div class="n">01</div><div><h3>Know what's happening</h3><ul><li>Live figures, not month-end reports</li><li>Every site, customer and period in one place</li></ul></div></div>
-          <div><div class="n">02</div><div><h3>Understand why</h3><ul><li>Drill from the total to the transaction</li><li>Unusual trends and exceptions highlighted</li></ul></div></div>
-          <div><div class="n">03</div><div><h3>Act on it, automatically</h3><ul><li>Alerts to the right person when a number moves outside its range</li><li>Reports built and sent without anyone touching them</li><li>Approvals, follow-ups and data entry handled for you</li></ul></div></div>
-        </div>
-        <p class="control"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M7.5 12.5l3 3 6-6.5"/></svg>Your people stay in control: anything the system isn't sure about goes to a person to decide.</p>
-      </div>
-      <figure class="phone-wrap" style="margin:0" aria-label="Illustration: Monday morning on a phone, with a margin alert and the weekly report already sent">
-        <div class="device"><div class="scr"><img src="landing-assets/phone-overview.webp" loading="lazy" width="600" height="1298" alt=""></div></div>
-        <div class="toast alert" aria-hidden="true"><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 9v4M12 17h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg></span><span><b>Margin alert · Townsville</b>4.1% this fortnight, below your 5% threshold.<br><small>Monday 6:58am</small></span></div>
-        <div class="toast mail" aria-hidden="true"><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg></span><span><b>Weekly profit report</b>Sent automatically to the leadership team.<br><small>Monday 7:00am</small></span></div>
-        <figcaption class="caption">Illustration · sample data · fictional names</figcaption>
-      </figure>
-    </div>
-  </div>
-</section>
-
-<!-- 7. SYSTEMS -->
-<section class="block">
-  <div class="wrap">
-    <div class="kicker">How it connects</div>
-    <h2>AI built into your systems, not bolted on</h2>
-    <p class="intro">We connect to the software you already run and bring it together around your business rules. Nothing about how your team works in those systems has to change.</p>
-    <div class="sys">
-      <div class="col">
-        <div class="head">Your systems today</div>
-        <div class="box"><b>Accounting &amp; ERP</b><span>Xero, MYOB, NetSuite and others</span></div>
-        <div class="box"><b>Payroll &amp; rostering</b><span>timesheets, rosters, labour costs</span></div>
-        <div class="box"><b>Sales, CRM &amp; operations</b><span>jobs, bookings, orders, inventory</span></div>
-        <div class="box"><b>Spreadsheets</b><span>schedules, budgets, the workbook only one person understands</span></div>
-      </div>
-      <div class="arrow" aria-hidden="true"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
-      <div class="core"><b>One trusted model of your business</b><span>Secure, read-only connections. Your costing rules, periods and targets, set up by accountants. Checked back to your accounts every month.</span></div>
-      <div class="arrow" aria-hidden="true"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
-      <div class="col">
-        <div class="head">What you get</div>
-        <div class="box out"><b>Automation</b><span>reports, follow-ups and data entry that run themselves</span></div>
-        <div class="box out"><b>Dashboards</b><span>for leaders, managers and each site</span></div>
-        <div class="box out"><b>Alerts</b><span>pushed to the right person when something needs attention</span></div>
-      </div>
-    </div>
-    <div class="sys-notes">
-      <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Read-only access to your systems</span>
-      <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Secure sign-in; each person sees only what they should</span>
-      <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Your existing systems keep working exactly as they do now</span>
     </div>
   </div>
 </section>
@@ -644,6 +570,46 @@ footer a { color: var(--on-navy-muted); }
   </div>
 </section>
 
+<!-- D. SAFE, CONTROLLED AI -->
+<section class="block">
+  <div class="wrap">
+    <div class="kicker">Safe, controlled AI</div>
+    <h2>AI you can trust with your business</h2>
+    <p class="intro">The biggest worry we hear about AI is losing control of decisions or data. Here's how we handle both.</p>
+    <div class="ai-grid">
+      <div class="ai-card"><div class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></div><h3>Your team stays in control</h3><p>AI drafts, flags and suggests. A person approves anything that matters or anything it isn't sure about.</p></div>
+      <div class="ai-card"><div class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></div><h3>Your data stays in your systems</h3><p>We use only the access the work needs, read-only wherever possible.</p></div>
+      <div class="ai-card"><div class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-8 0v2"/><circle cx="12" cy="7" r="4"/></svg></div><h3>Access by role</h3><p>Secure sign-in, and each person sees only what they should, for example a manager seeing only their own site.</p></div>
+      <div class="ai-card"><div class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5 9-10"/></svg></div><h3>No change to how you work</h3><p>AI is built into the software you already run. Your team keeps working the way they do now.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. THEY ACT + PHONE GRAPHIC -->
+<section class="block alt">
+  <div class="wrap">
+    <div class="kicker">AI that keeps watch</div>
+    <h2>AI built into your systems, watching your numbers</h2>
+    <p class="intro">We connect AI to the software you already run, such as Xero, MYOB, NetSuite, payroll, CRM and spreadsheets, with read-only access wherever possible. It spots what matters and makes sure the follow-through happens. Nothing about how your team works in those systems has to change.</p>
+    <div class="act">
+      <div>
+        <div class="sua">
+          <div><div class="n">01</div><div><h3>Know what's happening</h3><ul><li>Live figures, not month-end reports</li><li>Every site, customer and period in one place</li></ul></div></div>
+          <div><div class="n">02</div><div><h3>Understand why</h3><ul><li>Drill from the total to the transaction</li><li>Unusual trends and exceptions highlighted</li></ul></div></div>
+          <div><div class="n">03</div><div><h3>Act on it, automatically</h3><ul><li>Alerts to the right person when a number moves outside its range</li><li>Reports built and sent without anyone touching them</li><li>Approvals, follow-ups and data entry handled for you</li></ul></div></div>
+        </div>
+        <p class="control"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M7.5 12.5l3 3 6-6.5"/></svg>Your people stay in control: anything the system isn't sure about goes to a person to decide.</p>
+      </div>
+      <figure class="phone-wrap" style="margin:0" aria-label="Illustration: Monday morning on a phone, with a margin alert and the weekly report already sent">
+        <div class="device"><div class="scr"><img src="landing-assets/phone-overview.webp" loading="lazy" width="600" height="1298" alt=""></div></div>
+        <div class="toast alert" aria-hidden="true"><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 9v4M12 17h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg></span><span><b>Margin alert · Townsville</b>4.1% this fortnight, below your 5% threshold.<br><small>Monday 6:58am</small></span></div>
+        <div class="toast mail" aria-hidden="true"><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg></span><span><b>Weekly profit report</b>Sent automatically to the leadership team.<br><small>Monday 7:00am</small></span></div>
+        <figcaption class="caption">Illustration · sample data · fictional names</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
 <!-- 9. TESTIMONIALS -->
 <section class="block">
   <div class="wrap">
@@ -661,7 +627,7 @@ footer a { color: var(--on-navy-muted); }
         <div class="quote"><blockquote>"Dom has saved us more money than we've spent!"</blockquote><cite>Mike Wikes, Man Group</cite></div>
       </div>
     </div>
-    <div class="prompt"><p>Ready to see what's possible for your business?<span>A free discovery call with business experts, not salespeople.</span></p><a class="btn" href="#book">Book a free discovery call</a></div>
+    <div class="prompt"><p>Ready to see what's possible for your business?<span>A free 30-minute AI readiness call with business experts, not salespeople.</span></p><a class="btn" href="#book">Book a free AI readiness call</a></div>
   </div>
 </section>
 
@@ -671,24 +637,11 @@ footer a { color: var(--on-navy-muted); }
     <div class="kicker">How it works</div>
     <h2>Start with what pays back. See it working before you commit.</h2>
     <ol class="steps">
-      <li><h3>Free AI readiness call</h3><p>We learn how your business runs, where the time goes and what you can't see today.</p></li>
+      <li><h3>Free AI readiness call</h3><p>We learn how your business runs and point out the two or three places AI would pay back first.</p></li>
       <li><h3>Scoping and prototype</h3><p>We map your processes and systems, and <strong style="background:var(--lime-soft);color:var(--ink);padding:1px 5px;border-radius:4px">show you a working prototype</strong>, so you can see it and shape it before deciding on the build.</p></li>
-      <li><h3>Build</h3><p>We automate and connect your systems to the agreed design, checked against your current reports before go-live.</p></li>
-      <li><h3>Support and grow</h3><p>We keep it running as your business changes, and add the next process or dashboard when you're ready.</p></li>
+      <li><h3>Build</h3><p>We build the AI into your systems to the agreed design, tested on your real work before go-live.</p></li>
+      <li><h3>Support and grow</h3><p>We keep it running as your business changes, and add the next AI use case when you're ready.</p></li>
     </ol>
-    <div class="callbox">
-      <div>
-        <h3>What you'll get from the free AI readiness call</h3>
-        <p>Thirty minutes with business experts who understand both the numbers and the technology. The biggest opportunities usually sit where business efficiency and technology efficiency meet, and that's where we look.</p>
-        <a class="btn" href="#book">Book my free call</a>
-      </div>
-      <ul class="tick">
-        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>An honest view of whether AI is worth it for your business right now</span></li>
-        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>The two or three AI use cases most likely to pay back first</span></li>
-        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>A quick check of whether your systems and data are ready</span></li>
-        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>No obligation, and no hard sell</span></li>
-      </ul>
-    </div>
   </div>
 </section>
 
@@ -744,7 +697,7 @@ footer a { color: var(--on-navy-muted); }
 <footer>
   <div class="wrap">
     <img src="landing-assets/qubik-logo-white.png" alt="Qubik" width="88" height="34">
-    <span>Qubik Accounting · 18–22 Dixon Street, Strathpine QLD 4500</span>
+    <span>Qubik Accounting, AI and automation team · ABN [ABN] · 18–22 Dixon Street, Strathpine QLD 4500</span>
     <span><a href="tel:+61732058938">(07) 3205 8938</a> · <a href="https://qubik.com.au/privacy-policy/">Privacy policy</a></span>
   </div>
 </footer>
@@ -755,6 +708,10 @@ footer a { color: var(--on-navy-muted); }
     <ul>
       <li>The six AI use cases (documents, enquiries, reports, plain-English questions, problem alerts, forecasting): confirm Qubik can deliver each one.</li>
       <li>Location wording: "Brisbane-based, working with businesses across Australia, by video and in person where it helps". Confirm on-site visits outside Queensland are offered.</li>
+      <li>Form promise: "We'll call you within one business day to set up a time. No sales pitch." Confirm Qubik can keep it, or soften the wording.</li>
+      <li>Footer: add Qubik's ABN in place of [ABN].</li>
+      <li>Dominic's vision quote: the CRO review felt "fundamentally redefine… extraordinary new era" reads as hype next to "practical AI". Dominic to choose: keep, shorten, or a plainer version.</li>
+      <li>Adiel's video is about Qubik as accountants, not AI. Option: add a label such as "A Qubik client on working with us". A photo of Dominic would replace the "DG" initials.</li>
       <li>Planned address: <code>/marketing/ai-consulting/</code>, used by the AI ad groups (AG3–AG6) instead of <code>?v=ai</code>.</li>
     </ul>
   </div>
@@ -762,7 +719,7 @@ footer a { color: var(--on-navy-muted); }
 
 <div class="sticky" id="sticky" aria-label="Quick actions">
   <a class="btn navy" href="tel:+61732058938">Call</a>
-  <a class="btn" href="#book">Book a free call</a>
+  <a class="btn" href="#book">Free AI readiness call</a>
 </div>
 
 <script>
@@ -837,20 +794,39 @@ footer a { color: var(--on-navy-muted); }
     document.getElementById('bar').style.width = (n / 3 * 100) + '%';
     if (n !== 1) { var first = steps[n - 1].querySelector('input, select'); if (first) { first.focus({ preventScroll: true }); } }
   }
+  var NAMES = { staff: 'staff', timing: 'timing', name: 'your name', company: 'company', email: 'email', phone: 'phone number', consent: 'the consent box' };
   function valid(n) {
-    var s = steps[n - 1], ok;
-    if (n === 1) { ok = s.querySelectorAll('input[name=automate]:checked').length !== 0; }
-    else { ok = Array.prototype.every.call(s.querySelectorAll('[required]'), function (el) { return el.checkValidity(); }); }
-    s.querySelector('[data-err]').hidden = ok;
+    var s = steps[n - 1], err = s.querySelector('[data-err]'), missing = [], bad = [];
+    if (n === 1) {
+      if (s.querySelectorAll('input[name=automate]:checked').length === 0) { missing.push('x'); }
+      err.textContent = 'Pick at least one.';
+    } else {
+      s.querySelectorAll('[required]').forEach(function (el) {
+        var ok = el.checkValidity();
+        var wrap = el.closest('label');
+        if (wrap) { wrap.classList.toggle('invalid', !ok); }
+        el.setAttribute('aria-invalid', ok ? 'false' : 'true');
+        if (!ok) { if (el.value) { bad.push(el.name); } else { missing.push(NAMES[el.name]); } }
+      });
+      var parts = [];
+      if (missing.length) { var m = missing.slice(), last = m.pop(); parts.push('Please add ' + (m.length ? m.join(', ') + ' and ' : '') + last + '.'); }
+      if (bad.indexOf('email') !== -1) { parts.push('Please check the email address.'); }
+      if (bad.indexOf('phone') !== -1) { parts.push('Please check the phone number.'); }
+      err.textContent = parts.join(' ');
+    }
+    var ok = missing.length === 0 ? bad.length === 0 : false;
+    err.hidden = ok;
+    if (!ok) { var first = s.querySelector('[aria-invalid=true]'); if (first) { first.focus(); } }
     return ok;
   }
-  var CHIP_MAX = 2;
-  var chips = form.querySelectorAll('input[name=automate]');
-  function limitChips() {
-    var picked = form.querySelectorAll('input[name=automate]:checked').length;
-    chips.forEach(function (c) { c.disabled = c.checked ? false : picked >= CHIP_MAX; });
-  }
-  chips.forEach(function (c) { c.addEventListener('change', limitChips); });
+  /* Clear an error as soon as the visitor fixes it */
+  form.addEventListener('change', function (e) {
+    var s = e.target.closest('[data-step]');
+    if (s.querySelector('[data-err]').hidden) { return; }
+    if (s.getAttribute('data-step') === '1') { if (s.querySelectorAll('input[name=automate]:checked').length) { s.querySelector('[data-err]').hidden = true; } return; }
+    var wrap = e.target.closest('label');
+    if (wrap) { if (e.target.checkValidity()) { wrap.classList.remove('invalid'); e.target.setAttribute('aria-invalid', 'false'); } }
+  });
   form.addEventListener('click', function (e) {
     if (e.target.matches('[data-next]')) { if (valid(current)) { show(current + 1); } }
     if (e.target.matches('[data-back]')) { show(current - 1); }
@@ -863,12 +839,12 @@ footer a { color: var(--on-navy-muted); }
     document.getElementById('thanks').hidden = false;
   });
 
-  /* Sticky mobile bar: after the hero, hidden while the form is on screen */
+  /* Sticky mobile bar: from the first scroll, hidden while the form is on screen */
   var sticky = document.getElementById('sticky');
-  var heroGone = false, cardVisible = false;
-  function update() { sticky.classList.toggle('show', heroGone ? !cardVisible : false); }
+  var scrolled = false, cardVisible = false;
+  function update() { sticky.classList.toggle('show', scrolled ? !cardVisible : false); }
+  window.addEventListener('scroll', function () { var now = window.scrollY > 120; if (now !== scrolled) { scrolled = now; update(); } }, { passive: true });
   if ('IntersectionObserver' in window) {
-    new IntersectionObserver(function (en) { heroGone = !en[0].isIntersecting; update(); }).observe(document.querySelector('.hero'));
     new IntersectionObserver(function (en) { cardVisible = en[0].isIntersecting; update(); }).observe(document.getElementById('book'));
   }
 })();
