@@ -1,6 +1,6 @@
 # Qubik: LinkedIn and Meta test plan (parallel to Google Ads)
 
-**Written:** 15 Nov 2026. **Status:** proposal, nothing built yet.
+**Written:** 15 Nov 2026. **Status:** proposal, nothing built yet. **Layer 2** (target list, LinkedIn DM ads, Meta location plays, creative testing): `creative-campaign-playbook.md`.
 **Offer being sold:** free 30-minute discovery call → fixed-fee scoping and working prototype (A$3,500 founding price, A$7,500 later; *confirm*) → fixed-price build (A$57–90k in the earlier strategy; *confirm*) → optional monthly support.
 **Buyer:** owners, CEOs/MDs, CFOs, COOs and GMs of established Australian businesses with 10 to 1,000+ staff, especially multi-site operators (hospitality, healthcare clinics, logistics, facilities services, retail, early learning, mining and civil, aviation services).
 
