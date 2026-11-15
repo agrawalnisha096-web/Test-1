@@ -31,6 +31,11 @@ Read this first. It summarises the previous session so work can continue without
 - **Ads:** v2 ads, one per ad group, written around what each searcher cares about (no "scoped by accountants" in AI ads): `rsa-v2-per-ad-group.md`. The user says the ads were changed, but it isn't confirmed whether they match v2 exactly or whether old ads were paused.
 - **Earlier findings:** 85–90% of impressions lost to ad rank, not budget; Quality Scores 1–7, landing page experience "Below average" everywhere (page speed is fine: LCP ≈ 2.8–3.0 s on throttled mobile; likely relevance/newness). Page title changed to "Business Process Automation & AI Dashboards".
 
+## Update 16 Nov 2026
+- **AI landing page** `/marketing/ai-consulting/` (page **608**, parent 563) published from `landing-page-ai.html` → `divi-ai-code1.html` / `divi-ai-code2.html` (built by `claude-in-chrome-ai-page-prompt.md`). Same hidden form, tracking code 1, redirect to thank-you 589; leads tagged `variant: ai-page`. **Blocked:** LiteSpeed still caches it; developer asked to add `/marketing/` to Do Not Cache URIs (or tick Disable Cache on 608) and set the Yoast meta description. Then: test submission (Step 6 of the prompt), then switch AG3–AG6 final URLs to it.
+- **Automation page 588** updated with CRO form/phone fixes (`claude-in-chrome-automation-form-fixes-prompt.md`, commit 2b10d51); test lead TEST-AUTO2 received 16 Nov.
+- Open questions for Dominic: six AI use cases deliverable; in-person visits outside QLD; vision quote; Adiel video label; photo of Dominic.
+
 ## Where things stand right now (open items)
 1. **CPC jumped to about A$20** after the switch to Maximise clicks with the A$25 cap. Likely cause: cheap junk clicks (competitor brands via phrase match) are gone, so only real buyer auctions remain (Google's forecast predicted A$21–28 for exact). A **read-only check prompt** was sent to Claude in Chrome covering: every ad's status/approval/strength, when new ads were added and old ones paused, the exact live ad text, and per-keyword CPC, search terms and impression share since 14 Nov 22:20. **Next step: review that report**, compare live ads with `rsa-v2-per-ad-group.md`, and recommend at most one change (pause weak expensive keywords, lower cap to A$18–20, or wait a week).
 2. Phone-click test and Rule A threshold change: confirm done.
