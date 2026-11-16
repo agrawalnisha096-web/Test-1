@@ -67,7 +67,7 @@ First headline matches the search; the rest answer what that searcher cares abou
 
 ## AG3 AI consulting
 
-- Final URL: `https://qubik.com.au/marketing/automation/?v=ai`
+- Final URL: `https://qubik.com.au/marketing/ai-consulting/`
 - Display path: `AI-Consulting` / `Free-Call`
 - Pinning: headline 1 pinned to position 1
 
@@ -98,7 +98,7 @@ First headline matches the search; the rest answer what that searcher cares abou
 
 ## AG4 AI consulting - cities/AU
 
-- Final URL: `https://qubik.com.au/marketing/automation/?v=ai`
+- Final URL: `https://qubik.com.au/marketing/ai-consulting/`
 - Display path: `AI-Consulting` / `Free-Call`
 - Pinning: no pins (Google picks the city headline that matches the search)
 
@@ -129,7 +129,7 @@ First headline matches the search; the rest answer what that searcher cares abou
 
 ## AG5 AI implementation & agents
 
-- Final URL: `https://qubik.com.au/marketing/automation/?v=ai`
+- Final URL: `https://qubik.com.au/marketing/ai-consulting/`
 - Display path: `AI` / `Implementation`
 - Pinning: headline 1 pinned to position 1
 
@@ -160,7 +160,7 @@ First headline matches the search; the rest answer what that searcher cares abou
 
 ## AG6 Readiness assessment
 
-- Final URL: `https://qubik.com.au/marketing/automation/?v=ai`
+- Final URL: `https://qubik.com.au/marketing/ai-consulting/`
 - Display path: `AI` / `Free-Call`
 - Pinning: headline 1 pinned to position 1
 
