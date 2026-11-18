@@ -1,0 +1,746 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paid Social Plan · Qubik</title>
+<!-- Built by build.py from this template: {{IMG:..}} and {{LOGO..}} are replaced with embedded images so the file works offline. -->
+<style>
+@font-face { font-family: 'Plex'; font-weight: 400; src: url(https://cdn.jsdelivr.net/npm/@fontsource/ibm-plex-sans@5.0.8/files/ibm-plex-sans-latin-400-normal.woff2) format('woff2'); }
+@font-face { font-family: 'Plex'; font-weight: 500; src: url(https://cdn.jsdelivr.net/npm/@fontsource/ibm-plex-sans@5.0.8/files/ibm-plex-sans-latin-500-normal.woff2) format('woff2'); }
+@font-face { font-family: 'Plex'; font-weight: 600; src: url(https://cdn.jsdelivr.net/npm/@fontsource/ibm-plex-sans@5.0.8/files/ibm-plex-sans-latin-600-normal.woff2) format('woff2'); }
+@font-face { font-family: 'Plex'; font-weight: 700; src: url(https://cdn.jsdelivr.net/npm/@fontsource/ibm-plex-sans@5.0.8/files/ibm-plex-sans-latin-700-normal.woff2) format('woff2'); }
+:root {
+  --navy: #2e4455; --deep: #22333f; --deeper: #1a2731; --teal: #2e96a0; --teal-ink: #1f7a83; --teal-soft: #e3f1f2;
+  --lime: #c6da2c; --lime-soft: #eef3cf; --page: #f6f7f4; --surface: #fff; --ink: #1f2a33; --muted: #5b6b78; --line: #dde3e2;
+  --bad: #c0392b; --note-bg: #fff6d9; --note-ink: #5e4a00;
+  --font: 'Plex', 'Helvetica Neue', Arial, sans-serif;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--page); color: var(--ink); font-family: var(--font); font-size: 17px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+img { max-width: 100%; display: block; }
+a { color: var(--teal-ink); }
+h1, h2, h3, h4 { line-height: 1.15; letter-spacing: -.015em; margin: 0; color: var(--navy); }
+h2 { font-size: clamp(30px, 4vw, 42px); margin-bottom: 14px; }
+h3 { font-size: 23px; margin: 34px 0 12px; }
+h4 { font-size: 18px; margin: 0 0 8px; }
+p { margin: 0 0 14px; }
+ul, ol { margin: 0 0 14px; padding-left: 22px; }
+li { margin: 4px 0; }
+.wrap { max-width: 1120px; margin: 0 auto; padding: 0 28px; }
+.eyebrow { font-size: 13px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--teal-ink); margin-bottom: 10px; }
+.lede { font-size: 20px; color: var(--muted); max-width: 760px; margin-bottom: 26px; }
+.muted { color: var(--muted); }
+.small { font-size: 14px; }
+
+/* Nav */
+nav.top { position: sticky; top: 0; z-index: 20; background: rgba(26,39,49,.97); backdrop-filter: blur(6px); }
+nav.top .wrap { display: flex; align-items: center; gap: 22px; height: 58px; }
+nav.top img { height: 30px; flex: none; }
+nav.top .links { display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none; flex: 1; }
+nav.top .links::-webkit-scrollbar { display: none; }
+nav.top a { color: #c9d6dc; text-decoration: none; font-size: 14px; font-weight: 500; padding: 7px 11px; border-radius: 8px; white-space: nowrap; }
+nav.top a:hover { background: rgba(255,255,255,.08); color: #fff; }
+
+/* Cover */
+.cover { background: radial-gradient(1000px 600px at 85% 0%, #2f6f78 0%, var(--deep) 55%, var(--deeper) 100%); color: #fff; padding: 90px 0 80px; }
+.cover .eyebrow { color: var(--lime); }
+.cover h1 { color: #fff; font-size: clamp(40px, 6.4vw, 72px); font-weight: 700; letter-spacing: -.025em; max-width: 900px; }
+.cover p.sub { font-size: 21px; color: #c9d6dc; max-width: 760px; margin: 22px 0 36px; }
+.cover .meta { display: flex; flex-wrap: wrap; gap: 10px 28px; color: #9fb3bc; font-size: 15px; }
+.cover .meta b { color: #fff; font-weight: 600; }
+.kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 46px; }
+.kpi { background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.12); border-radius: 16px; padding: 18px 20px; }
+.kpi .v { font-size: 30px; font-weight: 700; color: var(--lime); line-height: 1.1; }
+.kpi .l { font-size: 14px; color: #c9d6dc; margin-top: 6px; line-height: 1.4; }
+
+section.block { padding: 76px 0; border-bottom: 1px solid var(--line); }
+section.block.alt { background: var(--surface); }
+section.block.dark { background: var(--deep); color: #e6eef1; border-bottom: 0; }
+section.block.dark h2, section.block.dark h3 { color: #fff; }
+section.block.dark .eyebrow { color: var(--lime); }
+section.block.dark .lede { color: #b6c6cd; }
+
+/* Cards and grids */
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 24px 26px; }
+section.alt .card { background: var(--page); }
+.card.lime { background: var(--lime-soft); border-color: #dbe5a4; }
+.card.teal { background: var(--teal-soft); border-color: #c3e0e2; }
+.dark .card { background: rgba(255,255,255,.06); border-color: rgba(255,255,255,.12); color: #e6eef1; }
+.dark .card h4 { color: #fff; }
+.step { font-size: 13px; font-weight: 700; color: var(--teal-ink); letter-spacing: .08em; text-transform: uppercase; margin-bottom: 6px; }
+.dark .step { color: var(--lime); }
+.note { background: var(--note-bg); color: var(--note-ink); border-radius: 12px; padding: 14px 18px; font-size: 15px; margin: 18px 0; }
+
+/* Tables */
+.tbl { width: 100%; overflow-x: auto; margin: 10px 0 18px; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); }
+table { width: 100%; border-collapse: collapse; font-size: 15px; }
+th, td { text-align: left; padding: 11px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { background: #eef2f1; color: var(--navy); font-weight: 600; font-size: 13px; letter-spacing: .03em; text-transform: uppercase; white-space: nowrap; }
+tr:last-child td { border-bottom: 0; }
+td.num, th.num { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+tr.total td { font-weight: 700; background: var(--lime-soft); }
+
+/* Funnel diagram */
+.flow { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; margin: 26px 0 10px; }
+.flow .stage { position: relative; padding: 22px 30px 22px 24px; background: var(--surface); border: 1px solid var(--line); }
+.flow .stage:first-child { border-radius: 16px 0 0 16px; }
+.flow .stage:last-child { border-radius: 0 16px 16px 0; background: var(--lime-soft); border-color: #dbe5a4; }
+.flow .stage + .stage { border-left: 0; }
+.flow .stage h4 { font-size: 19px; }
+.flow .stage p { font-size: 15px; color: var(--muted); margin: 0; }
+
+/* Ad gallery */
+.ads { display: grid; gap: 40px; margin-top: 30px; }
+.ad { display: grid; grid-template-columns: minmax(0, 470px) 1fr; gap: 36px; align-items: start; background: var(--surface); border: 1px solid var(--line); border-radius: 22px; padding: 28px; }
+.feed { border: 1px solid #dfe3e6; border-radius: 12px; overflow: hidden; background: #fff; font-family: Arial, Helvetica, sans-serif; color: #1c1e21; box-shadow: 0 10px 30px rgba(31,42,51,.08); }
+.feed .hd { display: flex; align-items: center; gap: 10px; padding: 12px 14px 8px; }
+.feed .av { width: 40px; height: 40px; border-radius: 50%; background: var(--deeper); display: flex; align-items: center; justify-content: center; flex: none; }
+.feed .av img { width: 30px; }
+.feed .nm { font-weight: 700; font-size: 15px; line-height: 1.2; }
+.feed .sp { font-size: 12.5px; color: #65676b; }
+.feed .tx { padding: 2px 14px 12px; font-size: 14.5px; line-height: 1.45; white-space: pre-line; }
+.feed .bar { display: flex; align-items: center; gap: 12px; background: #f0f2f5; padding: 10px 14px; }
+.feed .bar .t { flex: 1; min-width: 0; }
+.feed .bar .dm { font-size: 12px; color: #65676b; text-transform: uppercase; }
+.feed .bar .hl { font-weight: 700; font-size: 15px; line-height: 1.3; }
+.feed .bar .ds { font-size: 13px; color: #65676b; }
+.feed .bar .cta { background: #e4e6eb; border-radius: 6px; padding: 8px 14px; font-weight: 700; font-size: 14px; white-space: nowrap; }
+.ad .info h3 { margin-top: 4px; }
+.tag { display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; padding: 4px 10px; border-radius: 999px; background: var(--teal-soft); color: var(--teal-ink); margin: 0 6px 6px 0; }
+.tag.lime { background: var(--lime-soft); color: #4d5710; }
+dl.spec { display: grid; grid-template-columns: 130px 1fr; gap: 8px 16px; margin: 14px 0 0; font-size: 15px; }
+dl.spec dt { color: var(--muted); font-weight: 600; }
+dl.spec dd { margin: 0; }
+.ad .why { background: var(--page); border-radius: 12px; padding: 14px 16px; font-size: 15px; margin-top: 16px; }
+.story { display: grid; grid-template-columns: 300px 1fr; gap: 36px; align-items: start; }
+
+/* Lead form mock */
+.form-mock { background: #fff; border: 1px solid var(--line); border-radius: 18px; overflow: hidden; max-width: 420px; box-shadow: 0 10px 30px rgba(31,42,51,.08); }
+.form-mock .fh { background: var(--deep); color: #fff; padding: 18px 20px; }
+.form-mock .fh b { display: block; font-size: 18px; }
+.form-mock .fh span { font-size: 14px; color: #c9d6dc; }
+.form-mock .q { padding: 14px 20px; border-bottom: 1px solid var(--line); font-size: 15px; }
+.form-mock .q b { display: block; margin-bottom: 8px; color: var(--navy); }
+.form-mock .opt { display: inline-block; border: 1px solid #cdd6d4; border-radius: 999px; padding: 4px 12px; margin: 0 6px 6px 0; font-size: 13.5px; }
+.form-mock .opt.x { border-style: dashed; color: var(--muted); }
+.form-mock .fb { padding: 14px 20px; }
+.form-mock .btn { background: var(--teal); color: #fff; text-align: center; border-radius: 10px; padding: 11px; font-weight: 700; }
+
+/* Conversation tree */
+.chat { max-width: 640px; }
+.msg { background: var(--surface); border: 1px solid var(--line); border-radius: 18px 18px 18px 4px; padding: 16px 18px; margin-bottom: 10px; }
+.msg .who { font-size: 13px; font-weight: 700; color: var(--teal-ink); margin-bottom: 6px; }
+.btns { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0 18px; }
+.btns span { border: 1.5px solid var(--teal); color: var(--teal-ink); border-radius: 999px; padding: 6px 14px; font-size: 14px; font-weight: 600; background: #fff; }
+.branch { border-left: 3px solid var(--lime); padding: 6px 0 6px 18px; margin: 0 0 14px 6px; font-size: 15px; }
+.branch b { color: var(--navy); }
+
+/* Timeline */
+.timeline { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-top: 20px; }
+.timeline .wk { background: var(--surface); border: 1px solid var(--line); border-top: 5px solid var(--teal); border-radius: 12px; padding: 16px; font-size: 14.5px; }
+.timeline .wk:nth-child(4), .timeline .wk:nth-child(5) { border-top-color: var(--lime); }
+.timeline .wk b { display: block; font-size: 16px; color: var(--navy); margin-bottom: 6px; }
+.timeline ul { padding-left: 18px; margin: 0; }
+
+.scripts { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.script { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; font-size: 15px; }
+.script b { display: block; color: var(--navy); margin-bottom: 6px; }
+.script q { font-style: italic; color: #33424e; }
+
+.need { counter-reset: n; list-style: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.need li { counter-increment: n; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px 16px 62px; position: relative; margin: 0; }
+.need li::before { content: counter(n); position: absolute; left: 18px; top: 14px; width: 30px; height: 30px; border-radius: 50%; background: var(--lime); color: var(--deeper); font-weight: 700; display: flex; align-items: center; justify-content: center; }
+.need li b { color: var(--navy); }
+
+footer { background: var(--deeper); color: #9fb3bc; padding: 40px 0; font-size: 14px; }
+footer img { height: 34px; margin-bottom: 14px; }
+footer a { color: #c9d6dc; }
+
+@media (max-width: 900px) {
+  .kpis { grid-template-columns: 1fr 1fr; }
+  .grid2, .grid3, .scripts, .need { grid-template-columns: 1fr; }
+  .ad, .story { grid-template-columns: 1fr; padding: 20px; }
+  .flow { grid-template-columns: 1fr; }
+  .flow .stage:first-child { border-radius: 16px 16px 0 0; }
+  .flow .stage:last-child { border-radius: 0 0 16px 16px; }
+  .flow .stage + .stage { border-left: 1px solid var(--line); border-top: 0; }
+  .timeline { grid-template-columns: 1fr 1fr; }
+  dl.spec { grid-template-columns: 1fr; gap: 2px; }
+  dl.spec dd { margin-bottom: 8px; }
+}
+@media (max-width: 520px) {
+  .wrap { padding: 0 16px; }
+  .kpis, .timeline { grid-template-columns: 1fr; }
+  section.block { padding: 54px 0; }
+  .cover { padding: 60px 0 56px; }
+}
+@media print {
+  nav.top { display: none; }
+  body { font-size: 12.5px; background: #fff; }
+  section.block { padding: 28px 0; break-inside: auto; }
+  .ad, .card, .script, .form-mock, .timeline .wk { break-inside: avoid; }
+  .cover { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+
+<nav class="top"><div class="wrap">
+  <img src="{{LOGO_WHITE}}" alt="Qubik">
+  <div class="links">
+    <a href="#summary">Summary</a><a href="#approach">Approach</a><a href="#meta">Meta</a><a href="#ads">Sample ads</a><a href="#form">Lead form</a><a href="#linkedin">LinkedIn</a><a href="#list">Target list</a><a href="#plays">Creative plays</a><a href="#budget">Budget &amp; results</a><a href="#timeline">Timeline</a><a href="#need">What we need</a>
+  </div>
+</div></nav>
+
+<header class="cover">
+  <div class="wrap">
+    <div class="eyebrow">Proposal · paid social</div>
+    <h1>LinkedIn and Meta: finding the businesses that aren't searching yet</h1>
+    <p class="sub">A plan to run LinkedIn and Facebook/Instagram campaigns alongside Google Ads, to sell Qubik's automation and live dashboard work to established Australian businesses.</p>
+    <div class="meta"><span>Prepared for <b>Dominic Guinea, Qubik</b></span><span>Date <b>November 2026</b></span><span>Status <b>Proposal, nothing live yet</b></span></div>
+    <div class="kpis">
+      <div class="kpi"><div class="v">8 weeks</div><div class="l">Test period, with review points at weeks 4 and 8</div></div>
+      <div class="kpi"><div class="v">~A$100–160/day</div><div class="l">Social budget, rising as winners are found (Google stays at A$45/day)</div></div>
+      <div class="kpi"><div class="v">2–5</div><div class="l">Scoping sales expected across all channels in 8 weeks (estimate)</div></div>
+      <div class="kpi"><div class="v">1 build</div><div class="l">Pays for about a year of Google, LinkedIn and Meta together</div></div>
+    </div>
+  </div>
+</header>
+
+<!-- SUMMARY -->
+<section class="block alt" id="summary"><div class="wrap">
+  <div class="eyebrow">Summary</div>
+  <h2>The plan on one page</h2>
+  <div class="grid2" style="margin-top:22px">
+    <div class="card">
+      <h4>What we're proposing</h4>
+      <ul>
+        <li><b>LinkedIn</b> as the main social channel: finance and operations leaders at businesses with 50–1,000 staff, plus a hand-built list of target companies.</li>
+        <li><b>Meta</b> (Facebook and Instagram) as a cheaper test: owner-operators with 10–100 staff, local targeting around industrial areas and Brisbane North, and retargeting of everyone who visits the website.</li>
+        <li><b>Sector-specific ads</b> using our real dashboard screens: hospitality, clinics, logistics, facilities, early learning, mining and civil.</li>
+        <li><b>Dominic as the face of it:</b> short videos, LinkedIn posts and direct messages sent in his name.</li>
+      </ul>
+    </div>
+    <div class="card lime">
+      <h4>Why it should pay</h4>
+      <ul>
+        <li>One scoping engagement (A$3,500*) covers about <b>7 weeks of LinkedIn</b> or <b>3 months of Meta</b>.</li>
+        <li>One build (A$57k+*) covers about <b>a year</b> of all three channels together.</li>
+        <li>Sales take time, so the 8-week test is judged on <b>cost per qualified lead and cost per call held</b>, not revenue.</li>
+        <li>Clear rules: what doesn't work is stopped at week 4 or 6, and what works gets the budget.</li>
+      </ul>
+      <p class="small muted" style="margin:0">* Prices to be confirmed by Qubik.</p>
+    </div>
+  </div>
+  <div class="note"><b>About the numbers:</b> cost and result figures are estimates from public 2026 advertising benchmarks. Australian B2B data is thin, and published figures vary by 2–3×. After four weeks we'll replace them with Qubik's own results.</div>
+</div></section>
+
+<!-- APPROACH -->
+<section class="block" id="approach"><div class="wrap">
+  <div class="eyebrow">Approach</div>
+  <h2>Why social needs a different approach from Google</h2>
+  <p class="lede">On Google, people are already searching for "business process automation". On LinkedIn and Instagram, nobody is. A cold "book a call" ad gets very few leads, so we warm people up first and ask for the call once they've shown interest.</p>
+  <div class="flow">
+    <div class="stage"><div class="step">Step 1 · Stop the scroll</div><h4>Name their problem</h4><p>"Which of your venues made money last fortnight?" The first line names the type of business, so the right people stop and the wrong ones scroll past.</p></div>
+    <div class="stage"><div class="step">Step 2 · A small first step</div><h4>Something useful</h4><p>A playbook, the staff-cost calculator, a sample dashboard for their industry, or a short video from Dominic.</p></div>
+    <div class="stage"><div class="step">Step 3 · The ask</div><h4>Free 30-minute call</h4><p>Shown again to people who engaged: free call → see a working prototype → then decide. Every lead gets a call within an hour.</p></div>
+  </div>
+  <h3>Which channel does what</h3>
+  <div class="tbl"><table>
+    <tr><th></th><th>LinkedIn</th><th>Meta (Facebook + Instagram)</th></tr>
+    <tr><td><b>Best for</b></td><td>50–1,000 staff; CFOs, COOs, finance and operations leaders</td><td>10–100 staff; owner-operators (venues, clinics, childcare, transport, trades)</td></tr>
+    <tr><td><b>Targeting</b></td><td>Precise: job title, seniority, company size, industry, named companies</td><td>Loose, so the ad and the form do the filtering; strong local (location) targeting</td></tr>
+    <tr><td><b>Typical cost</b></td><td>A$10–20 a click · A$150–350 a lead</td><td>A$1.50–5 a click · A$50–150 a lead</td></tr>
+    <tr><td><b>Lead quality</b></td><td>Higher</td><td>Mixed; needs filtering questions</td></tr>
+    <tr><td><b>Role</b></td><td>Main social channel</td><td>Cheaper test, plus retargeting of every website visitor</td></tr>
+  </table></div>
+</div></section>
+
+<!-- META -->
+<section class="block alt" id="meta"><div class="wrap">
+  <div class="eyebrow">Meta (Facebook + Instagram)</div>
+  <h2>Meta strategy</h2>
+  <p class="lede">The goal is cheap, filtered leads from owner-operators of multi-site businesses, plus low-cost retargeting of everyone who visits qubik.com.au from any channel.</p>
+
+  <div class="grid3">
+    <div class="card"><div class="step">Target</div><h4>≤ A$300 per qualified lead</h4><p class="small muted" style="margin:0">Cost per lead A$50–150, with 35%+ of leads qualifying (10+ staff, a real problem)</p></div>
+    <div class="card"><div class="step">Target</div><h4>≤ A$600 per call held</h4><p class="small muted" style="margin:0">The number that matters most in the first 8 weeks</p></div>
+    <div class="card"><div class="step">Budget</div><h4>~A$50/day to start</h4><p class="small muted" style="margin:0">Rising to A$65–80/day from week 3 as winning ads get more budget</p></div>
+  </div>
+
+  <h3>Campaign structure</h3>
+  <div class="tbl"><table>
+    <tr><th>Campaign</th><th>What it does</th><th class="num">Daily budget</th><th>Starts</th></tr>
+    <tr><td><b>Test</b></td><td>Five ad concepts compete side by side; each gets about A$120–150 before we decide</td><td class="num">A$25</td><td>Week 1</td></tr>
+    <tr><td><b>Local</b></td><td>Location-targeted ads: industrial and logistics areas, and Brisbane North around Strathpine</td><td class="num">A$15</td><td>Week 1</td></tr>
+    <tr><td><b>Retargeting</b></td><td>Website visitors, video viewers and people who opened the form, shown the free-call offer</td><td class="num">A$10</td><td>Week 1</td></tr>
+    <tr><td><b>Scale</b></td><td>Winning ads moved here, keeping their likes and comments</td><td class="num">A$15–30</td><td>Week 3–4</td></tr>
+    <tr><td><b>Events</b></td><td>Ads around trade-show venues on show days only (hospitality, logistics, mining)</td><td class="num">A$30–50</td><td>From May 2027</td></tr>
+  </table></div>
+
+  <h3>Who sees the ads</h3>
+  <div class="grid3">
+    <div class="card">
+      <h4>New audiences</h4>
+      <ul class="small">
+        <li>Australia, ages 30–65</li>
+        <li>Meta's automatic audience, guided towards small-business owners, Xero/MYOB users and industry interests (hospitality, logistics, allied health, childcare, facilities)</li>
+        <li>The ad's first line and the form questions filter out the wrong people</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h4>Local areas</h4>
+      <ul class="small">
+        <li><b>Brisbane industrial:</b> Yatala, Eagle Farm, Larapinta, Wacol, Brendale</li>
+        <li><b>Sydney and Melbourne industrial</b> (from week 3): Wetherill Park, Eastern Creek, Moorebank; Dandenong South, Truganina, Laverton North</li>
+        <li><b>Brisbane North:</b> 5–15 km around Strathpine, North Lakes, Chermside, the CBD and Newstead</li>
+        <li><b>Regional</b> (later): Mackay, Townsville, Gladstone, Toowoomba</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h4>Warm audiences</h4>
+      <ul class="small">
+        <li>Everyone who visited qubik.com.au in the last 180 days (including Google visitors)</li>
+        <li>Landing page visitors who didn't enquire (30 days)</li>
+        <li>People who watched half of a Qubik video</li>
+        <li>People who opened the form but didn't submit</li>
+        <li>Later: "lookalikes" of the best leads</li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<!-- SAMPLE ADS -->
+<section class="block" id="ads"><div class="wrap">
+  <div class="eyebrow">Creative</div>
+  <h2>Sample ads</h2>
+  <p class="lede">Every ad has three parts: a <b>hook</b> naming the problem in the buyer's words, a <b>"What Qubik does" box</b> written for that type of business, and the <b>next step</b> (free call → working prototype → decide). All dashboard screens are sample data with fictional names, and each ad says so.</p>
+
+  <div class="ads">
+
+    <div class="ad">
+      <div class="feed">
+        <div class="hd"><div class="av"><img src="{{LOGO_WHITE}}" alt=""></div><div><div class="nm">Qubik</div><div class="sp">Sponsored</div></div></div>
+        <div class="tx">Run 3+ venues? Quick question: which one made money last fortnight, after wages?
+
+Most groups we speak to find out weeks later, from a spreadsheet someone builds by hand. We connect your POS, rostering and Xero into one live dashboard: margin and labour by venue, every fortnight, with an alert when one slips.
+
+No new software. Built by accountants. Book a free 30-minute call 👇</div>
+        <img src="{{IMG:01}}" alt="Ad: Which of your venues actually made money last fortnight?">
+        <div class="bar"><div class="t"><div class="dm">qubik.com.au</div><div class="hl">Profit by venue, every fortnight</div><div class="ds">Free call · no obligation</div></div><div class="cta">Sign up</div></div>
+      </div>
+      <div class="info">
+        <span class="tag">Ad 1</span><span class="tag lime">Hospitality</span>
+        <h3>"Which of your venues actually made money?"</h3>
+        <dl class="spec">
+          <dt>Audience</dt><dd>Owners and GMs of groups with 3+ venues (new audiences)</dd>
+          <dt>Format</dt><dd>Image, 4:5 (feed)</dd>
+          <dt>Leads to</dt><dd>Lead form inside Facebook/Instagram</dd>
+          <dt>Test next</dt><dd>"Wages crept to 38% at one venue. When did you find out?" · "Your group total looks fine. Does every venue?"</dd>
+        </dl>
+        <div class="why"><b>Why it works:</b> it asks a question most group owners can't answer, and the heatmap shows the answer at a glance.</div>
+      </div>
+    </div>
+
+    <div class="ad">
+      <div class="feed">
+        <div class="hd"><div class="av"><img src="{{LOGO_WHITE}}" alt=""></div><div><div class="nm">Qubik</div><div class="sp">Sponsored</div></div></div>
+        <div class="tx">Imagine Monday at 7am: your profit report is already in the leadership team's inbox, and you get an alert if any site has slipped below target.
+
+Nobody stayed late to build it. We automate the reports, alerts and data entry that eat your team's week, on the systems you already use: Xero, MYOB, payroll, rostering, spreadsheets.</div>
+        <img src="{{IMG:02}}" alt="Ad: Monday, 7:00am. Your profit report is already in.">
+        <div class="bar"><div class="t"><div class="dm">qubik.com.au</div><div class="hl">Reports that run themselves</div><div class="ds">Accountants · Xero partner since 2013</div></div><div class="cta">Learn more</div></div>
+      </div>
+      <div class="info">
+        <span class="tag">Ad 2</span><span class="tag lime">All sectors</span>
+        <h3>"Monday, 7:00am. Your profit report is already in."</h3>
+        <dl class="spec">
+          <dt>Audience</dt><dd>New audiences and retargeting</dd>
+          <dt>Format</dt><dd>Image 4:5 (feed) + 9:16 version for Stories and Reels</dd>
+          <dt>Leads to</dt><dd>Lead form (new audiences) · landing page (retargeting)</dd>
+        </dl>
+        <div class="why"><b>Why it works:</b> it shows the outcome, not the technology. Owners picture their own Monday morning.</div>
+      </div>
+    </div>
+
+    <div class="ad">
+      <div class="feed">
+        <div class="hd"><div class="av"><img src="{{LOGO_WHITE}}" alt=""></div><div><div class="nm">Qubik</div><div class="sp">Sponsored</div></div></div>
+        <div class="tx">3 people × 10 hours a week × A$55 an hour = about A$75,900 a year spent copying numbers between systems.
+
+That's an example. Put in your own numbers; it takes 20 seconds. If it's worth fixing, we'll show you which two or three processes would pay back first.</div>
+        <img src="{{IMG:03}}" alt="Ad: What does copy-and-paste cost your business?">
+        <div class="bar"><div class="t"><div class="dm">qubik.com.au</div><div class="hl">Work out your number in 20 seconds</div><div class="ds">Free calculator</div></div><div class="cta">Learn more</div></div>
+      </div>
+      <div class="info">
+        <span class="tag">Ad 3</span><span class="tag lime">All sectors</span>
+        <h3>"What does copy-and-paste cost your business?"</h3>
+        <dl class="spec">
+          <dt>Audience</dt><dd>New audiences</dd>
+          <dt>Format</dt><dd>Image, 4:5</dd>
+          <dt>Leads to</dt><dd>The staff-cost calculator on the Qubik page</dd>
+        </dl>
+        <div class="why"><b>Why it works:</b> a dollar figure turns "admin" into a cost the owner can see. The calculator is a small, useful first step before the call.</div>
+      </div>
+    </div>
+
+    <div class="ad">
+      <div class="feed">
+        <div class="hd"><div class="av"><img src="{{LOGO_WHITE}}" alt=""></div><div><div class="nm">Qubik</div><div class="sp">Sponsored</div></div></div>
+        <div class="tx">In most growing businesses, the numbers live in one spreadsheet, in one person's head. When they're away, the reporting stops. When they leave, it walks out the door with them.
+
+We're accountants who build automation and live dashboards, so your reporting runs itself. Book a free 30-minute call. We'll tell you honestly whether it's worth fixing.</div>
+        <img src="{{IMG:04}}" alt="Ad: If the one person who builds your reports went on leave tomorrow…">
+        <div class="bar"><div class="t"><div class="dm">qubik.com.au</div><div class="hl">Don't let your numbers depend on one person</div><div class="ds">Free call · no obligation</div></div><div class="cta">Sign up</div></div>
+      </div>
+      <div class="info">
+        <span class="tag">Ad 4</span><span class="tag lime">All sectors</span>
+        <h3>"If the one person who builds your reports went on leave…"</h3>
+        <dl class="spec">
+          <dt>Audience</dt><dd>New audiences</dd>
+          <dt>Format</dt><dd>Text-led image, 1:1. Looks like a post, not an ad</dd>
+          <dt>Leads to</dt><dd>Lead form</dd>
+        </dl>
+        <div class="why"><b>Why it works:</b> almost every owner knows "that person". It names a risk they feel but rarely say out loud.</div>
+      </div>
+    </div>
+
+    <div class="ad">
+      <div class="feed">
+        <div class="hd"><div class="av"><img src="{{LOGO_WHITE}}" alt=""></div><div><div class="nm">Qubik</div><div class="sp">Sponsored</div></div></div>
+        <div class="tx">Running depots? If your depot P&amp;L lives in a file called "FINAL v7" with a tab nobody's allowed to touch, you're not alone.
+
+We connect your accounting, payroll and job systems into one dashboard: revenue, labour and margin by depot, every fortnight, checked against the accounts.</div>
+        <img src="{{IMG:05}}" alt="Ad: Margin per depot, every fortnight">
+        <div class="bar"><div class="t"><div class="dm">qubik.com.au</div><div class="hl">Margin per depot, every fortnight</div><div class="ds">Built by accountants</div></div><div class="cta">Sign up</div></div>
+      </div>
+      <div class="info">
+        <span class="tag">Ad 5</span><span class="tag lime">Transport and logistics</span>
+        <h3>Spreadsheet vs dashboard</h3>
+        <dl class="spec">
+          <dt>Audience</dt><dd>New audiences: transport, logistics and warehousing</dd>
+          <dt>Format</dt><dd>Image, 4:5</dd>
+          <dt>Leads to</dt><dd>Lead form</dd>
+        </dl>
+        <div class="why"><b>Why it works:</b> the messy spreadsheet is instantly recognisable. Its #REF! errors and "DON'T TOUCH" tab make the before-and-after obvious.</div>
+      </div>
+    </div>
+
+    <div class="ad">
+      <div class="feed">
+        <div class="hd"><div class="av"><img src="{{LOGO_WHITE}}" alt=""></div><div><div class="nm">Qubik</div><div class="sp">Sponsored</div></div></div>
+        <div class="tx">Running a depot out of Yatala? Here's a question most transport businesses can't answer on a Monday: what did each depot make last fortnight?
+
+We're accountants in Strathpine who build live dashboards and automation for transport businesses, on the systems you already use. Free 30-minute call, or we'll come to you.</div>
+        <img src="{{IMG:06}}" alt="Ad: Running a depot out of Yatala?">
+        <div class="bar"><div class="t"><div class="dm">qubik.com.au</div><div class="hl">Profit by depot, every fortnight</div><div class="ds">Brisbane-based accountants</div></div><div class="cta">Sign up</div></div>
+      </div>
+      <div class="info">
+        <span class="tag">Ad 6</span><span class="tag lime">Local · industrial areas</span>
+        <h3>"Running a depot out of Yatala?"</h3>
+        <dl class="spec">
+          <dt>Audience</dt><dd>People in or recently in Yatala's industrial area (2–3 km pins). One version per suburb: Eagle Farm, Larapinta, Wacol, Brendale; later Sydney and Melbourne</dd>
+          <dt>Format</dt><dd>Image, 4:5</dd>
+          <dt>Leads to</dt><dd>Lead form</dd>
+        </dl>
+        <div class="why"><b>Why it works:</b> seeing your own suburb in an ad stops the scroll, and a Brisbane accountant feels more trustworthy than a faraway tech firm.</div>
+      </div>
+    </div>
+
+    <div class="ad">
+      <div class="feed">
+        <div class="hd"><div class="av"><img src="{{LOGO_WHITE}}" alt=""></div><div><div class="nm">Qubik</div><div class="sp">Sponsored</div></div></div>
+        <div class="tx">Running a business on Brisbane's northside with 10+ staff?
+
+Come in for a coffee and a 30-minute look at what a live dashboard could show for your business: profit by site, cash, labour costs and the reports your team builds by hand today. No pitch, no obligation. Or we'll come to you.</div>
+        <img src="{{IMG:07}}" alt="Ad: Accountants down the road in Strathpine">
+        <div class="bar"><div class="t"><div class="dm">qubik.com.au</div><div class="hl">Coffee and a dashboard demo in Strathpine</div><div class="ds">In person · free · 30 minutes</div></div><div class="cta">Book now</div></div>
+      </div>
+      <div class="info">
+        <span class="tag">Ad 7</span><span class="tag lime">Local · Brisbane North</span>
+        <h3>"Accountants down the road in Strathpine"</h3>
+        <dl class="spec">
+          <dt>Audience</dt><dd>5–15 km around Strathpine, North Lakes, Chermside, Brisbane CBD and Newstead</dd>
+          <dt>Format</dt><dd>Image, 1:1</dd>
+          <dt>Leads to</dt><dd>Lead form with "Where would you like to meet?" (at Qubik / at my office / video call)</dd>
+        </dl>
+        <div class="why"><b>Why it works:</b> meeting in person is something remote AI agencies can't offer, and it builds trust faster than any ad.</div>
+      </div>
+    </div>
+
+    <div class="ad">
+      <div class="feed">
+        <div class="hd"><div class="av"><img src="{{LOGO_WHITE}}" alt=""></div><div><div class="nm">Qubik</div><div class="sp">Sponsored</div></div></div>
+        <div class="tx">Run 3+ clinics? Your busiest clinic might not be your most profitable one, and the month-end report won't tell you why.
+
+We bring your practice management system, payroll and Xero together into one live dashboard: profit by clinic, practitioner costs, appointments and margin, updated automatically.</div>
+        <img src="{{IMG:08}}" alt="Ad: Your busiest clinic might not be your most profitable">
+        <div class="bar"><div class="t"><div class="dm">qubik.com.au</div><div class="hl">Profit by clinic, updated automatically</div><div class="ds">Free call · no obligation</div></div><div class="cta">Sign up</div></div>
+      </div>
+      <div class="info">
+        <span class="tag">Ad 8</span><span class="tag lime">Clinics (allied health, dental, vet)</span>
+        <h3>"Your busiest clinic might not be your most profitable."</h3>
+        <dl class="spec">
+          <dt>Audience</dt><dd>New audiences: allied health, dental, vet and medical groups</dd>
+          <dt>Format</dt><dd>Image, 4:5</dd>
+          <dt>Leads to</dt><dd>Lead form</dd>
+        </dl>
+        <div class="why"><b>Why it works:</b> it challenges an assumption most clinic owners hold, which creates curiosity.</div>
+      </div>
+    </div>
+
+    <div class="ad story">
+      <img src="{{IMG:09}}" alt="Story ad: Monday, 7:00am" style="border-radius:18px;box-shadow:0 10px 30px rgba(31,42,51,.12)">
+      <div class="info">
+        <span class="tag">Ad 9</span><span class="tag lime">Stories and Reels</span>
+        <h3>"Monday, 7:00am", full-screen version</h3>
+        <p>The same message as Ad 2, sized 9:16 for Instagram and Facebook Stories and Reels. The top and bottom are left clear for the app's buttons.</p>
+        <p><b>Next step:</b> a 6–10 second animated version with the notifications sliding in one at a time. Movement usually beats a still image in Stories.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <h3>Videos we'd like Dominic to film</h3>
+  <p class="muted">Video usually becomes the best-performing format on both channels. These are filmed on a phone, 30–45 seconds each, with captions. Two hours is enough for all five, with a couple of takes each.</p>
+  <div class="scripts">
+    <div class="script"><b>V1 · The one-person spreadsheet</b><q>"If the one person who builds your reports went on leave tomorrow, would you still know how the business is going? In most businesses we look at, the answer is no. We're accountants, and we build automation and live dashboards that run themselves, on the systems you already use. Book a free 30-minute call. We'll tell you honestly whether it's worth fixing."</q></div>
+    <div class="script"><b>V2 · Profit by venue</b><q>"If you run three, five, ten venues: which one made money last month? Not the group total. Each venue, after wages. We connect your POS, rostering and Xero into one dashboard that shows margin and labour by venue, every week, and flags you when one slips. Free 30-minute call, link below."</q></div>
+    <div class="script"><b>V3 · The cost of copy-and-paste</b><q>"Three people, ten hours a week each, copying numbers between systems. That's about seventy-six thousand dollars a year in wages. Put your own numbers into our calculator. It takes 20 seconds. If it's worth fixing, we'll show you which processes would pay back first."</q></div>
+    <div class="script"><b>V4 · Accountants, not an AI agency</b><q>"Everyone's selling AI right now. Here's the difference with us: we're accountants. We start with your numbers, what each process costs and what you'd save, and we only build what pays back. And you see a working prototype before you commit."</q></div>
+    <div class="script"><b>V5 · Will it work with our systems? (retargeting)</b><q>"If you've been on our site and you're thinking 'will it work with our systems?': it almost always does. Xero, MYOB, payroll, rostering, spreadsheets. Nothing about how your team works has to change. Book the free call and we'll check your setup."</q></div>
+    <div class="script"><b>Also planned</b>A "6 numbers every multi-site business should see on Monday" carousel; a testimonial card ("Dom has saved us more money than we've spent!"); sector versions for facilities, early learning, mining and civil.</div>
+  </div>
+</div></section>
+
+<!-- LEAD FORM -->
+<section class="block alt" id="form"><div class="wrap">
+  <div class="eyebrow">Turning clicks into calls</div>
+  <h2>Lead form and follow-up</h2>
+  <div class="grid2" style="align-items:start">
+    <div class="form-mock">
+      <div class="fh"><b>Free 30-minute discovery call</b><span>Business experts who understand the numbers and the technology. We'll tell you honestly what's worth automating.</span></div>
+      <div class="q"><b>How many staff does your business have?</b><span class="opt x">Under 10</span><span class="opt">10–50</span><span class="opt">51–200</span><span class="opt">200+</span></div>
+      <div class="q"><b>What's costing you most right now?</b><span class="opt">Manual admin and data entry</span><span class="opt">Slow month-end reporting</span><span class="opt">No clear view of profit by site</span><span class="opt">Systems that don't talk</span><span class="opt">Something else</span></div>
+      <div class="q"><b>When would you like this sorted?</b><span class="opt">Now, ASAP</span><span class="opt">This quarter</span><span class="opt">Within 6 months</span><span class="opt">Just exploring</span></div>
+      <div class="q"><b>Your details</b><span class="muted small">Name · work email · mobile · company name (typed, not pre-filled) · job title</span></div>
+      <div class="fb"><div class="btn">Review and submit</div></div>
+    </div>
+    <div>
+      <h4>How the form protects lead quality</h4>
+      <ul>
+        <li><b>"Higher intent" form:</b> people review their answers before submitting, which cuts accidental and junk enquiries.</li>
+        <li><b>Staff question:</b> businesses under 10 staff get a polite thank-you and useful resources instead of a call offer.</li>
+        <li><b>Typed company name:</b> a simple filter for low-effort submissions.</li>
+      </ul>
+      <h4 style="margin-top:22px">What happens after someone enquires</h4>
+      <ol>
+        <li>The lead reaches Dominic and the CRM <b>within minutes</b>, in the same format as website enquiries.</li>
+        <li>An SMS goes out straight away: "Thanks, Dominic's team at Qubik will call you today."</li>
+        <li><b>A call within one business hour.</b> Social leads cool off fast; speed matters more than anything else in this plan.</li>
+        <li>Every lead is rated (qualified? call booked? call held?), so we optimise for real conversations, not form fills.</li>
+      </ol>
+      <h4 style="margin-top:22px">Tracking</h4>
+      <p class="small">Meta and LinkedIn tracking is added to the landing pages, and every ad carries a tag naming the exact ad. Each enquiry email shows which ad and audience it came from. Later, qualified leads are fed back to Meta and LinkedIn so their systems learn what a good lead looks like.</p>
+    </div>
+  </div>
+
+  <h3>Testing rules</h3>
+  <div class="tbl"><table>
+    <tr><th>Situation</th><th>Action</th></tr>
+    <tr><td>An ad concept has spent ~A$120–150, with cost per lead on target and 40%+ qualified</td><td><b>Promote:</b> move to the Scale campaign and make 3 new versions of its hook</td></tr>
+    <tr><td>An ad has spent 2× target with no qualified lead, or very few people click</td><td><b>Stop</b> it and replace it</td></tr>
+    <tr><td>The same people have seen an ad 3+ times in a week, or its cost per lead rises 30%+</td><td><b>Refresh</b> the image or hook</td></tr>
+    <tr><td>More than 60% of Meta leads are unqualified</td><td>Send traffic to the landing page instead of the in-app form, or add a revenue question</td></tr>
+    <tr><td>Week 6: a channel's cost per qualified lead is still more than 2× target</td><td><b>Pause</b> that channel's cold campaigns; keep retargeting</td></tr>
+    <tr><td>One channel clearly wins</td><td>It takes the other channel's budget before any new money is added</td></tr>
+  </table></div>
+</div></section>
+
+<!-- LINKEDIN -->
+<section class="block" id="linkedin"><div class="wrap">
+  <div class="eyebrow">LinkedIn</div>
+  <h2>LinkedIn strategy</h2>
+  <p class="lede">LinkedIn reaches finance and operations decision-makers precisely, by job title, company size and industry, and even by named company. It costs more per lead, but more of those leads qualify.</p>
+
+  <h3>Who we target</h3>
+  <div class="grid2">
+    <div class="card">
+      <h4>Core audience</h4>
+      <ul class="small">
+        <li>Australia · companies with 11 to 5,000 staff</li>
+        <li>Owners, founders, CEOs/MDs, GMs, CFOs, finance directors and controllers, COOs and heads of operations</li>
+        <li>Industries: logistics and transport, hospitality, health care, facilities services, retail, childcare, mining, civil, aviation</li>
+        <li>Excluded: IT, software, consulting, accounting and recruitment firms</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h4>Plus: the "Qubik 500"</h4>
+      <p class="small">A hand-built list of named target companies (see <a href="#list">Target list</a>). We upload it to LinkedIn and combine it with senior job titles, so the ads reach decision-makers at exactly the companies we want.</p>
+    </div>
+  </div>
+
+  <h3>Campaigns</h3>
+  <div class="tbl"><table>
+    <tr><th>Campaign</th><th>What it is</th><th class="num">Daily budget</th><th>Starts</th></tr>
+    <tr><td><b>Playbook</b></td><td>A "Weekly Numbers Playbook" shown as a LinkedIn document: the first 3 pages are free, and a short form unlocks the rest. Covers the 6 numbers every multi-site business should see on Monday, with sector examples</td><td class="num">A$25</td><td>Week 1</td></tr>
+    <tr><td><b>Dominic's posts</b></td><td>Dominic's own LinkedIn posts, promoted. The cheapest way to reach people, and it builds familiarity</td><td class="num">A$12</td><td>Week 1</td></tr>
+    <tr><td><b>Target list ads</b></td><td>Sector ads to the Qubik 500 companies</td><td class="num">A$15</td><td>Week 1</td></tr>
+    <tr><td><b>Direct messages</b></td><td>Sponsored messages from Dominic, only to the target list and people who've engaged (see below)</td><td class="num">A$20</td><td>Week 3</td></tr>
+    <tr><td><b>Retargeting</b></td><td>Free call and prototype offer to people who read the playbook, watched videos or visited the site</td><td class="num">A$10</td><td>Week 3</td></tr>
+  </table></div>
+
+  <h3>Direct messages from Dominic</h3>
+  <p class="muted">These arrive in the LinkedIn inbox as a short conversation with buttons, sent in Dominic's name and marked "Sponsored". They go only to people who already know the name: the target list and people who've engaged with the ads. Expect about 40–65% to open them.</p>
+  <div class="chat">
+    <div class="msg"><div class="who">Dominic Guinea · Founder, Qubik</div>Hi {first name}, Dominic here, founder of Qubik in Brisbane. We're accountants who build automation and live dashboards for multi-site businesses.<br><br>Quick question: at {company}, how long after month-end do you see profit by site?</div>
+    <div class="btns"><span>Within a week</span><span>2–3 weeks</span><span>Honestly, longer</span><span>Not my area</span></div>
+    <div class="branch"><b>"2–3 weeks" / "Honestly, longer" →</b> "You're not alone. We connect your accounting, payroll and rostering into one live dashboard: profit and labour by site every Monday, with alerts when a site slips. You see a working prototype before you commit." <em>[Get the playbook] [Book a free call] [What does it cost?]</em></div>
+    <div class="branch"><b>"What does it cost?" →</b> "We don't sell packages. Scoping and a working prototype is a fixed fee agreed upfront, then the build is priced against the design you approve." <em>[Book a call] [Send me the playbook]</em></div>
+    <div class="branch"><b>"Within a week" →</b> "Better than most. The next win is usually automating what feeds the reports: bills, orders, timesheets." <em>[Show me an example] [Book a call]</em></div>
+    <div class="branch"><b>"Not my area" →</b> "Thanks. Who looks after reporting at {company}? Here's a short playbook you could pass on."</div>
+  </div>
+  <p class="small muted">Other versions rotate monthly: companies hiring admin staff, an invitation to a Brisbane operators' lunch, and a personalised dashboard mock-up for the top 50 companies.</p>
+
+  <h3>Dominic's personal follow-up</h3>
+  <p>LinkedIn shows which target companies are engaging with the ads. Dominic then sends 10–15 personal connection requests a day to people at those companies, each mentioning something real about their business, with no pitch. <b>The order matters:</b> 2–3 weeks of ads first, then Dominic's note, then a sponsored message only to those who didn't reply.</p>
+</div></section>
+
+<!-- TARGET LIST -->
+<section class="block alt" id="list"><div class="wrap">
+  <div class="eyebrow">Account targeting</div>
+  <h2>The "Qubik 500": a list of qualified companies</h2>
+  <p class="lede">Australian businesses with 10–1,000+ staff (sweet spot 30–500), running <b>multiple sites</b>, in the sectors our dashboards already speak to. Most of this can be built from public data.</p>
+  <div class="tbl"><table>
+    <tr><th>Sector</th><th>Where we find them</th></tr>
+    <tr><td><b>Early learning</b></td><td>The national childcare register (public), filtered to operators running 3–60 centres</td></tr>
+    <tr><td><b>Hospitality</b></td><td>State liquor licence registers: groups holding 3+ venue licences</td></tr>
+    <tr><td><b>Clinics</b> (allied health, dental, vet)</td><td>Group websites and health service directories: groups with 3+ clinics</td></tr>
+    <tr><td><b>Facilities services</b></td><td>Government tender awards: cleaning, security and maintenance contractors</td></tr>
+    <tr><td><b>Mining and civil</b></td><td>Tender awards, industry association members, regional directories</td></tr>
+    <tr><td><b>Logistics</b></td><td>LinkedIn Sales Navigator: transport companies with 50–500 staff</td></tr>
+    <tr><td><b>All sectors</b></td><td>Fast-growth and top private company lists; Qubik's own clients and contacts</td></tr>
+  </table></div>
+  <div class="grid3">
+    <div class="card lime"><div class="step">Tier 1 · ~50 companies</div><h4>Everything</h4><p class="small" style="margin:0">Ads, Dominic's personal note, sponsored message, and a free dashboard mock-up with their own site names</p></div>
+    <div class="card"><div class="step">Tier 2 · ~250 companies</div><h4>Ads and messages</h4><p class="small" style="margin:0">Sector ads, sponsored messages, the playbook</p></div>
+    <div class="card"><div class="step">Tier 3 · 700+ companies</div><h4>Ads only</h4><p class="small" style="margin:0">Sector ads and retargeting</p></div>
+  </div>
+  <p class="small muted" style="margin-top:16px">We target companies, not scraped email addresses. Outreach is one-to-one by LinkedIn and phone, in line with Australian spam and privacy rules.</p>
+</div></section>
+
+<!-- CREATIVE PLAYS -->
+<section class="block" id="plays"><div class="wrap">
+  <div class="eyebrow">Beyond standard ads</div>
+  <h2>Creative plays</h2>
+  <div class="grid2">
+    <div class="card">
+      <h4>Reach them at the right moment</h4>
+      <ul class="small">
+        <li><b>Hiring admin staff:</b> companies advertising for accounts payable or data entry roles see "Hiring another AP officer? Talk to us first."</li>
+        <li><b>Opening new sites:</b> "Opening site number 6? Your reporting has to scale with it."</li>
+        <li><b>New CFO or COO:</b> a note from Dominic within 30–60 days of their move.</li>
+        <li><b>Using Power BI or spreadsheets:</b> "Built a Power BI dashboard nobody updates?"</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h4>Timing</h4>
+      <ul class="small">
+        <li><b>Days 1–15 of each month:</b> month-end hooks ("It's the 18th. Do you know last month's profit yet?")</li>
+        <li><b>Sunday evenings (Meta):</b> "Doing the numbers on a Sunday night again?"</li>
+        <li><b>Now to mid-December:</b> "Before 2027: get your numbers off spreadsheets."</li>
+        <li><b>20 Dec–10 Jan:</b> video views only, to build cheap retargeting audiences for January.</li>
+        <li><b>April–June:</b> "Don't do another EOFY on spreadsheets."</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h4>Trade shows</h4>
+      <p class="small">Ads aimed at the venue during the show and for a day or two after:</p>
+      <ul class="small">
+        <li>Restaurant &amp; Foodservice Show, Melbourne (2–4 May 2027)</li>
+        <li>Fine Food Australia, Sydney (6–9 Sep 2027)</li>
+        <li>CeMAT (logistics, Jul 2027) and AIMEX (mining, Sep 2027): dates to confirm</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h4>Stand-out touches for the top accounts</h4>
+      <ul class="small">
+        <li><b>Free dashboard mock-up:</b> their own site names on sample numbers, sent by Dominic</li>
+        <li><b>Multi-site operators lunch:</b> 8 seats in Brisbane, hosted by Dominic, no pitch</li>
+        <li><b>Printed "Monday report" mailer:</b> sent to the top 30 companies, with a QR code to book a call</li>
+        <li><b>Monthly live demo:</b> "Inside a 12-venue group's profit dashboard"</li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<!-- BUDGET & RESULTS -->
+<section class="block alt" id="budget"><div class="wrap">
+  <div class="eyebrow">Investment</div>
+  <h2>Budget and expected results</h2>
+  <div class="tbl"><table>
+    <tr><th>Channel</th><th class="num">Weeks 1–2</th><th class="num">Weeks 3–8</th><th class="num">8 weeks (approx.)</th></tr>
+    <tr><td>Google Ads (running now)</td><td class="num">A$45/day</td><td class="num">A$45/day</td><td class="num">A$2,500</td></tr>
+    <tr><td>LinkedIn</td><td class="num">A$52/day</td><td class="num">A$82/day</td><td class="num">A$4,200</td></tr>
+    <tr><td>Meta</td><td class="num">A$50/day</td><td class="num">A$65–80/day</td><td class="num">A$3,400–4,100</td></tr>
+    <tr><td>Sales Navigator, mock-ups, lunch, mailer</td><td class="num" colspan="2">one-off and monthly costs</td><td class="num">A$1,800–2,700</td></tr>
+    <tr class="total"><td>Total</td><td class="num">~A$147/day</td><td class="num">~A$190–205/day</td><td class="num">~A$11,900–13,500</td></tr>
+  </table></div>
+  <p class="small muted">A leaner version (LinkedIn A$40/day, Meta A$25–40/day, no local or target-list ads until week 5) costs about A$90/day for social. It works, but each test takes about twice as long to give a clear answer.</p>
+
+  <h3>What we expect over 8 weeks (estimates)</h3>
+  <div class="tbl"><table>
+    <tr><th></th><th class="num">LinkedIn</th><th class="num">Meta</th></tr>
+    <tr><td>Leads</td><td class="num">15–35</td><td class="num">25–70</td></tr>
+    <tr><td>Qualified leads</td><td class="num">10–22</td><td class="num">9–26</td></tr>
+    <tr><td>Calls held</td><td class="num">6–14</td><td class="num">6–16</td></tr>
+    <tr><td>Scoping sales</td><td class="num">1–2</td><td class="num">1–2</td></tr>
+  </table></div>
+  <div class="grid2">
+    <div class="card teal"><h4>What makes it pay</h4><p class="small" style="margin:0">One scoping engagement (A$3,500*) covers about 7 weeks of LinkedIn. One build (A$57k+*) covers about a year of all three channels together. Over six months, the plan needs <b>at least one build</b> across all channels to pay back. *To be confirmed by Qubik.</p></div>
+    <div class="card"><h4>What moves the numbers most</h4><p class="small" style="margin:0">How fast leads are called, getting Dominic's videos live in weeks 2–3, and one real case study. Even one sentence from a real client will outperform any ad angle.</p></div>
+  </div>
+</div></section>
+
+<!-- TIMELINE -->
+<section class="block" id="timeline"><div class="wrap">
+  <div class="eyebrow">Plan</div>
+  <h2>Timeline</h2>
+  <div class="timeline">
+    <div class="wk"><b>Setup (1–2 weeks)</b><ul><li>Ad accounts and tracking</li><li>Sector landing pages and calculator page</li><li>Playbook PDF</li><li>Video shoot with Dominic</li><li>Lead routing to Dominic and the CRM</li></ul></div>
+    <div class="wk"><b>Weeks 1–2</b><ul><li>LinkedIn playbook, Dominic's posts, target list ads</li><li>Meta test, local and retargeting</li><li>Every lead reviewed daily</li></ul></div>
+    <div class="wk"><b>Week 3</b><ul><li>Direct messages and LinkedIn retargeting start</li><li>Weakest ads replaced</li><li>Sydney and Melbourne areas added</li></ul></div>
+    <div class="wk"><b>Week 4 · Review</b><ul><li>Compare cost per qualified lead across Google, LinkedIn and Meta</li><li>Winning ads scaled</li><li>Form vs landing page test</li></ul></div>
+    <div class="wk"><b>Week 8 · Decision</b><ul><li>Keep, change or stop each channel</li><li>Budget for months 3–6</li><li>Phase 2: events, webinar, more sectors</li></ul></div>
+  </div>
+</div></section>
+
+<!-- WHAT WE NEED -->
+<section class="block dark" id="need"><div class="wrap">
+  <div class="eyebrow">Next steps</div>
+  <h2>What we need from Qubik</h2>
+  <p class="lede">With these in place, setup takes about 1–2 weeks.</p>
+  <ol class="need" style="color:var(--ink)">
+    <li><b>Confirm prices:</b> the scoping fee and build range, and whether a price can be mentioned in ads.</li>
+    <li><b>Dominic's time:</b> 2 hours to film the videos, 4–6 LinkedIn posts (we'll draft them), and approval to send sponsored messages in his name.</li>
+    <li><b>Access:</b> admin on the LinkedIn company page and Meta Business account, and a payment card for each ad account.</li>
+    <li><b>One small website setting:</b> a domain verification record for Meta (a five-minute job for your web developer).</li>
+    <li><b>One case study</b> with a client's permission, even a short one.</li>
+    <li><b>Existing clients:</b> OK to show them ads and contact them about automation? (We'll check marketing consent first.)</li>
+    <li><b>Review the wording</b> of the ads and messages above, especially the prototype promise and the Strathpine coffee offer.</li>
+    <li><b>A calendar booking link</b>, if you have one, to cut no-shows.</li>
+  </ol>
+</div></section>
+
+<footer><div class="wrap">
+  <img src="{{LOGO_WHITE}}" alt="Qubik">
+  <p>Prepared November 2026 for Qubik Accounting, 18–22 Dixon Street, Strathpine QLD 4500.<br>
+  Cost and result figures are planning estimates based on public 2026 advertising benchmarks (including Kiin, Fibbler, Metadata.io, Ad Partner and Thinkify), which vary widely; they will be replaced with Qubik's own results after four weeks. Dashboard screens in the sample ads use sample data and fictional names.</p>
+</div></footer>
+
+</body>
+</html>
