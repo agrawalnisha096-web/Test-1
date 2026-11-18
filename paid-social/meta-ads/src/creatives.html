@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<title>Qubik Meta ad creatives</title>
+<!-- Source for the sample Meta ad images. Render with render.js (Playwright); each .ad is screenshotted at its native size. All dashboard screens are sample data with fictional names. -->
+<style>
+@font-face { font-family: 'Plex'; font-weight: 400; src: url(https://cdn.jsdelivr.net/npm/@fontsource/ibm-plex-sans@5.0.8/files/ibm-plex-sans-latin-400-normal.woff2) format('woff2'); }
+@font-face { font-family: 'Plex'; font-weight: 500; src: url(https://cdn.jsdelivr.net/npm/@fontsource/ibm-plex-sans@5.0.8/files/ibm-plex-sans-latin-500-normal.woff2) format('woff2'); }
+@font-face { font-family: 'Plex'; font-weight: 600; src: url(https://cdn.jsdelivr.net/npm/@fontsource/ibm-plex-sans@5.0.8/files/ibm-plex-sans-latin-600-normal.woff2) format('woff2'); }
+@font-face { font-family: 'Plex'; font-weight: 700; src: url(https://cdn.jsdelivr.net/npm/@fontsource/ibm-plex-sans@5.0.8/files/ibm-plex-sans-latin-700-normal.woff2) format('woff2'); }
+@font-face { font-family: 'PlexMono'; font-weight: 500; src: url(https://cdn.jsdelivr.net/npm/@fontsource/ibm-plex-mono@5.0.8/files/ibm-plex-mono-latin-500-normal.woff2) format('woff2'); }
+@font-face { font-family: 'PlexMono'; font-weight: 600; src: url(https://cdn.jsdelivr.net/npm/@fontsource/ibm-plex-mono@5.0.8/files/ibm-plex-mono-latin-600-normal.woff2) format('woff2'); }
+:root {
+  --navy: #2e4455; --deep: #22333f; --deeper: #1a2731; --teal: #2e96a0; --teal-ink: #1f7a83; --teal-soft: #e3f1f2;
+  --lime: #c6da2c; --lime-soft: #eef3cf; --page: #f6f7f4; --ink: #1f2a33; --muted: #5b6b78; --bad: #c0392b;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #888; font-family: 'Plex', sans-serif; color: var(--ink); padding: 40px; display: flex; flex-wrap: wrap; gap: 40px; }
+.ad { position: relative; overflow: hidden; flex: none; }
+.sq { width: 1080px; height: 1080px; }
+.pt { width: 1080px; height: 1350px; }
+.st { width: 1080px; height: 1920px; }
+.dark { background: var(--deep); color: #fff; }
+.eyebrow { font-weight: 600; font-size: 30px; letter-spacing: .06em; text-transform: uppercase; color: var(--lime); }
+.h { font-weight: 700; letter-spacing: -.02em; line-height: 1.04; }
+.sub { font-size: 36px; line-height: 1.3; }
+.pad { padding: 72px 72px 0; }
+.shot { display: block; border-radius: 18px; box-shadow: 0 30px 70px rgba(0,0,0,.35); background-repeat: no-repeat; }
+.note { font-size: 22px; opacity: .7; letter-spacing: .02em; }
+.foot { position: absolute; left: 0; right: 0; bottom: 0; height: 132px; display: flex; align-items: center; gap: 28px; padding: 0 64px; background: var(--deeper); color: #dfe8ec; }
+.foot img { height: 54px; }
+.foot .tag { font-size: 25px; line-height: 1.25; flex: 1; }
+.pill { background: var(--lime); color: var(--deeper); font-weight: 700; font-size: 28px; padding: 18px 30px; border-radius: 999px; white-space: nowrap; }
+.foot.light { background: #fff; color: var(--muted); border-top: 2px solid #e4e8e6; }
+
+/* 1 Hospitality heatmap */
+#a1 .pad h1 { font-size: 86px; margin: 22px 0 26px; }
+#a1 .sub { color: #c9d6dc; }
+#a1 .shot { margin: 52px auto 0; width: 960px; height: 600px; background-image: url(../../../google-ads/landing-assets/tab-hospitality-heatmap.webp); background-size: 1180px auto; background-position: -190px -20px; }
+#a1 .cap { width: 960px; margin: 18px auto 0; color: #b6c6cd; }
+
+/* 2 Notifications (feed + story) */
+.notif-bg { background: radial-gradient(1200px 800px at 80% 10%, #3aa7b1 0%, var(--teal-ink) 35%, var(--deep) 75%); color: #fff; }
+#a2 .pad h1, #a2s .pad h1 { font-size: 80px; margin-top: 22px; }
+.phone { width: 600px; border-radius: 64px; background: #0f171d; border: 14px solid #0b1116; box-shadow: 0 40px 90px rgba(0,0,0,.45); margin: 0 auto; padding: 56px 30px 40px; position: relative; }
+.phone .time { text-align: center; font-weight: 300; font-size: 104px; color: #fff; letter-spacing: -.02em; line-height: 1; }
+.phone .date { text-align: center; font-size: 28px; color: #c9d6dc; margin: 6px 0 28px; }
+.nt { background: rgba(255,255,255,.92); color: var(--ink); border-radius: 30px; padding: 24px 26px; margin-bottom: 18px; }
+.nt .app { display: flex; align-items: center; gap: 12px; font-size: 21px; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; font-weight: 600; }
+.nt .app i { width: 34px; height: 34px; border-radius: 9px; background: var(--navy); display: inline-flex; align-items: center; justify-content: center; color: var(--lime); font-style: normal; font-weight: 700; font-size: 22px; text-transform: none; }
+.nt .app span { margin-left: auto; text-transform: none; letter-spacing: 0; font-weight: 400; }
+.nt b { display: block; font-size: 29px; margin: 12px 0 4px; }
+.nt p { font-size: 26px; line-height: 1.3; color: #33424e; }
+.nt.alert b { color: var(--bad); }
+#a2 .phone { margin-top: 44px; width: 580px; padding: 40px 26px 26px; }
+#a2 .after { text-align: center; font-size: 30px; color: #dfe8ec; margin-top: 30px; padding: 0 90px; line-height: 1.3; }
+#a2s .pad { padding-top: 260px; }
+#a2s .phone { margin-top: 70px; width: 720px; padding: 64px 34px 40px; }
+#a2s .phone .time { font-size: 140px; }
+#a2s .after { text-align: center; font-size: 38px; color: #dfe8ec; margin-top: 50px; padding: 0 110px; line-height: 1.3; }
+#a2s .storycta { position: absolute; left: 0; right: 0; bottom: 360px; text-align: center; }
+#a2s .storycta .pill { font-size: 36px; padding: 24px 44px; }
+
+/* 3 Calculator */
+#a3 { background: var(--page); }
+#a3 .pad h1 { font-size: 84px; color: var(--navy); margin: 22px 0 0; }
+#a3 .eyebrow { color: var(--teal-ink); }
+#a3 .board { margin: 44px 72px 0; background: #fff; border: 3px solid #dde3e2; border-radius: 28px; padding: 30px 50px; font-family: 'PlexMono', monospace; }
+#a3 .row { display: flex; justify-content: space-between; align-items: baseline; font-size: 44px; padding: 12px 0; border-bottom: 2px dashed #dde3e2; color: var(--ink); }
+#a3 .row .op { color: var(--teal); font-weight: 600; width: 60px; }
+#a3 .row .v { flex: 1; font-weight: 600; }
+#a3 .row .l { font-family: 'Plex'; font-size: 30px; color: var(--muted); }
+#a3 .total { display: flex; justify-content: space-between; align-items: center; margin-top: 22px; background: var(--lime); border-radius: 18px; padding: 26px 30px; }
+#a3 .total .v { font-size: 74px; font-weight: 600; color: var(--deeper); }
+#a3 .total .l { font-family: 'Plex'; font-size: 30px; color: var(--deeper); font-weight: 600; text-align: right; line-height: 1.2; }
+#a3 .ask { margin: 30px 72px 0; font-size: 33px; color: var(--navy); line-height: 1.3; }
+#a3 .ask b { color: var(--teal-ink); }
+
+/* 4 Text-only key-person risk */
+#a4 { background: var(--lime); color: var(--deeper); }
+#a4 .q { position: absolute; left: 80px; right: 80px; top: 120px; font-weight: 700; font-size: 92px; letter-spacing: -.025em; line-height: 1.06; }
+#a4 .q em { font-style: normal; background: var(--deeper); color: var(--lime); padding: 0 14px; border-radius: 10px; }
+#a4 .by { position: absolute; left: 80px; right: 80px; bottom: 90px; display: flex; align-items: center; gap: 26px; font-size: 28px; line-height: 1.3; }
+#a4 .by img { height: 64px; }
+
+/* 5 Spreadsheet vs dashboard */
+#a5 { background: var(--page); }
+#a5 .pad { padding-top: 64px; }
+#a5 .pad h1 { font-size: 76px; color: var(--navy); margin-top: 18px; }
+#a5 .eyebrow { color: var(--teal-ink); }
+.lbl { display: inline-block; font-weight: 700; font-size: 26px; letter-spacing: .06em; text-transform: uppercase; padding: 10px 18px; border-radius: 10px; }
+#a5 .today { margin: 40px 72px 0; }
+#a5 .today .lbl { background: #f3d4cf; color: var(--bad); }
+.xl { margin-top: 14px; background: #fff; border: 2px solid #c9d0cd; border-radius: 10px; overflow: hidden; font-size: 22px; font-family: Arial, sans-serif; transform: rotate(-1.2deg); box-shadow: 0 14px 30px rgba(0,0,0,.12); }
+.xl table { width: 100%; border-collapse: collapse; }
+.xl td { border: 1px solid #e1e5e3; padding: 8px 10px; white-space: nowrap; color: #333; }
+.xl tr:first-child td { background: #eef0ef; font-weight: 700; color: #555; }
+.xl .y { background: #fff59d; } .xl .r { color: #c00; font-weight: 700; } .xl .g { background: #d7ecd9; }
+.xl .tabs { display: flex; gap: 2px; background: #eef0ef; padding: 6px 10px 0; font-size: 19px; }
+.xl .tabs span { background: #fff; padding: 6px 12px; border: 1px solid #d5dad8; border-bottom: 0; color: #444; }
+.xl .tabs span.on { font-weight: 700; color: #1d6f42; }
+#a5 .with { margin: 40px 72px 0; }
+#a5 .with .lbl { background: var(--teal-soft); color: var(--teal-ink); }
+#a5 .with .shot { margin-top: 14px; width: 936px; height: 400px; background-image: url(../../../google-ads/landing-assets/sector-logistics.webp); background-size: 1180px auto; background-position: -170px -150px; box-shadow: 0 20px 50px rgba(0,0,0,.18); }
+
+/* 6 Local depot (Yatala) */
+#a6 .pad h1 { font-size: 92px; margin: 22px 0 20px; }
+#a6 .sub { color: #c9d6dc; }
+#a6 .shot { margin: 44px auto 0; width: 936px; height: 600px; background-color: #fff; background-image: url(../../../google-ads/landing-assets/sector-logistics.webp); background-size: 2800px auto; background-position: -1872px -1070px; position: relative; }
+#a6 .ring { position: absolute; left: 112px; top: 308px; width: 640px; height: 64px; border: 6px solid var(--lime); border-radius: 14px; }
+#a6 .cap { width: 936px; margin: 18px auto 0; color: #b6c6cd; }
+
+/* 7 Brisbane North neighbours */
+#a7 { background: var(--teal-soft); }
+#a7 .pad h1 { font-size: 88px; color: var(--navy); margin: 22px 0 26px; }
+#a7 .eyebrow { color: var(--teal-ink); }
+#a7 .sub { color: var(--ink); }
+#a7 .card { position: absolute; left: 72px; right: 72px; bottom: 190px; background: #fff; border-radius: 24px; padding: 34px 40px; display: flex; align-items: center; gap: 30px; box-shadow: 0 16px 40px rgba(46,68,85,.15); }
+#a7 .card svg { flex: none; }
+#a7 .card b { display: block; font-size: 36px; color: var(--navy); }
+#a7 .card span { font-size: 28px; color: var(--muted); }
+
+/* 8 Clinics */
+#a8 { background: #123e44; color: #fff; }
+#a8 .pad h1 { font-size: 86px; margin: 22px 0 26px; }
+#a8 .sub { color: #cfe3e5; }
+#a8 .shot { margin: 52px auto 0; width: 936px; height: 600px; background-color: #fff; background-image: url(../../../google-ads/landing-assets/sector-healthcare.webp); background-size: 2800px auto; background-position: -1860px -1070px; }
+#a8 .cap { width: 936px; margin: 18px auto 0; color: #a9c7ca; }
+</style>
+</head>
+<body>
+
+<!-- 1. Hospitality: profit by venue (A4) -->
+<section class="ad pt dark" id="a1">
+  <div class="pad">
+    <div class="eyebrow">For groups with 3+ venues</div>
+    <h1 class="h">Which of your venues actually made money last fortnight?</h1>
+    <p class="sub">Margin by venue, every fortnight. Red means a problem, and you see it now, not at month-end.</p>
+  </div>
+  <div class="shot"></div>
+  <p class="cap note">Qubik venue dashboard · sample data · fictional venue names</p>
+  <div class="foot"><img src="../../../google-ads/landing-assets/qubik-logo-white.svg" alt="Qubik"><div class="tag">Automation and live dashboards,<br>built by accountants</div><div class="pill">Free 30-min call</div></div>
+</section>
+
+<!-- 2. Monday 7am notifications, feed (A9) -->
+<section class="ad pt notif-bg" id="a2">
+  <div class="pad">
+    <div class="eyebrow">Automated reporting</div>
+    <h1 class="h">Monday, 7:00am. Your profit report is already in.</h1>
+  </div>
+  <div class="phone">
+    <div class="time">7:00</div>
+    <div class="date">Monday</div>
+    <div class="nt"><div class="app"><i>Q</i>Weekly profit report<span>now</span></div><b>Sent to the leadership team</b><p>Group margin 15.8% last fortnight. 11 of 16 sites profitable.</p></div>
+    <div class="nt alert"><div class="app"><i>Q</i>Margin alert<span>now</span></div><b>Townsville: 4.1% this fortnight</b><p>Below your 5% threshold. Tap to see why.</p></div>
+  </div>
+  <p class="after">Reports and alerts that run themselves, on the systems you already use.</p>
+  <div class="foot"><img src="../../../google-ads/landing-assets/qubik-logo-white.svg" alt="Qubik"><div class="tag">No new software.<br>Built by accountants.</div><div class="pill">Free 30-min call</div></div>
+</section>
+
+<!-- 3. Calculator (A5) -->
+<section class="ad pt" id="a3">
+  <div class="pad">
+    <div class="eyebrow">The real cost of manual work</div>
+    <h1 class="h">What does copy-and-paste cost your business?</h1>
+  </div>
+  <div class="board">
+    <div class="row"><span class="op"></span><span class="v">3</span><span class="l">people doing manual admin</span></div>
+    <div class="row"><span class="op">×</span><span class="v">10 hrs</span><span class="l">a week each</span></div>
+    <div class="row"><span class="op">×</span><span class="v">A$55</span><span class="l">an hour, with on-costs</span></div>
+    <div class="row"><span class="op">×</span><span class="v">46</span><span class="l">working weeks</span></div>
+    <div class="total"><span class="v">A$75,900</span><span class="l">a year<br>on copy-and-paste</span></div>
+  </div>
+  <p class="ask">Example numbers. <b>Put in your own: it takes 20 seconds.</b> Then see which 2–3 processes would pay back first.</p>
+  <div class="foot"><img src="../../../google-ads/landing-assets/qubik-logo-white.svg" alt="Qubik"><div class="tag">Accountants who automate<br>the work your team shouldn't do by hand</div><div class="pill">Try the calculator</div></div>
+</section>
+
+<!-- 4. Key-person risk, text only (A1) -->
+<section class="ad sq" id="a4">
+  <div class="q">If the one person who builds your reports went on leave tomorrow, would you <em>still know</em> how the business is going?</div>
+  <div class="by"><img src="../../../google-ads/landing-assets/qubik-logo.svg" alt="Qubik"><div>Accountants who build automation and live dashboards, so your numbers don't depend on one person.</div></div>
+</section>
+
+<!-- 5. Spreadsheet vs dashboard, logistics (A4/A8) -->
+<section class="ad pt" id="a5">
+  <div class="pad">
+    <div class="eyebrow">For transport and logistics</div>
+    <h1 class="h">Margin per depot, every fortnight. Not three weeks after month-end.</h1>
+  </div>
+  <div class="today"><span class="lbl">Today</span>
+    <div class="xl">
+      <div class="tabs"><span class="on">Depot P&amp;L FINAL v7</span><span>Copy of Jobs (2)</span><span>DON'T TOUCH</span></div>
+      <table>
+        <tr><td>Depot</td><td>Revenue</td><td>Wages</td><td>Fuel</td><td>Margin</td><td>Notes</td></tr>
+        <tr><td>Brisbane North</td><td>1,040,212</td><td class="y">??</td><td>88,410</td><td class="r">#REF!</td><td>waiting on payroll</td></tr>
+        <tr><td>Yatala</td><td class="y">576,0O4</td><td>301,877</td><td>61,203</td><td>36.2%</td><td>check w/ Sam</td></tr>
+        <tr><td>Toowoomba</td><td>305,118</td><td>212,640</td><td class="y"></td><td class="r">#DIV/0!</td><td>fuel inv missing</td></tr>
+      </table>
+    </div>
+  </div>
+  <div class="with"><span class="lbl">With Qubik</span><div class="shot"></div></div>
+  <div class="foot"><img src="../../../google-ads/landing-assets/qubik-logo-white.svg" alt="Qubik"><div class="tag">Your systems, connected and automated.<br>Dashboard shown with sample data.</div><div class="pill">Free 30-min call</div></div>
+</section>
+
+<!-- 6. Local: Yatala depots (L1) -->
+<section class="ad pt dark" id="a6">
+  <div class="pad">
+    <div class="eyebrow">Brisbane · Gold Coast corridor</div>
+    <h1 class="h">Running a depot out of Yatala?</h1>
+    <p class="sub">See profit by depot every fortnight, straight from the systems you already use. No more building it in a spreadsheet.</p>
+  </div>
+  <div class="shot"><div class="ring"></div></div>
+  <p class="cap note">Qubik depot dashboard · sample data · fictional business</p>
+  <div class="foot"><img src="../../../google-ads/landing-assets/qubik-logo-white.svg" alt="Qubik"><div class="tag">Accountants in Strathpine,<br>working Australia-wide</div><div class="pill">Free 30-min call</div></div>
+</section>
+
+<!-- 7. Brisbane North neighbours (L3) -->
+<section class="ad sq" id="a7">
+  <div class="pad">
+    <div class="eyebrow">Brisbane North businesses</div>
+    <h1 class="h">Accountants down the road in Strathpine.</h1>
+    <p class="sub">Come in for a coffee and a 30-minute look at what a live dashboard could show for your business. In person, no obligation.</p>
+  </div>
+  <div class="card">
+    <svg width="72" height="72" viewBox="0 0 24 24" aria-hidden="true"><path fill="#2e96a0" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+    <div><b>18–22 Dixon Street, Strathpine</b><span>Or we come to you · (07) 3205 8938</span></div>
+  </div>
+  <div class="foot light"><img src="../../../google-ads/landing-assets/qubik-logo.svg" alt="Qubik"><div class="tag">Accountants since 2007 · Xero partner since 2013</div><div class="pill">Book a coffee</div></div>
+</section>
+
+<!-- 8. Clinics (A4 healthcare) -->
+<section class="ad pt" id="a8">
+  <div class="pad">
+    <div class="eyebrow">For groups with 3+ clinics</div>
+    <h1 class="h">Your busiest clinic might not be your most profitable.</h1>
+    <p class="sub">Profit by clinic, practitioner costs and appointments in one view, updated automatically.</p>
+  </div>
+  <div class="shot"></div>
+  <p class="cap note">Qubik clinic dashboard · sample data · fictional clinic names</p>
+  <div class="foot"><img src="../../../google-ads/landing-assets/qubik-logo-white.svg" alt="Qubik"><div class="tag">Automation and live dashboards,<br>built by accountants</div><div class="pill">Free 30-min call</div></div>
+</section>
+
+<!-- 2s. Monday 7am, Story/Reels 9:16 (top 14% and bottom 20% kept clear for the platform UI) -->
+<section class="ad st notif-bg" id="a2s">
+  <div class="pad">
+    <div class="eyebrow">Automated reporting</div>
+    <h1 class="h">Monday, 7:00am. Your profit report is already in.</h1>
+  </div>
+  <div class="phone">
+    <div class="time">7:00</div>
+    <div class="date">Monday</div>
+    <div class="nt"><div class="app"><i>Q</i>Weekly profit report<span>now</span></div><b>Sent to the leadership team</b><p>Group margin 15.8% last fortnight. 11 of 16 sites profitable.</p></div>
+    <div class="nt alert"><div class="app"><i>Q</i>Margin alert<span>now</span></div><b>Townsville: 4.1% this fortnight</b><p>Below your 5% threshold. Tap to see why.</p></div>
+  </div>
+  <p class="after">Reports and alerts that run themselves. Built by accountants, on the systems you already use.</p>
+</section>
+
+</body>
+</html>
