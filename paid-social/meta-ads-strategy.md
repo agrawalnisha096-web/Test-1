@@ -92,6 +92,8 @@ Ads: Ad 02 / 09 (Monday 7am), Ad 03 (calculator), testimonial and "see a prototy
 
 ## 5. The sample ads
 
+**How every ad is built:** the hook (the problem, in the buyer's words) + a **"What Qubik does" box** with 2–3 specific lines for that sector (what we connect, what they get, what runs automatically) + the offer path (**free 30-min call → see a working prototype → then decide**) + credentials and a button in the footer. Someone who sees only the image, without reading the post text, should still know what Qubik sells and what happens next.
+
 All images are in `paid-social/meta-ads/`. The HTML source is `meta-ads/src/creatives.html`; re-render with `node paid-social/meta-ads/src/render.js`. Dashboard screens show **sample data with fictional names**, and each ad says so.
 
 Each ad lists its primary text, headline, description, CTA button and destination. The first ~125 characters of the primary text show before "See more", so the hook goes there.
