@@ -134,7 +134,7 @@ Each ad lists its primary text, headline, description, CTA button and destinatio
   > That's an example. Put in your own numbers; it takes 20 seconds. If it's worth fixing, we'll show you which two or three processes would pay back first: supplier bills, orders, the month-end reporting pack.
 - **Headline:** Work out your number in 20 seconds
 - **Description:** Free calculator · no sign-up to see it
-- **CTA:** Learn more → landing page (calculator section for now: `https://qubik.com.au/marketing/automation/#calculator` *(check the anchor id)*; the dedicated page P2 later)
+- **CTA:** Learn more → landing page (calculator section for now: `https://qubik.com.au/marketing/automation/#calc-h` (the calculator heading); the dedicated page P2 later)
 
 ### Ad 04: "If the one person who builds your reports went on leave…" (key-person risk, concept A1)
 ![Ad 04](meta-ads/04-key-person-risk-text-1x1.png)
