@@ -1,11 +1,10 @@
 I'm logged in to Google Ads (account **Qubik**, Customer ID **501-682-6184**) and Microsoft Clarity (clarity.microsoft.com) in this browser. We've spent over A$500 with no leads, and I need the facts to decide what to do.
 
-There are three parts:
-- **Part A:** Google Ads, read only.
-- **Part B:** one Google Ads budget change.
-- **Part C:** Clarity, read only.
+There are two parts, both **read only**:
+- **Part A:** Google Ads.
+- **Part C:** Clarity.
 
-Don't change anything else. Don't accept recommendations, never enter payment details, and don't change, share or export anything in Clarity.
+The campaign is paused for the weekend on purpose. Don't enable it or change anything. Don't accept recommendations, never enter payment details, and don't change, share or export anything in Clarity.
 
 Google Ads campaign: `Search | AU | Automation & AI | Phase 1`.
 
@@ -26,9 +25,6 @@ Google Ads campaign: `Search | AU | Automation & AI | Phase 1`.
 **6. Landing pages (17 Nov to today):** clicks to each final URL, including sitelinks.
 
 **7. Devices (14 Nov to today):** clicks, cost and conversions by device.
-
-## Part B: Google Ads, slow the spend while we decide
-Change the campaign's **average daily budget from A$45 to A$25**. Change nothing else: bid strategy, bid cap, keywords, ads and assets stay as they are. Confirm the new budget and that the campaign is still Enabled.
 
 ## Part C: Microsoft Clarity, read only
 Project: the Qubik project (ID `zcqn6g4kkg`). Date range: **14 Nov 2026 to today**.
@@ -63,4 +59,4 @@ For each landing page, on mobile and desktop separately, describe:
 In five bullet points: what ad visitors typically do, where most of them leave, and anything that suggests a bug or a specific reason they don't enquire.
 
 ## Report back
-Give Parts A and C as plain-text tables and notes, confirm Part B, and list anything you couldn't do.
+Give Parts A and C as plain-text tables and notes, and list anything you couldn't do.
