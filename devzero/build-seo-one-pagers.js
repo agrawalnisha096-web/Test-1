@@ -87,7 +87,7 @@ function build(c) {
   return Packer.toBuffer(doc);
 }
 
-const TRAFFIC_NOTE = 'Source: DataForSEO (Google Ads volumes, Labs rankings and backlinks), US, 12 Nov 2026. Volumes are addressable searches (close variants merged, competitor brand names excluded); difficulty is 0–100. Visits are DataForSEO estimates; Search Console is not yet connected.';
+const TRAFFIC_NOTE = 'Sources: Search Console (clicks), DataForSEO (Google Ads volumes, rankings, backlinks), Nov 2026. Volumes are US addressable searches (close variants merged, competitor brand names excluded); difficulty is 0–100.';
 
 const devzero = {
   file: 'DevZero-SEO-One-Pager.docx',
@@ -95,20 +95,20 @@ const devzero = {
   title: 'DevZero · SEO Priorities',
   subtitle: 'devzero.io: Kubernetes and GPU compute optimisation for platform and infrastructure teams',
   kpis: [
-    ['~820', 'organic visits/mo (Cast AI: 1.7k)'],
+    ['~2,100', 'search clicks/month now (Search Console)'],
     ['1,013', 'ranking keywords, 455 in top 10'],
     ['526', 'referring domains (Cast AI: 3,665)'],
-    ['2–5k', 'visits/mo in 12 months, all markets'],
+    ['3.5–6k', 'clicks/month in 12 months'],
   ],
   strengths: [
-    '**Already competitive:** more search traffic than ScaleOps, PerfectScale and Sedai; about half of Cast AI.',
+    '**Real traffic is growing:** 20,453 clicks in 12 months; up from 835 in April to 2,156 in October.',
     '**Pricing pages are the engine:** 5,200+ instance pages bring 77% of traffic and 746 ranking keywords.',
     '**Top 10 for cloud pricing guides:** GKE pricing #3, EKS pricing #7, AKS pricing #8.',
     '**Solid technical base:** fast server-rendered pages, clean canonicals, rich structured data, AI crawlers allowed.',
   ],
   gaps: [
     '**Money pages get no search traffic:** /kubernetes-cost-optimization ranks #59 for its own term.',
-    '**The pivot left traces:** 27 old URLs with links from 153 sites redirect to /blog or return errors.',
+    '**The pivot left traces:** 47 old URLs that earned 18% of clicks now redirect to /blog.',
     '**Out-of-date signals:** llms.txt and off-topic webinars still describe dev environments.',
     '**Missing from "best Kubernetes cost tools" lists** (not in the top 80) and review sites.',
   ],
@@ -128,7 +128,7 @@ const devzero = {
   ],
   trafficNote: TRAFFIC_NOTE + ' Buying-intent searches are small, but a single DevZero customer is worth five to six figures a year.',
   timeline: [
-    ['Weeks 1–4', 'Technical clean-up and redirects, separate content from Nautili, connect Search Console for a real baseline'],
+    ['Weeks 1–4', 'Technical clean-up and redirects, separate content from Nautili, conversion tracking in Tag Manager and GA4'],
     ['Months 2–3', 'Region and instance pages, GPU price index, alternatives pages, list and review-site outreach'],
     ['Months 4–12', 'Publish twice a week, data report, improve programmatic pages, track AI assistant mentions'],
   ],
@@ -141,7 +141,7 @@ const nautili = {
   title: 'Nautili · SEO Priorities',
   subtitle: 'nautili.ai: the LLM gateway for routing, spend attribution and governance of AI traffic',
   kpis: [
-    ['0', 'ranking keywords (Portkey: 1,794)'],
+    ['42', 'search clicks in the first 5 weeks'],
     ['6', 'referring domains (Portkey: 3,027)'],
     ['+185%', 'yearly growth in "alternatives" searches'],
     ['1.5–7k', 'visits/mo in 12 months, all markets'],
@@ -153,7 +153,7 @@ const nautili = {
     '**Clear pricing advantage:** a 4% fee versus about 5.5% on OpenRouter, with your own keys or GPUs.',
   ],
   gaps: [
-    '**Not visible in search yet:** no rankings, links from only 6 low-value sites, first crawled Oct 2026.',
+    '**Barely visible in search yet:** 42 clicks since 12 Oct, links from only 6 low-value sites.',
     '**~39 DevZero Kubernetes posts duplicated** on the blog, off-topic for an LLM gateway.',
     '**devzero.io (526 linking sites) sells the same product** on its /inference pages, with no link to Nautili.',
     '**Thin coverage:** 2 comparison pages and 1 integration page; missing from "best LLM gateway" lists.',
@@ -161,7 +161,7 @@ const nautili = {
   interventions: [
     ['Now', 'Remove the duplicated Kubernetes posts (redirect each to its devzero.io original).', 'Gives Nautili a clear AI-gateway focus and ends competition between the two sites.'],
     ['Now', 'Redirect devzero.io/inference pages to nautili.ai and add a "Nautili by DevZero" link on devzero.io.', 'Transfers DevZero\'s authority (526 linking sites vs 6) to the new domain, the fastest way to rank.'],
-    ['Now', 'Set up Search Console, brand schema (sameAs links), consistent "Nautili" naming, heading fixes.', 'Helps Google recognise Nautili as a distinct brand rather than a typo for "Nautilus".'],
+    ['Now', 'Fix GA4 key events (none fire today), add brand schema (sameAs links), consistent "Nautili" naming, heading fixes.', 'Helps Google recognise Nautili as a distinct brand rather than a typo for "Nautilus".'],
     ['1–3 mo', 'Add 8+ comparison and "alternatives" pages (OpenRouter, Portkey, LiteLLM, Helicone, Bifrost, Cloudflare, Vercel, Kong).', 'The easiest searches to win (difficulty 7) and growing fastest since the Portkey and OpenRouter deals.'],
     ['1–3 mo', 'Add integration pages (Cursor, Codex, Gemini CLI, LangChain, Vercel AI SDK) and a stand-alone fee calculator.', 'Captures searches from developers already using those tools, plus a shareable, link-earning tool.'],
     ['3+ mo', 'Own "AI coding spend": cost-per-developer content and a data report from gateway traffic; add live price and latency data to model pages.', 'The largest topic (~101k searches/mo); "Cursor vs Claude Code" (8k/mo) is ranked by Reddit and blogs.'],
@@ -174,7 +174,7 @@ const nautili = {
   ],
   trafficNote: TRAFFIC_NOTE + ' Nautili is self-serve, so search volume turns directly into sign-ups on the free Demo tier.',
   timeline: [
-    ['Weeks 1–4', 'Remove duplicates, redirects from devzero.io, connect Search Console, brand set-up, alternatives pages'],
+    ['Weeks 1–4', 'Remove duplicates, redirects from devzero.io, analytics and brand set-up, alternatives pages'],
     ['Months 2–3', 'Comparison and integration pages, fee calculator, Product Hunt and Hacker News launch, list outreach'],
     ['Months 4–12', 'AI coding spend cluster and report, richer model pages, case studies, track AI assistant mentions'],
   ],

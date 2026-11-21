@@ -2,7 +2,7 @@
 
 *Prepared 12 Nov 2026. Based on a live crawl of devzero.io (robots.txt, sitemaps, on-page tags), competitor sitemaps and homepages, live search results, and **DataForSEO data pulled 12 Nov 2026** (Labs rankings and traffic estimates, Google Ads search volumes, Backlinks; US unless stated). Full data: `seo-data-findings.md` and `data/`.*
 
-> **Data note:** Traffic, ranking, volume and backlink figures come from DataForSEO (12 Nov 2026). Traffic is DataForSEO's modelled US estimate (ETV), useful for comparing domains but not a substitute for analytics. **Search Console is not connected yet** (see `seo-data-findings.md` §1 for the access needed).
+> **Data note:** Traffic, ranking, volume and backlink figures come from DataForSEO (12 Nov 2026). Traffic is DataForSEO's modelled US estimate (ETV), useful for comparing domains but not a substitute for analytics. Search Console exports (received 20 Nov 2026) are analysed in `DevZero-Nautili-SEO-Audit.pdf`; raw files are in `data/gsc/`.
 
 ### Search data at a glance (US, DataForSEO)
 | Metric | devzero.io | Cast AI | Zesty | Sedai | ScaleOps | PerfectScale |

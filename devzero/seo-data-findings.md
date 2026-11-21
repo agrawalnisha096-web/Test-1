@@ -14,7 +14,7 @@
 
 | Source | Status | Notes |
 |---|---|---|
-| Google Search Console | **Not accessible** | The service account `gsc-reader@gsc-access-513417.iam.gserviceaccount.com` has no access to devzero.io or nautili.ai. Adding it as a Restricted user on `sc-domain:devzero.io` and `sc-domain:nautili.ai` gives access to real clicks, impressions, queries and pages. |
+| Google Search Console | **API not accessible; exports received 20 Nov 2026** (see `DevZero-Nautili-SEO-Audit.pdf`, `data/gsc/`) | The service account `gsc-reader@gsc-access-513417.iam.gserviceaccount.com` has no access to devzero.io or nautili.ai. Adding it as a Restricted user on `sc-domain:devzero.io` and `sc-domain:nautili.ai` gives access to real clicks, impressions, queries and pages. |
 | DataForSEO Labs: domain overview, ranked keywords, competitors | OK | 12 domains, US + worldwide for the two client sites |
 | DataForSEO Backlinks summary | OK | 12 domains, plus referring domains for Nautili and most-linked pages for DevZero |
 | Keyword volumes (Labs keyword_overview + Google Ads search_volume, US and worldwide) | OK | 188 keywords across 8 clusters; 21 not in Labs were filled from Google Ads |
