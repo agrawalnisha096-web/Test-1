@@ -1,0 +1,30 @@
+id,site,area,task,owner,effort,when
+N1,nautili.ai,Positioning,"Rewrite homepage title, H1 subline and meta description to name the category (LLM gateway) and the spend-control wedge",SEO + founder,S,Wk 1
+N2,nautili.ai,Technical,301 the 39 duplicated Kubernetes posts to devzero.io; remove from blog.xml; change existing 307s to 308,Dev,S,Wk 1
+N3,nautili.ai,Technical,"JSON-LD on the 89 pages without it: SoftwareApplication + Offer (home, pricing), HowTo/TechArticle (12 guides), FAQPage (integrations, features), Product/Dataset (models, providers)",Dev,M,Wk 1–2
+N4,nautili.ai,Technical,Fix duplicate H1 on 36 pages (heading anchor component); add meta descriptions to 16 pages,Dev,S,Wk 1
+N5,nautili.ai,On-page,"Retitle /integrations/claude-code (""Claude Code | Nautili"") to target ""claude code router / proxy""; expand to a full landing page",Content,S,Wk 1
+N6,nautili.ai,Internal links,"Link every LLM post to /pricing/inference, /features/spend-attribution and the relevant /compare and /integrations pages; link model pages to compare pages and the fee calculator",Content + Dev,S,Wk 2
+N7,nautili.ai,On-page,"Model and provider page titles: ""<Model> API pricing: $in / $out per 1M tokens""; provider pages ""<Provider> API pricing""",Dev,S,Wk 2
+N8,nautili.ai,Analytics,"GTM container + GA4 key events (sign-up, key created, first request, demo, calculator use); filter tencent##### queries in reporting",Dev,M,Wk 1–2
+N9,both,Authority,"301 devzero.io/inference, /pricing/inference, /lp/inference to nautili.ai; ""Nautili by DevZero"" in devzero.io nav and footer; sameAs schema both ways",Dev,S,Wk 2
+N10,nautili.ai,New pages,"Alternatives pages: OpenRouter, LiteLLM, Portkey (3)",Content,M,Wk 2–3
+N11,nautili.ai,New pages,"Compare pages: LiteLLM, Requesty, Helicone, Bifrost, TrueFoundry, Cloudflare AI Gateway, Vercel AI Gateway, Kong (8)",Content,L,Wk 3–6
+N12,nautili.ai,New pages,"Integration pages: Cursor (BYOK), Codex, Cline, Roo Code, Kilo Code, OpenCode, OpenWebUI, LibreChat, n8n, Gemini CLI (10)",Content,L,Wk 3–8
+N13,nautili.ai,Tools,"Token / LLM cost calculator (per model, programmatic) and stand-alone OpenRouter fee calculator",Dev + Content,L,Wk 4–8
+N14,nautili.ai,New pages,"Model vs model pages for the top 30 pairs (haiku vs sonnet, opus vs fable, gpt vs claude…) from the catalogue data",Dev + Content,M,Wk 5–8
+N15,nautili.ai,Content,"Blog cohort 1 (8 posts): Claude Code router, Codex cost, Cursor usage per developer, LiteLLM vs OpenRouter, Claude Code with DeepSeek/Gemini, OpenAI API alternatives, LLM proxy explained, AI FinOps",Content,L,Wk 2–6
+N16,nautili.ai,Off-page,"Listings: G2, Capterra/GetApp, TrustRadius, SaaSHub, AlternativeTo, StackShare, Product Hunt, AWS Marketplace, Artifact Hub (Helm), Docker Hub",SEO,M,Wk 2–6
+N17,nautili.ai,Off-page,"AI directories and comparison sites already listing 2+ competitors (Toolify, Toolradar, Toolscout, apis.io, Agentic Index, gatewayscore.com, llmpricing.dev, cheapestllmapi.com, selfhost.directory)",SEO,M,Wk 2–8
+N18,nautili.ai,Off-page,"Become a listed provider: PRs or partner requests to Cline, Roo Code, Kilo Code, OpenCode, OpenWebUI, LibreChat, Continue, n8n, LangChain, Vercel AI SDK community providers",Dev + founder,L,Wk 3–12
+N19,nautili.ai,Off-page / GEO,"Community: Show HN, Reddit (r/ClaudeAI, r/cursor, r/LocalLLaMA, r/LLMDevs) answers with data, LinkedIn posts from founders, outreach to ""best LLM gateway"" list authors",Founder + SEO,M,Ongoing
+D1,devzero.io,Cannibalisation,AKS: merge /blog/azure-kubernetes-service-pricing into /blog/aks-pricing (301); point the 31 internal links at /blog/aks-pricing,Content + Dev,S,Wk 1
+D2,devzero.io,Cannibalisation,"Split intent: /blog/*-pricing = price; /blog/*-cost-optimization = how-to; /solutions/aws-eks, /gcp-gke = product. Retitle and cross-link EKS, GKE and AKS sets",Content,M,Wk 2–3
+D3,devzero.io,Cannibalisation,"VPA: merge /vpa and /compare/vpa (same intent); keep /compare/vpa, 301 /vpa",Dev,S,Wk 1
+D4,devzero.io,Cannibalisation,Karpenter: /blog/karpenter-guide = what it is; /guides/karpenter-on-eks = setup; /karpenter-optimization = product; /compare/karpenter = vs. Retitle and interlink,Content,S,Wk 2
+D5,devzero.io,Cannibalisation,"Merge near-duplicates: which-kubernetes-workloads-to-use → kubernetes-workload-types; GPU ""Part 2/3/5"" posts → GPU utilisation guide; two savings-plans posts into one",Content + Dev,M,Wk 2–4
+D6,devzero.io,Internal links,"Contextual links into the 13 product pages with at most one in-content link (/pod-rightsizing, /vpa, /solutions/*, /product/*, /kubernetes-management…) from the top 20 posts",Content,M,Wk 2–3
+D7,devzero.io,Internal links,"Link the 14 orphan posts (incl. aws-s3-pricing, azure-container-apps-pricing, kubernetes-pricing) from related posts and the blog hub",Content,S,Wk 2
+D8,devzero.io,Internal links,Link pricing posts to /tools calculators and /instances pages; link KEDA and Karpenter guides from autoscaling posts and compare pages,Content,S,Wk 2
+D9,devzero.io,Pruning,"Decide on 5 vague product pages with no links and no impressions (/kubernetes-management, -infrastructure-platform, -infrastructure-operations, /product/multi-cloud, /product/kubernetes-monitoring): merge, link or noindex",SEO + founder,S,Wk 2
+D10,devzero.io,Technical,"Legacy redirects (47 URLs, appendix of the audit), 404 fixes, llms.txt, titles with prices, 2025 → 2026 titles, duplicate H1 on 79 pages",Dev,M,Wk 1–2

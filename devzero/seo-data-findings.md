@@ -96,7 +96,7 @@
 | east-1 / east 1 / us-east1 (region page) | 14,800 + 14,800 + 3,600 | 5–13 | #16–18 (`/instances/aws/regions/us-east-1`) | aws.amazon.com and docs | Biggest single upside: enrich region pages (price index by region, latency, instance availability) and link to them internally |
 | h100 price / h100 costs | 1,900 / 1,000 | 14–21 | #26 (`/instances/gpu/h100`) | reddit, silicondata.com, jarvislabs.ai | GPU price index page with monthly updates |
 | karpenter (+ karpenter kubernetes, helm chart) | 1,900 + 480 + 260 | 20–45 | #22–29 (`/blog/karpenter-guide`) | karpenter.sh, AWS docs, GitHub | Refresh the guide (2026, EKS Auto Mode), add a diagram and a comparison table |
-| keda | 3,600 | 16 | not in top 90 | keda.sh, GitHub, CNCF, Microsoft, zesty.co #5 | New KEDA guide (Zesty proves a vendor can rank) |
+| keda | 3,600 | 16 | not in top 90 | keda.sh, GitHub, CNCF, Microsoft, zesty.co #5 | A KEDA guide already exists (`/guides/keda-autoscaling`) with only 2 internal links: link it and refresh (Zesty shows a vendor can rank) |
 | eks auto mode | 880 | 4 | not in top 99 | AWS, Reddit, Pulumi, CloudBolt #6, Zesty #10 | New post: EKS Auto Mode vs Karpenter, with cost |
 | m5 large and other instance terms | 1,900 | 0 | #31 | AWS, instances.vantage.sh, CloudZero advisor | Make instance pages more unique (price history, equivalents) |
 | eks / aks / gke pricing | 210 / 70 / 110 | 0–8 | #7 / #8 / #3 | AWS/Azure docs, cloudchipr, cloudzero, sedai | Defend; refresh years and add calculators |

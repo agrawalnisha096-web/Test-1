@@ -118,7 +118,7 @@ const devzero = {
     ['1–3 mo', 'Improve region and instance pages (us-east-1 alone: ~33k searches/mo at #16–18) and launch a GPU price index.', 'Where the volume is: 47 keywords with 200+ searches each sit just off page one.'],
     ['1–3 mo', 'Add "alternatives" pages, get onto "best tools 2026" lists and G2, Gartner and Capterra.', 'Small volume (~100/mo) but the highest intent; these lists feed the answers AI assistants give.'],
     ['1–3 mo', 'Publish a "State of Kubernetes Waste" report from cluster-analyser data.', 'Original data earns the links needed to close the gap with Cast AI (3,665 linking sites).'],
-    ['3+ mo', 'Publish twice a week, led by KEDA, Karpenter and EKS Auto Mode guides, then rightsizing and GPU topics.', 'Autoscaling education has ~10.5k searches/mo at low difficulty (23) and feeds the money pages.'],
+    ['3+ mo', 'Publish twice a week, led by an EKS Auto Mode guide and refreshes of the existing KEDA and Karpenter guides, then rightsizing and GPU topics.', 'Autoscaling education has ~10.5k searches/mo at low difficulty (23) and feeds the money pages.'],
   ],
   traffic: [
     ['Kubernetes cost optimisation and rightsizing', '~460 (8)', 'Bottom of funnel: demos'],
