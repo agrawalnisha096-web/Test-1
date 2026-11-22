@@ -71,14 +71,14 @@ const WORK = [
   ['N5', 'nautili.ai', 'On-page', 'Retitle /integrations/claude-code ("Claude Code | Nautili"); expand into a landing page for routing Claude Code through a gateway (after the product check in N20)', 'Content', 'S', 'Wk 1'],
   ['N6', 'nautili.ai', 'Internal links', 'Link every LLM post to /pricing/inference, /features/spend-attribution and the relevant /compare and /integrations pages; link model pages to compare pages and the fee calculator', 'Content + Dev', 'S', 'Wk 2'],
   ['N7', 'nautili.ai', 'On-page', 'Model and provider page titles: "<Model> API pricing: $in / $out per 1M tokens"; provider pages "<Provider> API pricing"', 'Dev', 'S', 'Wk 2'],
-  ['N8', 'nautili.ai', 'Analytics', 'GTM container + GA4 key events (sign-up, key created, first request, demo, calculator use); filter tencent##### queries in reporting', 'Dev', 'M', 'Wk 1–2'],
+  ['N8', 'nautili.ai', 'Analytics', 'GTM container + GA4 key events (sign-up, key created, first request, demo, calculator use); filter bot-like queries out of reporting', 'Dev', 'M', 'Wk 1–2'],
   ['N9', 'both', 'Authority', '301 devzero.io/inference, /pricing/inference, /lp/inference to nautili.ai; "Nautili by DevZero" in devzero.io nav and footer; sameAs schema both ways', 'Dev', 'S', 'Wk 2'],
   ['N10', 'nautili.ai', 'New pages', 'Alternatives pages: OpenRouter, LiteLLM, Portkey (3)', 'Content', 'M', 'Wk 2–3'],
   ['N11', 'nautili.ai', 'New pages', 'Compare pages: LiteLLM, Requesty, Helicone, Bifrost, TrueFoundry, Cloudflare AI Gateway, Vercel AI Gateway, Kong (8)', 'Content', 'L', 'Wk 3–6'],
   ['N12', 'nautili.ai', 'New pages', 'Integration pages: Cursor (BYOK), Codex, Cline, Roo Code, Kilo Code, OpenCode, OpenWebUI, LibreChat, n8n, Gemini CLI (10)', 'Content', 'L', 'Wk 3–8'],
   ['N13', 'nautili.ai', 'Tools', 'Token / LLM cost calculator (new, per model); move the existing fee calculator out of /compare/openrouter into an "OpenRouter pricing and fees" page', 'Dev + Content', 'L', 'Wk 4–8'],
   ['N14', 'nautili.ai', 'New pages', 'Model vs model pages for the top 30 pairs (haiku vs sonnet, opus vs fable, gpt vs claude…) from the catalogue data', 'Dev + Content', 'M', 'Wk 5–8'],
-  ['N15', 'nautili.ai', 'Content', 'Blog cohort 1 (8 pieces, see the cohort table): checked for intent and for overlap with existing posts', 'Content', 'L', 'Wk 2–6'],
+  ['N15', 'nautili.ai', 'Content', 'Nautili content cohort 1: the 8 pieces in section 2', 'Content', 'L', 'Wk 2–6'],
   ['N16', 'nautili.ai', 'Off-page', 'Listings: G2, Capterra/GetApp, TrustRadius, SaaSHub, AlternativeTo, StackShare, Product Hunt, AWS Marketplace, Artifact Hub (Helm), Docker Hub', 'SEO', 'M', 'Wk 2–6'],
   ['N17', 'nautili.ai', 'Off-page', 'AI directories and comparison sites already listing 2+ competitors (Toolify, Toolradar, Toolscout, apis.io, Agentic Index, gatewayscore.com, llmpricing.dev, cheapestllmapi.com, selfhost.directory)', 'SEO', 'M', 'Wk 2–8'],
   ['N18', 'nautili.ai', 'Off-page', 'Become a listed provider: PRs or partner requests to Cline, Roo Code, Kilo Code, OpenCode, OpenWebUI, LibreChat, Continue, n8n, LangChain, Vercel AI SDK community providers', 'Dev + founder', 'L', 'Wk 3–12'],
@@ -95,23 +95,23 @@ const WORK = [
   ['D8', 'devzero.io', 'Internal links', 'Link pricing posts to /tools calculators and /instances pages; link KEDA and Karpenter guides from autoscaling posts and compare pages', 'Content', 'S', 'Wk 2'],
   ['D9', 'devzero.io', 'Pruning', 'Decide on 5 vague product pages with no links and no impressions (/kubernetes-management, -infrastructure-platform, -infrastructure-operations, /product/multi-cloud, /product/kubernetes-monitoring): merge, link or noindex', 'SEO + founder', 'S', 'Wk 2'],
   ['D10', 'devzero.io', 'Technical', 'Legacy redirects (47 URLs, appendix of the audit), 404 fixes, llms.txt, titles with prices, 2025 → 2026 titles, duplicate H1 on 79 pages', 'Dev', 'M', 'Wk 1–2'],
+  ['D11', 'devzero.io', 'Content', 'DevZero content cohort 1: the 8 new pieces in section 3', 'Content', 'L', 'Wk 3–10'],
 ];
 
 const children = [
   p([run('Nautili and DevZero', { pt: 22, bold: true, color: NAVY })], { after: 20 }),
   p([run('SEO deep dive: positioning, buying-intent keywords, off-page, internal links and cannibalisation', { pt: 13, color: ACCENT })], { after: 60 }),
-  p('Prepared 21 Nov 2026. Focus split: about 70% Nautili, 30% DevZero. Sources: Search Console exports, DataForSEO (keywords, competitor rankings, backlinks; US), and a crawl of all 373 sitemap pages on both sites plus competitor sitemaps on 21 Nov 2026. Task IDs in brackets (N1–N21, D1–D10) refer to the companion document "Nautili and DevZero: SEO work items".', { pt: 9, color: GREY, after: 140 }),
+  p('November 2026. Task IDs in brackets (N1–N21, D1–D11) refer to the companion document "Nautili and DevZero: SEO work items".', { pt: 9, color: GREY, after: 140 }),
 
   h1('1. Summary'),
   kpis([['50+', 'low-difficulty buying-intent keywords picked for Nautili'], ['6 → 40+', 'Nautili referring domains: 3-month target'], ['13', 'DevZero product pages with at most one internal link'], ['4', 'DevZero topic clusters cannibalising each other']]),
   space(100),
   num('**Nautili does not say what it is.** Every competitor puts the category in the homepage title ("AI Gateway & LLM Router", "Open-Source LLM API Gateway", "LLM Proxy"). Nautili\'s title is "Inference, under control". Fixing the title and messaging around "LLM gateway" plus a spend-control angle is a one-day change with the biggest effect on relevance.'),
-  num('**There is a real bottom-of-funnel opening.** "openrouter alternative" grew from 390 to 1,600 searches a month in a year at difficulty 0, and "litellm vs openrouter" from 110 to 590 (0); both show comparison listicles, which Nautili can write. "codex cost" grew from 390 to 1,300 (difficulty 10). "claude code router" (2,900, difficulty 6) looks attractive but mostly means an open-source GitHub project, so it is a guide opportunity, not a buying query (section 9).'),
+  num('**There is a real bottom-of-funnel opening.** "openrouter alternative" grew from 390 to 1,600 searches a month in a year at difficulty 0, and "litellm vs openrouter" from 110 to 590 (0); both show comparison listicles, which Nautili can write. "codex cost" grew from 390 to 1,300 (difficulty 10). "claude code router" (2,900, difficulty 6) mostly refers to an open-source GitHub project, so it is a guide opportunity rather than a buying query.'),
   num('**Competitors grow through distribution as much as content.** Requesty has 20 integration pages, for Cline, Roo Code, Kilo Code, OpenCode, OpenWebUI, LibreChat, n8n and Codex, because those tools list it as a provider. Helicone runs 3,500 model-comparison pages; Maxim (Bifrost) runs 3,000 cost-calculator pages; LLMGateway has token and Copilot cost calculators and a glossary. Nautili has 2 compare pages and 1 integration page.'),
   num('**Off-page is close to zero.** 6 referring domains, all low value. Among the top 400 referring domains of each of Requesty, LLMGateway, Helicone and Portkey, 293 link to two or more of them; most are directories and comparison sites that take submissions.'),
   num('**DevZero\'s problem is internal structure, not content volume.** 13 product pages (pod rightsizing, VPA, EKS/GKE/OpenShift solutions, product pages) have at most one in-content link and almost no search impressions. AKS, EKS, GKE and Karpenter content is split across 2–5 URLs each. Internal links point at the weaker page: /blog/azure-kubernetes-service-pricing gets 31 links, /blog/aks-pricing (which ranks #8) gets 11.'),
-  num('**A correction to the earlier audit:** DevZero already has a 5,620-word KEDA guide and a Karpenter-on-EKS guide (/guides). They do not rank because they have 1–2 internal links each, not because they are missing. They need links and refreshes, not rewrites.'),
-  note('From the meeting notes: "governance" and "model routing profiles" are Nautili features, so they are covered under Nautili here. The competitor set used is OpenRouter, Portkey, LiteLLM, Bifrost (Maxim), Requesty, Helicone, TrueFoundry and LLMGateway.'),
+  num('**DevZero already has strong guides that do not rank.** The KEDA guide (5,620 words) and the Karpenter-on-EKS guide have 1–2 internal links each. They need links and refreshes, not rewrites.'),
 
   pageBreak(),
   h1('2. Nautili: positioning'),
@@ -149,7 +149,7 @@ const children = [
   ], [0.26, 0.47, 0.27], { boldFirst: true }),
 
   h1('3. Nautili: buying-intent keywords to start with'),
-  p('Selected from 2,792 relevant keywords that the eight competitors rank for (DataForSEO), plus a direct check of 100 gateway, spend and coding-agent terms. Filter: difficulty 20 or lower, clear buying or setup intent, and a page Nautili can credibly own. Full list in data/nautili-keyword-gap.csv.'),
+  p('Chosen for low difficulty (20 or lower), clear buying or set-up intent, and a page Nautili can credibly own. Each keyword was checked against what Google shows today.'),
   h2('3.1 Tier 1: build or fix in the first 6 weeks'),
   grid([
     ['Keyword', 'US/mo', 'KD', 'What Google shows', 'Nautili page', 'Exists?'],
@@ -174,7 +174,7 @@ const children = [
     ['Model and provider pages', 'claude code analytics / usage dashboard 170 each (Torii listicle ranks)', 'Pitch for listicle inclusion; Claude Code section on /features/spend-attribution'],
     ['Self-host', 'self hosted llm gateway (small), openrouter self hosted 70 (0)', 'Existing Helm guide and docs; no new page yet'],
   ], [0.22, 0.53, 0.25], { boldFirst: true }),
-  note('KD = DataForSEO keyword difficulty, 0–100. Volumes are Google Ads US monthly averages; trends compare October 2025 with October 2026. Competitor-brand searches ("openrouter" 135k) are excluded as navigational.'),
+  note('KD = keyword difficulty, 0–100 (lower is easier). Volumes are average US monthly searches.'),
 
   h1('4. Nautili: pages to build, using competitors as templates'),
   grid([
@@ -188,7 +188,7 @@ const children = [
     ['Migration guide', 'LLMGateway /migration', '0', '"Move from OpenRouter / LiteLLM in 10 minutes"'],
   ], [0.18, 0.44, 0.18, 0.2], { boldFirst: true }),
   h2('4.1 Fixes on existing Nautili pages'),
-  bullet('**89 of 144 sitemap pages have no structured data.** The 12 guides, pricing, integrations, how-it-works and careers pages have none. JSON-LD helps both Google rich results and AI answer engines (flagged as high value in the meeting).'),
+  bullet('**89 of 144 sitemap pages have no structured data.** The 12 guides, pricing, integrations, how-it-works and careers pages have none. JSON-LD helps both Google rich results and AI answer engines.'),
   bullet('**36 pages have two H1s** (the blog heading-anchor component) and 16 have no meta description.'),
   bullet('**/integrations/claude-code is titled "Claude Code | Nautili"**: no keyword, 1,397 words. It should become the landing page for routing Claude Code through a gateway (budgets, attribution, model choice), linked from the claude-code-proxy and claude-code-cost posts.'),
   bullet('**/features/spend-attribution has no in-content links from any page.** The LLM posts link to each other and to docs, but not to pricing, features or compare pages. Model pages link to nothing editorial.'),
@@ -196,7 +196,7 @@ const children = [
 
   pageBreak(),
   h1('5. Nautili: off-page, listings and marketplaces'),
-  p('Nautili has 6 referring domains; Requesty has 802 and LLMGateway 698 (spam score under 30), mostly from listings and comparison sites, not press. The plan below is ordered by how much each source matters for buyers and for AI answers.'),
+  p('Nautili has 6 referring domains; Requesty has about 800 and LLMGateway about 700, mostly from listings and comparison sites, not press. The plan below is ordered by how much each source matters for buyers and for AI answers.'),
   grid([
     ['Channel', 'Where', 'Why', 'When'],
     ['Built-in provider lists (highest value)', 'Cline, Roo Code, Kilo Code, OpenCode, Continue, OpenWebUI, LibreChat, n8n, Dify, LangChain community providers, Vercel AI SDK community providers', 'Requesty and OpenRouter reach users inside these tools; each listing brings sign-ups, a docs link and an integration page to rank', 'Start week 3; PRs take 2–8 weeks'],
@@ -213,15 +213,15 @@ const children = [
   h1('6. Nautili: 3-month targets'),
   grid([
     ['Measure', 'Now', 'End of month 3'],
-    ['Referring domains (DataForSEO)', '6', '40–60'],
+    ['Referring domains', '6', '40–60'],
     ['Listings live (marketplaces, review sites, directories)', '0', '25+'],
     ['Provider listings in coding tools (merged or approved)', '0', '2–4'],
     ['New indexable pages (compare, alternatives, integrations, tools, posts)', '—', '35–45'],
     ['Tier 1 keywords in top 20 / top 10', '0 / 0', '8 / 4'],
-    ['Non-brand search clicks per month (tencent queries excluded)', '~10', '300–800'],
+    ['Non-brand search clicks per month (bot queries excluded)', '~10', '300–800'],
     ['Sign-ups attributed to organic search', 'not tracked', 'tracked weekly'],
   ], [0.6, 0.15, 0.25], { boldFirst: true }),
-  note('The meeting estimate of about 6 weeks to reach the top 10 for a keyword cluster is realistic for the difficulty 0–10 terms in Tier 1, provided the devzero.io redirects and the first 20–30 links are in place. Higher-difficulty terms ("llm gateway", 41; "ai gateway", 53) are 6–12 month goals.'),
+  note('Difficulty 0–10 keywords can reach the top 10 in about 6 weeks once the devzero.io redirects and the first 20–30 links are in place. Higher-difficulty terms ("llm gateway", "ai gateway") are 6–12 month goals.'),
 
   pageBreak(),
   h1('7. DevZero: internal links and cannibalisation', DZ),
@@ -250,43 +250,24 @@ const children = [
   ], [0.13, 0.33, 0.27, 0.27], { boldFirst: true, light: DZLIGHT }),
   h2('7.3 DevZero keyword focus for the next 3 months', DZ),
   bullet('**Defend and lift pricing pages** (eks, gke, aks, s3 and cloud comparison: 889k impressions at 0.25% CTR). Target: top 5 for eks pricing, gke pricing and aks pricing, CTR above 0.6%.'),
-  bullet('**Autoscaling guides already written:** KEDA (3,600 searches/month, KD 16), Karpenter (1,900, KD 44), EKS Auto Mode (880, KD 4; new post). Internal links first, then refresh.'),
+  bullet('**Autoscaling guides already written:** KEDA (3,600 searches/month, KD 16), Karpenter (1,900, KD 44), EKS Auto Mode (720, KD 4; new post). Internal links first, then refresh. New DevZero content is listed in the work items document.'),
   bullet('**Commercial pages:** rebuild /kubernetes-cost-optimization and link the 13 under-linked product pages. Volumes are small (about 460 US searches/month) but this is where demos come from.'),
   bullet('**Target by month 3:** devzero.io from ~2,100 to 2,600–2,900 clicks a month; 3 cannibalising clusters merged; 0 product pages without links.'),
 
-  h1('8. Plan review: intent and page-existence check'),
-  p('Every keyword in this plan and the audit (46 for Nautili, 16 for DevZero) was checked against the latest Google results (DataForSEO SERP snapshots, Jul–Nov 2026) and DataForSEO intent labels, and every proposed page against the live sites. Full table with the evidence: data/plan-review-keywords.csv.'),
-  grid([
-    ['Result', 'Count', 'Examples'],
-    ['Keep', '20', 'openrouter alternatives, litellm vs openrouter, litellm alternatives, codex cost, llm router, token cost calculator, model pricing pages, eks/gke/aks pricing'],
-    ['Reframe or downgrade', '13', 'claude code router (open-source project intent), openai api alternative (people want other model vendors), cursor usage (individuals; overlaps an existing post), h100 price (improve existing GPU page), us-east-1 (news and console logins)'],
-    ['Drop', '12', 'ai proxy, agent router, cursor api key, codex api key, claude code gemini, claude usage limits, openai rate limits, ai governance tools, on prem llm, ai spend management, openrouter for claude code'],
-  ], [0.18, 0.08, 0.74], { boldFirst: true }),
-  h2('Corrections this check made'),
-  bullet('**"claude code router" is not a buying query.** The #1 result is the open-source GitHub project of that name. It stays as a guide (open-source router vs a managed gateway), with a realistic target of positions 5–10.'),
-  bullet('**Do not position on "AI spend management".** Google shows finance spend-management software for it. Use "LLM cost", "LLM spend" and "AI coding spend".'),
-  bullet('**The us-east-1 opportunity was overstated** in the audit and DevZero one-pager. Most of the ~33k searches are outage news and AWS console logins; only pricing-type queries fit the region page. Corrected in both.'),
-  bullet('**Several "new" pages partly exist already:** Cursor, Codex, Continue and Claude Code set-up is in /docs/gateway/coding-tools; the Gemini CLI guide exists; the OpenRouter fee calculator and switching guide are inside /compare/openrouter; the GPU pricing page (/instances/gpu) exists; the KEDA and Karpenter guides exist. These become upgrades, not new builds.'),
-  bullet('**Two planned posts would have cannibalised existing ones** ("Cursor usage per developer" vs /blog/cursor-cost-per-developer; "Claude Code with DeepSeek" vs /blog/claude-code-proxy). They become sections in the existing posts.'),
-  bullet('**Product checks needed before publishing (N20):** routing Claude Code to non-Anthropic models, Cursor with a custom base URL (Reddit reports Cursor restricted bring-your-own-key), the coding tools listed in N18, and MCP support.'),
-  bullet('**New off-page opportunity found:** the Claude Code documentation has an "LLM gateway" page that ranks #2 for "claude code litellm". Getting listed there (N21) is worth more than ranking for the keyword.'),
-  note('Not checked: "ai finops", "portkey alternatives", "gke pricing" and "minikube vs kind vs k3s" had no stored SERP snapshot. Search Console data shows DevZero already earns clicks for the last two.'),
 ];
 
 
 const workChildren = [
   p([run('Nautili and DevZero', { pt: 22, bold: true, color: NAVY })], { after: 20 }),
   p([run('SEO work items', { pt: 13, color: ACCENT })], { after: 60 }),
-  p('Prepared 22 Nov 2026 for the Tuesday working session. Companion to "Nautili and DevZero: SEO deep dive", which has the evidence behind each item. N = nautili.ai, D = devzero.io.', { pt: 9, color: GREY, after: 140 }),
+  p('November 2026. N = nautili.ai, D = devzero.io. Effort: S = under a day, M = 2–4 days, L = a week or more.', { pt: 9, color: GREY, after: 140 }),
   h1('1. Work items'),
-  p('Itemised list of site fixes and builds, from the SEO deep dive. Effort: S = under a day, M = 2–4 days, L = a week or more. Also in data/seo-work-items.csv for import into a tracker.'),
   grid([['ID', 'Site', 'Area', 'Task', 'Owner', 'Effort', 'When'], ...WORK],
     [0.05, 0.09, 0.1, 0.5, 0.1, 0.06, 0.1], { pt: 7.8 }),
   pageBreak(),
-  h1('2. Content cohort 1 (first 8 Nautili pieces, weeks 2–6)'),
-  p('Each piece was checked against current Google results for intent and against existing pages for overlap (deep dive, section 8).'),
+  h1('2. Nautili content cohort 1 (weeks 2–6)'),
   grid([
-    ['Piece', 'Main keyword (US/mo, KD)', 'Overlap check'],
+    ['Piece', 'Main keyword (US/mo, KD)', 'Notes'],
     ['OpenRouter alternatives in 2026 (listicle, after the Stripe deal)', 'openrouter alternative (880 → 1,600, 0)', 'New'],
     ['LiteLLM vs OpenRouter: hosted vs self-hosted gateways', 'litellm vs openrouter (320–590, 0)', 'New'],
     ['LiteLLM alternatives (security and self-host angle)', 'litellm alternatives (390, 0)', 'New'],
@@ -297,6 +278,19 @@ const workChildren = [
     ['LLM proxy vs LLM gateway', 'llm proxy (390, 0)', 'New'],
   ], [0.46, 0.3, 0.24]),
 
+  h1('3. DevZero content cohort 1 (weeks 3–10)'),
+  p('New pages only; refreshes of existing posts are in D2, D4 and D10. Search volumes here are small, so these pieces are aimed at buyers comparing options rather than at traffic.'),
+  grid([
+    ['Piece', 'Main keyword (US/mo, KD)', 'Notes'],
+    ['EKS Auto Mode vs Karpenter: cost, control and when to switch', 'eks auto mode (720, 4); eks auto mode pricing (50, 8); eks auto mode vs karpenter (30, 0)', 'Links to the Karpenter guide and /karpenter-optimization'],
+    ['AKS Automatic vs AKS Standard: what it manages and what it costs', 'aks automatic (170, 0)', 'Links to /blog/aks-pricing'],
+    ['EKS vs AKS vs GKE: managed Kubernetes compared', 'eks vs aks (90, 0)', 'Features and fit; links to /blog/kubernetes-pricing for cost detail'],
+    ['OpenCost vs Kubecost (after the IBM acquisition)', 'opencost vs kubecost (70, 0); kubecost pricing (40, 7)', 'Neutral comparison; different from /compare/kubecost'],
+    ['Kubecost alternatives', 'kubecost alternatives (20, 0)', 'Listicle at /alternatives/kubecost'],
+    ['Cast AI alternatives and pricing', 'cast ai pricing (20, 17); cast ai alternatives (10)', 'Listicle at /alternatives/cast-ai'],
+    ['Kubernetes bin packing: how it works and what it saves', 'kubernetes bin packing (30, 0)', 'Links to /kubernetes-cost-optimization'],
+    ['State of Kubernetes Waste report', 'Link and press asset', 'Built from anonymised cluster-analyser data'],
+  ], [0.4, 0.34, 0.26]),
 ];
 
 const makeDoc = (kids, footer) => new Document({

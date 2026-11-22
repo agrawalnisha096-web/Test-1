@@ -6,14 +6,14 @@ N4,nautili.ai,Technical,Fix duplicate H1 on 36 pages (heading anchor component);
 N5,nautili.ai,On-page,"Retitle /integrations/claude-code (""Claude Code | Nautili""); expand into a landing page for routing Claude Code through a gateway (after the product check in N20)",Content,S,Wk 1
 N6,nautili.ai,Internal links,"Link every LLM post to /pricing/inference, /features/spend-attribution and the relevant /compare and /integrations pages; link model pages to compare pages and the fee calculator",Content + Dev,S,Wk 2
 N7,nautili.ai,On-page,"Model and provider page titles: ""<Model> API pricing: $in / $out per 1M tokens""; provider pages ""<Provider> API pricing""",Dev,S,Wk 2
-N8,nautili.ai,Analytics,"GTM container + GA4 key events (sign-up, key created, first request, demo, calculator use); filter tencent##### queries in reporting",Dev,M,Wk 1–2
+N8,nautili.ai,Analytics,"GTM container + GA4 key events (sign-up, key created, first request, demo, calculator use); filter bot-like queries out of reporting",Dev,M,Wk 1–2
 N9,both,Authority,"301 devzero.io/inference, /pricing/inference, /lp/inference to nautili.ai; ""Nautili by DevZero"" in devzero.io nav and footer; sameAs schema both ways",Dev,S,Wk 2
 N10,nautili.ai,New pages,"Alternatives pages: OpenRouter, LiteLLM, Portkey (3)",Content,M,Wk 2–3
 N11,nautili.ai,New pages,"Compare pages: LiteLLM, Requesty, Helicone, Bifrost, TrueFoundry, Cloudflare AI Gateway, Vercel AI Gateway, Kong (8)",Content,L,Wk 3–6
 N12,nautili.ai,New pages,"Integration pages: Cursor (BYOK), Codex, Cline, Roo Code, Kilo Code, OpenCode, OpenWebUI, LibreChat, n8n, Gemini CLI (10)",Content,L,Wk 3–8
 N13,nautili.ai,Tools,"Token / LLM cost calculator (new, per model); move the existing fee calculator out of /compare/openrouter into an ""OpenRouter pricing and fees"" page",Dev + Content,L,Wk 4–8
 N14,nautili.ai,New pages,"Model vs model pages for the top 30 pairs (haiku vs sonnet, opus vs fable, gpt vs claude…) from the catalogue data",Dev + Content,M,Wk 5–8
-N15,nautili.ai,Content,"Blog cohort 1 (8 pieces, see the cohort table): checked for intent and for overlap with existing posts",Content,L,Wk 2–6
+N15,nautili.ai,Content,Nautili content cohort 1: the 8 pieces in section 2,Content,L,Wk 2–6
 N16,nautili.ai,Off-page,"Listings: G2, Capterra/GetApp, TrustRadius, SaaSHub, AlternativeTo, StackShare, Product Hunt, AWS Marketplace, Artifact Hub (Helm), Docker Hub",SEO,M,Wk 2–6
 N17,nautili.ai,Off-page,"AI directories and comparison sites already listing 2+ competitors (Toolify, Toolradar, Toolscout, apis.io, Agentic Index, gatewayscore.com, llmpricing.dev, cheapestllmapi.com, selfhost.directory)",SEO,M,Wk 2–8
 N18,nautili.ai,Off-page,"Become a listed provider: PRs or partner requests to Cline, Roo Code, Kilo Code, OpenCode, OpenWebUI, LibreChat, Continue, n8n, LangChain, Vercel AI SDK community providers",Dev + founder,L,Wk 3–12
@@ -30,3 +30,4 @@ D7,devzero.io,Internal links,"Link the 14 orphan posts (incl. aws-s3-pricing, az
 D8,devzero.io,Internal links,Link pricing posts to /tools calculators and /instances pages; link KEDA and Karpenter guides from autoscaling posts and compare pages,Content,S,Wk 2
 D9,devzero.io,Pruning,"Decide on 5 vague product pages with no links and no impressions (/kubernetes-management, -infrastructure-platform, -infrastructure-operations, /product/multi-cloud, /product/kubernetes-monitoring): merge, link or noindex",SEO + founder,S,Wk 2
 D10,devzero.io,Technical,"Legacy redirects (47 URLs, appendix of the audit), 404 fixes, llms.txt, titles with prices, 2025 → 2026 titles, duplicate H1 on 79 pages",Dev,M,Wk 1–2
+D11,devzero.io,Content,DevZero content cohort 1: the 8 new pieces in section 3,Content,L,Wk 3–10
