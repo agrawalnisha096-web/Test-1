@@ -17,9 +17,9 @@ N15,nautili.ai,Content,"Blog cohort 1 (8 pieces, see the cohort table): checked 
 N16,nautili.ai,Off-page,"Listings: G2, Capterra/GetApp, TrustRadius, SaaSHub, AlternativeTo, StackShare, Product Hunt, AWS Marketplace, Artifact Hub (Helm), Docker Hub",SEO,M,Wk 2–6
 N17,nautili.ai,Off-page,"AI directories and comparison sites already listing 2+ competitors (Toolify, Toolradar, Toolscout, apis.io, Agentic Index, gatewayscore.com, llmpricing.dev, cheapestllmapi.com, selfhost.directory)",SEO,M,Wk 2–8
 N18,nautili.ai,Off-page,"Become a listed provider: PRs or partner requests to Cline, Roo Code, Kilo Code, OpenCode, OpenWebUI, LibreChat, Continue, n8n, LangChain, Vercel AI SDK community providers",Dev + founder,L,Wk 3–12
+N19,nautili.ai,Off-page / GEO,"Community: Show HN, Reddit (r/ClaudeAI, r/cursor, r/LocalLLaMA, r/LLMDevs) answers with data, LinkedIn posts from founders, outreach to ""best LLM gateway"" list authors",Founder + SEO,M,Ongoing
 N20,nautili.ai,Product check,"Confirm before writing: Claude Code routed to non-Anthropic models; Cursor with a custom base URL (chat vs agent mode); Cline, Roo, Kilo, OpenCode, OpenWebUI, LibreChat with an OpenAI-compatible endpoint; MCP support",Product + SEO,S,Wk 1
 N21,nautili.ai,Off-page,"Ask to be listed on the Claude Code docs ""LLM gateway"" page (code.claude.com, ranks #2 for ""claude code litellm"")",Founder,S,Wk 2
-N19,nautili.ai,Off-page / GEO,"Community: Show HN, Reddit (r/ClaudeAI, r/cursor, r/LocalLLaMA, r/LLMDevs) answers with data, LinkedIn posts from founders, outreach to ""best LLM gateway"" list authors",Founder + SEO,M,Ongoing
 D1,devzero.io,Cannibalisation,AKS: merge /blog/azure-kubernetes-service-pricing into /blog/aks-pricing (301); point the 31 internal links at /blog/aks-pricing,Content + Dev,S,Wk 1
 D2,devzero.io,Cannibalisation,"Split intent: /blog/*-pricing = price; /blog/*-cost-optimization = how-to; /solutions/aws-eks, /gcp-gke = product. Retitle and cross-link EKS, GKE and AKS sets",Content,M,Wk 2–3
 D3,devzero.io,Cannibalisation,"VPA: merge /vpa and /compare/vpa (same intent); keep /compare/vpa, 301 /vpa",Dev,S,Wk 1

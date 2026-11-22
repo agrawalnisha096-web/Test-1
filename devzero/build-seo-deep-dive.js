@@ -82,9 +82,9 @@ const WORK = [
   ['N16', 'nautili.ai', 'Off-page', 'Listings: G2, Capterra/GetApp, TrustRadius, SaaSHub, AlternativeTo, StackShare, Product Hunt, AWS Marketplace, Artifact Hub (Helm), Docker Hub', 'SEO', 'M', 'Wk 2–6'],
   ['N17', 'nautili.ai', 'Off-page', 'AI directories and comparison sites already listing 2+ competitors (Toolify, Toolradar, Toolscout, apis.io, Agentic Index, gatewayscore.com, llmpricing.dev, cheapestllmapi.com, selfhost.directory)', 'SEO', 'M', 'Wk 2–8'],
   ['N18', 'nautili.ai', 'Off-page', 'Become a listed provider: PRs or partner requests to Cline, Roo Code, Kilo Code, OpenCode, OpenWebUI, LibreChat, Continue, n8n, LangChain, Vercel AI SDK community providers', 'Dev + founder', 'L', 'Wk 3–12'],
+  ['N19', 'nautili.ai', 'Off-page / GEO', 'Community: Show HN, Reddit (r/ClaudeAI, r/cursor, r/LocalLLaMA, r/LLMDevs) answers with data, LinkedIn posts from founders, outreach to "best LLM gateway" list authors', 'Founder + SEO', 'M', 'Ongoing'],
   ['N20', 'nautili.ai', 'Product check', 'Confirm before writing: Claude Code routed to non-Anthropic models; Cursor with a custom base URL (chat vs agent mode); Cline, Roo, Kilo, OpenCode, OpenWebUI, LibreChat with an OpenAI-compatible endpoint; MCP support', 'Product + SEO', 'S', 'Wk 1'],
   ['N21', 'nautili.ai', 'Off-page', 'Ask to be listed on the Claude Code docs "LLM gateway" page (code.claude.com, ranks #2 for "claude code litellm")', 'Founder', 'S', 'Wk 2'],
-  ['N19', 'nautili.ai', 'Off-page / GEO', 'Community: Show HN, Reddit (r/ClaudeAI, r/cursor, r/LocalLLaMA, r/LLMDevs) answers with data, LinkedIn posts from founders, outreach to "best LLM gateway" list authors', 'Founder + SEO', 'M', 'Ongoing'],
   ['D1', 'devzero.io', 'Cannibalisation', 'AKS: merge /blog/azure-kubernetes-service-pricing into /blog/aks-pricing (301); point the 31 internal links at /blog/aks-pricing', 'Content + Dev', 'S', 'Wk 1'],
   ['D2', 'devzero.io', 'Cannibalisation', 'Split intent: /blog/*-pricing = price; /blog/*-cost-optimization = how-to; /solutions/aws-eks, /gcp-gke = product. Retitle and cross-link EKS, GKE and AKS sets', 'Content', 'M', 'Wk 2–3'],
   ['D3', 'devzero.io', 'Cannibalisation', 'VPA: merge /vpa and /compare/vpa (same intent); keep /compare/vpa, 301 /vpa', 'Dev', 'S', 'Wk 1'],
@@ -100,7 +100,7 @@ const WORK = [
 const children = [
   p([run('Nautili and DevZero', { pt: 22, bold: true, color: NAVY })], { after: 20 }),
   p([run('SEO deep dive: positioning, buying-intent keywords, off-page, internal links and cannibalisation', { pt: 13, color: ACCENT })], { after: 60 }),
-  p('Prepared 21 Nov 2026. Focus split: about 70% Nautili, 30% DevZero. Sources: Search Console exports, DataForSEO (keywords, competitor rankings, backlinks; US), and a crawl of all 373 sitemap pages on both sites plus competitor sitemaps on 21 Nov 2026.', { pt: 9, color: GREY, after: 140 }),
+  p('Prepared 21 Nov 2026. Focus split: about 70% Nautili, 30% DevZero. Sources: Search Console exports, DataForSEO (keywords, competitor rankings, backlinks; US), and a crawl of all 373 sitemap pages on both sites plus competitor sitemaps on 21 Nov 2026. Task IDs in brackets (N1–N21, D1–D10) refer to the companion document "Nautili and DevZero: SEO work items".', { pt: 9, color: GREY, after: 140 }),
 
   h1('1. Summary'),
   kpis([['50+', 'low-difficulty buying-intent keywords picked for Nautili'], ['6 → 40+', 'Nautili referring domains: 3-month target'], ['13', 'DevZero product pages with at most one internal link'], ['4', 'DevZero topic clusters cannibalising each other']]),
@@ -254,24 +254,7 @@ const children = [
   bullet('**Commercial pages:** rebuild /kubernetes-cost-optimization and link the 13 under-linked product pages. Volumes are small (about 460 US searches/month) but this is where demos come from.'),
   bullet('**Target by month 3:** devzero.io from ~2,100 to 2,600–2,900 clicks a month; 3 cannibalising clusters merged; 0 product pages without links.'),
 
-  h1('8. Work items for the Tuesday session'),
-  p('Itemised list of site fixes and builds. Effort: S = under a day, M = 2–4 days, L = a week or more. Also in data/seo-work-items.csv for import into a tracker.'),
-  grid([['ID', 'Site', 'Area', 'Task', 'Owner', 'Effort', 'When'], ...WORK],
-    [0.05, 0.09, 0.1, 0.5, 0.1, 0.06, 0.1], { pt: 7.8 }),
-  h2('Content cohort 1 (first 8 Nautili pieces, weeks 2–6)'),
-  grid([
-    ['Piece', 'Main keyword (US/mo, KD)', 'Overlap check'],
-    ['OpenRouter alternatives in 2026 (listicle, after the Stripe deal)', 'openrouter alternative (880 → 1,600, 0)', 'New'],
-    ['LiteLLM vs OpenRouter: hosted vs self-hosted gateways', 'litellm vs openrouter (320–590, 0)', 'New'],
-    ['LiteLLM alternatives (security and self-host angle)', 'litellm alternatives (390, 0)', 'New'],
-    ['OpenRouter pricing and fees explained (with the calculator)', 'openrouter pricing (1,600, 12)', 'Reuses calculator from /compare/openrouter'],
-    ['Codex cost per developer: plans, API prices, tracking', 'codex cost (1,600, 10)', 'New; sibling of claude-code-cost'],
-    ['Claude Code router: open-source router vs a managed gateway', 'claude code router (2,900, 6)', 'Links to /blog/claude-code-proxy, does not repeat it'],
-    ['Best LLM routers in 2026', 'llm router (720, 18)', 'Links to /blog/llm-routing-profiles'],
-    ['LLM proxy vs LLM gateway', 'llm proxy (390, 0)', 'New'],
-  ], [0.46, 0.3, 0.24]),
-
-  h1('9. Plan review: intent and page-existence check'),
+  h1('8. Plan review: intent and page-existence check'),
   p('Every keyword in this plan and the audit (46 for Nautili, 16 for DevZero) was checked against the latest Google results (DataForSEO SERP snapshots, Jul–Nov 2026) and DataForSEO intent labels, and every proposed page against the live sites. Full table with the evidence: data/plan-review-keywords.csv.'),
   grid([
     ['Result', 'Count', 'Examples'],
@@ -290,18 +273,48 @@ const children = [
   note('Not checked: "ai finops", "portkey alternatives", "gke pricing" and "minikube vs kind vs k3s" had no stored SERP snapshot. Search Console data shows DevZero already earns clicks for the last two.'),
 ];
 
-const doc = new Document({
+
+const workChildren = [
+  p([run('Nautili and DevZero', { pt: 22, bold: true, color: NAVY })], { after: 20 }),
+  p([run('SEO work items', { pt: 13, color: ACCENT })], { after: 60 }),
+  p('Prepared 22 Nov 2026 for the Tuesday working session. Companion to "Nautili and DevZero: SEO deep dive", which has the evidence behind each item. N = nautili.ai, D = devzero.io.', { pt: 9, color: GREY, after: 140 }),
+  h1('1. Work items'),
+  p('Itemised list of site fixes and builds, from the SEO deep dive. Effort: S = under a day, M = 2–4 days, L = a week or more. Also in data/seo-work-items.csv for import into a tracker.'),
+  grid([['ID', 'Site', 'Area', 'Task', 'Owner', 'Effort', 'When'], ...WORK],
+    [0.05, 0.09, 0.1, 0.5, 0.1, 0.06, 0.1], { pt: 7.8 }),
+  pageBreak(),
+  h1('2. Content cohort 1 (first 8 Nautili pieces, weeks 2–6)'),
+  p('Each piece was checked against current Google results for intent and against existing pages for overlap (deep dive, section 8).'),
+  grid([
+    ['Piece', 'Main keyword (US/mo, KD)', 'Overlap check'],
+    ['OpenRouter alternatives in 2026 (listicle, after the Stripe deal)', 'openrouter alternative (880 → 1,600, 0)', 'New'],
+    ['LiteLLM vs OpenRouter: hosted vs self-hosted gateways', 'litellm vs openrouter (320–590, 0)', 'New'],
+    ['LiteLLM alternatives (security and self-host angle)', 'litellm alternatives (390, 0)', 'New'],
+    ['OpenRouter pricing and fees explained (with the calculator)', 'openrouter pricing (1,600, 12)', 'Reuses calculator from /compare/openrouter'],
+    ['Codex cost per developer: plans, API prices, tracking', 'codex cost (1,600, 10)', 'New; sibling of claude-code-cost'],
+    ['Claude Code router: open-source router vs a managed gateway', 'claude code router (2,900, 6)', 'Links to /blog/claude-code-proxy, does not repeat it'],
+    ['Best LLM routers in 2026', 'llm router (720, 18)', 'Links to /blog/llm-routing-profiles'],
+    ['LLM proxy vs LLM gateway', 'llm proxy (390, 0)', 'New'],
+  ], [0.46, 0.3, 0.24]),
+
+];
+
+const makeDoc = (kids, footer) => new Document({
   numbering: { config: ['b', 'n'].map(ref => ({ reference: ref, levels: [{ level: 0, format: ref === 'n' ? LevelFormat.DECIMAL : LevelFormat.BULLET, text: ref === 'n' ? '%1.' : '•', alignment: AlignmentType.LEFT, style: { paragraph: { indent: { left: 300, hanging: 220 } } } }] })) },
   styles: { default: { document: { run: { font: FONT, size: sz(9.5) } } } },
   sections: [{
     properties: { page: { size: { width: 11906, height: 16838 }, margin: { top: M, bottom: M, left: M, right: M } } },
-    footers: { default: new Footer({ children: [new Paragraph({ alignment: AlignmentType.RIGHT, children: [run('Nautili and DevZero · SEO deep dive · ', { pt: 7.5, color: GREY }), new TextRun({ children: [PageNumber.CURRENT], font: FONT, size: sz(7.5), color: GREY })] })] }) },
-    children,
+    footers: { default: new Footer({ children: [new Paragraph({ alignment: AlignmentType.RIGHT, children: [run(footer, { pt: 7.5, color: GREY }), new TextRun({ children: [PageNumber.CURRENT], font: FONT, size: sz(7.5), color: GREY })] })] }) },
+    children: kids,
   }],
 });
-Packer.toBuffer(doc).then(b => {
-  fs.writeFileSync(path.join(outDir, 'Nautili-DevZero-SEO-Deep-Dive.docx'), b);
+Promise.all([
+  Packer.toBuffer(makeDoc(children, 'Nautili and DevZero · SEO deep dive · ')),
+  Packer.toBuffer(makeDoc(workChildren, 'Nautili and DevZero · SEO work items · ')),
+]).then(([a, b]) => {
+  fs.writeFileSync(path.join(outDir, 'Nautili-DevZero-SEO-Deep-Dive.docx'), a);
+  fs.writeFileSync(path.join(outDir, 'Nautili-DevZero-SEO-Work-Items.docx'), b);
   const esc = v => /[",\n]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v;
   fs.writeFileSync(path.join(outDir, 'data', 'seo-work-items.csv'), ['id,site,area,task,owner,effort,when', ...WORK.map(r => r.map(esc).join(','))].join('\n') + '\n');
-  console.log('wrote deep dive and work items');
+  console.log('wrote deep dive, work items doc and CSV');
 });
