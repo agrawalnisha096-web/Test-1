@@ -41,3 +41,21 @@
 - **Melitai** if Dominic wants a single distinctive word with a story.
 - Register **.com, .ai and .com.au together** as soon as one is chosen.
 - Run trademark searches with IP Australia, WIPO (UK, US) and EUIPO (Malta and the EU) before printing anything.
+
+## Update: "Mosta" + suffix names (checked 22 Nov 2026)
+71 combinations checked (.com against the registry, .ai by DNS).
+
+**Free as both .com and .ai:**
+- mostaai, mosta-ai
+- mostalabs, mostaworks, mostaautomation, mostaautomate, mostaintelligence, mostasystems
+- mostaops, mostaflow, mostaengine, mostaagents, mostaagentic, mostabots, mostalogic
+- mostaanalytics, mostainsight(s), mostaiq, mostagroup, mostapartners, mostaadvisory, mostaconsulting
+- mostaforge, mostarobotics, mostaautonomy, mostacore, mostamind(s), mostasmart, mostasignal
+- mostainternational, mostaone, mostaos, mostastack, mostaplatform, mostasoftware
+- mostabuilders, mostacollective, mostaedge, mostapulse, mostaventures
+- askmosta, heymosta, hellomosta, mymosta
+
+**.com taken:**
+- mostadigital, mostatech, mostatechnologies, mostadata, mostahq, mostasolutions, mostastudio
+- mostacloud, mostax, mostathink, mostaglobal
+- getmosta, trymosta, withmosta, usemosta, gomosta, meetmosta
