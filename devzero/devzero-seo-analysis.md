@@ -130,7 +130,7 @@ DevZero started out as a **cloud development environment (CDE)** company competi
 | **Alternatives & vs** | cast ai alternatives, kubecost alternatives, scaleops vs cast ai, perfectscale alternatives | ~100 (KD 8); +8k for bare competitor brands | 11 `/compare/*` pages | Add `/alternatives/{competitor}` pages (a different search intent from "vs"), plus Zesty, Sedai-alternative, StormForge, Spot Ocean, Densify/Kubex, OpenCost |
 | **Cloud-specific** | eks / gke / aks cost optimization, eks pricing, aks pricing | eks pricing 210 (#7), gke pricing 110 (#3), aks pricing 70 (#8), eks auto mode 880 (not ranking) | Posts and `/solutions/aws-eks`, `/solutions/gcp-gke` | Add `/solutions/azure-aks` and `/solutions/oci-oke`. Refresh the 2025 posts |
 | **GPU / AI** | gpu utilization kubernetes, gpu sharing MIG time-slicing, llm inference cost, h100 price per hour | h100 price 1,900 (#26 for "h100 costs"), gpu utilization 480 (#25) | GPU guides, `/instances/gpu`, `/inference` | Build a live **"GPU price index"** page with monthly updates and a press-friendly chart. It's a link magnet against GMI Cloud, IntuitionLabs and FrenzyCap |
-| **Programmatic pricing** | `{instance} pricing`, `{a} vs {b}`, `{instance} spot price` | ~41.5k sampled head terms (KD 25) + ~90k long tail already ranking; us-east-1 terms ~33k at #16–18 | 5.2k instance pages, compare tool | Make the pages more unique; add indexable `/instances/compare/{a}-vs-{b}` for the most-searched pairs |
+| **Programmatic pricing** | `{instance} pricing`, `{a} vs {b}`, `{instance} spot price` | ~41.5k sampled head terms (KD 25) + ~90k long tail already ranking (the large us-east-1 terms are mostly news and console logins) | 5.2k instance pages, compare tool | Make the pages more unique; add indexable `/instances/compare/{a}-vs-{b}` for the most-searched pairs |
 | **FinOps education (top of funnel)** | what is kubernetes rightsizing, requests vs limits, binpacking | autoscaling education ~10.5k (KD 23): keda 3,600, karpenter 1,900, hpa 720 | Some posts | A glossary like Zesty's (about 50 terms to start), linked to product pages |
 | **Brand / AEO** | "devzero vs cast ai", "is devzero good", "devzero pricing" | devzero 390 (2,400 worldwide) | Compare pages and pricing | Fix `llms.txt`; get G2, Gartner Peer Insights and Capterra reviews; get on the Reddit (r/kubernetes) and CNCF landscape listings that LLMs cite |
 
@@ -157,7 +157,7 @@ DevZero started out as a **cloud development environment (CDE)** company competi
 
 **90+ days (compounding growth)**
 10. Grow to about 150 posts with a two-per-week cadence across the five clusters.
-11. Improve the quality of the programmatic instance and region pages and add vs-pair pages. They carry 77% of current search traffic, and `us-east-1` alone has ~33k US searches/month at positions 16–18.
+11. Improve the quality of the programmatic instance and region pages and add vs-pair pages. They carry 77% of current search traffic, and they have 2.4M impressions a year at 0.25% CTR.
 12. Publish a glossary and an academy-style learning track.
 13. Track citations in AI answer engines (ChatGPT, Perplexity, Google AI Overviews) for "best kubernetes cost optimization tool" as a KPI next to rankings.
 

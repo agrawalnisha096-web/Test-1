@@ -93,7 +93,7 @@
 
 | Keyword | US vol/mo | KD | DevZero now | Who ranks top 3 now | Action |
 |---|---:|---:|---|---|---|
-| east-1 / east 1 / us-east1 (region page) | 14,800 + 14,800 + 3,600 | 5–13 | #16–18 (`/instances/aws/regions/us-east-1`) | aws.amazon.com and docs | Biggest single upside: enrich region pages (price index by region, latency, instance availability) and link to them internally |
+| east-1 / east 1 / us-east1 (region page) | 14,800 + 14,800 + 3,600 | 5–13 | #16–18 (`/instances/aws/regions/us-east-1`) | aws.amazon.com and docs | Downgraded after a results check: most searches are outage news or AWS console logins. Enrich the region page for pricing queries only |
 | h100 price / h100 costs | 1,900 / 1,000 | 14–21 | #26 (`/instances/gpu/h100`) | reddit, silicondata.com, jarvislabs.ai | GPU price index page with monthly updates |
 | karpenter (+ karpenter kubernetes, helm chart) | 1,900 + 480 + 260 | 20–45 | #22–29 (`/blog/karpenter-guide`) | karpenter.sh, AWS docs, GitHub | Refresh the guide (2026, EKS Auto Mode), add a diagram and a comparison table |
 | keda | 3,600 | 16 | not in top 90 | keda.sh, GitHub, CNCF, Microsoft, zesty.co #5 | A KEDA guide already exists (`/guides/keda-autoscaling`) with only 2 internal links: link it and refresh (Zesty shows a vendor can rank) |
@@ -143,7 +143,7 @@ Key cluster assumptions (target scenario): DevZero autoscaling 60% of volume at 
 
 **Why the projection is far below the initial estimates.** The initial figures assumed the bottom-of-funnel K8s terms had 5–10k/month of volume (they have ~460) and that a new domain could take a meaningful share of 100k+ pricing searches dominated by AWS, Anthropic and OpenAI. With real volumes, DevZero's realistic upside is roughly **2–3× today's traffic** in a year, mostly from pricing/instance pages and autoscaling education. For both sites, the commercial case should rest on lead quality (a DevZero customer is worth five to six figures a year), not on visit counts.
 
-**What would move it higher:** the `us-east-1` region-page opportunity alone (~33k US searches/month at #16–18) is worth 1–2k visits/month if it reaches the top 5. For Nautili, a data-backed "Cursor vs Claude Code cost" page reaching the top 3 for ~15k searches/month would add ~1.5k visits/month.
+**What would move it higher:** lifting instance-page CTR from 0.25% towards 0.5% across 2.4M impressions a year (Search Console). (An earlier version cited ~33k us-east-1 searches; a results check showed most are news or console logins.) For Nautili, a data-backed "Cursor vs Claude Code cost" page reaching the top 3 for ~15k searches/month would add ~1.5k visits/month.
 
 **Validate in month 1:** once Search Console access is granted, replace the ETV baseline with real 90-day clicks and recalibrate the CTR assumptions.
 

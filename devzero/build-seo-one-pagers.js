@@ -115,7 +115,7 @@ const devzero = {
   interventions: [
     ['Now', 'Clean up after the pivot: redirect the 27 linked old URLs to relevant pages, refresh llms.txt, remove off-topic pages, fix "2025" titles.', 'Recovers links from 153 sites (about 30% of the total) and tells Google and AI assistants what DevZero does today.'],
     ['Now', 'Take back the ~39 Kubernetes posts duplicated on nautili.ai.', 'Stops the two sites competing with each other for the same searches.'],
-    ['1–3 mo', 'Improve region and instance pages (us-east-1 alone: ~33k searches/mo at #16–18) and launch a GPU price index.', 'Where the volume is: 47 keywords with 200+ searches each sit just off page one.'],
+    ['1–3 mo', 'Improve instance and region pages (2.4M impressions at 0.25% CTR) and the existing GPU pricing page.', 'Where the volume is: 47 keywords with 200+ searches each sit just off page one.'],
     ['1–3 mo', 'Add "alternatives" pages, get onto "best tools 2026" lists and G2, Gartner and Capterra.', 'Small volume (~100/mo) but the highest intent; these lists feed the answers AI assistants give.'],
     ['1–3 mo', 'Publish a "State of Kubernetes Waste" report from cluster-analyser data.', 'Original data earns the links needed to close the gap with Cast AI (3,665 linking sites).'],
     ['3+ mo', 'Publish twice a week, led by an EKS Auto Mode guide and refreshes of the existing KEDA and Karpenter guides, then rightsizing and GPU topics.', 'Autoscaling education has ~10.5k searches/mo at low difficulty (23) and feeds the money pages.'],

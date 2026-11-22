@@ -3,7 +3,7 @@ N1,nautili.ai,Positioning,"Rewrite homepage title, H1 subline and meta descripti
 N2,nautili.ai,Technical,301 the 39 duplicated Kubernetes posts to devzero.io; remove from blog.xml; change existing 307s to 308,Dev,S,Wk 1
 N3,nautili.ai,Technical,"JSON-LD on the 89 pages without it: SoftwareApplication + Offer (home, pricing), HowTo/TechArticle (12 guides), FAQPage (integrations, features), Product/Dataset (models, providers)",Dev,M,Wk 1–2
 N4,nautili.ai,Technical,Fix duplicate H1 on 36 pages (heading anchor component); add meta descriptions to 16 pages,Dev,S,Wk 1
-N5,nautili.ai,On-page,"Retitle /integrations/claude-code (""Claude Code | Nautili"") to target ""claude code router / proxy""; expand to a full landing page",Content,S,Wk 1
+N5,nautili.ai,On-page,"Retitle /integrations/claude-code (""Claude Code | Nautili""); expand into a landing page for routing Claude Code through a gateway (after the product check in N20)",Content,S,Wk 1
 N6,nautili.ai,Internal links,"Link every LLM post to /pricing/inference, /features/spend-attribution and the relevant /compare and /integrations pages; link model pages to compare pages and the fee calculator",Content + Dev,S,Wk 2
 N7,nautili.ai,On-page,"Model and provider page titles: ""<Model> API pricing: $in / $out per 1M tokens""; provider pages ""<Provider> API pricing""",Dev,S,Wk 2
 N8,nautili.ai,Analytics,"GTM container + GA4 key events (sign-up, key created, first request, demo, calculator use); filter tencent##### queries in reporting",Dev,M,Wk 1–2
@@ -11,12 +11,14 @@ N9,both,Authority,"301 devzero.io/inference, /pricing/inference, /lp/inference t
 N10,nautili.ai,New pages,"Alternatives pages: OpenRouter, LiteLLM, Portkey (3)",Content,M,Wk 2–3
 N11,nautili.ai,New pages,"Compare pages: LiteLLM, Requesty, Helicone, Bifrost, TrueFoundry, Cloudflare AI Gateway, Vercel AI Gateway, Kong (8)",Content,L,Wk 3–6
 N12,nautili.ai,New pages,"Integration pages: Cursor (BYOK), Codex, Cline, Roo Code, Kilo Code, OpenCode, OpenWebUI, LibreChat, n8n, Gemini CLI (10)",Content,L,Wk 3–8
-N13,nautili.ai,Tools,"Token / LLM cost calculator (per model, programmatic) and stand-alone OpenRouter fee calculator",Dev + Content,L,Wk 4–8
+N13,nautili.ai,Tools,"Token / LLM cost calculator (new, per model); move the existing fee calculator out of /compare/openrouter into an ""OpenRouter pricing and fees"" page",Dev + Content,L,Wk 4–8
 N14,nautili.ai,New pages,"Model vs model pages for the top 30 pairs (haiku vs sonnet, opus vs fable, gpt vs claude…) from the catalogue data",Dev + Content,M,Wk 5–8
-N15,nautili.ai,Content,"Blog cohort 1 (8 posts): Claude Code router, Codex cost, Cursor usage per developer, LiteLLM vs OpenRouter, Claude Code with DeepSeek/Gemini, OpenAI API alternatives, LLM proxy explained, AI FinOps",Content,L,Wk 2–6
+N15,nautili.ai,Content,"Blog cohort 1 (8 pieces, see the cohort table): checked for intent and for overlap with existing posts",Content,L,Wk 2–6
 N16,nautili.ai,Off-page,"Listings: G2, Capterra/GetApp, TrustRadius, SaaSHub, AlternativeTo, StackShare, Product Hunt, AWS Marketplace, Artifact Hub (Helm), Docker Hub",SEO,M,Wk 2–6
 N17,nautili.ai,Off-page,"AI directories and comparison sites already listing 2+ competitors (Toolify, Toolradar, Toolscout, apis.io, Agentic Index, gatewayscore.com, llmpricing.dev, cheapestllmapi.com, selfhost.directory)",SEO,M,Wk 2–8
 N18,nautili.ai,Off-page,"Become a listed provider: PRs or partner requests to Cline, Roo Code, Kilo Code, OpenCode, OpenWebUI, LibreChat, Continue, n8n, LangChain, Vercel AI SDK community providers",Dev + founder,L,Wk 3–12
+N20,nautili.ai,Product check,"Confirm before writing: Claude Code routed to non-Anthropic models; Cursor with a custom base URL (chat vs agent mode); Cline, Roo, Kilo, OpenCode, OpenWebUI, LibreChat with an OpenAI-compatible endpoint; MCP support",Product + SEO,S,Wk 1
+N21,nautili.ai,Off-page,"Ask to be listed on the Claude Code docs ""LLM gateway"" page (code.claude.com, ranks #2 for ""claude code litellm"")",Founder,S,Wk 2
 N19,nautili.ai,Off-page / GEO,"Community: Show HN, Reddit (r/ClaudeAI, r/cursor, r/LocalLLaMA, r/LLMDevs) answers with data, LinkedIn posts from founders, outreach to ""best LLM gateway"" list authors",Founder + SEO,M,Ongoing
 D1,devzero.io,Cannibalisation,AKS: merge /blog/azure-kubernetes-service-pricing into /blog/aks-pricing (301); point the 31 internal links at /blog/aks-pricing,Content + Dev,S,Wk 1
 D2,devzero.io,Cannibalisation,"Split intent: /blog/*-pricing = price; /blog/*-cost-optimization = how-to; /solutions/aws-eks, /gcp-gke = product. Retitle and cross-link EKS, GKE and AKS sets",Content,M,Wk 2–3
