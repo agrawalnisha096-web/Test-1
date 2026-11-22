@@ -98,6 +98,18 @@ const WORK = [
   ['D11', 'devzero.io', 'Content', 'DevZero content cohort 1: the 8 new pieces in section 3', 'Content', 'L', 'Wk 3–10'],
 ];
 
+const DZ_COHORT = [
+    ['Piece', 'Main keyword (US/mo, KD)', 'Notes'],
+    ['EKS Auto Mode vs Karpenter: cost, control and when to switch', 'eks auto mode (720, 4); eks auto mode pricing (50, 8); eks auto mode vs karpenter (30, 0)', 'Links to the Karpenter guide and /karpenter-optimization'],
+    ['AKS Automatic vs AKS Standard: what it manages and what it costs', 'aks automatic (170, 0)', 'Links to /blog/aks-pricing'],
+    ['EKS vs AKS vs GKE: managed Kubernetes compared', 'eks vs aks (90, 0)', 'Features and fit; links to /blog/kubernetes-pricing for cost detail'],
+    ['OpenCost vs Kubecost (after the IBM acquisition)', 'opencost vs kubecost (70, 0); kubecost pricing (40, 7)', 'Neutral comparison; different from /compare/kubecost'],
+    ['Kubecost alternatives', 'kubecost alternatives (20, 0)', 'Listicle at /alternatives/kubecost'],
+    ['Cast AI alternatives and pricing', 'cast ai pricing (20, 17); cast ai alternatives (10)', 'Listicle at /alternatives/cast-ai'],
+    ['Kubernetes bin packing: how it works and what it saves', 'kubernetes bin packing (30, 0)', 'Links to /kubernetes-cost-optimization'],
+    ['State of Kubernetes Waste report', 'Link and press asset', 'Built from anonymised cluster-analyser data'],
+];
+
 const children = [
   p([run('Nautili and DevZero', { pt: 22, bold: true, color: NAVY })], { after: 20 }),
   p([run('SEO deep dive: positioning, buying-intent keywords, off-page, internal links and cannibalisation', { pt: 13, color: ACCENT })], { after: 60 }),
@@ -250,9 +262,12 @@ const children = [
   ], [0.13, 0.33, 0.27, 0.27], { boldFirst: true, light: DZLIGHT }),
   h2('7.3 DevZero keyword focus for the next 3 months', DZ),
   bullet('**Defend and lift pricing pages** (eks, gke, aks, s3 and cloud comparison: 889k impressions at 0.25% CTR). Target: top 5 for eks pricing, gke pricing and aks pricing, CTR above 0.6%.'),
-  bullet('**Autoscaling guides already written:** KEDA (3,600 searches/month, KD 16), Karpenter (1,900, KD 44), EKS Auto Mode (720, KD 4; new post). Internal links first, then refresh. New DevZero content is listed in the work items document.'),
+  bullet('**Autoscaling guides already written:** KEDA (3,600 searches/month, KD 16), Karpenter (1,900, KD 44), EKS Auto Mode (720, KD 4; new post). Internal links first, then refresh. New DevZero content is listed in 7.4.'),
   bullet('**Commercial pages:** rebuild /kubernetes-cost-optimization and link the 13 under-linked product pages. Volumes are small (about 460 US searches/month) but this is where demos come from.'),
   bullet('**Target by month 3:** devzero.io from ~2,100 to 2,600–2,900 clicks a month; 3 cannibalising clusters merged; 0 product pages without links.'),
+  h2('7.4 New DevZero pages', DZ),
+  p('New pages only; refreshes and merges are covered in 7.1 and 7.2. Search volumes are small, so these pages are aimed at buyers comparing options rather than at traffic.'),
+  grid(DZ_COHORT, [0.4, 0.34, 0.26], { light: DZLIGHT }),
 
 ];
 
@@ -280,17 +295,7 @@ const workChildren = [
 
   h1('3. DevZero content cohort 1 (weeks 3–10)'),
   p('New pages only; refreshes of existing posts are in D2, D4 and D10. Search volumes here are small, so these pieces are aimed at buyers comparing options rather than at traffic.'),
-  grid([
-    ['Piece', 'Main keyword (US/mo, KD)', 'Notes'],
-    ['EKS Auto Mode vs Karpenter: cost, control and when to switch', 'eks auto mode (720, 4); eks auto mode pricing (50, 8); eks auto mode vs karpenter (30, 0)', 'Links to the Karpenter guide and /karpenter-optimization'],
-    ['AKS Automatic vs AKS Standard: what it manages and what it costs', 'aks automatic (170, 0)', 'Links to /blog/aks-pricing'],
-    ['EKS vs AKS vs GKE: managed Kubernetes compared', 'eks vs aks (90, 0)', 'Features and fit; links to /blog/kubernetes-pricing for cost detail'],
-    ['OpenCost vs Kubecost (after the IBM acquisition)', 'opencost vs kubecost (70, 0); kubecost pricing (40, 7)', 'Neutral comparison; different from /compare/kubecost'],
-    ['Kubecost alternatives', 'kubecost alternatives (20, 0)', 'Listicle at /alternatives/kubecost'],
-    ['Cast AI alternatives and pricing', 'cast ai pricing (20, 17); cast ai alternatives (10)', 'Listicle at /alternatives/cast-ai'],
-    ['Kubernetes bin packing: how it works and what it saves', 'kubernetes bin packing (30, 0)', 'Links to /kubernetes-cost-optimization'],
-    ['State of Kubernetes Waste report', 'Link and press asset', 'Built from anonymised cluster-analyser data'],
-  ], [0.4, 0.34, 0.26]),
+  grid(DZ_COHORT, [0.4, 0.34, 0.26]),
 ];
 
 const makeDoc = (kids, footer) => new Document({
