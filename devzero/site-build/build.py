@@ -26,6 +26,14 @@ def part(name):
 
 
 # ------------------------------------------------------------------ data
+def polish(x):
+    if not isinstance(x, str):
+        return x
+    for a, b in merges.POLISH:
+        x = re.sub(a, b, x, flags=re.M)
+    return x
+
+
 def build_data():
     data = {}
     for site in SITES:
@@ -42,11 +50,15 @@ def build_data():
         for c in content:
             c['n'] = int(c['n'])
             c.update(merges.CONTENT_EDITS[site].get(c['n'], {}))
+        for row in tasks + content:
+            for k, v in list(row.items()):
+                row[k] = polish(v)
         kws = SEED[site]['keywords']
         intent = merges.INTENT[site]
         missing = [k for k in intent if k not in {x['keyword'] for x in kws}]
         if missing:
             print(f'  note: intent entries not in {site} keyword list: {missing}')
+        intent = {k: polish(v) for k, v in intent.items()}
         data[site] = dict(tasks=tasks, content=content, keywords=kws, intent=intent)
     return data
 
@@ -182,13 +194,15 @@ def overview_tab(data):
         rows += (f"<tr><td><span class='dot {cls}' style='display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:8px'></span><b>{name}</b></td>"
                  f"<td class='num'>{c['total']}</td><td class='num'>{c['Done']}</td><td class='num'>{c['Partial']}</td><td class='num'>{c['Pending']}</td><td class='num'>{c['p0_open']}</td></tr>")
     a = h.index('<tbody>') + len('<tbody>'); b = h.index('</tbody>', a)
-    return h[:a] + rows + h[b:]
+    h = h[:a] + rows + h[b:]
+    h = re.sub(r'<div class="card"><h3>Sources</h3>.*?</ul></div>\n?', '', h, flags=re.S)
+    return polish(h)
 
 
 def plan_page(data):
     head = part('plan__head.html')
-    body = (part('plan__pre.html') + overview_tab(data) + seo_tab('nautili', data['nautili']) + keyword_tab('nautili', data['nautili'])
-            + part('plan__nautili-ads.html') + seo_tab('devzero', data['devzero']) + keyword_tab('devzero', data['devzero'])
+    body = (part('plan__pre.html') + overview_tab(data) + polish(seo_tab('nautili', data['nautili'])) + polish(keyword_tab('nautili', data['nautili']))
+            + part('plan__nautili-ads.html') + polish(seo_tab('devzero', data['devzero'])) + polish(keyword_tab('devzero', data['devzero']))
             + part('plan__devzero-ads.html'))
     return head + body + part('plan__tail.html')
 
@@ -242,8 +256,8 @@ def competitors_page():
     def append(sec, extra):
         k = sec.rindex('</section>')
         return sec[:k] + extra + '\n' + sec[k:]
-    secs['devzero'] = append(secs['devzero'], dz_extra)
-    secs['nautili-rivals'] = append(secs['nautili-rivals'], na_extra)
+    secs['devzero'] = polish(append(secs['devzero'], dz_extra))
+    secs['nautili-rivals'] = polish(append(secs['nautili-rivals'], na_extra))
     body = part('competitors__pre.html') + ''.join(secs.values())
     return part('competitors__head.html') + body + part('competitors__tail.html')
 

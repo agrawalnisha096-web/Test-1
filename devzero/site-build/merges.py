@@ -259,3 +259,22 @@ TARGETS = {
 INTENT['devzero']['aks / gke / eks cost optimization'] = 'Cloud docs first, then vendor guides; DevZero already #4–8 with no clicks: titles are the fix'
 INTENT['devzero']['link magnet'] = 'Not a search target: earns links and press'
 INTENT['nautili']['link magnet'] = 'Not a search target: earns links and press'
+
+# ---------------------------------------------------------------- client-ready text polish
+# (pattern, replacement) applied to task / content / keyword text and to the rebuilt SEO sections.
+POLISH = [
+    (r'; reference audit: ', '; '), (r'Reference audit: ', ''),
+    (r'No results snapshot yet: not checked', '—'),
+    (r', so our 20 Nov raw-HTML check missed it', ''),
+    (r' \(not ~1,080 as we reported 18–20 Nov\)', ''),
+    (r'Changed after the intent check', '/features/spend-attribution live'),
+    (r'Downgraded: mostly navigational to OpenAI', '—'),
+    (r'from the audits, the SEO deep dive and Search Console', 'from our audits and Search Console'),
+    (r'US monthly searches, Google Ads via DataForSEO, 12-month average, pulled 20 Nov 2026\. ', 'US monthly searches, 12-month average. '),
+    (r' \(latest results snapshot, Jul–Nov 2026\)', ''),
+    (r'See Search Console tab', 'See the Search Console tab in the workbook'),
+    (r'Brand search demand from Google Ads via DataForSEO \(US, 12-month average, 20 Nov 2026\)\. We have not run a full site audit on these yet\.', 'Brand searches: US, 12-month average.'),
+    (r' Source: reference SEO deep dive \(Nov 2026\), checked against Google on 23 Nov\.', ''),
+    (r'^Not checked$', '—'),
+]
+POLISH.append((r', so a raw-HTML check does not show it', ''))
