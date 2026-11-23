@@ -1,0 +1,305 @@
+<title>Contractor Lead-Gen Site Plan</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a single report column (~72ch) with wide data tables that scroll inside their own frames; a slim sticky section index on wide screens. */
+:root{
+  --paper:#f5f6f3; --surface:#ffffff; --ink:#18232b; --muted:#5a6770; --rule:#d7dcd8;
+  --accent:#c2620a; --accent-soft:#fbeee0; --blue:#1f5f8b; --blue-soft:#e6eff6; --good:#2f7a4a;
+  --display:"Archivo","Helvetica Neue",Arial,sans-serif;
+  --body:"IBM Plex Sans","Segoe UI",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#12181c; --surface:#1a2228; --ink:#e4e8e5; --muted:#9aa6ad; --rule:#2c363d;
+  --accent:#f0923b; --accent-soft:#3a2714; --blue:#7bb6e0; --blue-soft:#1b2d3b; --good:#6cc28c; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#12181c; --surface:#1a2228; --ink:#e4e8e5; --muted:#9aa6ad; --rule:#2c363d;
+  --accent:#f0923b; --accent-soft:#3a2714; --blue:#7bb6e0; --blue-soft:#1b2d3b; --good:#6cc28c; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font:400 16px/1.6 var(--body);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 64px}
+.wrap{max-width:1080px;margin:0 auto;display:grid;grid-template-columns:200px minmax(0,1fr);gap:48px}
+nav.toc{position:sticky;top:calc(env(safe-area-inset-top,0px) + 24px);align-self:start;padding-top:40px;font-size:13px}
+nav.toc ol{list-style:none;margin:0;padding:0;display:grid;gap:6px;counter-reset:s}
+nav.toc a{color:var(--muted);text-decoration:none}
+nav.toc a:hover,nav.toc a:focus-visible{color:var(--accent)}
+main{min-width:0}
+@media (max-width:860px){.wrap{grid-template-columns:minmax(0,1fr)}nav.toc{display:none}}
+header.top{padding-block:40px 28px;border-bottom:2px solid var(--ink);margin-bottom:8px}
+.eyebrow{font:500 12px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+h1{font:800 clamp(30px,5vw,46px)/1.08 var(--display);letter-spacing:-.01em;margin:12px 0 14px;text-wrap:balance}
+.meta{display:flex;flex-wrap:wrap;gap:8px 20px;font:400 13px/1.4 var(--mono);color:var(--muted)}
+.meta b{color:var(--ink);font-weight:500}
+h2{font:700 26px/1.2 var(--display);margin:56px 0 16px;text-wrap:balance;display:flex;gap:12px;align-items:baseline}
+h2 .n{font:500 14px var(--mono);color:var(--accent)}
+h3{font:700 18px/1.3 var(--display);margin:32px 0 10px}
+p,li{max-width:72ch}
+a{color:var(--blue)}
+code{font:400 .88em var(--mono);background:var(--blue-soft);padding:1px 5px;border-radius:3px;overflow-wrap:anywhere}
+.lbl{font:500 11px/1 var(--mono);letter-spacing:.05em;padding:3px 6px;border-radius:3px;vertical-align:1px;white-space:nowrap}
+.V{background:var(--blue-soft);color:var(--blue)} .I{background:var(--accent-soft);color:var(--accent)} .U{background:var(--rule);color:var(--muted)}
+.legend{font-size:14px;color:var(--muted);margin:16px 0 0}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule);margin:24px 0}
+.stat{background:var(--surface);padding:16px 18px}
+.stat .v{font:800 28px/1 var(--display);font-variant-numeric:tabular-nums}
+.stat .k{font-size:13px;color:var(--muted);margin-top:6px;line-height:1.4}
+ol.findings{padding-left:22px;display:grid;gap:12px}
+ol.findings li::marker{font:600 14px var(--mono);color:var(--accent)}
+.tbl{overflow-x:auto;border:1px solid var(--rule);background:var(--surface);margin:16px 0}
+table{border-collapse:collapse;width:100%;font-size:14px;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--rule);vertical-align:top}
+th{font:600 12px/1.3 var(--mono);letter-spacing:.03em;text-transform:uppercase;color:var(--muted);background:var(--paper);white-space:nowrap}
+tr:last-child td{border-bottom:0}
+td.num,th.num{text-align:right;white-space:nowrap}
+.bar{display:inline-block;height:8px;background:var(--accent);border-radius:1px;vertical-align:middle;margin-right:8px}
+pre.tree{font:400 13px/1.55 var(--mono);background:var(--surface);border:1px solid var(--rule);padding:16px 18px;overflow-x:auto;margin:16px 0}
+pre.tree .c{color:var(--muted)} pre.tree .p{color:var(--blue)}
+.callout{border-left:3px solid var(--accent);background:var(--accent-soft);padding:12px 16px;margin:16px 0;max-width:72ch}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.cols > div{min-width:0}
+ul.tight{padding-left:20px;display:grid;gap:6px}
+.wave{display:inline-block;font:600 12px var(--mono);padding:2px 8px;border-radius:10px;border:1px solid currentColor}
+.w1{color:var(--accent)} .w2{color:var(--blue)} .w3{color:var(--muted)}
+.decide{counter-reset:d;list-style:none;padding:0;display:grid;gap:10px}
+.decide li{background:var(--surface);border:1px solid var(--rule);padding:12px 16px;max-width:none}
+.decide b{font-family:var(--display)}
+footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--rule);font-size:13px;color:var(--muted)}
+@media (prefers-reduced-motion:no-preference){a{transition:color .15s}}
+</style>
+
+<div class="wrap">
+<nav class="toc" aria-label="Sections">
+  <ol>
+    <li><a href="#summary">1 · Summary</a></li>
+    <li><a href="#competitors">2 · Competitors</a></li>
+    <li><a href="#keywords">3 · Keyword clusters</a></li>
+    <li><a href="#architecture">4 · Site architecture</a></li>
+    <li><a href="#waves">5 · Content waves</a></li>
+    <li><a href="#plan">6 · 90-day plan</a></li>
+    <li><a href="#risks">7 · Risks</a></li>
+    <li><a href="#decisions">8 · Decisions needed</a></li>
+    <li><a href="#method">Method &amp; files</a></li>
+  </ol>
+</nav>
+<main>
+<header class="top">
+  <div class="eyebrow">SEO plan · US home-service contractors</div>
+  <h1>A lead-gen website that sells leads and marketing to contractors</h1>
+  <div class="meta">
+    <span>Research run <b>Nov 23, 2026</b></span>
+    <span>Market <b>United States, all trades</b></span>
+    <span>DataForSEO spend <b>$1.44</b> of a $5 cap</span>
+    <span>Branch <b>leadgen-website</b></span>
+  </div>
+  <p class="legend"><span class="lbl V">V</span> Verified (read from a source or API) &nbsp; <span class="lbl I">I</span> Inferred (analysis of verified data) &nbsp; <span class="lbl U">U</span> Unverified (a competitor's own claim)</p>
+</header>
+
+<section id="summary">
+<h2><span class="n">01</span>Summary</h2>
+<div class="stats">
+  <div class="stat"><div class="v">1,305</div><div class="k">keywords mapped to 226 candidate pages</div></div>
+  <div class="stat"><div class="v">~273K</div><div class="k">US searches a month, excluding navigational brand terms</div></div>
+  <div class="stat"><div class="v">$30–110</div><div class="k">CPC on trade "leads" and "marketing" terms, at KD 0–15</div></div>
+  <div class="stat"><div class="v">981</div><div class="k">est. organic visits a month to 99 Calls, from 4,114 URLs</div></div>
+</div>
+<ol class="findings">
+  <li><b>The niche is soft.</b> 99 Calls, the model closest to ours, gets about 981 estimated organic visits a month from 4,114 indexed URLs and 730 referring domains. 33 Mile Radius gets about 638. Built Right Digital ranks #4 for "roofing seo" with 518 referring domains. <span class="lbl V">V</span></li>
+  <li><b>Easy to rank for, expensive to buy ads on.</b> Trade "leads" and "marketing" keywords total about 70K searches a month at weighted difficulty 0–15 and CPCs of $30–110. Example: "roofing leads", 1,000 searches a month, KD 6, $57 a click. <span class="lbl V">V</span></li>
+  <li><b>Location pages don't earn traffic, so don't build them first.</b> 99 Calls has 2,744 state × trade pages, and its homepage still earns about 47% of its traffic. Abstrakt has 1,147 industry × city pages, and its homepage earns 75%. The pages that do earn traffic are trade hubs: Scorpion <code>/hvac/</code>, 33 Mile Radius <code>/hvac-leads/</code>, 99 Calls <code>/Plumbing-Leads.htm</code>. <span class="lbl I">I</span></li>
+  <li><b>Google Local Services Ads is the largest single topic:</b> 89,000 searches a month across 37 keywords. Contractors researching LSA are exactly our buyer, and the current top results are small agencies' blog posts. <span class="lbl V">V</span></li>
+  <li><b>Results pages are full of AI, video and Reddit.</b> Of 98 checked keywords, 97 show an AI Overview, 56 have YouTube in the top 10, 26 Facebook, 21 Reddit, and 14 a local pack. Pages need to answer first with concrete numbers, and a YouTube and Reddit presence is needed alongside the site. <span class="lbl V">V</span></li>
+  <li><b>Positioning gap.</b> Only 99 Calls and Service Direct publish per-lead prices. Agencies charge $2K–8K a month on 12-month contracts. Published per-trade pricing, no contract and clear billing rules would stand out in every comparison. That's your call (see <a href="#decisions">§8</a>). <span class="lbl V">V</span></li>
+</ol>
+</section>
+
+<section id="competitors">
+<h2><span class="n">02</span>Competitor landscape</h2>
+<p>Estimated organic traffic is DataForSEO's US estimate. Full detail is in <code>competitor-matrix.csv</code>.</p>
+<div class="tbl"><table>
+<thead><tr><th>Company</th><th>Model</th><th>Pricing published?</th><th>Contract</th><th class="num">Est. organic / mo</th><th class="num">Ref. domains</th><th class="num">Indexed URLs</th></tr></thead>
+<tbody>
+<tr><td><b>99 Calls</b></td><td>Exclusive leads + agency</td><td>Yes: $12.99–$129.99 / lead; $99–$4,999 / mo</td><td>None</td><td class="num">981</td><td class="num">730</td><td class="num">4,114</td></tr>
+<tr><td><b>33 Mile Radius</b></td><td>Pay-per-call</td><td>No ("varies by area")</td><td>None</td><td class="num">638</td><td class="num">362</td><td class="num">222</td></tr>
+<tr><td><b>Service Direct</b></td><td>Pay-per-call marketplace</td><td>Yes: CPL ranges by trade (Roofing $85–550)</td><td>None</td><td class="num">3,314</td><td class="num">1,913</td><td class="num">428</td></tr>
+<tr><td><b>Hook Agency</b></td><td>Agency</td><td>Yes: $2K–$3.75K / mo per service</td><td>12 months</td><td class="num">9,174</td><td class="num">3,466</td><td class="num">1,425</td></tr>
+<tr><td><b>Scorpion</b></td><td>Agency + tech</td><td>No</td><td>12 months</td><td class="num">3,460</td><td class="num">8,846</td><td class="num">blocked</td></tr>
+<tr><td><b>Built Right Digital</b></td><td>Agency</td><td>Yes: $499–$4,999 / mo</td><td>Month-to-month</td><td class="num">639</td><td class="num">518</td><td class="num">1,535</td></tr>
+<tr><td><b>Abstrakt</b></td><td>B2B lead gen</td><td>No</td><td>n/a</td><td class="num">1,760</td><td class="num">1,719</td><td class="num">2,242</td></tr>
+<tr><td><b>Angi · Thumbtack · Networx · Modernize</b></td><td>Shared-lead marketplaces</td><td>No</td><td>n/a</td><td class="num">37K–860K<br><small>consumer</small></td><td class="num">4.6K–60K</td><td class="num">n/a</td></tr>
+</tbody></table></div>
+
+<div class="cols">
+<div>
+<h3>Copy</h3>
+<ul class="tight">
+  <li>Hook's and Scorpion's <b>trade hub + channel child</b> pattern (<code>/hvac-marketing/seo/</code>, <code>/hvac/ppc-hvac-marketing/</code>). Both children rank on their own. <span class="lbl I">I</span></li>
+  <li>99 Calls' <b>LSA cost estimator</b> (26 trade pages) and <b>"vs competitor"</b> pages.</li>
+</ul>
+</div>
+<div>
+<h3>Avoid</h3>
+<ul class="tight">
+  <li>99 Calls' and Abstrakt's state/city × trade pages: thousands of near-duplicate pages, almost no traffic. <span class="lbl I">I</span></li>
+  <li>Generic agency terms ("seo company"). WebFX holds them with 39K referring domains.</li>
+</ul>
+</div>
+</div>
+<div class="callout">Service Direct gets calls to resell by ranking homeowner DIY content ("why is my light switch shocking me"). That's a second, consumer-side SEO play. It's out of scope here, but worth knowing if you ever produce leads yourself.</div>
+<p><b>Trust claims competitors lead with</b> <span class="lbl U">U</span>: 99 Calls "2.5M leads" and BBB A+; Service Direct "2.4M+ call leads", "8,300+ clients", "8.5X ROI"; Hook "$240M+ revenue driven"; Scorpion "$3B+ attributed revenue"; Modernize "1,000+ businesses". You'll need your own proof points before launch.</p>
+</section>
+
+<section id="keywords">
+<h2><span class="n">03</span>Keyword opportunity by cluster</h2>
+<p>Ad value = volume × CPC: what that traffic would cost in Google Ads. It's a value signal, not revenue. The full map is in <code>keyword-map.csv</code>.</p>
+<div class="tbl"><table>
+<thead><tr><th>Cluster</th><th class="num">Kws</th><th>Searches / mo</th><th class="num">Ad value / mo</th><th>KD</th><th>Example</th></tr></thead>
+<tbody>
+<tr><td>Google LSA (guide + management)</td><td class="num">37</td><td><span class="bar" style="width:89px"></span>89,000</td><td class="num">$1.04M</td><td>~31</td><td>local services ads (49.5K)</td></tr>
+<tr><td>Competitor brands (reviews, cost, vs)</td><td class="num">102</td><td><span class="bar" style="width:50px"></span>~50,000*</td><td class="num">$355K</td><td>20–40</td><td>angi leads (5,400)</td></tr>
+<tr><td>Trade × marketing / advertising / agency</td><td class="num">388</td><td><span class="bar" style="width:41px"></span>41,420</td><td class="num">$1.30M</td><td>0–15</td><td>plumbing marketing agency (720)</td></tr>
+<tr><td>Trade × leads / lead generation</td><td class="num">301</td><td><span class="bar" style="width:28px"></span>28,060</td><td class="num">$1.31M</td><td>0–10</td><td>roofing leads (1,000)</td></tr>
+<tr><td>Trade × SEO</td><td class="num">107</td><td><span class="bar" style="width:20px"></span>19,530</td><td class="num">$739K</td><td>0–15</td><td>roofing seo (1,900)</td></tr>
+<tr><td>Generic marketing (home service / contractor)</td><td class="num">97</td><td><span class="bar" style="width:12px"></span>12,330</td><td class="num">$305K</td><td>~7</td><td>home service marketing (720)</td></tr>
+<tr><td>Generic leads (contractor / home service)</td><td class="num">88</td><td><span class="bar" style="width:12px"></span>11,930</td><td class="num">$536K</td><td>~11</td><td>lead generation services (1,300)</td></tr>
+<tr><td>Trade × websites</td><td class="num">51</td><td><span class="bar" style="width:9px"></span>8,610</td><td class="num">$118K</td><td>10–25</td><td>websites for painters (2,400)</td></tr>
+<tr><td>Pay-per-call</td><td class="num">48</td><td><span class="bar" style="width:3px"></span>2,310</td><td class="num">$103K</td><td>~4</td><td>pay per call (390)</td></tr>
+<tr><td>Cost per lead</td><td class="num">22</td><td><span class="bar" style="width:2px"></span>1,930</td><td class="num">$13K</td><td>low</td><td>how to calculate cost per lead (140)</td></tr>
+<tr><td>Missed-call text back</td><td class="num">15</td><td><span class="bar" style="width:2px"></span>1,330</td><td class="num">$29K</td><td>~4</td><td>missed call text back (480)</td></tr>
+</tbody></table></div>
+<p><small>* About 38K of this is Thumbtack: mostly "what is thumbtack" and "is thumbtack legit", which is mixed consumer and pro intent. Realistically about a third is contractors.</small></p>
+<p><b>Top trade hubs by ad value:</b> plumbing (8,720/mo), roofing (9,620), HVAC (8,150), then solar (very high CPC), pest control, landscaping, remodeling, moving, electrical, house cleaning, painting and junk removal. <span class="lbl V">V</span></p>
+<p><b>Caveats.</b> Volumes are Google Ads monthly averages. Competitor data is capped at their top 1,000 keywords in positions 1–20, so totals are minimums. Two results checks didn't finish. Low-volume trades (chimney, irrigation, water treatment) show 10–20 searches a month and come last.</p>
+</section>
+
+<section id="architecture">
+<h2><span class="n">04</span>Site architecture</h2>
+<pre class="tree"><span class="p">/</span>                                <span class="c">Home: exclusive leads + marketing for home service contractors</span>
+├── <span class="p">/leads/</span>                      <span class="c">How our leads work: exclusive, billing rules, quality, credits</span>
+├── <span class="p">/pricing/</span>                    <span class="c">Published per-lead pricing by trade + plans (main differentiator)</span>
+├── <span class="p">/get-leads/</span>                  <span class="c">Lead form (2-step)</span>
+├── <span class="p">/{trade}/</span>                    <span class="c">~55 trade hubs: leads + marketing + advertising intents</span>
+│   ├── <span class="p">/{trade}/seo/</span>            <span class="c">only where the cluster is ≥500/mo</span>
+│   └── <span class="p">/{trade}/websites/</span>       <span class="c">only where ≥500/mo</span>
+├── <span class="p">/services/</span>
+│   ├── <span class="p">local-services-ads/</span>      <span class="c">LSA management + the definitive guide (89K/mo cluster)</span>
+│   ├── <span class="p">google-ads/  seo/  websites/</span>
+│   ├── <span class="p">pay-per-call-leads/</span>
+│   └── <span class="p">missed-call-text-back/</span>   <span class="c">+ AI answering</span>
+├── <span class="p">/compare/</span>
+│   ├── <span class="p">exclusive-vs-shared-leads/</span>
+│   └── <span class="p">angi/  thumbtack/  homeadvisor/  networx/  99-calls/</span>
+├── <span class="p">/tools/</span>
+│   ├── <span class="p">cost-per-lead-calculator/</span>
+│   └── <span class="p">lsa-cost-estimator/{trade}/</span>
+├── <span class="p">/learn/</span>                      <span class="c">Guides ("how to get roofing leads"), wave 3</span>
+├── <span class="p">/results/</span>                    <span class="c">Case studies by trade</span>
+└── <span class="p">/about/  /contact/</span></pre>
+
+<div class="cols">
+<div>
+<h3>Rules</h3>
+<ul class="tight">
+  <li><b>Each keyword goes to exactly one page,</b> so pages don't compete with each other.</li>
+  <li><b>A child page only gets built if its cluster is ≥500 searches a month.</b> Otherwise it's a section on the hub.</li>
+  <li><b>No city/state pages at launch.</b> Test 5 city pages for the 2 best trades after month 3, and expand only if they rank.</li>
+  <li><b>Internal links:</b> every hub links to its children, <code>/pricing/</code>, the LSA page and its comparison page. Guides link up to their hub. Breadcrumbs everywhere.</li>
+  <li><b>Schema:</b> <code>Organization</code> + <code>Service</code> on hubs, <code>FAQPage</code>, <code>BreadcrumbList</code>. Pricing in HTML tables so AI Overviews can quote them.</li>
+</ul>
+</div>
+<div>
+<h3>Trade hub template (built ~55 times)</h3>
+<ol class="tight">
+  <li>H1 "Exclusive {Trade} Leads &amp; Marketing"</li>
+  <li>Answer-first block (40–60 words): cost per lead, what's billable, how fast leads start</li>
+  <li>Per-trade data table: our price, Google Ads CPC (e.g. roofing ≈ $57/click), LSA cost, close rate</li>
+  <li>Channels for this trade (SEO, LSA, Ads), linked to child pages</li>
+  <li>Sample lead, anonymised</li>
+  <li>Trade case study or testimonial</li>
+  <li>FAQ, 4–6 questions from the People Also Ask boxes (they show on 86 of 98 checked keywords)</li>
+  <li>Form with trade preselected + click-to-call</li>
+  <li>Embedded YouTube video, 2–4 minutes</li>
+</ol>
+</div>
+</div>
+<h3>Conversion setup</h3>
+<p>Step 1: trade, ZIP, phone, email. Step 2: name, company, monthly lead goal, current lead sources. A sticky click-to-call bar on mobile. GA4 key events <code>form_start</code>, <code>form_submit</code>, <code>call_click</code> and <code>pricing_view</code>, plus call tracking. Competitor forms range from 1 field (99 Calls) to 10 (Modernize).</p>
+</section>
+
+<section id="waves">
+<h2><span class="n">05</span>Content waves</h2>
+<div class="tbl"><table>
+<thead><tr><th>Wave</th><th class="num">Pages</th><th>What</th><th class="num">Searches / mo</th><th class="num">Ad value / mo</th></tr></thead>
+<tbody>
+<tr><td><span class="wave w1">1 · launch</span></td><td class="num">19 + pricing, form, about</td><td>Home, <code>/leads/</code>, <code>/pricing/</code>, LSA service + guide, 14 top trade hubs, <code>/compare/angi/</code>, <code>/compare/thumbtack/</code></td><td class="num">~210K</td><td class="num">~$4.3M</td></tr>
+<tr><td><span class="wave w2">2 · weeks 7–10</span></td><td class="num">44</td><td>14 trade children (SEO/websites ≥500/mo), 21 trade hubs, <code>/services/*</code>, 4 comparisons, cost-per-lead tool</td><td class="num">~51K</td><td class="num">~$1.5M</td></tr>
+<tr><td><span class="wave w3">3 · weeks 11+</span></td><td class="num">163</td><td>Remaining small hubs and children, 86 <code>/learn/</code> guides</td><td class="num">~11.5K</td><td class="num">~$0.2M</td></tr>
+</tbody></table></div>
+<p>These are opportunity sizes, not a forecast. Wave 1 volume is dominated by the LSA cluster, which is the hardest to rank for. Wave 1 trade hubs: roofing, plumbing, HVAC, electrical, painting, landscaping, pest control, moving, house cleaning, commercial cleaning, remodeling, solar, general contractor, junk removal.</p>
+</section>
+
+<section id="plan">
+<h2><span class="n">06</span>90-day plan</h2>
+<div class="tbl"><table>
+<thead><tr><th>Weeks</th><th>Workstream</th><th>Actions</th><th>Done when</th></tr></thead>
+<tbody>
+<tr><td>1–2</td><td><b>Foundations</b></td><td>Brand + domain; pricing and billing rules (§8); tech stack; GA4, Search Console, call tracking; Google Business Profile; CRM and lead routing</td><td>Form → CRM tested end to end; key events firing</td></tr>
+<tr><td>2–4</td><td><b>Templates</b></td><td>Hub, child, comparison, service and guide templates with schema, breadcrumbs and pricing tables; per-trade data from the keyword map</td><td>Lighthouse ≥90 on mobile; one hub signed off</td></tr>
+<tr><td>3–6</td><td><b>Wave 1</b></td><td>19 pages + <code>/pricing/</code>. LSA guide is the flagship: 3,000+ words, original screenshots, cost-by-trade table</td><td>All indexed in Search Console</td></tr>
+<tr><td>4–8</td><td><b>Video + community</b></td><td>One YouTube video per wave-1 hub, embedded; helpful answers in r/Roofing, r/HVAC, r/sweatystartup and Facebook contractor groups</td><td>14 videos live</td></tr>
+<tr><td>5–12</td><td><b>Links</b></td><td>"2026 Contractor Lead Cost Report" built from this dataset; trade-association and supplier directories; podcast guesting; expert-quote platforms</td><td>30–50 referring domains by day 90 (99 Calls has 730)</td></tr>
+<tr><td>7–10</td><td><b>Wave 2</b></td><td>44 pages, including tools</td><td>0 orphan pages; each hub ≥5 inbound links</td></tr>
+<tr><td>11–13</td><td><b>Review + wave 3</b></td><td>Refresh pages stuck on page 2; start <code>/learn/</code>; test 5 city pages</td><td>Decision log on what to scale</td></tr>
+</tbody></table></div>
+<p><b>KPIs</b> (baseline 0 at launch): indexed pages, non-brand impressions and clicks, keywords in top 10 / top 3, form submits and call clicks by trade, cost per acquired contractor, referring domains.</p>
+</section>
+
+<section id="risks">
+<h2><span class="n">07</span>Risks</h2>
+<ul class="tight">
+  <li><b>Fulfilment comes before marketing.</b> Selling exclusive leads needs a way to produce them: your own lead sites, LSA/Ads management, or buying calls. If fulfilment lags, reviews suffer fast.</li>
+  <li><b>Comparison pages must be factual:</b> use competitors' published terms, date-stamp them, no trademarked logos.</li>
+  <li><b>LSA cluster</b> is mostly informational, and Google's help pages and big agencies compete. Treat it as a branding and link magnet, not quick revenue.</li>
+  <li><b>Solar</b> is crowded and high-CPC with heavy TCPA exposure. SMS and call consent must be TCPA-compliant for every trade.</li>
+  <li><b>AI Overviews on 97% of results pages</b> cut clicks on informational queries, which is why the plan leans toward commercial pages.</li>
+</ul>
+</section>
+
+<section id="decisions">
+<h2><span class="n">08</span>Decisions needed</h2>
+<ol class="decide">
+  <li><b>Brand name and domain.</b></li>
+  <li><b>Offer:</b> exclusive pay-per-lead (like 99 Calls), pay-per-call (like Service Direct), retainer agency (like Hook), or a hybrid. This sets the copy on <code>/pricing/</code> and every hub.</li>
+  <li><b>Fulfilment:</b> how the leads are produced.</li>
+  <li><b>Tech stack:</b> I'd recommend Astro or Next.js (static) on Vercel with Markdown content, so the ~55 hubs come from one data file. WordPress is fine if non-developers will edit.</li>
+</ol>
+</section>
+
+<section id="method">
+<h2><span class="n">··</span>Method &amp; files</h2>
+<p><b>DataForSEO calls</b> <span class="lbl V">V</span>:</p>
+<ul class="tight">
+  <li>Competitors Domain ×3</li>
+  <li>Ranked Keywords ×8 (top 1,000, positions ≤20; topic-filtered for the big sites)</li>
+  <li>Keyword Overview on an 896-keyword trade × modifier grid</li>
+  <li>Keyword Suggestions ×20</li>
+  <li>Keyword Ideas ×2 (discarded as off-topic, $0.19)</li>
+  <li>100 Google results checks with AI Overview</li>
+  <li>Backlink ranks and referring domains for 15 domains</li>
+</ul>
+<p><b>Free sources:</b> sitemaps from 6 competitors, and pricing pages read by hand on 10 sites. Angi, Thumbtack, Networx and Inquirly were partly blocked.</p>
+<div class="tbl"><table>
+<thead><tr><th>File (in <code>leadgen-research/</code>)</th><th>What</th></tr></thead>
+<tbody>
+<tr><td><code>keyword-map.csv</code></td><td>1,305 keywords: volume, KD, CPC, intent, cluster, target page, results features, top 5, competitor ranks</td></tr>
+<tr><td><code>page-map.csv</code></td><td>226 candidate pages with wave, primary keyword, volume, weighted KD, ad value</td></tr>
+<tr><td><code>competitor-matrix.csv</code></td><td>12 competitors: model, pricing, contract, traffic, authority, structure</td></tr>
+<tr><td><code>data/cost_log.csv</code></td><td>Every DataForSEO call and its cost</td></tr>
+<tr><td><code>scripts/</code></td><td>Capped API client, keyword grid, classification and output scripts</td></tr>
+</tbody></table></div>
+</section>
+
+<footer>Prepared with AI assistance (Claude) from DataForSEO data and public competitor pages, Nov 23, 2026. Traffic and volume figures are third-party estimates.</footer>
+</main>
+</div>
