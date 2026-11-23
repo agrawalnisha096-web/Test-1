@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="robots" content="noindex, nofollow">
+<title>DevZero &amp; Nautili Plan</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap">
+<style>
+:root{
+ /* Layout: sticky product tab bar over a single reading column; tables scroll inside their own box */
+ --bg:#ffffff;--surface:#ffffff;--ink:#111827;--muted:#4b5563;--line:#e2e6ec;--soft:#f3f5f8;--hl:#fff3b0;--hl-ink:#111827;
+ --accent:#1d55d0;--dz:#1d55d0;--na:#0c8577;
+ --ok:#16713a;--ok-bg:#e1f3e7;--warn:#8a5a00;--warn-bg:#fbefd2;--idle:#4f5b69;--idle-bg:#eceff3;--bad:#b42318;--bad-bg:#fde6e3;
+ --display:"Space Grotesk",system-ui,sans-serif;--body:"IBM Plex Sans",system-ui,sans-serif;--mono:"IBM Plex Mono",ui-monospace,monospace;
+}
+*{box-sizing:border-box}
+html{color-scheme:light}
+body{background:var(--bg);color:var(--ink);font:16px/1.65 var(--body);margin:0}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+header.top{padding-block:28px 8px}
+.eyebrow{font:600 12px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font:600 clamp(26px,4vw,36px)/1.15 var(--display);margin:8px 0 6px;text-wrap:balance}
+h2{font:600 22px/1.25 var(--display);margin:0 0 10px;text-wrap:balance}
+h3{font:600 16px/1.3 var(--display);margin:0 0 8px}
+p{margin:0 0 10px;max-width:72ch}
+.sub{color:var(--muted);max-width:80ch}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+nav.tabs{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+nav.tabs .wrap{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+nav.tabs a{flex:0 0 auto;padding:12px 14px;color:var(--muted);text-decoration:none;font:500 14px var(--body);border-bottom:2px solid transparent;white-space:nowrap}
+nav.tabs a:hover{color:var(--ink)}
+nav.tabs a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--accent)}
+nav.tabs a .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:7px;vertical-align:1px}
+.dot.dz{background:var(--dz)}.dot.na{background:var(--na)}.dot.all{background:var(--muted)}
+nav.tabs a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+main{padding-block:24px 64px}
+section.tab{display:grid;gap:20px}section.tab[hidden]{display:none}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:20px;min-width:0}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr))}
+.grid2{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr))}
+.stat{display:grid;gap:4px}
+.stat b{font:600 28px/1 var(--display);font-variant-numeric:tabular-nums}
+.stat span{color:var(--muted);font-size:13px}
+.k{font:600 11px/1 var(--mono);letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+ul.clean{margin:0;padding-left:18px;display:grid;gap:6px}
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th{font:600 12px/1.3 var(--body);text-align:left;color:var(--muted);background:var(--soft);padding:10px 12px;border-bottom:1px solid var(--line);white-space:nowrap;position:sticky;top:0}
+td{padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:0}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;font-family:var(--mono);font-size:13px;white-space:nowrap}
+td.task{font-weight:600;min-width:240px}
+td.ev{color:var(--muted);min-width:220px;font-size:13px}
+.pill{display:inline-block;padding:3px 9px;border-radius:999px;font:600 12px/1.4 var(--body);white-space:nowrap}
+.s-Done{background:var(--ok-bg);color:var(--ok)}.s-Partial{background:var(--warn-bg);color:var(--warn)}
+.s-Pending{background:var(--idle-bg);color:var(--idle)}.s-Blocked{background:var(--bad-bg);color:var(--bad)}
+.p{font:600 12px var(--mono);padding:2px 7px;border-radius:5px;border:1px solid var(--line)}
+.p-P0{color:var(--bad);border-color:currentColor}.p-P1{color:var(--warn)}.p-P2{color:var(--muted)}
+.filters{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.filters button{font:500 13px var(--body);padding:6px 12px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.bar{height:8px;border-radius:4px;background:var(--soft);overflow:hidden;display:flex}
+.bar i{display:block;height:100%}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:13px;color:var(--muted)}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+.callout{border-left:3px solid var(--accent);padding:4px 0 4px 14px}
+.muted{color:var(--muted)}
+.mono{font-family:var(--mono);font-size:13px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font:500 12px var(--mono);padding:3px 8px;border-radius:6px;background:var(--soft)}
+.row{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap;justify-content:space-between}
+.ad{border:1px solid var(--line);border-radius:8px;padding:14px;background:var(--bg);display:grid;gap:4px}
+.ad .h{color:var(--accent);font:500 17px/1.3 var(--body)}
+.ad .u{font-size:12px;color:var(--ok)}
+.hbar{display:grid;grid-template-columns:110px 1fr 70px;gap:10px;align-items:center;font-size:13px}
+.hbar .track{height:14px;background:var(--soft);border-radius:3px;overflow:hidden}
+.hbar .fill{height:100%;background:var(--accent)}
+.hbar .v{text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums}
+.sev{font:600 11px/1 var(--mono);letter-spacing:.05em;text-transform:uppercase;padding:3px 7px;border-radius:5px}
+.sev-Critical{background:var(--bad-bg);color:var(--bad)}.sev-High{background:var(--warn-bg);color:var(--warn)}
+.sev-Medium{background:var(--idle-bg);color:var(--idle)}.sev-Strong,.sev-Gap{background:var(--ok-bg);color:var(--ok)}
+footer{color:var(--muted);font-size:13px;padding-block:0 40px}
+@media (max-width:600px){.card{padding:16px}td,th{padding:8px 10px}}
+@media (prefers-reduced-motion:no-preference){section.tab{animation:fade .18s ease-out}@keyframes fade{from{opacity:.4}to{opacity:1}}}
+/* legibility: roomier lists, bold lead-ins, highlighted figures */
+ul.clean{gap:10px}
+ul.clean li::marker{color:var(--accent)}
+.card{box-shadow:0 1px 2px rgba(17,24,39,.04)}
+.lead{font-weight:600;color:var(--ink)}
+.hl{background:var(--hl);color:var(--hl-ink);font-weight:600;padding:0 3px;border-radius:3px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+td .hl,th .hl{background:none;padding:0}
+/* trimming: collapsed lists, rows and evidence columns */
+.more-btn{justify-self:start;align-self:start;font:600 13px var(--body);color:var(--accent);background:none;border:1px solid var(--line);border-radius:999px;padding:5px 12px;cursor:pointer;margin-top:2px}
+.more-btn:hover{background:var(--soft)}
+.hide-ev .ev,.hide-ev th.evcol{display:none}
+.tbl-tools{display:flex;gap:8px;flex-wrap:wrap}
+details.more>summary{cursor:pointer;font:600 13px var(--body);color:var(--accent);list-style:none}
+details.more>summary::before{content:"▸ ";}
+details.more[open]>summary::before{content:"▾ ";}
+details.more[open]>summary{margin-bottom:8px}
+
+.back{display:inline-flex;gap:6px;align-items:center;margin-bottom:14px;font:500 13px var(--body);color:var(--accent);text-decoration:none}
+.back:hover{text-decoration:underline}
+.doc{display:grid;gap:12px;align-content:start}
+.doc .meta{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center}
+.kind{font:600 11px/1 var(--mono);letter-spacing:.07em;text-transform:uppercase;padding:5px 8px;border-radius:5px;background:var(--soft);color:var(--muted)}
+.kind.web{color:var(--accent)}.kind.sheet{color:var(--ok)}
+.doc h3{font-size:19px;margin:0}
+.doc .facts{display:flex;flex-wrap:wrap;gap:6px 18px;font:500 13px var(--mono);color:var(--muted)}
+.doc .facts b{color:var(--ink);font-weight:600}
+.btn{justify-self:start;display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:8px;background:var(--ink);color:var(--bg);text-decoration:none;font:600 14px var(--body)}
+.btn:hover{opacity:.88}
+.btn:focus-visible,.back:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.note{font-size:13px;color:var(--muted);margin:0}
+.card.callout{padding:18px 20px;border-left:3px solid var(--accent)}
+ol.steps{margin:0;padding-left:20px;display:grid;gap:8px}
+ol.steps li::marker{font:600 13px var(--mono);color:var(--muted)}
+section.hub{display:grid;gap:16px;margin-bottom:36px}
+section.hub > h2{margin:0}
+td.own{white-space:nowrap;color:var(--muted);font-size:13px}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap"><div class="eyebrow">SurgeX · DevZero &amp; Nautili · 23 Nov 2026</div><h1>SEO, ads and competitor plan for DevZero and Nautili</h1>
+<p class="sub">Four documents from our 20 Nov review, updated 23 Nov 2026 with a full crawl of both sites and a GA4 check. This page explains what each one is, where to start, and what the plan asks you to decide.</p></div></header>
+<main><div class="wrap">
+<section class="hub">
+<h2>The four documents</h2>
+<div class="grid2"><article class="card doc">
+<div class="meta"><span class="kind web">Web page</span><span class="note">Updated 23 Nov 2026</span></div>
+<h3>SEO &amp; Ads Plan</h3>
+<p style="margin:0">The main plan. What we've fixed since our audits, what's still open, which keywords each product should go after, and how to run Google Ads for each.</p>
+<div class="facts"><span><b>7</b> tabs</span><span><b>100</b> keywords</span><span><b>$3,000</b> + <b>$5,300</b>/mo ads</span></div>
+<ul class="clean"><li><b>Overview:</b> both sites side by side</li><li><b>SEO status</b> (one tab per site): every fix with priority, effort and Done/Pending, filterable</li><li><b>Keywords</b> (one tab per site): 50 for Nautili and 50 for DevZero, with monthly searches, cost per click and the page each one belongs on</li><li><b>Google Ads</b> (one tab per site): campaigns, keywords, sample ads, negatives and the conditions to meet before spending</li></ul>
+<a class="btn" href="/plan">Open the plan &rarr;</a>
+</article><article class="card doc">
+<div class="meta"><span class="kind web">Web page</span><span class="note">Updated 23 Nov 2026</span></div>
+<h3>Competitor Analysis</h3>
+<p style="margin:0">How DevZero compares with Cast AI and ScaleOps, and how Nautili compares with the LLM gateways it's up against: rankings, links, content, AI search and ads.</p>
+<div class="facts"><span><b>7</b> tabs</span><span><b>2</b> Kubernetes rivals</span><span><b>8</b> LLM gateway rivals</span></div>
+<ul class="clean"><li><b>Summary</b> and a <b>scoreboard</b> of all brands on the same measures</li><li><b>Cast AI</b> and <b>ScaleOps</b>: one tab each, with what they do well and where they're weak</li><li><b>DevZero &amp; Nautili vs them</b>, and <b>Nautili's competitors</b> (LiteLLM, OpenRouter, Portkey and others)</li><li><b>Competitor ads:</b> who runs what on Google and LinkedIn</li></ul>
+<a class="btn" href="/competitors">Open the analysis &rarr;</a>
+</article><article class="card doc">
+<div class="meta"><span class="kind sheet">Workbook</span><span class="note">Updated 23 Nov 2026</span></div>
+<h3>DevZero Roadmap</h3>
+<p style="margin:0">The working copy of DevZero's task list. Change a task's Status here as work ships; the Overview tab totals update by themselves.</p>
+<div class="facts"><span><b>52</b> tasks</span><span><b>3</b> done</span><span><b>3</b> partial</span><span><b>13</b> urgent open</span></div>
+<ul class="clean"><li><b>Roadmap:</b> every task with why it matters, priority, impact, effort, owner, timing, status and what we saw on the live site</li><li><b>Overview:</b> live totals by priority, and hours of work left</li><li><b>Content Plan:</b> the first 22 posts and pages, with target keywords</li><li><b>Search Console:</b> the 3-month snapshot the plan is based on</li></ul>
+<a class="btn" href="/downloads/DevZero-SEO-GEO-Roadmap.xlsx" download>Download the workbook &rarr;</a><p class="note">Excel file. Upload it to Google Drive and open with Google Sheets to share and edit; the Overview totals keep working.</p>
+</article><article class="card doc">
+<div class="meta"><span class="kind sheet">Workbook</span><span class="note">Updated 23 Nov 2026</span></div>
+<h3>Nautili Roadmap</h3>
+<p style="margin:0">The same working task list for Nautili. Same four tabs and same rules: update the Status column and the totals follow.</p>
+<div class="facts"><span><b>36</b> tasks</span><span><b>5</b> done</span><span><b>4</b> partial</span><span><b>12</b> urgent open</span></div>
+<ul class="clean"><li><b>Roadmap:</b> every task with priority, effort, owner, timing, status and evidence</li><li><b>Overview:</b> live totals by priority, and hours of work left</li><li><b>Content Plan:</b> the first 22 posts and pages, with target keywords</li><li><b>Search Console:</b> the 3-month snapshot the plan is based on</li></ul>
+<a class="btn" href="/downloads/Nautili-SEO-GEO-Roadmap.xlsx" download>Download the workbook &rarr;</a><p class="note">Excel file. Upload it to Google Drive and open with Google Sheets to share and edit; the Overview totals keep working.</p>
+</article></div>
+</section>
+
+<section class="hub">
+<h2>How to use them</h2>
+<div class="card"><ol class="steps">
+<li><b>Start with the plan's <a href="/plan#overview">Overview tab</a>.</b> Five minutes, both products side by side.</li>
+<li><b>Read the <a href="/competitors#summary">competitor summary</a></b> for why the plan picks the keywords and pages it does.</li>
+<li><b>Decide on ads</b> using the <a href="/plan#nautili-ads">Nautili</a> and <a href="/plan#devzero-ads">DevZero</a> Google Ads tabs. Neither should start until its conditions below are met.</li>
+<li><b>Track the work in the two roadmap workbooks.</b> The web pages are a snapshot from 23 Nov 2026; the workbooks are where status changes. If they disagree, the workbook is current.</li>
+</ol></div>
+</section>
+
+<section class="hub">
+<h2>What we found</h2>
+<div class="grid2">
+<div class="card"><span class="k" style="color:var(--na)">Nautili</span><h3 style="margin-top:8px">Fast now, but Google still reads it as a Kubernetes blog</h3><ul class="clean">
+<li>42 clicks from Google in 3 months, and no impressions yet for any keyword it wants</li>
+<li>39 of its 46 blog posts are copies of devzero.io posts, so Google treats it as a Kubernetes site. Removing them is task one</li>
+<li>Biggest opening: what Claude Code costs. "claude code pricing" and "claude code cost" get 38,500 US searches a month, at $3–4 a click</li>
+<li>Rivals own their brand searches: LiteLLM 27,100 a month, Portkey 5,400. Nautili has comparison pages for 2 of 8 rivals</li>
+<li>Its 584 model and provider pages carry about 190 words each, and its homepage tells Google the company is "DevZero"</li>
+<li>Rivals grow through distribution: Requesty has 20 integration pages and ~800 linking sites; Nautili has 1 and 6. Listings in coding tools, marketplaces and directories come next</li>
+<li>Several &quot;new&quot; pages partly exist: Cursor, Codex and Continue set-up is in the docs, the Gemini CLI guide exists, the OpenRouter fee calculator sits inside /compare/openrouter. They become upgrades, not new builds</li></ul></div>
+<div class="card"><span class="k" style="color:var(--dz)">DevZero</span><h3 style="margin-top:8px">It ranks, but mostly for cloud pricing, not for buyers</h3><ul class="clean">
+<li>6,010 clicks in 3 months. The AKS, GKE and EKS cost posts sit at positions 5–8 with ~1,000 impressions each and no clicks: new titles are a 4-hour fix</li>
+<li>Buyers search competitor names: "cast ai" 1,900 a month, "scaleops" 1,300, "kubecost" 880. DevZero has compare pages but no "alternatives" pages yet</li>
+<li>No vendor ranks on page 1 for "rightsizing without restarts", DevZero's headline claim, and DevZero's own /pod-rightsizing page has no links pointing to it</li>
+<li>Outside its site, DevZero is still described as a dev-environment company (Gartner files it under code-editor software)</li>
+<li>Slow on phones: Google's speed test scores the homepage 54/100, with main content taking 4.5 s to appear (good is under 2.5 s)</li>
+<li>Its own pages compete with each other: three AKS pricing posts rank for the same search, and links point at the weaker one. Merging fixes it in hours</li>
+<li>llms.txt, which AI engines read, still leads with MicroVMs and links legacy dev-environment pages. The fix is ready and takes an hour</li>
+<li>18% of the last 12 months&#x27; clicks (3,623) came from 47 old URLs that now redirect to /blog. Restoring the top 9 protects about 300 clicks a month</li>
+<li>Pricing guides and instance pages are seen millions of times but clicked 0.25% of the time; prices in titles are the fastest traffic win</li></ul></div>
+</div>
+</section>
+
+<section class="hub">
+<h2>Urgent tasks still open</h2>
+<p class="sub" style="margin:0">Every P0 task (next 2 weeks) not yet done, from the roadmaps as of 23 Nov 2026. Owners and timing are proposals.</p>
+<div class="grid2">
+<div class="card" style="display:grid;gap:12px"><h3 style="margin:0"><span class="dot na" style="display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:8px"></span>Nautili: 12 open</h3><div class='tbl'><table><thead><tr><th>Task</th><th>Owner</th><th>When</th><th>Status</th></tr></thead><tbody><tr><td class='task'>Remove the copied DevZero Kubernetes posts; 301 each to its devzero.io original</td><td class='own'>DevZero eng</td><td class='own'>Week 1</td><td><span class='pill s-Pending'>Pending</span></td></tr><tr><td class='task'>301 the mirror domains (nautili.dev, nautir.ai) to nautili.ai</td><td class='own'>DevZero eng</td><td class='own'>Week 1</td><td><span class='pill s-Partial'>Partial</span></td></tr><tr><td class='task'>Retitle homepage: &#x27;Nautili: LLM Gateway for AI Spend Control and Model Routing&#x27;; keep the H1, add the sub-headline &#x27;The LLM gateway that shows who spent what, and routes every request to the right model&#x27;; new meta description</td><td class='own'>DevZero eng</td><td class='own'>Week 1</td><td><span class='pill s-Pending'>Pending</span></td></tr><tr><td class='task'>Submit the sitemap index in Search Console</td><td class='own'>SurgeX</td><td class='own'>Week 1</td><td><span class='pill s-Pending'>Pending</span></td></tr><tr><td class='task'>Get the key LLM posts indexed (claude-code-cost, claude-code-proxy): clean up copies, add internal links, request indexing</td><td class='own'>SurgeX</td><td class='own'>Week 1</td><td><span class='pill s-Pending'>Pending</span></td></tr><tr><td class='task'>Compare pages: LiteLLM, Helicone, Kong, Cloudflare and Vercel AI Gateway first, then Requesty, Bifrost and TrueFoundry</td><td class='own'>SurgeX writers</td><td class='own'>Weeks 2–5</td><td><span class='pill s-Partial'>Partial</span></td></tr><tr><td class='task'>Pillar: &#x27;What is an LLM gateway?&#x27;</td><td class='own'>SurgeX writers</td><td class='own'>Weeks 1–2</td><td><span class='pill s-Pending'>Pending</span></td></tr><tr><td class='task'>Links from devzero.io (nav, footer, /inference, 7 LLM posts)</td><td class='own'>DevZero eng</td><td class='own'>Week 1</td><td><span class='pill s-Pending'>Pending</span></td></tr><tr><td class='task'>Track signup, demo booked and first API key as GA4 key events</td><td class='own'>SurgeX</td><td class='own'>Week 1</td><td><span class='pill s-Pending'>Pending</span></td></tr><tr><td class='task'>Stop Nautili visits landing in DevZero&#x27;s GA4 (hostname-based GA4 triggers or a separate GTM container)</td><td class='own'>SurgeX</td><td class='own'>Week 1</td><td><span class='pill s-Pending'>Pending</span></td></tr><tr><td class='task'>Link /features/spend-attribution and the pricing, compare and integration pages from the 7 LLM posts and the model pages</td><td class='own'>SurgeX</td><td class='own'>Week 1</td><td><span class='pill s-Pending'>Pending</span></td></tr><tr><td class='task'>Test before writing integration pages: Claude Code routed to non-Anthropic models; Cursor with a custom base URL (chat vs agent mode); Cline, Roo Code, Kilo Code, OpenCode, OpenWebUI, LibreChat; MCP support</td><td class='own'>DevZero eng + SurgeX</td><td class='own'>Week 1</td><td><span class='pill s-Pending'>Pending</span></td></tr></tbody></table></div></div>
+<div class="card" style="display:grid;gap:12px"><h3 style="margin:0"><span class="dot dz" style="display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:8px"></span>DevZero: 13 open</h3><div class='tbl'><table><thead><tr><th>Task</th><th>Owner</th><th>When</th><th>Status</th></tr></thead><tbody><tr><td class='task'>Deploy the rewritten llms.txt</td><td class='own'>DevZero eng</td><td class='own'>Week 1</td><td><span class='pill s-Pending'>Pending</span></td></tr><tr><td class='task'>Point /inference and /lp/inference to nautili.ai; add Nautili to nav and footer</td><td class='own'>DevZero eng</td><td class='own'>Week 1</td><td><span class='pill s-Pending'>Pending</span></td></tr><tr><td class='task'>6 &#x27;alternatives&#x27; pages (Cast AI, ScaleOps, Kubecost, PerfectScale, Sedai, Karpenter)</td><td class='own'>SurgeX writers</td><td class='own'>Weeks 2–5</td><td><span class='pill s-Pending'>Pending</span></td></tr><tr><td class='task'>Pillar: &#x27;Kubernetes rightsizing without restarts&#x27;</td><td class='own'>SurgeX writers</td><td class='own'>Weeks 1–2</td><td><span class='pill s-Partial'>Partial</span></td></tr><tr><td class='task'>Add Reddit, Bing (UET), Meta and Google Ads tags in GTM</td><td class='own'>SurgeX</td><td class='own'>Week 1</td><td><span class='pill s-Pending'>Pending</span></td></tr><tr><td class='task'>GA4 conversions: demo booked, CLI run, signup</td><td class='own'>SurgeX</td><td class='own'>Week 1</td><td><span class='pill s-Partial'>Partial</span></td></tr><tr><td class='task'>Rewrite titles + meta on the AKS / GKE / EKS cost-optimization posts</td><td class='own'>SurgeX</td><td class='own'>Week 1</td><td><span class='pill s-Pending'>Pending</span></td></tr><tr><td class='task'>Link the 13 under-linked product pages (/pod-rightsizing, /vpa, /karpenter-optimization, /solutions/aws-eks, /gcp-gke, /openshift, /product/cluster-autoscaling, /kubernetes-monitoring, /gpu-sharing, /multi-cloud, /kubernetes-management, -infrastructure-platform, -operations) from the 3–5 most related posts; decide on the 5 vague ones</td><td class='own'>DevZero eng</td><td class='own'>Week 1</td><td><span class='pill s-Pending'>Pending</span></td></tr><tr><td class='task'>Fix how DevZero is described off-site: Gartner Peer Insights category, Facebook and X bios, Microsoft Store listing, GitHub org bio; add a description to the homepage Organization schema</td><td class='own'>DevZero + SurgeX</td><td class='own'>Weeks 1–2</td><td><span class='pill s-Pending'>Pending</span></td></tr><tr><td class='task'>Stop Nautili visits landing in DevZero&#x27;s GA4: fire each site&#x27;s GA4 tag only on its own hostname (or give Nautili its own GTM container)</td><td class='own'>SurgeX</td><td class='own'>Week 1</td><td><span class='pill s-Pending'>Pending</span></td></tr><tr><td class='task'>Merge AKS pricing duplicates: 301 /blog/azure-kubernetes-service-pricing into /blog/aks-pricing and repoint its 31 internal links</td><td class='own'>DevZero eng</td><td class='own'>Week 1</td><td><span class='pill s-Pending'>Pending</span></td></tr><tr><td class='task'>Map the 47 legacy URLs that now redirect to /blog: restore the 9 with 100+ clicks (minikube-vs-kind-vs-k3s, nix-vs-docker, docker-desktop and codespaces alternatives…), 301 the rest to the closest live page or return 410</td><td class='own'>DevZero eng</td><td class='own'>Week 1</td><td><span class='pill s-Pending'>Pending</span></td></tr><tr><td class='task'>Rewrite titles and meta on the pricing guides (EKS, GKE, AKS, S3, AWS vs Azure vs GCP): current price in the title, a one-line answer, 2026</td><td class='own'>SurgeX</td><td class='own'>Week 1</td><td><span class='pill s-Pending'>Pending</span></td></tr></tbody></table></div></div>
+</div>
+</section>
+
+<section class="hub">
+<h2>Before any ad spend</h2>
+<div class="grid2">
+<div class="card callout"><h3>Nautili: $3,000/mo, 4 campaigns</h3><ul class="clean">
+<li>GA4 conversions for signup, demo booked and first API key (GA4 itself already collects)</li>
+<li>Nautili visits kept out of DevZero's GA4</li>
+<li>Google Ads conversion tag and a remarketing audience</li>
+<li>Landing pages live: Claude Code cost calculator, /compare/litellm, new homepage title</li>
+<li>Mirror domains redirected to nautili.ai</li></ul></div>
+<div class="card callout"><h3>DevZero: $5,300/mo US, 5 campaigns</h3><ul class="clean">
+<li>Google Ads conversions for demo booked and sign-up (GA4 already records both), and Nautili visits kept out of DevZero's GA4</li>
+<li>Remarketing audience from the same tag</li>
+<li>/alternatives pages for Cast AI, ScaleOps and Kubecost</li>
+<li>The rightsizing pillar page live</li></ul>
+<p class="note" style="margin-top:10px">EU ($1,900) and India ($850) follow from Week 3, copying the campaigns that convert.</p></div>
+</div>
+</section>
+
+<section class="hub">
+<h2>About the numbers</h2>
+<div class="card"><ul class="clean muted">
+<li>Search volumes and cost per click: Google Ads data via DataForSEO, US, English, 12-month average, pulled 20 Nov 2026. Real click prices depend on bids and ad quality</li>
+<li>Clicks and impressions: Google Search Console for both sites, last 3 months, pulled 20 Nov 2026; GA4 events reviewed 22 Nov 2026</li>
+<li>Task status: checked on the live sites on 20–22 Nov 2026 (full crawl of 423 pages on 22 Nov). Work merged but not yet deployed is marked Pending</li>
+<li>Competitor data: live crawls, DataForSEO and Ahrefs, 11–18 Nov 2026. Competitor traffic figures are estimates</li>
+<li>Ad clicks are estimates: monthly budget divided by the average cost per click of each campaign's keywords</li></ul></div>
+</section>
+</div></main>
+<footer><div class="wrap">Prepared by SurgeX for DevZero. Private working documents: please don't share outside the team.</div></footer>
+
+<script>
+(function(){
+ const tabs=[...document.querySelectorAll('section.tab')], links=[...document.querySelectorAll('nav.tabs a')];
+ function show(){if(!tabs.length)return;let id=location.hash.slice(1); if(!tabs.some(t=>t.id===id)) id=tabs[0].id;
+  tabs.forEach(t=>t.hidden=t.id!==id); links.forEach(a=>a.setAttribute('aria-current',a.getAttribute('href')==='#'+id?'page':'false'));}
+ window.addEventListener('hashchange',()=>{show();window.scrollTo(0,0)}); show();
+ // Trim: long lists show 3 items, long unfiltered tables show 6 rows, evidence columns start hidden
+ (function trim(){
+  const btn=(label,fn)=>{const b=document.createElement('button');b.type='button';b.className='more-btn';b.textContent=label;b.addEventListener('click',fn);return b;};
+  document.querySelectorAll('ul.clean, ol.steps').forEach(ul=>{
+   const items=[...ul.children]; if(items.length<=4) return;
+   const extra=items.slice(3); extra.forEach(li=>li.hidden=true);
+   const b=btn('Show '+extra.length+' more',()=>{const open=extra[0].hidden; extra.forEach(li=>li.hidden=!open); b.textContent=open?'Show less':'Show '+extra.length+' more';});
+   ul.after(b);
+  });
+  const filtered=new Set([...document.querySelectorAll('[data-filter-for]')].map(g=>g.dataset.filterFor));
+  document.querySelectorAll('.tbl > table').forEach(t=>{
+   const wrap=t.parentElement, rows=[...t.querySelectorAll('tbody tr')], tools=document.createElement('div'); tools.className='tbl-tools';
+   const ev=rows[0]&&rows[0].querySelector('td.ev');
+   if(ev){ const idx=[...rows[0].children].indexOf(ev); const th=t.querySelectorAll('thead th')[idx]; if(th) th.classList.add('evcol');
+    t.classList.add('hide-ev'); const b=btn('Show evidence',()=>{t.classList.toggle('hide-ev'); b.textContent=t.classList.contains('hide-ev')?'Show evidence':'Hide evidence';}); tools.append(b); }
+   if(!filtered.has(t.id) && rows.length>8){ const extra=rows.slice(6); extra.forEach(r=>r.hidden=true);
+    const b=btn('Show all '+rows.length+' rows',()=>{const open=extra[0].hidden; extra.forEach(r=>r.hidden=!open); b.textContent=open?'Show fewer rows':'Show all '+rows.length+' rows';}); tools.append(b); }
+   if(tools.children.length) wrap.after(tools);
+  });
+ })();
+ // Highlight: bold the lead-in before a colon, and mark key figures in running text (not in tables)
+ (function hilite(){
+  const NUM=/(\$\s?\d[\d,]*(?:\.\d+)?(?:\s?(?:K|k|M|B|\/mo))?|\d[\d,]*(?:\.\d+)?\s?(?:%|s\b|ms\b|KB\b|hrs?\b|words\b|searches\b|clicks\b|impressions\b|linking sites\b|referring domains\b|posts?\b|pages?\b|tasks?\b|\/100|x\b)|\b\d{1,3}(?:,\d{3})+\b)/g;
+  const skip=el=>el.closest('table,code,.mono,.pill,.p,.k,.chip,nav,h1,h2,h3,.stat,.eyebrow,.hl,b,strong,a,.ad,button,.sev,.kind,.facts,.btn');
+  document.querySelectorAll('ul.clean > li').forEach(li=>{
+   if(li.querySelector(':scope > b:first-child, :scope > strong:first-child')) return;
+   const t=li.firstChild; if(!t||t.nodeType!==3) return;
+   const i=t.textContent.indexOf(':'); if(i<3||i>70) return;
+   const lead=document.createElement('span'); lead.className='lead'; lead.textContent=t.textContent.slice(0,i+1);
+   t.textContent=t.textContent.slice(i+1); li.insertBefore(lead,t);
+  });
+  const roots=document.querySelectorAll('ul.clean li, .card p, .callout li, dd, .sub');
+  roots.forEach(r=>{
+   const w=document.createTreeWalker(r,NodeFilter.SHOW_TEXT); const nodes=[]; let n;
+   while((n=w.nextNode())) if(!skip(n.parentElement)) nodes.push(n);
+   nodes.forEach(n=>{ const s=n.textContent; NUM.lastIndex=0; if(!NUM.test(s)) return; NUM.lastIndex=0;
+    const f=document.createDocumentFragment(); let last=0, m;
+    while((m=NUM.exec(s))){ if(m[0].replace(/[^0-9]/g,'').length<2 && !/[$%]/.test(m[0])) continue;
+     f.append(s.slice(last,m.index)); const sp=document.createElement('span'); sp.className='hl'; sp.textContent=m[0]; f.append(sp); last=m.index+m[0].length; }
+    f.append(s.slice(last)); n.replaceWith(f); });
+  });
+ })();
+
+ // Filter groups that target the same table combine (e.g. status AND priority)
+ document.querySelectorAll('[data-filter-for]').forEach(group=>{
+  const id=group.dataset.filterFor, tbl=document.getElementById(id);
+  group.addEventListener('click',e=>{const b=e.target.closest('button'); if(!b) return;
+   group.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b));
+   const active=[...document.querySelectorAll('[data-filter-for="'+id+'"]')].map(g=>{
+     const p=g.querySelector('button[aria-pressed="true"]'); return [g.dataset.key, p?p.dataset.v:'all'];});
+   tbl.querySelectorAll('tbody tr').forEach(r=>r.hidden=!active.every(([k,v])=>v==='all'||r.dataset[k]===v));});
+ });
+})();
+</script>
+</body>
+</html>
