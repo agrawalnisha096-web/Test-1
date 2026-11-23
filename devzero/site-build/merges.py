@@ -144,3 +144,118 @@ WHAT_CHANGED_EXTRA = {
     'devzero': ['18% of the last 12 months\' clicks came from 47 old URLs that now redirect to /blog; restoring the top 9 protects about 300 clicks a month'],
     'nautili': ['Before writing integration pages, test what actually works (Claude Code to other models, Cursor with a custom base URL)'],
 }
+
+# ---------------------------------------------------------------- verification pass (23 Nov 2026)
+# Intent check for every keyword taken from the colleague's plan (latest SERP snapshot per keyword).
+NC = 'No results snapshot yet: not checked'
+INTENT['nautili'].update({
+    'aws bedrock pricing': 'AWS first, then explainers (CloudForecast, Caylent): fits the Bedrock provider page',
+    'best llm for coding': 'Benchmark and ranking sites (BenchLM, DataCamp): fits only with original cost-per-PR data',
+    'best llm gateway': 'Listicles (Orq, TrueFoundry, DigitalOcean, OpenRouter, Portkey): fits a listicle',
+    'claude code max plan': 'Anthropic help pages and Reddit: consumer intent, a section only',
+    'cloudflare ai gateway': 'Navigational: Cloudflare docs hold the top 4; compare page and ads',
+    'codex pricing': 'ChatGPT pricing pages, then MindStudio #4: fits the comparison post',
+    'cursor pricing': 'cursor.com #1, then Finout, nocode.mba, Vantage at #2–6: fits well',
+    'cursor team pricing': 'Cursor docs dominate; third parties #3 and #6: a section fits',
+    'gemini api pricing': 'Google first, Costgoat #3: fits the Google AI Studio provider page',
+    'github copilot pricing': 'GitHub docs dominate; Finout #6: harder, comparison post only',
+    'grok api pricing': 'xAI docs, then OpenRouter #4: fits the xAI provider page',
+    'litellm proxy': 'Navigational: LiteLLM docs hold the top 3; a section on /compare/litellm',
+    'llm api pricing': 'Price aggregators (pricepertoken, Costgoat, BenchLM, Helicone): fits one comparison table page',
+    'llm cost': 'Per-token price calculators and aggregators: fits the pricing table and calculator, not the spend page',
+    'llm guardrails': 'Datadog, Guardrails AI, LangChain guides: fits the existing guardrails guide',
+    'llm observability': 'Datadog, Langfuse, IBM: competitive; the existing post fits',
+    'llm routing': 'Open-source library, Braintrust listicle, AWS: the existing post fits',
+    'openai api pricing': 'OpenAI first, then calculators at #2 and #4: fits the OpenAI provider page',
+    'openai compatible api': 'OpenAI, Modular and Gemini docs: fits a docs page (one exists)',
+    'openai usage dashboard': 'Navigational: people want OpenAI\'s own dashboard; weak fit',
+    'token cost': 'Token price indexes and calculators: fits the calculator',
+    'vercel ai gateway': 'Navigational: Vercel holds the top results; compare page and ads',
+    'windsurf pricing': 'Windsurf/Devin first, explainers at #4–6: fits the comparison post',
+    'kong ai gateway': NC, 'llm cost tracking': NC, 'llm pricing comparison': NC, 'portkey alternative': NC,
+})
+INTENT['devzero'].update({
+    'aws cost optimization': 'AWS\'s own pages hold most of the top 5; Flexera, CloudZero: long-term only',
+    'aws s3 pricing': 'AWS first, then Cloudchipr, CloudZero guides: the existing post fits',
+    'aws spot instances': 'AWS docs hold most of the top 6: hard',
+    'cast ai pricing': 'Cast AI\'s own pages, then software directories and nOps: fits a post',
+    'cloud cost optimization': 'Definitions (Oracle, IBM, Akamai) and tool lists: broad, top-50 only',
+    'cluster autoscaler': 'GitHub and AWS docs; ScaleOps #6: refresh fits',
+    'crashloopbackoff': 'Vendor troubleshooting guides (Sysdig, groundcover): fits, weaker link to rightsizing',
+    'eks cost optimization': 'AWS docs, then vendors; DevZero already #4',
+    'eks vs aks': 'Comparisons from Qovery, Sedai, SentinelOne: fits',
+    'finops': 'Definitional: finops.org and "what is FinOps" pages; not a target',
+    'goldilocks kubernetes': 'Navigational to the Fairwinds tool: a comparison post can rank lower',
+    'gpu utilization': 'Mixed (gaming and data-centre): the existing post fits for the Kubernetes angle',
+    'horizontal pod autoscaler': 'kubernetes.io and AWS docs dominate: hard',
+    'hpa vs vpa': 'Reddit, ScaleOps #4, nOps: fits a section',
+    'karpenter consolidation': 'karpenter.sh docs top 3, CloudBolt #4: a section fits',
+    'karpenter vs cluster autoscaler': 'ScaleOps #1, nOps #2: refresh fits',
+    'kubecost pricing': 'IBM/Apptio, then nOps and Finout explainers: fits a section',
+    'kubernetes autoscaling': 'kubernetes.io dominates: hard; use the existing post as the hub',
+    'kubernetes bin packing': 'kubernetes.io, then explainers incl. Sedai: fits',
+    'kubernetes cost': 'Official GKE/AKS pricing pages and Reddit: mixed',
+    'kubernetes gpu': 'kubernetes.io and NVIDIA docs: hard',
+    'kubernetes hpa': 'kubernetes.io dominates: hard; refresh the existing post',
+    'kubernetes resource limits': 'kubernetes.io, then Zesty #4 and ScaleOps #5: fits the existing post',
+    'llm inference cost': 'API cost comparisons: closer to Nautili than DevZero',
+    'nvidia gpu operator': 'NVIDIA docs, then Spectro Cloud #4: a set-up guide fits',
+    'oomkilled': 'Troubleshooting guides (Komodor #2, Fairwinds): fits',
+    'vertical pod autoscaler': 'kubernetes.io and GitHub, Reddit #4: refresh the existing post',
+    'vllm': 'Navigational to vLLM: not a target',
+    'vllm kubernetes': 'vLLM docs, CNCF, ScaleOps #4: fits a new post',
+    'vpa kubernetes': 'kubernetes.io, Reddit, Kubex #5: same page as "vertical pod autoscaler"',
+    'finops tools': NC, 'in place pod resize': NC, 'pod rightsizing without restart': NC, 'scaleops alternative': NC,
+})
+
+# Keyword plan corrections where their item failed the intent or page-existence check.
+KEYWORD_EDITS = {
+    'nautili': {
+        'llm cost': dict(plan='Target with the LLM API pricing table and calculator; keep /features/spend-attribution for "llm cost tracking"', now='Changed after the intent check'),
+        'openai usage dashboard': dict(plan='A section on /features/spend-attribution; no new landing page', now='Downgraded: mostly navigational to OpenAI'),
+        'llm guardrails': dict(plan='Refresh /guides/govern-llm-traffic-with-guardrails; no new post', now='Guide exists'),
+        'openai compatible api': dict(plan='Retitle the existing Chat Completions docs page ("OpenAI-compatible wire") toward "OpenAI-compatible API"', now='Docs page exists'),
+        'llm api pricing': dict(plan='One pricing comparison table page, shared with "llm pricing comparison"'),
+    },
+    'devzero': {
+        'kubernetes resource limits': dict(plan='Refresh /blog/kubernetes-resource-requests-and-limits (4,317 words); no new guide', now='Post exists'),
+        'kubernetes autoscaling': dict(plan='Make /blog/kubernetes-autoscaling the autoscaling hub', now='Post exists'),
+        'hpa vs vpa': dict(plan='Section in /blog/kubernetes-autoscaling'),
+        'aws spot instances': dict(plan='No spot post exists: point to the /spot-instances hub and add a spot section to the EC2 pricing post', now='No post (404)'),
+        'aws cost optimization': dict(plan='No AWS cost post exists; AWS holds most of the top 5. Long-term only', now='No post (404)'),
+        'finops': dict(plan='Not a target: definitional searches owned by finops.org'),
+        'kubernetes gpu': dict(plan='Use /kubernetes-gpu-optimization as the GPU hub', now='Product page exists'),
+    },
+}
+
+CONTENT_EDITS = {
+    'nautili': {18: dict(title='LLM Guardrails: Budgets, Rate Limits and PII Rules (refresh)', type='Refresh',
+                         note='Refresh /guides/govern-llm-traffic-with-guardrails, which exists; link /blog/llm-governance. No new post')},
+    'devzero': {},
+}
+
+# Items from our plan that had not flowed in
+NEW_TASKS['devzero'].append(dict(area='Tracking', priority='P1', impact='Low', effort='1 hr', hours=1, owner='SurgeX', when='Week 2', status='Pending',
+    task='Verify devzero.io in Bing Webmaster Tools, submit the sitemap and turn on IndexNow for new posts',
+    why='Bing feeds ChatGPT search and Copilot answers', verified='Not checked'))
+NEW_TASKS['nautili'].append(dict(area='Tracking', priority='P1', impact='Low', effort='1 hr', hours=1, owner='SurgeX', when='Week 2', status='Pending',
+    task='Verify nautili.ai in Bing Webmaster Tools, submit the sitemap and turn on IndexNow for new posts',
+    why='Bing feeds ChatGPT search and Copilot answers', verified='Not checked'))
+TASK_EDITS['devzero'][20] = dict(task='301 the ~25 real 404 URLs (e.g. /what-is-cast-ai and /what-is-sedai to their compare pages, /vs/what-is-coder, /inference-platform, 16 instance family pages)')
+NEW_CONTENT['nautili'] += [
+    dict(title='LLM Proxy vs LLM Gateway: When You Need Which', keyword='llm proxy', volume=390, type='Post', priority='P1', status='Pending',
+         note='LiteLLM docs #1, then explainers; link the gateway pillar'),
+    dict(title='State of AI Coding Spend (from anonymised gateway data)', keyword='link magnet', volume=None, type='Report', priority='P1', status='Pending',
+         note='Needs anonymised gateway spend data; pairs with the DevZero waste report'),
+]
+
+TARGETS = {
+    'nautili': [('Referring domains', '6', '40–60', '—'), ('Listings live (marketplaces, review sites, directories)', '0', '25+', '—'),
+                ('Provider listings in coding tools', '0', '2–4', '—'), ('Tier 1 keywords in top 20 / top 10', '0 / 0', '8 / 4', '—'),
+                ('Non-brand search clicks a month (bot queries excluded)', '~10', '300–800', '1,500–7,000 (all traffic)')],
+    'devzero': [('Search clicks a month', '~2,100', '2,600–2,900', '3,500–6,000'), ('Cannibalising clusters merged', '0 of 4', '3', '4'),
+                ('Product pages with no in-content links', '13', '0', '0'), ('Legacy URLs mapped (of 47)', '0', '47', '47')],
+}
+INTENT['devzero']['aks / gke / eks cost optimization'] = 'Cloud docs first, then vendor guides; DevZero already #4–8 with no clicks: titles are the fix'
+INTENT['devzero']['link magnet'] = 'Not a search target: earns links and press'
+INTENT['nautili']['link magnet'] = 'Not a search target: earns links and press'

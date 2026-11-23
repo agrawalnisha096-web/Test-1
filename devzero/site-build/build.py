@@ -41,6 +41,7 @@ def build_data():
             content.append(dict(c, n=len(content) + 1))
         for c in content:
             c['n'] = int(c['n'])
+            c.update(merges.CONTENT_EDITS[site].get(c['n'], {}))
         kws = SEED[site]['keywords']
         intent = merges.INTENT[site]
         missing = [k for k in intent if k not in {x['keyword'] for x in kws}]
@@ -68,12 +69,12 @@ def task_row(t):
             f'<td>{E(t["area"])}</td><td class="ev">{E(t["verified"] or "")}</td></tr>')
 
 
-def content_row(c):
+def content_row(c, intent=None):
     vol = c.get('volume')
     v = fmt(vol) if isinstance(vol, (int, float)) and vol else '<span class="muted">—</span>'
     return (f'<tr><td class="num">{c["n"]}</td><td class="task">{E(c["title"])}</td><td class="mono">{E(c["keyword"])}</td>'
             f'<td class="num">{v}</td><td>{E(c["type"])}</td><td><span class="p p-{E(c["priority"])}">{E(c["priority"])}</span></td>'
-            f'<td><span class="pill s-{E(c["status"])}">{E(c["status"])}</span></td><td class="ev">{E(c.get("note") or "")}</td></tr>')
+            f'<td><span class="pill s-{E(c["status"])}">{E(c["status"])}</span></td><td class="muted">{E((intent or {}).get(c["keyword"], "—"))}</td><td class="ev">{E(c.get("note") or "")}</td></tr>')
 
 
 def replace_tbody(h, table_marker, rows_html):
@@ -103,6 +104,11 @@ def seo_tab(site, d):
     extra = ''.join(f'<li>{E(x)}</li>' for x in merges.WHAT_CHANGED_EXTRA[site])
     h = h.replace("</ul></div>\n<div class=\"card\"><h3>How to read the task list</h3>", extra + "</ul></div>\n<div class=\"card\"><h3>How to read the task list</h3>", 1)
     h = h.replace('The same list is in the Excel roadmap, where the status column can be edited', 'The same list is in the roadmap workbook (download on the home page), where the status column can be edited')
+    # targets
+    trs = ''.join(f'<tr><td><b>{E(a)}</b></td><td class="num">{E(b)}</td><td class="num">{E(c3)}</td><td class="num">{E(c12)}</td></tr>' for a, b, c3, c12 in merges.TARGETS[site])
+    tgt = ('<div style="display:grid;gap:10px"><h3 style="margin:0">Targets</h3><div class="tbl"><table><thead><tr><th>Measure</th><th class="num">Now</th><th class="num">Month 3</th><th class="num">Month 12</th></tr></thead><tbody>'
+           + trs + '</tbody></table></div></div>\n')
+    h = h.replace('<div style="display:grid;gap:10px"><div class="row"><h3 style="margin:0">All tasks</h3>', tgt + '<div style="display:grid;gap:10px"><div class="row"><h3 style="margin:0">All tasks</h3>', 1)
     # filter buttons
     h = re.sub(r'data-v="Done" aria-pressed="false">Done · \d+', f'data-v="Done" aria-pressed="false">Done · {c["Done"]}', h)
     h = re.sub(r'data-v="Partial" aria-pressed="false">Partial · \d+', f'data-v="Partial" aria-pressed="false">Partial · {c["Partial"]}', h)
@@ -123,7 +129,9 @@ def seo_tab(site, d):
     h = re.sub(r'First \d+ content pieces · \d+ live', f'First {len(cp)} content pieces · {live} live', h)
     i = h.index(f'content pieces · {live} live')
     a = h.index('<tbody>', i) + len('<tbody>'); b = h.index('</tbody>', a)
-    h = h[:a] + ''.join(content_row(x) for x in cp) + h[b:]
+    h = h[:a] + ''.join(content_row(x, d['intent']) for x in cp) + h[b:]
+    k = h.rfind('<thead>', 0, a)
+    h = h[:k] + h[k:a].replace('<th>Status</th><th>Existing URL / note</th>', '<th>Status</th><th>Intent check</th><th>Existing URL / note</th>', 1) + h[a:]
     return h
 
 
@@ -139,7 +147,16 @@ def keyword_tab(site, d):
             kw = html.unescape(re.sub('<[^>]+>', '', cells[1])).strip() if len(cells) > 1 else ''
             v = intent.get(kw)
             cell = f'<td class="muted">{E(v)}</td>' if v else '<td class="muted">—</td>'
-            return m.group(1) + m.group(2) + cell + '</tr>'
+            body = m.group(2)
+            ed = merges.KEYWORD_EDITS[site].get(kw)
+            if ed:
+                tds = re.findall(r'<td[^>]*>.*?</td>', body, re.S)
+                for idx, key in ((5, 'plan'), (6, 'now')):
+                    if key in ed and idx < len(tds):
+                        open_tag = re.match(r'<td[^>]*>', tds[idx]).group(0)
+                        tds[idx] = f'{open_tag}{E(ed[key])}</td>'
+                body = ''.join(tds)
+            return m.group(1) + body + cell + '</tr>'
         return re.sub(r'(<tr[^>]*>)((?:(?!</tr>).)*?<td.*?)</tr>', row, tbl, flags=re.S)
 
     out, pos = [], 0
@@ -151,7 +168,7 @@ def keyword_tab(site, d):
     out.append(h[pos:])
     h = ''.join(out)
     note = ('<p class="muted" style="font-size:13px;margin:0">Intent check: what Google shows for each keyword today '
-            '(latest results snapshot, Jul–Nov 2026) and what that means for the target. "—" means not checked yet.</p>')
+            '(latest results snapshot, Jul–Nov 2026) and what that means for the target.</p>')
     h = h.replace('</div>\n<div class="grid2">\n<div class="card"><span class="k">Tier 1', note + '</div>\n<div class="grid2">\n<div class="card"><span class="k">Tier 1', 1) if 'Tier 1' in h else h
     return h
 
@@ -253,7 +270,8 @@ def index_page(data):
     h = h.replace('<span class="kind sheet">Google Sheet</span>', '<span class="kind sheet">Workbook</span>')
     h = h.replace('<b>Track the work in the two Google Sheets.</b>', '<b>Track the work in the two roadmap workbooks.</b>')
     h = h.replace('the sheets are where status changes. If they disagree, the sheet is current.', 'the workbooks are where status changes. If they disagree, the workbook is current.')
-    h = h.replace('<li><b>Content Plan:</b> the first 20 posts and pages, with target keywords</li>', '<li><b>Content Plan:</b> the first 22 posts and pages, with target keywords</li>')
+    for name in ('devzero', 'nautili'):  # DevZero card comes first on the page
+        h = h.replace('<li><b>Content Plan:</b> the first 20 posts and pages, with target keywords</li>', f'<li><b>Content Plan:</b> the first {len(data[name]["content"])} posts and pages, with target keywords</li>', 1)
     # extra findings
     extra = {
         'Nautili': ['Several "new" pages partly exist: Cursor, Codex and Continue set-up is in the docs, the Gemini CLI guide exists, the OpenRouter fee calculator sits inside /compare/openrouter. They become upgrades, not new builds'],
