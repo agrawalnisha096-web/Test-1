@@ -1,0 +1,227 @@
+wave,page,type,trade,primary_keyword,keywords,volume,weighted_kd,ad_value_usd,top_keywords
+1,/services/local-services-ads/,service,,local services ads,37,89000,31,1041664,local services ads; google local services ads; local services ads google; local services ads by google; google guaranteed local services ads; google local services ads platform
+1,/leads/,core,,lead generation services near me,85,11870,11,535174,lead generation services near me; lead generation services; contractor leads; leads for contractors; leads for contractor; contractor lead generation
+1,/plumbing/,trade hub,plumbing,plumbing marketing agency,60,8720,8,438901,plumbing marketing agency; plumbing advertising; plumbing advertisements; plumbing advertisement; plumbing marketing; leading plumbing
+1,/roofing/,trade hub,roofing,leads for roofers,56,9620,4,433193,leads for roofers; roofing lead generation; roofing leads; lead generation for roofing; leads for roofing; marketing for roofers
+1,/hvac/,trade hub,hvac,hvac lead generation,53,8150,4,407164,hvac lead generation; hvac marketing agency; hvac leads; lead generation for hvac; leads for hvac; hvac marketing
+1,/,core,,door hanging advertisement,90,12110,7,299873,door hanging advertisement; home service marketing; home services marketing; contractor marketing agency; home service marketing agency; home services marketing agency
+1,/compare/thumbtack/,comparison,,what is thumbtack website,31,38440,23,211773,what is thumbtack website; what is thumbtack; thumbtack what is; review of thumbtack; thumbtack website reviews; reviews for thumbtack
+1,/solar/,trade hub,solar,solar lead generation,22,2890,1,186737,solar lead generation; solar leads; lead generation for solar; solar advertising; solar leads for sale; buying solar leads
+1,/pest-control/,trade hub,pest control,marketing for pest control,23,2740,2,127274,marketing for pest control; pest control advertising; pest control marketing; pest control advertisement; pest control marketing agency; pest control digital marketing
+1,/landscaping/,trade hub,landscaping,landscaping advertising,20,3220,7,112885,landscaping advertising; landscaping advertisement; landscaping leads; landscaping marketing; marketing for landscapers; leads landscaping
+1,/remodeling/,trade hub,remodeling,marketing for remodelers,21,2080,1,76370,marketing for remodelers; remodeling marketing; home remodeling marketing; remodeling leads; leads for remodeling; remodeling marketing agency
+1,/moving/,trade hub,moving,marketing for movers,25,2640,13,75974,marketing for movers; moving leads; moving marketing; moving advertising; leads for movers; leads moving companies
+1,/compare/angi/,comparison,,angi leads,30,6790,34,73463,angi leads; angi leads reviews; homeadvisor vs angi; how much does angi charge for leads; what is angi leads; is angi leads worth it
+1,/electrical/,trade hub,electrical,electrical advertising,29,2760,1,66996,electrical advertising; electrical advertisement; advertisement for electrician; electrician advertising; electrician marketing; marketing for electricians
+1,/house-cleaning/,trade hub,house cleaning,cleaning advertising,39,3090,2,60093,cleaning advertising; cleaning leads commercial; cleaning leads; cleaning marketing; house cleaning advertising; house cleaning advertisement example
+1,/painting/,trade hub,painting,painting advertising,30,2890,9,56147,painting advertising; painting leads; digital marketing for painters; painting company marketing agency; painting company marketing; painting business marketing
+1,/junk-removal/,trade hub,junk removal,junk removal leads,11,1320,0,50914,junk removal leads; junk removal advertising; google ads for junk removal; junk removal marketing; junk removal leads near me; junk removal marketing agency
+1,/general-contractor/,trade hub,general contractor,general contractor marketing,9,690,4,32745,general contractor marketing; marketing for general contractors; marketing general contractor; general contractor advertising; general contractor leads; leads for general contractors
+1,/commercial-cleaning/,trade hub,commercial cleaning,commercial cleaning lead generation,7,890,0,28266,commercial cleaning lead generation; commercial cleaning leads; commercial cleaning advertising; commercial cleaning marketing; buy commercial cleaning leads; commercial cleaning marketing agency
+2,/plumbing/seo/,trade child,plumbing,plumbing seo,10,2730,15,229450,plumbing seo; seo for plumbers; plumbing company seo; plumbing seo services; seo company for plumbers; plumbing seo companies
+2,/roofing/seo/,trade child,roofing,roofing seo,5,3980,5,182339,roofing seo; seo for roofers; seo for roofing company; roofing seo keywords; seo roofing companies
+2,/services/seo/,service,home services,home service seo,17,3490,2,139895,home service seo; contractor seo; local seo for contractors; seo for contractors; seo for homebuilders; seo for home services
+2,/hvac/seo/,trade child,hvac,hvac seo,15,3110,12,116026,hvac seo; seo for hvac contractors; seo for hvac company; hvac seo company; hvac seo companies; seo for hvac
+2,/services/pay-per-call-leads/,service,,pay per call,48,2310,4,102903,pay per call; pay per call lead generation; what is pay per call; pay per call marketing; pay per call leads; what is pay per call advertising
+2,/electrical/seo/,trade child,electrical,electricians seo,6,2130,0,66843,electricians seo; electrician seo; seo for electricians; electrician seo company; electrician seo services; electrical seo
+2,/pest-control/seo/,trade child,pest control,pest control seo,5,960,8,38747,pest control seo; pest control seo company; seo for pest control companies; local seo for pest control companies; pest control seo agency
+2,/moving/seo/,trade child,moving,seo for moving company,4,1620,5,38128,seo for moving company; seo for movers; movers seo; moving seo
+2,/services/websites/,service,contractor,contractor website design,4,2240,15,35572,contractor website design; websites for contractors; home service website design; angie's list like websites
+2,/compare/networx/,comparison,,networx leads,17,2090,12,33221,networx leads; networx systems llc reviews; networx review; networx reviews; networx systems reviews; networx leads reviews
+2,/tree-service/,trade hub,tree service,tree service advertising,9,840,8,31000,tree service advertising; tree service leads; tree service marketing; tree service marketing agency; tree service lead machine; local tree service marketing
+2,/services/missed-call-text-back/,service,,missed call text back,15,1330,4,29196,missed call text back; missed call text back service; missed call text back software; gohighlevel missed call text back; the missed call text back; automated missed call text back
+2,/handyman/,trade hub,handyman,handyman leads,13,1110,2,29064,handyman leads; handyman advertising; free handyman leads; handyman leads free; handyman advertising examples; handyman marketing
+2,/pressure-washing/,trade hub,pressure washing,pressure washing advertising,9,880,3,26493,pressure washing advertising; pressure washing leads; marketing pressure washing; pressure washing marketing; pressure washing marketing pros; pressure washing leads near me
+2,/painting/websites/,trade child,painting,websites for painters,2,2440,24,24207,websites for painters; painting website design
+2,/house-cleaning/seo/,trade child,house cleaning,cleaning service seo,11,1240,5,23827,cleaning service seo; seo for cleaning companies; seo cleaning services; seo for cleaning company; seo for cleaning services; cleaning services seo
+2,/lawn-care/,trade hub,lawn care,lawn care advertisements,14,1280,5,23690,lawn care advertisements; lawn care advertising; lawn care marketing; lawn care leads; marketing for lawn care business; lawn care advertising examples
+2,/plumbing/websites/,trade child,plumbing,websites for plumbers,3,1010,12,21988,websites for plumbers; plumbing website design; plumbing website examples
+2,/restoration/,trade hub,restoration,water damage leads,11,530,3,20969,water damage leads; water damage restoration leads; restoration digital marketing; marketing for restoration companies; water damage marketing; water restoration leads
+2,/compare/homeadvisor/,comparison,,homeadvisor review,18,2170,4,19406,homeadvisor review; reviews of homeadvisor; reviews for homeadvisor; homeadvisor reviews; homeadvisor true cost guide; homeadvisor reviews for contractors
+2,/deck/,trade hub,deck,deck marketing,5,330,2,19178,deck marketing; deck leads; deck advertising; deck marketing agency; marketing for deck builders
+2,/gutters/,trade hub,gutters,gutter leads,6,440,0,18405,gutter leads; gutter lead; gutter advertising; gutter lead generation; gutter marketing; gutter marketing agency
+2,/general-contractor/websites/,trade child,general contractor,general contractor website design,2,1170,15,18308,general contractor website design; websites for general contractors
+2,/home-builder/,trade hub,home builder,home builder marketing,8,850,6,18098,home builder marketing; marketing for home builders; home builder marketing agency; marketing agency for home builders; home builder marketing agencies; home builder advertising
+2,/auto-detailing/,trade hub,auto detailing,detailing advertising,7,520,17,17111,detailing advertising; detailing marketing; car detailing leads; google ads for car detailing; detailing leads; detailing marketing agency
+2,/pool/,trade hub,pool,pool marketing,12,960,4,17008,pool marketing; pool advertising; pool advertisement; pool advertisements; pool leads; pool builder lead rocket
+2,/carpet-cleaning/,trade hub,carpet cleaning,carpet cleaning advertising,9,540,1,16108,carpet cleaning advertising; carpet cleaning lead generation; carpet cleaning leads; leads for carpet cleaners; carpet cleaning marketing; marketing carpet cleaning
+2,/window-cleaning/,trade hub,window cleaning,window cleaning advertising,5,310,1,15440,window cleaning advertising; window cleaning leads; window cleaning marketing; marketing for window cleaners; window cleaning lead generation
+2,/concrete/,trade hub,concrete,concrete leads,9,370,0,15203,concrete leads; concrete advertising; concrete marketing; concrete leads near me; concrete marketing agency; concrete contractor marketing agency
+2,/compare/99-calls/,comparison,,99 calls reviews,4,400,7,14502,99 calls reviews; 99 calls review; 99 calls leads; 99 calls pricing
+2,/landscaping/seo/,trade child,landscaping,landscaping seo,3,510,1,14096,landscaping seo; seo for landscapers; seo for landscaping company
+2,/windows/,trade hub,windows,window advertising,8,870,13,13652,window advertising; window washing advertisement; window leads; window and door leads; window replacement leads; window marketing
+2,/tools/cost-per-lead-calculator/,tool,,cost per lead,22,1930,10,12970,cost per lead; cost per lead calculation; how to calculate cost per lead; how do you calculate cost per lead; cost per lead calculator; calculate cost per lead
+2,/appliance-repair/,trade hub,appliance repair,appliance repair leads,8,340,2,12132,appliance repair leads; appliance repair marketing; appliance repair advertising; leads for appliance repair; appliance repair lead generation; appliance repair marketing agency
+2,/home-inspection/,trade hub,home inspection,home inspection advertising,5,410,0,12126,home inspection advertising; home inspection marketing; marketing for home inspectors; home inspection leads; home inspection lead generation
+2,/flooring/,trade hub,flooring,flooring leads,9,390,3,11699,flooring leads; flooring advertising; flooring marketing; flooring marketing agency; flooring pros marketing; buy flooring leads
+2,/landscaping/websites/,trade child,landscaping,websites for landscapers,2,930,10,11198,websites for landscapers; landscaping website design
+2,/garage-door/,trade hub,garage door,garage door advertising,7,570,11,9720,garage door advertising; garage door marketing; garage door leads; garage door marketing agency; buy garage door leads; garage door lead generation
+2,/electrical/websites/,trade child,electrical,websites for electricians,2,530,0,8111,websites for electricians; electrician website design
+2,/towing/,trade hub,towing,towing leads,5,310,7,7553,towing leads; towing advertising; towing marketing; buy towing leads; towing lead generation
+2,/carpet-cleaning/seo/,trade child,carpet cleaning,carpet cleaning seo,3,510,0,4146,carpet cleaning seo; seo for carpet cleaners; carpet cleaner seo
+2,/drywall/,trade hub,drywall,drywall leads,2,300,0,2662,drywall leads; drywall advertising
+2,/compare/modernize/,comparison,,modernize leads,2,130,0,2259,modernize leads; modernize solar leads
+2,/locksmith/,trade hub,locksmith,locksmith advertising,8,350,1,1737,locksmith advertising; locksmith leads; locksmith marketing; buy locksmith leads; locksmith google ads; locksmith lead generation
+3,/locksmith/seo/,trade child,locksmith,locksmith seo,2,220,0,13387,locksmith seo; seo for locksmiths
+3,/hvac/websites/,trade child,hvac,hvac website design,2,410,9,9562,hvac website design; websites for hvac contractors
+3,/dumpster-rental/,trade hub,dumpster rental,dumpster rental advertising,3,130,0,8833,dumpster rental advertising; dumpster rental marketing; dumpster rental leads
+3,/masonry/,trade hub,masonry,masonry advertising,2,90,2,7149,masonry advertising; masonry leads
+3,/roofing/websites/,trade child,roofing,roofing website design,2,420,7,6699,roofing website design; websites for roofers
+3,/bathroom-remodeling/,trade hub,bathroom remodeling,bathroom remodeling advertising,4,220,0,6495,bathroom remodeling advertising; bathroom remodeling marketing; bathroom remodeling leads; buy bathroom remodeling leads
+3,/fencing/,trade hub,fencing,fence advertising,6,210,2,5743,fence advertising; fence leads; sales fence marketing; fence company marketing; fence marketing; fence marketing agency
+3,/learn/how-to-get-roofing-leads/,guide,roofing,how to get roofing leads,1,140,0,5435,how to get roofing leads
+3,/junk-removal/seo/,trade child,junk removal,junk removal seo,1,140,0,5286,junk removal seo
+3,/learn/how-to-get-hvac-leads/,guide,hvac,how to get hvac leads,1,90,0,5160,how to get hvac leads
+3,/lawn-care/websites/,trade child,lawn care,lawn care website design,1,210,0,4937,lawn care website design
+3,/learn/how-to-get-clients-for-lawn-care/,guide,lawn care,how to get clients for lawn care,1,210,0,4891,how to get clients for lawn care
+3,/learn/how-to-get-customers-for-lawn-care/,guide,lawn care,how to get customers for lawn care,1,210,0,4891,how to get customers for lawn care
+3,/learn/how-to-advertise-plumbing-business/,guide,plumbing,how to advertise plumbing business,1,30,0,3937,how to advertise plumbing business
+3,/learn/how-to-get-painting-leads/,guide,painting,how to get painting leads,1,70,0,3831,how to get painting leads
+3,/learn/how-to-get-lawn-care-customers/,guide,lawn care,how to get lawn care customers,1,170,0,3580,how to get lawn care customers
+3,/foundation-repair/,trade hub,foundation repair,foundation repair marketing,2,110,0,3481,foundation repair marketing; foundation repair leads
+3,/learn/how-to-advertise-a-lawn-care-business/,guide,lawn care,how to advertise a lawn care business,1,30,0,3148,how to advertise a lawn care business
+3,/home-builder/websites/,trade child,home builder,websites for home builders,2,400,65,3139,websites for home builders; home builder website design
+3,/kitchen-remodeling/,trade hub,kitchen remodeling,kitchen remodeling marketing,5,180,3,3088,kitchen remodeling marketing; kitchen remodeling leads; kitchen remodeling advertising; buy kitchen remodeling leads; marketing for kitchen remodelers
+3,/excavation/,trade hub,excavation,excavation advertising,4,100,1,3005,excavation advertising; excavation leads; excavation marketing; marketing for excavation contractors
+3,/learn/plumbing-marketing-ideas/,guide,plumbing,plumbing marketing ideas,1,140,7,2890,plumbing marketing ideas
+3,/paving/,trade hub,paving,paving marketing,4,200,16,2597,paving marketing; paving leads; paving advertising; paving marketing agency
+3,/learn/how-to-get-plumbing-leads/,guide,plumbing,how to get plumbing leads,1,50,0,2556,how to get plumbing leads
+3,/learn/plumbing-advertising-ideas/,guide,plumbing,plumbing advertising ideas,1,70,0,2488,plumbing advertising ideas
+3,/learn/how-to-generate-painting-leads/,guide,painting,how to generate painting leads,1,70,0,2477,how to generate painting leads
+3,/mold-remediation/,trade hub,mold remediation,mold remediation leads,2,60,0,2330,mold remediation leads; mold remediation marketing
+3,/solar/seo/,trade child,solar,seo for solar company,3,200,5,2242,seo for solar company; seo for solar companies; solar seo
+3,/pest-control/websites/,trade child,pest control,pest control website design,2,120,7,2171,pest control website design; websites for pest control companies
+3,/learn/how-to-get-commercial-cleaning-leads/,guide,commercial cleaning,how to get commercial cleaning leads,1,40,0,2115,how to get commercial cleaning leads
+3,/garage-door/seo/,trade child,garage door,seo for garage door companies,2,140,0,2072,seo for garage door companies; garage door seo
+3,/siding/,trade hub,siding,siding advertising,4,170,8,2049,siding advertising; siding leads; buy siding leads; siding marketing
+3,/learn/how-to-get-solar-leads/,guide,solar,how to get solar leads,1,50,0,2019,how to get solar leads
+3,/house-cleaning/websites/,trade child,house cleaning,cleaning website design,2,230,9,1833,cleaning website design; website design for cleaning business
+3,/learn/roofing-advertising-ideas/,guide,roofing,roofing advertising ideas,1,70,0,1761,roofing advertising ideas
+3,/learn/how-to-get-more-painting-leads/,guide,painting,how to get more painting leads,1,40,0,1726,how to get more painting leads
+3,/learn/how-to-get-junk-removal-leads/,guide,junk removal,how to get junk removal leads,1,50,0,1710,how to get junk removal leads
+3,/learn/how-to-get-tree-service-leads/,guide,tree service,how to get tree service leads,1,20,0,1650,how to get tree service leads
+3,/learn/how-to-advertise-junk-removal-business/,guide,junk removal,how to advertise junk removal business,1,30,0,1644,how to advertise junk removal business
+3,/learn/how-to-get-more-customers-for-lawn-care/,guide,lawn care,how to get more customers for lawn care,1,50,0,1570,how to get more customers for lawn care
+3,/learn/how-to-advertise-your-cleaning-business-for-free/,guide,house cleaning,how to advertise your cleaning business for free,1,90,1,1522,how to advertise your cleaning business for free
+3,/learn/how-to-get-lawn-mowing-clients/,guide,,how to get lawn mowing clients,1,40,0,1494,how to get lawn mowing clients
+3,/insulation/,trade hub,insulation,insulation advertising,4,80,0,1473,insulation advertising; insulation leads; buy insulation leads; insulation marketing
+3,/learn/how-to-get-cleaning-leads/,guide,house cleaning,how to get cleaning leads,1,30,0,1424,how to get cleaning leads
+3,/painting/seo/,trade child,painting,seo for painters,2,130,1,1381,seo for painters; painting seo
+3,/learn/cleaning-advertising-ideas/,guide,house cleaning,cleaning advertising ideas,1,110,0,1362,cleaning advertising ideas
+3,/learn/how-to-get-lawn-mowing-customers/,guide,,how to get lawn mowing customers,1,40,0,1349,how to get lawn mowing customers
+3,/learn/remodeling-advertising-ideas/,guide,remodeling,remodeling advertising ideas,1,50,0,1318,remodeling advertising ideas
+3,/learn/marketing-ideas-for-pest-control/,guide,pest control,marketing ideas for pest control,1,110,0,1306,marketing ideas for pest control
+3,/learn/pest-control-marketing-ideas/,guide,pest control,pest control marketing ideas,1,110,0,1306,pest control marketing ideas
+3,/learn/how-to-get-office-cleaning-leads/,guide,house cleaning,how to get office cleaning leads,1,40,0,1239,how to get office cleaning leads
+3,/demolition/,trade hub,demolition,demolition leads,3,110,0,1207,demolition leads; demolition advertising; demolition marketing
+3,/home-inspection/websites/,trade child,home inspection,home inspection website design,2,50,54,1140,home inspection website design; websites for home inspectors
+3,/learn/how-to-advertise-lawn-mowing-business/,guide,,how to advertise lawn mowing business,1,20,0,1072,how to advertise lawn mowing business
+3,/learn/how-to-advertise-a-lawn-mowing-business/,guide,,how to advertise a lawn mowing business,1,20,0,1072,how to advertise a lawn mowing business
+3,/learn/how-to-advertise-landscaping-business/,guide,landscaping,how to advertise landscaping business,1,20,0,1052,how to advertise landscaping business
+3,/carpet-cleaning/websites/,trade child,carpet cleaning,websites for carpet cleaners,2,90,26,997,websites for carpet cleaners; carpet cleaning website design
+3,/kitchen-remodeling/seo/,trade child,kitchen remodeling,kitchen remodeling seo,1,50,0,995,kitchen remodeling seo
+3,/irrigation/,trade hub,irrigation,irrigation leads,2,20,12,991,irrigation leads; irrigation marketing
+3,/epoxy-flooring/,trade hub,epoxy flooring,epoxy flooring leads,2,30,0,990,epoxy flooring leads; epoxy flooring marketing
+3,/learn/landscaping-advertising-ideas/,guide,landscaping,landscaping advertising ideas,1,70,0,986,landscaping advertising ideas
+3,/learn/how-to-get-hvac-customers/,guide,hvac,how to get hvac customers,1,40,0,936,how to get hvac customers
+3,/remodeling/websites/,trade child,remodeling,remodeling website design,2,50,4,888,remodeling website design; websites for remodelers
+3,/learn/marketing-ideas-for-hvac-companies/,guide,hvac,marketing ideas for hvac companies,1,30,0,877,marketing ideas for hvac companies
+3,/learn/how-to-generate-handyman-leads/,guide,handyman,how to generate handyman leads,1,30,0,817,how to generate handyman leads
+3,/learn/how-to-advertise-handyman-services-for-free/,guide,handyman,how to advertise handyman services for free,1,40,0,813,how to advertise handyman services for free
+3,/learn/how-to-generate-hvac-leads/,guide,hvac,how to generate hvac leads,1,90,0,801,how to generate hvac leads
+3,/tree-service/websites/,trade child,tree service,tree service website design,1,70,0,799,tree service website design
+3,/air-duct-cleaning/,trade hub,air duct cleaning,air duct cleaning advertising,3,120,4,744,air duct cleaning advertising; air duct cleaning leads; air duct cleaning marketing
+3,/learn/landscaping-marketing-ideas/,guide,landscaping,landscaping marketing ideas,1,40,0,742,landscaping marketing ideas
+3,/learn/marketing-ideas-for-landscapers/,guide,landscaping,marketing ideas for landscapers,1,40,0,742,marketing ideas for landscapers
+3,/learn/how-to-get-pest-control-leads/,guide,pest control,how to get pest control leads,1,10,16,718,how to get pest control leads
+3,/learn/how-to-get-handyman-leads/,guide,handyman,how to get handyman leads,1,30,0,716,how to get handyman leads
+3,/handyman/websites/,trade child,handyman,handyman website design,1,50,0,687,handyman website design
+3,/learn/how-to-find-junk-removal-leads/,guide,junk removal,how to find junk removal leads,1,40,0,687,how to find junk removal leads
+3,/learn/how-to-get-leads-for-junk-removal/,guide,junk removal,how to get leads for junk removal,1,30,0,681,how to get leads for junk removal
+3,/learn/how-to-get-commercial-roofing-leads/,guide,roofing,how to get commercial roofing leads,1,30,0,667,how to get commercial roofing leads
+3,/water-treatment/,trade hub,water treatment,water treatment leads,2,20,11,663,water treatment leads; water treatment marketing
+3,/learn/electrical-contractor-advertising-ideas/,guide,electrical,electrical contractor advertising ideas,1,50,0,608,electrical contractor advertising ideas
+3,/learn/how-to-generate-moving-leads/,guide,moving,how to generate moving leads,1,20,0,593,how to generate moving leads
+3,/learn/how-to-get-leads-as-a-contractor/,guide,contractor,how to get leads as a contractor,1,30,14,568,how to get leads as a contractor
+3,/learn/auto-detailing-advertising-ideas/,guide,auto detailing,auto detailing advertising ideas,1,90,0,562,auto detailing advertising ideas
+3,/learn/car-detailing-advertising-ideas/,guide,auto detailing,car detailing advertising ideas,1,90,0,562,car detailing advertising ideas
+3,/learn/how-to-get-concrete-leads/,guide,concrete,how to get concrete leads,1,20,0,550,how to get concrete leads
+3,/learn/how-to-get-flooring-leads/,guide,flooring,how to get flooring leads,1,10,0,537,how to get flooring leads
+3,/learn/how-to-advertise-lawn-care-business/,guide,lawn care,how to advertise lawn care business,1,30,0,502,how to advertise lawn care business
+3,/pressure-washing/websites/,trade child,pressure washing,pressure washing website design,1,50,34,449,pressure washing website design
+3,/learn/tree-service-advertising-ideas/,guide,tree service,tree service advertising ideas,1,50,0,436,tree service advertising ideas
+3,/handyman/seo/,trade child,handyman,handyman seo,1,10,14,406,handyman seo
+3,/learn/roofing-marketing-ideas/,guide,roofing,roofing marketing ideas,1,50,0,394,roofing marketing ideas
+3,/learn/how-to-get-landscaping-leads/,guide,landscaping,how to get landscaping leads,1,20,0,363,how to get landscaping leads
+3,/towing/websites/,trade child,towing,towing website design,1,20,4,321,towing website design
+3,/learn/how-to-get-moving-leads/,guide,moving,how to get moving leads,1,20,7,294,how to get moving leads
+3,/learn/how-to-get-contractor-leads/,guide,contractor,how to get contractor leads,1,10,2,285,how to get contractor leads
+3,/appliance-repair/websites/,trade child,appliance repair,appliance repair website design,1,30,0,275,appliance repair website design
+3,/learn/how-to-get-remodeling-leads/,guide,remodeling,how to get remodeling leads,1,20,16,222,how to get remodeling leads
+3,/flooring/websites/,trade child,flooring,flooring website design,1,30,4,190,flooring website design
+3,/bathroom-remodeling/websites/,trade child,bathroom remodeling,bathroom remodeling website design,1,10,0,183,bathroom remodeling website design
+3,/learn/how-to-get-pressure-washing-leads/,guide,pressure washing,how to get pressure washing leads,1,20,0,151,how to get pressure washing leads
+3,/concrete/websites/,trade child,concrete,concrete website design,1,10,33,131,concrete website design
+3,/kitchen-remodeling/websites/,trade child,kitchen remodeling,kitchen remodeling website design,1,10,0,115,kitchen remodeling website design
+3,/learn/how-to-get-lawn-care-leads/,guide,lawn care,how to get lawn care leads,1,10,0,89,how to get lawn care leads
+3,/learn/how-to-get-appliance-repair-leads/,guide,appliance repair,how to get appliance repair leads,1,10,0,86,how to get appliance repair leads
+3,/learn/how-to-get-towing-leads/,guide,towing,how to get towing leads,1,10,0,77,how to get towing leads
+3,/commercial-cleaning/websites/,trade child,commercial cleaning,commercial cleaning website design,1,10,42,63,commercial cleaning website design
+3,/fencing/seo/,trade child,fencing,fence seo,1,10,0,43,fence seo
+3,/towing/seo/,trade child,towing,towing seo,1,10,0,39,towing seo
+3,/learn/pest-control-advertising-ideas/,guide,pest control,pest control advertising ideas,1,50,0,8,pest control advertising ideas
+3,/learn/hvac-advertising-ideas/,guide,hvac,hvac advertising ideas,1,90,0,4,hvac advertising ideas
+3,/learn/house-cleaning-advertising-ideas/,guide,house cleaning,house cleaning advertising ideas,1,30,0,1,house cleaning advertising ideas
+3,/home-builder/seo/,trade child,home builder,home builder seo,2,420,0,0,home builder seo; seo for home builders
+3,/general-contractor/seo/,trade child,general contractor,general contractor seo,2,280,0,0,general contractor seo; seo for general contractors
+3,/remodeling/seo/,trade child,remodeling,remodeling seo,2,220,2,0,remodeling seo; seo for remodelers
+3,/learn/marketing-ideas-for-plumbers/,guide,plumbing,marketing ideas for plumbers,1,110,3,0,marketing ideas for plumbers
+3,/flooring/seo/,trade child,flooring,seo for flooring companies,3,160,0,0,seo for flooring companies; flooring company seo; flooring seo
+3,/restoration/seo/,trade child,restoration,seo for restoration companies,4,220,0,0,seo for restoration companies; water damage seo; restoration seo; restoration company seo
+3,/lawn-care/seo/,trade child,lawn care,lawn care seo,1,70,4,0,lawn care seo
+3,/tree-service/seo/,trade child,tree service,tree service seo,1,70,0,0,tree service seo
+3,/gutters/websites/,trade child,gutters,gutter website design,1,70,10,0,gutter website design
+3,/learn/electrician-marketing-ideas/,guide,electrical,electrician marketing ideas,1,70,0,0,electrician marketing ideas
+3,/learn/marketing-ideas-for-electricians/,guide,electrical,marketing ideas for electricians,1,70,0,0,marketing ideas for electricians
+3,/junk-removal/websites/,trade child,junk removal,junk removal website design,1,50,0,0,junk removal website design
+3,/foundation-repair/seo/,trade child,foundation repair,foundation repair seo,1,50,0,0,foundation repair seo
+3,/home-inspection/seo/,trade child,home inspection,home inspection seo,2,100,2,0,home inspection seo; seo for home inspectors
+3,/cabinets/,trade hub,cabinets,cabinet advertising,3,90,3,0,cabinet advertising; cabinet leads; cabinet marketing
+3,/learn/house-painting-advertising-ideas/,guide,painting,house painting advertising ideas,1,50,0,0,house painting advertising ideas
+3,/learn/painting-and-decorating-advertising-ideas/,guide,painting,painting and decorating advertising ideas,1,50,0,0,painting and decorating advertising ideas
+3,/pressure-washing/seo/,trade child,pressure washing,pressure washing seo,1,40,0,0,pressure washing seo
+3,/dumpster-rental/seo/,trade child,dumpster rental,dumpster rental seo,1,40,0,0,dumpster rental seo
+3,/learn/contractor-marketing-tips/,guide,contractor,contractor marketing tips,1,40,0,0,contractor marketing tips
+3,/learn/contractor-marketing-ideas/,guide,contractor,contractor marketing ideas,1,40,0,0,contractor marketing ideas
+3,/learn/electrical-contractor-marketing-ideas/,guide,electrical,electrical contractor marketing ideas,1,40,1,0,electrical contractor marketing ideas
+3,/learn/general-contractor-marketing-ideas/,guide,general contractor,general contractor marketing ideas,1,40,0,0,general contractor marketing ideas
+3,/learn/how-to-get-more-tree-service-leads/,guide,tree service,how to get more tree service leads,1,40,0,0,how to get more tree service leads
+3,/learn/how-to-get-more-hvac-leads/,guide,hvac,how to get more hvac leads,1,40,0,0,how to get more hvac leads
+3,/appliance-repair/seo/,trade child,appliance repair,appliance repair seo,1,30,0,0,appliance repair seo
+3,/learn/hvac-marketing-tips/,guide,hvac,hvac marketing tips,1,30,0,0,hvac marketing tips
+3,/pool/websites/,trade child,pool,pool website design,1,20,8,0,pool website design
+3,/concrete/seo/,trade child,concrete,seo for concrete contractors,2,30,0,0,seo for concrete contractors; concrete seo
+3,/window-cleaning/seo/,trade child,window cleaning,window cleaning seo,2,30,0,0,window cleaning seo; seo for window cleaners
+3,/window-cleaning/websites/,trade child,window cleaning,window cleaning website design,1,20,0,0,window cleaning website design
+3,/locksmith/websites/,trade child,locksmith,locksmith website design,2,30,23,0,locksmith website design; websites for locksmiths
+3,/learn/what-is-a-marketing-contractor/,guide,contractor,what is a marketing contractor,1,20,0,0,what is a marketing contractor
+3,/learn/how-to-get-more-leads-as-a-contractor/,guide,contractor,how to get more leads as a contractor,1,20,0,0,how to get more leads as a contractor
+3,/learn/hvac-seo-tips/,guide,hvac,hvac seo tips,1,20,0,0,hvac seo tips
+3,/learn/window-cleaning-advertising-ideas/,guide,window cleaning,window cleaning advertising ideas,1,20,0,0,window cleaning advertising ideas
+3,/learn/how-to-get-carpet-cleaning-leads/,guide,carpet cleaning,how to get carpet cleaning leads,1,10,0,0,how to get carpet cleaning leads
+3,/bathroom-remodeling/seo/,trade child,bathroom remodeling,bathroom remodeling seo,1,10,0,0,bathroom remodeling seo
+3,/learn/how-to-get-water-damage-leads/,guide,restoration,how to get water damage leads,1,10,0,0,how to get water damage leads
+3,/pool/seo/,trade child,pool,pool seo,1,10,28,0,pool seo
+3,/excavation/websites/,trade child,excavation,excavation website design,1,10,0,0,excavation website design
+3,/garage-door/websites/,trade child,garage door,garage door website design,1,10,0,0,garage door website design
+3,/masonry/websites/,trade child,masonry,masonry website design,1,10,16,0,masonry website design
+3,/moving/websites/,trade child,moving,moving website design,1,10,0,0,moving website design
+3,/solar/websites/,trade child,solar,solar website design,1,10,0,0,solar website design
+3,/auto-detailing/websites/,trade child,auto detailing,detailing website design,1,10,8,0,detailing website design
+3,/learn/how-to-get-home-inspection-leads/,guide,home inspection,how to get home inspection leads,1,10,0,0,how to get home inspection leads
+3,/learn/how-to-get-locksmith-leads/,guide,locksmith,how to get locksmith leads,1,10,0,0,how to get locksmith leads
+3,/paving/websites/,trade child,paving,paving website design,1,10,0,0,paving website design
+3,/deck/seo/,trade child,deck,seo for deck builders,1,10,0,0,seo for deck builders
+3,/chimney/,trade hub,chimney,chimney advertising,1,10,0,0,chimney advertising
+3,/epoxy-flooring/seo/,trade child,epoxy flooring,epoxy flooring seo,1,10,0,0,epoxy flooring seo
+3,/auto-detailing/seo/,trade child,auto detailing,seo for detailers,1,10,84,0,seo for detailers
