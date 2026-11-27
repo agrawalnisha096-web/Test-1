@@ -3,10 +3,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-/* VOICE work: a brand review sheet for a founder
+/* VOICE work: a brand review sheet for a founder (round 2)
    IDEA an identity-guidelines page: each mark shown as it will really be used
    PICTURE the four lockups themselves, large, on white and on navy
-   COLOUR white ground, Mosta navy #16264d, cool grey neutrals
+   COLOUR white ground, Mosta navy #16264d, electric blue to cyan accent
    TYPE Montserrat 700/400 (from the concept) for everything
    LAYOUT one band per option: big lockup left, uses right; stacks on phone */
 :root{color-scheme:light dark;--bg:light-dark(#ffffff,#0b1120);--ink:light-dark(#121a2e,#e8ecf5);--mute:light-dark(#5a6478,#9aa5bb);--line:light-dark(#e3e7ef,#222c44);--card:#ffffff;--navy:#16264d;--soft:light-dark(#f4f6fa,#121a2e)}
@@ -57,15 +57,19 @@ h1{font-size:clamp(30px,4.4vw,46px);line-height:1.08;letter-spacing:-.02em;margi
 </style>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <symbol id="mTile" viewBox="0 0 64 64"><rect width="64" height="64" rx="13" fill="currentColor"/><path d="M17 46V19l15 15 15-15v27" fill="none" stroke="var(--on,#fff)" stroke-width="6.5" stroke-linejoin="miter" stroke-linecap="square"/></symbol>
-  <symbol id="stair" viewBox="0 0 64 64" fill="currentColor"><rect x="2" y="44" width="18" height="18" rx="3"/><rect x="23" y="44" width="18" height="18" rx="3"/><rect x="44" y="44" width="18" height="18" rx="3"/><rect x="23" y="23" width="18" height="18" rx="3"/><rect x="44" y="23" width="18" height="18" rx="3"/><rect x="44" y="2" width="18" height="18" rx="3"/></symbol>
-  <symbol id="node" viewBox="0 0 64 64"><path d="M9 54V12l23 25 23-25v42" fill="none" stroke="currentColor" stroke-width="5" stroke-linejoin="round"/><g fill="currentColor"><circle cx="9" cy="54" r="6"/><circle cx="9" cy="12" r="6"/><circle cx="32" cy="37" r="6"/><circle cx="55" cy="12" r="6"/><circle cx="55" cy="54" r="6"/></g></symbol>
+  <defs><linearGradient id="g" gradientUnits="userSpaceOnUse" x1="0" y1="64" x2="64" y2="0"><stop offset="0" stop-color="#2f5bff"/><stop offset="1" stop-color="#19c8e8"/></linearGradient></defs>
+  <symbol id="circuit" viewBox="0 0 64 64"><path d="M12 48V16l20 20 20-20v32" fill="none" stroke="currentColor" stroke-width="5.5" stroke-linejoin="round"/><path d="M32 36v12" stroke="url(#g)" stroke-width="5.5"/><g fill="none" stroke-width="3.5"><circle cx="12" cy="54.5" r="5.5" stroke="currentColor"/><circle cx="52" cy="54.5" r="5.5" stroke="currentColor"/><circle cx="32" cy="54.5" r="5.5" stroke="url(#g)"/></g></symbol>
+  <symbol id="neural" viewBox="0 0 64 64"><g fill="currentColor" opacity=".22"><circle cx="20" cy="8" r="2.6"/><circle cx="32" cy="8" r="2.6"/><circle cx="44" cy="8" r="2.6"/><circle cx="32" cy="20" r="2.6"/><circle cx="20" cy="32" r="2.6"/><circle cx="44" cy="32" r="2.6"/><circle cx="20" cy="44" r="2.6"/><circle cx="32" cy="44" r="2.6"/><circle cx="44" cy="44" r="2.6"/><circle cx="20" cy="56" r="2.6"/><circle cx="32" cy="56" r="2.6"/><circle cx="44" cy="56" r="2.6"/></g><path d="M8 56V8l24 24 24-24v48" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><g fill="url(#g)"><circle cx="8" cy="56" r="4.6"/><circle cx="8" cy="32" r="4.6"/><circle cx="8" cy="8" r="4.6"/><circle cx="32" cy="32" r="5.6"/><circle cx="56" cy="8" r="4.6"/><circle cx="56" cy="32" r="4.6"/><circle cx="56" cy="56" r="4.6"/></g></symbol>
+  <symbol id="loop" viewBox="0 0 64 64"><circle cx="32" cy="32" r="26" fill="none" stroke="url(#g)" stroke-width="6" stroke-dasharray="140 40"/><path d="M53.6 16.2 51.6 6.6 44.2 15.9Z" fill="url(#g)"/><path d="M21 43V22l11 11 11-11v21" fill="none" stroke="currentColor" stroke-width="5.5" stroke-linejoin="round"/></symbol>
+  <symbol id="pixel" viewBox="0 0 64 64"><g fill="currentColor"><rect x="4" y="4" width="10" height="10" rx="2"/><rect x="4" y="15.5" width="10" height="10" rx="2"/><rect x="4" y="27" width="10" height="10" rx="2"/><rect x="4" y="38.5" width="10" height="10" rx="2"/><rect x="4" y="50" width="10" height="10" rx="2"/><rect x="15.5" y="15.5" width="10" height="10" rx="2"/><rect x="38.5" y="15.5" width="10" height="10" rx="2"/><rect x="50" y="15.5" width="10" height="10" rx="2"/><rect x="50" y="27" width="10" height="10" rx="2"/><rect x="50" y="38.5" width="10" height="10" rx="2"/><rect x="50" y="50" width="10" height="10" rx="2"/></g><g fill="url(#g)"><rect x="27" y="27" width="10" height="10" rx="2"/><rect x="50" y="4" width="10" height="10" rx="2"/><rect x="40" y="2" width="6" height="6" rx="1.5" opacity=".7"/></g></symbol>
+  <symbol id="strand" viewBox="0 0 64 64"><path d="M8 56V8h12l18 26-6 9-12-17v30Z" fill="currentColor"/><path d="M56 56V8H44L26 34l6 9 12-17v30Z" fill="url(#g)" opacity=".92"/></symbol>
+  <symbol id="spark" viewBox="0 0 64 64"><path d="M8 56V20l17 19 17-19v36" fill="none" stroke="currentColor" stroke-width="5.5" stroke-linejoin="round"/><path d="M54 2c1.2 6.6 3.4 8.8 10 10-6.6 1.2-8.8 3.4-10 10-1.2-6.6-3.4-8.8-10-10 6.6-1.2 8.8-3.4 10-10Z" fill="url(#g)"/></symbol>
 </svg>
 
 <section class="band"><div class="wrap">
-  <h1>Mosta Group logo options</h1>
-  <p class="intro">Step 1 of the brand: choose the mark. The dome is gone. Everything else follows your concept: the font, the navy, the bold "Mosta" with a regular "Group", and the tagline between rules.</p>
-  <div class="keep"><span><i class="sw"></i>Mosta navy #16264D</span><span>Montserrat Bold and Regular</span><span>Tagline: AI &amp; Automation Consulting</span></div>
+  <h1>Mosta Group logo options, round 2</h1>
+  <p class="intro">More AI and automation in the marks, and an electric-blue accent next to the navy. The font, the bold "Mosta" with a regular "Group", and the tagline between rules stay as in your concept.</p>
+  <div class="keep"><span><i class="sw"></i>Mosta navy #16264D</span><span><i class="sw" style="background:linear-gradient(45deg,#2f5bff,#19c8e8)"></i>Electric blue #2F5BFF to cyan #19C8E8</span><span>Montserrat Bold and Regular</span><span>Tagline: AI &amp; Automation Consulting</span></div>
 </div></section>
 
 <div id="opts"></div>
@@ -75,14 +79,14 @@ h1{font-size:clamp(30px,4.4vw,46px);line-height:1.08;letter-spacing:-.02em;margi
   <div class="spec">
     <div class="card"><h3>Wordmark</h3><div class="lock sm"><span class="wm">Mosta<i>Group</i></span></div><p style="margin:10px 0 0;font-size:14px;color:#5a6478">Montserrat Bold + Regular, set tight, no space between the words</p></div>
     <div class="card"><h3>Tagline</h3><div class="tag" style="font-size:clamp(10px,2.9vw,13px)">AI &amp; AUTOMATION CONSULTING</div><p style="margin:10px 0 0;font-size:14px;color:#5a6478">Montserrat SemiBold, wide letter spacing, between two short rules</p></div>
-    <div class="card dark"><h3 style="color:#c5cde0">Colour</h3><div style="font-size:28px;font-weight:700">#16264D</div><p style="margin:6px 0 0;font-size:14px;color:#c5cde0">Navy only for the logo. Supporting colours come in step 3.</p></div>
+    <div class="card dark"><h3 style="color:#c5cde0">Colour</h3><div style="font-size:24px;font-weight:700">#16264D</div><div style="height:8px;width:100%;border-radius:4px;margin:8px 0;background:linear-gradient(90deg,#2f5bff,#19c8e8)"></div><p style="margin:0;font-size:14px;color:#c5cde0">Navy leads. Electric blue to cyan is the accent, used sparingly: the mark, buttons, highlights.</p></div>
   </div>
 </div></section>
 
 <section class="band opt next"><div class="wrap">
   <div class="head"><h2>Next steps, one at a time</h2></div>
   <ol>
-    <li><strong>Choose a mark</strong> (this page). Tell me the letter, or what to change.</li>
+    <li><strong>Choose a mark</strong> (this page). Tell me the letter, mix two, or say what to change.</li>
     <li>Final logo files: SVG and PNG, full colour, white, one colour, favicon and social avatar.</li>
     <li>Colour palette: navy plus neutrals and one accent for buttons and charts.</li>
     <li>Type system for the website and documents: heading and body sizes.</li>
@@ -93,28 +97,35 @@ h1{font-size:clamp(30px,4.4vw,46px);line-height:1.08;letter-spacing:-.02em;margi
 <script>
 {
 const opts=[
-  {id:'A',name:'Wordmark only',mark:null,ico:'M',rec:false,
-   what:'No symbol at all. The name carries the brand, as many consulting firms do.',
-   good:'Cleanest and most corporate. Nothing to explain, and nothing that can look like another company\'s symbol.',
-   watch:'Small spaces (favicon, LinkedIn avatar) need a separate "M" or "MG" badge.'},
-  {id:'B',name:'M in a navy tile',mark:'mTile',rec:true,
-   what:'A solid navy square with a clean geometric M in white.',
-   good:'Strongest at small sizes: favicon, LinkedIn, app icon, email signature. Reads as established and calm.',
-   watch:'Simple monograms are common, so the trademark check should cover the device as well as the name.'},
-  {id:'C',name:'Building blocks',mark:'stair',rec:false,
-   what:'Six squares stacked into a rising step: systems built piece by piece, and growth.',
-   good:'Keeps the "pixels" idea from your first concept and says "automation" without being techy.',
-   watch:'Less tied to the name. Works best once people know the brand.'},
-  {id:'D',name:'Connected M',mark:'node',rec:false,
-   what:'An M drawn as five connected points: data, systems and people joined up.',
-   good:'Most clearly "AI and automation". Distinctive and still built from the letter M.',
-   watch:'Network symbols are popular with tech firms, so it is a little less timeless.'}
+  {id:'A',name:'Circuit M',mark:'circuit',
+   what:'An M drawn like a circuit-board trace, ending in connection points. The centre line, in electric blue, is where the systems plug in.',
+   good:'Says "we wire systems together" at a glance. Engineered, precise, and still clearly the letter M.',
+   watch:'The three end rings get small below 24 px; the favicon may need a simplified version.'},
+  {id:'B',name:'Neural M',mark:'neural',
+   what:'An M picked out on a grid of points, like nodes in a neural network. The blue nodes are the ones that light up.',
+   good:'The most "AI" of the set. Works well animated on the website (nodes lighting up in sequence).',
+   watch:'Detailed. At 16 px the faint grid disappears, which is fine, but it needs testing.'},
+  {id:'C',name:'Automation loop',mark:'loop',
+   what:'A bold M inside a running loop arrow: the process that keeps working without you.',
+   good:'Tells the automation story in one shape. Badge-like, so it sits well on avatars and slides.',
+   watch:'Loop arrows are common in "sync" and "refresh" icons, so it is less unique as a symbol.'},
+  {id:'D',name:'Pixel M',mark:'pixel',
+   what:'An M built from blocks, with the centre block and one breaking away in blue: manual work turning digital.',
+   good:'Carries the pixel idea from your first concept, now built into the letter. Crisp at every size.',
+   watch:'Blocky shapes can feel playful; keep the rest of the brand very clean.'},
+  {id:'E',name:'Two-strand M',mark:'strand',rec:true,
+   what:'Two bold strands, navy and electric blue, meeting in the middle to form the M: business expertise joined with AI.',
+   good:'Most distinctive and most corporate. Strong at 16 px and on a billboard, and it tells your story: business experts who build AI.',
+   watch:'Needs the blue to work; the one-colour version uses two shades of navy.'},
+  {id:'F',name:'Spark M',mark:'spark',
+   what:'A clean M with the four-point spark that people now read as "AI".',
+   good:'Instantly understood. Easy to use as a bullet or highlight across the website.',
+   watch:'Many AI products use the same spark, so it is the least ownable.'}
 ];
 const mk=(id,cls='mk')=>id?`<svg class="${cls}" aria-hidden="true"><use href="#${id}"/></svg>`:'';
 const wm='<span class="wm">Mosta<i>Group</i></span>';
 const icon=(o,px,c)=>{
-  const inner=o.mark==='mTile'?'':(o.mark?`<svg aria-hidden="true"><use href="#${o.mark}"/></svg>`:`<b style="font-size:${px*.55}px">M</b>`);
-  if(o.mark==='mTile')return `<svg width="${px}" height="${px}" style="color:#16264d${c?';border-radius:50%':''}" aria-hidden="true"><use href="#mTile"/></svg>`;
+  const inner=`<svg aria-hidden="true"><use href="#${o.mark}"/></svg>`;
   return `<span class="ico${c?' c':''}" style="width:${px}px;height:${px}px">${inner}</span>`;
 };
 document.getElementById('opts').innerHTML=opts.map(o=>`
@@ -124,7 +135,7 @@ document.getElementById('opts').innerHTML=opts.map(o=>`
     <div class="card big"><div class="lock st">${mk(o.mark)}${wm}<span class="tag">AI &amp; AUTOMATION CONSULTING</span></div></div>
     <div class="side">
       <div class="card"><div class="lock sm">${mk(o.mark)}${wm}</div></div>
-      <div class="card dark" style="--on:#16264d"><div class="lock sm">${o.mark==='mTile'?'<svg class="mk" style="color:#fff" aria-hidden="true"><use href="#mTile"/></svg>':mk(o.mark)}${wm}</div></div>
+      <div class="card dark"><div class="lock sm">${mk(o.mark)}${wm}</div></div>
       <div class="card"><div class="uses">
         <div class="use">${icon(o,96,true)}LinkedIn</div>
         <div class="use">${icon(o,48)}App icon</div>
