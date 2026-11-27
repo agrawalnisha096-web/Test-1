@@ -42,6 +42,25 @@
 
 **Phase 2:** the other three problem pages, partners page, more case studies, insights, and an "AI readiness scorecard" (a 10-question quiz) as a softer offer for cold LinkedIn and Meta traffic.
 
+## Page types: which to build (added 27 Nov)
+
+**Rule:** build a page only if an ad group or LinkedIn audience points to it, or we have proof that makes it different. Thin look-alike pages hurt Quality Score and SEO.
+
+| Page type | Build? | Examples | Why |
+|---|---|---|---|
+| Service pages | Yes, 3 at launch | AI consulting, AI implementation, Process automation | Catch "hire" searches: "ai consultant", "ai consulting company", "automation consultant" |
+| "Hire an AI consultant" style pages | **No** separate pages | | Same intent as the service pages; separate pages would be near-duplicates. Match the ad wording with a headline swap on the service page (as on the Qubik page, `?v=ai`) |
+| City pages | Only Brisbane, later | AI consultant Brisbane | Only where there is a real office and clients; other cities are covered by the ads' location targeting |
+| Problem (solution) pages | Yes, 2 at launch, 6 in total | Faster month-end, AI that pays back, Grow without hiring, Multi-site, Spreadsheet risk, Where to start with AI | LinkedIn audiences by role, and problem searches |
+| Use-case pages | Phase 2, 3 to 4 | Accounts payable automation, Xero automation and dashboards, AI document processing, AI customer-service assistant | Specific searches with clearer buying intent than "ai agency" |
+| Industry pages | Phase 2, only 2 | Pick the two industries where Qubik has clients and a case study (for example healthcare clinics, multi-site services, construction and trades, professional services) | Strong for LinkedIn targeting by industry and for credibility; weak without proof |
+| Country pages | Later | /nz/, /uk/ | When those markets open, with local proof |
+| Lead magnet | Phase 2 | AI readiness scorecard | Softer offer for cold LinkedIn and Meta traffic |
+
+**Menu:** Solutions (by problem) · Services · Industries (from phase 2) · Results · About · For partners · [Free 30-min review]
+
+**Launch count:** about 13 pages (phase 1 above). Full site after phase 2: about 30.
+
 ## Ads to pages
 
 | Traffic | Lands on |
