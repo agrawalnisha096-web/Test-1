@@ -1,5 +1,7 @@
 # Session handoff: Qubik landing page and Google Ads (as of 15 Nov 2026)
 
+> **Newer summary:** read `MOSTA-GROUP-HANDOFF.md` at the repo root first (state as of 27 Nov 2026, including the Mosta Group venture).
+
 Read this first. It summarises the previous session so work can continue without re-deriving anything.
 
 ## Who and what
