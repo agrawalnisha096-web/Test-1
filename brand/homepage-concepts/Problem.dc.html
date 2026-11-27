@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Mosta Group homepage, problem first</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#16264D}a:hover{color:#2F5BFF}
+.navlink{color:#16264D;text-decoration:none;font-size:15px;font-weight:500;padding:12px 2px}
+.navlink:hover{color:#2F5BFF}
+.chip{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;text-align:left;font:600 16px/1.35 Montserrat,sans-serif;padding:16px 18px;border-radius:10px;cursor:pointer;min-height:56px}
+.chip:focus-visible,.btn:focus-visible{outline:3px solid #19C8E8;outline-offset:2px}
+.field{display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:600}
+.field input,.field textarea{font:16px Montserrat,sans-serif;padding:13px 14px;border-radius:8px;border:1.5px solid #9AA6BB;background:#FFFFFF;color:#16264D}
+</style>
+</helmet>
+<div style="width: 100%; background: #FFFFFF; color: #16264D; font-family: Montserrat, system-ui, sans-serif">
+
+  <div style="background: #16264D; color: #DCE3F2; font-size: 13px; padding: 10px max(4vw, 16px)">
+    <div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 24px">
+      <span>Founded by the team behind Qubik, business advisers since 2007</span>
+      <span>Call us: [phone number]</span>
+    </div>
+  </div>
+  <header style="padding: 0 max(4vw, 16px); border-bottom: 1px solid #E3E8F1">
+    <nav aria-label="Main" style="max-width: 1240px; margin: 0 auto; min-height: 80px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 32px">
+      <a href="#" aria-label="Mosta Group home" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #16264D; font-size: 24px">
+        <svg width="38" height="38" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="lg1" gradientUnits="userSpaceOnUse" x1="0" y1="64" x2="64" y2="0"><stop offset="0" stop-color="#2F5BFF"></stop><stop offset="1" stop-color="#19C8E8"></stop></linearGradient></defs><circle cx="32" cy="32" r="26" fill="none" stroke="url(#lg1)" stroke-width="6" stroke-dasharray="140 40"></circle><path d="M53.6 16.2 51.6 6.6 44.2 15.9Z" fill="url(#lg1)"></path><path d="M21 43V22l11 11 11-11v21" fill="none" stroke="currentColor" stroke-width="5.5" stroke-linejoin="round"></path></svg>
+        <span><b style="font-weight: 700">Mosta</b>Group</span>
+      </a>
+      <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px 28px">
+        <a class="navlink" href="#problems">Problems we solve</a>
+        <a class="navlink" href="#how">How it works</a>
+        <a class="navlink" href="#results">Results</a>
+        <a class="navlink" href="#about">About</a>
+        <a class="navlink" href="#">For partners</a>
+        <a class="btn" href="#contact" style="background: #2F5BFF; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 15px; padding: 13px 20px; border-radius: 8px">Free 30-min review</a>
+      </div>
+    </nav>
+  </header>
+
+  <section id="problems" style="padding: 48px max(4vw, 16px) 56px; background: #F5F7FB">
+    <div style="max-width: 1240px; margin: 0 auto; display: flex; flex-direction: column; gap: 28px">
+      <div style="display: flex; flex-direction: column; gap: 14px; max-width: 860px">
+        <h1 style="margin: 0; font-size: clamp(36px, 4.4vw, 58px); line-height: 1.05; letter-spacing: -0.025em; font-weight: 700">Which of these sounds like your business?</h1>
+        <p style="margin: 0; font-size: 18px; line-height: 1.55; color: #3C4A66">Pick one. We will show you what we would change, and how to get started without risk.</p>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: stretch">
+        <div style="flex: 1 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 10px">
+          <sc-for list="{{problems}}" as="p" hint-placeholder-count="5">
+            <sc-if value="{{p.active}}" hint-placeholder-val="{{false}}">
+              <button type="button" class="chip" aria-pressed="true" onClick="{{p.pick}}" style="background: #16264D; color: #FFFFFF; border: 1.5px solid #16264D">{{p.chip}}<span aria-hidden="true">→</span></button>
+            </sc-if>
+            <sc-if value="{{p.inactive}}" hint-placeholder-val="{{true}}">
+              <button type="button" class="chip" aria-pressed="false" onClick="{{p.pick}}" style="background: #FFFFFF; color: #16264D; border: 1.5px solid #C9D2E1">{{p.chip}}<span aria-hidden="true" style="color: #9AA6BB">→</span></button>
+            </sc-if>
+          </sc-for>
+        </div>
+        <article aria-live="polite" style="flex: 1.7 1 520px; min-width: 0; background: #FFFFFF; border: 1.5px solid #16264D; border-radius: 14px; padding: clamp(22px, 3vw, 36px); display: flex; flex-direction: column; gap: 20px">
+          <div style="display: flex; flex-direction: column; gap: 8px">
+            <p style="margin: 0; font-size: 14px; font-weight: 600; color: #2F5BFF">{{sel.who}}</p>
+            <p style="margin: 0; font-size: clamp(22px, 2.3vw, 30px); line-height: 1.25; font-weight: 700; letter-spacing: -0.015em">“{{sel.quote}}”</p>
+            <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #3C4A66">{{sel.cause}}</p>
+          </div>
+          <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0; border-top: 1px solid #E3E8F1">
+            <p style="margin: 0; padding: 12px 12px 8px 0; font-size: 14px; font-weight: 600; color: #5A6478">Today</p>
+            <p style="margin: 0; padding: 12px 0 8px 12px; font-size: 14px; font-weight: 600; color: #2F5BFF">With Mosta</p>
+            <sc-for list="{{sel.rows}}" as="r" hint-placeholder-count="3">
+              <p style="margin: 0; padding: 10px 12px 10px 0; border-top: 1px solid #E3E8F1; font-size: 15px; line-height: 1.45; color: #5A6478; text-decoration: line-through; text-decoration-color: #9AA6BB">{{r.b}}</p>
+              <p style="margin: 0; padding: 10px 0 10px 12px; border-top: 1px solid #E3E8F1; font-size: 15px; line-height: 1.45; font-weight: 600">{{r.a}}</p>
+            </sc-for>
+          </div>
+          <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px; background: #F5F7FB; border-radius: 10px; padding: 16px 18px">
+            <p style="margin: 0; flex: 1 1 260px; font-size: 15px; line-height: 1.5"><b>Your free review:</b> {{sel.first}}</p>
+            <a class="btn" href="#contact" style="background: #2F5BFF; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 16px; padding: 15px 22px; border-radius: 8px; white-space: nowrap">Fix this first</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" style="padding: 48px max(4vw, 16px)">
+    <div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 32px 56px; align-items: center">
+      <div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
+        <h2 style="margin: 0; font-size: clamp(28px, 3vw, 40px); line-height: 1.1; letter-spacing: -0.02em">Business advisers first. Then we build the AI.</h2>
+        <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #3C4A66">Most AI firms start with a tool and look for a problem. We have advised Australian businesses on their numbers and operations since 2007, so we start with your business case and only build what pays back.</p>
+      </div>
+      <div style="flex: 1 1 420px; min-width: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px">
+        <div style="border-top: 3px solid #16264D; padding-top: 12px"><p style="margin: 0; font-size: 30px; font-weight: 700">2007</p><p style="margin: 4px 0 0; font-size: 14px; color: #3C4A66">advising businesses since</p></div>
+        <div style="border-top: 3px solid #16264D; padding-top: 12px"><p style="margin: 0; font-size: 30px; font-weight: 700">Xero</p><p style="margin: 4px 0 0; font-size: 14px; color: #3C4A66">partner since 2013</p></div>
+        <div style="border-top: 3px solid #2F5BFF; padding-top: 12px"><p style="margin: 0; font-size: 30px; font-weight: 700">[Result]</p><p style="margin: 4px 0 0; font-size: 14px; color: #3C4A66">[one real client number, e.g. hours saved a week]</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" style="padding: 48px max(4vw, 16px); background: #F5F7FB">
+    <div style="max-width: 1240px; margin: 0 auto; display: flex; flex-direction: column; gap: 24px">
+      <h2 style="margin: 0; font-size: clamp(28px, 3vw, 40px); letter-spacing: -0.02em">See it working before you commit</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px">
+        <div style="background: #FFFFFF; border-radius: 12px; padding: 24px; display: flex; flex-direction: column; gap: 8px"><p style="margin: 0; font-size: 14px; font-weight: 600; color: #2F5BFF">Free · 30 minutes</p><h3 style="margin: 0; font-size: 21px">Review</h3><p style="margin: 0; font-size: 16px; line-height: 1.55; color: #3C4A66">We name the three jobs worth automating first, and roughly what each would save.</p></div>
+        <div style="background: #FFFFFF; border-radius: 12px; padding: 24px; display: flex; flex-direction: column; gap: 8px"><p style="margin: 0; font-size: 14px; font-weight: 600; color: #2F5BFF">Fixed price · weeks, not months</p><h3 style="margin: 0; font-size: 21px">Prove</h3><p style="margin: 0; font-size: 16px; line-height: 1.55; color: #3C4A66">We build one of them on your real systems, so you see the result before anything bigger.</p></div>
+        <div style="background: #FFFFFF; border-radius: 12px; padding: 24px; display: flex; flex-direction: column; gap: 8px"><p style="margin: 0; font-size: 14px; font-weight: 600; color: #2F5BFF">At your pace</p><h3 style="margin: 0; font-size: 21px">Roll out</h3><p style="margin: 0; font-size: 16px; line-height: 1.55; color: #3C4A66">We extend what works, train your team and look after it once it is live.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="results" style="padding: 48px max(4vw, 16px)">
+    <div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 32px 56px">
+      <div style="flex: 1 1 380px; min-width: 0; border-left: 0; display: flex; flex-direction: column; gap: 12px">
+        <h2 style="margin: 0; font-size: clamp(28px, 3vw, 40px); letter-spacing: -0.02em">Questions people ask before they call</h2>
+        <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #3C4A66">Straight answers. Anything else, ask us in the review.</p>
+      </div>
+      <div style="flex: 1.6 1 520px; min-width: 0; display: flex; flex-direction: column">
+        <details style="border-top: 1px solid #C9D2E1; padding: 18px 0"><summary style="font-size: 18px; font-weight: 600; cursor: pointer">What will it cost?</summary><p style="margin: 10px 0 0; font-size: 16px; line-height: 1.6; color: #3C4A66">The review is free. The first build is a fixed price agreed up front, sized to pay for itself.</p></details>
+        <details style="border-top: 1px solid #C9D2E1; padding: 18px 0"><summary style="font-size: 18px; font-weight: 600; cursor: pointer">Will it work with our systems?</summary><p style="margin: 10px 0 0; font-size: 16px; line-height: 1.6; color: #3C4A66">We build on what you already use, such as Xero and [confirm other systems], rather than asking you to switch.</p></details>
+        <details style="border-top: 1px solid #C9D2E1; padding: 18px 0"><summary style="font-size: 18px; font-weight: 600; cursor: pointer">Is our data safe?</summary><p style="margin: 10px 0 0; font-size: 16px; line-height: 1.6; color: #3C4A66">Your data stays in your systems and accounts. We explain exactly where it goes before anything is built.</p></details>
+        <details style="border-top: 1px solid #C9D2E1; padding: 18px 0"><summary style="font-size: 18px; font-weight: 600; cursor: pointer">Will my team accept it?</summary><p style="margin: 10px 0 0; font-size: 16px; line-height: 1.6; color: #3C4A66">We automate the work people dislike, involve them from the start and train them when it goes live.</p></details>
+        <details style="border-top: 1px solid #C9D2E1; border-bottom: 1px solid #C9D2E1; padding: 18px 0"><summary style="font-size: 18px; font-weight: 600; cursor: pointer">Aren't you an accounting firm?</summary><p style="margin: 10px 0 0; font-size: 16px; line-height: 1.6; color: #3C4A66">Our founders are. That is the point: we understand how your business makes money before we touch the technology.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" style="padding: 56px max(4vw, 16px); background: #16264D; color: #FFFFFF">
+    <div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 32px 56px; align-items: flex-start">
+      <div style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
+        <h2 style="margin: 0; font-size: clamp(30px, 3.4vw, 46px); line-height: 1.08; letter-spacing: -0.02em">Tell us the job you would like gone.</h2>
+        <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #C9D3EA">One line is enough. We will come back within one business day with a time for your free review.</p>
+        <p style="margin: 0; font-size: 17px; color: #C9D3EA">Prefer to talk? Call [phone number]</p>
+      </div>
+      <form style="flex: 1 1 440px; min-width: 0; background: #FFFFFF; color: #16264D; border-radius: 14px; padding: 24px; display: flex; flex-direction: column; gap: 14px">
+        <p style="margin: 0; font-size: 14px; color: #3C4A66">About: <b style="color: #16264D">{{sel.chip}}</b></p>
+        <label class="field" for="job">The job<textarea id="job" rows="2" placeholder="e.g. We re-key every supplier invoice into Xero"></textarea></label>
+        <div style="display: flex; flex-wrap: wrap; gap: 14px">
+          <label class="field" for="name" style="flex: 1 1 180px">Your name<input id="name" type="text" autocomplete="name"></label>
+          <label class="field" for="contactval" style="flex: 1 1 180px">Email or mobile<input id="contactval" type="text" autocomplete="email"></label>
+        </div>
+        <button type="button" class="btn" style="background: #2F5BFF; color: #FFFFFF; border: 0; font: 600 16px Montserrat, sans-serif; padding: 16px; border-radius: 8px; cursor: pointer">Book my free review</button>
+      </form>
+    </div>
+  </section>
+
+  <footer style="padding: 32px max(4vw, 16px); background: #0F1B38; color: #C9D3EA; font-size: 14px">
+    <div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px 32px">
+      <span><b style="color: #FFFFFF">Mosta</b><span style="color: #FFFFFF">Group</span> · AI and automation consulting · a Mosta International company</span>
+      <span>Brisbane, Australia · [email] · [phone number]</span>
+      <a href="#" style="color: #FFFFFF">For accounting firms and IT partners</a>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":2900}}'>
+class Component extends DCLogic {
+constructor(props) {
+super(props);
+this.state = { sel: 'hiring' };
+}
+renderVals() {
+const data = [
+{ id: 'hiring', chip: 'We keep hiring admin just to keep up', who: 'Owners and CEOs', quote: 'Every time sales grow, we hire another person to push paper.', cause: 'Growth is running through manual steps: data typed twice, approvals chased by email, reports rebuilt by hand.', before: ['New orders typed into three systems', 'Approvals chased by email', 'Weekly report rebuilt in Excel'], after: ['Entered once, synced everywhere', 'Approvals routed and reminded automatically', 'Report updates itself every morning'], first: 'the three jobs costing you the most hours, and a price for fixing the first one.' },
+{ id: 'monthend', chip: 'Month-end takes too long', who: 'CFOs and finance managers', quote: 'By the time the numbers are ready, they are already old.', cause: 'Bank feeds, Xero and spreadsheets are joined by people copying data, so every close waits on manual work.', before: ['Supplier invoices keyed in by hand', 'Bank lines matched one by one', 'Board pack built in spreadsheets'], after: ['Invoices read and coded by AI, checked by a person', 'Matching done automatically, exceptions flagged', 'Live dashboard from your own Xero data'], first: 'a walk-through of your close by people who have run accounts since 2007, with the steps to cut first.' },
+{ id: 'sites', chip: 'Every site does it differently', who: 'COOs of multi-site businesses', quote: 'I cannot see what is happening across our sites until it is too late.', cause: 'Each location has its own spreadsheets and habits, so there is no single, current view of the business.', before: ['Rosters and timesheets in different formats', 'Site reports emailed in weekly', 'Compliance checks on paper'], after: ['One standard process across every site', 'A live view of every site, every day', 'Checks logged and chased automatically'], first: 'the one process to standardise first across your sites, and what a live view would show you.' },
+{ id: 'ai', chip: 'The board wants an AI plan', who: 'CEOs and boards', quote: 'Everyone says we need AI. I do not know where to start, and I will not waste money finding out.', cause: 'Most AI advice comes from vendors selling one tool. Meanwhile staff are already using AI with no rules.', before: ['Staff using AI tools with no policy', 'Vendor demos with no business case', 'A board asking for a plan'], after: ['A clear policy for safe AI use', 'Uses ranked by payback, not hype', 'A plan your board can approve'], first: 'where AI pays back in your business, where it does not, and the first safe step.' },
+{ id: 'spreadsheets', chip: 'It all lives in one person’s spreadsheets', who: 'Owners and finance leads', quote: 'If one person left tomorrow, nobody would know how this works.', cause: 'Critical processes sit in fragile spreadsheets and in people’s heads, so one resignation or one formula error can stop the business.', before: ['Key reports built by one person', 'Formulas nobody else understands', 'Errors found after they cost money'], after: ['The process documented and automated', 'Data in one reliable system', 'Checks that catch errors first'], first: 'which spreadsheet is your biggest risk, and how to take it off one person’s shoulders.' }
+];
+const selId = this.state.sel;
+const sel0 = data.find((d) => d.id === selId) || data[0];
+const sel = Object.assign({}, sel0, { rows: sel0.before.map((b, i) => ({ b: b, a: sel0.after[i] })) });
+const problems = data.map((d) => ({ chip: d.chip, active: d.id === selId, inactive: d.id !== selId, pick: () => this.setState({ sel: d.id }) }));
+return { problems: problems, sel: sel };
+}
+}
+</script>
+</body>
+</html>
