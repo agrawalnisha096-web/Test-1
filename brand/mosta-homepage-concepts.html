@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mosta Group Homepage Concepts</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:Montserrat,system-ui,sans-serif;background:#FFFFFF}
+[hidden]{display:none!important}
+.bar{position:sticky;top:0;z-index:50;background:#0B1120;color:#fff;display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;padding:10px max(2vw,12px)}
+.bar strong{font-size:14px;margin-right:8px}
+.tab{font:600 14px Montserrat,sans-serif;color:#C9D3EA;background:transparent;border:1px solid #2A3D72;border-radius:999px;padding:9px 14px;cursor:pointer}
+.tab[aria-selected=true]{background:#2F5BFF;border-color:#2F5BFF;color:#fff}
+.tab:focus-visible{outline:3px solid #19C8E8;outline-offset:2px}
+.note{font-size:12px;color:#9AA6BB;margin-left:auto}
+
+
+#p1 a{color:#16264D}a:hover{color:#2F5BFF}
+#p1 .navlink{color:#16264D;text-decoration:none;font-size:15px;font-weight:500;padding:12px 4px}
+#p1 .navlink:hover{color:#2F5BFF}
+@media (prefers-reduced-motion: reduce){.token{display:none}}
+
+
+#p2 a{color:#FFFFFF}a:hover{color:#19C8E8}
+#p2 .spin{transform-box:fill-box;transform-origin:center;animation:spin 90s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion: reduce){.spin{animation:none}.dot{display:none}}
+
+
+#p3 a{color:#16264D}a:hover{color:#2F5BFF}
+#p3 .navlink{color:#16264D;text-decoration:none;font-size:15px;font-weight:500;padding:12px 2px}
+#p3 .navlink:hover{color:#2F5BFF}
+#p3 .thread{stroke-dasharray:900;stroke-dashoffset:900;animation:draw 7s ease-in-out infinite alternate}
+@keyframes draw{to{stroke-dashoffset:0}}
+@media (prefers-reduced-motion: reduce){.thread{animation:none;stroke-dashoffset:0}}
+
+
+#p4 a{color:#16264D}a:hover{color:#2F5BFF}
+#p4 .navlink{color:#16264D;text-decoration:none;font-size:15px;font-weight:500;padding:12px 2px}
+#p4 .navlink:hover{color:#2F5BFF}
+#p4 .mark{stroke-dasharray:700;stroke-dashoffset:700;animation:mark 2.4s ease-out 0.6s forwards}
+@keyframes mark{to{stroke-dashoffset:0}}
+@media (prefers-reduced-motion: reduce){.mark{animation:none;stroke-dashoffset:0}}
+
+
+#p5 a{color:#16264D}a:hover{color:#2F5BFF}
+#p5 .navlink{color:#16264D;text-decoration:none;font-size:15px;font-weight:500;padding:12px 2px}
+#p5 .navlink:hover{color:#2F5BFF}
+#p5 .chip{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;text-align:left;font:600 16px/1.35 Montserrat,sans-serif;padding:16px 18px;border-radius:10px;cursor:pointer;min-height:56px}
+#p5 .chip:focus-visible,#p5 .btn:focus-visible{outline:3px solid #19C8E8;outline-offset:2px}
+#p5 .field{display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:600}
+#p5 .field input,#p5 .field textarea{font:16px Montserrat,sans-serif;padding:13px 14px;border-radius:8px;border:1.5px solid #9AA6BB;background:#FFFFFF;color:#16264D}
+
+</style>
+</head>
+<body>
+<div class="bar" role="tablist" aria-label="Homepage concepts"><strong>Mosta Group homepage concepts</strong><button type="button" class="tab" data-p="1" aria-selected="true">1. Process drawing</button><button type="button" class="tab" data-p="2" aria-selected="false">2. The loop</button><button type="button" class="tab" data-p="3" aria-selected="false">3. The weave</button><button type="button" class="tab" data-p="4" aria-selected="false">4. Field notes</button><button type="button" class="tab" data-p="5" aria-selected="false">5. Problem-first</button><span class="note">Design concepts for review. Links and forms are not live.</span></div>
+<section class="page" id="p1" data-name="Process drawing">
+<div style="width: 100%; min-height: 1120px; background: #FFFFFF; color: #16264D; font-family: Montserrat, system-ui, sans-serif; box-sizing: border-box">
+  <header style="border-bottom: 1px solid #E3E8F1; padding: 0 max(4vw, 16px)">
+    <nav aria-label="Main" style="max-width: 1280px; margin: 0 auto; min-height: 80px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 32px">
+      <a href="#" aria-label="Mosta Group home" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #16264D; font-size: 24px; letter-spacing: -0.01em">
+        <svg width="38" height="38" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="p1lg1" gradientUnits="userSpaceOnUse" x1="0" y1="64" x2="64" y2="0"><stop offset="0" stop-color="#2F5BFF"></stop><stop offset="1" stop-color="#19C8E8"></stop></linearGradient></defs><circle cx="32" cy="32" r="26" fill="none" stroke="url(#p1lg1)" stroke-width="6" stroke-dasharray="140 40"></circle><path d="M53.6 16.2 51.6 6.6 44.2 15.9Z" fill="url(#p1lg1)"></path><path d="M21 43V22l11 11 11-11v21" fill="none" stroke="currentColor" stroke-width="5.5" stroke-linejoin="round"></path></svg>
+        <span><b style="font-weight: 700">Mosta</b>Group</span>
+      </a>
+      <div style="display: flex; flex-wrap: wrap; gap: 4px 28px">
+        <a class="navlink" href="#">Services</a>
+        <a class="navlink" href="#">How we work</a>
+        <a class="navlink" href="#">Results</a>
+        <a class="navlink" href="#">About</a>
+      </div>
+      <a href="#" style="background: #16264D; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 15px; padding: 14px 22px; border-radius: 8px">Book a free call</a>
+    </nav>
+  </header>
+
+  <section style="padding: 56px max(4vw, 16px) 48px">
+    <div style="max-width: 1280px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 40px; align-items: center">
+      <div style="flex: 1 1 400px; min-width: 0; display: flex; flex-direction: column; gap: 22px">
+        <h1 style="margin: 0; font-size: clamp(38px, 4.4vw, 60px); line-height: 1.05; letter-spacing: -0.025em; font-weight: 700">We draw how your business really runs. Then we automate it.</h1>
+        <p style="margin: 0; font-size: 18px; line-height: 1.55; color: #3C4A66; max-width: 34em">AI and automation consulting from business advisers. We map one process end to end, show where the time goes, and build the fix on the systems you already use.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 6px">
+          <a href="#" style="background: #2F5BFF; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 16px; padding: 16px 26px; border-radius: 8px">Map one process free</a>
+          <a href="#" style="color: #16264D; text-decoration: none; font-weight: 600; font-size: 16px; padding: 15px 24px; border-radius: 8px; border: 1.5px solid #16264D">See a real map</a>
+        </div>
+      </div>
+      <figure style="flex: 1.3 1 520px; min-width: 0; margin: 0">
+        <svg viewBox="0 0 640 520" role="img" aria-label="Technical drawing of an invoice process running as a loop, with a token moving through each step" style="width: 100%; height: auto; display: block">
+          <defs>
+            <pattern id="p1grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#E6ECF5" stroke-width="1"></path></pattern>
+            <linearGradient id="p1lg2" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#2F5BFF"></stop><stop offset="1" stop-color="#19C8E8"></stop></linearGradient>
+          </defs>
+          <rect x="0" y="0" width="640" height="520" fill="url(#p1grid)"></rect>
+          <rect x="0.5" y="0.5" width="639" height="519" fill="none" stroke="#16264D" stroke-width="1"></rect>
+          <path id="p1loop" d="M130 100 H510 Q550 100 550 140 V360 Q550 400 510 400 H130 Q90 400 90 360 V140 Q90 100 130 100 Z" fill="none" stroke="#16264D" stroke-width="2" stroke-dasharray="6 6"></path>
+          <g font-family="Montserrat, sans-serif" font-size="13" font-weight="600" fill="#16264D" text-anchor="middle">
+            <rect x="140" y="78" width="140" height="44" rx="6" fill="#FFFFFF" stroke="#16264D" stroke-width="1.5"></rect><text x="210" y="105">Invoice arrives</text>
+            <rect x="360" y="78" width="140" height="44" rx="6" fill="#FFFFFF" stroke="#16264D" stroke-width="1.5"></rect><text x="430" y="105">Read and coded</text>
+            <rect x="480" y="228" width="140" height="44" rx="6" fill="#FFFFFF" stroke="#2F5BFF" stroke-width="2"></rect><text x="550" y="255" fill="#2F5BFF">Approved</text>
+            <rect x="360" y="378" width="140" height="44" rx="6" fill="#FFFFFF" stroke="#16264D" stroke-width="1.5"></rect><text x="430" y="405">Posted to Xero</text>
+            <rect x="140" y="378" width="140" height="44" rx="6" fill="#FFFFFF" stroke="#16264D" stroke-width="1.5"></rect><text x="210" y="405">Paid</text>
+            <rect x="20" y="228" width="140" height="44" rx="6" fill="#FFFFFF" stroke="#16264D" stroke-width="1.5"></rect><text x="90" y="255">Reported</text>
+          </g>
+          <circle class="token" r="9" fill="url(#p1lg2)"><animateMotion dur="12s" repeatCount="indefinite" rotate="auto"><mpath href="#p1loop"></mpath></animateMotion></circle>
+          <g font-family="IBM Plex Mono, monospace" font-size="12" fill="#3C4A66">
+            <path d="M200 170 H440" stroke="#3C4A66" stroke-width="1"></path><path d="M200 164 V176 M440 164 V176" stroke="#3C4A66" stroke-width="1"></path>
+            <text x="320" y="160" text-anchor="middle">today: 6 hand-offs, 3 systems</text>
+            <path d="M200 330 H440" stroke="#2F5BFF" stroke-width="1"></path><path d="M200 324 V336 M440 324 V336" stroke="#2F5BFF" stroke-width="1"></path>
+            <text x="320" y="320" text-anchor="middle" fill="#2F5BFF">after: 1 human check</text>
+            <text x="320" y="250" text-anchor="middle" font-family="Montserrat, sans-serif" font-size="15" font-weight="700" fill="#16264D">Accounts payable</text>
+            <text x="320" y="270" text-anchor="middle">one supplier invoice, end to end</text>
+          </g>
+          <g font-family="IBM Plex Mono, monospace" font-size="11" fill="#16264D">
+            <rect x="440" y="462" width="199.5" height="57.5" fill="#FFFFFF" stroke="#16264D" stroke-width="1"></rect>
+            <path d="M440 482 H640" stroke="#16264D" stroke-width="1"></path>
+            <text x="450" y="476">DRAWING 01 · PROCESS MAP</text>
+            <text x="450" y="498">Client: [example]</text>
+            <text x="450" y="512">Rev A · Mosta Group</text>
+          </g>
+        </svg>
+      </figure>
+    </div>
+  </section>
+
+  <section style="border-top: 1px solid #E3E8F1; padding: 40px max(4vw, 16px) 56px">
+    <div style="max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 32px">
+      <div style="display: flex; flex-direction: column; gap: 8px"><h2 style="margin: 0; font-size: 20px">AI consulting</h2><p style="margin: 0; font-size: 16px; line-height: 1.55; color: #3C4A66">Find where AI pays back in your business, and where it does not.</p></div>
+      <div style="display: flex; flex-direction: column; gap: 8px"><h2 style="margin: 0; font-size: 20px">AI implementation</h2><p style="margin: 0; font-size: 16px; line-height: 1.55; color: #3C4A66">Agents and assistants built into your real workflows, with your data.</p></div>
+      <div style="display: flex; flex-direction: column; gap: 8px"><h2 style="margin: 0; font-size: 20px">Process automation</h2><p style="margin: 0; font-size: 16px; line-height: 1.55; color: #3C4A66">The repetitive work between your systems, done for you.</p></div>
+    </div>
+  </section>
+</div>
+</section><section class="page" id="p2" data-name="The loop" hidden>
+<div style="width: 100%; min-height: 1120px; background: #FFFFFF; color: #16264D; font-family: Montserrat, system-ui, sans-serif">
+  <div style="background: #16264D; color: #FFFFFF; padding: 0 max(4vw, 16px) 64px">
+    <nav aria-label="Main" style="max-width: 1280px; margin: 0 auto; min-height: 88px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px">
+      <a href="#" aria-label="Mosta Group home" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #FFFFFF; font-size: 24px">
+        <svg width="38" height="38" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="p2lg1" gradientUnits="userSpaceOnUse" x1="0" y1="64" x2="64" y2="0"><stop offset="0" stop-color="#2F5BFF"></stop><stop offset="1" stop-color="#19C8E8"></stop></linearGradient></defs><circle cx="32" cy="32" r="26" fill="none" stroke="url(#p2lg1)" stroke-width="6" stroke-dasharray="140 40"></circle><path d="M53.6 16.2 51.6 6.6 44.2 15.9Z" fill="url(#p2lg1)"></path><path d="M21 43V22l11 11 11-11v21" fill="none" stroke="currentColor" stroke-width="5.5" stroke-linejoin="round"></path></svg>
+        <span><b style="font-weight: 700">Mosta</b>Group</span>
+      </a>
+      <div style="display: flex; align-items: center; gap: 12px">
+        <a href="#" style="color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 15px; padding: 13px 20px; border-radius: 999px; border: 1.5px solid rgba(255,255,255,0.6)">Book a free call</a>
+        <button type="button" aria-label="Open menu" style="display: flex; align-items: center; gap: 10px; background: #FFFFFF; color: #16264D; border: 0; font: 600 15px Montserrat, sans-serif; padding: 14px 20px; border-radius: 999px; cursor: pointer">
+          Menu
+          <svg width="18" height="12" viewBox="0 0 18 12" aria-hidden="true"><path d="M0 1h18M0 6h18M0 11h18" stroke="#16264D" stroke-width="2"></path></svg>
+        </button>
+      </div>
+    </nav>
+
+    <div style="max-width: 1280px; margin: 0 auto; padding-top: 32px; display: flex; flex-wrap: wrap; align-items: center; gap: 32px">
+      <div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+        <h1 style="margin: 0; font-size: clamp(48px, 6.4vw, 96px); line-height: 0.98; letter-spacing: -0.035em; font-weight: 800">Work that runs itself.</h1>
+        <p style="margin: 0; font-size: 19px; line-height: 1.55; color: #C9D3EA; max-width: 30em">We find the jobs your team repeats every week and hand them to AI and automation, so your people do the work only people can do.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 12px">
+          <a href="#" style="background: #2F5BFF; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 16px; padding: 17px 28px; border-radius: 999px">Find my first automation</a>
+          <a href="#" style="color: #FFFFFF; font-weight: 600; font-size: 16px; padding: 17px 8px">How it works</a>
+        </div>
+      </div>
+      <figure style="flex: 1 1 520px; min-width: 0; margin: 0">
+        <svg viewBox="-70 -20 780 680" role="img" aria-label="The Mosta loop drawn large, with everyday business jobs placed around it and a point of light travelling the loop" style="width: 100%; height: auto; display: block">
+          <defs><linearGradient id="p2lg2" gradientUnits="userSpaceOnUse" x1="90" y1="550" x2="550" y2="90"><stop offset="0" stop-color="#2F5BFF"></stop><stop offset="1" stop-color="#19C8E8"></stop></linearGradient></defs>
+          <circle class="spin" cx="320" cy="320" r="292" fill="none" stroke="#2A3D72" stroke-width="1.5" stroke-dasharray="2 10"></circle>
+          <circle cx="320" cy="320" r="230" fill="none" stroke="url(#p2lg2)" stroke-width="30" stroke-dasharray="1240 205"></circle>
+          <path d="M490.9 162.5 480.7 120.9 448.1 161.3Z" fill="url(#p2lg2)"></path>
+          <path d="M223 417V232l97 97 97-97v185" fill="none" stroke="#FFFFFF" stroke-width="44" stroke-linejoin="round"></path>
+          <path id="p2ring" d="M320 90 A230 230 0 1 1 319.9 90" fill="none"></path>
+          <circle class="dot" r="11" fill="#FFFFFF"><animateMotion dur="9s" repeatCount="indefinite"><mpath href="#p2ring"></mpath></animateMotion></circle>
+          <g font-family="Montserrat, sans-serif" font-size="15" font-weight="600" fill="#FFFFFF" text-anchor="middle">
+            <rect x="-12" y="440" width="170" height="40" rx="20" fill="#22356A"></rect><text x="73" y="465">Supplier invoices</text>
+            <rect x="-40" y="226" width="170" height="40" rx="20" fill="#22356A"></rect><text x="45" y="251">Payroll checks</text>
+            <rect x="82" y="53" width="190" height="40" rx="20" fill="#22356A"></rect><text x="177" y="78">Month-end reporting</text>
+            <rect x="505" y="374" width="190" height="40" rx="20" fill="#22356A"></rect><text x="600" y="399">Customer onboarding</text>
+            <rect x="372" y="547" width="180" height="40" rx="20" fill="#22356A"></rect><text x="462" y="572">Quotes and proposals</text>
+            <rect x="171" y="575" width="150" height="40" rx="20" fill="#22356A"></rect><text x="246" y="600">Rostering</text>
+          </g>
+        </svg>
+      </figure>
+    </div>
+  </div>
+
+  <section style="padding: 48px max(4vw, 16px) 56px">
+    <div style="max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 0 40px">
+      <a href="#" style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 22px 0; border-top: 2px solid #16264D; color: #16264D; text-decoration: none"><span style="font-size: 24px; font-weight: 700; letter-spacing: -0.01em">AI consulting</span><span aria-hidden="true" style="font-size: 22px; color: #2F5BFF">→</span></a>
+      <a href="#" style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 22px 0; border-top: 2px solid #16264D; color: #16264D; text-decoration: none"><span style="font-size: 24px; font-weight: 700; letter-spacing: -0.01em">AI implementation</span><span aria-hidden="true" style="font-size: 22px; color: #2F5BFF">→</span></a>
+      <a href="#" style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 22px 0; border-top: 2px solid #16264D; color: #16264D; text-decoration: none"><span style="font-size: 24px; font-weight: 700; letter-spacing: -0.01em">Process automation</span><span aria-hidden="true" style="font-size: 22px; color: #2F5BFF">→</span></a>
+    </div>
+  </section>
+</div>
+</section><section class="page" id="p3" data-name="The weave" hidden>
+<div style="width: 100%; min-height: 1120px; background: #F2EDE3; color: #16264D; font-family: Montserrat, system-ui, sans-serif">
+  <header style="padding: 0 max(4vw, 16px)">
+    <nav aria-label="Main" style="max-width: 1280px; margin: 0 auto; min-height: 92px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 24px; border-bottom: 1px solid #D9D0BF">
+      <div style="flex: 1 1 200px; display: flex; flex-wrap: wrap; gap: 4px 28px">
+        <a class="navlink" href="#">Services</a>
+        <a class="navlink" href="#">How we work</a>
+      </div>
+      <a href="#" aria-label="Mosta Group home" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #16264D; font-size: 26px">
+        <svg width="40" height="40" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="p3lg1" gradientUnits="userSpaceOnUse" x1="0" y1="64" x2="64" y2="0"><stop offset="0" stop-color="#2F5BFF"></stop><stop offset="1" stop-color="#19C8E8"></stop></linearGradient></defs><circle cx="32" cy="32" r="26" fill="none" stroke="url(#p3lg1)" stroke-width="6" stroke-dasharray="140 40"></circle><path d="M53.6 16.2 51.6 6.6 44.2 15.9Z" fill="url(#p3lg1)"></path><path d="M21 43V22l11 11 11-11v21" fill="none" stroke="currentColor" stroke-width="5.5" stroke-linejoin="round"></path></svg>
+        <span><b style="font-weight: 700">Mosta</b>Group</span>
+      </a>
+      <div style="flex: 1 1 200px; display: flex; flex-wrap: wrap; justify-content: flex-end; align-items: center; gap: 4px 28px">
+        <a class="navlink" href="#">Results</a>
+        <a class="navlink" href="#">About</a>
+        <a href="#" style="background: #16264D; color: #F2EDE3; text-decoration: none; font-weight: 600; font-size: 15px; padding: 13px 20px; border-radius: 4px">Talk to us</a>
+      </div>
+    </nav>
+  </header>
+
+  <section style="padding: 48px max(4vw, 16px) 40px">
+    <div style="max-width: 1280px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 48px; align-items: center">
+      <div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 22px">
+        <h1 style="margin: 0; font-size: clamp(38px, 4.6vw, 64px); line-height: 1.04; letter-spacing: -0.025em; font-weight: 700">Your people, data and systems, woven into one.</h1>
+        <p style="margin: 0; font-size: 18px; line-height: 1.6; color: #45506A; max-width: 32em">Most businesses run on a tangle of apps, spreadsheets and goodwill. We connect them with AI and automation, so the whole business pulls in the same direction.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 4px">
+          <a href="#" style="background: #2F5BFF; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 16px; padding: 16px 26px; border-radius: 4px">Book a free AI review</a>
+          <a href="#" style="color: #16264D; text-decoration: none; font-weight: 600; font-size: 16px; padding: 15px 24px; border-radius: 4px; border: 1.5px solid #16264D">Our approach</a>
+        </div>
+      </div>
+      <figure style="flex: 1 1 480px; min-width: 0; margin: 0; display: flex; flex-direction: column; gap: 12px">
+        <svg viewBox="0 0 560 520" role="img" aria-label="A woven lace-like pattern of navy threads, with one electric-blue thread running through it" style="width: 100%; height: auto; display: block">
+          <defs>
+            <pattern id="p3weave" width="48" height="48" patternUnits="userSpaceOnUse">
+              <g stroke="#16264D" stroke-width="3.5" stroke-linecap="round">
+                <path d="M3 5H21M3 12H21M3 19H21"></path>
+                <path d="M29 3V21M36 3V21M43 3V21"></path>
+                <path d="M5 27V45M12 27V45M19 27V45"></path>
+                <path d="M27 29H45M27 36H45M27 43H45"></path>
+              </g>
+            </pattern>
+            <linearGradient id="p3lg2" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#2F5BFF"></stop><stop offset="1" stop-color="#19C8E8"></stop></linearGradient>
+          </defs>
+          <rect x="0" y="0" width="560" height="520" rx="10" fill="url(#p3weave)"></rect>
+          <path d="M-10 430 C110 400 150 230 270 250 S 450 110 570 130" fill="none" stroke="#F2EDE3" stroke-width="30" stroke-linecap="round"></path>
+          <path class="thread" d="M-10 430 C110 400 150 230 270 250 S 450 110 570 130" fill="none" stroke="url(#p3lg2)" stroke-width="12" stroke-linecap="round"></path>
+        </svg>
+        <figcaption style="font-size: 14px; line-height: 1.5; color: #45506A">Pattern inspired by Maltese bizzilla lace, made by hand in Malta since the 1500s: many threads, one strong fabric.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section style="padding: 8px max(4vw, 16px) 56px">
+    <div style="max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px">
+      <div style="border: 1.5px solid #16264D; border-radius: 4px; padding: 24px; display: flex; flex-direction: column; gap: 8px"><h2 style="margin: 0; font-size: 20px">AI consulting</h2><p style="margin: 0; font-size: 16px; line-height: 1.55; color: #45506A">Where AI pays back, and a plan your board can sign off.</p></div>
+      <div style="border: 1.5px solid #16264D; border-radius: 4px; padding: 24px; display: flex; flex-direction: column; gap: 8px"><h2 style="margin: 0; font-size: 20px">AI implementation</h2><p style="margin: 0; font-size: 16px; line-height: 1.55; color: #45506A">Assistants and agents built into how your team already works.</p></div>
+      <div style="border: 1.5px solid #16264D; border-radius: 4px; padding: 24px; display: flex; flex-direction: column; gap: 8px"><h2 style="margin: 0; font-size: 20px">Process automation</h2><p style="margin: 0; font-size: 16px; line-height: 1.55; color: #45506A">The hand-offs between your systems, joined up and running.</p></div>
+    </div>
+  </section>
+</div>
+</section><section class="page" id="p4" data-name="Field notes" hidden>
+<div style="width: 100%; min-height: 1120px; background: #FFFFFF; color: #16264D; font-family: Montserrat, system-ui, sans-serif">
+  <div style="background: #16264D; color: #DCE3F2; font-size: 13px; padding: 10px max(4vw, 16px)">
+    <div style="max-width: 1280px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 24px">
+      <span>Founded by the team behind Qubik, advising Australian businesses since 2007</span>
+      <span>Brisbane · working worldwide</span>
+    </div>
+  </div>
+  <header style="padding: 0 max(4vw, 16px); border-bottom: 1px solid #E3E8F1">
+    <nav aria-label="Main" style="max-width: 1280px; margin: 0 auto; min-height: 80px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 32px">
+      <a href="#" aria-label="Mosta Group home" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #16264D; font-size: 24px">
+        <svg width="38" height="38" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="p4lg1" gradientUnits="userSpaceOnUse" x1="0" y1="64" x2="64" y2="0"><stop offset="0" stop-color="#2F5BFF"></stop><stop offset="1" stop-color="#19C8E8"></stop></linearGradient></defs><circle cx="32" cy="32" r="26" fill="none" stroke="url(#p4lg1)" stroke-width="6" stroke-dasharray="140 40"></circle><path d="M53.6 16.2 51.6 6.6 44.2 15.9Z" fill="url(#p4lg1)"></path><path d="M21 43V22l11 11 11-11v21" fill="none" stroke="currentColor" stroke-width="5.5" stroke-linejoin="round"></path></svg>
+        <span><b style="font-weight: 700">Mosta</b>Group</span>
+      </a>
+      <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px 28px">
+        <a class="navlink" href="#">What we do</a>
+        <a class="navlink" href="#">Case studies</a>
+        <a class="navlink" href="#">Our people</a>
+        <a class="navlink" href="#">Insights</a>
+        <a href="#" style="background: #2F5BFF; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 15px; padding: 13px 20px; border-radius: 8px">Book a call with Dominic</a>
+      </div>
+    </nav>
+  </header>
+
+  <section style="padding: 48px max(4vw, 16px) 40px">
+    <div style="max-width: 1280px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 48px; align-items: center">
+      <div style="flex: 1 1 400px; min-width: 0; display: flex; flex-direction: column; gap: 22px">
+        <h1 style="margin: 0; font-size: clamp(38px, 4.4vw, 60px); line-height: 1.05; letter-spacing: -0.025em; font-weight: 700">Business advisers first. Then we build the AI.</h1>
+        <p style="margin: 0; font-size: 18px; line-height: 1.6; color: #3C4A66; max-width: 32em">We sit with your team, watch how the work really gets done, and write down what slows it. Then we automate the parts that should never have been manual.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 4px">
+          <a href="#" style="background: #16264D; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 16px; padding: 16px 26px; border-radius: 8px">Get a free automation audit</a>
+          <a href="#" style="color: #16264D; font-weight: 600; font-size: 16px; padding: 16px 8px">Read a case study</a>
+        </div>
+      </div>
+      <figure style="flex: 1.2 1 500px; min-width: 0; margin: 0">
+        <svg viewBox="0 0 620 480" role="img" aria-label="Photo placeholder of a client's desk, annotated by hand in blue marker: a spreadsheet circled as re-keyed by hand every day, and an inbox marked as something that could run itself" style="width: 100%; height: auto; display: block; border-radius: 12px">
+          <rect x="0" y="0" width="620" height="480" fill="#E4E9F1"></rect>
+          <rect x="70" y="70" width="360" height="240" rx="10" fill="#FFFFFF" stroke="#C3CCDA" stroke-width="2"></rect>
+          <rect x="70" y="70" width="360" height="30" rx="10" fill="#D5DCE8"></rect>
+          <g stroke="#D5DCE8" stroke-width="1.5"><path d="M90 130H410M90 158H410M90 186H410M90 214H410M90 242H410M90 270H410M180 110V290M270 110V290M350 110V290"></path></g>
+          <g fill="#9AA6BB"><rect x="96" y="138" width="60" height="10" rx="3"></rect><rect x="96" y="166" width="70" height="10" rx="3"></rect><rect x="96" y="194" width="52" height="10" rx="3"></rect><rect x="96" y="222" width="66" height="10" rx="3"></rect><rect x="190" y="138" width="50" height="10" rx="3"></rect><rect x="190" y="166" width="62" height="10" rx="3"></rect><rect x="190" y="194" width="40" height="10" rx="3"></rect><rect x="280" y="138" width="44" height="10" rx="3"></rect><rect x="280" y="166" width="56" height="10" rx="3"></rect></g>
+          <rect x="200" y="310" width="100" height="18" fill="#C3CCDA"></rect>
+          <rect x="460" y="120" width="120" height="150" rx="8" fill="#FFFFFF" stroke="#C3CCDA" stroke-width="2"></rect>
+          <g fill="#C3CCDA"><rect x="474" y="138" width="92" height="22" rx="4"></rect><rect x="474" y="168" width="92" height="22" rx="4"></rect><rect x="474" y="198" width="92" height="22" rx="4"></rect><rect x="474" y="228" width="92" height="22" rx="4"></rect></g>
+          <path class="mark" d="M84 132 C 60 170, 80 236, 200 246 C 330 256, 372 214, 352 160 C 336 120, 200 112, 110 122" fill="none" stroke="#2F5BFF" stroke-width="5" stroke-linecap="round"></path>
+          <path class="mark" d="M455 112 C 440 150, 444 250, 470 282 C 510 300, 596 286, 592 210 C 590 140, 560 104, 470 108" fill="none" stroke="#2F5BFF" stroke-width="5" stroke-linecap="round"></path>
+          <path d="M150 360 C 160 330, 180 300, 196 262 M186 270 L196 260 L202 274" fill="none" stroke="#2F5BFF" stroke-width="3.5" stroke-linecap="round"></path>
+          <path d="M520 360 C 530 340, 528 316, 520 296 M512 306 L520 294 L530 304" fill="none" stroke="#2F5BFF" stroke-width="3.5" stroke-linecap="round"></path>
+          <g font-family="Caveat, cursive" font-size="28" font-weight="600" fill="#2F5BFF">
+            <text x="40" y="396">re-keyed by hand, every day</text>
+            <text x="410" y="396">this could run itself</text>
+          </g>
+          <text x="20" y="462" font-family="Montserrat, sans-serif" font-size="13" fill="#5A6478">Photo placeholder: a real client desk, not stock</text>
+        </svg>
+      </figure>
+    </div>
+  </section>
+
+  <section style="padding: 8px max(4vw, 16px) 56px">
+    <div style="max-width: 1280px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; gap: 20px 40px; border-top: 1px solid #E3E8F1; padding-top: 32px">
+      <p style="margin: 0; font-size: 15px; color: #3C4A66; flex: 0 1 220px">Trusted by businesses with 10 to 1,000+ staff</p>
+      <div style="flex: 1 1 520px; display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 16px">
+        <div style="height: 56px; border-radius: 8px; background: #F1F4F9; display: grid; place-items: center; font-size: 14px; color: #5A6478">[Client logo]</div>
+        <div style="height: 56px; border-radius: 8px; background: #F1F4F9; display: grid; place-items: center; font-size: 14px; color: #5A6478">[Client logo]</div>
+        <div style="height: 56px; border-radius: 8px; background: #F1F4F9; display: grid; place-items: center; font-size: 14px; color: #5A6478">[Client logo]</div>
+        <div style="height: 56px; border-radius: 8px; background: #F1F4F9; display: grid; place-items: center; font-size: 14px; color: #5A6478">[Client logo]</div>
+      </div>
+    </div>
+  </section>
+</div>
+</section><section class="page" id="p5" data-name="Problem-first" hidden>
+<div style="width: 100%; background: #FFFFFF; color: #16264D; font-family: Montserrat, system-ui, sans-serif">
+
+  <div style="background: #16264D; color: #DCE3F2; font-size: 13px; padding: 10px max(4vw, 16px)">
+    <div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 24px">
+      <span>Founded by the team behind Qubik, business advisers since 2007</span>
+      <span>Call us: [phone number]</span>
+    </div>
+  </div>
+  <header style="padding: 0 max(4vw, 16px); border-bottom: 1px solid #E3E8F1">
+    <nav aria-label="Main" style="max-width: 1240px; margin: 0 auto; min-height: 80px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 32px">
+      <a href="#" aria-label="Mosta Group home" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #16264D; font-size: 24px">
+        <svg width="38" height="38" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="p5lg1" gradientUnits="userSpaceOnUse" x1="0" y1="64" x2="64" y2="0"><stop offset="0" stop-color="#2F5BFF"></stop><stop offset="1" stop-color="#19C8E8"></stop></linearGradient></defs><circle cx="32" cy="32" r="26" fill="none" stroke="url(#p5lg1)" stroke-width="6" stroke-dasharray="140 40"></circle><path d="M53.6 16.2 51.6 6.6 44.2 15.9Z" fill="url(#p5lg1)"></path><path d="M21 43V22l11 11 11-11v21" fill="none" stroke="currentColor" stroke-width="5.5" stroke-linejoin="round"></path></svg>
+        <span><b style="font-weight: 700">Mosta</b>Group</span>
+      </a>
+      <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px 28px">
+        <a class="navlink" href="#problems">Problems we solve</a>
+        <a class="navlink" href="#how">How it works</a>
+        <a class="navlink" href="#results">Results</a>
+        <a class="navlink" href="#about">About</a>
+        <a class="navlink" href="#">For partners</a>
+        <a class="btn" href="#contact" style="background: #2F5BFF; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 15px; padding: 13px 20px; border-radius: 8px">Free 30-min review</a>
+      </div>
+    </nav>
+  </header>
+
+  <section id="problems" style="padding: 48px max(4vw, 16px) 56px; background: #F5F7FB">
+    <div style="max-width: 1240px; margin: 0 auto; display: flex; flex-direction: column; gap: 28px">
+      <div style="display: flex; flex-direction: column; gap: 14px; max-width: 860px">
+        <h1 style="margin: 0; font-size: clamp(36px, 4.4vw, 58px); line-height: 1.05; letter-spacing: -0.025em; font-weight: 700">Which of these sounds like your business?</h1>
+        <p style="margin: 0; font-size: 18px; line-height: 1.55; color: #3C4A66">Pick one. We will show you what we would change, and how to get started without risk.</p>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: stretch">
+        <div id="chips" style="flex: 1 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 10px">
+          
+        </div>
+        <article aria-live="polite" style="flex: 1.7 1 520px; min-width: 0; background: #FFFFFF; border: 1.5px solid #16264D; border-radius: 14px; padding: clamp(22px, 3vw, 36px); display: flex; flex-direction: column; gap: 20px">
+          <div style="display: flex; flex-direction: column; gap: 8px">
+            <p style="margin: 0; font-size: 14px; font-weight: 600; color: #2F5BFF"><span data-k="who"></span></p>
+            <p style="margin: 0; font-size: clamp(22px, 2.3vw, 30px); line-height: 1.25; font-weight: 700; letter-spacing: -0.015em">“<span data-k="quote"></span>”</p>
+            <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #3C4A66"><span data-k="cause"></span></p>
+          </div>
+          <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0; border-top: 1px solid #E3E8F1">
+            <p style="margin: 0; padding: 12px 12px 8px 0; font-size: 14px; font-weight: 600; color: #5A6478">Today</p>
+            <p style="margin: 0; padding: 12px 0 8px 12px; font-size: 14px; font-weight: 600; color: #2F5BFF">With Mosta</p>
+            <div id="rows" style="display: contents"></div>
+          </div>
+          <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px; background: #F5F7FB; border-radius: 10px; padding: 16px 18px">
+            <p style="margin: 0; flex: 1 1 260px; font-size: 15px; line-height: 1.5"><b>Your free review:</b> <span data-k="first"></span></p>
+            <a class="btn" href="#contact" style="background: #2F5BFF; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 16px; padding: 15px 22px; border-radius: 8px; white-space: nowrap">Fix this first</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" style="padding: 48px max(4vw, 16px)">
+    <div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 32px 56px; align-items: center">
+      <div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
+        <h2 style="margin: 0; font-size: clamp(28px, 3vw, 40px); line-height: 1.1; letter-spacing: -0.02em">Business advisers first. Then we build the AI.</h2>
+        <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #3C4A66">Most AI firms start with a tool and look for a problem. We have advised Australian businesses on their numbers and operations since 2007, so we start with your business case and only build what pays back.</p>
+      </div>
+      <div style="flex: 1 1 420px; min-width: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px">
+        <div style="border-top: 3px solid #16264D; padding-top: 12px"><p style="margin: 0; font-size: 30px; font-weight: 700">2007</p><p style="margin: 4px 0 0; font-size: 14px; color: #3C4A66">advising businesses since</p></div>
+        <div style="border-top: 3px solid #16264D; padding-top: 12px"><p style="margin: 0; font-size: 30px; font-weight: 700">Xero</p><p style="margin: 4px 0 0; font-size: 14px; color: #3C4A66">partner since 2013</p></div>
+        <div style="border-top: 3px solid #2F5BFF; padding-top: 12px"><p style="margin: 0; font-size: 30px; font-weight: 700">[Result]</p><p style="margin: 4px 0 0; font-size: 14px; color: #3C4A66">[one real client number, e.g. hours saved a week]</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" style="padding: 48px max(4vw, 16px); background: #F5F7FB">
+    <div style="max-width: 1240px; margin: 0 auto; display: flex; flex-direction: column; gap: 24px">
+      <h2 style="margin: 0; font-size: clamp(28px, 3vw, 40px); letter-spacing: -0.02em">See it working before you commit</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px">
+        <div style="background: #FFFFFF; border-radius: 12px; padding: 24px; display: flex; flex-direction: column; gap: 8px"><p style="margin: 0; font-size: 14px; font-weight: 600; color: #2F5BFF">Free · 30 minutes</p><h3 style="margin: 0; font-size: 21px">Review</h3><p style="margin: 0; font-size: 16px; line-height: 1.55; color: #3C4A66">We name the three jobs worth automating first, and roughly what each would save.</p></div>
+        <div style="background: #FFFFFF; border-radius: 12px; padding: 24px; display: flex; flex-direction: column; gap: 8px"><p style="margin: 0; font-size: 14px; font-weight: 600; color: #2F5BFF">Fixed price · weeks, not months</p><h3 style="margin: 0; font-size: 21px">Prove</h3><p style="margin: 0; font-size: 16px; line-height: 1.55; color: #3C4A66">We build one of them on your real systems, so you see the result before anything bigger.</p></div>
+        <div style="background: #FFFFFF; border-radius: 12px; padding: 24px; display: flex; flex-direction: column; gap: 8px"><p style="margin: 0; font-size: 14px; font-weight: 600; color: #2F5BFF">At your pace</p><h3 style="margin: 0; font-size: 21px">Roll out</h3><p style="margin: 0; font-size: 16px; line-height: 1.55; color: #3C4A66">We extend what works, train your team and look after it once it is live.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="results" style="padding: 48px max(4vw, 16px)">
+    <div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 32px 56px">
+      <div style="flex: 1 1 380px; min-width: 0; border-left: 0; display: flex; flex-direction: column; gap: 12px">
+        <h2 style="margin: 0; font-size: clamp(28px, 3vw, 40px); letter-spacing: -0.02em">Questions people ask before they call</h2>
+        <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #3C4A66">Straight answers. Anything else, ask us in the review.</p>
+      </div>
+      <div style="flex: 1.6 1 520px; min-width: 0; display: flex; flex-direction: column">
+        <details style="border-top: 1px solid #C9D2E1; padding: 18px 0"><summary style="font-size: 18px; font-weight: 600; cursor: pointer">What will it cost?</summary><p style="margin: 10px 0 0; font-size: 16px; line-height: 1.6; color: #3C4A66">The review is free. The first build is a fixed price agreed up front, sized to pay for itself.</p></details>
+        <details style="border-top: 1px solid #C9D2E1; padding: 18px 0"><summary style="font-size: 18px; font-weight: 600; cursor: pointer">Will it work with our systems?</summary><p style="margin: 10px 0 0; font-size: 16px; line-height: 1.6; color: #3C4A66">We build on what you already use, such as Xero and [confirm other systems], rather than asking you to switch.</p></details>
+        <details style="border-top: 1px solid #C9D2E1; padding: 18px 0"><summary style="font-size: 18px; font-weight: 600; cursor: pointer">Is our data safe?</summary><p style="margin: 10px 0 0; font-size: 16px; line-height: 1.6; color: #3C4A66">Your data stays in your systems and accounts. We explain exactly where it goes before anything is built.</p></details>
+        <details style="border-top: 1px solid #C9D2E1; padding: 18px 0"><summary style="font-size: 18px; font-weight: 600; cursor: pointer">Will my team accept it?</summary><p style="margin: 10px 0 0; font-size: 16px; line-height: 1.6; color: #3C4A66">We automate the work people dislike, involve them from the start and train them when it goes live.</p></details>
+        <details style="border-top: 1px solid #C9D2E1; border-bottom: 1px solid #C9D2E1; padding: 18px 0"><summary style="font-size: 18px; font-weight: 600; cursor: pointer">Aren't you an accounting firm?</summary><p style="margin: 10px 0 0; font-size: 16px; line-height: 1.6; color: #3C4A66">Our founders are. That is the point: we understand how your business makes money before we touch the technology.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" style="padding: 56px max(4vw, 16px); background: #16264D; color: #FFFFFF">
+    <div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 32px 56px; align-items: flex-start">
+      <div style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
+        <h2 style="margin: 0; font-size: clamp(30px, 3.4vw, 46px); line-height: 1.08; letter-spacing: -0.02em">Tell us the job you would like gone.</h2>
+        <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #C9D3EA">One line is enough. We will come back within one business day with a time for your free review.</p>
+        <p style="margin: 0; font-size: 17px; color: #C9D3EA">Prefer to talk? Call [phone number]</p>
+      </div>
+      <form style="flex: 1 1 440px; min-width: 0; background: #FFFFFF; color: #16264D; border-radius: 14px; padding: 24px; display: flex; flex-direction: column; gap: 14px">
+        <p style="margin: 0; font-size: 14px; color: #3C4A66">About: <b style="color: #16264D"><span data-k="chip"></span></b></p>
+        <label class="field" for="job">The job<textarea id="job" rows="2" placeholder="e.g. We re-key every supplier invoice into Xero"></textarea></label>
+        <div style="display: flex; flex-wrap: wrap; gap: 14px">
+          <label class="field" for="name" style="flex: 1 1 180px">Your name<input id="name" type="text" autocomplete="name"></label>
+          <label class="field" for="contactval" style="flex: 1 1 180px">Email or mobile<input id="contactval" type="text" autocomplete="email"></label>
+        </div>
+        <button type="button" class="btn" style="background: #2F5BFF; color: #FFFFFF; border: 0; font: 600 16px Montserrat, sans-serif; padding: 16px; border-radius: 8px; cursor: pointer">Book my free review</button>
+      </form>
+    </div>
+  </section>
+
+  <footer style="padding: 32px max(4vw, 16px); background: #0F1B38; color: #C9D3EA; font-size: 14px">
+    <div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px 32px">
+      <span><b style="color: #FFFFFF">Mosta</b><span style="color: #FFFFFF">Group</span> · AI and automation consulting · a Mosta International company</span>
+      <span>Brisbane, Australia · [email] · [phone number]</span>
+      <a href="#" style="color: #FFFFFF">For accounting firms and IT partners</a>
+    </div>
+  </footer>
+</div>
+</section>
+<script>
+(function(){
+const tabs=[...document.querySelectorAll('.tab')];
+function show(n){document.querySelectorAll('.page').forEach(p=>p.hidden=p.id!=='p'+n);tabs.forEach(t=>t.setAttribute('aria-selected',t.dataset.p===n));window.scrollTo(0,0);try{history.replaceState(null,'','#concept-'+n)}catch(e){}}
+tabs.forEach(t=>t.addEventListener('click',()=>show(t.dataset.p)));
+const m=location.hash.match(/concept-(\d)/);if(m)show(m[1]);
+document.querySelectorAll('.page a[href="#"], .page a[href^="#"]:not([href="#problems"]):not([href="#how"]):not([href="#results"]):not([href="#about"]):not([href="#contact"])').forEach(a=>a.addEventListener('click',e=>e.preventDefault()));
+const data=[
+{ id: 'hiring', chip: 'We keep hiring admin just to keep up', who: 'Owners and CEOs', quote: 'Every time sales grow, we hire another person to push paper.', cause: 'Growth is running through manual steps: data typed twice, approvals chased by email, reports rebuilt by hand.', before: ['New orders typed into three systems', 'Approvals chased by email', 'Weekly report rebuilt in Excel'], after: ['Entered once, synced everywhere', 'Approvals routed and reminded automatically', 'Report updates itself every morning'], first: 'the three jobs costing you the most hours, and a price for fixing the first one.' },
+{ id: 'monthend', chip: 'Month-end takes too long', who: 'CFOs and finance managers', quote: 'By the time the numbers are ready, they are already old.', cause: 'Bank feeds, Xero and spreadsheets are joined by people copying data, so every close waits on manual work.', before: ['Supplier invoices keyed in by hand', 'Bank lines matched one by one', 'Board pack built in spreadsheets'], after: ['Invoices read and coded by AI, checked by a person', 'Matching done automatically, exceptions flagged', 'Live dashboard from your own Xero data'], first: 'a walk-through of your close by people who have run accounts since 2007, with the steps to cut first.' },
+{ id: 'sites', chip: 'Every site does it differently', who: 'COOs of multi-site businesses', quote: 'I cannot see what is happening across our sites until it is too late.', cause: 'Each location has its own spreadsheets and habits, so there is no single, current view of the business.', before: ['Rosters and timesheets in different formats', 'Site reports emailed in weekly', 'Compliance checks on paper'], after: ['One standard process across every site', 'A live view of every site, every day', 'Checks logged and chased automatically'], first: 'the one process to standardise first across your sites, and what a live view would show you.' },
+{ id: 'ai', chip: 'The board wants an AI plan', who: 'CEOs and boards', quote: 'Everyone says we need AI. I do not know where to start, and I will not waste money finding out.', cause: 'Most AI advice comes from vendors selling one tool. Meanwhile staff are already using AI with no rules.', before: ['Staff using AI tools with no policy', 'Vendor demos with no business case', 'A board asking for a plan'], after: ['A clear policy for safe AI use', 'Uses ranked by payback, not hype', 'A plan your board can approve'], first: 'where AI pays back in your business, where it does not, and the first safe step.' },
+{ id: 'spreadsheets', chip: 'It all lives in one person’s spreadsheets', who: 'Owners and finance leads', quote: 'If one person left tomorrow, nobody would know how this works.', cause: 'Critical processes sit in fragile spreadsheets and in people’s heads, so one resignation or one formula error can stop the business.', before: ['Key reports built by one person', 'Formulas nobody else understands', 'Errors found after they cost money'], after: ['The process documented and automated', 'Data in one reliable system', 'Checks that catch errors first'], first: 'which spreadsheet is your biggest risk, and how to take it off one person’s shoulders.' }
+];
+let sel='hiring';
+const chips=document.getElementById('chips'),rows=document.getElementById('rows');
+function esc(t){const d=document.createElement('div');d.textContent=t;return d.innerHTML}
+function render(){
+const d=data.find(x=>x.id===sel);
+chips.innerHTML=data.map(x=>{const a=x.id===sel;return '<button type="button" class="chip" aria-pressed="'+a+'" data-id="'+x.id+'" style="background:'+(a?'#16264D':'#FFFFFF')+';color:'+(a?'#FFFFFF':'#16264D')+';border:1.5px solid '+(a?'#16264D':'#C9D2E1')+'">'+esc(x.chip)+'<span aria-hidden="true" style="color:'+(a?'#FFFFFF':'#9AA6BB')+'">→</span></button>'}).join('');
+document.querySelectorAll('#p5 [data-k]').forEach(el=>el.textContent=d[el.dataset.k]);
+rows.innerHTML=d.before.map((b,i)=>'<p style="margin:0;padding:10px 12px 10px 0;border-top:1px solid #E3E8F1;font-size:15px;line-height:1.45;color:#5A6478;text-decoration:line-through;text-decoration-color:#9AA6BB">'+esc(b)+'</p><p style="margin:0;padding:10px 0 10px 12px;border-top:1px solid #E3E8F1;font-size:15px;line-height:1.45;font-weight:600">'+esc(d.after[i])+'</p>').join('');
+}
+chips.addEventListener('click',e=>{const b=e.target.closest('button[data-id]');if(b){sel=b.dataset.id;render()}});
+document.querySelectorAll('#p5 form').forEach(f=>f.addEventListener('submit',e=>e.preventDefault()));
+render();
+})();
+</script>
+</body>
+</html>
