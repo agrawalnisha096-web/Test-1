@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Mosta Group homepage, the weave</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#16264D}a:hover{color:#2F5BFF}
+.navlink{color:#16264D;text-decoration:none;font-size:15px;font-weight:500;padding:12px 2px}
+.navlink:hover{color:#2F5BFF}
+.thread{stroke-dasharray:900;stroke-dashoffset:900;animation:draw 7s ease-in-out infinite alternate}
+@keyframes draw{to{stroke-dashoffset:0}}
+@media (prefers-reduced-motion: reduce){.thread{animation:none;stroke-dashoffset:0}}
+</style>
+</helmet>
+<div style="width: 100%; min-height: 1120px; background: #F2EDE3; color: #16264D; font-family: Montserrat, system-ui, sans-serif">
+  <header style="padding: 0 max(4vw, 16px)">
+    <nav aria-label="Main" style="max-width: 1280px; margin: 0 auto; min-height: 92px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 24px; border-bottom: 1px solid #D9D0BF">
+      <div style="flex: 1 1 200px; display: flex; flex-wrap: wrap; gap: 4px 28px">
+        <a class="navlink" href="#">Services</a>
+        <a class="navlink" href="#">How we work</a>
+      </div>
+      <a href="#" aria-label="Mosta Group home" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #16264D; font-size: 26px">
+        <svg width="40" height="40" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="lg1" gradientUnits="userSpaceOnUse" x1="0" y1="64" x2="64" y2="0"><stop offset="0" stop-color="#2F5BFF"></stop><stop offset="1" stop-color="#19C8E8"></stop></linearGradient></defs><circle cx="32" cy="32" r="26" fill="none" stroke="url(#lg1)" stroke-width="6" stroke-dasharray="140 40"></circle><path d="M53.6 16.2 51.6 6.6 44.2 15.9Z" fill="url(#lg1)"></path><path d="M21 43V22l11 11 11-11v21" fill="none" stroke="currentColor" stroke-width="5.5" stroke-linejoin="round"></path></svg>
+        <span><b style="font-weight: 700">Mosta</b>Group</span>
+      </a>
+      <div style="flex: 1 1 200px; display: flex; flex-wrap: wrap; justify-content: flex-end; align-items: center; gap: 4px 28px">
+        <a class="navlink" href="#">Results</a>
+        <a class="navlink" href="#">About</a>
+        <a href="#" style="background: #16264D; color: #F2EDE3; text-decoration: none; font-weight: 600; font-size: 15px; padding: 13px 20px; border-radius: 4px">Talk to us</a>
+      </div>
+    </nav>
+  </header>
+
+  <section style="padding: 48px max(4vw, 16px) 40px">
+    <div style="max-width: 1280px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 48px; align-items: center">
+      <div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 22px">
+        <h1 style="margin: 0; font-size: clamp(38px, 4.6vw, 64px); line-height: 1.04; letter-spacing: -0.025em; font-weight: 700">Your people, data and systems, woven into one.</h1>
+        <p style="margin: 0; font-size: 18px; line-height: 1.6; color: #45506A; max-width: 32em">Most businesses run on a tangle of apps, spreadsheets and goodwill. We connect them with AI and automation, so the whole business pulls in the same direction.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 4px">
+          <a href="#" style="background: #2F5BFF; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 16px; padding: 16px 26px; border-radius: 4px">Book a free AI review</a>
+          <a href="#" style="color: #16264D; text-decoration: none; font-weight: 600; font-size: 16px; padding: 15px 24px; border-radius: 4px; border: 1.5px solid #16264D">Our approach</a>
+        </div>
+      </div>
+      <figure style="flex: 1 1 480px; min-width: 0; margin: 0; display: flex; flex-direction: column; gap: 12px">
+        <svg viewBox="0 0 560 520" role="img" aria-label="A woven lace-like pattern of navy threads, with one electric-blue thread running through it" style="width: 100%; height: auto; display: block">
+          <defs>
+            <pattern id="weave" width="48" height="48" patternUnits="userSpaceOnUse">
+              <g stroke="#16264D" stroke-width="3.5" stroke-linecap="round">
+                <path d="M3 5H21M3 12H21M3 19H21"></path>
+                <path d="M29 3V21M36 3V21M43 3V21"></path>
+                <path d="M5 27V45M12 27V45M19 27V45"></path>
+                <path d="M27 29H45M27 36H45M27 43H45"></path>
+              </g>
+            </pattern>
+            <linearGradient id="lg2" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#2F5BFF"></stop><stop offset="1" stop-color="#19C8E8"></stop></linearGradient>
+          </defs>
+          <rect x="0" y="0" width="560" height="520" rx="10" fill="url(#weave)"></rect>
+          <path d="M-10 430 C110 400 150 230 270 250 S 450 110 570 130" fill="none" stroke="#F2EDE3" stroke-width="30" stroke-linecap="round"></path>
+          <path class="thread" d="M-10 430 C110 400 150 230 270 250 S 450 110 570 130" fill="none" stroke="url(#lg2)" stroke-width="12" stroke-linecap="round"></path>
+        </svg>
+        <figcaption style="font-size: 14px; line-height: 1.5; color: #45506A">Pattern inspired by Maltese bizzilla lace, made by hand in Malta since the 1500s: many threads, one strong fabric.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section style="padding: 8px max(4vw, 16px) 56px">
+    <div style="max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px">
+      <div style="border: 1.5px solid #16264D; border-radius: 4px; padding: 24px; display: flex; flex-direction: column; gap: 8px"><h2 style="margin: 0; font-size: 20px">AI consulting</h2><p style="margin: 0; font-size: 16px; line-height: 1.55; color: #45506A">Where AI pays back, and a plan your board can sign off.</p></div>
+      <div style="border: 1.5px solid #16264D; border-radius: 4px; padding: 24px; display: flex; flex-direction: column; gap: 8px"><h2 style="margin: 0; font-size: 20px">AI implementation</h2><p style="margin: 0; font-size: 16px; line-height: 1.55; color: #45506A">Assistants and agents built into how your team already works.</p></div>
+      <div style="border: 1.5px solid #16264D; border-radius: 4px; padding: 24px; display: flex; flex-direction: column; gap: 8px"><h2 style="margin: 0; font-size: 20px">Process automation</h2><p style="margin: 0; font-size: 16px; line-height: 1.55; color: #45506A">The hand-offs between your systems, joined up and running.</p></div>
+    </div>
+  </section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1120}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

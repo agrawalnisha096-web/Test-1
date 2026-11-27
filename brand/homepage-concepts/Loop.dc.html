@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Mosta Group homepage, the loop</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#FFFFFF}a:hover{color:#19C8E8}
+.spin{transform-box:fill-box;transform-origin:center;animation:spin 90s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion: reduce){.spin{animation:none}.dot{display:none}}
+</style>
+</helmet>
+<div style="width: 100%; min-height: 1120px; background: #FFFFFF; color: #16264D; font-family: Montserrat, system-ui, sans-serif">
+  <div style="background: #16264D; color: #FFFFFF; padding: 0 max(4vw, 16px) 64px">
+    <nav aria-label="Main" style="max-width: 1280px; margin: 0 auto; min-height: 88px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px">
+      <a href="#" aria-label="Mosta Group home" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #FFFFFF; font-size: 24px">
+        <svg width="38" height="38" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="lg1" gradientUnits="userSpaceOnUse" x1="0" y1="64" x2="64" y2="0"><stop offset="0" stop-color="#2F5BFF"></stop><stop offset="1" stop-color="#19C8E8"></stop></linearGradient></defs><circle cx="32" cy="32" r="26" fill="none" stroke="url(#lg1)" stroke-width="6" stroke-dasharray="140 40"></circle><path d="M53.6 16.2 51.6 6.6 44.2 15.9Z" fill="url(#lg1)"></path><path d="M21 43V22l11 11 11-11v21" fill="none" stroke="currentColor" stroke-width="5.5" stroke-linejoin="round"></path></svg>
+        <span><b style="font-weight: 700">Mosta</b>Group</span>
+      </a>
+      <div style="display: flex; align-items: center; gap: 12px">
+        <a href="#" style="color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 15px; padding: 13px 20px; border-radius: 999px; border: 1.5px solid rgba(255,255,255,0.6)">Book a free call</a>
+        <button type="button" aria-label="Open menu" style="display: flex; align-items: center; gap: 10px; background: #FFFFFF; color: #16264D; border: 0; font: 600 15px Montserrat, sans-serif; padding: 14px 20px; border-radius: 999px; cursor: pointer">
+          Menu
+          <svg width="18" height="12" viewBox="0 0 18 12" aria-hidden="true"><path d="M0 1h18M0 6h18M0 11h18" stroke="#16264D" stroke-width="2"></path></svg>
+        </button>
+      </div>
+    </nav>
+
+    <div style="max-width: 1280px; margin: 0 auto; padding-top: 32px; display: flex; flex-wrap: wrap; align-items: center; gap: 32px">
+      <div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+        <h1 style="margin: 0; font-size: clamp(48px, 6.4vw, 96px); line-height: 0.98; letter-spacing: -0.035em; font-weight: 800">Work that runs itself.</h1>
+        <p style="margin: 0; font-size: 19px; line-height: 1.55; color: #C9D3EA; max-width: 30em">We find the jobs your team repeats every week and hand them to AI and automation, so your people do the work only people can do.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 12px">
+          <a href="#" style="background: #2F5BFF; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 16px; padding: 17px 28px; border-radius: 999px">Find my first automation</a>
+          <a href="#" style="color: #FFFFFF; font-weight: 600; font-size: 16px; padding: 17px 8px">How it works</a>
+        </div>
+      </div>
+      <figure style="flex: 1 1 520px; min-width: 0; margin: 0">
+        <svg viewBox="-70 -20 780 680" role="img" aria-label="The Mosta loop drawn large, with everyday business jobs placed around it and a point of light travelling the loop" style="width: 100%; height: auto; display: block">
+          <defs><linearGradient id="lg2" gradientUnits="userSpaceOnUse" x1="90" y1="550" x2="550" y2="90"><stop offset="0" stop-color="#2F5BFF"></stop><stop offset="1" stop-color="#19C8E8"></stop></linearGradient></defs>
+          <circle class="spin" cx="320" cy="320" r="292" fill="none" stroke="#2A3D72" stroke-width="1.5" stroke-dasharray="2 10"></circle>
+          <circle cx="320" cy="320" r="230" fill="none" stroke="url(#lg2)" stroke-width="30" stroke-dasharray="1240 205"></circle>
+          <path d="M490.9 162.5 480.7 120.9 448.1 161.3Z" fill="url(#lg2)"></path>
+          <path d="M223 417V232l97 97 97-97v185" fill="none" stroke="#FFFFFF" stroke-width="44" stroke-linejoin="round"></path>
+          <path id="ring" d="M320 90 A230 230 0 1 1 319.9 90" fill="none"></path>
+          <circle class="dot" r="11" fill="#FFFFFF"><animateMotion dur="9s" repeatCount="indefinite"><mpath href="#ring"></mpath></animateMotion></circle>
+          <g font-family="Montserrat, sans-serif" font-size="15" font-weight="600" fill="#FFFFFF" text-anchor="middle">
+            <rect x="-12" y="440" width="170" height="40" rx="20" fill="#22356A"></rect><text x="73" y="465">Supplier invoices</text>
+            <rect x="-40" y="226" width="170" height="40" rx="20" fill="#22356A"></rect><text x="45" y="251">Payroll checks</text>
+            <rect x="82" y="53" width="190" height="40" rx="20" fill="#22356A"></rect><text x="177" y="78">Month-end reporting</text>
+            <rect x="505" y="374" width="190" height="40" rx="20" fill="#22356A"></rect><text x="600" y="399">Customer onboarding</text>
+            <rect x="372" y="547" width="180" height="40" rx="20" fill="#22356A"></rect><text x="462" y="572">Quotes and proposals</text>
+            <rect x="171" y="575" width="150" height="40" rx="20" fill="#22356A"></rect><text x="246" y="600">Rostering</text>
+          </g>
+        </svg>
+      </figure>
+    </div>
+  </div>
+
+  <section style="padding: 48px max(4vw, 16px) 56px">
+    <div style="max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 0 40px">
+      <a href="#" style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 22px 0; border-top: 2px solid #16264D; color: #16264D; text-decoration: none"><span style="font-size: 24px; font-weight: 700; letter-spacing: -0.01em">AI consulting</span><span aria-hidden="true" style="font-size: 22px; color: #2F5BFF">→</span></a>
+      <a href="#" style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 22px 0; border-top: 2px solid #16264D; color: #16264D; text-decoration: none"><span style="font-size: 24px; font-weight: 700; letter-spacing: -0.01em">AI implementation</span><span aria-hidden="true" style="font-size: 22px; color: #2F5BFF">→</span></a>
+      <a href="#" style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 22px 0; border-top: 2px solid #16264D; color: #16264D; text-decoration: none"><span style="font-size: 24px; font-weight: 700; letter-spacing: -0.01em">Process automation</span><span aria-hidden="true" style="font-size: 22px; color: #2F5BFF">→</span></a>
+    </div>
+  </section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1120}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>
