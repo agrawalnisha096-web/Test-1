@@ -15,6 +15,25 @@ An established business (about 20 to 500 staff) whose growth now runs through ma
 | 4 | CEO or board | "Everyone says we need AI. I don't know where to start, and I won't waste money finding out." | Advice comes from vendors selling one tool; staff already use AI with no rules | Board asks for an AI plan, a competitor announces one |
 | 5 | Owner or finance lead | "If one person left tomorrow, nobody would know how this works." | Critical processes live in fragile spreadsheets and one person's head | Key person resigns or makes a costly error |
 
+## Sharper version of the five problems (v2, 27 Nov)
+
+Each problem: what they'd say, the real problem underneath, what it costs them, and the outcome they'd pay for.
+
+| # | Button label (their voice) | Headline | The real problem | What it costs them | What they want |
+|---|---|---|---|---|---|
+| 1 | "Every time we grow, we hire more admin" | Revenue's up. So is headcount. Margin isn't. | Work moves between systems by hand, so each new customer adds hours of keying, chasing and checking | Wages rise with sales; the owner is pulled back into operations; staff burn out | Grow without adding a person for every new customer |
+| 2 | "Our month-end takes too long" | Close the month in days, not weeks. | Finance waits on other teams and copies data between bank, Xero and spreadsheets | Decisions made on numbers that are weeks old; overtime every month | Reliable numbers early in the month, without the scramble |
+| 3 | "I can't see what's happening across our sites" | See every site, every day. | Each site runs its own spreadsheets and habits, so there's no single, current view | Problems surface at month-end, when they're expensive | One way of working, and one live view across sites |
+| 4 | "We use AI, but nothing has really changed" | Your team uses ChatGPT. Your P&L hasn't noticed. | AI tools bought or used ad hoc, with no business case, no process change and no rules | Money and time spent, no measurable gain, and data risk from unmanaged use | AI built into real work, with a payback they can show the board |
+| 4b | "We don't know where to start with AI" | Find out where AI pays back in your business. | Too many options, vendor-led advice, fear of getting it wrong | Falling behind competitors, or wasting money on the wrong tool | A short, safe first step with a clear return |
+| 5 | "Too much depends on one person's spreadsheets" | Your business shouldn't stop when one person is on leave. | Critical processes live in fragile spreadsheets and one person's head | One resignation or formula error can stop billing, payroll or reporting | The process documented, automated and checked |
+
+**What the research supports (outside data, use with care):**
+- Month-end: average close is about 6 business days; half of finance teams take 6+ days; "chasing information from other departments" is the top close challenge (34%). Mostly US data. ([Vena](https://www.venasolutions.com/blog/month-end-close-benchmarks-survey), [Ledge](https://ledge.co/content/month-end-close-benchmarks-for-2025))
+- AI: 72% of mid-market businesses use AI but only 13% treat it as a strategic priority with budget ([Pitcher Partners via KPMG/ITBrief search results](https://itbrief.com.au/story/hype-growing-but-smes-still-face-barriers-to-ai-adoption)); the problem is implementation, not awareness ([RMIT, Oct 2026](https://www.rmit.edu.au/news/media-releases-and-expert-comments/2026/oct/ai-businesses)); 19% of SMEs don't know how to use AI in their business ([National AI Centre](https://ai.gov.au/news-and-insights/blog/ai-adoption-insights-december-2025-february-2026)); a third of non-adopters don't know where to start ([Deloitte](https://www.deloitte.com/au/en/about/press-room/ai-edge-small-business-increased-smb-ai-adoption-can-add-44-billion-australias-economy-251125.html)).
+- Growth strain: 48% of Australian businesses with 150+ staff rate productivity a high concern and 46% report staff burnout ([Employment Hero SME Pulse](https://employmenthero.com/news/australian-smes-want-to-grow-people-already-stretched/)).
+- No good data found on admin hiring costs or multi-site visibility: problems 1, 3 and 5 rest on Qubik's experience until Dominic confirms them.
+
 ## What stops them contacting us
 - "It'll cost a fortune and take months." → Free review first; a working pilot on one process before any bigger commitment.
 - "Will it work with our systems?" → Built on what they already use (Qubik: Xero partner since 2013; confirm the others we support).
